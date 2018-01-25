@@ -1,0 +1,9 @@
+language: node_js
+
+cache: yarn
+
+env: NODE_ENV=production
+
+install: yarn install --production
+
+script: yarn build

@@ -1,0 +1,2398 @@
+{
+  "tags": [
+    {
+      "id": 0,
+      "code": "acces-handicape",
+      "name": "Accès handicapé"
+    },
+    {
+      "id": 1,
+      "code": "agriculture-bio",
+      "name": "Agriculture biologique"
+    },
+    {
+      "id": 2,
+      "code": "agriculture-biodynamique",
+      "name": "Agriculture biodynamique"
+    },
+    {
+      "id": 3,
+      "code": "agriculture-raisonnee",
+      "name": "Agriculture raisonnée"
+    },
+    {
+      "id": 4,
+      "code": "accepte-animaux",
+      "name": "Animaux acceptés"
+    },
+    {
+      "id": 5,
+      "code": "vente-propriete",
+      "name": "Vente à la propriété"
+    }
+  ],
+  "vineyards": [
+    {
+      "id": 1,
+      "name": "bergerac"
+    },
+    {
+      "id": 2,
+      "name": "duras"
+    },
+    {
+      "id": 3,
+      "name": "monbazillac"
+    },
+    {
+      "id": 4,
+      "name": "montravel"
+    },
+    {
+      "id": 5,
+      "name": "pecharmant"
+    },
+    {
+      "id": 6,
+      "name": "rosette"
+    },
+    {
+      "id": 7,
+      "name": "saussignac"
+    }
+  ],
+  "domains": [
+    {
+      "id": "DEGAQU024FS00004",
+      "updated": 1528654507584,
+      "title": "Château Corbiac Pécharmant",
+      "active": true,
+      "latitude": "44.8778672",
+      "longitude": "0.52102446",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-corbiac-pecharmant-2018.png",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000085-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000080-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000088.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Corbiac-Pecharmant-2.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000A",
+      "updated": 1528655054926,
+      "title": "Château de la Jaubertie",
+      "active": true,
+      "latitude": "44.7744249",
+      "longitude": "0.51891088",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--12-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--13-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--14-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--15-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--11-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--9-.jpg"
+      ],
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00005",
+      "updated": 1528655054889,
+      "title": "Cave Coopérative de Monbazillac",
+      "active": true,
+      "latitude": "44.8106440",
+      "longitude": "0.47397851",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/magasin-cave-reduite-OTBergerac.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--5-.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00006",
+      "updated": 1528654507600,
+      "title": "Alliance Aquitaine - Site de Bergerac",
+      "active": true,
+      "latitude": "44.8584165",
+      "longitude": "0.48904180",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Bergerac.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Site-du-Fleix-Siege-Social.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Saint-Vivien.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Logo-AA.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-la-vaure-bergerac-futs-de-chene.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/stv-montravel.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vieux-sapin-pecharmant.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00009",
+      "updated": 1528654507632,
+      "title": "Château la Renaudie",
+      "active": true,
+      "latitude": "44.8888291",
+      "longitude": "0.53272426",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/cour1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/degust21.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chai3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/degustation1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/entree1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-chateau1.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00007",
+      "updated": 1527768657903,
+      "title": "Château d'Elle",
+      "active": true,
+      "latitude": "44.8616334",
+      "longitude": "0.52416265"
+    },
+    {
+      "id": "DEGAQU024FS00008",
+      "updated": 1528654507615,
+      "title": "Château la Vieille Bergerie",
+      "active": true,
+      "latitude": "44.8760882",
+      "longitude": "0.50798356",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--7-.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000C",
+      "updated": 1528655054944,
+      "title": "Domaine de l'Ancienne Cure",
+      "active": true,
+      "latitude": "44.7746762",
+      "longitude": "0.53281545",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-Christian-Roche.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-degustation.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-vue-aerienne.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00003",
+      "updated": 1528654507573,
+      "title": "Domaine du Haut Pécharmant",
+      "active": true,
+      "latitude": "44.8678234",
+      "longitude": "0.53087353",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/DHP-RdV-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DHP-RdV-4.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DHP-RdV-5.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Haut-Pecharmant-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-mai-2008-087-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/etiq-DHP-2009-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--2-.JPG"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000E",
+      "updated": 1528654128465,
+      "title": "Château du Haut Pezaud",
+      "active": true,
+      "latitude": "44.7846373",
+      "longitude": "0.48715353",
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--9-.jpg"
+      ],
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024FS0000F",
+      "title": "Château Haut Bernasse",
+      "latitude": "44.7892194",
+      "longitude": "0.46526402",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse4.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse11.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse2.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse3.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse8.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse5.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse7.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse6.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse1.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse9.jpeg"
+      ],
+      "updated": 1528655054967,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000G",
+      "title": "Maison des Vins de Bergerac",
+      "latitude": "44.8501253",
+      "longitude": "0.4830213",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/maison-des-vins-de-bergerac---CIVRB.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-vins-de-Bergerac-Cloitre-des-Recollets-2-4.jpg"
+      ],
+      "updated": 1528655054981,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000H",
+      "title": "Domaine du Bois de Pourquié",
+      "latitude": "44.7908013",
+      "longitude": "0.53319633",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/P1040816.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/bq4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000553.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/P1040492-3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bois-de-Pourquie.jpg"
+      ],
+      "updated": 1528654128505,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024FS0000I",
+      "title": "Domaine du Haut Montlong",
+      "latitude": "44.7988906",
+      "longitude": "0.39534151",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-05.jpg"
+      ],
+      "updated": 1528654507702,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000J",
+      "title": "Domaine du Siorac",
+      "latitude": "44.6983228",
+      "longitude": "0.47913908",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/11-gamme-verjus-web.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-visite-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Siorac-boutique.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Siorac-Cuves.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Siorac-gens-dans-les-vignes.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Siorac-vignes.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-siorac-vignoble.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Accueil-et-Vente-au-Domaine.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Degustation-et-Pique-Nique-Vignoble.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Soiree-a-la-Ferme.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Visite-Vignoble.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Visite-Vignoble-Chai.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-chasse-au-tresor.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-pique-nique.JPG"
+      ],
+      "updated": 1528654507717,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000K",
+      "title": "Domaine de Grange Neuve",
+      "latitude": "44.7941590",
+      "longitude": "0.40167152",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-Anthony-CASTAING.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-gamme-de-vins-sur-comptoir.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-gamme-de-vins.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-vue-aerienne-gite.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-vue-aerienne-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-GRANGE-NEUVE-Caveau-2.JPG"
+      ],
+      "updated": 1528654507729,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000M",
+      "title": "Domaine de Coutancie",
+      "latitude": "44.8675952",
+      "longitude": "0.41904687",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/00--800x600-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/1Desir.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/3Desir.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/5Desir.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/d--800x600---800x600-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DSC00321-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/familleM03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/p05011w52--800x600-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Coutancie-2.jpg"
+      ],
+      "updated": 1528655055019,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000N",
+      "title": "Vignoble des Verdots",
+      "latitude": "44.7760928",
+      "longitude": "0.55463254",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/coucher-du-soleil-sur-les-vignes.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/verdots5-2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/VERDOTS.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--3-.jpg"
+      ],
+      "updated": 1528654507760,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000R",
+      "title": "Château Moulin Caresse",
+      "latitude": "44.8591428",
+      "longitude": "0.13468980",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-05.jpg"
+      ],
+      "updated": 1528654507773,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0000S",
+      "title": "Château Puy Servain",
+      "latitude": "44.8746285",
+      "longitude": "0.21288156",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--25-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--20-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--19-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--14-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--11-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--12-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--13-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--15-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--16-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--17-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--18-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--22-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--23-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--24-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--26-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/puy-servain-2018.png"
+      ],
+      "updated": 1528654473682,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00011",
+      "title": "Château Terre Vieille",
+      "latitude": "44.8819340",
+      "longitude": "0.5586150",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/TV1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/TV2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/TV3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/TV4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Terre-Vieille-2.jpg"
+      ],
+      "updated": 1528654128629,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024FS00015",
+      "title": "Château Ladesvignes",
+      "latitude": "44.8038998",
+      "longitude": "0.44878721",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-ladesvignes-2018-Veronique-et-Michel.png",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Lasdesvignes-Degustation-vins-et-fromages---MC-Grasseau--17-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-ladesvignes-2018-Entree.png",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-ladesvignes-2018-photo-aerienne.png",
+        "http://cdt24.media.tourinsoft.eu/upload/Ladesvignes-Degustation.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Ladesvignes-fromage.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/ladesvignes-groupe.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/ladesvignes-porche.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chai---vins----Jean-Christophe-Amelin.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/EQUIPE-LADESVIGNES.jpg"
+      ],
+      "updated": 1528654507796,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS00016",
+      "title": "Château Laulerie / Domaine du Gouyat",
+      "latitude": "44.8919987",
+      "longitude": "0.19006132",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--11-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--9-.jpg"
+      ],
+      "updated": 1528654507810,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001G",
+      "title": "Clos le Joncal",
+      "latitude": "44.7246415",
+      "longitude": "0.43966161",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-4.JPG"
+      ],
+      "updated": 1528655055063,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001L",
+      "title": "Château le Raz",
+      "latitude": "44.8957153",
+      "longitude": "0.16073942",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/logo-le-Raz.jpg"
+      ],
+      "updated": 1528654495814,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001M",
+      "title": "Château le Tap",
+      "latitude": "44.8035040",
+      "longitude": "0.32755136",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--9-.jpg"
+      ],
+      "updated": 1528655055083,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001N",
+      "title": "Château de Tiregand",
+      "latitude": "44.8569335",
+      "longitude": "0.54347991",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Tiregand--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Tiregand--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Tiregand--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Tiregand--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Tiregand--3-.jpg"
+      ],
+      "updated": 1528654473763,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001O",
+      "title": "Château Combrillac",
+      "latitude": "44.8687814",
+      "longitude": "0.42670726",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--5-.jpg"
+      ],
+      "updated": 1528654507863,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0001P",
+      "title": "Château Court les Mûts",
+      "latitude": "44.8128056",
+      "longitude": "0.31024575",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/1-74.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignes1-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignes3-2.jpg"
+      ],
+      "updated": 1528654507878,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0002G",
+      "title": "Château le Chabrier",
+      "latitude": "44.8074547",
+      "longitude": "0.30771911",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/DSC-1401a.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DSC-6276a.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DSC-7263a.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/P1060697.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/P1130341.jpg"
+      ],
+      "updated": 1528655055111,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0002H",
+      "title": "Château Feely",
+      "latitude": "44.8067011",
+      "longitude": "0.32898902",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/282838-466829716696763-1040212764-n.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/734677-481644761881925-1868532878-n.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Feely-Clin-d-oeil.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Feely-Clin-d-oeil-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Feely-Clin-d-oeil-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Feely-Clin-d-oeil-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--2-.JPG"
+      ],
+      "updated": 1528655055124,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0002J",
+      "title": "Domaine Moulin Garreau",
+      "latitude": "44.8640536",
+      "longitude": "0.03911733",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/1-domaine-moulin-garreau.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/2-vignes.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/3-bouteilles-barriques.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/4-date-propriete.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/5-Gite-Moulin-Garreau.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/6-Mouton.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/7-cheval.jpg"
+      ],
+      "updated": 1528655055138,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0005B",
+      "title": "Domaine du Boyer",
+      "latitude": "44.7765786",
+      "longitude": "0.42091582",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--11-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--9-.jpg"
+      ],
+      "updated": 1528654507920,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0007B",
+      "title": "Château La Robertie",
+      "latitude": "44.7728413",
+      "longitude": "0.42994884",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/LaRobertie-photoa6-0812.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/LaRobertie-sauvgris.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--3-.JPG"
+      ],
+      "updated": 1528655055154,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0008K",
+      "title": "Château Bélingard",
+      "latitude": "44.799831",
+      "longitude": "0.43322",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Panneau-visite-libre.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chai-a-Barriques-8.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Les-vignes-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-43.JPG"
+      ],
+      "updated": 1528654507952,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0008L",
+      "title": "Château Barouillet",
+      "latitude": "44.793698",
+      "longitude": "0.431321",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo4.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Barouillet--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo3.JPG"
+      ],
+      "updated": 1528655055172,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0008M",
+      "title": "Château Montplaisir",
+      "latitude": "44.873207",
+      "longitude": "0.429722",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--2-.jpg"
+      ],
+      "updated": 1528654507974,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0008N",
+      "title": "Château Kalian",
+      "latitude": "44.786252",
+      "longitude": "0.467327",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/CH.-KALIAN-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/BOUTEILLE-MBZ.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-kalian-degustation-de-vins----MC-Grasseau---24-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DSCF2717.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/image-56.jpg"
+      ],
+      "updated": 1528655055195,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0008O",
+      "title": "Château du Rooy",
+      "latitude": "44.877863",
+      "longitude": "0.468952",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/telechargement-107.jpg"
+      ],
+      "updated": 1528654508002,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0009H",
+      "title": "Château Champarel",
+      "latitude": "44.87005",
+      "longitude": "0.52343859",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-5.jpg"
+      ],
+      "updated": 1528655055214,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0009K",
+      "title": "Domaine du Grand Jaure",
+      "latitude": "44.89358",
+      "longitude": "0.504939",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/IMG-9820.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--7-.jpg"
+      ],
+      "updated": 1528654508028,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0009N",
+      "title": "Domaine des Costes",
+      "latitude": "44.858911",
+      "longitude": "0.509445",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--6-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--8-.JPG"
+      ],
+      "updated": 1528655055233,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024FS0009O",
+      "title": "Clos Les Côtes",
+      "latitude": "44.8593768",
+      "longitude": "0.5068232",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo1.jpg"
+      ],
+      "updated": 1528654128952,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024FS0009S",
+      "title": "Château Beauportail",
+      "latitude": "44.8695110",
+      "longitude": "0.51141918",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-012-resultat.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-resultat.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/photo-2-resultat.JPG"
+      ],
+      "updated": 1528654508057,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5029W2",
+      "title": "Château Les Farcies du Pech",
+      "latitude": "44.8645611",
+      "longitude": "0.50757049",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/dubard31.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/dubard01.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/dubard36.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/dubard33.jpg"
+      ],
+      "updated": 1528654508067,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5029W3",
+      "title": "Château La Tilleraie",
+      "latitude": "44.8616623",
+      "longitude": "0.50954774",
+      "active": true,
+      "photos": [],
+      "updated": 1528654474006,
+      "tags": [
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5029WM",
+      "title": "Château Poulvère",
+      "latitude": "44.8049031",
+      "longitude": "0.49419478",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere-05.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Poulvere-06.jpg"
+      ],
+      "updated": 1528654508085,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5029WQ",
+      "title": "Vignobles Chabrol - Château Malfourat",
+      "latitude": "44.7960341",
+      "longitude": "0.46016291",
+      "active": true,
+      "photos": [],
+      "updated": 1528654508096,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V502OWN",
+      "title": "Château Vari - Maison Vari",
+      "latitude": "44.7789620",
+      "longitude": "0.47906108",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/arton10754.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--3-.JPG"
+      ],
+      "updated": 1528655055275,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V503LPL",
+      "title": "Château Grande Maison",
+      "latitude": "44.7829601",
+      "longitude": "0.48690387",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Grande-Maison--MC-Grasseau--10-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Grande-Maison--MC-Grasseau--16-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Grande-Maison--MC-Grasseau--23-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Grande-Maison--MC-Grasseau--27-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/R-Chateau-Grande-Maison--MC-Grasseau--22-.jpg"
+      ],
+      "updated": 1528655055291,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V503MGE",
+      "title": "Les Vignerons de Sigoulès",
+      "latitude": "44.7545186",
+      "longitude": "0.41652873",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Facade.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/-DSC2338-copie-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/-DSC4495-copie-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DSC-0021-2-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin-Degustation.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin-Epicerie-Fine.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Vendangeurs.jpg"
+      ],
+      "updated": 1528655055306,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V505KB3",
+      "title": "Domaine de Grimardy",
+      "latitude": "44.890998",
+      "longitude": "0.12560499",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-05.jpg"
+      ],
+      "updated": 1528655055317,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V505KJY",
+      "title": "Château La Maurigne",
+      "latitude": "44.8027119",
+      "longitude": "0.30966549",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne-002.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne005.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne065.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne068.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne5.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/lamaurigne735.jpg"
+      ],
+      "updated": 1528655055332,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V505KLW",
+      "title": "Château la Rayre",
+      "latitude": "44.7763845",
+      "longitude": "0.50800629",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/La-Rayre.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-04.jpg"
+      ],
+      "updated": 1528655055343,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V505KU7",
+      "title": "Domaine de Montlong",
+      "latitude": "44.7992833",
+      "longitude": "0.39228270",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/2007-0101JANV130343.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/2007-0101JANV130347.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--4-.JPG"
+      ],
+      "updated": 1528655055353,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506AOS",
+      "title": "Château de Peyrel",
+      "latitude": "44.8862338",
+      "longitude": "0.39468372",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--10-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--6-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--8-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--9-.JPG"
+      ],
+      "updated": 1528654508185,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506ARS",
+      "title": "Domaine de Combet",
+      "latitude": "44.7838419",
+      "longitude": "0.47984140",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Combet1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Combet2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Combet3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Combet4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Combet5.jpg"
+      ],
+      "updated": 1528654508198,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506AS9",
+      "title": "Château Richard",
+      "latitude": "44.7790042",
+      "longitude": "0.31578975",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--5-.jpg"
+      ],
+      "updated": 1528655055388,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506N08",
+      "title": "Château de Fayolle",
+      "latitude": "44.8051540",
+      "longitude": "0.31564301",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Fayolle.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Fayolle-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Fayolle-03.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Fayolle-04.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Fayolle-05.jpg"
+      ],
+      "updated": 1528654508226,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506P0I",
+      "title": "Château Cluzeau",
+      "latitude": "44.7688008",
+      "longitude": "0.41494209",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--2-.JPG"
+      ],
+      "updated": 1528655055406,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506T01",
+      "title": "Château La Brie",
+      "latitude": "44.8164874",
+      "longitude": "0.48754760",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--5-.JPG"
+      ],
+      "updated": 1528655055418,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506TJQ",
+      "title": "Château de la Mallevieille",
+      "latitude": "44.894222",
+      "longitude": "0.24928199",
+      "active": true,
+      "photos": [],
+      "updated": 1528654496291,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506TL3",
+      "title": "Domaine de Perreau",
+      "latitude": "44.876575",
+      "longitude": "0.04700500",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau---Gaelle.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau---Cuves-inox-nouvelles.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Batiments.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Chai-a-barrique.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Sauvignon-Gris-2.JPG"
+      ],
+      "updated": 1528654508262,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506TN3",
+      "title": "Château Le Payral",
+      "latitude": "44.8058264",
+      "longitude": "0.28383658",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-Payral--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-Payral--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-Payral--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-Payral--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/peyral-3.jpg"
+      ],
+      "updated": 1528655055438,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506TP1",
+      "title": "Vignobles Castaing",
+      "latitude": "44.7819232",
+      "longitude": "0.37418656",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---barrique.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Fabien-Moulin-Pouzy.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---Ophrys.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---vigne.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---bouteille.jpg"
+      ],
+      "updated": 1528655055453,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506U03",
+      "title": "Château Le Fagé",
+      "latitude": "44.8079614",
+      "longitude": "0.43558429",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-Le-Fage-01-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/photo-vue-des-vignes---chateau.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/photo-vue-propriete.jpg"
+      ],
+      "updated": 1528654474266,
+      "tags": [
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506U4Y",
+      "title": "Château Les Brandeaux",
+      "latitude": "44.7283458",
+      "longitude": "0.34327422",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Ch-les-Brandeaux-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ch-les-Brandeaux-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/ch-les-Brandeaux--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--1-.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--2-.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--3-.jpeg"
+      ],
+      "updated": 1528654496334,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506U5L",
+      "title": "Château Les Gérales",
+      "latitude": "44.809619",
+      "longitude": "0.39993900",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---10-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---11-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---12-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---13-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---14-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---15-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---9-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--1-.JPG"
+      ],
+      "updated": 1528654508312,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506UMP",
+      "title": "Domaine du Lac",
+      "latitude": "44.9030300",
+      "longitude": "0.4425400",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-3.JPG"
+      ],
+      "updated": 1528654129294,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V506UTS",
+      "title": "Vignobles Lajonie",
+      "latitude": "44.7985630",
+      "longitude": "0.50995241",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo5.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo6.jpg"
+      ],
+      "updated": 1528654508329,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506UUM",
+      "title": "Château Les Grimard",
+      "latitude": "44.890998",
+      "longitude": "0.12560499",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-grimards.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/grimard-1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimard-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimard-3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/les-grimard-juillet-2013-039.JPG"
+      ],
+      "updated": 1528654508343,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506V2O",
+      "title": "Château Montdoyen",
+      "latitude": "44.7836607",
+      "longitude": "0.46164819",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--4-.JPG"
+      ],
+      "updated": 1528654508355,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V506YB6",
+      "title": "Château de Panisseau",
+      "latitude": "44.760304",
+      "longitude": "0.36475900",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Chateau.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Degustation.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Gites.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Marches-Gourmands.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Vins.jpeg"
+      ],
+      "updated": 1528654508370,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5070YW",
+      "title": "Château des Tertres du Plantou",
+      "latitude": "44.715917",
+      "longitude": "0.65404499",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--01-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--02-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--03-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--04-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--05-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--06-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--07-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--08-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--09-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--11-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--12-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--13-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--14-.jpg"
+      ],
+      "updated": 1528655055501,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50714R",
+      "title": "Château Les Hauts de Caillevel",
+      "latitude": "44.7751451",
+      "longitude": "0.41596124",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/cruchon01.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/f-chai-barrique-1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/20130707-211219.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/maison-40.jpg"
+      ],
+      "updated": 1528655055518,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5071DW",
+      "title": "Château du Bloy",
+      "latitude": "44.872258",
+      "longitude": "0.08214599",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-5.jpg"
+      ],
+      "updated": 1528655055530,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5071NA",
+      "title": "Domaine Le Castellat",
+      "latitude": "44.8123268",
+      "longitude": "0.30362056",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/0021-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/0024-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/0028-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG"
+      ],
+      "updated": 1528654508420,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5071V0",
+      "title": "Château Lestevenie",
+      "latitude": "44.7830155",
+      "longitude": "0.34478659",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/PA310034-1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-lestevenie-vignobles-temperley--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-lestevenie-vignobles-temperley--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-lestevenie-vignobles-temperley--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/IMG-2346.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/wine-tour.jpg"
+      ],
+      "updated": 1528654496487,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5071W5",
+      "title": "Château Larchère",
+      "latitude": "44.79489",
+      "longitude": "0.38560099",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-juments.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-maison.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignoble-automne.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-raisin-botrytise.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignes-orchidees.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignoble-ete.jpg"
+      ],
+      "updated": 1528655055553,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5072D5",
+      "title": "Moulins de Boisse",
+      "latitude": "44.7175637",
+      "longitude": "0.65739239",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--6-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--8-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--9-.JPG"
+      ],
+      "updated": 1528654508450,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50744K",
+      "title": "Château Haut Lamouthe",
+      "latitude": "44.8176520",
+      "longitude": "0.41639245",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--7-.jpg"
+      ],
+      "updated": 1528654508471,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5074QL",
+      "title": "Château Tuquet Monceau",
+      "latitude": "44.8873219",
+      "longitude": "0.09052157",
+      "active": true,
+      "photos": [],
+      "updated": 1528655055577,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5075IZ",
+      "title": "Château Caillavel",
+      "latitude": "44.7752518",
+      "longitude": "0.41477034",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--6-.JPG"
+      ],
+      "updated": 1528654508490,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5075ZA",
+      "title": "Clos l'Envège - SAS Julien de Savignac",
+      "latitude": "44.7926381",
+      "longitude": "0.45568295",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--4-.jpg"
+      ],
+      "updated": 1528654496570,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076I3",
+      "title": "Domaine des Trois Saules",
+      "latitude": "44.9502833",
+      "longitude": "0.04888925",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--3-.JPG"
+      ],
+      "updated": 1528655055602,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076IN",
+      "title": "Château Colin-Madrigal",
+      "latitude": "44.7504217",
+      "longitude": "0.60030970",
+      "active": true,
+      "photos": [],
+      "updated": 1528654398880,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076J0",
+      "title": "Château Tour des Gendres",
+      "latitude": "44.7583498",
+      "longitude": "0.48242933",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES4.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES5.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES7.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES-6.JPG"
+      ],
+      "updated": 1528655055620,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076J8",
+      "title": "Château Pique-Sègue",
+      "latitude": "44.8853806",
+      "longitude": "0.21400900",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pique-segue-2018--1-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pique-segue-2018--2-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/Chai---cabanelle---Chateau-Pique-Segue.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison---Chateau-Pique-Segue.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Vallee---Chateau-Pique-Segue.jpg"
+      ],
+      "updated": 1528654474499,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076LG",
+      "title": "Château de Planques",
+      "latitude": "44.8019817",
+      "longitude": "0.51763170",
+      "active": true,
+      "photos": [],
+      "updated": 1528654496609,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076MU",
+      "title": "Château de Monbazillac",
+      "latitude": "44.7966125",
+      "longitude": "0.4941352",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--33-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--35-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--36-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--37-.jpg"
+      ],
+      "updated": 1528654474516,
+      "tags": [
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076S6",
+      "title": "Domaine de Pécoula",
+      "latitude": "44.7958649",
+      "longitude": "0.40708850",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--6-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb2.jpg"
+      ],
+      "updated": 1528654496626,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076SA",
+      "title": "Château Grands Quintins",
+      "latitude": "44.7669854",
+      "longitude": "0.32797771",
+      "active": true,
+      "photos": [],
+      "updated": 1528654496638,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076T4",
+      "title": "Château des Masseries",
+      "latitude": "44.8620832",
+      "longitude": "0.31213669",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--4-.JPG"
+      ],
+      "updated": 1528654496650,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V5076TR",
+      "title": "Vignobles Beigner / Château Pecany",
+      "latitude": "44.7892790",
+      "longitude": "0.42487691",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--6-.jpg"
+      ],
+      "updated": 1528654129612,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V5077CU",
+      "title": "Château La Plante",
+      "latitude": "44.9420893",
+      "longitude": "0.05047787",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Plante.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Bouteille-3.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Vigne-11.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Carte-8.jpg"
+      ],
+      "updated": 1528654508574,
+      "tags": [
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V507LYM",
+      "title": "Maison du Tourisme et du Vin de Monbazillac",
+      "latitude": "44.7938754",
+      "longitude": "0.49131878",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--11-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--12-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--5-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--14-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--10-.JPG"
+      ],
+      "updated": 1528655055703,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee"
+      ]
+    },
+    {
+      "id": "DEGAQU024V507O9S",
+      "title": "Le Clos du Breil",
+      "latitude": "44.714975",
+      "longitude": "0.68274999",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Photo-Le-Clos-du-Breil.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Expression.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/leclosdubreil.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/maison-breil-N-B--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/pied-de-vigne-pierre.jpg"
+      ],
+      "updated": 1528654508600,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V508CW2",
+      "title": "Château de la Reynaudie",
+      "latitude": "44.8886906",
+      "longitude": "0.09117049",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/18010305-446460685690949-3259859663478776668-n.jpg"
+      ],
+      "updated": 1528654496694,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V508D06",
+      "title": "Château Haut-Fongrive",
+      "latitude": "44.7490485",
+      "longitude": "0.32332577",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--10-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--7-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--8-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--9-.JPG"
+      ],
+      "updated": 1528655055721,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee"
+      ]
+    },
+    {
+      "id": "DEGAQU024V508D0Q",
+      "title": "Domaine du Bout du Monde",
+      "latitude": "44.7643990",
+      "longitude": "0.4670950",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--11-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--16-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--15-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--18-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--2--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--20-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--21-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--9-.jpg"
+      ],
+      "updated": 1528654129687,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V508D0Y",
+      "title": "Domaine de la Linière",
+      "latitude": "44.7673429",
+      "longitude": "0.3629190",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE3.jpeg",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE4.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE5.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chai-barriques-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/hachette.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/IMG-5251.JPG"
+      ],
+      "updated": 1528654508632,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V508D1D",
+      "title": "Château Thénac",
+      "latitude": "44.7495967",
+      "longitude": "0.34156833",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--4-.jpg"
+      ],
+      "updated": 1528654474616,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V508D27",
+      "title": "Château Michel de Montaigne",
+      "latitude": "44.8740850",
+      "longitude": "0.0302640",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--5-.jpg"
+      ],
+      "updated": 1528654129724,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50ASLN",
+      "title": "Château Monestier La Tour",
+      "latitude": "44.7746174",
+      "longitude": "0.32736617",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-MG-8292.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-exploitation.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-La--tisanerie-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Le-jardin.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-a-barriques.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-de-vinification.jpg"
+      ],
+      "updated": 1528655055749,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50ASZG",
+      "title": "Château Les Miaudoux",
+      "latitude": "44.796593",
+      "longitude": "0.31962999",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--1-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.png"
+      ],
+      "updated": 1528655055760,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50ATZW",
+      "title": "Château Le Terme Blanc",
+      "latitude": "44.7759371",
+      "longitude": "0.44670162",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/1-280.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/2-238.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/3-219.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/4-208.JPG"
+      ],
+      "updated": 1528655055771,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50AU01",
+      "title": "Domaine Le Martinat",
+      "latitude": "44.8932180",
+      "longitude": "0.54694826",
+      "active": true,
+      "photos": [],
+      "updated": 1528654508679,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50AU0C",
+      "title": "Vignobles Serge Gazziola",
+      "latitude": "44.8130854",
+      "longitude": "0.32407586",
+      "active": true,
+      "photos": [],
+      "updated": 1528654496784,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50B0P2",
+      "title": "Château de Gurson",
+      "latitude": "44.9464500",
+      "longitude": "0.0909819",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129807,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50B0PF",
+      "title": "Château de Puypezat-Rosette",
+      "latitude": "44.867126",
+      "longitude": "0.476432",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129818,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50B0PK",
+      "title": "Domaine du Grand Boisse",
+      "latitude": "44.89277",
+      "longitude": "0.480058",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129830,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50B0Q8",
+      "title": "Château Le Chrisly / Clos la Selmonie",
+      "latitude": "44.7944517",
+      "longitude": "0.42727285",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129848,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50B0QH",
+      "title": "Château Thenoux",
+      "latitude": "44.783243",
+      "longitude": "0.507124",
+      "active": true,
+      "photos": [],
+      "updated": 1528654508718,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
+    },
+    {
+      "id": "DEGAQU024V50B5LT",
+      "title": "Château Brunet-Charpentière",
+      "latitude": "44.8954562",
+      "longitude": "0.13264019",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129871,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU024V50B5M4",
+      "title": "Château des Ganfards",
+      "latitude": "44.790326",
+      "longitude": "0.310379",
+      "active": true,
+      "photos": [],
+      "updated": 1528654129881,
+      "tags": []
+    },
+    {
+      "id": "DEGAQU047FS000AP",
+      "title": "Clos du Pech Bessou",
+      "latitude": "44.69402",
+      "longitude": "0.55691",
+      "active": true,
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--3-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--2-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance71.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance111.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance31.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance61.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance81.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance91.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance41.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance101.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance51.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance11.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance21.JPG"
+      ],
+      "updated": 1528654474715,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
+    }
+  ]
+}

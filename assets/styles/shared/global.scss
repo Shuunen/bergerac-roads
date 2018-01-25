@@ -1,0 +1,42 @@
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: 15px;
+  line-height: 1.7;
+  @media (max-width: 450px) {
+    font-size: 13px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-family: $font-secondary;
+  font-weight: normal;
+  color: $white;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+p {
+  text-align: justify;
+}
+
+@import 'element-fixes';
+@import 'helpers';
+@import 'responsive';
+@import 'transitions';
+@import 'fonts';

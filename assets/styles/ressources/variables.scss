@@ -1,0 +1,37 @@
+
+/* Theme from "Charte 2016.pdf" */
+
+$green: #73ca4a;
+$red: #ef2a44;
+$pink: #f78e9d;
+$orange: #f89c21;
+$black: #231f20;
+
+/* Lighter & Darker */
+$green-d1: darken($green, 10);
+$green-d2: darken($green, 20);
+$green-d3: darken($green, 30);
+$green-d4: darken($green, 40);
+$red-l1: lighten($red, 10);
+$red-l2: lighten($red, 20);
+$red-l3: lighten($red, 30);
+$red-l4: lighten($red, 40);
+$red-d1: darken($red, 10);
+$red-d2: darken($red, 20);
+$red-d3: darken($red, 30);
+$red-d4: darken($red, 40);
+$black-l1: lighten($black, 10);
+$black-l2: lighten($black, 20);
+$black-l3: lighten($black, 30);
+$black-l4: lighten($black, 40);
+$black-l5: lighten($black, 50);
+$black-l6: lighten($black, 60);
+$black-l7: lighten($black, 70);
+
+/* Added */
+
+$white: #fdfcf1;
+
+/* Fonts */
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Cabin', sans-serif;

@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+.idea
+
+# https://pwa.nuxtjs.org/setup.html
+sw.*
+
+.DS_Store
+yarn-error.log

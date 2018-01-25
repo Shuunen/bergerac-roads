@@ -1,0 +1,9 @@
+
+# Doc : https://www.netlify.com/docs/redirects/
+
+# HTTPS enforcement
+http://bergerac-roads.netlify.com https://bergerac-roads.netlify.com
+http://bergerac-roads.netlify.com/* https://bergerac-roads.netlify.com/:splat
+
+# History Pushstate and Single Page Apps
+/*    /index.html   200

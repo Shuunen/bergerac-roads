@@ -1,0 +1,35 @@
+section {
+  .el-tag .el-icon-close {
+    color: inherit;
+  }
+  .el-alert {
+    margin-bottom: 20px;
+    .el-alert__icon {
+      font-size: 1.5rem;
+    }
+    .el-alert__title {
+      font-size: 1rem;
+      color: $orange;
+      margin-left: 10px;
+    }
+  }
+  .el-main {
+    max-width: 1280px;
+    align-self: center;
+    width: 100%;
+    overflow: visible;
+  }
+  .el-button {
+    font-weight: bold;
+  }
+  .el-table .inactive-row, .el-table .inactive-row:hover {
+    color: $black-l3;
+    background-color: $black-l7;
+    font-style: italic;
+  }
+  .el-card.take-height {
+    &, & > .el-card__body, & > .el-card__body > .el-container {
+      height: 100%;
+    }
+  }
+}
