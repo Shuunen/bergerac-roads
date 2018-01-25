@@ -20,7 +20,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: ['plugins/element-ui'],
   build: {
+    vendor: ['element-ui'],
     /*
     ** Run ESLint on save
     */
