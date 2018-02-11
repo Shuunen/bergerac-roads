@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -25,12 +27,20 @@ module.exports = {
   ** Build configuration
   */
   plugins: ['plugins/element-ui'],
+  /*
+  modules: [
+    'nuxt-sass-resources-loader'
+  ],
+  sassResources: [
+    path.resolve(__dirname, 'assets/*.scss')
+  ],
+  */
   build: {
     vendor: ['element-ui'],
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',

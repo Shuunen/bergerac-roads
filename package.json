@@ -20,6 +20,10 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "nuxt-sass-resources-loader": "^1.1.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1"
   }
 }

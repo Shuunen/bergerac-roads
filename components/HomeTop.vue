@@ -35,11 +35,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '~assets/variables';
 h1 {
   font-size: 7vw;
   text-align: center;
-  color: whitesmoke;
+  color: $color-light;
   z-index: 20;
 }
 h1::after,
@@ -72,7 +73,8 @@ h1::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #2f485833;
+  background: #2f4858;
+  opacity: .2;
   content: '';
   display: block;
 }
