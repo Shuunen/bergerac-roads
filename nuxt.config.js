@@ -14,6 +14,9 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Milonga' }
     ]
   },
+  css: [
+    '~assets/global.css'
+  ],
   /*
   ** Customize the progress bar color
   */

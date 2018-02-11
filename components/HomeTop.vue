@@ -1,18 +1,15 @@
 <template>
-  <el-container class="background">
-    <h1>Les routes du Bergerac</h1>
+  <el-container class="background page-height">
+    <el-main>
+      <el-row class="parent-height" type="flex" justify="center" align="middle">
+        <h1>Les routes du Bergerac</h1>
+      </el-row>
+    </el-main>
   </el-container>
 </template>
 
 <style scoped>
-.el-container {
-  height: 100vh;
-}
 h1 {
-  font-family: "Milonga", cursive;
-  width: 100%;
-  text-align: center;
-  margin: auto;
   font-size: 7vw;
   color: white;
 }

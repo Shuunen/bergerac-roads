@@ -1,0 +1,11 @@
+h1 {
+  font-family: "Milonga", cursive;
+}
+
+.page-height {
+  height: 100vh;
+}
+
+.parent-height {
+  height: 100%;
+}
