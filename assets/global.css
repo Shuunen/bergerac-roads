@@ -2,6 +2,11 @@ html * {
   box-sizing: border-box;
 }
 
+/*
+Theme from https://mycolor.space/ with base color #9E9A67
+#9E9A67 #748E66 #507F69 #376E6A #2E5B65 #2F4858
+*/
+
 h1 {
   font-family: "Sacramento", cursive;
   font-weight: normal;

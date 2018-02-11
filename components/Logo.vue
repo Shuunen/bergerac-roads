@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
-    <div class="icon"/>
-    <h1 class="text">Les routes du Bergerac</h1>
+    <div class="icon" />
+    <h1 class="text">Routes du Bergerac</h1>
   </div>
 </template>
 
@@ -16,6 +16,7 @@
   width: fit-content;
   padding: 10px 20px;
   background-color: #9e9a67;
+  color: whitesmoke;
 }
 .icon {
   margin: 3px 0 5px;
@@ -27,6 +28,5 @@
 }
 .text {
   font-size: 2rem;
-  color: whitesmoke;
 }
 </style>

@@ -72,7 +72,7 @@ h1::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #2f485855;
+  background: #2f485833;
   content: '';
   display: block;
 }
