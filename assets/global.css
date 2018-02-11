@@ -4,7 +4,18 @@ html * {
 
 /*
 Theme from https://mycolor.space/ with base color #9E9A67
+Generic Gradient
 #9E9A67 #748E66 #507F69 #376E6A #2E5B65 #2F4858
+ base    base-1  base-2  base-3  base-4  base-5
+Classy Palette
+#9E9A67 #494738 #AEAC99 #4CA6A3 #00716F
+         dark    grey    blue-l  blue-d
+Pin Palette
+#9E9A67 #444C00 #F0DEB4 #005B49
+         green   skin    blue-green
+Natural Palette
+#9E9A67 #95951B #FCFAE8 #F0DEB4
+                 bright  skin
 */
 
 h1 {

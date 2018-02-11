@@ -59,7 +59,7 @@ h1::before {
 }
 .el-header,
 .el-footer {
-  background: #2f4858;
+  background: #2F4858;
 }
 .el-main {
   position: relative;

@@ -16,7 +16,7 @@
   width: fit-content;
   padding: 10px 20px;
   background-color: #9e9a67;
-  color: whitesmoke;
+  color: #fcfae8;
 }
 .icon {
   margin: 3px 0 5px;
