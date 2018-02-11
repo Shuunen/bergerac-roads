@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .logo {
   z-index: 20;
   position: absolute;
@@ -15,8 +15,8 @@
   align-items: center;
   width: fit-content;
   padding: 10px 20px;
-  background-color: #9e9a67;
-  color: #fcfae8;
+  background-color: $base;
+  color: $bright;
 }
 .icon {
   margin: 3px 0 5px;

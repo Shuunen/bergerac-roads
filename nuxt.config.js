@@ -17,7 +17,7 @@ module.exports = {
     ]
   },
   css: [
-    '~assets/global.css'
+    '~assets/styles/shared/global.scss'
   ],
   /*
   ** Customize the progress bar color
@@ -27,14 +27,12 @@ module.exports = {
   ** Build configuration
   */
   plugins: ['plugins/element-ui'],
-  /*
   modules: [
     'nuxt-sass-resources-loader'
   ],
   sassResources: [
-    path.resolve(__dirname, 'assets/*.scss')
+    path.resolve(__dirname, 'assets/styles/ressources/*.scss')
   ],
-  */
   build: {
     vendor: ['element-ui'],
     /*

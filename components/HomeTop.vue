@@ -36,17 +36,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/variables';
 h1 {
   font-size: 7vw;
   text-align: center;
-  color: $color-light;
+  color: $bright;
   z-index: 20;
 }
 h1::after,
 h1::before {
   margin: auto;
-  background-color: whitesmoke;
+  background-color: $skin;
   height: 3px;
   width: 30vw;
   content: "";
@@ -60,7 +59,7 @@ h1::before {
 }
 .el-header,
 .el-footer {
-  background: #2F4858;
+  background: $base-5;
 }
 .el-main {
   position: relative;
@@ -73,7 +72,7 @@ h1::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #2f4858;
+  background: $base-5;
   opacity: .2;
   content: '';
   display: block;

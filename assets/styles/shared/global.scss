@@ -1,0 +1,27 @@
+html * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-family: Sacramento, cursive;
+  font-weight: normal;
+}
+
+.page-height {
+  height: 100vh;
+}
+
+.parent-height {
+  height: 100%;
+}
