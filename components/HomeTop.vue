@@ -1,21 +1,79 @@
 <template>
   <el-container class="background page-height">
+    <Logo />
+    <el-header>
+
+    </el-header>
     <el-main>
       <el-row class="parent-height" type="flex" justify="center" align="middle">
-        <h1>Les routes du Bergerac</h1>
+        <h1>Venez découvrir nos producteurs</h1>
       </el-row>
     </el-main>
+    <el-footer>
+
+    </el-footer>
   </el-container>
 </template>
+
+<script>
+import Logo from "~/components/Logo.vue";
+
+export default {
+  data() {
+    return {
+      activeIndex: "1"
+    };
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
+  },
+  components: {
+    Logo
+  }
+};
+</script>
 
 <style scoped>
 h1 {
   font-size: 7vw;
-  color: white;
+  text-align: center;
+  color: whitesmoke;
+  z-index: 20;
+}
+h1::after,
+h1::before {
+  margin: auto;
+  background-color: whitesmoke;
+  height: 3px;
+  width: 30vw;
+  content: "";
+  display: block;
+  margin-top: 8px;
 }
 .background {
-  background: url("/static/images/chateaux/mobile-phone-1875813_1920.jpg");
+  background: url("/static/images/vignes-03.jpg");
   background-size: cover;
   background-position: center;
+}
+.el-header,
+.el-footer {
+  background: #2f4858;
+}
+.el-main {
+  position: relative;
+  overflow: hidden;
+}
+.el-main::after {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #2f485855;
+  content: '';
+  display: block;
 }
 </style>

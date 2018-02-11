@@ -1,5 +1,10 @@
+html * {
+  box-sizing: border-box;
+}
+
 h1 {
-  font-family: "Milonga", cursive;
+  font-family: "Sacramento", cursive;
+  font-weight: normal;
 }
 
 .page-height {
