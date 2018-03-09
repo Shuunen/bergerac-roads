@@ -1,32 +1,15 @@
 <template>
   <div class="logo">
-    <div class="icon" />
-    <h1 class="text">Routes du Bergerac</h1>
+    <img src="logos/logo-2016-bergerac-duras.png">
   </div>
 </template>
 
 <style lang="scss" scoped>
 .logo {
-  z-index: 20;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  padding: 10px 20px;
-  background-color: $base;
-  color: $bright;
-}
-.icon {
-  margin: 3px 0 5px;
-  height: 50px;
-  width: 50px;
-  background: url("/static/icones/wine-glass.svg");
-  background-size: cover;
-  background-position: center;
-}
-.text {
-  font-size: 2rem;
+  padding: 5px 20px;
+  background-color: $bright;
+  img {
+    height: 140px;
+  }
 }
 </style>

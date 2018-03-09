@@ -1,21 +1,26 @@
 <template>
   <el-container class="background page-height">
-    <Logo />
-    <el-header>
 
-    </el-header>
+    <el-row class="top-overlay">
+      <Logo />
+      <Lang />
+    </el-row>
+
+    <el-header></el-header>
+
     <el-main>
       <el-row class="parent-height" type="flex" justify="center" align="middle">
         <h1>Venez découvrir nos producteurs</h1>
       </el-row>
     </el-main>
-    <el-footer>
 
-    </el-footer>
+    <el-footer></el-footer>
+
   </el-container>
 </template>
 
 <script>
+import Lang from "~/components/Lang.vue";
 import Logo from "~/components/Logo.vue";
 
 export default {
@@ -30,6 +35,7 @@ export default {
     }
   },
   components: {
+    Lang,
     Logo
   }
 };
@@ -61,6 +67,14 @@ h1::before {
 .el-footer {
   background: $base-5;
 }
+.top-overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 20;
+  justify-content: space-between;
+}
 .el-main {
   position: relative;
   overflow: hidden;
@@ -73,8 +87,8 @@ h1::before {
   height: 100%;
   width: 100%;
   background: $base-5;
-  opacity: .2;
-  content: '';
+  opacity: 0.2;
+  content: "";
   display: block;
 }
 </style>
