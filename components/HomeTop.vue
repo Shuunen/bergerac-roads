@@ -16,6 +16,8 @@
 
     <el-footer></el-footer>
 
+    <img class="panneau" src="/images/entrant/panneau.png" alt="panneau">
+
   </el-container>
 </template>
 
@@ -59,7 +61,7 @@ h1::before {
   margin-top: 8px;
 }
 .background {
-  background: url("/static/images/vignes-03.jpg");
+  background-image: url("/static/images/vignes-03.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -79,7 +81,14 @@ h1::before {
   position: relative;
   overflow: hidden;
 }
-.el-main::after {
+.panneau {
+  position: absolute;
+  bottom: 130px;
+  left: 10px;
+  height: 60%;
+  transform: rotate(3deg);
+}
+/*.el-main::after {
   z-index: 10;
   top: 0;
   left: 0;
@@ -90,5 +99,5 @@ h1::before {
   opacity: 0.2;
   content: "";
   display: block;
-}
+}*/
 </style>
