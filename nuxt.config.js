@@ -28,10 +28,9 @@ module.exports = {
   */
   plugins: ['plugins/element-ui'],
   modules: [
-    'nuxt-sass-resources-loader'
-  ],
-  sassResources: [
-    path.resolve(__dirname, 'assets/styles/ressources/*.scss')
+    ['nuxt-sass-resources-loader', {
+      resources: ['./assets/styles/ressources/variables.scss']
+    }],
   ],
   build: {
     vendor: ['element-ui'],
