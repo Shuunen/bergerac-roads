@@ -1,6 +1,7 @@
 <template>
   <el-container class="background page-height">
     <Logo />
+    <Social />
     <el-header>
 
     </el-header>
@@ -17,6 +18,7 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
+import Social from "~/components/Social.vue";
 
 export default {
   data() {
@@ -30,7 +32,8 @@ export default {
     }
   },
   components: {
-    Logo
+    Logo,
+    Social
   }
 };
 </script>
@@ -59,7 +62,7 @@ h1::before {
 }
 .el-header,
 .el-footer {
-  background: $base-5;
+  background: $white;
 }
 .el-main {
   position: relative;

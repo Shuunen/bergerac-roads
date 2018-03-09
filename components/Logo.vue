@@ -15,14 +15,14 @@
   align-items: center;
   width: fit-content;
   padding: 10px 20px;
-  background-color: $base;
-  color: $bright;
+  background-color: $grey_l;
+  color: #f6b24c;
 }
 .icon {
   margin: 3px 0 5px;
   height: 50px;
   width: 50px;
-  background: url("/static/icones/wine-glass.svg");
+  background: url("/static/logos/picto-logo.png");
   background-size: cover;
   background-position: center;
 }
