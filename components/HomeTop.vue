@@ -80,6 +80,9 @@ h1::before {
 .el-main {
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .panneau {
   position: absolute;
