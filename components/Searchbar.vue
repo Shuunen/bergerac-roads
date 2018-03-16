@@ -1,45 +1,88 @@
 <template>
-  <div class="filters">
+  <div class="search-bar">
 
-    <el-checkbox :indeterminate="isIndeterminate"
-                 v-model="checkAll"
-                 @change="handleCheckAllChange">Check all</el-checkbox>
-    <div style="margin: 15px 0;"></div>
-    <el-checkbox-group v-model="checkedFilters" @change="handleCheckedCitiesChange">
-      <el-checkbox v-for="filter in filters" :label="filter" :key="filter">{{filter}}</el-checkbox>
-    </el-checkbox-group>
+    <div class="filters">
 
-    <div @click="testFuction"><h3>TEST</h3></div>
+      <el-checkbox-group v-model="checkedFilters" @change="handleCheckedCitiesChange">
+        <el-checkbox-button v-for="filter in filters"
+                            :label="filter.name" :key="filter.key" size="medium" border >
+          {{filter.label}}
+        </el-checkbox-button>
+      </el-checkbox-group>
 
-    <ul >
-        <li v-for="domaine in domaines" :key="domaine.key">nom : {{domaine.label}}</li>
-      </ul>
+
     </div>
 
+    <el-row>
+      <el-col :span="8"><div class="grid-content bg-purple">
+        <span>Results nb {{domaines | sum }}</span>
+      </div></el-col>
+      <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="8"><div class="grid-content bg-purple"></div>
+        <el-button type="primary" round icon="el-icon-refresh">Create</el-button>
+      </el-col>
+    </el-row>
 
+
+
+    <ul>
+      <li v-for="domaine in domaines" :key="domaine.key" >
+        <h4>{{domaine.label}}</h4>
+        <div>
+          <div v-for="filter in domaine.filters" :key="filter.key" >{{filter.label}}</div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
 </template>
 
 <style lang="scss" scoped>
 
-  .filters{
-    background-color: wheat;
+  .search-bar{
+    background-color: #ffffff6b;
+    padding: 20px;
   }
+  .filters{
+    background-color: $bright;
+  }
+
+
 </style>
 
 
 <script>
 
-    const filters = ['filtre1', 'filtre2', 'filtre3'];
-    let domaines =  [
-        {'key':0,'label':'domaine 1', 'filters':'filtre1'},
-        {'key':1,'label':'domaine 2', 'filters':'filtre2'},
-        {'key':2,'label':'domaine 3', 'filters':'filtre2'},
-        {'key':3,'label':'domaine 4', 'filters':'filtre3'}
+    const filters = [
+        {'key':0,'label':'Vin Bio', 'name':'filtre1'},
+        {'key':1,'label':'Domaine skiable', 'name':'filtre2'},
+        {'key':2,'label':'Vin super bon', 'name':'filtre3'},
+
     ];
+    let domaines =  [
+        {'key':0,'label':'domaine 1', 'filters':[
+            {'key':0,'label':'Vin Bio', 'name':'filtre1'}
+        ], 'address':'123 bd du vin'},
+        {'key':1,'label':'domaine 2', 'filters': [
+            {'key':1,'label':'Domaine skiable', 'name':'filtre2'}
+        ], 'address':'123 bd du vin'},
+        {'key':2,'label':'domaine 3', 'filters': [
+            {'key':0,'label':'Vin Bio', 'name':'filtre1'},
+            {'key':1,'label':'Domaine skiable', 'name':'filtre2'}
+        ], 'address':'123 bd du vin'},
+        {'key':3,'label':'domaine 4', 'filters': [
+            {'key':1,'label':'Domaine skiable', 'name':'filtre2'},
+            {'key':2,'label':'Vin super bon', 'name':'filtre3'}
+        ], 'address':'123 bd du vin'}
+    ];
+
 
     export default {
         data() {
+
+
             return {
+                currentDate: new Date(),
                 checkAll: false,
                 checkedFilters: [],
                 filters,
@@ -52,26 +95,79 @@
             handleCheckAllChange(val) {
                 this.checkedFilters = val ? filters : [];
                 this.isIndeterminate = false;
+
             },
             handleCheckedCitiesChange(value) {
-                console.log('handleCheckedCitiesChange value = ' + value);
+                // console.log('handleCheckedCitiesChange value = ' + value);
 
                 let checkedCount = value.length;
                 this.checkAll = checkedCount === this.filters.length;
                 this.isIndeterminate = checkedCount > 0 && checkedCount < this.filters.length;
+
+
+
+
+                let checkedFiltersToApply = this.checkedFilters;
+
+                if(checkedFiltersToApply.length === 0){
+                    this.domaines = domaines;
+                }else {
+                    this.domaines = this.domaines.filter(function (domaine) {
+                        console.log('apply' + checkedFiltersToApply);
+                        let isValid = false;
+                        domaine.filters.forEach(function(filter){
+
+                            if(checkedFiltersToApply.indexOf(filter.name)>=0 || isValid){
+                                console.log('in filter array');
+                                isValid = true;
+
+                            }else {
+                                isValid =  false;
+                            }
+                        })
+                        return isValid;
+                    })
+                }
+
+
+
             },
-            testFuction(){
+            applyFilter(){
+                let checkedFiltersToApply = this.checkedFilters;
 
-                this.domaines = this.domaines.filter(function (item) {
-                    return item.filters == 'filtre1';
+                if(checkedFiltersToApply.length === 0){
+                    this.domaines = domaines;
+                }else {
+                    this.domaines = this.domaines.filter(function (domaine) {
+                        console.log('apply' + checkedFiltersToApply);
+                        let isValid = false;
+                        domaine.filters.forEach(function(filter){
 
-                })
+                            if(checkedFiltersToApply.indexOf(filter)>=0){
+                                console.log('in filter array');
+                                isValid = true;
 
-                console.log('domaines  = ' + this.domaines);
+                            }else {
+                                isValid =  false;
+                            }
+                        })
+                        return isValid;
+                    })
+                }
+
             }
 
-
         },
+        filters: {
+            capitalize: function (value) {
+                if (!value) return ''
+                value = value.toString()
+                return value.charAt(0).toUpperCase() + value.slice(1)
+            },
+            sum: function(value){
+                return value.length;
+            }
+        }
 
     };
 </script>
