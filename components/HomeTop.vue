@@ -2,17 +2,29 @@
   <el-container class="background page-height">
 
     <el-row class="top-overlay">
-      <Logo />
-      <Lang />
+      <Logo/>
+      <Lang/>
     </el-row>
 
     <el-header></el-header>
 
     <el-main>
       <el-row class="parent-height" type="flex" justify="center" align="middle">
-        <h1>Venez découvrir nos producteurs</h1>
+        <el-col :span="24">
+          <div class="grid-content bg-purple-dark"><h1>Venez découvrir nos producteurs</h1>
+          </div>
+        </el-col>
       </el-row>
     </el-main>
+
+    <el-row>
+      <el-col :span="18" :offset="6">
+        <div class="grid-content bg-purple">
+          <Searchbar/>
+        </div>
+      </el-col>
+
+    </el-row>
 
     <el-footer></el-footer>
 
@@ -24,21 +36,27 @@
 <script>
 import Lang from "~/components/Lang.vue";
 import Logo from "~/components/Logo.vue";
+import Searchbar from "~/components/Searchbar";
 
 export default {
+
   data() {
     return {
-      activeIndex: "1"
+      activeIndex: "1",
     };
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-    }
+    },
+
+
+
   },
   components: {
     Lang,
-    Logo
+    Logo,
+    Searchbar
   }
 };
 </script>
