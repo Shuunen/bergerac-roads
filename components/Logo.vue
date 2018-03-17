@@ -1,7 +1,7 @@
 <template>
-  <div class="logo">
+  <a href="/" class="logo">
     <img src="logos/logo-2016-bergerac-duras.png">
-  </div>
+  </a>
 </template>
 
 <style lang="scss" scoped>
