@@ -5,7 +5,9 @@
   "private": true,
   "license": "AGPL-3.0",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nuxt",
+    "dev:db": "json-server dev-db.json",
     "build": "nuxt build --spa",
     "start": "nuxt start",
     "generate": "nuxt generate --spa",
@@ -14,6 +16,8 @@
   },
   "dependencies": {
     "element-ui": "^2.2.2",
+    "json-server": "^0.12.1",
+    "npm-run-all": "^4.1.2",
     "nuxt": "^1.4.0",
     "nuxt-sass-resources-loader": "^1.2.0"
   },
