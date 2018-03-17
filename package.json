@@ -12,17 +12,17 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "element-ui": "^2.0.11",
-    "nuxt": "^1.0.0",
+    "element-ui": "^2.2.2",
+    "nuxt": "^1.4.0",
     "nuxt-sass-resources-loader": "^1.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.18.2",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.3.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.8.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3"
   }
