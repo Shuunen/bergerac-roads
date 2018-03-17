@@ -6,6 +6,7 @@
 
 <style lang="scss" scoped>
 .logo {
+  display: block;
   padding: 5px 20px;
   background-color: $bright;
   img {
