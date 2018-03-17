@@ -80,7 +80,6 @@
     export default {
         data() {
 
-
             return {
                 currentDate: new Date(),
                 checkAll: false,
@@ -98,7 +97,7 @@
 
             },
             handleCheckedCitiesChange(value) {
-                // console.log('handleCheckedCitiesChange value = ' + value);
+                //console.log('handleCheckedCitiesChange value = ' + value);
 
                 let checkedCount = value.length;
                 this.checkAll = checkedCount === this.filters.length;
@@ -109,9 +108,10 @@
 
                 let checkedFiltersToApply = this.checkedFilters;
 
-                if(checkedFiltersToApply.length === 0){
-                    this.domaines = domaines;
-                }else {
+
+                this.domaines = domaines;
+
+                if(checkedFiltersToApply.length !== 0) {
                     this.domaines = this.domaines.filter(function (domaine) {
                         console.log('apply' + checkedFiltersToApply);
                         let isValid = false;
@@ -132,30 +132,7 @@
 
 
             },
-            applyFilter(){
-                let checkedFiltersToApply = this.checkedFilters;
 
-                if(checkedFiltersToApply.length === 0){
-                    this.domaines = domaines;
-                }else {
-                    this.domaines = this.domaines.filter(function (domaine) {
-                        console.log('apply' + checkedFiltersToApply);
-                        let isValid = false;
-                        domaine.filters.forEach(function(filter){
-
-                            if(checkedFiltersToApply.indexOf(filter)>=0){
-                                console.log('in filter array');
-                                isValid = true;
-
-                            }else {
-                                isValid =  false;
-                            }
-                        })
-                        return isValid;
-                    })
-                }
-
-            }
 
         },
         filters: {
