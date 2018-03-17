@@ -12,7 +12,7 @@
       {'index': 0, 'label':'photo1'},
       {'index': 1, 'label':'photo2'},
       {'index': 2, 'label':'photo3'},
-  ];
+  ]
 
 
   export default {

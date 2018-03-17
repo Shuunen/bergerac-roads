@@ -39,21 +39,21 @@
 </template>
 
 <script>
-import Lang from "~/components/Lang.vue";
-import Logo from "~/components/Logo.vue";
-import Searchbar from "~/components/Searchbar";
-import Carousel from "~/components/Carousel";
+import Lang from '~/components/Lang.vue'
+import Logo from '~/components/Logo.vue'
+import Searchbar from '~/components/Searchbar'
+import Carousel from '~/components/Carousel'
 
 export default {
 
   data() {
     return {
-      activeIndex: "1",
-    };
+      activeIndex: '1',
+    }
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log(key, keyPath);
+      console.log(key, keyPath)
     },
 
 
@@ -65,7 +65,7 @@ export default {
     Searchbar,
     Carousel
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

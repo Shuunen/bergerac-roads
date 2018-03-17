@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import HomeTop from "~/components/HomeTop.vue";
+import HomeTop from '~/components/HomeTop.vue'
 
 export default {
   components: {
     HomeTop
   }
-};
+}
 </script>
 
 <style>
