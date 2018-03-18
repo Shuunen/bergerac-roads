@@ -17,14 +17,5 @@ module.exports = {
     'vue'
   ],
   // add your custom rules here
-  rules: {
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
-  }
+  rules: {}
 }

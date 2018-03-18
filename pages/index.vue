@@ -1,13 +1,18 @@
 <template>
-  <HomeTop />
+  <el-container direction="vertical" class="index">
+    <Header />
+    <HomeTop />
+  </el-container>
 </template>
 
 <script>
-import HomeTop from '~/components/HomeTop.vue'
+import Header from '~/components/Header.vue'
+import HomeTop from '~/components/Home-Top.vue'
 
 export default {
   components: {
-    HomeTop
+    HomeTop,
+    Header
   }
 }
 </script>
