@@ -1,3 +1,28 @@
 {
-  "domaines": []
+  "domaines": [
+    {
+      "id": 1,
+      "title": "Chateau de la Masse",
+      "active": true,
+      "updated": 1521388806603
+    },
+    {
+      "id": 2,
+      "title": "Chateau Monseigneur",
+      "active": true,
+      "updated": 1521244800603
+    },
+    {
+      "id": 3,
+      "title": "Domaine Prêche",
+      "active": false,
+      "updated": 1521244802103
+    },
+    {
+      "id": 4,
+      "title": "Chateau la Paroisse",
+      "active": true,
+      "updated": 1521244801403
+    }
+  ]
 }

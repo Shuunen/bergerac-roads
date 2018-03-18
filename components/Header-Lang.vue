@@ -1,10 +1,14 @@
 <template>
   <el-dropdown class="lang">
     <span class="el-dropdown-link french flag">
-      Français<i class="el-icon-arrow-down el-icon--right"></i>
+      Français
+      <i class="el-icon-arrow-down el-icon--right"></i>
     </span>
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item class="english flag">English</el-dropdown-item>
+      <el-dropdown-item>
+        <a href="/admin">Admin</a>
+      </el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
