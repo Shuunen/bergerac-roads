@@ -1,30 +1,18 @@
-/*
-Theme from https://mycolor.space/ with base color #9E9A67
-Generic Gradient
-#9E9A67 #748E66 #507F69 #376E6A #2E5B65 #2F4858
- base    base-1  base-2  base-3  base-4  base-5
-Classy Palette
-#9E9A67 #494738 #AEAC99 #4CA6A3 #00716F
-         dark    grey    blue-l  blue-d
-Pin Palette
-#9E9A67 #444C00 #F0DEB4 #005B49
-         green   skin    blue-green
-Natural Palette
-#9E9A67 #95951B #FCFAE8 #F0DEB4
-                 bright  skin
-*/
 
-$bright:#FCFAE8;
-$skin: #F0DEB4;
-$dark: #494738;
-$grey: #AEAC99;
-$blue-l: #4CA6A3;
-$blue-d: #00716F;
-$base: #9E9A67;
-$base-1: #748E66;
-$base-2: #507F69;
-$base-3: #376E6A;
-$base-4: #2E5B65;
-$base-5: #2F4858;
+/* Theme from "Charte 2016.pdf" */
 
-$wine: #75001D;
+$green: #73ca4a;
+$red: #ef2a44;
+$pink: #f78e9d;
+$orange: #f89c21;
+$black: #231f20;
+
+/* Lighter & Darker */
+$green-d1: darken($green, 10);
+$green-d2: darken($green, 20);
+$green-d3: darken($green, 30);
+$green-d4: darken($green, 40);
+
+/* Added */
+
+$white: #fcfae8;

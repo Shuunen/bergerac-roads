@@ -40,6 +40,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .admin-table {
-  background-color: $bright;
+  background-color: $white;
 }
 </style>

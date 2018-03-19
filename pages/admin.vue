@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .admin {
-  background: $base-5;
+  background: $green-d1;
   height: 100vh;
 }
 .admin-table {

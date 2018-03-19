@@ -42,7 +42,7 @@
   padding: 20px;
 }
 .filters {
-  background-color: $bright;
+  background-color: $white;
 }
 </style>
 

@@ -7,8 +7,8 @@
 <style lang="scss" scoped>
 .logo {
   display: block;
-  padding: 5px 20px;
-  background-color: $bright;
+  padding: 0 10px;
+  background-color: $white;
   img {
     height: 140px;
   }

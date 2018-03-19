@@ -37,7 +37,7 @@ export default {
   }
 }
 h1 {
-  color: $bright;
+  color: $white;
   align-self: center;
   flex-grow: 1;
   text-align: center;

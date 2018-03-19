@@ -17,7 +17,7 @@
 .el-dropdown {
   margin-left: auto;
   height: 20px;
-  color: $bright;
+  color: $white;
   cursor: pointer;
   margin-top: 20px;
   margin-right: 10px;

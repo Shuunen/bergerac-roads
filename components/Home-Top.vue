@@ -15,19 +15,21 @@
 <style lang="scss" scoped>
 h1 {
   font-size: 7vw;
+  line-height: 1.2;
   text-align: center;
-  color: $bright;
+  color: $white;
+  padding: 20px 40px;
   z-index: 20;
+  background: rgba($green-d3, 0.33);
 }
 h1::after,
 h1::before {
-  margin: auto;
-  background-color: $skin;
+  margin: 30px auto;
+  background-color: $white;
   height: 3px;
-  width: 30vw;
+  width: 24vw;
   content: "";
   display: block;
-  margin-top: 8px;
 }
 .background {
   background-image: url("/static/images/entrant/credit photo Akim Benbrahim.jpg");
@@ -37,7 +39,7 @@ h1::before {
 }
 .color-line {
   height: 55px;
-  background: $base-5;
+  background: $green-d2;
 }
 .panneau {
   position: absolute;
