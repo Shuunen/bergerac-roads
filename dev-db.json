@@ -1,0 +1,50 @@
+{
+  "tags": [
+    {
+      "id": 2,
+      "name": "Vin blanc"
+    },
+    {
+      "id": 3,
+      "name": "Vin rouge"
+    },
+    {
+      "id": 4,
+      "name": "Visites guidées"
+    },
+    {
+      "name": "Vin bio",
+      "id": 5
+    },
+    {
+      "name": "Dégustation offerte",
+      "id": 6
+    }
+  ],
+  "domains": [
+    {
+      "id": 1,
+      "title": "Chateau de la Masse",
+      "active": true,
+      "updated": 1521388806603
+    },
+    {
+      "id": 2,
+      "title": "Chateau Monseigneur",
+      "active": true,
+      "updated": 1521244800603
+    },
+    {
+      "id": 3,
+      "title": "Domaine Prêche",
+      "active": false,
+      "updated": 1521244802103
+    },
+    {
+      "id": 4,
+      "title": "Chateau la Paroisse",
+      "active": true,
+      "updated": 1521244801403
+    }
+  ]
+}

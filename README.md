@@ -1,16 +1,25 @@
-# bergerac-roads
+# Bergerac Roads
 
-> Nuxt.js project
+> a Nuxt.js project
 
-## Build Setup
+## Install
+
+| npm           | yarn           |
+| ------------- | -------------- |
+| `npm install` | `yarn install` |
+
+
+## Start
+
+| npm           | yarn       |
+| ------------- | ---------- |
+| `npm run dev` | `yarn dev` |
+
+The dev task will run in parrallel the dev server & database.
+
+## Build
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
 # build for production and launch server
 $ npm run build
 $ npm start

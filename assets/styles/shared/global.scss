@@ -2,8 +2,7 @@ html * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -12,10 +11,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 0;
   font-family: Sacramento, cursive;
   font-weight: normal;
+  color: $white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
 }
 
 .page-height {
@@ -24,4 +34,31 @@ h1 {
 
 .parent-height {
   height: 100%;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &.start {
+    justify-content: flex-start;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+}
+
+.color-line {
+  height: 55px;
+}
+
+section .el-tag .el-icon-close {
+  color: inherit;
+}
+
+.el-table .inactive-row, .el-table .inactive-row:hover {
+  color: $black-l3;
+  background-color: $black-l7;
+  font-style: italic;
 }
