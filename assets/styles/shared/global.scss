@@ -56,3 +56,9 @@ h3 {
 section .el-tag .el-icon-close {
   color: inherit;
 }
+
+.el-table .inactive-row, .el-table .inactive-row:hover {
+  color: $black-l3;
+  background-color: $black-l7;
+  font-style: italic;
+}

@@ -1,10 +1,12 @@
 <template>
   <el-container direction="vertical" class="admin-table">
     <h2>Domaines et chateaux</h2>
-    <el-table :data="tableData" stripe style="width: 100%">
-      <el-table-column prop="date" label="Date" width="180"></el-table-column>
-      <el-table-column prop="name" label="Name" width="180"></el-table-column>
-      <el-table-column prop="address" label="Address"></el-table-column>
+    <el-table :data="domains" stripe style="width: 100%" v-loading="loading" :row-class-name="tableRowClassName">
+      <el-table-column type="selection" width="55"></el-table-column>
+      <el-table-column prop="title" label="Nom"></el-table-column>
+      <el-table-column label="Actif ?" width="180">
+        <template slot-scope="scope">{{ scope.row.active ? 'oui' : 'non' }}</template>
+      </el-table-column>
     </el-table>
   </el-container>
 </template>
@@ -13,29 +15,43 @@
 export default {
   data() {
     return {
-      tableData: [
-        {
-          date: "2016-05-03",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles"
-        },
-        {
-          date: "2016-05-02",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles"
-        },
-        {
-          date: "2016-05-04",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles"
-        },
-        {
-          date: "2016-05-01",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles"
-        }
-      ]
+      api: process.env.api + "/domains",
+      loading: true,
+      domains: []
     };
+  },
+  methods: {
+    getDomains() {
+      this.loading = true;
+      fetch(this.api)
+        .then(response => response.json())
+        .then(domains => {
+          this.domains = domains;
+          this.loading = false;
+        });
+    },
+
+    addDomain(name) {
+      const headers = new Headers();
+      headers.append("Accept", "application/json"); // This one is enough for GET requests
+      headers.append("Content-Type", "application/json"); // This one sends body
+      const body = JSON.stringify({ name });
+      fetch(this.api, { method: "post", headers, body }).then(this.getDomains);
+    },
+
+    deleteDomain(id) {
+      fetch(this.api + "/" + id, { method: "delete" }).then(this.getDomains);
+    },
+
+    tableRowClassName({ row, rowIndex }) {
+      if (!row.active) {
+        return "inactive-row";
+      }
+      return "";
+    }
+  },
+  mounted() {
+    this.getDomains();
   }
 };
 </script>

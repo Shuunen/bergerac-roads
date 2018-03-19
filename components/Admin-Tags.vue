@@ -10,7 +10,7 @@
       </div>
 
       <el-tag :key="tag.id" v-for="tag in tags" closable
-       :disable-transitions="false" @close="deleteTag(tag)">
+       :disable-transitions="false" @close="deleteTag(tag.id)">
        {{ tag.name }}
       </el-tag>
 
@@ -46,16 +46,16 @@ export default {
         });
     },
 
-    addTag(tagName) {
+    addTag(name) {
       const headers = new Headers();
       headers.append("Accept", "application/json"); // This one is enough for GET requests
       headers.append("Content-Type", "application/json"); // This one sends body
-      const body = JSON.stringify({ name: tagName });
+      const body = JSON.stringify({ name });
       fetch(this.api, { method: "post", headers, body }).then(this.getTags);
     },
 
-    deleteTag(tag) {
-      fetch(this.api + "/" + tag.id, { method: "delete" }).then(this.getTags);
+    deleteTag(id) {
+      fetch(this.api + "/" + id, { method: "delete" }).then(this.getTags);
     },
 
     showInput() {
