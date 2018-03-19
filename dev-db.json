@@ -1,4 +1,22 @@
 {
+  "tags": [
+    {
+      "id": 1,
+      "name": "Vin bio"
+    },
+    {
+      "id": 2,
+      "name": "Vin blanc"
+    },
+    {
+      "id": 3,
+      "name": "Vin rouge"
+    },
+    {
+      "id": 4,
+      "name": "Visites guidées"
+    }
+  ],
   "domaines": [
     {
       "id": 1,

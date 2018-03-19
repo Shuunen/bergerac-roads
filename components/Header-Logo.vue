@@ -10,7 +10,7 @@
   padding: 0 10px;
   background-color: $white;
   img {
-    height: 140px;
+    width: 100%;
   }
 }
 </style>

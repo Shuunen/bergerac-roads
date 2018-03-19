@@ -1,5 +1,6 @@
 <template>
   <el-container direction="vertical" class="admin-table">
+    <h2>Domaines et chateaux</h2>
     <el-table :data="tableData" stripe style="width: 100%">
       <el-table-column prop="date" label="Date" width="180"></el-table-column>
       <el-table-column prop="name" label="Name" width="180"></el-table-column>
@@ -39,7 +40,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.admin-table {
+.admin-table .el-table {
   background-color: $white;
 }
 </style>

@@ -14,10 +14,8 @@
 
 <style lang="scss" scoped>
 h1 {
-  font-size: 7vw;
   line-height: 1.2;
   text-align: center;
-  color: $white;
   padding: 20px 40px;
   z-index: 20;
   background: rgba($green-d3, 0.33);
@@ -38,7 +36,6 @@ h1::before {
   height: calc(100vh - (55px * 2));
 }
 .color-line {
-  height: 55px;
   background: $green-d2;
 }
 .panneau {

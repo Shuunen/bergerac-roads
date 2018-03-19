@@ -1,8 +1,14 @@
 <template>
   <el-container class="header" :class="[ floating ? 'floating': 'fixed' ]">
-    <Logo />
-    <h1 :v-if="title">{{ title }}</h1>
-    <Lang />
+    <div class="logo-wrapper">
+      <Logo />
+    </div>
+    <div class="line" :v-if="title">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="lang-wrapper">
+      <Lang />
+    </div>
   </el-container>
 </template>
 
@@ -30,17 +36,21 @@ export default {
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   flex-grow: 0;
   &.floating {
     position: absolute;
   }
 }
-h1 {
-  color: $white;
-  align-self: center;
+.line {
   flex-grow: 1;
-  text-align: center;
-  font-size: 5rem;
+}
+.logo-wrapper,
+.lang-wrapper {
+  width: 220px;
+}
+.lang-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
