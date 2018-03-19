@@ -1,15 +1,15 @@
 <template>
   <el-container direction="vertical" class="recherche">
-    <SearchBar />
+    <Searchbar />
   </el-container>
 </template>
 
 <script>
-import SearchBar from "~/components/SearchBar";
+import Searchbar from "~/components/Searchbar";
 
 export default {
   components: {
-    SearchBar
+    Searchbar
   }
 };
 </script>

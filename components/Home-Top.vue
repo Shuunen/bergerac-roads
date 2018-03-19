@@ -2,7 +2,7 @@
   <el-container direction="vertical" class="home-top">
     <div class="color-line"></div>
     <div class="line background">
-      <h1>Venez découvrir nos producteurs</h1>
+      <h1>Venez découvrir<br>nos producteurs</h1>
       <img class="panneau" src="/images/entrant/panneau.png" alt="panneau">
     </div>
     <div class="color-line"></div>
@@ -30,19 +30,19 @@ h1::before {
   margin-top: 8px;
 }
 .background {
-  background-image: url("/static/images/vignes-03.jpg");
+  background-image: url("/static/images/entrant/credit photo Akim Benbrahim.jpg");
   background-size: cover;
   background-position: center;
-  height: 88vh;
+  height: calc(100vh - (55px * 2));
 }
 .color-line {
-  height: 6vh;
+  height: 55px;
   background: $base-5;
 }
 .panneau {
   position: absolute;
-  bottom: 130px;
-  left: 10px;
+  bottom: 55px;
+  left: 55px;
   height: 60%;
   transform: rotate(3deg);
 }
