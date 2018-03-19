@@ -103,12 +103,7 @@
                 this.checkAll = checkedCount === this.filters.length;
                 this.isIndeterminate = checkedCount > 0 && checkedCount < this.filters.length;
 
-
-
-
                 let checkedFiltersToApply = this.checkedFilters;
-
-
                 this.domaines = domaines;
 
                 if(checkedFiltersToApply.length !== 0) {
@@ -129,10 +124,7 @@
                     })
                 }
 
-
-
             },
-
 
         },
         filters: {
