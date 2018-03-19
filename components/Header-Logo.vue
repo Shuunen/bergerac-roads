@@ -1,6 +1,6 @@
 <template>
   <a href="/" class="logo">
-    <img src="logos/logo-2016-bergerac-duras.png">
+    <img src="/logos/logo-2016-bergerac-duras.png">
   </a>
 </template>
 
