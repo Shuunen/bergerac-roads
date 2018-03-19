@@ -19,6 +19,9 @@ module.exports = {
   css: [
     '~assets/styles/shared/global.scss'
   ],
+  env: {
+    api: 'http://localhost:3003'
+  },
   /*
   ** Customize the progress bar color
   */

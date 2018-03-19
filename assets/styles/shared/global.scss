@@ -40,6 +40,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   &.start {
     justify-content: flex-start;
   }
@@ -50,4 +51,8 @@ h3 {
 
 .color-line {
   height: 55px;
+}
+
+section .el-tag .el-icon-close {
+  color: inherit;
 }

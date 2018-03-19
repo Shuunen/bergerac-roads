@@ -4,16 +4,21 @@
     <h2>Mots clés</h2>
 
     <div class="line start">
-      <el-tag :key="tag" v-for="tag in tags" closable
-       :disable-transitions="false" @close="handleClose(tag)">
-       {{tag}}
+
+      <div class="loading line" v-if="loading">
+        <i class="el-icon-loading"></i>
+      </div>
+
+      <el-tag :key="tag.id" v-for="tag in tags" closable
+       :disable-transitions="false" @close="deleteTag(tag)">
+       {{ tag.name }}
       </el-tag>
 
       <el-input class="input-new-tag" v-if="inputVisible" v-model="inputValue" ref="saveTagInput" size="mini"
         @keyup.enter.native="handleInputConfirm" @blur="handleInputConfirm">
       </el-input>
 
-      <el-button v-else class="button-new-tag" size="small" @click="showInput">+ New Tag</el-button>
+      <el-button v-else class="button-new-tag" size="small" @click="showInput">+ Ajouter</el-button>
     </div>
 
   </el-container>
@@ -23,14 +28,34 @@
 export default {
   data() {
     return {
-      tags: ["Tag 1", "Tag 2", "Tag 3"],
+      api: process.env.api + "/tags",
+      loading: true,
+      tags: [],
       inputVisible: false,
       inputValue: ""
     };
   },
   methods: {
-    handleClose(tag) {
-      this.dynamicTags.splice(this.dynamicTags.indexOf(tag), 1);
+    getTags() {
+      this.loading = true;
+      fetch(this.api)
+        .then(response => response.json())
+        .then(tags => {
+          this.tags = tags;
+          this.loading = false;
+        });
+    },
+
+    addTag(tagName) {
+      const headers = new Headers();
+      headers.append("Accept", "application/json"); // This one is enough for GET requests
+      headers.append("Content-Type", "application/json"); // This one sends body
+      const body = JSON.stringify({ name: tagName });
+      fetch(this.api, { method: "post", headers, body }).then(this.getTags);
+    },
+
+    deleteTag(tag) {
+      fetch(this.api + "/" + tag.id, { method: "delete" }).then(this.getTags);
     },
 
     showInput() {
@@ -43,29 +68,49 @@ export default {
     handleInputConfirm() {
       let inputValue = this.inputValue;
       if (inputValue) {
-        this.dynamicTags.push(inputValue);
+        this.addTag(inputValue);
       }
       this.inputVisible = false;
       this.inputValue = "";
     }
+  },
+  mounted() {
+    this.getTags();
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.el-tag + .el-tag {
-  margin-left: 10px;
+.loading {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: $white;
+  font-size: 1.5rem;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+.el-tag,
+.button-new-tag,
+.input-new-tag {
+  background-color: $white;
+  color: $red-d4;
+  font-size: 1rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 .button-new-tag {
-  margin-left: 10px;
   height: 32px;
   line-height: 30px;
   padding-top: 0;
   padding-bottom: 0;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
 }
 .input-new-tag {
-  width: 90px;
-  margin-left: 10px;
-  vertical-align: bottom;
+  width: inherit;
 }
 </style>
