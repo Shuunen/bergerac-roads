@@ -2,24 +2,23 @@
   <el-container direction="vertical" class="index">
     <Header />
     <HomeTop />
-    <HomeMid />
+    <LastDomains />
+    <Footer />
   </el-container>
 </template>
 
 <script>
 import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 import HomeTop from "~/components/Home-Top.vue";
-import HomeMid from "~/components/Home-Mid.vue";
+import LastDomains from "~/components/Last-Domains.vue";
 
 export default {
   components: {
-    HomeMid,
+    LastDomains,
     HomeTop,
-    Header
+    Header,
+    Footer
   }
 };
 </script>
-
-<style>
-
-</style>

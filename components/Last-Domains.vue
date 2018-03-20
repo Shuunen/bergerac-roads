@@ -1,7 +1,7 @@
 <template>
-  <el-container direction="vertical" class="home-mid">
+  <el-container direction="vertical" class="last-domains">
     <el-main>
-      <div class="line">
+      <div class="col">
         <h2>Domaines ajoutés récemment</h2>
         <el-row :gutter="20">
           <el-col :span="8" :key="domain.id" v-for="domain in domains">
@@ -45,8 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-mid {
-  background-color: $green-d2;
+.last-domains {
+  background-color: $red-d3;
 }
 h2 {
   margin: 20px 0;

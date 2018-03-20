@@ -32,7 +32,7 @@ h1::before {
   height: calc(100vh - (55px * 2));
 }
 .color-line {
-  background: $green-d2;
+  background: $green-d3;
 }
 .panneau {
   position: absolute;

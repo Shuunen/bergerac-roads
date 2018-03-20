@@ -73,6 +73,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  background-color: $white;
   .title {
     font-size: 1.4rem;
   }
