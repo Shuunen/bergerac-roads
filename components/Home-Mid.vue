@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { getDomains } from "~/utils/db";
+import { getLocalOrFetch } from "~/utils/db";
 import Domain from "./Domain.vue";
 
 export default {
@@ -28,7 +28,7 @@ export default {
     init() {
       this.loading = true;
       console.log("Home Mid : init");
-      getDomains().then(domains => {
+      getLocalOrFetch('domains').then(domains => {
         console.log("Home Mid : got domains", domains);
         this.domains = domains;
         this.loading = false;
@@ -49,6 +49,6 @@ export default {
   background-color: $green-d2;
 }
 h2 {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 </style>

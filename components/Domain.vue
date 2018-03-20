@@ -2,7 +2,7 @@
   <el-container direction="vertical" class="domain">
     <el-card :body-style="{ padding: '0px' }">
       <el-container direction="vertical">
-        <img :src="data.image" class="image">
+        <img :src="image" class="image">
         <div class="infos">
           <span class="title">{{ data.title }}</span>
           <time class="time">ajouté le 19 mars à 12h12</time>
@@ -16,7 +16,13 @@
 export default {
   props: {
     data: {
-      type: Object
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    image: function() {
+      return this.data.image || "/images/no-image.png";
     }
   }
 };

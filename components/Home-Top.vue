@@ -5,7 +5,6 @@
       <h1>Venez découvrir<br>nos producteurs</h1>
       <img class="panneau" src="/images/entrant/panneau.png" alt="panneau">
     </div>
-    <div class="color-line"></div>
   </el-container>
 </template>
 
