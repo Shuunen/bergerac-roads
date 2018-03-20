@@ -1,5 +1,5 @@
 <template>
-  <el-container direction="vertical" class="admin">
+  <el-container direction="vertical" class="page-admin">
     <Header />
     <div class="color-line"></div>
     <el-main>
@@ -36,7 +36,7 @@ export default {
 .color-line {
   background-color: $red-d2;
 }
-.admin {
+.page-admin {
   background: $red-d4;
   min-height: 100vh;
   padding-bottom: 10px;
