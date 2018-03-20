@@ -1,18 +1,22 @@
 <template>
   <el-container direction="vertical" class="domain">
-    <el-card :body-style="{ padding: '0px' }">
-      <el-container direction="vertical">
-        <img :src="image" class="image">
-        <div class="infos">
-          <span class="title">{{ data.title }}</span>
-          <time class="time">ajouté le 19 mars à 12h12</time>
-        </div>
-      </el-container>
-    </el-card>
+    <nuxt-link :to="link">
+      <el-card :body-style="{ padding: '0px' }">
+        <el-container direction="vertical">
+          <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+          <div class="infos">
+            <span class="title">{{ data.title }}</span>
+            <time class="time">ajouté le {{ added }}</time>
+          </div>
+        </el-container>
+      </el-card>
+    </nuxt-link>
   </el-container>
 </template>
 
 <script>
+import getSlug from "speakingurl";
+
 export default {
   props: {
     data: {
@@ -21,8 +25,29 @@ export default {
     }
   },
   computed: {
+    link: function() {
+      return "/domaine/" + this.data.id + "/" + getSlug(this.data.title);
+    },
     image: function() {
       return this.data.image || "/images/no-image.png";
+    },
+    added: function() {
+      if (!this.data.updated) {
+        return null;
+      }
+      const options = {
+        month: "long",
+        day: "numeric"
+      };
+      /*
+        year: "numeric",
+        hour: "numeric",
+        minute: "numeric"
+      */
+      const added = new Intl.DateTimeFormat("fr-FR", options).format(
+        new Date(this.data.updated)
+      );
+      return added;
     }
   }
 };
@@ -31,10 +56,17 @@ export default {
 <style lang="scss" scoped>
 .domain {
   margin-bottom: 20px;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+  }
 }
 .image {
   width: 100%;
   display: block;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
 }
 .infos {
   display: flex;

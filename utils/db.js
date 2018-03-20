@@ -1,14 +1,8 @@
 
-const baseUrl = process.env.api
-const storageKey = 'bergeracRoads.'
 
-export const getLocalOrFetch = (ressource) => {
-  try {
-    return Promise.resolve(JSON.parse(localStorage[storageKey + ressource]))
-  } catch (error) {
-    const data = require('static/db.json')
-    console.log('getLocalOrFetch : localStorage', localStorage)
-    return Promise.resolve(data[ressource])
-  }
-}
+const db = require('static/db.json')
+
+export const getDomains = () => Promise.resolve(db.domains)
+
+export const getTags = () => Promise.resolve(db.tags)
 

@@ -4,7 +4,7 @@
       <div class="line">
         <h2>Domaines ajoutés récemment</h2>
         <el-row :gutter="20">
-          <el-col :span="12" :key="domain.id" v-for="domain in domains">
+          <el-col :span="8" :key="domain.id" v-for="domain in domains">
             <Domain :data="domain" />
           </el-col>
         </el-row>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { getLocalOrFetch } from "~/utils/db";
+import { getDomains } from "~/utils/db";
 import Domain from "./Domain.vue";
 
 export default {
@@ -28,7 +28,7 @@ export default {
     init() {
       this.loading = true;
       console.log("Home Mid : init");
-      getLocalOrFetch('domains').then(domains => {
+      getDomains().then(domains => {
         console.log("Home Mid : got domains", domains);
         this.domains = domains;
         this.loading = false;
