@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import { getDomains } from '~/utils/db'
-
 export default {
   data() {
     return {

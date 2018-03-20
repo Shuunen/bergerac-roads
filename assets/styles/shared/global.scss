@@ -36,11 +36,14 @@ h3 {
   height: 100%;
 }
 
-.line {
+.line, .col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  &.col {
+    flex-direction: column;
+  }
   &.start {
     justify-content: flex-start;
   }
@@ -53,8 +56,12 @@ h3 {
   height: 55px;
 }
 
-section .el-tag .el-icon-close {
-  color: inherit;
+.grappe {
+  height: 100px;
+  width: 70px;
+  background: url("/logos/grappe.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .el-table .inactive-row, .el-table .inactive-row:hover {
@@ -66,6 +73,17 @@ section .el-tag .el-icon-close {
 .page-enter-active, .page-leave-active {
   transition: opacity .5s;
 }
+
 .page-enter, .page-leave-active {
   opacity: 0;
 }
+
+.tip {
+  padding: 8px 16px;
+  background-color: $pink;
+  border-radius: 4px;
+  border-left: 5px solid $red-d1;
+  margin: 20px 0;
+}
+
+@import "element-fixes"

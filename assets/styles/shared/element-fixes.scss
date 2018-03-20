@@ -1,0 +1,16 @@
+section {
+  .el-tag .el-icon-close {
+    color: inherit;
+  }
+  .el-alert {
+    margin-bottom: 20px;
+    .el-alert__icon {
+      font-size: 1.5rem;
+    }
+    .el-alert__title {
+      font-size: 1rem;
+      color: $orange;
+      margin-left: 10px;
+    }
+  }
+}

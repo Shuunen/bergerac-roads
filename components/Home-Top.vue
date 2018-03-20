@@ -8,9 +8,6 @@
   </el-container>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
 h1 {
   line-height: 1.2;
