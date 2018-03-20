@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   padding: 20px 40px;
   z-index: 20;
-  background: rgba($green-d3, 0.33);
+  background: rgba($green-d3, 0.5);
 }
 h1::after,
 h1::before {
@@ -29,16 +29,16 @@ h1::before {
   background-image: url("/static/images/entrant/credit photo Akim Benbrahim.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - (55px * 2));
+  height: calc(100vh - 55px);
 }
 .color-line {
   background: $green-d3;
 }
 .panneau {
   position: absolute;
-  bottom: 55px;
+  bottom: 0;
   left: 55px;
-  height: 60%;
+  height: 50%;
   transform: rotate(3deg);
 }
 </style>

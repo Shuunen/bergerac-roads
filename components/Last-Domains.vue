@@ -47,6 +47,7 @@ export default {
 <style lang="scss" scoped>
 .last-domains {
   background-color: $red-d3;
+  padding-bottom: 20px;
 }
 h2 {
   margin: 20px 0;

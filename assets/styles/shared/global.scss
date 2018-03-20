@@ -2,29 +2,24 @@ html * {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
 }
 
 h1, h2, h3 {
   margin: 0;
-  font-family: Sacramento, cursive;
+  font-family: 'Cabin', sans-serif;
   font-weight: normal;
   color: $white;
 }
 
 h1 {
-  font-size: 4rem;
-}
-h2 {
   font-size: 3rem;
 }
-h3 {
+
+h2 {
   font-size: 2rem;
 }
 
@@ -59,7 +54,7 @@ h3 {
 .grappe {
   height: 100px;
   width: 70px;
-  background: url("/logos/grappe.svg");
+  background: url('/logos/grappe.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -86,4 +81,4 @@ h3 {
   margin: 20px 0;
 }
 
-@import "element-fixes"
+@import 'element-fixes'
