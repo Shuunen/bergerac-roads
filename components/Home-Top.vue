@@ -26,7 +26,7 @@ h1::before {
   display: block;
 }
 .background {
-  background-image: url("/static/images/entrant/credit photo Akim Benbrahim.jpg");
+  background-image: url("/static/images/entrant/credit-photo-Akim-Benbrahim.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 55px);
