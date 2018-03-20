@@ -53,6 +53,7 @@ export default {
         hour: "numeric",
         minute: "numeric"
       */
+      // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
       const added = new Intl.DateTimeFormat("fr-FR", options).format(
         new Date(this.data.updated)
       );

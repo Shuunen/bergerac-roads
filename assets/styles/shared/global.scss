@@ -62,3 +62,10 @@ section .el-tag .el-icon-close {
   background-color: $black-l7;
   font-style: italic;
 }
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}

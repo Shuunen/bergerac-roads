@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     link: function() {
-      return "/domaine/" + this.data.id + "/" + getSlug(this.data.title);
+      return "/domaine/" + this.data.id + "-" + getSlug(this.data.title);
     },
     image: function() {
       return this.data.image || "/images/no-image.png";
@@ -44,6 +44,7 @@ export default {
         hour: "numeric",
         minute: "numeric"
       */
+     // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
       const added = new Intl.DateTimeFormat("fr-FR", options).format(
         new Date(this.data.updated)
       );

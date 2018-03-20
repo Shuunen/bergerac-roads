@@ -7,7 +7,7 @@
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item class="english flag">English</el-dropdown-item>
       <el-dropdown-item>
-        <a href="/admin">Admin</a>
+        <nuxt-link to="/admin">Admin</nuxt-link>
       </el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>

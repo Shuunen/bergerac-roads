@@ -1,7 +1,7 @@
 <template>
-  <a href="/" class="logo">
+  <nuxt-link to="/" class="logo">
     <img src="/logos/logo-2016-bergerac-duras.png">
-  </a>
+  </nuxt-link>
 </template>
 
 <style lang="scss" scoped>
