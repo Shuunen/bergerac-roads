@@ -86,7 +86,7 @@ export default {
   width: 32px;
   border-radius: 50%;
   background: $white;
-  font-size: 1.5rem;
+  font-size: 120%;
   margin-top: -10px;
   margin-right: 10px;
 }
@@ -95,7 +95,7 @@ export default {
 .input-new-tag {
   background-color: $white;
   color: $red-d4;
-  font-size: 1rem;
+  font-size: 110%;
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 4px;

@@ -75,11 +75,10 @@ export default {
   padding: 10px;
   background-color: $white;
   .title {
-    font-size: 1.4rem;
+    font-size: 120%;
   }
   .time {
     margin-top: 6px;
-    font-size: 1rem;
     color: $red-d4;
   }
 }

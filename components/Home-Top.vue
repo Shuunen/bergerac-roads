@@ -2,29 +2,57 @@
   <el-container direction="vertical" class="home-top">
     <div class="color-line"></div>
     <div class="line background">
-      <h1>Venez découvrir<br>nos producteurs</h1>
+      <el-row class="title" justify="center">
+          <el-col :span="14" :xs="24">
+            <h1>Venez découvrir nos producteurs</h1>
+          </el-col>
+      </el-row>
       <img class="panneau" src="/images/entrant/panneau-500.png" alt="panneau">
     </div>
   </el-container>
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  line-height: 1.2;
-  text-align: center;
-  padding: 20px 40px;
-  z-index: 20;
-  background: rgba($green-d3, 0.5);
+.home-top {
+  z-index: 1;
 }
-h1::after,
-h1::before {
-  margin: 30px auto;
-  background-color: $white;
-  height: 3px;
-  width: 24vw;
-  content: "";
-  display: block;
+.title {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  .el-col,
+  h1 {
+    height: 100%;
+  }
+  h1 {
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px 40px;
+    z-index: 20;
+    background: rgba($green-d3, 0.5);
+    &::after,
+    &::before {
+      margin: 30px auto;
+      background-color: $white;
+      height: 3px;
+      width: 24vw;
+      content: "";
+      display: block;
+    }
+  }
 }
+
+@media (max-width: 450px) {
+  .title {
+    height: 100%;
+    h1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
 .background {
   background-image: url("/static/images/entrant/credit-photo-Akim-Benbrahim.jpg");
   background-size: cover;

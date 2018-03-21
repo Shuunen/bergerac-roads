@@ -40,6 +40,7 @@ export default {
   flex-grow: 0;
   &.floating {
     position: absolute;
+    z-index: 10;
   }
 }
 .line {

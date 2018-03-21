@@ -77,7 +77,7 @@ export default {
           console.log("Domain page : got domain", domain);
           this.loading = false;
           this.data = domain;
-          this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+          this.backgroundImage = { backgroundImage: "url(" + this.image + ")" };
         });
       } else {
         this.loading = false;
@@ -85,7 +85,7 @@ export default {
           title: "Domaine inconnu",
           message: "Désolé mais ce domaine n'a pas été trouvé."
         };
-        this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+        this.backgroundImage = { backgroundImage: "url(" + this.image + ")" };
       }
     }
   },
@@ -119,7 +119,12 @@ export default {
 .encart {
   background: $white;
   padding: 0 40px;
-  margin: -100px 20px 20px;
+  margin-top: -150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (max-width: 450px) {
+    margin-top: -300px;
+  }
 }
 .back {
   margin-top: 10px;
