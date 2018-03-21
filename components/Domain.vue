@@ -80,7 +80,7 @@ export default {
   .time {
     margin-top: 6px;
     font-size: 1rem;
-    color: #999;
+    color: $red-d4;
   }
 }
 </style>
