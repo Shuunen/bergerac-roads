@@ -21,4 +21,9 @@ section {
   .el-button {
     font-weight: bold;
   }
+  .el-table .inactive-row, .el-table .inactive-row:hover {
+    color: $black-l3;
+    background-color: $black-l7;
+    font-style: italic;
+  }
 }
