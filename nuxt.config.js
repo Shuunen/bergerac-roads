@@ -6,6 +6,9 @@ module.exports = {
   */
   head: {
     title: 'Vins de Bergerac Duras',
+    htmlAttrs: {
+      lang: 'fr-FR',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
