@@ -19,6 +19,10 @@
     {
       "name": "Dégustation offerte",
       "id": 6
+    },
+    {
+      "name": "testtag",
+      "id": 7
     }
   ],
   "domains": [

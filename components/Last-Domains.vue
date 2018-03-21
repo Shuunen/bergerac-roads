@@ -2,7 +2,7 @@
   <el-container direction="vertical" class="last-domains">
     <el-main>
       <div class="col">
-        <h2>Domaines ajoutés récemment</h2>
+        <h2>{{ $t('last-domains.header2') }}</h2>
         <el-row :gutter="20">
           <el-col :span="8" :key="domain.id" v-for="domain in domains">
             <Domain :data="domain" />

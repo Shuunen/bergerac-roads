@@ -2,8 +2,8 @@
   <el-container direction="vertical" class="home-top">
     <div class="color-line"></div>
     <div class="line background">
-      <h1>Venez découvrir<br>nos producteurs</h1>
-      <img class="panneau" src="/images/entrant/panneau-500.png" alt="panneau">
+      <h1>{{ $t('home-top.header') }}</h1>
+      <img class="panneau" sr c="/images/entrant/panneau-500.png" alt="panneau">
     </div>
   </el-container>
 </template>

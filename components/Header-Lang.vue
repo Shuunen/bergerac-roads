@@ -1,11 +1,11 @@
 <template>
   <el-dropdown class="lang">
     <span class="el-dropdown-link french flag">
-      Français
+     {{ $t('common.french') }}
       <i class="el-icon-arrow-down el-icon--right"></i>
     </span>
     <el-dropdown-menu slot="dropdown">
-      <el-dropdown-item class="english flag">English</el-dropdown-item>
+      <el-dropdown-item class="english flag"> {{ $t('common.english') }}</el-dropdown-item>
       <el-dropdown-item>
         <nuxt-link to="/admin">Admin</nuxt-link>
       </el-dropdown-item>

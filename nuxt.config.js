@@ -29,7 +29,12 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['plugins/element-ui'],
+
+  router: {
+      middleware: 'i18n'
+  },
+  plugins: ['plugins/element-ui', 'plugins/i18n.js'],
+
   modules: [
     ['nuxt-sass-resources-loader', {
       resources: ['./assets/styles/ressources/variables.scss']

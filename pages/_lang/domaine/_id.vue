@@ -18,7 +18,7 @@
         <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon></el-alert>
         <div class="col">
           <nuxt-link to="/">
-            <el-button icon="el-icon-arrow-left" class="back">Retour à l'accueil</el-button>
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
           <div class="grappe"></div>
         </div>
@@ -97,34 +97,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.color-line {
-  background-color: $red-d3;
-}
-.page-domaine {
-  background: $red-d2;
-  min-height: 100vh;
-  padding-bottom: 10px;
-}
-.title {
-  margin: 30px 0 20px;
-  color: $red-d2;
-}
-.background {
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-.encart {
-  background: $white;
-  padding: 0 40px;
-  margin: -100px 20px 20px;
-}
-.back {
-  margin-top: 10px;
-}
-.grappe {
-  margin: 20px;
-}
-</style>
