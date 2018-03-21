@@ -3,7 +3,7 @@
     <div class="color-line"></div>
     <div class="line background">
       <h1>Venez découvrir<br>nos producteurs</h1>
-      <img class="panneau" src="/images/entrant/panneau.png" alt="panneau">
+      <img class="panneau" src="/images/entrant/panneau-500.png" alt="panneau">
     </div>
   </el-container>
 </template>
@@ -39,6 +39,7 @@ h1::before {
   bottom: 0;
   left: 55px;
   height: 50%;
+  opacity: 0.9;
   transform: rotate(3deg);
 }
 </style>

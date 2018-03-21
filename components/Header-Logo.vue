@@ -1,6 +1,6 @@
 <template>
   <nuxt-link to="/" class="logo">
-    <img src="/logos/logo-2016-bergerac-duras.png">
+    <img src="/logos/logo-2016-bergerac-duras.svg">
   </nuxt-link>
 </template>
 
