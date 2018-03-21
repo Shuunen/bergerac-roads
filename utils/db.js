@@ -1,6 +1,6 @@
 
 
-const db = require('static/db.json')
+const db = require('~/db.json')
 
 export const getDomains = () => Promise.resolve(db.domains)
 
