@@ -2,7 +2,7 @@
   <el-container direction="vertical" class="page-domaine">
     <Header />
     <div class="color-line"></div>
-    <div class="background" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+    <div class="background" :style="backgroundImage"></div>
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       loading: true,
+      backgroundImage: {},
       data: {}
     };
   },
@@ -76,6 +77,7 @@ export default {
           console.log("Domain page : got domain", domain);
           this.loading = false;
           this.data = domain;
+          this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
         });
       } else {
         this.loading = false;
@@ -83,6 +85,7 @@ export default {
           title: "Domaine inconnu",
           message: "Désolé mais ce domaine n'a pas été trouvé."
         };
+        this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
       }
     }
   },
