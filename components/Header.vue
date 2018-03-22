@@ -47,5 +47,6 @@ export default {
 .lang-wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 }
 </style>
