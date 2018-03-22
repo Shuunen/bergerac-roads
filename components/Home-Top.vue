@@ -1,13 +1,13 @@
 <template>
   <el-container direction="vertical" class="home-top">
     <div class="color-line"/>
-    <div class="line background">
+    <div class="line background" v-lazy:background-image="'/images/entrant/credit-photo-Akim-Benbrahim.jpg'">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
           <h1>Venez découvrir nos producteurs</h1>
         </el-col>
       </el-row>
-      <img class="panneau" src="/images/entrant/panneau-500.png" alt="panneau">
+      <img class="panneau" v-lazy="'/images/entrant/panneau-500.png'" alt="panneau">
     </div>
   </el-container>
 </template>
@@ -54,7 +54,6 @@
 }
 
 .background {
-  background-image: url('/static/images/entrant/credit-photo-Akim-Benbrahim.jpg');
   background-size: cover;
   background-position: center;
   height: calc(100vh - 55px);

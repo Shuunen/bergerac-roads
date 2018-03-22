@@ -20,7 +20,10 @@ module.exports = {
       },
     ],
   },
-  css: ['~assets/styles/shared/global.scss'],
+  css: [
+    '~assets/styles/shared/global.scss',
+    'element-ui/lib/theme-chalk/index.css',
+  ],
   env: {
     api: 'http://localhost:3003',
   },
@@ -31,7 +34,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['plugins/element-ui'],
+  plugins: ['plugins/element-ui', 'plugins/lazyload'],
   modules: [
     [
       'nuxt-sass-resources-loader',

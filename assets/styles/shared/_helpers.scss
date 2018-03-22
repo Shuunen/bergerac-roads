@@ -42,3 +42,8 @@
   border-left: 5px solid $red-d1;
   margin: 20px 0;
 }
+
+/* Prevents img without src to appear */
+img:not([src]) {
+  visibility: hidden;
+}

@@ -3,7 +3,7 @@
     <nuxt-link :to="link">
       <el-card :body-style="{ padding: '0px' }">
         <el-container direction="vertical">
-          <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }"/>
+          <div class="image" v-lazy:background-image="image" />
           <div class="infos">
             <span class="title">{{ data.title }}</span>
             <time class="time">ajouté le {{ added }}</time>
