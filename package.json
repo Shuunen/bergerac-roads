@@ -9,12 +9,13 @@
     "dev:server": "nuxt",
     "dev:db": "json-server db.json",
     "build": "nuxt build --spa",
-    "start": "nuxt start",
+    "start": "nuxt start --spa",
     "generate": "nuxt generate --spa",
     "lint": "eslint --ext .js,.vue --fix --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^2.0.8",
     "element-ui": "^2.2.2",
     "json-server": "^0.12.1",
     "npm-run-all": "^4.1.2",

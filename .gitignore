@@ -11,3 +11,6 @@ npm-debug.log
 dist
 
 .idea
+
+# https://pwa.nuxtjs.org/setup.html
+sw.*
