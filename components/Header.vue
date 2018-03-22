@@ -3,9 +3,6 @@
     <div class="logo-wrapper">
       <Logo />
     </div>
-    <div class="line" :v-if="title">
-      <h1>{{ title }}</h1>
-    </div>
     <div class="lang-wrapper">
       <Lang />
     </div>
@@ -13,24 +10,21 @@
 </template>
 
 <script>
-import Lang from "./Header-Lang.vue";
-import Logo from "./Header-Logo.vue";
+import Lang from './Header-Lang.vue'
+import Logo from './Header-Logo.vue'
 
 export default {
-  props: {
-    title: {
-      type: String
-    },
-    floating: {
-      type: Boolean,
-      default: true
-    }
-  },
   components: {
     Lang,
-    Logo
-  }
-};
+    Logo,
+  },
+  props: {
+    floating: {
+      type: Boolean,
+      default: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

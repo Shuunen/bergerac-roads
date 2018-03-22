@@ -5,15 +5,14 @@
 </template>
 
 <script>
-import Searchbar from "~/components/Searchbar";
+import Searchbar from '~/components/Searchbar'
 
 export default {
   components: {
-    Searchbar
-  }
-};
+    Searchbar,
+  },
+}
 </script>
 
 <style>
-
 </style>

@@ -1,4 +1,4 @@
-const path = require('path')
+// const path = require('path')
 
 module.exports = {
   /*
@@ -13,14 +13,16 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'theme-color', content: '#ffffff' },
-      { hid: 'description', name: 'description', content: 'Tourisme vitivinicole dans le Bergerac' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Tourisme vitivinicole dans le Bergerac',
+      },
     ],
   },
-  css: [
-    '~assets/styles/shared/global.scss'
-  ],
+  css: ['~assets/styles/shared/global.scss'],
   env: {
-    api: 'http://localhost:3003'
+    api: 'http://localhost:3003',
   },
   /*
   ** Customize the progress bar color
@@ -31,25 +33,29 @@ module.exports = {
   */
   plugins: ['plugins/element-ui'],
   modules: [
-    ['nuxt-sass-resources-loader', {
-      resources: ['./assets/styles/ressources/variables.scss']
-    }],
+    [
+      'nuxt-sass-resources-loader',
+      {
+        resources: ['./assets/styles/ressources/variables.scss'],
+      },
+    ],
     '@nuxtjs/pwa',
   ],
   build: {
-    vendor: ['element-ui'],
+    vendor: ['element-ui', 'speakingurl'],
     /*
     ** Run ESLint on save
     */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend(config, ctx) {
+      // Exécuter ESLint lors de la sauvegarde
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
-  }
+    },
+  },
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="footer col">
-    <div class="grappe"></div>
+    <div class="grappe"/>
     <small>Vins de Bergerac Duras ©️ 2018</small>
   </div>
 </template>

@@ -14,35 +14,35 @@
 </template>
 
 <script>
-import { getDomains } from "~/utils/db";
-import Domain from "./Domain.vue";
+import { getDomains } from '~/utils/db'
+import Domain from './Domain.vue'
 
 export default {
+  components: {
+    Domain,
+  },
   data() {
     return {
       loading: true,
-      domains: []
-    };
-  },
-  methods: {
-    init() {
-      this.loading = true;
-      console.log("Home Mid : init");
-      getDomains().then(domains => {
-        domains.splice(3); // limit to 3
-        console.log("Home Mid : got domains", domains);
-        this.domains = domains;
-        this.loading = false;
-      });
+      domains: [],
     }
   },
   mounted() {
-    this.init();
+    this.init()
   },
-  components: {
-    Domain
-  }
-};
+  methods: {
+    init() {
+      this.loading = true
+      console.log('Home Mid : init')
+      getDomains().then(domains => {
+        domains.splice(3) // limit to 3
+        console.log('Home Mid : got domains', domains)
+        this.domains = domains
+        this.loading = false
+      })
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
