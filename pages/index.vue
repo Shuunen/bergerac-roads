@@ -26,6 +26,8 @@ export default {
       document.location.hostname.includes('.com')
     ) {
       document.location.protocol = 'https'
+    } else {
+      console.info('protocol is https or should not be enforced to https')
     }
   },
 }
