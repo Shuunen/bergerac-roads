@@ -19,6 +19,7 @@ module.exports = {
         content: 'Tourisme vitivinicole dans le Bergerac',
       },
     ],
+    noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
   css: [
     '~assets/styles/shared/global.scss',

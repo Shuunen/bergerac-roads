@@ -20,5 +20,13 @@ export default {
     Header,
     Footer,
   },
+  mounted() {
+    if (
+      document.location.protocol === 'http' &&
+      document.location.hostname.includes('.com')
+    ) {
+      document.location.protocol = 'https'
+    }
+  },
 }
 </script>
