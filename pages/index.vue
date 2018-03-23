@@ -22,7 +22,7 @@ export default {
   },
   mounted() {
     if (
-      document.location.protocol === 'http' &&
+      !document.location.protocol.includes('https') &&
       document.location.hostname.includes('.com')
     ) {
       document.location.protocol = 'https'
