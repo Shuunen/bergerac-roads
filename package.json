@@ -12,6 +12,8 @@
     "start": "nuxt start --spa",
     "generate": "nuxt generate --spa",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "test": "npm-run-all --parallel dev:* test:*",
+    "test:panel": "./node_modules/.bin/cypress open",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
+    "cypress": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-friendly-formatter": "^3.0.0",

@@ -4,6 +4,17 @@ module.exports = {
     browser: true,
     node: true,
   },
+  globals: {
+    // Cypress : start
+    Cypress: false,
+    beforeEach: false,
+    context: false,
+    cy: false,
+    describe: false,
+    expect: false,
+    it: false,
+    // Cypress : end
+  },
   parserOptions: {
     parser: 'babel-eslint',
   },
@@ -19,13 +30,17 @@ module.exports = {
   // add your custom rules here
   rules: {
     semi: [2, 'never'],
-    quotes: ['error', 'single'],
+    quotes: 'off',
     'no-console': 'off',
     'vue/attributes-order': 'off',
     'vue/max-attributes-per-line': 'off',
     'prettier/prettier': [
       'error',
-      { semi: false, singleQuote: true, trailingComma: 'es5' },
+      {
+        semi: false,
+        bracketSpacing: true,
+        trailingComma: 'es5',
+      },
     ],
   },
 }
