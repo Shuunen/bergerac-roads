@@ -1,0 +1,49 @@
+
+.page-height {
+  height: 100vh;
+}
+
+.parent-height {
+  height: 100%;
+}
+
+.line, .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &.col {
+    flex-direction: column;
+  }
+  &.start {
+    justify-content: flex-start;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+}
+
+.color-line {
+  height: 55px;
+}
+
+.grappe {
+  height: 100px;
+  width: 70px;
+  background: url('/logos/grappe.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tip {
+  padding: 8px 16px;
+  background-color: $pink;
+  border-radius: 4px;
+  border-left: 5px solid $red-d1;
+  margin: 20px 0;
+}
+
+/* Prevents img without src to appear */
+img:not([src]) {
+  visibility: hidden;
+}

@@ -1,7 +1,7 @@
 <template>
-  <a href="/" class="logo">
-    <img src="/logos/logo-2016-bergerac-duras.png">
-  </a>
+  <nuxt-link to="/" class="logo" title="Retour à l'accueil">
+    <img src="/logos/logo-2016-bergerac-duras.svg" alt="logo">
+  </nuxt-link>
 </template>
 
 <style lang="scss" scoped>

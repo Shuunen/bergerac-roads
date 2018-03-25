@@ -1,26 +1,32 @@
-const path = require('path')
+// const path = require('path')
 
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'bergerac-roads',
+    title: 'Vins de Bergerac Duras',
+    htmlAttrs: {
+      lang: 'fr-FR',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { name: 'theme-color', content: '#ffffff' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Tourisme vitivinicole dans le Bergerac',
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Sacramento' }
-    ]
+    noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
   css: [
-    '~assets/styles/shared/global.scss'
+    '~assets/styles/shared/global.scss',
+    'element-ui/lib/theme-chalk/index.css',
   ],
   env: {
-    api: 'http://localhost:3003'
+    api: 'http://localhost:3003',
   },
   /*
   ** Customize the progress bar color
@@ -29,26 +35,31 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['plugins/element-ui'],
+  plugins: ['plugins/element-ui', 'plugins/lazyload'],
   modules: [
-    ['nuxt-sass-resources-loader', {
-      resources: ['./assets/styles/ressources/variables.scss']
-    }],
+    [
+      'nuxt-sass-resources-loader',
+      {
+        resources: ['./assets/styles/ressources/variables.scss'],
+      },
+    ],
+    '@nuxtjs/pwa',
   ],
   build: {
-    vendor: ['element-ui'],
+    vendor: ['element-ui', 'speakingurl'],
     /*
     ** Run ESLint on save
     */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend(config, ctx) {
+      // Exécuter ESLint lors de la sauvegarde
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
-  }
+    },
+  },
 }

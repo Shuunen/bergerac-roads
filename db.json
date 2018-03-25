@@ -26,18 +26,21 @@
       "id": 1,
       "title": "Chateau de la Masse",
       "active": true,
+      "image": "/images/pixabay/chateau-02.jpg",
       "updated": 1521388806603
     },
     {
       "id": 2,
       "title": "Chateau Monseigneur",
       "active": true,
+      "image": "/images/pixabay/chateau-03.jpg",
       "updated": 1521244800603
     },
     {
       "id": 3,
       "title": "Domaine Prêche",
       "active": false,
+      "image": "/images/pixabay/chateau-04.jpg",
       "updated": 1521244802103
     },
     {
