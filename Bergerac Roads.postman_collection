@@ -1,0 +1,158 @@
+{
+	"id": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+	"name": "Bergerac Roads",
+	"description": "",
+	"order": [
+		"5df0c093-7f7c-4ebb-20d5-f3303389dd3f",
+		"e4756714-699a-f7b0-623c-3cc66fe40222"
+	],
+	"folders": [
+		{
+			"name": "optim",
+			"description": "",
+			"collectionId": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+			"order": [
+				"c0724ff3-6d13-f496-cb9d-18c0ad0fd397",
+				"8e4c7491-9b60-752c-badc-06eaf507f105"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "9249cd23-d08a-f7cb-7f98-490acf796117"
+		}
+	],
+	"folders_order": [
+		"9249cd23-d08a-f7cb-7f98-490acf796117"
+	],
+	"timestamp": 1521972888594,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5df0c093-7f7c-4ebb-20d5-f3303389dd3f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://wcf.tourinsoft.com/Syndication/cdt24/64fb655d-796e-495b-96b0-e5bb01854cdb/Items",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+			"data": null,
+			"dataMode": "params",
+			"name": "get Items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1521972891470,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8e4c7491-9b60-752c-badc-06eaf507f105",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{syndic_url_opt}}/{{syndic_name}}/{{syndic_key}}/Items?$format=json",
+			"queryParams": [
+				{
+					"key": "$format",
+					"value": "json",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Items json opt",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1521973441107,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "8e4c7491-9b60-752c-badc-06eaf507f105",
+			"folder": "9249cd23-d08a-f7cb-7f98-490acf796117"
+		},
+		{
+			"id": "c0724ff3-6d13-f496-cb9d-18c0ad0fd397",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{syndic_url_opt}}/{{syndic_name}}/{{syndic_key}}/Objects?$format=json&$top=10",
+			"queryParams": [
+				{
+					"key": "$format",
+					"value": "json",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$top",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+			"data": null,
+			"dataMode": "params",
+			"name": "get 5 first Domains",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1521974972352,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "9249cd23-d08a-f7cb-7f98-490acf796117"
+		},
+		{
+			"id": "e4756714-699a-f7b0-623c-3cc66fe40222",
+			"headers": "",
+			"headerData": [],
+			"url": "http://wcf.tourinsoft.com/Syndication/{{syndic_name}}/{{syndic_key}}/Items?$format=json",
+			"queryParams": [
+				{
+					"key": "$format",
+					"value": "json",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8b88d8aa-1b69-1167-3209-3366fdc1426a",
+			"data": null,
+			"dataMode": "params",
+			"name": "get Items json",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1521973300100,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
