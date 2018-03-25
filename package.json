@@ -23,6 +23,7 @@
     "npm-run-all": "^4.1.2",
     "nuxt": "^1.4.0",
     "nuxt-sass-resources-loader": "^1.2.0",
+    "vue-i18n": "^7.3.2",
     "vue-lazyload": "^1.2.2"
   },
   "devDependencies": {

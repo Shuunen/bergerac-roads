@@ -35,7 +35,11 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['plugins/element-ui', 'plugins/lazyload'],
+  router: {
+      middleware: 'i18n'
+  },
+  plugins: ['plugins/element-ui', 'plugins/i18n.js', 'plugins/lazyload'],
+
   modules: [
     [
       'nuxt-sass-resources-loader',

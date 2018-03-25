@@ -4,7 +4,7 @@
     <div class="line background" v-lazy:background-image="'/images/entrant/credit-photo-Akim-Benbrahim.jpg'">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
-          <h1>Venez découvrir nos producteurs</h1>
+          <h1>{{ $t('home-top.header') }}</h1>
         </el-col>
       </el-row>
       <img class="panneau" v-lazy="'/images/entrant/panneau-500.png'" alt="panneau">
@@ -35,7 +35,7 @@
       margin: 30px auto;
       background-color: $white;
       height: 3px;
-      width: 24vw;
+      width: 90%;
       content: '';
       display: block;
     }

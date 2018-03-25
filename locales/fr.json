@@ -1,0 +1,23 @@
+{
+  "common": {
+    "english": "Anglais",
+    "french": "Français",
+    "back-home": "Retour à l'accueil"
+  },
+  "links": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "home": {
+    "title": "Bienvenue",
+    "introduction": "Ceci est un texte d'introduction en Français."
+  },
+  "home-top":{
+    "header": "Venez découvrir nos producteurs"
+  },
+  "last-domains": {
+    "header2" : "Domaines ajoutés récemment"
+
+  }
+
+}
