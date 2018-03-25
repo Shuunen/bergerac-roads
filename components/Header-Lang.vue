@@ -9,9 +9,6 @@
       <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')">
         <el-dropdown-item class="french flag">{{ $t('common.french') }}</el-dropdown-item>
       </nuxt-link>
-      <el-dropdown-item>
-        <nuxt-link to="/admin">Admin</nuxt-link>
-      </el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
