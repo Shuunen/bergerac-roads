@@ -3,7 +3,7 @@
     <nuxt-link :to="link">
       <el-card :body-style="{ padding: '0px' }">
         <el-container direction="vertical">
-          <div class="image" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+          <div class="image" v-lazy:background-image="image" />
           <div class="infos">
             <span class="title">{{ data.title }}</span>
             <time class="time">ajouté le {{ added }}</time>
@@ -15,43 +15,43 @@
 </template>
 
 <script>
-import getSlug from "speakingurl";
+import getSlug from 'speakingurl'
 
 export default {
   props: {
     data: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     link: function() {
-      return "/domaine/" + this.data.id + "-" + getSlug(this.data.title);
+      return '/domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
-      return this.data.image || "/images/no-image.png";
+      return this.data.image || '/images/no-image.png'
     },
     added: function() {
       if (!this.data.updated) {
-        return null;
+        return null
       }
       const options = {
-        month: "long",
-        day: "numeric"
-      };
+        month: 'long',
+        day: 'numeric',
+      }
       /*
         year: "numeric",
         hour: "numeric",
         minute: "numeric"
       */
-     // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
-      const added = new Intl.DateTimeFormat("fr-FR", options).format(
+      // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
+      const added = new Intl.DateTimeFormat('fr-FR', options).format(
         new Date(this.data.updated)
-      );
-      return added;
-    }
-  }
-};
+      )
+      return added
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -75,12 +75,11 @@ export default {
   padding: 10px;
   background-color: $white;
   .title {
-    font-size: 1.4rem;
+    font-size: 120%;
   }
   .time {
     margin-top: 6px;
-    font-size: 1rem;
-    color: #999;
+    color: $red-d4;
   }
 }
 </style>

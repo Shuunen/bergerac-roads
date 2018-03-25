@@ -1,47 +1,48 @@
 <template>
   <el-container direction="vertical" class="last-domains">
     <el-main>
-      <div class="col">
+      <el-row >
         <h2>{{ $t('last-domains.header2') }}</h2>
-        <el-row :gutter="20">
-          <el-col :span="8" :key="domain.id" v-for="domain in domains">
-            <Domain :data="domain" />
-          </el-col>
-        </el-row>
-      </div>
+      </el-row>
+      <el-row :gutter="20">
+        <el-col :span="8" :xs="24" :key="domain.id" v-for="domain in domains">
+          <Domain :data="domain" />
+        </el-col>
+      </el-row>
     </el-main>
   </el-container>
 </template>
 
 <script>
-import { getDomains } from "~/utils/db";
-import Domain from "./Domain.vue";
+import { getDomains } from '~/utils/db'
+import Domain from './Domain.vue'
 
 export default {
+  components: {
+    Domain,
+  },
   data() {
     return {
       loading: true,
-      domains: []
-    };
-  },
-  methods: {
-    init() {
-      this.loading = true;
-      console.log("Home Mid : init");
-      getDomains().then(domains => {
-        console.log("Home Mid : got domains", domains);
-        this.domains = domains;
-        this.loading = false;
-      });
+      domains: [],
     }
   },
   mounted() {
-    this.init();
+    this.init()
   },
-  components: {
-    Domain
-  }
-};
+  methods: {
+    init() {
+      this.loading = true
+      console.log('Home Mid : init')
+      getDomains().then(domains => {
+        domains.splice(3) // limit to 3
+        console.log('Home Mid : got domains', domains)
+        this.domains = domains
+        this.loading = false
+      })
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -50,6 +51,7 @@ export default {
   padding-bottom: 20px;
 }
 h2 {
-  margin: 20px 0;
+  text-align: center;
+  margin: 20px 0 40px;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <el-container direction="vertical" class="page-domaine">
     <Header />
-    <div class="color-line"></div>
-    <div class="background" :style="backgroundImage"></div>
+    <div class="color-line"/>
+    <div class="background" :style="backgroundImage"/>
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
@@ -15,12 +15,12 @@
           <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</p>
           <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.</p>
         </el-container>
-        <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon></el-alert>
+        <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
         <div class="col">
           <nuxt-link to="/">
             <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
-          <div class="grappe"></div>
+          <div class="grappe"/>
         </div>
       </div>
     </el-main>
@@ -28,72 +28,105 @@
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
-import { getDomain } from "~/utils/db";
+import Header from '~/components/Header.vue'
+import { getDomain } from '~/utils/db'
 
 export default {
+  components: {
+    Header,
+  },
   data() {
     return {
       loading: true,
       backgroundImage: {},
-      data: {}
-    };
+      data: {},
+    }
   },
   computed: {
-    link: function() {
-      return "/domaine/" + this.data.id + "/" + getSlug(this.data.title);
-    },
     image: function() {
-      return this.data.image || "/images/pixabay/bouchon-01.jpg";
+      return this.data.image || '/images/pixabay/bouchon-01.jpg'
     },
     added: function() {
       if (!this.data.updated) {
-        return null;
+        return null
       }
       const options = {
-        month: "long",
-        day: "numeric"
-      };
+        month: 'long',
+        day: 'numeric',
+      }
       /*
         year: "numeric",
         hour: "numeric",
         minute: "numeric"
       */
       // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
-      const added = new Intl.DateTimeFormat("fr-FR", options).format(
+      const added = new Intl.DateTimeFormat('fr-FR', options).format(
         new Date(this.data.updated)
-      );
-      return added;
-    }
+      )
+      return added
+    },
+  },
+  mounted() {
+    this.init()
   },
   methods: {
     init() {
       // get ressource id
-      const matches = document.location.pathname.match(/\/(\d)-/);
+      const matches = document.location.pathname.match(/\/(\d)-/)
       if (matches && matches.length === 2) {
-        const id = matches[1];
-        this.loading = true;
+        const id = matches[1]
+        this.loading = true
         getDomain(id).then(domain => {
-          console.log("Domain page : got domain", domain);
-          this.loading = false;
-          this.data = domain;
+          console.log('Domain page : got domain', domain)
+          this.loading = false
+          this.data = domain
           this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
-        });
+        })
       } else {
-        this.loading = false;
+        this.loading = false
         this.data = {
-          title: "Domaine inconnu",
-          message: "Désolé mais ce domaine n'a pas été trouvé."
-        };
+          title: 'Domaine inconnu',
+          message: "Désolé mais ce domaine n'a pas été trouvé.",
+        }
         this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
       }
-    }
+    },
   },
-  components: {
-    Header
-  },
-  mounted() {
-    this.init();
-  }
-};
+}
 </script>
+
+<style lang="scss" scoped>
+.color-line {
+  background-color: $red-d3;
+}
+.page-domaine {
+  background: $red-d2;
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+.title {
+  margin: 30px 0 20px;
+  color: $red-d2;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.encart {
+  background: $white;
+  padding: 0 40px;
+  margin-top: -150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (max-width: 450px) {
+    margin-top: -300px;
+  }
+}
+.back {
+  margin-top: 10px;
+}
+.grappe {
+  margin: 20px;
+}
+</style>
