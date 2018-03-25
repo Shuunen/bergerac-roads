@@ -1,12 +1,14 @@
 export const state = () => ({
   locales: ['en', 'fr'],
-  locale: 'en'
+  locale: 'fr',
 })
 
 export const mutations = {
   SET_LANG(state, locale) {
-    if (state.locales.indexOf(locale) !== -1) {
+    if (state.locales.includes(locale)) {
       state.locale = locale
+    } else {
+      console.error('cannot use non-hanled locale', locale)
     }
-  }
+  },
 }

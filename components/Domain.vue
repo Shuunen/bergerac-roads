@@ -1,6 +1,6 @@
 <template>
   <el-container direction="vertical" class="domain">
-    <nuxt-link :to="link">
+    <nuxt-link :to="$i18n.path(link)">
       <el-card :body-style="{ padding: '0px' }">
         <el-container direction="vertical">
           <div class="image" v-lazy:background-image="image" />
@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     link: function() {
-      return '/domaine/' + this.data.id + '-' + getSlug(this.data.title)
+      return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
       return this.data.image || '/images/no-image.png'

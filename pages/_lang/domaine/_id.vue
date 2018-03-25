@@ -17,7 +17,7 @@
         </el-container>
         <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
         <div class="col">
-          <nuxt-link to="/">
+          <nuxt-link :to="$i18n.path('')">
             <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
           <div class="grappe"/>

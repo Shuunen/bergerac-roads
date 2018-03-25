@@ -35,7 +35,7 @@
       margin: 30px auto;
       background-color: $white;
       height: 3px;
-      width: 24vw;
+      width: 90%;
       content: '';
       display: block;
     }
