@@ -21,6 +21,7 @@ module.exports = {
         content: 'Tourisme vitivinicole dans le Bergerac',
       },
     ],
+    script: [{ src: '/scripts/rollbar.js' }],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
   css: [
@@ -38,7 +39,7 @@ module.exports = {
   ** Build configuration
   */
   router: {
-      middleware: 'i18n'
+    middleware: 'i18n',
   },
   plugins: ['plugins/element-ui', 'plugins/i18n.js', 'plugins/lazyload'],
 
@@ -74,9 +75,9 @@ module.exports = {
           paths: glob.sync([
             path.join(__dirname, './pages/**/*.vue'),
             path.join(__dirname, './layouts/**/*.vue'),
-            path.join(__dirname, './components/**/*.vue')
+            path.join(__dirname, './components/**/*.vue'),
           ]),
-          whitelist: ['html', 'body']
+          whitelist: ['html', 'body'],
         })
       )
     },
