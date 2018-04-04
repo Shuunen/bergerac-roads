@@ -34,6 +34,6 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 ## Thanks
 
-Thanks to BrowserStack wich provide a great online tool to test our app under tons of desktop & mobile browsers !
+Thanks to [BrowserStack](https://www.browserstack.com) wich provide a great online tool to test our app under tons of desktop & mobile browsers !
 
 ![BrowserStack Logo](https://www.browserstack.com/images/layout/browserstack-logo-600x315.png)
