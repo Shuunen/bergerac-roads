@@ -64,8 +64,8 @@
 .panneau {
   position: absolute;
   bottom: 0;
-  left: 55px;
-  height: 50%;
+  left: 10px;
+  height: 75%;
   opacity: 0.9;
   transform: rotate(3deg);
 }
