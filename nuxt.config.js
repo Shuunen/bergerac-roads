@@ -21,7 +21,11 @@ module.exports = {
         content: 'Tourisme vitivinicole dans le Bergerac',
       },
     ],
-    script: [{ src: '/scripts/rollbar.js' }],
+    script: [
+      { src: 'https://cdn.logrocket.io/LogRocket.min.js' },
+      { src: '/scripts/rollbar.js' },
+      { src: '/scripts/logrocket.js' },
+    ],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
   css: [
