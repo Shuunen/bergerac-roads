@@ -1,11 +1,10 @@
 language: node_js
 
 cache:
-  yarn: true
   directories:
     - node_modules
 
 before_install:
   - npm prune
 
-script: yarn build
+script: npm run build
