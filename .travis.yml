@@ -1,13 +1,9 @@
 language: node_js
 
-cache:
-  directories:
-    - node_modules
+cache: yarn
 
 env: NODE_ENV=production
 
-before_install: npm prune
+install: yarn install --production
 
-install: npm install --production
-
-script: npm run build
+script: yarn build
