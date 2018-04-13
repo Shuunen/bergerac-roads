@@ -25,6 +25,7 @@
     "nuxt-sass-resources-loader": "^1.2.0",
     "purgecss-webpack-plugin": "^0.22.0",
     "sass-loader": "^6.0.7",
+    "speakingurl": "^14.0.1",
     "vue-i18n": "^7.3.2",
     "vue-lazyload": "^1.2.2"
   },
@@ -41,7 +42,6 @@
     "json-server": "^0.12.1",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.11.1",
-    "speakingurl": "^14.0.1",
     "style-loader": "^0.20.3"
   }
 }
