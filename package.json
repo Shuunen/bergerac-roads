@@ -27,7 +27,8 @@
     "sass-loader": "^6.0.7",
     "speakingurl": "^14.0.1",
     "vue-i18n": "^7.3.2",
-    "vue-lazyload": "^1.2.2"
+    "vue-lazyload": "^1.2.2",
+    "vue2-google-maps": "^0.9.7"
   },
   "devDependencies": {
     "@types/node-sass": "^3.10.32",
