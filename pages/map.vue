@@ -7,8 +7,8 @@
         <h1 class="title">Itinéraire</h1>
       </div>
       <div class="map-container">
-        <SelectList :items="sites" />
-        <GoogleMap :markers="sites" />
+        <SelectList :items="sites" @get-checked-items="selectedSites = $event" />
+        <GoogleMap :markers="sites" :selected-markers="selectedSites" />
       </div>
     </el-main>
   </el-container>
@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       sites: [],
+      selectedSites: [],
     }
   },
   created() {

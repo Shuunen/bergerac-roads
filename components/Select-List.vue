@@ -1,9 +1,9 @@
 <template>
   <div>
     <el-checkbox-group v-model="checkedItems">
-      <el-checkbox v-for="(item, index) in items" :label="item.name" :key="index" />
+      <el-checkbox-button v-for="(item, index) in items" :label="item.name" :key="index" />
     </el-checkbox-group>
-    <el-button>Calculer</el-button>
+    <el-button @click="$emit('get-checked-items', checkedItems)">Calculer</el-button>
   </div>
 </template>
 
@@ -24,10 +24,10 @@ export default {
 </script>
 
 <style>
-.el-checkbox {
+.el-checkbox-button {
   display: block;
 }
-.el-checkbox + .el-checkbox {
-  margin: 0;
+.el-checkbox-button__inner {
+  width: 100%;
 }
 </style>
