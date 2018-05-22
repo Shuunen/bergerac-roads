@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Bergerac",
+    "position": {
+      "lat": 44.853806,
+      "lng": 0.4833919999999807
+    }
+  },
+  {
+    "name": "Bourdeilles",
+    "position": {
+      "lat": 45.323881,
+      "lng": 0.5855199999999741
+    }
+  },
+  {
+    "name": "Monbazillac",
+    "position": {
+      "lat": 44.793529,
+      "lng": 0.49216100000001006
+    }
+  },
+  {
+    "name": "Montignac",
+    "position": {
+      "lat": 45.064332,
+      "lng": 1.1613800000000083
+    }
+  },
+  {
+    "name": "Périgueux",
+    "position": {
+      "lat": 45.184029,
+      "lng": 0.721114899999975
+    }
+  }
+]

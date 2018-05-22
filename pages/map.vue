@@ -7,20 +7,32 @@
         <h1 class="title">Itinéraire</h1>
       </div>
       <div class="map-container">
-        <GoogleMap />
+        <SelectList :items="sites" />
+        <GoogleMap :markers="sites" />
       </div>
     </el-main>
   </el-container>
 </template>
 
 <script>
+import axios from 'axios'
 import GoogleMap from '~/components/Google-Map.vue'
 import Header from '~/components/Header.vue'
+import SelectList from '~/components/Select-List.vue'
 
 export default {
   components: {
     GoogleMap,
     Header,
+    SelectList,
+  },
+  data() {
+    return {
+      sites: [],
+    }
+  },
+  created() {
+    axios.get('/mock/items.json').then(res => (this.sites = res.data))
   },
 }
 </script>
