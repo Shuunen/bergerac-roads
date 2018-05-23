@@ -29,7 +29,7 @@ export default {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
-      return this.data.image || '/images/no-image.png'
+      return this.data.thumbnail || '/images/no-image.png'
     },
     added: function() {
       if (!this.data.updated) {
