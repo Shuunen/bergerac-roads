@@ -36,36 +36,67 @@ export default {
     selectedMarkers: newSelectedMarkers => {
       let google = gmapApi()
       let directionsService = new google.maps.DirectionsService()
-      let requests = []
-      // let results = []
-      // let directionsDisplay = new google.maps.DirectionsRenderer()
+      let directionsDisplay = new google.maps.DirectionsRenderer()
+      let promises = []
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
-          console.log(position)
           for (let marker of newSelectedMarkers) {
-            requests.push({
+            let request = {
               origin: {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude,
               },
               destination: marker,
               travelMode: google.maps.DirectionsTravelMode.DRIVING,
+            }
+            let promise = new Promise(resolve => {
+              directionsService.route(request, (response, status) => {
+                if (status === google.maps.DirectionsStatus.OK) {
+                  console.log(response.routes[0].legs[0].distance.value)
+                  // Get the biggest result and set it as arrival point and others as waypoints
+                  resolve({
+                    query: response.request.destination.query,
+                    distance: response.routes[0].legs[0].distance.value,
+                  })
+                }
+              })
             })
+            promises.push(promise)
           }
-          for (let request of requests) {
-            directionsService.route(request, (response, status) => {
-              console.log(response)
-              if (status == google.maps.DirectionsStatus.OK) {
-                console.log(response.routes[0].legs[0].distance.value)
-                // Get the biggest result and set it as arrival point and others as waypoints
-              }
+          Promise.all(promises).then(responses => {
+            let maxDistance = Math.max(
+              ...responses.map(response => response.distance)
+            )
+            let furthestPlaceIndex = responses.findIndex(response => {
+              return (response.distance = maxDistance)
             })
-          }
+            let furthestPlace = responses.splice(furthestPlaceIndex, 1)[0].query
+            console.log(responses, furthestPlace)
+            let request = {
+              origin: {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
+              },
+              destination: furthestPlace,
+              travelMode: google.maps.DirectionsTravelMode.DRIVING,
+              waypoints: responses.map(response => response.query),
+              optimizeWaypoints: true,
+            }
+            // $refs is not reactive so it won't work in a watch
+            // Another way must be found
+            this.$refs.mapRef.$mapPromise.then(map => {
+              directionsService.route(request, (response, status) => {
+                if (status === google.maps.DirectionsStatus.OK) {
+                  directionsDisplay.setMap(map)
+                  directionsDisplay.setDirections(response)
+                }
+              })
+            })
+          })
         })
       } else {
         alert('Geolocation is not supported by this browser.')
       }
-      // this.$refs.mapRef.$mapPromise.then(map => {})
     },
   },
 }

@@ -14,13 +14,6 @@
     }
   },
   {
-    "name": "Monbazillac",
-    "position": {
-      "lat": 44.793529,
-      "lng": 0.49216100000001006
-    }
-  },
-  {
     "name": "Montignac",
     "position": {
       "lat": 45.064332,
@@ -32,6 +25,13 @@
     "position": {
       "lat": 45.184029,
       "lng": 0.721114899999975
+    }
+  },
+  {
+    "name": "Saint-Laurent-des-Vignes",
+    "position": {
+      "lat": 44.81851899999999,
+      "lng": 0.4551079999999956
     }
   }
 ]
