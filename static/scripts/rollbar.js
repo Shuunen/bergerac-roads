@@ -5,6 +5,13 @@ var _rollbarConfig = {
   payload: {
     environment: 'production',
   },
+  checkIgnore: function() {
+    if (window.location.hostname === 'localhost') {
+      // ignore localhost
+      return true
+    }
+    return false
+  },
 }
 // Rollbar Snippet
 !(function(r) {
