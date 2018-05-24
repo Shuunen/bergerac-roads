@@ -1,9 +1,14 @@
 <template>
-  <div>
+  <div class="select-list-container">
     <el-checkbox-group v-model="checkedItems">
-      <el-checkbox-button v-for="(item, index) in items" :label="item.name" :key="index" />
+      <el-checkbox v-for="(item, index) in items" :label="item.name" :key="index" />
     </el-checkbox-group>
-    <el-button @click="$emit('get-checked-items', checkedItems)">Calculer</el-button>
+    <el-button
+      @click="$emit('get-checked-items', checkedItems)"
+      :disabled="checkedItems.length === 0"
+    >
+      Calculer
+    </el-button>
   </div>
 </template>
 
@@ -23,11 +28,20 @@ export default {
 }
 </script>
 
-<style>
-.el-checkbox-button {
+<style lang="scss">
+.select-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+}
+.el-checkbox-group {
+  padding: 2rem;
+}
+.el-checkbox {
   display: block;
 }
-.el-checkbox-button__inner {
-  width: 100%;
+.el-checkbox + .el-checkbox {
+  margin-left: 0;
 }
 </style>
