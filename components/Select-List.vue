@@ -34,14 +34,15 @@ export default {
   flex-direction: column;
   align-items: center;
   background-color: $white;
-}
-.el-checkbox-group {
-  padding: 2rem;
-}
-.el-checkbox {
-  display: block;
-}
-.el-checkbox + .el-checkbox {
-  margin-left: 0;
+
+  .el-checkbox-group {
+    padding: 2rem;
+  }
+  .el-checkbox {
+    display: block;
+  }
+  .el-checkbox + .el-checkbox {
+    margin-left: 0;
+  }
 }
 </style>
