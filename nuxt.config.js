@@ -41,7 +41,7 @@ module.exports = {
   router: {
     middleware: 'i18n',
   },
-  plugins: ['plugins/element-ui', 'plugins/i18n.js', 'plugins/lazyload'],
+  plugins: ['plugins/element-ui', 'plugins/i18n.js', 'plugins/lazyload', 'plugins/google-maps'],
 
   modules: [
     [
@@ -65,6 +65,17 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
+        })
+      }
+      if (!ctx.isClient) {
+        // This instructs Webpack to include `vue2-google-maps`'s Vue files
+        // for server-side rendering
+        config.externals.splice(0, 0, function (context, request, callback) {
+          if (/^vue2-google-maps($|\/)/.test(request)) {
+            callback(null, false)
+          } else {
+            callback()
+          }
         })
       }
     },
