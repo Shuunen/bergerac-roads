@@ -54,63 +54,83 @@
     },
     {
       "id": "DEGAQU024FS00004",
-      "updated": 1527766868753,
+      "updated": 1527768657866,
       "title": "Château Corbiac Pécharmant",
-      "active": true
+      "active": true,
+      "latitude": "44.8778672",
+      "longitude": "0.52102446"
     },
     {
       "id": "DEGAQU024FS0000A",
-      "updated": 1527766868756,
+      "updated": 1527768657935,
       "title": "Château de la Jaubertie",
-      "active": true
+      "active": true,
+      "latitude": "44.7744249",
+      "longitude": "0.51891088"
     },
     {
       "id": "DEGAQU024FS00005",
-      "updated": 1527766868753,
+      "updated": 1527768657877,
       "title": "Cave Coopérative de Monbazillac",
-      "active": true
+      "active": true,
+      "latitude": "44.8106440",
+      "longitude": "0.47397851"
     },
     {
       "id": "DEGAQU024FS00006",
-      "updated": 1527766868754,
+      "updated": 1527768657892,
       "title": "Alliance Aquitaine - Site de Bergerac",
-      "active": true
+      "active": true,
+      "latitude": "44.8584165",
+      "longitude": "0.48904180"
     },
     {
       "id": "DEGAQU024FS00009",
-      "updated": 1527766868756,
+      "updated": 1527768657924,
       "title": "Château la Renaudie",
-      "active": true
+      "active": true,
+      "latitude": "44.8888291",
+      "longitude": "0.53272426"
     },
     {
       "id": "DEGAQU024FS00007",
-      "updated": 1527766868755,
+      "updated": 1527768657903,
       "title": "Château d'Elle",
-      "active": true
+      "active": true,
+      "latitude": "44.8616334",
+      "longitude": "0.52416265"
     },
     {
       "id": "DEGAQU024FS00008",
-      "updated": 1527766868755,
+      "updated": 1527768657915,
       "title": "Château la Vieille Bergerie",
-      "active": true
+      "active": true,
+      "latitude": "44.8760882",
+      "longitude": "0.50798356"
     },
     {
       "id": "DEGAQU024FS0000C",
-      "updated": 1527766868757,
+      "updated": 1527768657946,
       "title": "Domaine de l'Ancienne Cure",
-      "active": true
+      "active": true,
+      "latitude": "44.7746762",
+      "longitude": "0.53281545"
     },
     {
       "id": "DEGAQU024FS00003",
-      "updated": 1527766868751,
+      "updated": 1527768657854,
       "title": "Domaine du Haut Pécharmant",
-      "active": true
+      "active": true,
+      "latitude": "44.8678234",
+      "longitude": "0.53087353"
     },
     {
       "id": "DEGAQU024FS0000E",
-      "updated": 1527766868757,
+      "updated": 1527768657957,
       "title": "Château du Haut Pezaud",
-      "active": true
+      "active": true,
+      "latitude": "44.7846373",
+      "longitude": "0.48715353"
     }
   ]
 }
