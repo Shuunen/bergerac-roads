@@ -4,8 +4,25 @@ const localApi = axios.create({
   timeout: 1000,
 })
 const isEqual = require('fast-deep-equal')
-const remoteDomains = require('./sample-domains.json').value
+const fs = require('fs')
+const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
+const variables = readVariablesFromFile(postmanFile)
+const remoteDomainsUrl = `http://${variables.syndic_url_opt}/${variables.syndic_name}/${variables.syndic_key}/Objects?$format=json`
 let stopProcessing = false
+
+function readVariablesFromFile(fileContent) {
+  const variables = {}
+  fileContent.split('\r\n').map(line => {
+    // iterate on each line
+    if (!line.includes(':')) {
+      return null
+    }
+    const data = line.split(':')
+    variables[data[0]] = data[1]
+  })
+  // console.log(variables)
+  return variables
+}
 
 /**
  * Convert large remote data into data that we will store in our db
@@ -54,9 +71,7 @@ function addLocalDomain(data) {
 }
 
 function patchLocalDomain(data) {
-  return localApi
-    .patch('/domains/' + data.id, data)
-    .then(() => console.log(data.id, ': updated !'))
+  return localApi.patch('/domains/' + data.id, data).then(() => console.log(data.id, ': updated !'))
 }
 
 function updateLocalDomain(remoteDomain) {
@@ -85,4 +100,19 @@ async function updateLocalDomains(remoteDomains) {
   }
 }
 
-updateLocalDomains(remoteDomains)
+function getRemoteDomains() {
+  axios.get(remoteDomainsUrl).then(response => {
+    if (response.data) {
+      const remoteDomains = response.data.value
+      updateLocalDomains(remoteDomains)
+    } else {
+      console.error('failed at getting remote domains')
+    }
+  })
+}
+
+getRemoteDomains()
+
+// For testing purpose :
+// const sampleDomains = require('./sample-domains.json').value
+// updateLocalDomains(sampleDomains)
