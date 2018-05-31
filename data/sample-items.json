@@ -1,0 +1,75 @@
+{
+  "odata.metadata": "http://wcf.tourinsoft.com/Syndication/3.0/cdt24/64fb655d-796e-495b-96b0-e5bb01854cdb/$metadata#Items",
+  "value": [
+      {
+          "SyndicItemID": "09B6D6F2-B20A-4F80-8288-B4C6314E33D0",
+          "ItemValue": "Escargots",
+          "ItemOrder": "15",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "b6320f97-5976-4d6c-b428-43a250b17e2d"
+      },
+      {
+          "SyndicItemID": "0CD1CED6-8152-4564-BDFA-FC71CDAF6D7C",
+          "ItemValue": "Accueil Paysan",
+          "ItemOrder": "0",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "f6167b21-5f9f-4a0a-8b66-af98bde34c04"
+      },
+      {
+          "SyndicItemID": "1",
+          "ItemValue": "CDT Dordogne (24)",
+          "ItemOrder": "1",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "10",
+          "ItemValue": "Isle-Auvézère",
+          "ItemOrder": "43",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "11",
+          "ItemValue": "Val de Dronne",
+          "ItemOrder": "79",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "12",
+          "ItemValue": "Vallée de l'Isle",
+          "ItemOrder": "80",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "13",
+          "ItemValue": "OT de Saint Astier",
+          "ItemOrder": "56",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "14",
+          "ItemValue": "OT de Périgueux",
+          "ItemOrder": "55",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "15",
+          "ItemValue": "OT de Bergerac",
+          "ItemOrder": "48",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      },
+      {
+          "SyndicItemID": "16",
+          "ItemValue": "Savignac les églises",
+          "ItemOrder": "76",
+          "SyndicId": "64fb655d-796e-495b-96b0-e5bb01854cdb",
+          "SyndicFieldID": "7f14f8dd-90ef-4026-901a-9898a15779bf"
+      }
+  ]
+}

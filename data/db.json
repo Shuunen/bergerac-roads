@@ -19,10 +19,6 @@
     {
       "name": "Dégustation offerte",
       "id": 6
-    },
-    {
-      "name": "testtag",
-      "id": 7
     }
   ],
   "domains": [
@@ -31,7 +27,7 @@
       "title": "Chateau de la Masse",
       "active": true,
       "image": "/images/pixabay/chateau-02.jpg",
-      "thumbnail":"/images/pixabay/chateau-02-small.jpg",
+      "thumbnail": "/images/pixabay/chateau-02-small.jpg",
       "updated": 1521388806603
     },
     {
@@ -39,7 +35,7 @@
       "title": "Chateau Monseigneur",
       "active": true,
       "image": "/images/pixabay/chateau-03.jpg",
-      "thumbnail":"/images/pixabay/chateau-03-small.jpg",
+      "thumbnail": "/images/pixabay/chateau-03-small.jpg",
       "updated": 1521244800603
     },
     {
@@ -47,7 +43,7 @@
       "title": "Domaine Prêche",
       "active": false,
       "image": "/images/pixabay/chateau-04.jpg",
-      "thumbnail":"/images/pixabay/chateau-04-small.jpg",
+      "thumbnail": "/images/pixabay/chateau-04-small.jpg",
       "updated": 1521244802103
     },
     {

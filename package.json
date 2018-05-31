@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:server": "nuxt",
-    "dev:db": "json-server db.json",
+    "dev:db": "json-server data/db.json",
     "build": "nuxt build --spa",
     "start": "nuxt start --spa",
     "generate": "nuxt generate --spa",
