@@ -28,7 +28,7 @@
       "active": true,
       "image": "/images/pixabay/chateau-02.jpg",
       "thumbnail": "/images/pixabay/chateau-02-small.jpg",
-      "updated": 1521388806603
+      "updated": 1521388806608
     },
     {
       "id": 2,
@@ -51,6 +51,66 @@
       "title": "Chateau la Paroisse",
       "active": true,
       "updated": 1521244801403
+    },
+    {
+      "id": "DEGAQU024FS00004",
+      "updated": 1527766868753,
+      "title": "Château Corbiac Pécharmant",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS0000A",
+      "updated": 1527766868756,
+      "title": "Château de la Jaubertie",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00005",
+      "updated": 1527766868753,
+      "title": "Cave Coopérative de Monbazillac",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00006",
+      "updated": 1527766868754,
+      "title": "Alliance Aquitaine - Site de Bergerac",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00009",
+      "updated": 1527766868756,
+      "title": "Château la Renaudie",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00007",
+      "updated": 1527766868755,
+      "title": "Château d'Elle",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00008",
+      "updated": 1527766868755,
+      "title": "Château la Vieille Bergerie",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS0000C",
+      "updated": 1527766868757,
+      "title": "Domaine de l'Ancienne Cure",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS00003",
+      "updated": 1527766868751,
+      "title": "Domaine du Haut Pécharmant",
+      "active": true
+    },
+    {
+      "id": "DEGAQU024FS0000E",
+      "updated": 1527766868757,
+      "title": "Château du Haut Pezaud",
+      "active": true
     }
   ]
 }
