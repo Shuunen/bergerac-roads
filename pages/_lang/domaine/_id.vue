@@ -72,7 +72,7 @@ export default {
   methods: {
     init() {
       // get ressource id
-      const matches = document.location.pathname.match(/\/(\d)-/)
+      const matches = document.location.pathname.match(/\/([\w]+)-/)
       if (matches && matches.length === 2) {
         const id = matches[1]
         this.loading = true
