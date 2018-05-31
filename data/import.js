@@ -7,7 +7,8 @@ const isEqual = require('fast-deep-equal')
 const fs = require('fs')
 const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
 const variables = readVariablesFromFile(postmanFile)
-const remoteDomainsUrl = `http://${variables.syndic_url_opt}/${variables.syndic_name}/${variables.syndic_key}/Objects?$format=json`
+const remoteDomainsUrl = `http://${variables.syndic_url_opt}
+/${variables.syndic_name}/${variables.syndic_key}/Objects?$format=json`
 let stopProcessing = false
 
 function readVariablesFromFile(fileContent) {
@@ -71,7 +72,9 @@ function addLocalDomain(data) {
 }
 
 function patchLocalDomain(data) {
-  return localApi.patch('/domains/' + data.id, data).then(() => console.log(data.id, ': updated !'))
+  return localApi
+    .patch('/domains/' + data.id, data)
+    .then(() => console.log(data.id, ': updated !'))
 }
 
 function updateLocalDomain(remoteDomain) {

@@ -40,7 +40,6 @@ module.exports = {
         semi: false,
         bracketSpacing: true,
         trailingComma: 'es5',
-        printWidth: 300
       },
     ],
   },
