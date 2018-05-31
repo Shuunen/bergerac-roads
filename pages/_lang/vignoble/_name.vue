@@ -1,7 +1,8 @@
 <template>
   <el-container direction="vertical" class="page-domaine">
     <Header />
-    <div class="color-line"/>
+    <div class="color-line" />
+    <div class="background" :style="backgroundStyle" />
     <el-main>
       <div class="encart">
         <div class="line">
@@ -52,6 +53,9 @@ export default {
   },
   asyncData({ params }) {
     return {
+      backgroundStyle: {
+        backgroundImage: `url(/images/vignobles/${params.name}.jpg)`,
+      },
       name: params.name,
     }
   },
@@ -82,7 +86,7 @@ export default {
 .encart {
   background: $white;
   padding: 0 40px;
-  margin-top: 100px;
+  margin-top: -150px;
   margin-left: 20px;
   margin-right: 20px;
   @media (max-width: 450px) {
