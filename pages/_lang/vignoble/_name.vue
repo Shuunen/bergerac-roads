@@ -1,0 +1,98 @@
+<template>
+  <el-container direction="vertical" class="page-domaine">
+    <Header />
+    <div class="color-line"/>
+    <el-main>
+      <div class="encart">
+        <div class="line">
+          <h1 class="title">{{ $t(`vineyards.${name}.title`) }}</h1>
+        </div>
+        <div>
+          <p>{{ $t(`vineyards.${name}.information`) }}</p>
+          <h2 class="subtitle">{{ $t(`vineyards.${name}.introduction`) }}</h2>
+          <p>{{ $t(`vineyards.${name}.presentation`) }}</p>
+          <h2 class="subtitle">{{ $t('vineyards.titles.summary') }}</h2>
+          <p>{{ $t(`vineyards.${name}.summary`) }}</p>
+          <h2 class="subtitle">{{ $t('vineyards.titles.numbers') }}</h2>
+          <ul>
+            <li v-for="(element, index) in $t(`vineyards.${name}.numbers`)" :key="index">
+              {{ element }}
+            </li>
+          </ul>
+          <h2 class="subtitle">{{ $t('vineyards.titles.varieties') }}</h2>
+          <ul>
+            <li v-for="(element, index) in $t(`vineyards.${name}.varieties`)" :key="index">
+              {{ element }}
+            </li>
+          </ul>
+          <h2 class="subtitle">{{ $t('vineyards.titles.typicity') }}</h2>
+          <ul>
+            <li v-for="(element, index) in $t(`vineyards.${name}.typicity`)" :key="index">
+              {{ element }}
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <nuxt-link :to="$i18n.path('')">
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+          </nuxt-link>
+          <div class="grappe"/>
+        </div>
+      </div>
+    </el-main>
+  </el-container>
+</template>
+
+<script>
+import Header from '~/components/Header.vue'
+
+export default {
+  components: {
+    Header,
+  },
+  asyncData({ params }) {
+    return {
+      name: params.name,
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.color-line {
+  background-color: $red-d3;
+}
+.page-domaine {
+  background: $red-d2;
+  min-height: 100vh;
+}
+.title {
+  margin: 30px 0 20px;
+  color: $red-d2;
+}
+.subtitle {
+  margin: 1rem 0 0;
+  color: $red-d2;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.encart {
+  background: $white;
+  padding: 0 40px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media (max-width: 450px) {
+    margin-top: -300px;
+  }
+}
+.back {
+  margin-top: 10px;
+}
+.grappe {
+  margin: 20px;
+}
+</style>
