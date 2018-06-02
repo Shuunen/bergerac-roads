@@ -1,8 +1,8 @@
 <template>
   <el-container direction="vertical" class="itinerary-container">
     <el-main>
-      <SelectList :items="sites" @get-checked-items="selectedSites = $event" />
-      <GoogleMap :markers="sites" :selected-markers="selectedSites" />
+      <SelectList :items="sites" />
+      <GoogleMap :markers="sites" />
     </el-main>
   </el-container>
 </template>
@@ -20,7 +20,6 @@ export default {
   data() {
     return {
       sites: [],
-      selectedSites: [],
     }
   },
   created() {

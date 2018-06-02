@@ -19,16 +19,13 @@
 
 <script>
 import { gmapApi } from 'vue2-google-maps'
+import { eventBus } from '../store/index'
 
 export default {
   props: {
     markers: {
       type: Array,
       required: true,
-    },
-    selectedMarkers: {
-      type: Array,
-      default: () => [],
     },
   },
   data() {
@@ -37,6 +34,7 @@ export default {
         lat: 46.9276,
         lng: 2.2137,
       },
+      startingPoint: '',
     }
   },
   computed: {
@@ -47,47 +45,60 @@ export default {
       return new this.google.maps.DirectionsRenderer()
     },
   },
-  watch: {
-    selectedMarkers(newSelectedMarkers) {
+  created() {
+    eventBus.$on('set-starting-point', position => {
+      this.startingPoint = position
+    })
+    eventBus.$on('get-checked-items', checkedItems => {
       let promises = []
-      if (!navigator.geolocation) {
-        alert('Geolocation is not supported by this browser.')
-        return
-      }
-      navigator.geolocation.getCurrentPosition(
-        position => {
-          for (let marker of newSelectedMarkers) {
-            promises.push(this.createDistanceRequest(position, marker))
-          }
-          // When all the promises are resolved, we can compare the distances.
-          Promise.all(promises).then(responses => {
-            let furthestPlace = this.getFurthestPlace(responses)
-            // Delete the distance property to match the waipoint prototype.
-            responses.forEach(response => delete response.distance)
-            // Construct the request as follows : the furthest as arrival and the others
-            // as waypoints (optimizeWaypoints equals to true to optimize the order).
-            let request = {
-              origin: {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
-              },
-              destination: furthestPlace.location,
-              travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
-              waypoints: responses,
-              optimizeWaypoints: true,
-            }
-            this.displayItinerary(request)
-          })
-        },
-        error => {
-          if (error.code === error.PERMISSION_DENIED) {
-            alert('Geolocation must be allowed for this feature to work.')
-          }
+      this.getStartingPoint().then(position => {
+        for (let item of checkedItems) {
+          promises.push(this.createDistanceRequest(position, item))
         }
-      )
-    },
+        // When all the promises are resolved, we can compare the distances.
+        Promise.all(promises).then(responses => {
+          let furthestPlace = this.getFurthestPlace(responses)
+          // Delete the distance property to match the waipoint prototype.
+          responses.forEach(response => delete response.distance)
+          // Construct the request as follows : the furthest as arrival and the others
+          // as waypoints (optimizeWaypoints equals to true to optimize the order).
+          let request = {
+            origin: this.getFormattedPosition(position),
+            destination: furthestPlace.location,
+            travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
+            waypoints: responses,
+            optimizeWaypoints: true,
+          }
+          this.displayItinerary(request)
+        })
+      })
+    })
   },
   methods: {
+    // If starting point is set, take this one as starting point.
+    // If not, take the user's current location.
+    getStartingPoint() {
+      return new Promise(resolve => {
+        if (this.startingPoint !== '') {
+          resolve(this.startingPoint)
+        } else {
+          if (!navigator.geolocation) {
+            alert('Geolocation is not supported by this browser.')
+            return
+          }
+          navigator.geolocation.getCurrentPosition(
+            position => {
+              resolve(position)
+            },
+            error => {
+              if (error.code === error.PERMISSION_DENIED) {
+                alert('Geolocation must be allowed for this feature to work.')
+              }
+            }
+          )
+        }
+      })
+    },
     // Apply the itinerary to the map with its reference.
     displayItinerary(request) {
       this.$refs.mapRef.$mapPromise.then(map => {
@@ -107,10 +118,7 @@ export default {
     createDistanceRequest(position, marker) {
       let directionsService = new this.google.maps.DirectionsService()
       let request = {
-        origin: {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        },
+        origin: this.getFormattedPosition(position),
         destination: marker,
         travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
       }
@@ -124,6 +132,15 @@ export default {
           }
         })
       })
+    },
+    // Get the formatted position depending on the type of it.
+    getFormattedPosition(position) {
+      return typeof position === 'string'
+        ? position
+        : {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          }
     },
     // Get the furthest place between all selected places in order to set it as arrival point.
     getFurthestPlace(places) {
