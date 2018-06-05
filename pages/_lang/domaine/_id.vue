@@ -44,7 +44,17 @@ export default {
   },
   computed: {
     image: function() {
-      return this.data.image || '/images/pixabay/bouchon-01.jpg'
+      let image = '/images/pixabay/bouchon-01.jpg'
+      if (!this.data) {
+        console.warn('data not available, using default image...')
+        return image
+      }
+      if (this.data.image) {
+        image = this.data.image
+      } else {
+        console.warn('image not available, using default one...')
+      }
+      return image
     },
     added: function() {
       if (!this.data.updated) {
@@ -60,9 +70,8 @@ export default {
         minute: "numeric"
       */
       // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
-      const added = new Intl.DateTimeFormat('fr-FR', options).format(
-        new Date(this.data.updated)
-      )
+      const date = new Date(this.data.updated)
+      const added = new Intl.DateTimeFormat('fr-FR', options).format(date)
       return added
     },
   },
@@ -77,9 +86,13 @@ export default {
         const id = matches[1]
         this.loading = true
         getDomain(id).then(domain => {
-          console.log('Domain page : got domain', domain)
+          if (domain) {
+            console.log('Domain page : got domain', domain)
+            this.data = domain
+          } else {
+            console.error('failed at getting domain with id "' + id + '"')
+          }
           this.loading = false
-          this.data = domain
           this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
         })
       } else {
