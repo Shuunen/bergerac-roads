@@ -23,14 +23,6 @@
   ],
   "domains": [
     {
-      "id": 1,
-      "title": "Chateau de la Masse",
-      "active": true,
-      "image": "/images/pixabay/chateau-02.jpg",
-      "thumbnail": "/images/pixabay/chateau-02-small.jpg",
-      "updated": 1521388806608
-    },
-    {
       "id": "DEGAQU024FS00004",
       "updated": 1527768657866,
       "title": "Château Corbiac Pécharmant",
