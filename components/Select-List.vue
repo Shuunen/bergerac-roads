@@ -38,21 +38,19 @@ export default {
   },
   computed: {
     google: gmapApi,
-    // Restrict autocomplete to results in France.
-    autocomplete: function() {
-      return new this.google.maps.places.Autocomplete(
-        this.$refs.autocomplete.$refs.input,
-        {
-          componentRestrictions: {
-            country: 'fr',
-          },
-        }
-      )
-    },
   },
   mounted() {
-    this.autocomplete.addListener('place_changed', () => {
-      this.setStartingPoint(this.autocomplete.getPlace().formatted_address)
+    let autocomplete = new this.google.maps.places.Autocomplete(
+      this.$refs.autocomplete.$refs.input,
+      {
+        // Restrict autocomplete to results in France.
+        componentRestrictions: {
+          country: 'fr',
+        },
+      }
+    )
+    autocomplete.addListener('place_changed', () => {
+      this.setStartingPoint(autocomplete.getPlace().formatted_address)
     })
   },
   methods: {

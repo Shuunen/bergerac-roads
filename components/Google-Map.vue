@@ -58,7 +58,7 @@ export default {
         // When all the promises are resolved, we can compare the distances.
         Promise.all(promises).then(responses => {
           let furthestPlace = this.getFurthestPlace(responses)
-          // Delete the distance property to match the waipoint prototype.
+          // Delete the distance property to match the waypoint prototype.
           responses.forEach(response => delete response.distance)
           // Construct the request as follows : the furthest as arrival and the others
           // as waypoints (optimizeWaypoints equals to true to optimize the order).
@@ -146,7 +146,7 @@ export default {
     getFurthestPlace(places) {
       let maxDistance = Math.max(...places.map(place => place.distance))
       let furthestPlaceIndex = places.findIndex(place => {
-        return (place.distance = maxDistance)
+        return place.distance === maxDistance
       })
       return places.splice(furthestPlaceIndex, 1)[0]
     },
