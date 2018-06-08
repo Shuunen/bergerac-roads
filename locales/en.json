@@ -26,6 +26,10 @@
       "varieties": "Grape varieties",
       "typicity": "Typicity"
     },
+    "error": {
+      "title": "Sorry, this vineyard doesn't exist...",
+      "available": "Here is the list of our vineyards"
+    },
     "bergerac": {
       "title": "Bergerac",
       "information": "",

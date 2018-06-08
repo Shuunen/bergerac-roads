@@ -2,50 +2,78 @@
   <el-container direction="vertical" class="page-domaine">
     <Header />
     <div class="color-line" />
-    <div class="background" :style="backgroundStyle" />
-    <el-main>
-      <div class="encart">
-        <div class="line">
-          <h1 class="title">{{ $t(`vineyards.${name}.title`) }}</h1>
+    <template v-if="vineyardExists">
+      <div class="background" :style="backgroundStyle" />
+      <el-main>
+        <div class="encart">
+          <div class="line">
+            <h1 class="title">{{ $t(`vineyards.${name}.title`) }}</h1>
+          </div>
+          <div>
+            <p>{{ $t(`vineyards.${name}.information`) }}</p>
+            <h2 class="subtitle">{{ $t(`vineyards.${name}.introduction`) }}</h2>
+            <p>{{ $t(`vineyards.${name}.presentation`) }}</p>
+            <h2 class="subtitle">{{ $t('vineyards.titles.summary') }}</h2>
+            <p>{{ $t(`vineyards.${name}.summary`) }}</p>
+            <h2 class="subtitle">{{ $t('vineyards.titles.numbers') }}</h2>
+            <ul>
+              <li v-for="(element, index) in $t(`vineyards.${name}.numbers`)" :key="index">
+                {{ element }}
+              </li>
+            </ul>
+            <h2 class="subtitle">{{ $t('vineyards.titles.varieties') }}</h2>
+            <ul>
+              <li v-for="(element, index) in $t(`vineyards.${name}.varieties`)" :key="index">
+                {{ element }}
+              </li>
+            </ul>
+            <h2 class="subtitle">{{ $t('vineyards.titles.typicity') }}</h2>
+            <ul>
+              <li v-for="(element, index) in $t(`vineyards.${name}.typicity`)" :key="index">
+                {{ element }}
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <nuxt-link :to="$i18n.path('')">
+              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+            </nuxt-link>
+            <div class="grappe"/>
+          </div>
         </div>
-        <div>
-          <p>{{ $t(`vineyards.${name}.information`) }}</p>
-          <h2 class="subtitle">{{ $t(`vineyards.${name}.introduction`) }}</h2>
-          <p>{{ $t(`vineyards.${name}.presentation`) }}</p>
-          <h2 class="subtitle">{{ $t('vineyards.titles.summary') }}</h2>
-          <p>{{ $t(`vineyards.${name}.summary`) }}</p>
-          <h2 class="subtitle">{{ $t('vineyards.titles.numbers') }}</h2>
-          <ul>
-            <li v-for="(element, index) in $t(`vineyards.${name}.numbers`)" :key="index">
-              {{ element }}
-            </li>
-          </ul>
-          <h2 class="subtitle">{{ $t('vineyards.titles.varieties') }}</h2>
-          <ul>
-            <li v-for="(element, index) in $t(`vineyards.${name}.varieties`)" :key="index">
-              {{ element }}
-            </li>
-          </ul>
-          <h2 class="subtitle">{{ $t('vineyards.titles.typicity') }}</h2>
-          <ul>
-            <li v-for="(element, index) in $t(`vineyards.${name}.typicity`)" :key="index">
-              {{ element }}
-            </li>
-          </ul>
+      </el-main>
+    </template>
+    <template v-else>
+      <el-main>
+        <div class="encart no-image">
+          <div class="line">
+            <h1 class="title">{{ $t(`vineyards.error.title`) }}</h1>
+          </div>
+          <div>
+            <h2 class="subtitle">{{ $t(`vineyards.error.available`) }}</h2>
+            <ul>
+              <li v-for="(vineyard, index) in vineyards" :key="index">
+                <nuxt-link :to="$i18n.path(`vignoble/${vineyard}`)">
+                  {{ $t(`vineyards.${vineyard}.title`) }}
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <nuxt-link :to="$i18n.path('')">
+              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+            </nuxt-link>
+            <div class="grappe"/>
+          </div>
         </div>
-        <div class="col">
-          <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-          </nuxt-link>
-          <div class="grappe"/>
-        </div>
-      </div>
-    </el-main>
+      </el-main>
+    </template>
   </el-container>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
+import { VINEYARDS } from '~/data/constants'
 
 export default {
   components: {
@@ -57,6 +85,8 @@ export default {
         backgroundImage: `url(/images/vignobles/${params.name}.jpg)`,
       },
       name: params.name,
+      vineyards: VINEYARDS,
+      vineyardExists: VINEYARDS.some(vineyard => params.name === vineyard),
     }
   },
 }
@@ -91,6 +121,9 @@ export default {
   margin-right: 20px;
   @media (max-width: 450px) {
     margin-top: -300px;
+  }
+  &.no-image {
+    margin-top: 100px;
   }
 }
 .back {

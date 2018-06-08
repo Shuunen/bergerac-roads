@@ -25,6 +25,10 @@
       "varieties": "Cépages",
       "typicity": ""
     },
+    "error": {
+      "title": "Désolé, ce vignoble n'est pas répertorié...",
+      "available": "Voici la liste des vignobles existants"
+    },
     "bergerac": {
       "title": "Bergerac",
       "information": "Les vins de Bergerac sont les champions des tables conviviales. Une grillade (aux sarments de vigne) entre amis, et le Côte de Bergerac rouge fait déjà de l’œil à votre côte de bœuf. Des huîtres dégustées sur un coin de comptoir : impossible sans Bergerac blanc sec. Et pique-nique improvisé rime forcément avec…Bergerac rosé ! Les vins de Bergerac excellent dans tous les moments de partage, qu’ils soient prémédités, ou parce que l’occasion a fait le larron…",
