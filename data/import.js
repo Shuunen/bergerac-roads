@@ -7,11 +7,17 @@ const isEqual = require('fast-deep-equal')
 const fs = require('fs')
 const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
 const variables = readVariablesFromFile(postmanFile)
-const remoteDomainsUrl = `http://${variables.syndic_url_opt}
-/${variables.syndic_name}/${variables.syndic_key}/Objects?$format=json`
+let remoteDomainsUrl = `http://${variables.syndic_url_opt}`
+remoteDomainsUrl += `/${variables.syndic_name}`
+remoteDomainsUrl += `/${variables.syndic_key}`
+remoteDomainsUrl += `/Objects?$format=json`
 let stopProcessing = false
+let domainCreated = 0
+let domainUpdated = 0
+let domainSkipped = 0
 
 function readVariablesFromFile(fileContent) {
+  console.log('reading variables')
   const variables = {}
   fileContent.split('\r\n').map(line => {
     // iterate on each line
@@ -31,16 +37,25 @@ function readVariablesFromFile(fileContent) {
  * @param {Domain} remote the domain data from remote API
  */
 function remoteDomainToLocal(remote) {
-  return {
+  // console.log('converting remote data to local')
+  const local = {
     id: remote.SyndicObjectID,
     title: remote.SyndicObjectName,
     latitude: remote.GmapLatitude,
     longitude: remote.GmapLongitude,
+    photos: [],
     active: true,
   }
+  if (remote.PHOTO) {
+    local.photos = remote.PHOTO.split('#')
+  } else {
+    console.warn(local.id, ': no photos found on remote data')
+  }
+  return local
 }
 
 function getLocalDomain(id) {
+  console.log(id, ': getting local domain')
   return localApi
     .get('/domains/' + id)
     .then(response => {
@@ -60,9 +75,11 @@ function getLocalDomain(id) {
 }
 
 function addLocalDomain(data) {
+  console.log('adding local domain with id', data.id)
   return localApi
     .post('/domains', data)
     .then(() => {
+      domainCreated++
       console.log(data.id, ': freshly added !')
     })
     .catch(error => {
@@ -74,7 +91,14 @@ function addLocalDomain(data) {
 function patchLocalDomain(data) {
   return localApi
     .patch('/domains/' + data.id, data)
-    .then(() => console.log(data.id, ': updated !'))
+    .then(() => {
+      domainUpdated++
+      console.log(data.id, ': updated !\n')
+    })
+    .catch(error => {
+      console.error(error)
+      stopProcessing = true
+    })
 }
 
 function updateLocalDomain(remoteDomain) {
@@ -91,7 +115,8 @@ function updateLocalDomain(remoteDomain) {
       newData.updated = Date.now()
       return patchLocalDomain(newData)
     } else {
-      console.log(newData.id, ': no updates')
+      domainSkipped++
+      console.log(newData.id, ': no updates \n')
     }
   })
 }
@@ -103,15 +128,30 @@ async function updateLocalDomains(remoteDomains) {
   }
 }
 
+function showSummary() {
+  console.log('domain(s) created :', domainCreated)
+  console.log('domain(s) updated :', domainUpdated)
+  console.log('domain(s) skipped :', domainSkipped)
+}
+
 function getRemoteDomains() {
-  axios.get(remoteDomainsUrl).then(response => {
-    if (response.data) {
-      const remoteDomains = response.data.value
-      updateLocalDomains(remoteDomains)
-    } else {
-      console.error('failed at getting remote domains')
-    }
-  })
+  console.log('getting remote domains from api')
+  console.log('using url :', remoteDomainsUrl)
+  axios
+    .get(remoteDomainsUrl)
+    .then(response => {
+      if (response.data) {
+        const remoteDomains = response.data.value
+        return updateLocalDomains(remoteDomains)
+      } else {
+        console.error('failed at getting remote domains')
+      }
+    })
+    .then(() => showSummary())
+    .catch(error => {
+      console.error(error)
+      stopProcessing = true
+    })
 }
 
 getRemoteDomains()
