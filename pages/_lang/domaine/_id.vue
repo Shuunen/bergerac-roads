@@ -44,17 +44,17 @@ export default {
   },
   computed: {
     image: function() {
-      let image = '/images/pixabay/bouchon-01.jpg'
+      let path = '/images/pixabay/bouchon-01.jpg'
       if (!this.data) {
         console.warn('data not available, using default image...')
-        return image
+        return path
       }
-      if (this.data.image) {
-        image = this.data.image
+      if (this.data.photos && this.data.photos.length) {
+        path = this.data.photos[0]
       } else {
         console.warn('image not available, using default one...')
       }
-      return image
+      return path
     },
     added: function() {
       if (!this.data.updated) {

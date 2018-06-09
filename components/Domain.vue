@@ -29,7 +29,13 @@ export default {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
-      return this.data.thumbnail || '/images/no-image.png'
+      let path = '/images/no-image.png'
+      if (this.data.thumbnail) {
+        path = this.data.thumbnail
+      } else if (this.data.photos && this.data.photos.length) {
+        path = this.data.photos[0]
+      }
+      return path
     },
     added: function() {
       if (!this.data.updated) {
