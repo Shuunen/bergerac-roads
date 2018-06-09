@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload, {
+  // src of the image upon load fail
+  error: '/images/no-image.png',
+
   // from https://github.com/hilongjw/vue-lazyload#intersectionobserver
   // set observer to true
   observer: true,
@@ -9,6 +12,6 @@ Vue.use(VueLazyload, {
   // optional
   observerOptions: {
     rootMargin: '0px',
-    threshold: 1,
+    threshold: 0.1,
   },
 })
