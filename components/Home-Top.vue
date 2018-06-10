@@ -16,6 +16,7 @@
 .home-top {
   z-index: 1;
   position: relative;
+  overflow: hidden;
 }
 .title {
   z-index: 10;
