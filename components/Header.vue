@@ -76,6 +76,7 @@ export default {
 .logo-wrapper,
 .lang-wrapper {
   width: 220px;
+  flex-shrink: 0;
 }
 .lang-wrapper {
   display: flex;
