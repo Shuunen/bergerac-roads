@@ -54,7 +54,7 @@
   "domains": [
     {
       "id": "DEGAQU024FS00004",
-      "updated": 1528562372229,
+      "updated": 1528654507584,
       "title": "Château Corbiac Pécharmant",
       "active": true,
       "latitude": "44.8778672",
@@ -65,11 +65,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1000080-2.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/P1000088.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Corbiac-Pecharmant-2.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS0000A",
-      "updated": 1528562372305,
+      "updated": 1528655054926,
       "title": "Château de la Jaubertie",
       "active": true,
       "latitude": "44.7744249",
@@ -90,11 +95,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--7-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--9-.jpg"
+      ],
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS00005",
-      "updated": 1528562372239,
+      "updated": 1528655054889,
       "title": "Cave Coopérative de Monbazillac",
       "active": true,
       "latitude": "44.8106440",
@@ -106,11 +116,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--5-.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee"
       ]
     },
     {
       "id": "DEGAQU024FS00006",
-      "updated": 1528562372258,
+      "updated": 1528654507600,
       "title": "Alliance Aquitaine - Site de Bergerac",
       "active": true,
       "latitude": "44.8584165",
@@ -123,11 +138,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-la-vaure-bergerac-futs-de-chene.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/stv-montravel.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vieux-sapin-pecharmant.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS00009",
-      "updated": 1528562372290,
+      "updated": 1528654507632,
       "title": "Château la Renaudie",
       "active": true,
       "latitude": "44.8888291",
@@ -139,6 +159,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/degustation1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/entree1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/le-chateau1.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
@@ -151,7 +177,7 @@
     },
     {
       "id": "DEGAQU024FS00008",
-      "updated": 1528562372273,
+      "updated": 1528654507615,
       "title": "Château la Vieille Bergerie",
       "active": true,
       "latitude": "44.8760882",
@@ -164,11 +190,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--7-.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS0000C",
-      "updated": 1528562372328,
+      "updated": 1528655054944,
       "title": "Domaine de l'Ancienne Cure",
       "active": true,
       "latitude": "44.7746762",
@@ -179,11 +210,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-Christian-Roche.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-degustation.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-vue-aerienne.jpg"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS00003",
-      "updated": 1528562372212,
+      "updated": 1528654507573,
       "title": "Domaine du Haut Pécharmant",
       "active": true,
       "latitude": "44.8678234",
@@ -198,11 +235,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--2-.JPG"
+      ],
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
       ]
     },
     {
       "id": "DEGAQU024FS0000E",
-      "updated": 1528562372339,
+      "updated": 1528654128465,
       "title": "Château du Haut Pezaud",
       "active": true,
       "latitude": "44.7846373",
@@ -217,7 +260,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--7-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--9-.jpg"
-      ]
+      ],
+      "tags": []
     },
     {
       "id": "DEGAQU024FS0000F",
@@ -237,7 +281,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse1.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse9.jpeg"
       ],
-      "updated": 1528562372351
+      "updated": 1528655054967,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000G",
@@ -253,7 +304,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--4-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-vins-de-Bergerac-Cloitre-des-Recollets-2-4.jpg"
       ],
-      "updated": 1528562372363
+      "updated": 1528655054981,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024FS0000H",
@@ -268,7 +325,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1040492-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bois-de-Pourquie.jpg"
       ],
-      "updated": 1528562372379
+      "updated": 1528654128505,
+      "tags": []
     },
     {
       "id": "DEGAQU024FS0000I",
@@ -283,7 +341,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-05.jpg"
       ],
-      "updated": 1528562372391
+      "updated": 1528654507702,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000J",
@@ -307,7 +371,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-chasse-au-tresor.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-pique-nique.JPG"
       ],
-      "updated": 1528562372404
+      "updated": 1528654507717,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000K",
@@ -323,7 +393,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-vue-aerienne-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-GRANGE-NEUVE-Caveau-2.JPG"
       ],
-      "updated": 1528562372416
+      "updated": 1528654507729,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000M",
@@ -342,7 +418,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/p05011w52--800x600-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Coutancie-2.jpg"
       ],
-      "updated": 1528562372427
+      "updated": 1528655055019,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000N",
@@ -357,7 +439,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--3-.jpg"
       ],
-      "updated": 1528562372440
+      "updated": 1528654507760,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000R",
@@ -372,7 +460,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-05.jpg"
       ],
-      "updated": 1528562372454
+      "updated": 1528654507773,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0000S",
@@ -399,7 +493,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--26-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/puy-servain-2018.png"
       ],
-      "updated": 1528562372464
+      "updated": 1528654473682,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS00011",
@@ -414,7 +513,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/TV4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Terre-Vieille-2.jpg"
       ],
-      "updated": 1528562372477
+      "updated": 1528654128629,
+      "tags": []
     },
     {
       "id": "DEGAQU024FS00015",
@@ -434,7 +534,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chai---vins----Jean-Christophe-Amelin.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/EQUIPE-LADESVIGNES.jpg"
       ],
-      "updated": 1528562372490
+      "updated": 1528654507796,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS00016",
@@ -455,7 +561,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--9-.jpg"
       ],
-      "updated": 1528562372505
+      "updated": 1528654507810,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0001G",
@@ -469,7 +581,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-4.JPG"
       ],
-      "updated": 1528562372518
+      "updated": 1528655055063,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0001L",
@@ -480,7 +598,11 @@
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/logo-le-Raz.jpg"
       ],
-      "updated": 1528562372534
+      "updated": 1528654495814,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024FS0001M",
@@ -499,7 +621,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--9-.jpg"
       ],
-      "updated": 1528562372548
+      "updated": 1528655055083,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0001N",
@@ -514,7 +642,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--3-.jpg"
       ],
-      "updated": 1528562372563
+      "updated": 1528654473763,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0001O",
@@ -529,7 +662,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--5-.jpg"
       ],
-      "updated": 1528562372574
+      "updated": 1528654507863,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0001P",
@@ -542,7 +680,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/vignes1-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignes3-2.jpg"
       ],
-      "updated": 1528562372586
+      "updated": 1528654507878,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0002G",
@@ -557,7 +700,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1060697.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/P1130341.jpg"
       ],
-      "updated": 1528562372604
+      "updated": 1528655055111,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0002H",
@@ -575,7 +725,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--2-.JPG"
       ],
-      "updated": 1528562372616
+      "updated": 1528655055124,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0002J",
@@ -592,7 +748,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/6-Mouton.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/7-cheval.jpg"
       ],
-      "updated": 1528562372628
+      "updated": 1528655055138,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0005B",
@@ -613,7 +775,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--9-.jpg"
       ],
-      "updated": 1528562372639
+      "updated": 1528654507920,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0007B",
@@ -630,7 +798,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--3-.JPG"
       ],
-      "updated": 1528562372660
+      "updated": 1528655055154,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0008K",
@@ -644,7 +817,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Les-vignes-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-43.JPG"
       ],
-      "updated": 1528562372672
+      "updated": 1528654507952,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0008L",
@@ -664,7 +842,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/Barouillet--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo3.JPG"
       ],
-      "updated": 1528562372689
+      "updated": 1528655055172,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0008M",
@@ -678,7 +863,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--2-.jpg"
       ],
-      "updated": 1528562372707
+      "updated": 1528654507974,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0008N",
@@ -693,7 +883,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/DSCF2717.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/image-56.jpg"
       ],
-      "updated": 1528562372717
+      "updated": 1528655055195,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0008O",
@@ -704,7 +901,13 @@
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/telechargement-107.jpg"
       ],
-      "updated": 1528562372729
+      "updated": 1528654508002,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0009H",
@@ -719,7 +922,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-5.jpg"
       ],
-      "updated": 1528562372742
+      "updated": 1528655055214,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0009K",
@@ -737,7 +946,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--7-.jpg"
       ],
-      "updated": 1528562372755
+      "updated": 1528654508028,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0009N",
@@ -755,7 +969,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--7-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--8-.JPG"
       ],
-      "updated": 1528562372770
+      "updated": 1528655055233,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024FS0009O",
@@ -767,7 +988,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo3.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo1.jpg"
       ],
-      "updated": 1528562372784
+      "updated": 1528654128952,
+      "tags": []
     },
     {
       "id": "DEGAQU024FS0009S",
@@ -780,7 +1002,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-resultat.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/photo-2-resultat.JPG"
       ],
-      "updated": 1528562372794
+      "updated": 1528654508057,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5029W2",
@@ -794,7 +1022,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/dubard36.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/dubard33.jpg"
       ],
-      "updated": 1528562372814
+      "updated": 1528654508067,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5029W3",
@@ -803,7 +1037,10 @@
       "longitude": "0.50954774",
       "active": true,
       "photos": [],
-      "updated": 1528561926394
+      "updated": 1528654474006,
+      "tags": [
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5029WM",
@@ -819,7 +1056,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere-05.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere-06.jpg"
       ],
-      "updated": 1528562372837
+      "updated": 1528654508085,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5029WQ",
@@ -828,7 +1070,13 @@
       "longitude": "0.46016291",
       "active": true,
       "photos": [],
-      "updated": 1528561926424
+      "updated": 1528654508096,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V502OWN",
@@ -842,7 +1090,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--3-.JPG"
       ],
-      "updated": 1528562372863
+      "updated": 1528655055275,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V503LPL",
@@ -859,7 +1113,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/R-Chateau-Grande-Maison--MC-Grasseau--22-.jpg"
       ],
-      "updated": 1528562372873
+      "updated": 1528655055291,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V503MGE",
@@ -877,7 +1139,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin-Epicerie-Fine.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Vendangeurs.jpg"
       ],
-      "updated": 1528562372890
+      "updated": 1528655055306,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V505KB3",
@@ -892,7 +1159,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-05.jpg"
       ],
-      "updated": 1528562372905
+      "updated": 1528655055317,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V505KJY",
@@ -908,7 +1180,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne5.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne735.jpg"
       ],
-      "updated": 1528562372919
+      "updated": 1528655055332,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V505KLW",
@@ -922,7 +1199,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-04.jpg"
       ],
-      "updated": 1528562372938
+      "updated": 1528655055343,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V505KU7",
@@ -940,7 +1224,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/2007-0101JANV130347.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--4-.JPG"
       ],
-      "updated": 1528562372951
+      "updated": 1528655055353,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506AOS",
@@ -960,7 +1251,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--9-.JPG"
       ],
-      "updated": 1528562372967
+      "updated": 1528654508185,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506ARS",
@@ -975,7 +1272,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Combet4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Combet5.jpg"
       ],
-      "updated": 1528562372979
+      "updated": 1528654508198,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506AS9",
@@ -990,7 +1293,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--5-.jpg"
       ],
-      "updated": 1528562372989
+      "updated": 1528655055388,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506N08",
@@ -1005,7 +1313,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-05.jpg"
       ],
-      "updated": 1528562373003
+      "updated": 1528654508226,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506P0I",
@@ -1020,7 +1333,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--2-.JPG"
       ],
-      "updated": 1528562373015
+      "updated": 1528655055406,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506T01",
@@ -1035,7 +1354,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--4-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--5-.JPG"
       ],
-      "updated": 1528562373029
+      "updated": 1528655055418,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V506TJQ",
@@ -1044,7 +1369,11 @@
       "longitude": "0.24928199",
       "active": true,
       "photos": [],
-      "updated": 1528561926649
+      "updated": 1528654496291,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V506TL3",
@@ -1059,7 +1388,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Chai-a-barrique.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Sauvignon-Gris-2.JPG"
       ],
-      "updated": 1528562373051
+      "updated": 1528654508262,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506TN3",
@@ -1077,7 +1412,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/peyral-3.jpg"
       ],
-      "updated": 1528562373061
+      "updated": 1528655055438,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506TP1",
@@ -1092,7 +1433,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---vigne.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---bouteille.jpg"
       ],
-      "updated": 1528562373075
+      "updated": 1528655055453,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506U03",
@@ -1105,7 +1453,11 @@
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-des-vignes---chateau.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-propriete.jpg"
       ],
-      "updated": 1528562373090
+      "updated": 1528654474266,
+      "tags": [
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506U4Y",
@@ -1121,7 +1473,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--2-.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--3-.jpeg"
       ],
-      "updated": 1528562373102
+      "updated": 1528654496334,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V506U5L",
@@ -1148,7 +1505,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---9-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--1-.JPG"
       ],
-      "updated": 1528562373112
+      "updated": 1528654508312,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506UMP",
@@ -1161,7 +1524,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-2.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-3.JPG"
       ],
-      "updated": 1528562373123
+      "updated": 1528654129294,
+      "tags": []
     },
     {
       "id": "DEGAQU024V506UTS",
@@ -1177,7 +1541,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo5.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo6.jpg"
       ],
-      "updated": 1528562373135
+      "updated": 1528654508329,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506UUM",
@@ -1192,7 +1561,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grimard-3.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/les-grimard-juillet-2013-039.JPG"
       ],
-      "updated": 1528562373157
+      "updated": 1528654508343,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506V2O",
@@ -1206,7 +1580,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--4-.JPG"
       ],
-      "updated": 1528562373171
+      "updated": 1528654508355,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V506YB6",
@@ -1221,7 +1600,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Marches-Gourmands.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Vins.jpeg"
       ],
-      "updated": 1528562373186
+      "updated": 1528654508370,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5070YW",
@@ -1245,7 +1629,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--13-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--14-.jpg"
       ],
-      "updated": 1528562373198
+      "updated": 1528655055501,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V50714R",
@@ -1259,7 +1649,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/20130707-211219.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/maison-40.jpg"
       ],
-      "updated": 1528562373208
+      "updated": 1528655055518,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5071DW",
@@ -1274,7 +1670,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-5.jpg"
       ],
-      "updated": 1528562373220
+      "updated": 1528655055530,
+      "tags": [
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5071NA",
@@ -1287,7 +1688,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/0024-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/0028-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG"
       ],
-      "updated": 1528562373234
+      "updated": 1528654508420,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5071V0",
@@ -1303,7 +1709,11 @@
         "http://cdt24.media.tourinsoft.eu/upload/IMG-2346.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/wine-tour.jpg"
       ],
-      "updated": 1528562373246
+      "updated": 1528654496487,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5071W5",
@@ -1319,7 +1729,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignes-orchidees.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignoble-ete.jpg"
       ],
-      "updated": 1528562373258
+      "updated": 1528655055553,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5072D5",
@@ -1338,7 +1754,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--9-.JPG"
       ],
-      "updated": 1528562373275
+      "updated": 1528654508450,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V50744K",
@@ -1355,7 +1777,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--7-.jpg"
       ],
-      "updated": 1528562373290
+      "updated": 1528654508471,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5074QL",
@@ -1364,7 +1792,12 @@
       "longitude": "0.09052157",
       "active": true,
       "photos": [],
-      "updated": 1528561927035
+      "updated": 1528655055577,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5075IZ",
@@ -1380,7 +1813,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--5-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--6-.JPG"
       ],
-      "updated": 1528562373307
+      "updated": 1528654508490,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5075ZA",
@@ -1394,7 +1833,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--4-.jpg"
       ],
-      "updated": 1528562373319
+      "updated": 1528654496570,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5076I3",
@@ -1407,7 +1851,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--3-.JPG"
       ],
-      "updated": 1528562373332
+      "updated": 1528655055602,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5076IN",
@@ -1416,7 +1866,11 @@
       "longitude": "0.60030970",
       "active": true,
       "photos": [],
-      "updated": 1528561927105
+      "updated": 1528654398880,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee"
+      ]
     },
     {
       "id": "DEGAQU024V5076J0",
@@ -1433,7 +1887,11 @@
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES7.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES-6.JPG"
       ],
-      "updated": 1528562373354
+      "updated": 1528655055620,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio"
+      ]
     },
     {
       "id": "DEGAQU024V5076J8",
@@ -1448,7 +1906,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison---Chateau-Pique-Segue.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vallee---Chateau-Pique-Segue.jpg"
       ],
-      "updated": 1528562373367
+      "updated": 1528654474499,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5076LG",
@@ -1457,7 +1920,11 @@
       "longitude": "0.51763170",
       "active": true,
       "photos": [],
-      "updated": 1528561927155
+      "updated": 1528654496609,
+      "tags": [
+        "acces-handicape",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5076MU",
@@ -1471,7 +1938,10 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--36-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--37-.jpg"
       ],
-      "updated": 1528562373387
+      "updated": 1528654474516,
+      "tags": [
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V5076S6",
@@ -1490,7 +1960,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb2.jpg"
       ],
-      "updated": 1528562373399
+      "updated": 1528654496626,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5076SA",
@@ -1499,7 +1974,11 @@
       "longitude": "0.32797771",
       "active": true,
       "photos": [],
-      "updated": 1528561927200
+      "updated": 1528654496638,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5076T4",
@@ -1513,7 +1992,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--4-.JPG"
       ],
-      "updated": 1528562373419
+      "updated": 1528654496650,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V5076TR",
@@ -1528,7 +2012,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--6-.jpg"
       ],
-      "updated": 1528562373436
+      "updated": 1528654129612,
+      "tags": []
     },
     {
       "id": "DEGAQU024V5077CU",
@@ -1542,7 +2027,11 @@
         "http://cdt24.media.tourinsoft.eu/upload/Vigne-11.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Carte-8.jpg"
       ],
-      "updated": 1528562373456
+      "updated": 1528654508574,
+      "tags": [
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V507LYM",
@@ -1558,7 +2047,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--10-.JPG"
       ],
-      "updated": 1528562373475
+      "updated": 1528655055703,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee"
+      ]
     },
     {
       "id": "DEGAQU024V507O9S",
@@ -1573,7 +2067,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/maison-breil-N-B--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pied-de-vigne-pierre.jpg"
       ],
-      "updated": 1528562373489
+      "updated": 1528654508600,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V508CW2",
@@ -1584,7 +2084,12 @@
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/18010305-446460685690949-3259859663478776668-n.jpg"
       ],
-      "updated": 1528562373504
+      "updated": 1528654496694,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V508D06",
@@ -1599,7 +2104,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--9-.JPG"
       ],
-      "updated": 1528562373517
+      "updated": 1528655055721,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-raisonnee"
+      ]
     },
     {
       "id": "DEGAQU024V508D0Q",
@@ -1619,7 +2129,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--7-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--9-.jpg"
       ],
-      "updated": 1528562373527
+      "updated": 1528654129687,
+      "tags": []
     },
     {
       "id": "DEGAQU024V508D0Y",
@@ -1637,7 +2148,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/hachette.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/IMG-5251.JPG"
       ],
-      "updated": 1528562373538
+      "updated": 1528654508632,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V508D1D",
@@ -1651,7 +2167,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--4-.jpg"
       ],
-      "updated": 1528562373554
+      "updated": 1528654474616,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V508D27",
@@ -1666,7 +2187,8 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--5-.jpg"
       ],
-      "updated": 1528562373569
+      "updated": 1528654129724,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50ASLN",
@@ -1682,7 +2204,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-a-barriques.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-de-vinification.jpg"
       ],
-      "updated": 1528562373597
+      "updated": 1528655055749,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V50ASZG",
@@ -1696,7 +2224,11 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.png"
       ],
-      "updated": 1528562373614
+      "updated": 1528655055760,
+      "tags": [
+        "agriculture-bio",
+        "agriculture-biodynamique"
+      ]
     },
     {
       "id": "DEGAQU024V50ATZW",
@@ -1710,7 +2242,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/3-219.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/4-208.JPG"
       ],
-      "updated": 1528562373627
+      "updated": 1528655055771,
+      "tags": [
+        "acces-handicape",
+        "agriculture-bio",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V50AU01",
@@ -1719,7 +2257,13 @@
       "longitude": "0.54694826",
       "active": true,
       "photos": [],
-      "updated": 1528561927417
+      "updated": 1528654508679,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V50AU0C",
@@ -1728,7 +2272,12 @@
       "longitude": "0.32407586",
       "active": true,
       "photos": [],
-      "updated": 1528561927432
+      "updated": 1528654496784,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "accepte-animaux"
+      ]
     },
     {
       "id": "DEGAQU024V50B0P2",
@@ -1737,7 +2286,8 @@
       "longitude": "0.0909819",
       "active": true,
       "photos": [],
-      "updated": 1528561927447
+      "updated": 1528654129807,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50B0PF",
@@ -1746,7 +2296,8 @@
       "longitude": "0.476432",
       "active": true,
       "photos": [],
-      "updated": 1528561927457
+      "updated": 1528654129818,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50B0PK",
@@ -1755,7 +2306,8 @@
       "longitude": "0.480058",
       "active": true,
       "photos": [],
-      "updated": 1528561927470
+      "updated": 1528654129830,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50B0Q8",
@@ -1764,7 +2316,8 @@
       "longitude": "0.42727285",
       "active": true,
       "photos": [],
-      "updated": 1528561927481
+      "updated": 1528654129848,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50B0QH",
@@ -1773,7 +2326,12 @@
       "longitude": "0.507124",
       "active": true,
       "photos": [],
-      "updated": 1528561927499
+      "updated": 1528654508718,
+      "tags": [
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete"
+      ]
     },
     {
       "id": "DEGAQU024V50B5LT",
@@ -1782,7 +2340,8 @@
       "longitude": "0.13264019",
       "active": true,
       "photos": [],
-      "updated": 1528561927519
+      "updated": 1528654129871,
+      "tags": []
     },
     {
       "id": "DEGAQU024V50B5M4",
@@ -1791,7 +2350,8 @@
       "longitude": "0.310379",
       "active": true,
       "photos": [],
-      "updated": 1528561927535
+      "updated": 1528654129881,
+      "tags": []
     },
     {
       "id": "DEGAQU047FS000AP",
@@ -1817,7 +2377,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance11.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance21.JPG"
       ],
-      "updated": 1528562373683
+      "updated": 1528654474715,
+      "tags": [
+        "acces-handicape",
+        "agriculture-raisonnee",
+        "vente-propriete"
+      ]
     }
   ]
 }

@@ -1,4 +1,5 @@
 const axios = require('axios')
+const justProcessOne = false
 const localApi = axios.create({
   baseURL: 'http://localhost:3003',
   timeout: 1000,
@@ -15,6 +16,15 @@ let stopProcessing = false
 let domainCreated = 0
 let domainUpdated = 0
 let domainSkipped = 0
+const remoteTagsToLocal = {
+  ACCESHANDI: "acces-handicape",
+  AGRIBIO: "agriculture-bio",
+  AGRIBIODYN : "agriculture-biodynamique",
+  AGRIRAISONNE: "agriculture-raisonnee",
+  ANIMAUX: "accepte-animaux",
+  VENTEPROPRIETE: "vente-propriete",
+}
+const remoteTags = Object.keys(remoteTagsToLocal)
 
 function readVariablesFromFile(fileContent) {
   console.log('reading variables')
@@ -43,15 +53,23 @@ function remoteDomainToLocal(remote) {
     title: remote.SyndicObjectName,
     latitude: remote.GmapLatitude,
     longitude: remote.GmapLongitude,
-    photos: [],
+    photos: remote.PHOTO ? remote.PHOTO.split('#') : [],
+    tags: getTagsFromRemoteDomain(remote),
     active: true,
   }
-  if (remote.PHOTO) {
-    local.photos = remote.PHOTO.split('#')
-  } else {
-    console.warn(local.id, ': no photos found on remote data')
-  }
   return local
+}
+
+function getTagsFromRemoteDomain(domain) {
+  const tags = []
+  remoteTags.forEach(tag => {
+    if (domain[tag] && domain[tag] === 'oui') {
+      // console.log('tag "'+tag+'" found')
+      tags.push(remoteTagsToLocal[tag])
+    }
+  })
+  // console.log('found tags', tags)
+  return tags
 }
 
 function getLocalDomain(id) {
@@ -122,7 +140,7 @@ function updateLocalDomain(remoteDomain) {
 }
 
 async function updateLocalDomains(remoteDomains) {
-  console.log('checking ' + remoteDomains.length + ' remote domains')
+  console.log('checking ' + remoteDomains.length + ' remote domains \n')
   for (let i = 0; i < remoteDomains.length; i++) {
     await updateLocalDomain(remoteDomains[i])
   }
@@ -142,6 +160,9 @@ function getRemoteDomains() {
     .then(response => {
       if (response.data) {
         const remoteDomains = response.data.value
+        if (justProcessOne) {
+          return updateLocalDomains(remoteDomains.splice(0, 1))
+        }
         return updateLocalDomains(remoteDomains)
       } else {
         console.error('failed at getting remote domains')
