@@ -21,6 +21,36 @@
       "id": 6
     }
   ],
+  "vineyards": [
+    {
+      "id": 1,
+      "name": "bergerac"
+    },
+    {
+      "id": 2,
+      "name": "duras"
+    },
+    {
+      "id": 3,
+      "name": "monbazillac"
+    },
+    {
+      "id": 4,
+      "name": "montravel"
+    },
+    {
+      "id": 5,
+      "name": "pecharmant"
+    },
+    {
+      "id": 6,
+      "name": "rosette"
+    },
+    {
+      "id": 7,
+      "name": "saussignac"
+    }
+  ],
   "domains": [
     {
       "id": "DEGAQU024FS00004",

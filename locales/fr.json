@@ -12,18 +12,19 @@
     "title": "Bienvenue",
     "introduction": "Ceci est un texte d'introduction en Français."
   },
-  "home-top":{
+  "home-top": {
     "header": "Venez découvrir nos producteurs"
   },
   "last-domains": {
-    "header2" : "Domaines ajoutés récemment"
+    "header2": "Domaines ajoutés récemment"
   },
   "vineyards": {
     "titles": {
       "summary": "En un clin d’œil",
       "numbers": "Chiffres clés",
       "varieties": "Cépages",
-      "typicity": ""
+      "typicity": "",
+      "ours": "Nos vignobles"
     },
     "error": {
       "title": "Désolé, ce vignoble n'est pas répertorié...",

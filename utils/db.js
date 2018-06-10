@@ -1,5 +1,7 @@
 const db = require('~/data/db.json')
 
+export const getVineyards = () => Promise.resolve(db.vineyards)
+
 export const getDomains = () => Promise.resolve(db.domains)
 
 export const getDomain = id => {

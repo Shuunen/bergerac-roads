@@ -4,7 +4,6 @@
     "french": "French",
     "back-home": "Back to Home page"
   },
-
   "links": {
     "home": "Home",
     "about": "About"
@@ -13,18 +12,19 @@
     "title": "Welcome",
     "introduction": "This is an introduction in English."
   },
-  "home-top":{
+  "home-top": {
     "header": "Come discover our producers"
   },
   "last-domains": {
-    "header2" : "Domains recently added"
+    "header2": "Domains recently added"
   },
   "vineyards": {
     "titles": {
       "summary": "In the blink of an eye",
       "numbers": "Key numbers",
       "varieties": "Grape varieties",
-      "typicity": "Typicity"
+      "typicity": "Typicity",
+      "ours": "Our vineyards"
     },
     "error": {
       "title": "Sorry, this vineyard doesn't exist...",
