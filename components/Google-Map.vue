@@ -94,7 +94,7 @@ export default {
               if (error.code === error.PERMISSION_DENIED) {
                 alert('Geolocation must be allowed for this feature to work.')
               }
-            }
+            },
           )
         }
       })
@@ -153,6 +153,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>

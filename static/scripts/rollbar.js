@@ -54,7 +54,7 @@ var _rollbarConfig = {
       }
     }
     function t(r, o) {
-      ;(this.options = r), (this._rollbarOldOnError = null)
+      (this.options = r), (this._rollbarOldOnError = null)
       var e = s++
       ;(this.shimId = function() {
         return e
@@ -141,7 +141,7 @@ var _rollbarConfig = {
             } catch (r) {
               /* plop */
             }
-            ;(i = !0), l()
+            (i = !0), l()
           }
         })),
         c.insertBefore(s, d)
@@ -282,7 +282,7 @@ var _rollbarConfig = {
   function(r, o) {
     'use strict'
     function e(r, o) {
-      ;(this.impl = r(o, this)), (this.options = o), n(e.prototype)
+      (this.impl = r(o, this)), (this.options = o), n(e.prototype)
     }
     function n(r) {
       for (
@@ -301,7 +301,7 @@ var _rollbarConfig = {
       )
         r[e[n]] = o(e[n])
     }
-    ;(e.prototype._swapAndProcessMessages = function(r, o) {
+    (e.prototype._swapAndProcessMessages = function(r, o) {
       this.impl = r(this.options)
       for (var e, n, t; (e = o.shift()); )
         (n = e.method),

@@ -22,8 +22,7 @@
   z-index: 10;
   display: flex;
   justify-content: center;
-  .el-col,
-  h1 {
+  .el-col, h1 {
     height: 100%;
   }
   h1 {
@@ -32,8 +31,7 @@
     padding: 20px 40px;
     z-index: 20;
     background: rgba($green-d3, 0.5);
-    &::after,
-    &::before {
+    &::after, &::before {
       margin: 30px auto;
       background-color: $white;
       height: 3px;
@@ -68,7 +66,7 @@
   bottom: 0;
   right: 10px;
   height: 75%;
-  opacity: 0.9;
+  opacity: .9;
   transform: rotate(3deg);
 }
 </style>

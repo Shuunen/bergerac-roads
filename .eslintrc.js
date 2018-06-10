@@ -23,7 +23,6 @@ module.exports = {
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // préférer utiliser `plugin:vue/strongly-recommended` ou `plugin:vue/recommended` pour des règles stictes.
     'plugin:vue/recommended',
-    'plugin:prettier/recommended',
   ],
   // required to lint *.vue files
   plugins: ['vue'],
@@ -34,13 +33,5 @@ module.exports = {
     'no-console': 'off',
     'vue/attributes-order': 'off',
     'vue/max-attributes-per-line': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        semi: false,
-        bracketSpacing: true,
-        trailingComma: 'es5',
-      },
-    ],
   },
 }

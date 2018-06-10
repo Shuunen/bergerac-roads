@@ -46,9 +46,9 @@ export default {
   margin-right: 10px;
 }
 .flag {
-  /*$size: 32px;
+  /* $size: 32px;
   height: $size;
-  width: $size;*/
+  width: $size; */
   padding-left: 22px;
   background-position: center left;
   background-repeat: no-repeat;

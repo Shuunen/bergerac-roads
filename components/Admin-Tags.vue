@@ -89,9 +89,7 @@ export default {
   margin-top: -10px;
   margin-right: 10px;
 }
-.el-tag,
-.button-new-tag,
-.input-new-tag {
+.el-tag, .button-new-tag, .input-new-tag {
   background-color: $white;
   color: $red-d4;
   font-size: 110%;
@@ -104,7 +102,7 @@ export default {
   line-height: 30px;
   padding-top: 0;
   padding-bottom: 0;
-  opacity: 0.6;
+  opacity: .6;
   &:hover {
     opacity: 1;
   }
