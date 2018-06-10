@@ -15,6 +15,7 @@
 <style lang="scss" scoped>
 .home-top {
   z-index: 1;
+  position: relative;
 }
 .title {
   z-index: 10;
@@ -64,7 +65,7 @@
 .panneau {
   position: absolute;
   bottom: 0;
-  left: 10px;
+  right: 10px;
   height: 75%;
   opacity: 0.9;
   transform: rotate(3deg);
