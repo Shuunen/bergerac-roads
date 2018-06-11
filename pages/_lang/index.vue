@@ -2,7 +2,7 @@
   <el-container direction="vertical" class="index">
     <Header />
     <HomeTop />
-    <Itinerary />
+    <Search />
     <LastDomains />
     <Footer />
   </el-container>
@@ -12,13 +12,13 @@
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 import HomeTop from '~/components/Home-Top.vue'
-import Itinerary from '~/components/Itinerary.vue'
 import LastDomains from '~/components/Last-Domains.vue'
+import Search from '~/components/Search.vue'
 
 export default {
   components: {
     LastDomains,
-    Itinerary,
+    Search,
     HomeTop,
     Header,
     Footer,

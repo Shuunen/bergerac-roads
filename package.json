@@ -33,6 +33,7 @@
     "speakingurl": "^14.0.1",
     "vue-i18n": "^7.7.0",
     "vue-lazyload": "^1.2.2",
+    "vue-multiselect": "^2.1.0",
     "vue2-google-maps": "^0.9.7"
   },
   "devDependencies": {
