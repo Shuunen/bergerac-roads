@@ -53,8 +53,8 @@
             <h2 class="subtitle">{{ $t(`vineyards.error.available`) }}</h2>
             <ul>
               <li v-for="(vineyard, index) in vineyards" :key="index">
-                <nuxt-link :to="$i18n.path(`vignoble/${vineyard}`)">
-                  {{ $t(`vineyards.${vineyard}.title`) }}
+                <nuxt-link :to="$i18n.path(`vignoble/${vineyard.name}`)">
+                  {{ $t(`vineyards.${vineyard.name}.title`) }}
                 </nuxt-link>
               </li>
             </ul>
@@ -73,7 +73,7 @@
 
 <script>
 import Header from '~/components/Header.vue'
-import { VINEYARDS } from '~/data/constants'
+import { getVineyards } from '~/utils/db'
 
 export default {
   components: {
@@ -85,9 +85,15 @@ export default {
         backgroundImage: `url(/images/vignobles/${params.name}.jpg)`,
       },
       name: params.name,
-      vineyards: VINEYARDS,
-      vineyardExists: VINEYARDS.some(vineyard => params.name === vineyard),
+      vineyards: [],
+      vineyardExists: false,
     }
+  },
+  mounted() {
+    getVineyards().then(vineyards => {
+      this.vineyards = vineyards
+      this.vineyardExists = vineyards.some(vineyard => this.name === vineyard.name)
+    })
   },
 }
 </script>
