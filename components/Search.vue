@@ -1,25 +1,48 @@
 <template>
-  <el-container direction="vertical" class="itinerary-container">
+  <el-container direction="vertical" class="search-container">
     <el-main>
-      <SelectList :items="sites" />
-      <GoogleMap :markers="sites" />
+      <h2>{{ $t('search.header') }}</h2>
+      <multiselect
+        v-model="value"
+        :options="options"
+        :multiple="true"
+      />
+      <el-row class="map-container">
+        <el-col :span="8" :xs="24">
+          <SelectList :items="sites" />
+        </el-col>
+        <el-col :span="16" :xs="24">
+          <GoogleMap :markers="sites" />
+        </el-col>
+      </el-row>
     </el-main>
   </el-container>
 </template>
 
 <script>
 import axios from 'axios'
+import Multiselect from 'vue-multiselect'
 import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
 
 export default {
   components: {
     GoogleMap,
+    Multiselect,
     SelectList,
   },
   data() {
     return {
+      options: [
+        "acces-handicape",
+        "agriculture-bio",
+        "agriculture-biodynamique",
+        "agriculture-raisonnee",
+        "accepte-animaux",
+        "vente-propriete",
+      ],
       sites: [],
+      value: null,
     }
   },
   created() {
@@ -29,12 +52,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.itinerary-container {
+.search-container {
   background: $green-d4;
-  .el-main {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
+  h2 {
+    text-align: center;
+    margin: 1rem 0 2rem;
+  }
+  .map-container {
+    padding: 2rem 0;
   }
 }
 </style>

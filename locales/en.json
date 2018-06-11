@@ -18,6 +18,9 @@
   "last-domains": {
     "header2": "Domains recently added"
   },
+  "search": {
+    "header": "Search"
+  },
   "vineyards": {
     "titles": {
       "summary": "In the blink of an eye",

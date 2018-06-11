@@ -27,6 +27,7 @@ module.exports = {
   css: [
     '~assets/styles/shared/global.scss',
     'element-ui/lib/theme-chalk/index.css',
+    'vue-multiselect/dist/vue-multiselect.min.css',
   ],
   env: {
     api: 'http://localhost:3003',

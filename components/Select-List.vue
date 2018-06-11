@@ -70,7 +70,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20rem;
   padding: 2rem;
   background-color: $white;
 
