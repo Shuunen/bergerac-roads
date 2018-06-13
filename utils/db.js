@@ -7,7 +7,7 @@ export const getDomains = () => Promise.resolve(db.domains)
 export const getDomainsByTags = tags => {
   let domains = []
   for (let domain of db.domains) {
-    if (tags.every(tag => domain.tags.includes(tag))) {
+    if (domain.hasOwnProperty('tags') && tags.every(tag => domain.tags.includes(tag))) {
       domains.push(domain)
     }
   }

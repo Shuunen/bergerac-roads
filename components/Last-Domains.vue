@@ -35,9 +35,12 @@ export default {
       this.loading = true
       console.log('Home Mid : init')
       getDomains().then(domains => {
-        domains.splice(3) // limit to 3
-        console.log('Home Mid : got domains', domains)
-        this.domains = domains
+        // Allows to not change the original list of domains that can be used in other components
+        let lastDomains = [...domains]
+        // Limit to 3
+        lastDomains.splice(3)
+        console.log('Home Mid : got domains', lastDomains)
+        this.domains = lastDomains
         this.loading = false
       })
     },
