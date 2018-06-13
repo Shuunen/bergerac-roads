@@ -79,7 +79,7 @@ export default {
   align-items: center;
   padding: 2rem;
   background-color: $white;
-  overflow-y: scroll;
+  overflow-y: auto;
   .introduction {
     margin: 0 0 2rem;
     text-align: justify;
