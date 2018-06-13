@@ -1,24 +1,34 @@
 {
   "tags": [
     {
+      "id": 0,
+      "code": "acces-handicape",
+      "name": "Accès handicapé"
+    },
+    {
+      "id": 1,
+      "code": "agriculture-bio",
+      "name": "Agriculture biologique"
+    },
+    {
       "id": 2,
-      "name": "Vin blanc"
+      "code": "agriculture-biodynamique",
+      "name": "Agriculture biodynamique"
     },
     {
       "id": 3,
-      "name": "Vin rouge"
+      "code": "agriculture-raisonnee",
+      "name": "Agriculture raisonnée"
     },
     {
       "id": 4,
-      "name": "Visites guidées"
+      "code": "accepte-animaux",
+      "name": "Animaux acceptés"
     },
     {
-      "name": "Vin bio",
-      "id": 5
-    },
-    {
-      "name": "Dégustation offerte",
-      "id": 6
+      "id": 5,
+      "code": "vente-propriete",
+      "name": "Vente à la propriété"
     }
   ],
   "vineyards": [

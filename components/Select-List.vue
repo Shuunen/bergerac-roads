@@ -8,7 +8,7 @@
       @clear="setStartingPoint('')" />
     <p>Si aucune adresse n'est entrée, votre localisation sera prise comme point de départ.</p>
     <el-checkbox-group v-model="checkedItems">
-      <el-checkbox v-for="(item, index) in items" :label="item.name" :key="index" />
+      <el-checkbox v-for="item in items" :label="item.title" :key="item.id" />
     </el-checkbox-group>
     <el-button
       @click="emitCheckedItems()"

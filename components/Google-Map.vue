@@ -7,8 +7,8 @@
     style="height: 600px"
   >
     <GmapMarker
-      :key="index"
-      v-for="(marker, index) in markers"
+      v-for="marker in formattedMarkers"
+      :key="marker.id"
       :position="marker.position"
       :clickable="true"
       :draggable="true"
@@ -43,6 +43,15 @@ export default {
     // avoid multiple displayed itineraries.
     directionsDisplay: function() {
       return new this.google.maps.DirectionsRenderer()
+    },
+    formattedMarkers: function() {
+      return this.markers.map(marker => {
+        marker.position = {
+          lat: +marker.latitude,
+          lng: +marker.longitude,
+        }
+        return marker
+      })
     },
   },
   created() {

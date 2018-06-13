@@ -19,7 +19,11 @@
     "header2": "Domains recently added"
   },
   "search": {
-    "header": "Search"
+    "header": "Search",
+    "placeholder": "Select one or multiple tag(s)",
+    "select": "Press Enter to select",
+    "deselect": "Press Enter to remove",
+    "selected": "Selected"
   },
   "vineyards": {
     "titles": {

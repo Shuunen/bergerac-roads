@@ -2,12 +2,27 @@
   <el-container direction="vertical" class="search-container">
     <el-main>
       <h2>{{ $t('search.header') }}</h2>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :multiple="true"
-      />
-      <el-row class="map-container">
+      <div class="search-input">
+        <multiselect
+          v-model="searchValue"
+          label="name"
+          track-by="id"
+          :multiple="true"
+          :options="options"
+          :placeholder="$t('search.placeholder')"
+          :searchable="false"
+          :select-label="$t('search.select')"
+          :deselect-label="$t('search.deselect')"
+          :selected-label="$t('search.selected')"
+        />
+        <el-button
+          icon="el-icon-search"
+          :disabled="searchValue.length === 0"
+          @click="search"
+          circle
+        />
+      </div>
+      <el-row class="map-container" v-if="searchExecuted">
         <el-col :span="8" :xs="24">
           <SelectList :items="sites" />
         </el-col>
@@ -20,10 +35,11 @@
 </template>
 
 <script>
-import axios from 'axios'
 import Multiselect from 'vue-multiselect'
 import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
+import { getDomainsByTags } from '~/utils/db'
+import { getTags } from '~/utils/db'
 
 export default {
   components: {
@@ -33,20 +49,22 @@ export default {
   },
   data() {
     return {
-      options: [
-        "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
-      ],
+      options: [],
       sites: [],
-      value: null,
+      searchExecuted: false,
+      searchValue: [],
     }
   },
-  created() {
-    axios.get('/mock/items.json').then(res => (this.sites = res.data))
+  mounted() {
+    getTags().then(tags => this.options = tags)
+  },
+  methods: {
+    search() {
+      getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => {
+        this.sites = domains
+        this.searchExecuted = true
+      })
+    },
   },
 }
 </script>
@@ -57,6 +75,14 @@ export default {
   h2 {
     text-align: center;
     margin: 1rem 0 2rem;
+  }
+  .search-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    .el-button {
+      margin-left: 2rem;
+    }
   }
   .map-container {
     padding: 2rem 0;
