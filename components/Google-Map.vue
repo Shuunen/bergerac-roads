@@ -4,7 +4,7 @@
     :zoom="6"
     map-type-id="terrain"
     ref="mapRef"
-    style="height: 600px"
+    :style="{ height: `${height}px` }"
   >
     <GmapMarker
       v-for="marker in formattedMarkers"
@@ -23,6 +23,10 @@ import { eventBus } from '../store/index'
 
 export default {
   props: {
+    height: {
+      type: Number,
+      default: 300,
+    },
     markers: {
       type: Array,
       required: true,

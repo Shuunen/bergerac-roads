@@ -27,10 +27,10 @@
       </p>
       <el-row class="map-container" v-else-if="searchExecuted">
         <el-col :span="8" :xs="24">
-          <SelectList :items="sites" />
+          <SelectList :items="sites" :height="mapContainerHeight" />
         </el-col>
         <el-col :span="16" :xs="24">
-          <GoogleMap :markers="sites" />
+          <GoogleMap :markers="sites" :height="mapContainerHeight" />
         </el-col>
       </el-row>
     </el-main>
@@ -52,6 +52,7 @@ export default {
   },
   data() {
     return {
+      mapContainerHeight: 600,
       options: [],
       sites: [],
       searchExecuted: false,

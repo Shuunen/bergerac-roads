@@ -1,5 +1,5 @@
 <template>
-  <div class="select-list-container">
+  <div class="select-list-container" :style="{ height: `${height}px` }">
     <p class="introduction">{{ $t('search.introduction') }}</p>
     <div class="autocomplete-input">
       <el-input
@@ -28,6 +28,10 @@ import { eventBus } from '../store/index'
 
 export default {
   props: {
+    height: {
+      type: Number,
+      default: 300,
+    },
     items: {
       type: Array,
       required: true,
@@ -75,6 +79,7 @@ export default {
   align-items: center;
   padding: 2rem;
   background-color: $white;
+  overflow-y: scroll;
   .introduction {
     margin: 0 0 2rem;
     text-align: justify;
@@ -82,6 +87,7 @@ export default {
   .autocomplete-input {
     width: 100%;
     display: flex;
+    flex: none;
     .el-button {
       margin-left: 1rem;
     }
@@ -100,6 +106,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
+      margin-top: .5rem;
     }
   }
 }
