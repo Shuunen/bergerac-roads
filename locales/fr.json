@@ -23,7 +23,8 @@
     "placeholder": "Sélectionnez un ou plusieurs tag(s)",
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",
-    "selected": "Sélectionné"
+    "selected": "Sélectionné",
+    "noResult": "Aucun résultat ne correspond à votre recherche..."
   },
   "vineyards": {
     "titles": {

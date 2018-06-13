@@ -22,7 +22,10 @@
           circle
         />
       </div>
-      <el-row class="map-container" v-if="searchExecuted">
+      <p class="no-result" v-if="searchExecuted && sites.length === 0">
+        {{ $t('search.noResult') }}
+      </p>
+      <el-row class="map-container" v-else-if="searchExecuted">
         <el-col :span="8" :xs="24">
           <SelectList :items="sites" />
         </el-col>
@@ -83,6 +86,9 @@ export default {
     .el-button {
       margin-left: 2rem;
     }
+  }
+  .no-result {
+    color: $white;
   }
   .map-container {
     padding: 2rem 0;

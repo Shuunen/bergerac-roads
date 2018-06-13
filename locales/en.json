@@ -23,7 +23,8 @@
     "placeholder": "Select one or multiple tag(s)",
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",
-    "selected": "Selected"
+    "selected": "Selected",
+    "noResult": "No results were found for your search..."
   },
   "vineyards": {
     "titles": {
