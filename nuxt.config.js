@@ -31,6 +31,7 @@ module.exports = {
   ],
   env: {
     api: 'http://localhost:3003',
+    cdn: 'http://bergerac.lebowsky-dev.xyz'
   },
   /*
   ** Customize the progress bar color

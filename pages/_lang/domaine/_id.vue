@@ -44,7 +44,7 @@ export default {
   },
   computed: {
     image: function() {
-      let path = '/images/pixabay/bouchon-01.jpg'
+      let path = process.env.cdn + '/images/pixabay/bouchon-01.jpg'
       if (!this.data) {
         console.warn('data not available, using default image...')
         return path

@@ -1,16 +1,29 @@
 <template>
   <el-container direction="vertical" class="home-top">
     <div class="color-line"/>
-    <div class="line background" v-lazy:background-image="'/images/entrant/credit-photo-Akim-Benbrahim.jpg'">
+    <div class="line background" v-lazy:background-image="images.background">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
           <h1>{{ $t('home-top.header') }}</h1>
         </el-col>
       </el-row>
-      <img class="panneau" v-lazy="'/images/entrant/panneau-500.png'" alt="panneau">
+      <img class="panneau" v-lazy="images.panneau" alt="panneau">
     </div>
   </el-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      images: {
+        background: process.env.cdn + '/images/entrant/credit-photo-Akim-Benbrahim.jpg',
+        panneau: process.env.cdn + '/images/entrant/panneau-500.png',
+      },
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .home-top {

@@ -29,7 +29,7 @@ export default {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
-      let path = '/images/no-image.png'
+      let path = '/icones/no-image.png'
       if (this.data.thumbnail) {
         path = this.data.thumbnail
       } else if (this.data.photos && this.data.photos.length) {

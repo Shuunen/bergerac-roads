@@ -82,7 +82,7 @@ export default {
   asyncData({ params }) {
     return {
       backgroundStyle: {
-        backgroundImage: `url(/images/vignobles/${params.name}.jpg)`,
+        backgroundImage: `url(${process.env.cdn}/images/vignobles/${params.name}.jpg)`,
       },
       name: params.name,
       vineyards: [],
