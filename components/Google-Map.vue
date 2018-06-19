@@ -12,8 +12,16 @@
       :position="marker.position"
       :clickable="true"
       :draggable="true"
-      @click="center=marker.position"
+      @click="openInfoWindow(marker)"
     />
+    <GmapInfoWindow
+      :opened="infoWindow.open"
+      :options="infoWindowOptions"
+      :position="infoWindow.position"
+      @closeclick="infoWindow.open = false"
+    >
+      {{ infoWindow.content }}
+    </GmapInfoWindow>
   </GmapMap>
 </template>
 
@@ -38,6 +46,14 @@ export default {
         lat: 46.9276,
         lng: 2.2137,
       },
+      infoWindow: {
+        content: '',
+        open: false,
+        position: {
+          lat: 46.9276,
+          lng: 2.2137,
+        },
+      },
       startingPoint: '',
     }
   },
@@ -56,6 +72,11 @@ export default {
         }
         return marker
       })
+    },
+    infoWindowOptions: function() {
+      return {
+        pixelOffset: new this.google.maps.Size(0, -25),
+      }
     },
   },
   created() {
@@ -162,6 +183,11 @@ export default {
         return place.distance === maxDistance
       })
       return places.splice(furthestPlaceIndex, 1)[0]
+    },
+    openInfoWindow(marker) {
+      this.infoWindow.content = marker.title
+      this.infoWindow.position = marker.position
+      this.infoWindow.open = true
     },
   },
 }
