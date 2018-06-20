@@ -65,7 +65,10 @@ export default {
   methods: {
     search() {
       getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => {
-        this.sites = domains
+        this.sites = domains.map(site => {
+          site.infoWindowOpen = false
+          return site
+        })
         this.searchExecuted = true
       })
     },

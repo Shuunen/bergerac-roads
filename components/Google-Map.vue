@@ -13,15 +13,19 @@
       :clickable="true"
       :draggable="true"
       @click="openInfoWindow(marker)"
-    />
-    <GmapInfoWindow
-      :opened="infoWindow.open"
-      :options="infoWindowOptions"
-      :position="infoWindow.position"
-      @closeclick="infoWindow.open = false"
     >
-      {{ infoWindow.content }}
-    </GmapInfoWindow>
+      <GmapInfoWindow
+        :opened="marker.infoWindowOpen"
+        @closeclick="marker.infoWindowOpen = false"
+      >
+        <p class="infowindow-title">{{ marker.title }}</p>
+        <div class="button-container">
+          <el-button @click="selectMarker(marker)">
+            {{ marker.selected ? $t('search.unselectButton') : $t('search.selectButton') }}
+          </el-button>
+        </div>
+      </GmapInfoWindow>
+    </GmapMarker>
   </GmapMap>
 </template>
 
@@ -46,14 +50,6 @@ export default {
         lat: 46.9276,
         lng: 2.2137,
       },
-      infoWindow: {
-        content: '',
-        open: false,
-        position: {
-          lat: 46.9276,
-          lng: 2.2137,
-        },
-      },
       startingPoint: '',
     }
   },
@@ -70,20 +66,22 @@ export default {
           lat: +marker.latitude,
           lng: +marker.longitude,
         }
+        marker.selected = false
         return marker
       })
     },
-    infoWindowOptions: function() {
-      return {
-        pixelOffset: new this.google.maps.Size(0, -25),
-      }
-    },
   },
   created() {
+    eventBus.$on('checked-items', checkedItems => {
+      for (let marker of this.markers) {
+        marker.selected = (checkedItems.findIndex(item => item === marker.title) !== -1)
+      }
+      this.$forceUpdate()
+    })
     eventBus.$on('set-starting-point', position => {
       this.startingPoint = position
     })
-    eventBus.$on('get-checked-items', checkedItems => {
+    eventBus.$on('process-itinerary', checkedItems => {
       let promises = []
       this.getStartingPoint().then(position => {
         for (let item of checkedItems) {
@@ -185,10 +183,24 @@ export default {
       return places.splice(furthestPlaceIndex, 1)[0]
     },
     openInfoWindow(marker) {
-      this.infoWindow.content = marker.title
-      this.infoWindow.position = marker.position
-      this.infoWindow.open = true
+      this.markers.map(marker => marker.infoWindowOpen = false)
+      marker.infoWindowOpen = true
+    },
+    selectMarker(marker) {
+      eventBus.$emit('select-marker', marker)
+      marker.selected = !marker.selected
+      this.$forceUpdate()
     },
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.infowindow-title {
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+</style>

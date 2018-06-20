@@ -12,12 +12,19 @@
       <el-button
         icon="el-icon-view"
         :disabled="checkedItems.length === 0"
-        @click="emitCheckedItems"
+        @click="launchItineraryProcessing"
         circle
       />
     </div>
-    <el-checkbox-group v-model="checkedItems">
-      <el-checkbox v-for="item in items" :label="item.title" :key="item.id" />
+    <el-checkbox-group
+      v-model="checkedItems"
+      @change="emitCheckedItems"
+    >
+      <el-checkbox
+        v-for="item in items"
+        :key="item.id"
+        :label="item.title"
+      />
     </el-checkbox-group>
   </div>
 </template>
@@ -46,7 +53,22 @@ export default {
   computed: {
     google: gmapApi,
   },
+  watch: {
+    items: function() {
+      // Reinitialize the checked items' list when the items' list changes.
+      this.checkedItems = []
+    }
+  },
   mounted() {
+    // Selects or not by clicking on the button in infowindow.
+    eventBus.$on('select-marker', selectedMarker => {
+      let index = this.checkedItems.findIndex(item => item === selectedMarker.title)
+      if (index === -1) {
+        this.checkedItems.push(selectedMarker.title)
+      } else {
+        this.checkedItems.splice(index, 1)
+      }
+    })
     let autocomplete = new this.google.maps.places.Autocomplete(
       this.$refs.autocomplete.$refs.input,
       {
@@ -65,8 +87,11 @@ export default {
       this.startingPoint = value
       eventBus.$emit('set-starting-point', this.startingPoint)
     },
-    emitCheckedItems() {
-      eventBus.$emit('get-checked-items', this.checkedItems)
+    launchItineraryProcessing() {
+      eventBus.$emit('process-itinerary', this.checkedItems)
+    },
+    emitCheckedItems(value) {
+      eventBus.$emit('checked-items', value)
     },
   },
 }
