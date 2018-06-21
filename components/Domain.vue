@@ -1,7 +1,7 @@
 <template>
   <el-container direction="vertical" class="domain">
     <nuxt-link :to="$i18n.path(link)">
-      <el-card :body-style="{ padding: '0px' }">
+      <el-card :body-style="{ padding: '0px' }"> <!-- class="take-height" -->
         <el-container direction="vertical">
           <div class="image" v-lazy:background-image="image" />
           <div class="infos">
@@ -51,9 +51,7 @@ export default {
         minute: "numeric"
       */
       // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
-      const added = new Intl.DateTimeFormat('fr-FR', options).format(
-        new Date(this.data.updated)
-      )
+      const added = new Intl.DateTimeFormat('fr-FR', options).format(new Date(this.data.updated))
       return added
     },
   },
@@ -62,7 +60,6 @@ export default {
 
 <style lang="scss" scoped>
 .domain {
-  margin-bottom: 20px;
   cursor: pointer;
   a {
     text-decoration: none;
@@ -78,6 +75,8 @@ export default {
 .infos {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
   padding: 10px;
   background-color: $white;
   .title {
@@ -88,4 +87,9 @@ export default {
     color: $red-d4;
   }
 }
+
+/* height fix
+.domain, .domain a {
+  height: 100%;
+} */
 </style>
