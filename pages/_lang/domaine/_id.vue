@@ -126,16 +126,6 @@ export default {
   background-size: cover;
   height: 400px;
 }
-.encart {
-  background: $white;
-  padding: 0 40px;
-  margin-top: -150px;
-  margin-left: 20px;
-  margin-right: 20px;
-  @media (max-width: 450px) {
-    margin-top: -300px;
-  }
-}
 .back {
   margin-top: 10px;
 }

@@ -18,7 +18,7 @@
   height: 20px;
   color: $white;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-right: 10px;
 }
 .flag {

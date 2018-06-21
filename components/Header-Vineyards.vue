@@ -42,26 +42,7 @@ export default {
   height: 20px;
   color: $white;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-right: 10px;
-}
-.flag {
-  /* $size: 32px;
-  height: $size;
-  width: $size; */
-  padding-left: 22px;
-  background-position: center left;
-  background-repeat: no-repeat;
-  &.french {
-    background-image: url('/icones/french-flag-small.png');
-  }
-  &.english {
-    background-image: url('/icones/english-flag-small.png');
-  }
-  &.el-dropdown-menu__item {
-    padding-left: 30px;
-    background-position-x: 7px;
-    padding-right: 20px;
-  }
 }
 </style>
