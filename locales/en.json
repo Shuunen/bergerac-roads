@@ -16,7 +16,7 @@
     "header": "Come discover our producers"
   },
   "last-domains": {
-    "header2": "Domains recently added"
+    "header": "Domains recently added"
   },
   "search": {
     "header": "Search",
@@ -37,6 +37,10 @@
       "varieties": "Grape varieties",
       "typicity": "Typicity",
       "ours": "Our vineyards"
+    },
+    "loading": {
+      "title": "Loading information ...",
+      "message": "Do not hesitate to carafe a bottle while waiting."
     },
     "error": {
       "title": "Sorry, this vineyard doesn't exist...",

@@ -2,10 +2,17 @@
   <el-container direction="vertical" class="page-domaine">
     <Header />
     <div class="color-line" />
-    <template v-if="vineyardExists">
-      <div class="background" :style="backgroundStyle" />
-      <el-main>
-        <div class="encart">
+    <div class="background" :style="backgroundStyle" />
+    <el-main>
+      <div class="encart" v-loading="loading">
+        <template v-if="loading || !loading && !vineyardExists">
+          <div class="line">
+            <h1 class="title">{{ $t(`vineyards.loading.title`) }}</h1>
+          </div>
+          <p>{{ $t(`vineyards.loading.message`) }}</p>
+        </template>
+        <template v-else-if="vineyardExists">
+          <!-- TODO: make a component of this : -->
           <div class="line">
             <h1 class="title">{{ $t(`vineyards.${name}.title`) }}</h1>
           </div>
@@ -34,18 +41,8 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <nuxt-link :to="$i18n.path('')">
-              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-            </nuxt-link>
-            <div class="grappe"/>
-          </div>
-        </div>
-      </el-main>
-    </template>
-    <template v-else>
-      <el-main>
-        <div class="encart no-image">
+        </template>
+        <template v-else>
           <div class="line">
             <h1 class="title">{{ $t(`vineyards.error.title`) }}</h1>
           </div>
@@ -59,15 +56,16 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <nuxt-link :to="$i18n.path('')">
-              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-            </nuxt-link>
-            <div class="grappe"/>
-          </div>
+        </template>
+        <div class="col push-bottom">
+          <!-- TODO: make a component of this : -->
+          <nuxt-link :to="$i18n.path('')">
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+          </nuxt-link>
+          <div class="grappe"/>
         </div>
-      </el-main>
-    </template>
+      </div>
+    </el-main>
   </el-container>
 </template>
 
@@ -81,6 +79,7 @@ export default {
   },
   asyncData({ params }) {
     return {
+      loading: false,
       backgroundStyle: {
         backgroundImage: `url(${process.env.cdn}/images/vignobles/${params.name}.jpg)`,
       },
@@ -90,10 +89,26 @@ export default {
     }
   },
   mounted() {
-    getVineyards().then(vineyards => {
-      this.vineyards = vineyards
-      this.vineyardExists = vineyards.some(vineyard => this.name === vineyard.name)
-    })
+    this.init()
+  },
+  methods: {
+    init() {
+      this.loading = true
+      getVineyards().then(vineyards => {
+        this.vineyards = vineyards
+        const exists = vineyards.some(vineyard => this.name === vineyard.name)
+        let image = `${process.env.cdn}/images/`
+        if (exists) {
+          image += `vignobles/${this.name}.jpg)`
+        } else {
+          // default image
+          image += 'pixabay/bouchon-01.jpg'
+        }
+        this.backgroundStyle.backgroundImage = `url(${image})`
+        this.vineyardExists = exists
+        this.loading = false
+      })
+    },
   },
 }
 </script>
@@ -127,9 +142,6 @@ export default {
   margin-right: 20px;
   @media (max-width: 450px) {
     margin-top: -300px;
-  }
-  &.no-image {
-    margin-top: 100px;
   }
 }
 .back {
