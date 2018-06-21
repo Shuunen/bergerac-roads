@@ -1,0 +1,11 @@
+@media only screen and (max-width: 530px) {
+  .hidden-xxs-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 531px) {
+  .hidden-xs-and-up {
+    display: none !important;
+  }
+}

@@ -1,7 +1,8 @@
 <template>
   <el-container class="header" :class="[ floating ? 'floating': 'fixed' ]">
     <div class="wrapper wrapper--logo"><Logo /></div>
-    <div class="wrapper wrapper--vineyards"><Vineyards /></div>
+    <div class="wrapper wrapper--vineyards hidden-xxs-only"><Vineyards /></div>
+    <div class="push-right hidden-xs-and-up" />
     <div class="wrapper wrapper--lang"><Lang /></div>
   </el-container>
 </template>
@@ -58,6 +59,8 @@ export default {
 }
 .wrapper--vineyards {
   margin-left: auto;
-  margin-right: 20px;
+}
+.wrapper--lang {
+  padding-left: 20px;
 }
 </style>
