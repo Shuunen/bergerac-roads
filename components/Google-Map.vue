@@ -1,7 +1,7 @@
 <template>
   <GmapMap
     :center="center"
-    :zoom="6"
+    :zoom="10"
     map-type-id="terrain"
     ref="mapRef"
     :style="{ height: `${height}px` }"
@@ -47,8 +47,8 @@ export default {
   data() {
     return {
       center: {
-        lat: 46.9276,
-        lng: 2.2137,
+        lat: 44.85,
+        lng: 0.35,
       },
       startingPoint: '',
     }
