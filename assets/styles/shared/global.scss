@@ -31,15 +31,12 @@ h2 {
   font-size: 200%;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s;
-}
-
-.page-enter, .page-leave-active {
-  opacity: 0;
+p {
+  text-align: justify;
 }
 
 @import 'element-fixes';
 @import 'helpers';
 @import 'responsive';
+@import 'transitions';
 @import 'fonts';
