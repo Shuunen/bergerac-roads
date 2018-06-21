@@ -27,4 +27,9 @@ section {
     background-color: $black-l7;
     font-style: italic;
   }
+  .el-card.take-height {
+    &, & > .el-card__body, & > .el-card__body > .el-container {
+      height: 100%;
+    }
+  }
 }
