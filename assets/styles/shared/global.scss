@@ -4,7 +4,7 @@ html * {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-primary;
   font-size: 15px;
   line-height: 1.7;
   @media (max-width: 450px) {
@@ -18,7 +18,7 @@ a {
 
 h1, h2, h3 {
   margin-top: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: $font-secondary;
   font-weight: normal;
   color: $white;
 }
