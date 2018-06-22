@@ -1,7 +1,7 @@
 <template>
   <el-container direction="vertical" class="domain">
     <nuxt-link :to="$i18n.path(link)">
-      <el-card :body-style="{ padding: '0px' }"> <!-- class="take-height" -->
+      <el-card :body-style="{ padding: '0px' }" class="take-height">
         <el-container direction="vertical">
           <div class="image" v-lazy:background-image="image" />
           <div class="infos">
@@ -68,15 +68,14 @@ export default {
 .image {
   width: 100%;
   display: block;
-  height: 180px;
+  min-height: 180px;
+  flex-grow: 1;
   background-size: cover;
   background-position: center;
 }
 .infos {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
   padding: 10px;
   background-color: $white;
   .title {
@@ -88,8 +87,9 @@ export default {
   }
 }
 
-/* height fix
-.domain, .domain a {
+/* height fix */
+.domain,
+.domain a {
   height: 100%;
-} */
+}
 </style>

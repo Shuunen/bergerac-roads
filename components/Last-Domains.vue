@@ -4,11 +4,9 @@
       <el-row >
         <h2>{{ $t('last-domains.header') }}</h2>
       </el-row>
-      <el-row :gutter="20">
-        <el-col :span="8" :xs="24" :key="domain.id" v-for="domain in domains">
-          <Domain :data="domain" />
-        </el-col>
-      </el-row>
+      <div class="grid">
+        <Domain v-for="domain in domains" :key="domain.id" :data="domain" />
+      </div>
     </el-main>
   </el-container>
 </template>
@@ -16,6 +14,8 @@
 <script>
 import { getDomains } from '~/utils/db'
 import Domain from './Domain.vue'
+
+const domainsToShow = 6
 
 export default {
   components: {
@@ -37,8 +37,8 @@ export default {
       getDomains().then(domains => {
         // Allows to not change the original list of domains that can be used in other components
         let lastDomains = [...domains]
-        // Limit to 3
-        lastDomains.splice(3)
+        // Limit
+        lastDomains.splice(domainsToShow)
         console.log('Home Mid : got domains', lastDomains)
         this.domains = lastDomains
         this.loading = false
@@ -51,10 +51,18 @@ export default {
 <style lang="scss" scoped>
 .last-domains {
   background-color: $red-d3;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 h2 {
   text-align: center;
   margin: 20px 0 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(320px, auto);
+  grid-auto-flow: dense;
+  padding: 0;
 }
 </style>
