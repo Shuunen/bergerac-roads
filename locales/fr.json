@@ -28,7 +28,8 @@
     "introduction": "Pour visualiser un itinéraire, sélectionnez les domaines désirés en points de passage et entrez un lieu de départ (votre localisation sera prise par défaut si aucune adresse n'est renseignée).",
     "start": "Départ",
     "selectButton": "Sélectionner",
-    "unselectButton": "Désélectionner"
+    "unselectButton": "Désélectionner",
+    "itinerary": "Itinéraire"
   },
   "vineyards": {
     "titles": {

@@ -28,7 +28,8 @@
     "introduction": "To view an itinerary, select the domains wanted as waypoints and enter a starting point (your location will be taken as default if no address is filled in).",
     "start": "Start",
     "selectButton": "Select",
-    "unselectButton": "Unselect"
+    "unselectButton": "Unselect",
+    "itinerary": "Itinerary"
   },
   "vineyards": {
     "titles": {
