@@ -85,7 +85,7 @@ export default {
       let promises = []
       this.getStartingPoint().then(position => {
         for (let item of checkedItems) {
-          promises.push(this.createDistanceRequest(position, item))
+          promises.push(this.createDistanceRequest(position, item.position))
         }
         // When all the promises are resolved, we can compare the distances.
         Promise.all(promises).then(responses => {
@@ -147,18 +147,18 @@ export default {
     },
     // Create a promise for each selected place in order to get the distance
     // between the user and each one of them.
-    createDistanceRequest(position, marker) {
+    createDistanceRequest(position, markerPosition) {
       let directionsService = new this.google.maps.DirectionsService()
       let request = {
         origin: this.getFormattedPosition(position),
-        destination: marker,
+        destination: markerPosition,
         travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
       }
       return new Promise(resolve => {
         directionsService.route(request, (response, status) => {
           if (status === this.google.maps.DirectionsStatus.OK) {
             resolve({
-              location: response.request.destination.query,
+              location: response.request.destination.location,
               distance: response.routes[0].legs[0].distance.value,
             })
           }

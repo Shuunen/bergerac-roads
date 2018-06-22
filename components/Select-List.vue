@@ -86,7 +86,19 @@ export default {
       eventBus.$emit('set-starting-point', this.startingPoint)
     },
     launchItineraryProcessing() {
-      eventBus.$emit('process-itinerary', this.checkedItems)
+      // Necessary to emit the checked items with their coordinates.
+      let formattedCheckedItems = []
+      for (let checkedItem of this.checkedItems) {
+        let originalCheckedItem = this.items.find(item => item.title === checkedItem)
+        formattedCheckedItems.push({
+          name: checkedItem,
+          position: {
+            lat: +originalCheckedItem.latitude,
+            lng: +originalCheckedItem.longitude,
+          },
+        })
+      }
+      eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
       eventBus.$emit('checked-items', value)
