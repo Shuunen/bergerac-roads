@@ -28,11 +28,12 @@
 }
 
 .grappe {
-  height: 100px;
-  width: 70px;
+  height: 80px;
+  width: 60px;
   background: url('/logos/grappe.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin: auto;
 }
 
 .tip {

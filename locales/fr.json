@@ -13,7 +13,12 @@
     "introduction": "Ceci est un texte d'introduction en Français."
   },
   "home-top": {
-    "header": "Venez découvrir nos producteurs"
+    "title": "La plus belle route des vins, la vôtre",
+    "subtitle": ""
+  },
+  "footer": {
+    "alcoolWarning":"L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
+    "copyright":"Vins de Bergerac Duras ©️ 2018"
   },
   "last-domains": {
     "header": "Domaines ajoutés récemment"

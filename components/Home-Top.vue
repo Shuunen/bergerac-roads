@@ -4,7 +4,7 @@
     <div class="line background" v-lazy:background-image="images.background">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
-          <h1>{{ $t('home-top.header') }}</h1>
+          <h1>{{ $t('home-top.title') }}</h1>
         </el-col>
       </el-row>
       <img class="panneau" v-lazy="images.panneau" alt="panneau">

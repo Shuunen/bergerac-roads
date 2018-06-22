@@ -13,7 +13,12 @@
     "introduction": "This is an introduction in English."
   },
   "home-top": {
-    "header": "Come discover our producers"
+    "title": "The most beautiful wine route, yours",
+    "subtitle": ""
+  },
+  "footer": {
+    "alcoolWarning":"Alcohol abuse is dangerous for your health, consume with moderation",
+    "copyright":"Bergerac Duras Wines ©️ 2018"
   },
   "last-domains": {
     "header": "Domains recently added"

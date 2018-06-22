@@ -1,7 +1,8 @@
 <template>
-  <div class="footer col">
+  <div class="footer">
+    <small>{{ $t('footer.alcoolWarning') }}</small>
     <div class="grappe"/>
-    <small>Vins de Bergerac Duras ©️ 2018</small>
+    <small>{{ $t('footer.copyright') }}</small>
   </div>
 </template>
 
@@ -9,5 +10,8 @@
 .footer {
   padding: 30px 0 20px;
   background-color: $white;
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
 }
 </style>
