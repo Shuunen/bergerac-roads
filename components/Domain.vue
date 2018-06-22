@@ -68,7 +68,7 @@ export default {
 .image {
   width: 100%;
   display: block;
-  min-height: 180px;
+  min-height: 130px;
   flex-grow: 1;
   background-size: cover;
   background-position: center;
