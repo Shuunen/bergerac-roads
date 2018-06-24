@@ -1,5 +1,5 @@
 <template>
-  <el-container direction="vertical" class="page-domaine">
+  <el-container direction="vertical" class="page-encart page-domaine">
     <Header />
     <div class="color-line" />
     <div class="background" :style="backgroundStyle" />
@@ -112,42 +112,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.color-line {
-  background-color: $red-d3;
-}
-.page-domaine {
-  background: $red-d2;
-  min-height: 100vh;
-}
-.title {
-  margin: 30px 0 20px;
-  color: $red-d2;
-}
-.subtitle {
-  margin: 1rem 0 0;
-  color: $red-d2;
-}
-.background {
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-.encart {
-  background: $white;
-  padding: 0 40px;
-  margin-top: -150px;
-  margin-left: 20px;
-  margin-right: 20px;
-  @media (max-width: 450px) {
-    margin-top: -300px;
-  }
-}
-.back {
-  margin-top: 10px;
-}
-.grappe {
-  margin: 20px;
-}
-</style>

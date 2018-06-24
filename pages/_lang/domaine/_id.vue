@@ -1,8 +1,8 @@
 <template>
-  <el-container direction="vertical" class="page-domaine">
+  <el-container direction="vertical" class="page-encart page-domaine">
     <Header />
     <div class="color-line"/>
-    <div class="background" :style="backgroundImage"/>
+    <div class="background" :style="backgroundStyle"/>
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       loading: true,
-      backgroundImage: {},
+      backgroundStyle: {},
       data: {},
     }
   },
@@ -93,7 +93,7 @@ export default {
             console.error('failed at getting domain with id "' + id + '"')
           }
           this.loading = false
-          this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+          this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
         })
       } else {
         this.loading = false
@@ -101,35 +101,9 @@ export default {
           title: 'Domaine inconnu',
           message: "Désolé mais ce domaine n'a pas été trouvé.",
         }
-        this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+        this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
       }
     },
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.color-line {
-  background-color: $red-d3;
-}
-.page-domaine {
-  background: $red-d2;
-  min-height: 100vh;
-  padding-bottom: 10px;
-}
-.title {
-  margin: 30px 0 20px;
-  color: $red-d2;
-}
-.background {
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-.back {
-  margin-top: 10px;
-}
-.grappe {
-  margin: 20px;
-}
-</style>

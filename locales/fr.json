@@ -8,6 +8,9 @@
     "home": "Accueil",
     "about": "À propos"
   },
+  "charter": {
+    "title": "Charte de la route des vins"
+  },
   "home": {
     "title": "Bienvenue",
     "introduction": "Ceci est un texte d'introduction en Français."
@@ -17,8 +20,8 @@
     "subtitle": "Les vignerons de Bergerac & Duras vous accueillent"
   },
   "footer": {
-    "alcoolWarning":"L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
-    "copyright":"Vins de Bergerac Duras ©️ 2018"
+    "alcoolWarning": "L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
+    "copyright": "Vins de Bergerac Duras ©️ 2018"
   },
   "last-domains": {
     "header": "Domaines ajoutés récemment"

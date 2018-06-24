@@ -1,6 +1,8 @@
 <template>
   <el-container class="header" :class="[ floating ? 'floating': 'fixed' ]">
     <div class="wrapper wrapper--logo"><Logo /></div>
+    <div class="wrapper wrapper--charter hidden-xs-and-down"><nuxt-link :to="$i18n.path('charter')">{{ $t('charter.title') }}</nuxt-link></div>
+    <div class="push-right hidden-sm-and-up" />
     <div class="wrapper wrapper--vineyards hidden-xxs-only"><Vineyards /></div>
     <div class="push-right hidden-xs-and-up" />
     <div class="wrapper wrapper--lang"><Lang /></div>
@@ -57,8 +59,13 @@ export default {
 .wrapper--logo {
   width: 220px;
 }
-.wrapper--vineyards {
+.wrapper--charter {
   margin-left: auto;
+  a {
+    color: $white;
+    line-height: 54px;
+    margin-right: 20px;
+  }
 }
 .wrapper--lang {
   padding-left: 20px;
