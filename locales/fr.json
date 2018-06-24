@@ -6,7 +6,11 @@
   },
   "links": {
     "home": "Accueil",
-    "about": "À propos"
+    "about": "À propos",
+    "more": "En savoir plus"
+  },
+  "legal": {
+    "title": "Mentions légales"
   },
   "charter": {
     "title": "Charte de la route des vins"

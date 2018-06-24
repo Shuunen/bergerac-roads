@@ -57,25 +57,26 @@
             </ul>
           </div>
         </template>
-        <div class="col push-bottom">
-          <!-- TODO: make a component of this : -->
+        <div class="col">
           <nuxt-link :to="$i18n.path('')">
             <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
-          <div class="grappe"/>
         </div>
       </div>
     </el-main>
+    <Footer />
   </el-container>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 import { getVineyards } from '~/utils/db'
 
 export default {
   components: {
     Header,
+    Footer,
   },
   asyncData({ params }) {
     return {

@@ -6,7 +6,11 @@
   },
   "links": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "more": "Learn more"
+  },
+  "legal": {
+    "title": "Legal notice"
   },
   "charter": {
     "title": "Charter of the wine route"
@@ -20,8 +24,8 @@
     "subtitle": "The vine growers of Bergerac & Duras welcome you"
   },
   "footer": {
-    "alcoolWarning":"Alcohol abuse is dangerous for your health, consume with moderation",
-    "copyright":"Bergerac Duras Wines ©️ 2018"
+    "alcoolWarning": "Alcohol abuse is dangerous for your health, consume with moderation",
+    "copyright": "Bergerac Duras Wines ©️ 2018"
   },
   "last-domains": {
     "header": "Domains recently added"
