@@ -36,7 +36,6 @@
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",
     "selected": "Selected",
-    "noResult": "No results were found for your search...",
     "introduction": "To view an itinerary, select the domains wanted as waypoints and enter a starting point (your location will be taken as default if no address is filled in).",
     "start": "Start",
     "selectButton": "Select",

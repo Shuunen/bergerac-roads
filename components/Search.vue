@@ -22,10 +22,7 @@
           circle
         />
       </div>
-      <p class="no-result" v-if="searchExecuted && sites.length === 0">
-        {{ $t('search.noResult') }}
-      </p>
-      <el-row class="map-container" v-else-if="searchExecuted">
+      <el-row class="map-container">
         <el-col :span="8" :xs="24">
           <SelectList :items="sites" :height="mapContainerHeight" />
         </el-col>
@@ -41,6 +38,7 @@
 import Multiselect from 'vue-multiselect'
 import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
+import { getDomains } from '~/utils/db'
 import { getDomainsByTags } from '~/utils/db'
 import { getTags } from '~/utils/db'
 
@@ -55,22 +53,26 @@ export default {
       mapContainerHeight: 600,
       options: [],
       sites: [],
-      searchExecuted: false,
       searchValue: [],
     }
   },
   mounted() {
+    getDomains()
+      .then(domains => this.addInfoWindowState(domains))
+      .then(domains => this.sites = domains)
     getTags().then(tags => this.options = tags)
   },
   methods: {
-    search() {
-      getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => {
-        this.sites = domains.map(site => {
-          site.infoWindowOpen = false
-          return site
-        })
-        this.searchExecuted = true
+    addInfoWindowState(sites) {
+      return sites.map(site => {
+        site.infoWindowOpen = false
+        return site
       })
+    },
+    search() {
+      getDomainsByTags(this.searchValue.map(tag => tag.code))
+        .then(domains => this.addInfoWindowState(domains))
+        .then(domains => this.sites = domains)
     },
   },
 }

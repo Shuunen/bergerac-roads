@@ -36,7 +36,6 @@
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",
     "selected": "Sélectionné",
-    "noResult": "Aucun résultat ne correspond à votre recherche...",
     "introduction": "Pour visualiser un itinéraire, sélectionnez les domaines désirés en points de passage et entrez un lieu de départ (votre localisation sera prise par défaut si aucune adresse n'est renseignée).",
     "start": "Départ",
     "selectButton": "Sélectionner",
