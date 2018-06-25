@@ -56,6 +56,7 @@ export default {
     }
     small {
       font-family: $font-primary;
+      font-weight: normal;
       font-size: 60%;
       line-height: 1.3;
       display: block;

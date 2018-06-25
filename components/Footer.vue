@@ -14,10 +14,11 @@
 <style lang="scss">
 .footer {
   padding: 30px 0 20px;
-  background-color: $white;
+  background-color: $rouge;
   display: grid;
   grid-gap: 20px;
   text-align: center;
+  color: $white;
 
   .separator {
     margin: 0 10px;
