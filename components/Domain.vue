@@ -77,7 +77,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: $white;
+  background-color: $moelleux-l2;
   .title {
     font-size: 120%;
   }
