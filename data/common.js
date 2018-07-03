@@ -15,7 +15,7 @@ const remoteApi = axios.create({
 })
 
 function readVariablesFromFile(fileContent) {
-  console.log('reading variables')
+  // console.log('reading variables')
   const variables = {}
   fileContent.split('\r\n').map(line => {
     // iterate on each line
