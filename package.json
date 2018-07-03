@@ -14,7 +14,7 @@
     "build": "nuxt build --spa",
     "start": "nuxt start --spa",
     "data-import": "npm-run-all --parallel dev:db data-import:*",
-    "data-import:script": "./node_modules/.bin/nodemon data/import.js --watch data/import.js",
+    "data-import:script": "nodemon --exec babel-node data/import.js --watch data/*.js",
     "generate": "nuxt generate --spa",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "npm-run-all --parallel dev:* test:*",
@@ -38,7 +38,9 @@
   },
   "devDependencies": {
     "@types/node-sass": "^3.10.32",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
     "cypress": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
