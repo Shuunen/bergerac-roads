@@ -25,12 +25,14 @@ function remoteDomainToLocal(remote) {
   // console.log('converting remote data to local')
   const local = {
     active: true,
+    descrition: remote.DESCRIPTIF,
     id: remote.SyndicObjectID,
     labels: getLabelsFromRemoteDomain(remote),
     latitude: remote.GmapLatitude,
     longitude: remote.GmapLongitude,
     number: remote.NUMEROCARTE,
     photos: remote.PHOTO ? remote.PHOTO.split('#') : [],
+    plus: remote.PETITPLUS,
     tags: getTagsFromRemoteDomain(remote),
     title: remote.SyndicObjectName,
   }
