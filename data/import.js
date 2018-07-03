@@ -1,45 +1,20 @@
-const axios = require('axios')
-const justProcessOne = false
-const localApi = axios.create({
-  baseURL: 'http://localhost:3003',
-  timeout: 1000,
-})
+import { localApi, remoteApi, remoteDomainsUrl } from './common'
 const isEqual = require('fast-deep-equal')
-const fs = require('fs')
-const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
-const variables = readVariablesFromFile(postmanFile)
-let remoteDomainsUrl = `http://${variables.syndic_url_opt}`
-remoteDomainsUrl += `/${variables.syndic_name}`
-remoteDomainsUrl += `/${variables.syndic_key}`
-remoteDomainsUrl += `/Objects?$format=json`
+const justProcessOne = false
+const justLogChanges = true
 let stopProcessing = false
 let domainCreated = 0
 let domainUpdated = 0
 let domainSkipped = 0
 const remoteTagsToLocal = {
-  ACCESHANDI: "acces-handicape",
-  AGRIBIO: "agriculture-bio",
-  AGRIBIODYN : "agriculture-biodynamique",
-  AGRIRAISONNE: "agriculture-raisonnee",
-  ANIMAUX: "accepte-animaux",
-  VENTEPROPRIETE: "vente-propriete",
+  ACCESHANDI: 'acces-handicape',
+  AGRIBIO: 'agriculture-bio',
+  AGRIBIODYN : 'agriculture-biodynamique',
+  AGRIRAISONNE: 'agriculture-raisonnee',
+  ANIMAUX: 'accepte-animaux',
+  VENTEPROPRIETE: 'vente-propriete',
 }
 const remoteTags = Object.keys(remoteTagsToLocal)
-
-function readVariablesFromFile(fileContent) {
-  console.log('reading variables')
-  const variables = {}
-  fileContent.split('\r\n').map(line => {
-    // iterate on each line
-    if (!line.includes(':')) {
-      return null
-    }
-    const data = line.split(':')
-    variables[data[0]] = data[1]
-  })
-  // console.log(variables)
-  return variables
-}
 
 /**
  * Convert large remote data into data that we will store in our db
@@ -73,7 +48,7 @@ function getTagsFromRemoteDomain(domain) {
 }
 
 function getLocalDomain(id) {
-  console.log(id, ': getting local domain')
+  // console.log(id, ': getting local domain')
   return localApi
     .get('/domains/' + id)
     .then(response => {
@@ -134,7 +109,9 @@ function updateLocalDomain(remoteDomain) {
       return patchLocalDomain(newData)
     } else {
       domainSkipped++
-      console.log(newData.id, ': no updates \n')
+      if (!justLogChanges) {
+        console.log(newData.id, ': no updates \n')
+      }
     }
   })
 }
@@ -155,8 +132,7 @@ function showSummary() {
 function getRemoteDomains() {
   console.log('getting remote domains from api')
   console.log('using url :', remoteDomainsUrl)
-  axios
-    .get(remoteDomainsUrl)
+  remoteApi.get(remoteDomainsUrl)
     .then(response => {
       if (response.data) {
         const remoteDomains = response.data.value
