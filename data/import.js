@@ -9,7 +9,7 @@ let domainSkipped = 0
 const remoteTagsToLocal = {
   ACCESHANDI: 'acces-handicape',
   AGRIBIO: 'agriculture-bio',
-  AGRIBIODYN : 'agriculture-biodynamique',
+  AGRIBIODYN: 'agriculture-biodynamique',
   AGRIRAISONNE: 'agriculture-raisonnee',
   ANIMAUX: 'accepte-animaux',
   VENTEPROPRIETE: 'vente-propriete',
@@ -36,15 +36,65 @@ function remoteDomainToLocal(remote) {
 }
 
 function getTagsFromRemoteDomain(domain) {
-  const tags = []
+  let tags = []
   remoteTags.forEach(tag => {
     if (domain[tag] && domain[tag] === 'oui') {
       // console.log('tag "'+tag+'" found')
       tags.push(remoteTagsToLocal[tag])
     }
   })
-  // console.log('found tags', tags)
+  tags = tags.concat(getWineTagsFromRemoteDomain(domain))
+  if (justProcessOne) {
+    console.log('found tags', tags)
+  }
   return tags
+}
+
+function getWineTagsFromRemoteDomain(domain) {
+  let tags = []
+  const str = domain.AOCCOMPLEMENTAIRE
+  if (!str) {
+    return tags
+  }
+  // in  :  "Bergerac (rouge)#Bergerac (rosé)#Bergerac (blanc sec)#Pécharmant (rouge)"
+  // out : ["Bergerac (rouge)", "Bergerac (rosé)", "Bergerac (blanc sec)", "Pécharmant (rouge)"]
+  // so we should find 4 wines types here
+  const arr = str.split('#')
+  // and to be sure we search via regex known wines types
+  // in  :  "Bergerac (rouge)#Bergerac (rosé)#Bergerac (blanc sec)#Pécharmant (rouge)"
+  // out : ["rouge", "rosé", "blanc sec", "rouge"]
+  tags = str.match(/(blanc sec|moelleux|liquoreux|rosé|rouge)/gi)
+  // and we should exactly find the same amount
+  if (arr.length !== tags.length) {
+    console.error('ERROR : found', tags.length, 'wines instead of', arr.length)
+    console.error('ERROR : str was : "' + str + '"')
+    stopProcessing = true
+    return tags
+  }
+  // because there is duplicates sometimes, reducing to unique values
+  // in  : ['rouge','rosé','blanc sec', 'rouge']
+  // out : ['rouge','rosé','blanc sec']
+  tags = tags.filter((v, i, a) => a.indexOf(v) === i)
+  // because values contains accents, space and non-pretty usable dev names
+  // let's clean these up
+  // in  : ['rouge',    'rosé',    'blanc sec']
+  // out : ['vin-rouge','vin-rose','vin-blanc']
+  tags = tags.map(name => getWineTagFromName(name))
+  return tags
+}
+
+function getWineTagFromName(name) {
+  if (name === 'blanc sec') {
+    return 'vin-blanc'
+  } else if (name === 'rosé') {
+    return 'vin-rose'
+  } else {
+    // ne need to have more case because other name are clean :
+    // vin-moelleux
+    // vin-liquoreux
+    // vin-rouge
+    return 'vin-' + name
+  }
 }
 
 function getLocalDomain(id) {
@@ -126,7 +176,7 @@ async function updateLocalDomains(remoteDomains) {
 // https://github.com/uxitten/polyfill/blob/master/string.polyfill.js
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd
 if (!String.prototype.padEnd) {
-  String.prototype.padEnd = function padEnd(targetLength,padString) {
+  String.prototype.padEnd = function padEnd(targetLength, padString) {
     targetLength = targetLength >> 0 // floor if number or convert non-number to 0;
     padString = String((typeof padString !== 'undefined' ? padString : ' '))
     if (this.length > targetLength) {
@@ -136,7 +186,7 @@ if (!String.prototype.padEnd) {
       if (targetLength > padString.length) {
         padString += padString.repeat(targetLength / padString.length) // append to original to ensure we are longer than needed
       }
-      return String(this) + padString.slice(0,targetLength)
+      return String(this) + padString.slice(0, targetLength)
     }
   }
 }
