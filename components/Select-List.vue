@@ -30,6 +30,7 @@
 <script>
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
+import { setTimeout } from 'timers'
 
 export default {
   props: {
@@ -46,6 +47,7 @@ export default {
     return {
       checkedItems: [],
       startingPoint: '',
+      retry: 3,
     }
   },
   computed: {
@@ -55,7 +57,7 @@ export default {
     items: function() {
       // Reinitialize the checked items' list when the items' list changes.
       this.checkedItems = []
-    }
+    },
   },
   mounted() {
     // Selects or not by clicking on the button in infowindow.
@@ -67,20 +69,26 @@ export default {
         this.checkedItems.splice(index, 1)
       }
     })
-    let autocomplete = new this.google.maps.places.Autocomplete(
-      this.$refs.autocomplete.$refs.input,
-      {
+    if ((!this.google || !this.google.maps) && this.retry > 0) {
+      this.retry--
+      setTimeout(() => this.initAutoComplete(), 500)
+    } else {
+      this.initAutoComplete()
+    }
+  },
+  methods: {
+    initAutoComplete() {
+      console.log('in initAutoComplete')
+      let autocomplete = new this.google.maps.places.Autocomplete(this.$refs.autocomplete.$refs.input, {
         // Restrict autocomplete to results in France.
         componentRestrictions: {
           country: 'fr',
         },
-      }
-    )
-    autocomplete.addListener('place_changed', () => {
-      this.setStartingPoint(autocomplete.getPlace().formatted_address)
-    })
-  },
-  methods: {
+      })
+      autocomplete.addListener('place_changed', () => {
+        this.setStartingPoint(autocomplete.getPlace().formatted_address)
+      })
+    },
     setStartingPoint(value) {
       this.startingPoint = value
       eventBus.$emit('set-starting-point', this.startingPoint)
@@ -132,7 +140,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
   .el-input {
