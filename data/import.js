@@ -24,13 +24,15 @@ const remoteTags = Object.keys(remoteTagsToLocal)
 function remoteDomainToLocal(remote) {
   // console.log('converting remote data to local')
   const local = {
+    active: true,
     id: remote.SyndicObjectID,
-    title: remote.SyndicObjectName,
+    labels: getLabelsFromRemoteDomain(remote),
     latitude: remote.GmapLatitude,
     longitude: remote.GmapLongitude,
+    number: remote.NUMEROCARTE,
     photos: remote.PHOTO ? remote.PHOTO.split('#') : [],
     tags: getTagsFromRemoteDomain(remote),
-    active: true,
+    title: remote.SyndicObjectName,
   }
   return local
 }
@@ -83,6 +85,28 @@ function getWineTagsFromRemoteDomain(domain) {
   return tags
 }
 
+function getLabelsFromRemoteDomain(domain) {
+  let labels = domain.LABELS || []
+  if (!labels || !labels.length) {
+    return labels
+  }
+  labels = labels.split('#')
+  labels = labels.map(label => {
+    if (label === 'Vignobles et découvertes') {
+      return 'vignobles-et-decouvertes'
+    } else if (label === 'Bienvenue à la Ferme') {
+      return 'bienvenue-a-la-ferme'
+    } else if (label === 'Saveurs du Périgord') {
+      return 'saveurs-du-perigord'
+    } else {
+      console.error('ERROR : label not handled yet : "' + label + '"')
+      return null
+    }
+  })
+  labels = labels.filter(label => label !== null)
+  return labels
+}
+
 function getWineTagFromName(name) {
   if (name === 'blanc sec') {
     return 'vin-blanc'
@@ -133,10 +157,10 @@ function addLocalDomain(data) {
 
 function patchLocalDomain(data) {
   return localApi
-    .patch('/domains/' + data.id, data)
+    .put('/domains/' + data.id, data)
     .then(() => {
       domainUpdated++
-      console.log(data.id, ': updated !\n')
+      console.log(data.id, ': updated')
     })
     .catch(error => {
       console.error(error)
@@ -166,9 +190,14 @@ function updateLocalDomain(remoteDomain) {
   })
 }
 
+async function pause(time) {
+  return new Promise((resolve) => setTimeout(() => resolve('success, pause ended'), time))
+}
+
 async function updateLocalDomains(remoteDomains) {
   console.log('checking ' + remoteDomains.length + ' remote domains')
   for (let i = 0; i < remoteDomains.length; i++) {
+    await pause(50)
     await updateLocalDomain(remoteDomains[i])
   }
 }
