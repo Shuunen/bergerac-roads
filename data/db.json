@@ -64,7 +64,7 @@
   "domains": [
     {
       "id": "DEGAQU024FS00004",
-      "updated": 1528654507584,
+      "updated": 1530624938618,
       "title": "Château Corbiac Pécharmant",
       "active": true,
       "latitude": "44.8778672",
@@ -79,7 +79,12 @@
       "tags": [
         "acces-handicape",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -114,7 +119,7 @@
     },
     {
       "id": "DEGAQU024FS00005",
-      "updated": 1528655054889,
+      "updated": 1530624938631,
       "title": "Cave Coopérative de Monbazillac",
       "active": true,
       "latitude": "44.8106440",
@@ -130,7 +135,12 @@
       "tags": [
         "acces-handicape",
         "agriculture-bio",
-        "agriculture-raisonnee"
+        "agriculture-raisonnee",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -157,7 +167,7 @@
     },
     {
       "id": "DEGAQU024FS00009",
-      "updated": 1528654507632,
+      "updated": 1530624938657,
       "title": "Château la Renaudie",
       "active": true,
       "latitude": "44.8888291",
@@ -174,7 +184,11 @@
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rose",
+        "vin-rouge",
+        "vin-liquoreux",
+        "vin-moelleux"
       ]
     },
     {
@@ -230,7 +244,7 @@
     },
     {
       "id": "DEGAQU024FS00003",
-      "updated": 1528654507573,
+      "updated": 1530624904945,
       "title": "Domaine du Haut Pécharmant",
       "active": true,
       "latitude": "44.8678234",
@@ -250,7 +264,10 @@
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux"
       ]
     },
     {
@@ -335,8 +352,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1040492-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bois-de-Pourquie.jpg"
       ],
-      "updated": 1528654128505,
-      "tags": []
+      "updated": 1530624938700,
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ]
     },
     {
       "id": "DEGAQU024FS0000I",
@@ -351,12 +374,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-05.jpg"
       ],
-      "updated": 1528654507702,
+      "updated": 1530624938721,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -381,12 +409,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-chasse-au-tresor.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-pique-nique.JPG"
       ],
-      "updated": 1528654507717,
+      "updated": 1530624938735,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -403,12 +435,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-vue-aerienne-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-GRANGE-NEUVE-Caveau-2.JPG"
       ],
-      "updated": 1528654507729,
+      "updated": 1530624938747,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -428,12 +465,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/p05011w52--800x600-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Coutancie-2.jpg"
       ],
-      "updated": 1528655055019,
+      "updated": 1530624938763,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
       ]
     },
     {
@@ -449,12 +489,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--3-.jpg"
       ],
-      "updated": 1528654507760,
+      "updated": 1530624938776,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -470,12 +515,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-05.jpg"
       ],
-      "updated": 1528654507773,
+      "updated": 1530624938791,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux",
+        "vin-moelleux"
       ]
     },
     {
@@ -503,11 +553,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--26-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/puy-servain-2018.png"
       ],
-      "updated": 1528654473682,
+      "updated": 1530624938809,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux",
+        "vin-moelleux"
       ]
     },
     {
@@ -523,8 +578,10 @@
         "http://cdt24.media.tourinsoft.eu/upload/TV4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Terre-Vieille-2.jpg"
       ],
-      "updated": 1528654128629,
-      "tags": []
+      "updated": 1530624938826,
+      "tags": [
+        "vin-rouge"
+      ]
     },
     {
       "id": "DEGAQU024FS00015",
@@ -544,12 +601,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chai---vins----Jean-Christophe-Amelin.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/EQUIPE-LADESVIGNES.jpg"
       ],
-      "updated": 1528654507796,
+      "updated": 1530624938841,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -571,12 +633,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--9-.jpg"
       ],
-      "updated": 1528654507810,
+      "updated": 1530624938861,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -591,12 +657,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-4.JPG"
       ],
-      "updated": 1528655055063,
+      "updated": 1530624938875,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
       ]
     },
     {
@@ -652,11 +721,13 @@
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--3-.jpg"
       ],
-      "updated": 1528654473763,
+      "updated": 1530624938903,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-blanc",
+        "vin-rouge"
       ]
     },
     {
@@ -735,12 +806,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--2-.JPG"
       ],
-      "updated": 1528655055124,
+      "updated": 1530624938929,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -758,12 +832,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/6-Mouton.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/7-cheval.jpg"
       ],
-      "updated": 1528655055138,
+      "updated": 1530624938942,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
       ]
     },
     {
@@ -808,11 +885,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--3-.JPG"
       ],
-      "updated": 1528655055154,
+      "updated": 1530624938958,
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -827,11 +909,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/Les-vignes-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-43.JPG"
       ],
-      "updated": 1528654507952,
+      "updated": 1530624938970,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -852,13 +939,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Barouillet--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo3.JPG"
       ],
-      "updated": 1528655055172,
+      "updated": 1530624938987,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -873,11 +964,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--2-.jpg"
       ],
-      "updated": 1528654507974,
+      "updated": 1530624939001,
       "tags": [
         "acces-handicape",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -893,13 +988,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/DSCF2717.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/image-56.jpg"
       ],
-      "updated": 1528655055195,
+      "updated": 1530624939014,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1012,12 +1110,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-resultat.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/photo-2-resultat.JPG"
       ],
-      "updated": 1528654508057,
+      "updated": 1530624939050,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1100,12 +1200,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--3-.JPG"
       ],
-      "updated": 1528655055275,
+      "updated": 1530624939090,
       "tags": [
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1123,14 +1227,18 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/R-Chateau-Grande-Maison--MC-Grasseau--22-.jpg"
       ],
-      "updated": 1528655055291,
+      "updated": 1530624939103,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1149,11 +1257,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin-Epicerie-Fine.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Vendangeurs.jpg"
       ],
-      "updated": 1528655055306,
+      "updated": 1530624939116,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1190,11 +1303,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne5.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne735.jpg"
       ],
-      "updated": 1528655055332,
+      "updated": 1530624939134,
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1209,13 +1327,18 @@
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-04.jpg"
       ],
-      "updated": 1528655055343,
+      "updated": 1530624939149,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1282,12 +1405,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Combet4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Combet5.jpg"
       ],
-      "updated": 1528654508198,
+      "updated": 1530624939172,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1323,11 +1451,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-05.jpg"
       ],
-      "updated": 1528654508226,
+      "updated": 1530624939188,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1343,12 +1475,17 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--2-.JPG"
       ],
-      "updated": 1528655055406,
+      "updated": 1530624939202,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1398,12 +1535,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Chai-a-barrique.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Sauvignon-Gris-2.JPG"
       ],
-      "updated": 1528654508262,
+      "updated": 1530624939226,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -1422,12 +1563,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/peyral-3.jpg"
       ],
-      "updated": 1528655055438,
+      "updated": 1530624939241,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1463,10 +1608,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-des-vignes---chateau.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-propriete.jpg"
       ],
-      "updated": 1528654474266,
+      "updated": 1530624939262,
       "tags": [
         "agriculture-raisonnee",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1515,12 +1665,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---9-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--1-.JPG"
       ],
-      "updated": 1528654508312,
+      "updated": 1530624939281,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1590,11 +1743,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--4-.JPG"
       ],
-      "updated": 1528654508355,
+      "updated": 1530624939311,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1610,11 +1768,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Marches-Gourmands.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Vins.jpeg"
       ],
-      "updated": 1528654508370,
+      "updated": 1530624939325,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -1639,12 +1801,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--13-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--14-.jpg"
       ],
-      "updated": 1528655055501,
+      "updated": 1530624939337,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
       ]
     },
     {
@@ -1680,11 +1845,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-5.jpg"
       ],
-      "updated": 1528655055530,
+      "updated": 1530624939353,
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -1698,11 +1867,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/0024-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/0028-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG"
       ],
-      "updated": 1528654508420,
+      "updated": 1530624939366,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1739,12 +1912,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignes-orchidees.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignoble-ete.jpg"
       ],
-      "updated": 1528655055553,
+      "updated": 1530624939386,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1764,12 +1939,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--9-.JPG"
       ],
-      "updated": 1528654508450,
+      "updated": 1530624939401,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -1787,12 +1966,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--7-.jpg"
       ],
-      "updated": 1528654508471,
+      "updated": 1530624939417,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1843,11 +2026,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--4-.jpg"
       ],
-      "updated": 1528654496570,
+      "updated": 1530624939442,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "accepte-animaux"
+        "accepte-animaux",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -1861,12 +2048,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--3-.JPG"
       ],
-      "updated": 1528655055602,
+      "updated": 1530624939456,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
       ]
     },
     {
@@ -1948,9 +2138,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--36-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--37-.jpg"
       ],
-      "updated": 1528654474516,
+      "updated": 1530624939488,
       "tags": [
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -2077,12 +2270,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/maison-breil-N-B--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pied-de-vigne-pierre.jpg"
       ],
-      "updated": 1528654508600,
+      "updated": 1530624939526,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -2139,8 +2336,10 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--7-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--9-.jpg"
       ],
-      "updated": 1528654129687,
-      "tags": []
+      "updated": 1530624939547,
+      "tags": [
+        "vin-blanc"
+      ]
     },
     {
       "id": "DEGAQU024V508D0Y",
@@ -2158,11 +2357,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/hachette.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/IMG-5251.JPG"
       ],
-      "updated": 1528654508632,
+      "updated": 1530624939561,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -2177,11 +2381,14 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--4-.jpg"
       ],
-      "updated": 1528654474616,
+      "updated": 1530624939575,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     },
     {
@@ -2197,8 +2404,12 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--5-.jpg"
       ],
-      "updated": 1528654129724,
-      "tags": []
+      "updated": 1530624939588,
+      "tags": [
+        "vin-rouge",
+        "vin-blanc",
+        "vin-moelleux"
+      ]
     },
     {
       "id": "DEGAQU024V50ASLN",
@@ -2252,12 +2463,16 @@
         "http://cdt24.media.tourinsoft.eu/upload/3-219.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/4-208.JPG"
       ],
-      "updated": 1528655055771,
+      "updated": 1530624939611,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -2267,12 +2482,16 @@
       "longitude": "0.54694826",
       "active": true,
       "photos": [],
-      "updated": 1528654508679,
+      "updated": 1530624939629,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rose",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
       ]
     },
     {
@@ -2336,11 +2555,16 @@
       "longitude": "0.507124",
       "active": true,
       "photos": [],
-      "updated": 1528654508718,
+      "updated": 1530624939662,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
       ]
     },
     {
@@ -2360,8 +2584,12 @@
       "longitude": "0.310379",
       "active": true,
       "photos": [],
-      "updated": 1528654129881,
-      "tags": []
+      "updated": 1530624939681,
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-liquoreux"
+      ]
     },
     {
       "id": "DEGAQU047FS000AP",
@@ -2387,11 +2615,15 @@
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance11.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance21.JPG"
       ],
-      "updated": 1528654474715,
+      "updated": 1530624939697,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
       ]
     }
   ]
