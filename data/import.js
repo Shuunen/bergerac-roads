@@ -86,9 +86,9 @@ function getWineTagsFromRemoteDomain(domain) {
 }
 
 function getLabelsFromRemoteDomain(domain) {
-  let labels = domain.LABELS || []
+  let labels = domain.LABELS
   if (!labels || !labels.length) {
-    return labels
+    return []
   }
   labels = labels.split('#')
   labels = labels.map(label => {
