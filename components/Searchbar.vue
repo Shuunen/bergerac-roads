@@ -113,7 +113,7 @@ export default {
       this.isIndeterminate = false
     },
     handleCheckedCitiesChange(value) {
-      //console.log('handleCheckedCitiesChange value = ' + value);
+      // console.log('handleCheckedCitiesChange value = ' + value);
 
       let checkedCount = value.length
       this.checkAll = checkedCount === this.filters.length

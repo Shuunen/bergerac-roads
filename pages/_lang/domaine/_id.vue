@@ -101,7 +101,7 @@ export default {
         this.loading = false
         this.data = {
           title: 'Domaine inconnu',
-          message: "Désolé mais ce domaine n'a pas été trouvé.",
+          message: 'Désolé mais ce domaine n\'a pas été trouvé.',
         }
         this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
       }

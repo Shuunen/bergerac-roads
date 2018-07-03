@@ -65,7 +65,7 @@ var _rollbarConfig = {
     }
     function a(r, o) {
       var e = o.globalAlias || 'Rollbar'
-      if ('object' == typeof r[e]) return r[e]
+      if (typeof r[e] == 'object') return r[e]
       ;(r._rollbarShims = {}), (r._rollbarWrappedError = null)
       var t = new p(o)
       return n(function() {
@@ -77,7 +77,7 @@ var _rollbarConfig = {
         var n = o.autoInstrument
         return (
           o.enabled !== !1 &&
-            (void 0 === n || n === !0 || ('object' == typeof n && n.network)) &&
+            (void 0 === n || n === !0 || (typeof n == 'object' && n.network)) &&
             r.addEventListener &&
             (r.addEventListener('load', t.captureLoad.bind(t)),
             r.addEventListener(
@@ -112,12 +112,12 @@ var _rollbarConfig = {
             for (var e, n, t, l, i = 0; (e = r._rollbarShims[i++]); )
               for (e = e.messages || []; (n = e.shift()); )
                 for (t = n.args || [], i = 0; i < t.length; ++i)
-                  if (((l = t[i]), 'function' == typeof l)) {
+                  if (((l = t[i]), typeof l == 'function')) {
                     l(o)
                     break
                   }
           }
-          'function' == typeof a && a(o)
+          typeof a == 'function' && a(o)
         },
         i = !1,
         s = o.createElement('script'),
@@ -131,8 +131,8 @@ var _rollbarConfig = {
             !(
               i ||
               (this.readyState &&
-                'loaded' !== this.readyState &&
-                'complete' !== this.readyState)
+                this.readyState !== 'loaded' &&
+                this.readyState !== 'complete')
             )
           ) {
             s.onload = s.onreadystatechange = null
@@ -151,24 +151,24 @@ var _rollbarConfig = {
           var n
           if (
             ((n =
-              'function' == typeof o
+              typeof o == 'function'
                 ? o
                 : function() {
                     return o || {}
                   }),
-            'function' != typeof r)
+            typeof r != 'function')
           )
             return r
           if (r._isWrap) return r
           if (
             !r._rollbar_wrapped &&
             ((r._rollbar_wrapped = function() {
-              e && 'function' == typeof e && e.apply(this, arguments)
+              e && typeof e == 'function' && e.apply(this, arguments)
               try {
                 return r.apply(this, arguments)
               } catch (e) {
                 var o = e
-                throw ('string' == typeof o && (o = new String(o)),
+                throw (typeof o == 'string' && (o = new String(o)),
                 (o._rollbarContext = n() || {}),
                 (o._rollbarContext._wrappedSource = r.toString()),
                 (window._rollbarWrappedError = o),
@@ -202,7 +202,7 @@ var _rollbarConfig = {
     function e(r, o, e) {
       if (r) {
         var t
-        'function' == typeof o._rollbarOldOnError
+        typeof o._rollbarOldOnError == 'function'
           ? (t = o._rollbarOldOnError)
           : r.onerror &&
             !r.onerror.belongsToShim &&
@@ -224,7 +224,7 @@ var _rollbarConfig = {
     }
     function t(r, o, e) {
       if (r) {
-        'function' == typeof r._rollbarURH &&
+        typeof r._rollbarURH == 'function' &&
           r._rollbarURH.belongsToShim &&
           r.removeEventListener('unhandledrejection', r._rollbarURH)
         var n = function(r) {
@@ -307,8 +307,8 @@ var _rollbarConfig = {
         (n = e.method),
           (t = e.args),
           this[n] &&
-            'function' == typeof this[n] &&
-            ('captureDomContentLoaded' === n || 'captureLoad' === n
+            typeof this[n] == 'function' &&
+            (n === 'captureDomContentLoaded' || n === 'captureLoad'
               ? this[n].apply(this, [t[0], e.ts])
               : this[n].apply(this, t))
       return this

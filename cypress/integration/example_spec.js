@@ -285,9 +285,9 @@ describe('Kitchen Sink', function() {
         .type('{del}{selectall}{backspace}')
 
         // .type() with key modifiers
-        .type('{alt}{option}') //these are equivalent
-        .type('{ctrl}{control}') //these are equivalent
-        .type('{meta}{command}{cmd}') //these are equivalent
+        .type('{alt}{option}') // these are equivalent
+        .type('{ctrl}{control}') // these are equivalent
+        .type('{meta}{command}{cmd}') // these are equivalent
         .type('{shift}')
 
         // Delay each keypress by 0.1 sec
@@ -316,7 +316,7 @@ describe('Kitchen Sink', function() {
       // https://on.cypress.io/blur
       cy
         .get('.action-blur')
-        .type("I'm about to blur")
+        .type('I\'m about to blur')
         .blur()
         .should('have.class', 'error')
         .prev()
@@ -741,7 +741,7 @@ describe('Kitchen Sink', function() {
         .click()
     })
 
-    it("cy.go() - go back or forward in the browser's history", function() {
+    it('cy.go() - go back or forward in the browser\'s history', function() {
       cy.location('pathname').should('include', 'navigation')
 
       // https://on.cypress.io/go
@@ -1108,7 +1108,7 @@ describe('Kitchen Sink', function() {
     })
 
     it('cy.route() - route responses to matching requests', function() {
-      let message = "whoa, this comment doesn't exist"
+      let message = 'whoa, this comment doesn\'t exist'
       cy.server()
 
       // **** GET comments route ****
