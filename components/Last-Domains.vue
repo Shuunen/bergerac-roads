@@ -6,7 +6,8 @@
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, index) in domains" :key="domain.id" :data="domain" :class="{'hidden-xs-and-down': index >= domainsToShowOnMobile}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain"
+                  :class="{'hidden-xs-and-down': i >= domainsToShowOnMobile, 'size-1': (i % 3 === 0),'size-2': (i % 3 === 1),'size-3': (i % 3 === 2)}" />
         </div>
       </div>
     </el-main>
@@ -62,16 +63,35 @@ h2 {
   color: $black;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 30px;
-  grid-auto-rows: minmax(320px, auto);
-  grid-auto-flow: dense;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+  margin-right: -30px;
 }
 .encart--simple {
   padding-bottom: 40px;
 }
+.domain {
+  min-height: 360px;
+  display: grid;
+  padding: 0 30px 30px 0;
+  &.size-1,
+  &.size-3 {
+    flex-grow: 1;
+  }
+  &.size-2 {
+    flex-grow: 3;
+  }
+
+  /*
+  &.size-3 {
+    grid-column-end: span 2;
+    grid-row-end: span 3;
+  }
+  */
+}
+
+/*
 @media only screen and (min-width: 700px) {
   .grid {
     & > .domain:nth-child(2n) {
@@ -84,4 +104,5 @@ h2 {
     }
   }
 }
+*/
 </style>

@@ -1,7 +1,7 @@
 <template>
   <el-container direction="vertical" class="domain">
     <nuxt-link :to="$i18n.path(link)">
-      <el-card :body-style="{ padding: '0px' }" class="take-height">
+      <el-card class="domain-card take-height">
         <el-container direction="vertical">
           <div class="image" v-lazy:background-image="image" />
           <div class="infos">
