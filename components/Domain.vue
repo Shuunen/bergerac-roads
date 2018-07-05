@@ -10,7 +10,7 @@
             <div class="line">
               <span class="title">{{ data.title }}</span>
               <span class="glasses line">
-                <svg class="icon glass" viewbox="0 0 24 24" v-for="(tag, index) in tags" :key="index" v-if="tag.includes('vin-')" :class="tag">
+                <svg class="icon glass" viewbox="0 0 24 24" v-for="(wine, index) in wines" :key="index" :class="wine">
                   <use xlink:href="./icons/icons.svg#glass" />
                 </svg>
               </span>
@@ -25,6 +25,8 @@
 
 <script>
 import getSlug from 'speakingurl'
+
+const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
 
 export default {
   props: {
@@ -58,12 +60,17 @@ export default {
       }
       return label
     },
-    tags: function() {
-      let tags = []
+    wines: function() {
+      let wines = []
       if (this.data.tags && this.data.tags.length) {
-        tags = this.data.tags
+        winesToDisplay.forEach(wine => {
+          const tag = 'vin-' + wine
+          if (this.data.tags.includes(tag)) {
+            wines.push(tag)
+          }
+        })
       }
-      return tags
+      return wines
     },
     added: function() {
       if (!this.data.updated) {
@@ -109,8 +116,10 @@ export default {
   .infos {
     padding: 10px;
     align-items: flex-start;
+    flex-wrap: wrap;
     .title {
       font-size: 120%;
+      margin-right: 10px;
     }
     .time {
       margin-top: 6px;
@@ -119,11 +128,21 @@ export default {
     .icon.glass {
       height: 24px;
       width: 18px;
-      &.vin-rouge { color: $rouge; }
-      &.vin-blanc { color: $blanc; }
-      &.vin-moelleux { color: $moelleux; }
-      &.vin-liquoreux { color: $liquoreux; }
-      &.vin-rose { color: $rose; }
+      &.vin-rouge {
+        color: $rouge;
+      }
+      &.vin-blanc {
+        color: $blanc;
+      }
+      &.vin-moelleux {
+        color: $moelleux;
+      }
+      &.vin-liquoreux {
+        color: $liquoreux;
+      }
+      &.vin-rose {
+        color: $rose;
+      }
     }
   }
   &.small,
