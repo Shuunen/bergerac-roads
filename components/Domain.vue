@@ -1,9 +1,11 @@
 <template>
-  <el-container direction="vertical" class="domain">
+  <el-container direction="vertical" class="domain" :class="size">
     <nuxt-link :to="$i18n.path(link)">
       <el-card class="domain-card take-height">
-        <el-container direction="vertical">
-          <div class="image" v-lazy:background-image="image" />
+        <el-container :direction="size === 'small' ? 'horizontal' : 'vertical'">
+          <div class="image" v-lazy:background-image="image">
+            <div class="label" v-if="label" :class="['label-' + label]" />
+          </div>
           <div class="infos">
             <span class="title">{{ data.title }}</span>
             <time class="time">ajouté le {{ added }}</time>
@@ -19,6 +21,11 @@ import getSlug from 'speakingurl'
 
 export default {
   props: {
+    size: {
+      type: String,
+      default: 'medium',
+      required: false,
+    },
     data: {
       type: Object,
       required: true,
@@ -36,6 +43,13 @@ export default {
         path = this.data.photos[0]
       }
       return path
+    },
+    label: function() {
+      let label = null
+      if (this.data.labels && this.data.labels.length) {
+        label = this.data.labels[0]
+      }
+      return label
     },
     added: function() {
       if (!this.data.updated) {
@@ -58,38 +72,77 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .domain {
-  cursor: pointer;
-  a {
+  &,
+  & a {
+    cursor: pointer;
+    height: 100%;
     text-decoration: none;
   }
-}
-.image {
-  width: 100%;
-  display: block;
-  min-height: 130px;
-  flex-grow: 1;
-  background-size: cover;
-  background-position: center;
-}
-.infos {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: $moelleux-l2;
-  .title {
-    font-size: 120%;
+  .domain-card {
+    overflow: hidden;
+    .el-card__body {
+      padding: 0;
+    }
   }
-  .time {
-    margin-top: 6px;
-    color: $red-d4;
+  .image {
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-position: center;
   }
-}
-
-/* height fix */
-.domain,
-.domain a {
-  height: 100%;
+  .infos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .title {
+      font-size: 120%;
+    }
+    .time {
+      margin-top: 6px;
+      color: $red-d4;
+    }
+  }
+  &.small,
+  &.medium {
+    .label {
+      position: absolute;
+      bottom: 0;
+      border-top-right-radius: 7px;
+    }
+    .domain-card,
+    .image {
+      border-top-left-radius: 60px;
+    }
+    .image {
+      border-bottom-right-radius: 60px;
+    }
+  }
+  &.small {
+    .image {
+      height: 160px;
+      min-width: 140px;
+    }
+  }
+  &.medium {
+    .image {
+      height: 220px;
+      min-width: 170px;
+    }
+  }
+  &.large {
+    .label {
+      border-bottom-right-radius: 7px;
+    }
+    .domain-card,
+    .image {
+      border-top-right-radius: 60px;
+    }
+    .image {
+      height: 220px;
+      min-width: 350px;
+    }
+  }
 }
 </style>
