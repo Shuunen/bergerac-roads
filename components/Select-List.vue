@@ -69,15 +69,19 @@ export default {
         this.checkedItems.splice(index, 1)
       }
     })
-    if ((!this.google || !this.google.maps) && this.retry > 0) {
-      this.retry--
-      setTimeout(() => this.initAutoComplete(), 500)
-    } else {
-      this.initAutoComplete()
-    }
+    this.initAutoComplete()
   },
   methods: {
     initAutoComplete() {
+      if ((!this.google || !this.google.maps) && this.retry > 0) {
+        this.retry--
+        setTimeout(() => this.initAutoComplete(), 500)
+        console.log('this.google not yet available, retry later...')
+        if (this.retry === 0) {
+          console.log('this is the last retry')
+        }
+        return
+      }
       console.log('in initAutoComplete')
       let autocomplete = new this.google.maps.places.Autocomplete(this.$refs.autocomplete.$refs.input, {
         // Restrict autocomplete to results in France.
