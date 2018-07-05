@@ -54,7 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 .last-domains {
-  background-color: $blanc-sec;
+  background-color: $blanc;
   padding-bottom: 30px;
 }
 h2 {
