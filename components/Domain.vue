@@ -6,8 +6,15 @@
           <div class="image" v-lazy:background-image="image">
             <div class="label" v-if="label" :class="['label-' + label]" />
           </div>
-          <div class="infos">
-            <span class="title">{{ data.title }}</span>
+          <div class="infos col">
+            <div class="line">
+              <span class="title">{{ data.title }}</span>
+              <span class="glasses line">
+                <svg class="icon glass" viewbox="0 0 24 24" v-for="(tag, index) in tags" :key="index" v-if="tag.includes('vin-')" :class="tag">
+                  <use xlink:href="./icons/icons.svg#glass" />
+                </svg>
+              </span>
+            </div>
             <time class="time">ajouté le {{ added }}</time>
           </div>
         </el-container>
@@ -36,7 +43,7 @@ export default {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
     image: function() {
-      let path = '/icones/no-image.png'
+      let path = '/icons/no-image.png'
       if (this.data.thumbnail) {
         path = this.data.thumbnail
       } else if (this.data.photos && this.data.photos.length) {
@@ -50,6 +57,13 @@ export default {
         label = this.data.labels[0]
       }
       return label
+    },
+    tags: function() {
+      let tags = []
+      if (this.data.tags && this.data.tags.length) {
+        tags = this.data.tags
+      }
+      return tags
     },
     added: function() {
       if (!this.data.updated) {
@@ -93,15 +107,23 @@ export default {
     background-position: center;
   }
   .infos {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
+    align-items: flex-start;
     .title {
       font-size: 120%;
     }
     .time {
       margin-top: 6px;
       color: $red-d4;
+    }
+    .icon.glass {
+      height: 24px;
+      width: 18px;
+      &.vin-rouge { color: $rouge; }
+      &.vin-blanc { color: $blanc; }
+      &.vin-moelleux { color: $moelleux; }
+      &.vin-liquoreux { color: $liquoreux; }
+      &.vin-rose { color: $rose; }
     }
   }
   &.small,

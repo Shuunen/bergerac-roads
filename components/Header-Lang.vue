@@ -26,10 +26,10 @@
   background-position: center left;
   background-repeat: no-repeat;
   &.french {
-    background-image: url('/icones/french-flag-small.png');
+    background-image: url('/icons/french-flag-small.png');
   }
   &.english {
-    background-image: url('/icones/english-flag-small.png');
+    background-image: url('/icons/english-flag-small.png');
   }
   &.el-dropdown-menu__item {
     padding-left: 30px;
