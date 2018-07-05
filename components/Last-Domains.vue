@@ -6,8 +6,8 @@
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain"
-                  :class="{'hidden-xs-and-down': i >= domainsToShowOnMobile, 'size-1': (i % 3 === 0),'size-2': (i % 3 === 1),'size-3': (i % 3 === 2)}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 3 === 0) ? 'medium': 'large'"
+                  :class="{'hidden-xs-and-down': (i % 3 !== 0)}" />
         </div>
       </div>
     </el-main>
@@ -16,6 +16,7 @@
 
 <script>
 import { getDomains } from '~/utils/db'
+import { sampleSize } from 'lodash'
 import Domain from './Domain.vue'
 
 const domainsToShow = 6
@@ -28,7 +29,6 @@ export default {
     return {
       loading: true,
       domains: [],
-      domainsToShowOnMobile: 3,
     }
   },
   mounted() {
@@ -40,9 +40,9 @@ export default {
       console.log('Home Mid : init')
       getDomains().then(domains => {
         // Allows to not change the original list of domains that can be used in other components
-        let lastDomains = [...domains].filter(domain => domain.photos)
+        let lastDomains = [...domains].filter(domain => (domain.photos && domain.photos.length))
         // Limit
-        lastDomains.splice(domainsToShow)
+        lastDomains = sampleSize(lastDomains, domainsToShow)
         console.log('Home Mid : got domains', lastDomains)
         this.domains = lastDomains
         this.loading = false
@@ -72,7 +72,7 @@ h2 {
   padding-bottom: 40px;
 }
 .domain {
-  min-height: 360px;
+  /* min-height: 360px; */
   display: grid;
   padding: 0 30px 30px 0;
   &.size-1,
