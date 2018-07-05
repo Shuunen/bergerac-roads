@@ -15,7 +15,7 @@
                 </svg>
               </span>
             </div>
-            <time class="time">ajouté le {{ added }}</time>
+            <div class="description" v-if="description">{{ description }}</div>
           </div>
         </el-container>
       </el-card>
@@ -25,8 +25,15 @@
 
 <script>
 import getSlug from 'speakingurl'
+import { truncate } from 'lodash'
 
 const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
+
+const descriptionSize = {
+  small: 140,
+  medium: 150,
+  large: 230,
+}
 
 export default {
   props: {
@@ -52,6 +59,29 @@ export default {
         path = this.data.photos[0]
       }
       return path
+    },
+    description: function() {
+      let description = ''
+      if (this.data.description && this.data.description.length) {
+        description = this.cleanDescription(this.data.description)
+        const max = descriptionSize[this.size]
+        let extract = truncate(description, {
+          length: max,
+          omission: '.',
+          separator: '.',
+        })
+        // if the text extract is too far from the targeted max length
+        // we stop cutting plain sentences and start cutting inside sentences
+        if (extract.length < 0.7 * description.length) {
+          extract = truncate(description, {
+            length: max,
+            omission: '...',
+            separator: ' ',
+          })
+        }
+        description = extract
+      }
+      return description
     },
     label: function() {
       let label = null
@@ -90,6 +120,15 @@ export default {
       return added
     },
   },
+  methods: {
+    cleanDescription(str) {
+      str = str.replace(/(\\n)+([\s]+)?/gim, '. ')
+      str = str.replace(/[\\.\s]+(\.)/gim, '.')
+      str = str.replace(/\\"/gim, '"')
+      str = str.replace(/[\n]([a-z1-9])/gim, ' $1')
+      return str
+    },
+  },
 }
 </script>
 
@@ -120,6 +159,7 @@ export default {
     .title {
       font-size: 120%;
       margin-right: 10px;
+      margin-bottom: 5px;
     }
     .time {
       margin-top: 6px;
@@ -183,6 +223,17 @@ export default {
     .image {
       height: 220px;
       min-width: 350px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    &.small {
+      max-width: 30%;
+    }
+    &.medium {
+      max-width: 40%;
+    }
+    &.large {
+      max-width: 60%;
     }
   }
 }

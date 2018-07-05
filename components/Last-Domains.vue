@@ -6,8 +6,8 @@
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 3 === 0) ? 'medium': 'large'"
-                  :class="{'hidden-xs-and-down': (i % 3 !== 0)}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
+                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}" />
         </div>
       </div>
     </el-main>
@@ -40,7 +40,9 @@ export default {
       console.log('Home Mid : init')
       getDomains().then(domains => {
         // Allows to not change the original list of domains that can be used in other components
-        let lastDomains = [...domains].filter(domain => (domain.photos && domain.photos.length))
+        let lastDomains = [...domains]
+        // filter domains with photos & description
+        lastDomains = lastDomains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
         // Limit
         lastDomains = sampleSize(lastDomains, domainsToShow)
         console.log('Home Mid : got domains', lastDomains)
