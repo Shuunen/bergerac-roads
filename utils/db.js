@@ -1,8 +1,10 @@
+import { cloneDeep } from 'lodash'
+
 const db = require('~/data/db.json')
 
-export const getVineyards = () => Promise.resolve(db.vineyards)
+export const getVineyards = () => Promise.resolve(cloneDeep(db.vineyards))
 
-export const getDomains = () => Promise.resolve(db.domains)
+export const getDomains = () => Promise.resolve(cloneDeep(db.domains))
 
 export const getDomainsByTags = tags => {
   let domains = []
@@ -11,13 +13,13 @@ export const getDomainsByTags = tags => {
       domains.push(domain)
     }
   }
-  return Promise.resolve(domains)
+  return Promise.resolve(cloneDeep(domains))
 }
 
 export const getDomain = id => {
   let domain = db.domains.filter(domain => domain.id === id)
   domain = domain.length === 1 ? domain[0] : null
-  return Promise.resolve(domain)
+  return Promise.resolve(cloneDeep(domain))
 }
 
-export const getTags = () => Promise.resolve(db.tags)
+export const getTags = () => Promise.resolve(cloneDeep(db.tags))

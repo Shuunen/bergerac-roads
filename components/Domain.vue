@@ -173,7 +173,7 @@ export default {
       height: 24px;
       width: 24px;
       margin-left: -2px;
-      margin-right: 2px;  
+      margin-right: 2px;
     }
   }
   .label {
