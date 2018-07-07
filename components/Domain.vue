@@ -4,6 +4,12 @@
       <el-card class="domain-card take-height">
         <el-container :direction="size === 'small' ? 'horizontal' : 'vertical'">
           <div class="image" v-lazy:background-image="image">
+            <div class="number line" v-if="number">
+              {{ number }}
+              <svg class="icon pin" viewbox="0 0 24 24">
+                <use xlink:href="./icons/icons.svg#pin" />
+              </svg>
+            </div>
             <div class="label" v-if="label" :class="['label-' + label]" />
           </div>
           <div class="infos col">
@@ -50,6 +56,9 @@ export default {
   computed: {
     link: function() {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
+    },
+    number: function() {
+      return this.data.number
     },
     image: function() {
       let path = '/icons/no-image.png'
@@ -152,6 +161,24 @@ export default {
     background-size: cover;
     background-position: center;
   }
+  .number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $red-d2;
+    color: $white;
+    padding: 2px 2px 2px 7px;
+    border-top-right-radius: 7px;
+    .icon.pin {
+      height: 24px;
+      width: 24px;
+      margin-left: -2px;
+      margin-right: 2px;  
+    }
+  }
+  .label {
+    border-bottom-right-radius: 7px;
+  }
   .infos {
     padding: 10px;
     align-items: flex-start;
@@ -187,10 +214,8 @@ export default {
   }
   &.small,
   &.medium {
-    .label {
-      position: absolute;
-      bottom: 0;
-      border-top-right-radius: 7px;
+    .number + .label {
+      display: none;
     }
     .domain-card,
     .image {
@@ -213,9 +238,6 @@ export default {
     }
   }
   &.large {
-    .label {
-      border-bottom-right-radius: 7px;
-    }
     .domain-card,
     .image {
       border-top-right-radius: 60px;
