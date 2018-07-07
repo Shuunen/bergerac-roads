@@ -39,14 +39,12 @@ export default {
       this.loading = true
       console.log('Home Mid : init')
       getDomains().then(domains => {
-        // Allows to not change the original list of domains that can be used in other components
-        let lastDomains = [...domains]
         // filter domains with photos & description
-        lastDomains = lastDomains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
+        domains = domains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
         // Limit
-        lastDomains = sampleSize(lastDomains, domainsToShow)
-        console.log('Home Mid : got domains', lastDomains)
-        this.domains = lastDomains
+        domains = sampleSize(domains, domainsToShow)
+        console.log('Home Mid : got domains', domains)
+        this.domains = domains
         this.loading = false
       })
     },

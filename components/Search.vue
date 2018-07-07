@@ -24,10 +24,10 @@
       </div>
       <el-row class="map-container">
         <el-col :span="8" :xs="24">
-          <SelectList :items="sites" :height="mapContainerHeight" />
+          <SelectList :items="domains" :height="mapContainerHeight" />
         </el-col>
         <el-col :span="16" :xs="24">
-          <GoogleMap :markers="sites" :height="mapContainerHeight" />
+          <GoogleMap :markers="domains" :height="mapContainerHeight" />
         </el-col>
       </el-row>
     </el-main>
@@ -52,27 +52,26 @@ export default {
     return {
       mapContainerHeight: 600,
       options: [],
-      sites: [],
+      domains: [],
       searchValue: [],
     }
   },
   mounted() {
-    getDomains()
-      .then(domains => this.addInfoWindowState(domains))
-      .then(domains => this.sites = domains)
-    getTags().then(tags => this.options = tags)
+    getDomains().then(domains => (this.domains = this.addInfoWindowState(domains)))
+    getTags().then(tags => (this.options = tags))
   },
   methods: {
-    addInfoWindowState(sites) {
-      return sites.map(site => {
-        site.infoWindowOpen = false
-        return site
+    addInfoWindowState(domains) {
+      return domains.map(domain => {
+        domain.infoWindowOpen = false
+        if (domain.number) {
+          domain.title += ' (' + domain.number + ')'
+        }
+        return domain
       })
     },
     search() {
-      getDomainsByTags(this.searchValue.map(tag => tag.code))
-        .then(domains => this.addInfoWindowState(domains))
-        .then(domains => this.sites = domains)
+      getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => (this.domains = this.addInfoWindowState(domains)))
     },
   },
 }
