@@ -25,7 +25,6 @@ export default {
     init() {
       this.loading = true
       console.log('Header Vineyards : init')
-      console.log('myPublicProperty :', this.$myPublicProperty)
       this.$db.getVineyards().then(vineyards => {
         console.log('Header Vineyards : got ', vineyards)
         this.vineyards = vineyards
