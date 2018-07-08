@@ -27,7 +27,10 @@
           <SelectList :items="domains" :height="mapContainerHeight" />
         </el-col>
         <el-col :span="16" :sm="14" :xs="24">
-          <GoogleMap :markers="domains" :height="mapContainerHeight" />
+          <div v-show="!showMap" v-lazy:background-image="'/icons/map-placeholder.jpg'" :style="'height: ' + mapContainerHeight + 'px' " />
+          <lazy-component @show="onMapShow">
+            <GoogleMap v-if="showMap" :markers="domains" :height="mapContainerHeight" />
+          </lazy-component>
         </el-col>
       </el-row>
     </el-main>
@@ -53,6 +56,7 @@ export default {
       options: [],
       domains: [],
       searchValue: [],
+      showMap: false,
     }
   },
   mounted() {
@@ -71,6 +75,10 @@ export default {
       })
       return orderBy(domains, ['title'], ['asc'])
     },
+    onMapShow() {
+      console.log('in onMapShow')
+      setTimeout(() => (this.showMap = true), 500)
+    },
     search() {
       this.$db.getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => (this.domains = this.addInfoWindowState(domains)))
     },
@@ -81,6 +89,7 @@ export default {
 <style lang="scss" scoped>
 .search-container {
   background: $green-d4;
+  min-height: 100vh;
   h2 {
     text-align: center;
     margin: 1rem 0 2rem;
