@@ -68,12 +68,13 @@ export default {
     })
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
-        await this.getCityByCoordinates(position.coords).then(positionStr => (this.startingPoint = positionStr))
+        console.log('set-starting-point (list) : converting object to string...')
+        this.getCityByCoordinates(position.coords)
       } else {
         this.startingPoint = position
+        this.loading = false
+        console.log('set-starting-point (list) : now set to "' + this.startingPoint + '"')
       }
-      this.loading = false
-      console.log('starting point now set to', this.startingPoint)
     })
     this.initAutoComplete()
   },
@@ -100,33 +101,34 @@ export default {
       })
     },
     getCityByCoordinates(coords) {
-      console.log('looking for city at coords', coords)
-      return new Promise((resolve, reject) => {
-        const geocoder = new this.google.maps.Geocoder()
-        const location = { lat: coords.latitude, lng: coords.longitude }
-        geocoder.geocode({ location }, (results, status) => {
-          if (status === 'OK') {
-            if (results[0] && results[0].address_components) {
-              resolve(this.getCityFromAddressComponents(results[0].address_components))
-            } else {
-              console.error('No results found')
-              reject('error, NO_RESULTS')
-            }
+      console.log('getCityByCoordinates : looking for city at coords "' + JSON.stringify(coords) + '"')
+      const geocoder = new this.google.maps.Geocoder()
+      const location = { lat: coords.latitude, lng: coords.longitude }
+      geocoder.geocode({ location }, (results, status) => {
+        if (status === 'OK') {
+          if (results[0] && results[0].address_components) {
+            this.getCityFromAddressComponents(results[0].address_components)
           } else {
-            console.error('Geocoder failed due to: ' + status)
-            reject('error, ' + status)
+            console.error('getCityByCoordinates :  no results found')
           }
-        })
+        } else {
+          console.error('getCityByCoordinates : geocoder failed due to "' + status + '"')
+        }
       })
     },
     getCityFromAddressComponents(components) {
-      let city = null
+      let city = ''
       components.forEach(component => {
         if (component.types.includes('locality')) {
           city = component.short_name
         }
       })
-      return city
+      if (city.length) {
+        console.log('getCityFromAddressComponents : city found "' + city + '"')
+      } else {
+        console.error('getCityFromAddressComponents : city not found :(')
+      }
+      this.setStartingPoint(city)
     },
     getNavigatorPosition() {
       console.log('getNavigatorPosition...')
