@@ -80,8 +80,12 @@ export default {
       this.$forceUpdate()
     })
     eventBus.$on('set-starting-point', position => {
-      console.log('setting starting point to "' + position + '"')
-      this.startingPoint = position
+      if (typeof position === 'string') {
+        console.log('set-starting-point (map) : setting starting point to "' + position + '"')
+        this.startingPoint = position
+      } else {
+        console.log('set-starting-point (map) : object detected, skip saving')
+      }
     })
     eventBus.$on('get-navigator-position', () => {
       console.log('requesting navigator position...')
