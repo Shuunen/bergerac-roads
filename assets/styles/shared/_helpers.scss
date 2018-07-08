@@ -7,11 +7,21 @@
   height: 100%;
 }
 
+.parent-width {
+  width: 100%
+}
+
+.parent-size {
+  height: 100%;
+  width: 100%
+}
+
 .line, .col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-shrink: 0;
   &.col {
     flex-direction: column;
   }

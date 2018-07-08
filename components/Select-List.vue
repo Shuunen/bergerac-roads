@@ -1,34 +1,25 @@
 <template>
-  <div class="select-list-container" :style="{ height: `${height}px` }">
-    <p class="introduction">{{ $t('search.introduction') }}</p>
-    <el-checkbox-group
-      v-model="checkedItems"
-      @change="emitCheckedItems"
-    >
-      <el-checkbox
-        v-for="item in items"
-        :key="item.id"
-        :label="item.title"
-      />
-    </el-checkbox-group>
-    <p>{{ $t('search.helpStart') }}</p>
-    <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
-      <el-button slot="append">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
-    </el-input>
-    <p class="help-text" v-if="!checkedItems.length || !startingPoint.length">Choisissez au moins un domaine et un point de départ pour créer votre itineraire.</p>
-    <el-button
-      :disabled="checkedItems.length === 0"
-      @click="launchItineraryProcessing"
-    >
-      {{ $t('search.itinerary') }}
-    </el-button>
+  <div class="select-list-container col" :style="{ height: `${height}px` }">
+    <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">{{ $t('search.introduction') }}</div>
+    <div class="line list">
+      <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
+        <el-checkbox v-for="item in items" :key="item.id" :label="item.title" />
+      </el-checkbox-group>
+    </div>
+    <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">{{ $t('search.helpStart') }}</div>
+    <div class="line">
+      <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
+        <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+      </el-input>
+    </div>
+    <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+    <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
   </div>
 </template>
 
 <script>
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
-import { setTimeout } from 'timers'
 
 export default {
   props: {
@@ -50,6 +41,9 @@ export default {
   },
   computed: {
     google: gmapApi,
+    canCreate: function() {
+      return this.checkedItems.length && this.startingPoint.length
+    },
   },
   watch: {
     items: function() {
@@ -66,6 +60,14 @@ export default {
       } else {
         this.checkedItems.splice(index, 1)
       }
+    })
+    eventBus.$on('set-starting-point', async position => {
+      if (typeof position === 'object') {
+        await this.getCityByCoordinates(position.coords).then(positionStr => (this.startingPoint = positionStr))
+      } else {
+        this.startingPoint = position
+      }
+      console.log('starting point now set to', this.startingPoint)
     })
     this.initAutoComplete()
   },
@@ -91,9 +93,42 @@ export default {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
     },
+    getCityByCoordinates(coords) {
+      console.log('looking for city at coords', coords)
+      return new Promise((resolve, reject) => {
+        const geocoder = new this.google.maps.Geocoder()
+        const location = { lat: coords.latitude, lng: coords.longitude }
+        geocoder.geocode({ location }, (results, status) => {
+          if (status === 'OK') {
+            if (results[0] && results[0].address_components) {
+              resolve(this.getCityFromAddressComponents(results[0].address_components))
+            } else {
+              console.error('No results found')
+              reject('error, NO_RESULTS')
+            }
+          } else {
+            console.error('Geocoder failed due to: ' + status)
+            reject('error, ' + status)
+          }
+        })
+      })
+    },
+    getCityFromAddressComponents(components) {
+      let city = null
+      components.forEach(component => {
+        if (component.types.includes('locality')) {
+          city = component.short_name
+        }
+      })
+      return city
+    },
+    getNavigatorPosition() {
+      console.log('getNavigatorPosition...')
+      eventBus.$emit('show-map')
+      eventBus.$emit('get-navigator-position')
+    },
     setStartingPoint(value) {
-      this.startingPoint = value
-      eventBus.$emit('set-starting-point', this.startingPoint)
+      eventBus.$emit('set-starting-point', value)
     },
     launchItineraryProcessing() {
       // Necessary to emit the checked items with their coordinates.
@@ -119,17 +154,23 @@ export default {
 
 <style lang="scss">
 .select-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 1.5rem;
   background-color: $white;
-  .introduction {
-    margin: 0 0 1.5rem;
-    text-align: justify;
+  & > .line {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-weight: 600;
+    justify-content: flex-start;
+    &.list {
+      flex: 1;
+    }
+    &.valid {
+      color: $green-d2;
+    }
   }
   .el-checkbox-group {
     max-width: 100%;
+    height: 100%;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -149,10 +190,6 @@ export default {
   }
   .el-button {
     flex: none;
-  }
-  .help-text {
-    color: $green-d1;
-    margin-bottom: 1.5rem;
   }
   .el-icon-location-outline {
     transform: scaleX(1.7) scaleY(1.8) translateY(-1px) translateX(2px);
