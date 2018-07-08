@@ -178,10 +178,16 @@ export default {
           if (status === this.google.maps.DirectionsStatus.OK) {
             this.directionsDisplay.setMap(map)
             this.directionsDisplay.setDirections(response)
+            setTimeout(() => this.scrollToMap(), 300)
           } else {
             alert('Directions request failed due to : ' + status)
           }
         })
+      })
+    },
+    scrollToMap() {
+      document.querySelector('.vue-map-container').scrollIntoView({
+        behavior: 'smooth',
       })
     },
     // Create a promise for each selected place in order to get the distance
