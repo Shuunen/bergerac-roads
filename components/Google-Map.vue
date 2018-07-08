@@ -74,12 +74,17 @@ export default {
   created() {
     eventBus.$on('checked-items', checkedItems => {
       for (let marker of this.markers) {
-        marker.selected = (checkedItems.findIndex(item => item === marker.title) !== -1)
+        marker.selected = checkedItems.findIndex(item => item === marker.title) !== -1
       }
       this.$forceUpdate()
     })
     eventBus.$on('set-starting-point', position => {
+      console.log('setting starting point to', position)
       this.startingPoint = position
+    })
+    eventBus.$on('get-navigator-position', () => {
+      console.log('requesting navigator position...')
+      this.getStartingPoint()
     })
     eventBus.$on('process-itinerary', checkedItems => {
       let promises = []
@@ -110,29 +115,37 @@ export default {
     // If starting point is set, take this one as starting point.
     // If not, take the user's current location.
     getStartingPoint() {
-      return new Promise(resolve => {
+      return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
           resolve(this.startingPoint)
         } else {
           if (!navigator.geolocation) {
-            alert('Geolocation is not supported by this browser.')
-            return
+            reject('Geolocation is not supported by this browser.')
           }
           navigator.geolocation.getCurrentPosition(
             position => {
+              this.setStartingPoint(position)
               resolve(position)
             },
             error => {
               if (error.code === error.PERMISSION_DENIED) {
                 alert('Geolocation must be allowed for this feature to work.')
+                reject('error, PERMISSION_DENIED')
               }
             },
           )
         }
       })
     },
+    setStartingPoint(value) {
+      eventBus.$emit('set-starting-point', value)
+    },
     // Apply the itinerary to the map with its reference.
     displayItinerary(request) {
+      if (!this.$refs || !this.$refs.mapRef || !this.$refs.mapRef.$mapPromise) {
+        console.error('cannot access mapPromise')
+        return
+      }
       this.$refs.mapRef.$mapPromise.then(map => {
         let directionsService = new this.google.maps.DirectionsService()
         directionsService.route(request, (response, status) => {
@@ -167,12 +180,14 @@ export default {
     },
     // Get the formatted position depending on the type of it.
     getFormattedPosition(position) {
-      return typeof position === 'string'
-        ? position
-        : {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          }
+      if (typeof position === 'string') {
+        return position
+      } else {
+        return {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        }
+      }
     },
     // Get the furthest place between all selected places in order to set it as arrival point.
     getFurthestPlace(places) {
@@ -183,7 +198,7 @@ export default {
       return places.splice(furthestPlaceIndex, 1)[0]
     },
     openInfoWindow(marker) {
-      this.markers.map(marker => marker.infoWindowOpen = false)
+      this.markers.map(marker => (marker.infoWindowOpen = false))
       marker.infoWindowOpen = true
     },
     selectMarker(marker) {

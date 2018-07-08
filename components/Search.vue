@@ -43,6 +43,7 @@ import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
 import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
+import { eventBus } from '../store/index'
 
 export default {
   components: {
@@ -62,6 +63,11 @@ export default {
   mounted() {
     this.$db.getDomains().then(domains => (this.domains = this.addInfoWindowState(domains)))
     this.$db.getTags().then(tags => (this.options = tags))
+    eventBus.$on('show-map', () => {
+      if (!this.showMap) {
+        this.showMap = true
+      }
+    })
   },
   methods: {
     addInfoWindowState(domains) {

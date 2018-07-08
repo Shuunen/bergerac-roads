@@ -40,8 +40,10 @@
     "start": "Starting point",
     "selectButton": "Select",
     "unselectButton": "Unselect",
-    "itinerary": "Itinerary",
+    "itinerary": "Create my itinerary",
     "helpStart": "Fill the starting point or click on \"Find me\"",
+    "helpCreateBefore": "Select at leat one domain and one starting point to create an itinerary.",
+    "helpCreateAfter": "Click on the button below to create your itinerary.",
     "findMe": "Find me"
   },
   "vineyards": {
