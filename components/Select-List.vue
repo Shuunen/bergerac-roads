@@ -1,5 +1,5 @@
 <template>
-  <div class="select-list-container col" :style="{ height: `${height}px` }">
+  <div class="select-list-container col" :style="{ height: `${height}px` }" v-loading="loading">
     <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">{{ $t('search.introduction') }}</div>
     <div class="line list">
       <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
@@ -37,6 +37,7 @@ export default {
       checkedItems: [],
       startingPoint: '',
       retry: 3,
+      loading: false,
     }
   },
   computed: {
@@ -67,6 +68,7 @@ export default {
       } else {
         this.startingPoint = position
       }
+      this.loading = false
       console.log('starting point now set to', this.startingPoint)
     })
     this.initAutoComplete()
@@ -124,13 +126,16 @@ export default {
     },
     getNavigatorPosition() {
       console.log('getNavigatorPosition...')
+      this.loading = true
       eventBus.$emit('show-map')
       eventBus.$emit('get-navigator-position')
     },
     setStartingPoint(value) {
+      eventBus.$emit('show-map')
       eventBus.$emit('set-starting-point', value)
     },
     launchItineraryProcessing() {
+      eventBus.$emit('show-map')
       // Necessary to emit the checked items with their coordinates.
       let formattedCheckedItems = []
       for (let checkedItem of this.checkedItems) {
@@ -146,6 +151,7 @@ export default {
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
+      eventBus.$emit('show-map')
       eventBus.$emit('checked-items', value)
     },
   },

@@ -120,7 +120,9 @@ export default {
           resolve(this.startingPoint)
         } else {
           if (!navigator.geolocation) {
-            reject('Geolocation is not supported by this browser.')
+            alert(this.$t('search.findMeFailed'))
+            this.setStartingPoint('')
+            reject('error, NOT_SUPPORTED')
           }
           navigator.geolocation.getCurrentPosition(
             position => {
@@ -129,7 +131,8 @@ export default {
             },
             error => {
               if (error.code === error.PERMISSION_DENIED) {
-                alert('Geolocation must be allowed for this feature to work.')
+                alert(this.$t('search.findMeDisallowed'))
+                this.setStartingPoint('')
                 reject('error, PERMISSION_DENIED')
               }
             },
