@@ -38,6 +38,7 @@ export default {
       startingPoint: '',
       retry: 3,
       loading: false,
+      showMap: false,
     }
   },
   computed: {
@@ -61,6 +62,9 @@ export default {
       } else {
         this.checkedItems.splice(index, 1)
       }
+    })
+    eventBus.$on('show-map', () => {
+      this.showMap = true
     })
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
@@ -127,15 +131,23 @@ export default {
     getNavigatorPosition() {
       console.log('getNavigatorPosition...')
       this.loading = true
-      eventBus.$emit('show-map')
-      eventBus.$emit('get-navigator-position')
+      if (!this.showMap) {
+        eventBus.$emit('show-map')
+        setTimeout(() => eventBus.$emit('get-navigator-position'), 1000)
+      } else {
+        eventBus.$emit('get-navigator-position')
+      }
     },
     setStartingPoint(value) {
-      eventBus.$emit('show-map')
+      if (!this.showMap) {
+        eventBus.$emit('show-map')
+      }
       eventBus.$emit('set-starting-point', value)
     },
     launchItineraryProcessing() {
-      eventBus.$emit('show-map')
+      if (!this.showMap) {
+        eventBus.$emit('show-map')
+      }
       // Necessary to emit the checked items with their coordinates.
       let formattedCheckedItems = []
       for (let checkedItem of this.checkedItems) {
@@ -151,8 +163,12 @@ export default {
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
-      eventBus.$emit('show-map')
-      eventBus.$emit('checked-items', value)
+      if (!this.showMap) {
+        eventBus.$emit('show-map')
+        setTimeout(() => eventBus.$emit('checked-items', value), 1000)
+      } else {
+        eventBus.$emit('checked-items', value)
+      }
     },
   },
 }
