@@ -87,6 +87,7 @@ export default {
       this.getStartingPoint()
     })
     eventBus.$on('process-itinerary', checkedItems => {
+      console.log('in process-itinerary')
       let promises = []
       this.getStartingPoint().then(position => {
         for (let item of checkedItems) {
@@ -115,6 +116,7 @@ export default {
     // If starting point is set, take this one as starting point.
     // If not, take the user's current location.
     getStartingPoint() {
+      console.log('in getStartingPoint')
       return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
           resolve(this.startingPoint)
@@ -141,6 +143,7 @@ export default {
       })
     },
     setStartingPoint(value) {
+      console.log('in setStartingPoint')
       eventBus.$emit('set-starting-point', value)
     },
     // Apply the itinerary to the map with its reference.
@@ -149,6 +152,7 @@ export default {
         console.error('cannot access mapPromise')
         return
       }
+      console.log('in displayItinerary')
       this.$refs.mapRef.$mapPromise.then(map => {
         let directionsService = new this.google.maps.DirectionsService()
         directionsService.route(request, (response, status) => {
@@ -164,6 +168,7 @@ export default {
     // Create a promise for each selected place in order to get the distance
     // between the user and each one of them.
     createDistanceRequest(position, markerPosition) {
+      console.log('in createDistanceRequest')
       let directionsService = new this.google.maps.DirectionsService()
       let request = {
         origin: this.getFormattedPosition(position),
@@ -183,6 +188,7 @@ export default {
     },
     // Get the formatted position depending on the type of it.
     getFormattedPosition(position) {
+      console.log('in getFormattedPosition')
       if (typeof position === 'string') {
         return position
       } else {
@@ -194,6 +200,7 @@ export default {
     },
     // Get the furthest place between all selected places in order to set it as arrival point.
     getFurthestPlace(places) {
+      console.log('in getFurthestPlace')
       let maxDistance = Math.max(...places.map(place => place.distance))
       let furthestPlaceIndex = places.findIndex(place => {
         return place.distance === maxDistance
@@ -201,6 +208,7 @@ export default {
       return places.splice(furthestPlaceIndex, 1)[0]
     },
     openInfoWindow(marker) {
+      console.log('in openInfoWindow')
       this.markers.map(marker => (marker.infoWindowOpen = false))
       marker.infoWindowOpen = true
     },
