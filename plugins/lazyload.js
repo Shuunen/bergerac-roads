@@ -9,6 +9,8 @@ Vue.use(VueLazyload, {
   // set observer to true
   observer: true,
 
+  lazyComponent: true,
+
   // optional
   observerOptions: {
     rootMargin: '0px',
