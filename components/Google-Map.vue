@@ -83,6 +83,10 @@ export default {
       if (typeof position === 'string') {
         console.log('set-starting-point (map) : setting starting point to "' + position + '"')
         this.startingPoint = position
+        if (typeof this.resolvedNavigatorPosition === 'object') {
+          console.log('set-starting-point (map) : detected that starting point was NavigatorPosition "' + position + '"')
+          this.resolvedNavigatorPosition = position
+        }
       } else {
         console.log('set-starting-point (map) : object detected, skip saving')
       }
@@ -125,9 +129,11 @@ export default {
       return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
           console.log('getStartingPoint : starting position is already defined to "' + this.startingPoint + '"')
+          this.setStartingPoint(this.startingPoint)
           resolve(this.startingPoint)
         } else if (this.resolvedNavigatorPosition) {
           console.log('getStartingPoint : resolved navigator position is "' + this.resolvedNavigatorPosition + '"')
+          this.setStartingPoint(this.resolvedNavigatorPosition)
           resolve(this.resolvedNavigatorPosition)
         } else if (!navigator.geolocation) {
           console.error('getStartingPoint : geolocation not supported or failed')
