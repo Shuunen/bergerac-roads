@@ -31,7 +31,7 @@
 
 <script>
 import getSlug from 'speakingurl'
-import { truncate } from 'lodash'
+import truncate from 'lodash/truncate'
 
 const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
 
