@@ -30,6 +30,7 @@ export default {
   z-index: 1;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 }
 .title {
   z-index: 10;
