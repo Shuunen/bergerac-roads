@@ -59,7 +59,7 @@ module.exports = {
     '@nuxtjs/pwa',
   ],
   build: {
-    vendor: ['element-ui', 'speakingurl'],
+    vendor: ['element-ui'],
     /*
     ** Run ESLint on save
     */
