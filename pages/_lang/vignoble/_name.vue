@@ -71,7 +71,6 @@
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
-import { getVineyards } from '~/utils/db'
 
 export default {
   components: {
@@ -95,7 +94,7 @@ export default {
   methods: {
     init() {
       this.loading = true
-      getVineyards().then(vineyards => {
+      this.$db.getVineyards().then(vineyards => {
         this.vineyards = vineyards
         const exists = vineyards.some(vineyard => this.name === vineyard.name)
         let image = `${process.env.cdn}/images/`

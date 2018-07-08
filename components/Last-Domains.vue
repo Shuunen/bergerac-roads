@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { getDomains } from '~/utils/db'
 import sampleSize from 'lodash/sampleSize'
 import Domain from './Domain.vue'
 
@@ -38,7 +37,7 @@ export default {
     init() {
       this.loading = true
       console.log('Home Mid : init')
-      getDomains().then(domains => {
+      this.$db.getDomains().then(domains => {
         // filter domains with photos & description
         domains = domains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
         // Limit
