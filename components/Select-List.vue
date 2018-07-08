@@ -165,7 +165,7 @@ export default {
       flex: 1;
     }
     &.valid {
-      color: $green-d2;
+      color: $green-d1;
     }
   }
   .el-checkbox-group {
