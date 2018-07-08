@@ -18,7 +18,7 @@ module.exports = {
       },
     ],
     script: [
-      { src: '/scripts/rollbar.js' },
+      { src: '/scripts/rollbar.js', defer: true },
     ],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
