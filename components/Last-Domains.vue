@@ -16,7 +16,7 @@
 
 <script>
 import { getDomains } from '~/utils/db'
-import { sampleSize } from 'lodash'
+import sampleSize from 'lodash/sampleSize'
 import Domain from './Domain.vue'
 
 const domainsToShow = 6

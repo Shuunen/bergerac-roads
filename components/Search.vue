@@ -41,7 +41,8 @@ import SelectList from '~/components/Select-List.vue'
 import { getDomains } from '~/utils/db'
 import { getDomainsByTags } from '~/utils/db'
 import { getTags } from '~/utils/db'
-import { orderBy, trimStart } from 'lodash'
+import orderBy from 'lodash/orderBy'
+import trimStart from 'lodash/trimStart'
 
 export default {
   components: {

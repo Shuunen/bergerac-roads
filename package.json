@@ -8,6 +8,7 @@
   "private": true,
   "license": "AGPL-3.0",
   "scripts": {
+		"analyze": "nuxt build --analyze",
     "dev": "nuxt",
     "build": "nuxt build --spa",
     "start": "nuxt start --spa",
