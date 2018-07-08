@@ -30,7 +30,6 @@
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
-import { getDomain } from '~/utils/db'
 
 export default {
   components: {
@@ -87,7 +86,7 @@ export default {
       if (matches && matches.length === 2) {
         const id = matches[1]
         this.loading = true
-        getDomain(id).then(domain => {
+        this.$db.getDomain(id).then(domain => {
           if (domain) {
             console.log('Domain page : got domain', domain)
             this.data = domain

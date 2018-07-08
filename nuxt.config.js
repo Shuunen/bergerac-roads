@@ -44,7 +44,8 @@ module.exports = {
   },
   plugins: [
     'plugins/element-ui',
-    'plugins/i18n.js',
+    'plugins/db',
+    'plugins/i18n',
     'plugins/lazyload',
     'plugins/google-maps',
   ],

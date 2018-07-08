@@ -38,9 +38,6 @@
 import Multiselect from 'vue-multiselect'
 import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
-import { getDomains } from '~/utils/db'
-import { getDomainsByTags } from '~/utils/db'
-import { getTags } from '~/utils/db'
 import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
 
@@ -59,8 +56,8 @@ export default {
     }
   },
   mounted() {
-    getDomains().then(domains => (this.domains = this.addInfoWindowState(domains)))
-    getTags().then(tags => (this.options = tags))
+    this.$db.getDomains().then(domains => (this.domains = this.addInfoWindowState(domains)))
+    this.$db.getTags().then(tags => (this.options = tags))
   },
   methods: {
     addInfoWindowState(domains) {
@@ -75,7 +72,7 @@ export default {
       return orderBy(domains, ['title'], ['asc'])
     },
     search() {
-      getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => (this.domains = this.addInfoWindowState(domains)))
+      this.$db.getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => (this.domains = this.addInfoWindowState(domains)))
     },
   },
 }
