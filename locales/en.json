@@ -36,11 +36,13 @@
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",
     "selected": "Selected",
-    "introduction": "To view an itinerary, select the domains wanted as waypoints and enter a starting point (your location will be taken as default if no address is filled in).",
-    "start": "Start",
+    "introduction": "To create your itinerary, select the domains you want to visit. ed as waypoints and enter a  (your location will be taken as default if no address is filled in).",
+    "start": "Starting point",
     "selectButton": "Select",
     "unselectButton": "Unselect",
-    "itinerary": "Itinerary"
+    "itinerary": "Itinerary",
+    "helpStart": "Fill the starting point or click on \"Find me\"",
+    "findMe": "Find me"
   },
   "vineyards": {
     "titles": {

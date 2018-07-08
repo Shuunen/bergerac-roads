@@ -36,11 +36,13 @@
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",
     "selected": "Sélectionné",
-    "introduction": "Pour visualiser un itinéraire, sélectionnez les domaines désirés en points de passage et entrez un lieu de départ (votre localisation sera prise par défaut si aucune adresse n'est renseignée).",
-    "start": "Départ",
+    "introduction": "Pour créer votre itinéraire, sélectionnez les domaines que vous souhaitez visiter.",
+    "start": "Point de départ",
     "selectButton": "Sélectionner",
     "unselectButton": "Désélectionner",
-    "itinerary": "Itinéraire"
+    "itinerary": "Itinéraire",
+    "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
+    "findMe": "Localisez-moi"
   },
   "vineyards": {
     "titles": {
