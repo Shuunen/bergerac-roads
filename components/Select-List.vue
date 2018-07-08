@@ -11,13 +11,11 @@
         :label="item.title"
       />
     </el-checkbox-group>
-    <el-input
-      ref="autocomplete"
-      :placeholder="$t('search.start')"
-      v-model="startingPoint"
-      clearable
-      @clear="setStartingPoint('')"
-    />
+    <p>{{ $t('search.helpStart') }}</p>
+    <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
+      <el-button slot="append">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+    </el-input>
+    <p class="help-text" v-if="!checkedItems.length || !startingPoint.length">Choisissez au moins un domaine et un point de départ pour créer votre itineraire.</p>
     <el-button
       :disabled="checkedItems.length === 0"
       @click="launchItineraryProcessing"
@@ -124,15 +122,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: $white;
   .introduction {
-    margin: 0 0 2rem;
+    margin: 0 0 1.5rem;
     text-align: justify;
   }
   .el-checkbox-group {
     max-width: 100%;
+    width: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     .el-checkbox {
       display: block;
       .el-checkbox__label {
@@ -147,11 +147,18 @@ export default {
       margin-top: 0.5rem;
     }
   }
-  .el-input {
-    margin: 2rem 0;
-  }
   .el-button {
     flex: none;
+  }
+  .help-text {
+    color: $green-d1;
+    margin-bottom: 1.5rem;
+  }
+  .el-icon-location-outline {
+    transform: scaleX(1.7) scaleY(1.8) translateY(-1px) translateX(2px);
+  }
+  .el-input-group__append {
+    flex-shrink: 0;
   }
 }
 </style>

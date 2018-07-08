@@ -23,10 +23,10 @@
         />
       </div>
       <el-row class="map-container">
-        <el-col :span="8" :xs="24">
+        <el-col :span="8" :sm="10" :xs="24">
           <SelectList :items="domains" :height="mapContainerHeight" />
         </el-col>
-        <el-col :span="16" :xs="24">
+        <el-col :span="16" :sm="14" :xs="24">
           <GoogleMap :markers="domains" :height="mapContainerHeight" />
         </el-col>
       </el-row>
@@ -41,6 +41,7 @@ import SelectList from '~/components/Select-List.vue'
 import { getDomains } from '~/utils/db'
 import { getDomainsByTags } from '~/utils/db'
 import { getTags } from '~/utils/db'
+import { orderBy, trimStart } from 'lodash'
 
 export default {
   components: {
@@ -62,13 +63,15 @@ export default {
   },
   methods: {
     addInfoWindowState(domains) {
-      return domains.map(domain => {
+      domains = domains.map(domain => {
         domain.infoWindowOpen = false
         if (domain.number) {
           domain.title += ' (' + domain.number + ')'
         }
+        domain.title = trimStart(domain.title, 'Les ')
         return domain
       })
+      return orderBy(domains, ['title'], ['asc'])
     },
     search() {
       getDomainsByTags(this.searchValue.map(tag => tag.code)).then(domains => (this.domains = this.addInfoWindowState(domains)))
