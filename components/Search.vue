@@ -64,6 +64,7 @@ export default {
     this.$db.getDomains().then(domains => (this.domains = this.addInfoWindowState(domains)))
     this.$db.getTags().then(tags => (this.options = tags))
     eventBus.$on('show-map', () => {
+      console.log('on show-map')
       if (!this.showMap) {
         this.showMap = true
       }
