@@ -51,6 +51,7 @@ export default {
         lng: 0.35,
       },
       startingPoint: '',
+      resolvedNavigatorPosition: null,
     }
   },
   computed: {
@@ -79,7 +80,7 @@ export default {
       this.$forceUpdate()
     })
     eventBus.$on('set-starting-point', position => {
-      console.log('setting starting point to', position)
+      console.log('setting starting point to "' + position + '"')
       this.startingPoint = position
     })
     eventBus.$on('get-navigator-position', () => {
@@ -119,20 +120,28 @@ export default {
       console.log('in getStartingPoint')
       return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
+          console.log('getStartingPoint : starting position is already defined to "' + this.startingPoint + '"')
           resolve(this.startingPoint)
+        } else if (this.resolvedNavigatorPosition) {
+          console.log('getStartingPoint : resolved navigator position is "' + this.resolvedNavigatorPosition + '"')
+          resolve(this.resolvedNavigatorPosition)
+        } else if (!navigator.geolocation) {
+          console.error('getStartingPoint : geolocation not supported or failed')
+          alert(this.$t('search.findMeFailed'))
+          this.setStartingPoint('')
+          reject('error, NOT_SUPPORTED')
         } else {
-          if (!navigator.geolocation) {
-            alert(this.$t('search.findMeFailed'))
-            this.setStartingPoint('')
-            reject('error, NOT_SUPPORTED')
-          }
+          console.log('getStartingPoint : fetching geolocation...')
           navigator.geolocation.getCurrentPosition(
             position => {
+              console.log('getStartingPoint : got geolocation :)')
+              this.resolvedNavigatorPosition = position
               this.setStartingPoint(position)
               resolve(position)
             },
             error => {
               if (error.code === error.PERMISSION_DENIED) {
+                console.error('getStartingPoint : geolocation denied or failed')
                 alert(this.$t('search.findMeDisallowed'))
                 this.setStartingPoint('')
                 reject('error, PERMISSION_DENIED')
