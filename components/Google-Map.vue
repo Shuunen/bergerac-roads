@@ -52,6 +52,7 @@ export default {
       },
       startingPoint: '',
       resolvedNavigatorPosition: null,
+      iteneraryDisplayed: false,
     }
   },
   computed: {
@@ -62,7 +63,7 @@ export default {
       return new this.google.maps.DirectionsRenderer()
     },
     formattedMarkers: function() {
-      return this.markers.map(marker => {
+      let markers = this.markers.map(marker => {
         marker.position = {
           lat: +marker.latitude,
           lng: +marker.longitude,
@@ -70,21 +71,34 @@ export default {
         marker.selected = false
         return marker
       })
+      if (this.iteneraryDisplayed) {
+        markers = markers.filter(marker => marker.selected)
+      }
+      return markers
     },
   },
   created() {
     eventBus.$on('checked-items', checkedItems => {
       for (let marker of this.markers) {
-        marker.selected = checkedItems.findIndex(item => item === marker.title) !== -1
+        marker.selected =
+          checkedItems.findIndex(item => item === marker.title) !== -1
       }
       this.$forceUpdate()
     })
     eventBus.$on('set-starting-point', position => {
       if (typeof position === 'string') {
-        console.log('set-starting-point (map) : setting starting point to "' + position + '"')
+        console.log(
+          'set-starting-point (map) : setting starting point to "' +
+            position +
+            '"',
+        )
         this.startingPoint = position
         if (typeof this.resolvedNavigatorPosition === 'object') {
-          console.log('set-starting-point (map) : detected that starting point was NavigatorPosition "' + position + '"')
+          console.log(
+            'set-starting-point (map) : detected that starting point was NavigatorPosition "' +
+              position +
+              '"',
+          )
           this.resolvedNavigatorPosition = position
         }
       } else {
@@ -128,15 +142,25 @@ export default {
       console.log('in getStartingPoint')
       return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
-          console.log('getStartingPoint : starting position is already defined to "' + this.startingPoint + '"')
+          console.log(
+            'getStartingPoint : starting position is already defined to "' +
+              this.startingPoint +
+              '"',
+          )
           this.setStartingPoint(this.startingPoint)
           resolve(this.startingPoint)
         } else if (this.resolvedNavigatorPosition) {
-          console.log('getStartingPoint : resolved navigator position is "' + this.resolvedNavigatorPosition + '"')
+          console.log(
+            'getStartingPoint : resolved navigator position is "' +
+              this.resolvedNavigatorPosition +
+              '"',
+          )
           this.setStartingPoint(this.resolvedNavigatorPosition)
           resolve(this.resolvedNavigatorPosition)
         } else if (!navigator.geolocation) {
-          console.error('getStartingPoint : geolocation not supported or failed')
+          console.error(
+            'getStartingPoint : geolocation not supported or failed',
+          )
           alert(this.$t('search.findMeFailed'))
           this.setStartingPoint('')
           reject('error, NOT_SUPPORTED')
@@ -178,6 +202,7 @@ export default {
           if (status === this.google.maps.DirectionsStatus.OK) {
             this.directionsDisplay.setMap(map)
             this.directionsDisplay.setDirections(response)
+            this.iteneraryDisplayed = true
             setTimeout(() => this.scrollToMap(), 300)
           } else {
             alert('Directions request failed due to : ' + status)
