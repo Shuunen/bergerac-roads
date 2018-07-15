@@ -80,6 +80,7 @@ export default {
     },
   },
   created() {
+
     eventBus.$on('checked-items', checkedItems => {
       for (let marker of this.markers) {
         marker.selected =
@@ -87,6 +88,7 @@ export default {
       }
       this.$forceUpdate()
     })
+
     eventBus.$on('set-starting-point', position => {
       if (typeof position === 'string') {
         console.log(
@@ -107,9 +109,10 @@ export default {
         console.log('set-starting-point (map) : object detected, skip saving')
       }
     })
+
     eventBus.$on('get-navigator-position', () => {
       console.log('requesting navigator position...')
-      this.getStartingPoint()
+      this.getStartingPointDebounced()
     })
 
     eventBus.$on('process-itinerary', checkedItems => {
@@ -117,6 +120,7 @@ export default {
     })
 
     this.processItineraryDebounced = debounce(this.processItinerary, 1000)
+    this.getStartingPointDebounced = debounce(this.getStartingPoint, 1000)
   },
   methods: {
     // If starting point is set, take this one as starting point.
