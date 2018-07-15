@@ -12,6 +12,7 @@
       :position="marker.position"
       :clickable="true"
       :draggable="true"
+      :icon="'http://maps.google.com/mapfiles/ms/micons/'+ (marker.selected ? 'green-dot' : 'yellow')+'.png'"
       @click="openInfoWindow(marker)"
     >
       <GmapInfoWindow
@@ -32,6 +33,7 @@
 <script>
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
+import debounce from 'lodash/debounce'
 
 export default {
   props: {
@@ -109,31 +111,12 @@ export default {
       console.log('requesting navigator position...')
       this.getStartingPoint()
     })
+
     eventBus.$on('process-itinerary', checkedItems => {
-      console.log('in process-itinerary')
-      let promises = []
-      this.getStartingPoint().then(position => {
-        for (let item of checkedItems) {
-          promises.push(this.createDistanceRequest(position, item.position))
-        }
-        // When all the promises are resolved, we can compare the distances.
-        Promise.all(promises).then(responses => {
-          let furthestPlace = this.getFurthestPlace(responses)
-          // Delete the distance property to match the waypoint prototype.
-          responses.forEach(response => delete response.distance)
-          // Construct the request as follows : the furthest as arrival and the others
-          // as waypoints (optimizeWaypoints equals to true to optimize the order).
-          let request = {
-            origin: this.getFormattedPosition(position),
-            destination: furthestPlace.location,
-            travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
-            waypoints: responses,
-            optimizeWaypoints: true,
-          }
-          this.displayItinerary(request)
-        })
-      })
+      this.processItineraryDebounced(checkedItems)
     })
+
+    this.processItineraryDebounced = debounce(this.processItinerary, 1000)
   },
   methods: {
     // If starting point is set, take this one as starting point.
@@ -147,7 +130,7 @@ export default {
               this.startingPoint +
               '"',
           )
-          this.setStartingPoint(this.startingPoint)
+          // this.setStartingPoint(this.startingPoint)
           resolve(this.startingPoint)
         } else if (this.resolvedNavigatorPosition) {
           console.log(
@@ -189,6 +172,31 @@ export default {
       console.log('in setStartingPoint')
       eventBus.$emit('set-starting-point', value)
     },
+    processItinerary(checkedItems) {
+      console.log('in process-itinerary')
+      let promises = []
+      this.getStartingPoint().then(position => {
+        for (let item of checkedItems) {
+          promises.push(this.createDistanceRequest(position, item.position))
+        }
+        // When all the promises are resolved, we can compare the distances.
+        Promise.all(promises).then(responses => {
+          let furthestPlace = this.getFurthestPlace(responses)
+          // Delete the distance property to match the waypoint prototype.
+          responses.forEach(response => delete response.distance)
+          // Construct the request as follows : the furthest as arrival and the others
+          // as waypoints (optimizeWaypoints equals to true to optimize the order).
+          let request = {
+            origin: this.getFormattedPosition(position),
+            destination: furthestPlace.location,
+            travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
+            waypoints: responses,
+            optimizeWaypoints: true,
+          }
+          this.displayItinerary(request)
+        })
+      })
+    },
     // Apply the itinerary to the map with its reference.
     displayItinerary(request) {
       if (!this.$refs || !this.$refs.mapRef || !this.$refs.mapRef.$mapPromise) {
@@ -219,6 +227,7 @@ export default {
     // between the user and each one of them.
     createDistanceRequest(position, markerPosition) {
       console.log('in createDistanceRequest')
+      // console.log('in createDistanceRequest with position "' + position + '"')
       let directionsService = new this.google.maps.DirectionsService()
       let request = {
         origin: this.getFormattedPosition(position),
@@ -239,6 +248,7 @@ export default {
     // Get the formatted position depending on the type of it.
     getFormattedPosition(position) {
       console.log('in getFormattedPosition')
+      // console.log('in getFormattedPosition with "' + position + '"')
       if (typeof position === 'string') {
         return position
       } else {

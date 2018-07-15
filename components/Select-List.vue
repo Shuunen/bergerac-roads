@@ -44,6 +44,7 @@ export default {
       retry: 3,
       loading: false,
       showMap: false,
+      iteneraryDisplayed: false,
     }
   },
   computed: {
@@ -123,6 +124,9 @@ export default {
     },
     sortItems() {
       this.loading = true
+      if (this.iteneraryDisplayed) {
+        this.launchItineraryProcessing()
+      }
       setTimeout(() => {
         console.log('sorting items in list')
         this.itemsSorted = orderBy(
@@ -203,6 +207,7 @@ export default {
           },
         })
       }
+      this.iteneraryDisplayed = true
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
