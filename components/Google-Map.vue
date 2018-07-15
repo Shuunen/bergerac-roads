@@ -174,6 +174,12 @@ export default {
     },
     processItinerary(checkedItems) {
       console.log('in process-itinerary')
+      if (checkedItems.length === 0) {
+        console.log('reset map view...')
+        this.iteneraryDisplayed = false
+        this.$forceUpdate()
+        return
+      }
       let promises = []
       this.getStartingPoint().then(position => {
         for (let item of checkedItems) {
