@@ -5,7 +5,7 @@
     </div>
     <div class="line list">
       <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
-        <el-checkbox v-for="item in items" :key="item.id" :label="item.title" />
+        <el-checkbox v-for="item in itemsSorted" :key="item.id" :label="item.title" />
       </el-checkbox-group>
     </div>
     <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">{{ $t('search.helpStart') }}</div>
@@ -22,6 +22,7 @@
 <script>
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
+import orderBy from 'lodash/orderBy'
 
 export default {
   props: {
@@ -37,6 +38,7 @@ export default {
   data() {
     return {
       checkedItems: [],
+      itemsSorted: [],
       startingPoint: '',
       retry: 3,
       loading: false,
@@ -53,32 +55,44 @@ export default {
     items: function() {
       // Reinitialize the checked items' list when the items' list changes.
       this.checkedItems = []
+      this.sortItems()
     },
   },
   mounted() {
     // Selects or not by clicking on the button in infowindow.
     eventBus.$on('select-marker', selectedMarker => {
-      let index = this.checkedItems.findIndex(item => item === selectedMarker.title)
+      console.log('on select-marker')
+      let index = this.checkedItems.findIndex(
+        item => item === selectedMarker.title,
+      )
       if (index === -1) {
         this.checkedItems.push(selectedMarker.title)
       } else {
         this.checkedItems.splice(index, 1)
       }
+      this.sortItems()
     })
-    eventBus.$on('show-map', () => {
-      this.showMap = true
-    })
+
+    eventBus.$on('show-map', () => (this.showMap = true))
+
+    eventBus.$on('checked-items', () => this.sortItems())
+
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
-        console.log('set-starting-point (list) : converting object to string...')
+        console.log(
+          'set-starting-point (list) : converting object to string...',
+        )
         this.getCityByCoordinates(position.coords)
       } else {
         this.startingPoint = position
         this.loading = false
-        console.log('set-starting-point (list) : now set to "' + this.startingPoint + '"')
+        console.log(
+          'set-starting-point (list) : now set to "' + this.startingPoint + '"',
+        )
       }
     })
     this.initAutoComplete()
+    this.sortItems()
   },
   methods: {
     initAutoComplete() {
@@ -92,18 +106,37 @@ export default {
         return
       }
       console.log('in initAutoComplete')
-      let autocomplete = new this.google.maps.places.Autocomplete(this.$refs.autocomplete.$refs.input, {
-        // Restrict autocomplete to results in France.
-        componentRestrictions: {
-          country: 'fr',
+      let autocomplete = new this.google.maps.places.Autocomplete(
+        this.$refs.autocomplete.$refs.input,
+        {
+          // Restrict autocomplete to results in France.
+          componentRestrictions: {
+            country: 'fr',
+          },
         },
-      })
+      )
       autocomplete.addListener('place_changed', () => {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
     },
+    sortItems() {
+      this.loading = true
+      setTimeout(() => {
+        console.log('sorting items in list')
+        this.itemsSorted = orderBy(
+          this.items,
+          ['selected', 'title'],
+          ['desc', 'asc'],
+        )
+        this.loading = false
+      }, 500)
+    },
     getCityByCoordinates(coords) {
-      console.log('getCityByCoordinates : looking for city at coords "' + JSON.stringify(coords) + '"')
+      console.log(
+        'getCityByCoordinates : looking for city at coords "' +
+          JSON.stringify(coords) +
+          '"',
+      )
       const geocoder = new this.google.maps.Geocoder()
       const location = { lat: coords.latitude, lng: coords.longitude }
       geocoder.geocode({ location }, (results, status) => {
@@ -114,7 +147,9 @@ export default {
             console.error('getCityByCoordinates :  no results found')
           }
         } else {
-          console.error('getCityByCoordinates : geocoder failed due to "' + status + '"')
+          console.error(
+            'getCityByCoordinates : geocoder failed due to "' + status + '"',
+          )
         }
       })
     },
@@ -155,7 +190,9 @@ export default {
       // Necessary to emit the checked items with their coordinates.
       let formattedCheckedItems = []
       for (let checkedItem of this.checkedItems) {
-        let originalCheckedItem = this.items.find(item => item.title === checkedItem)
+        let originalCheckedItem = this.items.find(
+          item => item.title === checkedItem,
+        )
         formattedCheckedItems.push({
           name: checkedItem,
           position: {
@@ -167,6 +204,7 @@ export default {
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
+      console.log('emitCheckedItems', value)
       if (!this.showMap) {
         eventBus.$emit('show-map')
         setTimeout(() => eventBus.$emit('checked-items', value), 1000)
