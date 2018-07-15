@@ -1,6 +1,8 @@
 <template>
   <div class="select-list-container col" :style="{ height: `${height}px` }" v-loading="loading">
-    <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">{{ $t('search.introduction') }}</div>
+    <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
+      {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's :' : ' :') }}
+    </div>
     <div class="line list">
       <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
         <el-checkbox v-for="item in items" :key="item.id" :label="item.title" />
@@ -189,7 +191,7 @@ export default {
       flex: 1;
     }
     &.valid {
-      color: $green-d1;
+      color: $green-d2;
     }
   }
   .el-checkbox-group {
