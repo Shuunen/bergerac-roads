@@ -57,7 +57,7 @@ export default {
     items: function() {
       // Reinitialize the checked items' list when the items' list changes.
       this.checkedItems = []
-      this.sortItemsDebounced()
+      this.sortItems(true)
     },
   },
   mounted() {
@@ -95,7 +95,7 @@ export default {
     })
     this.initAutoComplete()
     this.sortItemsDebounced = debounce(this.sortItems, 1500)
-    this.sortItemsDebounced()
+    this.sortItemsDebounced(true)
   },
   methods: {
     initAutoComplete() {
@@ -122,20 +122,25 @@ export default {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
     },
-    sortItems() {
-      this.loading = true
+    sortItems(noTimeout) {
+      const timeout = noTimeout ? 0 : 300
+      if (timeout) {
+        this.loading = true
+      }
       if (this.iteneraryDisplayed) {
         this.launchItineraryProcessing()
       }
       setTimeout(() => {
-        console.log('sorting items in list')
+        console.log('sorting items in list with ' + timeout + 'ms timeout')
         this.itemsSorted = orderBy(
           this.items,
           ['selected', 'title'],
           ['desc', 'asc'],
         )
-        this.loading = false
-      }, 300)
+        if (timeout) {
+          this.loading = false
+        }
+      }, timeout)
     },
     getCityByCoordinates(coords) {
       console.log(
