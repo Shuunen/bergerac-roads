@@ -23,6 +23,7 @@
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
 import orderBy from 'lodash/orderBy'
+import debounce from 'lodash/debounce'
 
 export default {
   props: {
@@ -55,7 +56,7 @@ export default {
     items: function() {
       // Reinitialize the checked items' list when the items' list changes.
       this.checkedItems = []
-      this.sortItems()
+      this.sortItemsDebounced()
     },
   },
   mounted() {
@@ -70,12 +71,12 @@ export default {
       } else {
         this.checkedItems.splice(index, 1)
       }
-      this.sortItems()
+      this.sortItemsDebounced()
     })
 
     eventBus.$on('show-map', () => (this.showMap = true))
 
-    eventBus.$on('checked-items', () => this.sortItems())
+    eventBus.$on('checked-items', () => this.sortItemsDebounced())
 
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
@@ -92,7 +93,8 @@ export default {
       }
     })
     this.initAutoComplete()
-    this.sortItems()
+    this.sortItemsDebounced = debounce(this.sortItems, 1500)
+    this.sortItemsDebounced()
   },
   methods: {
     initAutoComplete() {
@@ -129,7 +131,7 @@ export default {
           ['desc', 'asc'],
         )
         this.loading = false
-      }, 500)
+      }, 300)
     },
     getCityByCoordinates(coords) {
       console.log(
