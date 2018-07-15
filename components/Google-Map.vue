@@ -175,9 +175,7 @@ export default {
     processItinerary(checkedItems) {
       console.log('in process-itinerary')
       if (checkedItems.length === 0) {
-        console.log('reset map view...')
-        this.iteneraryDisplayed = false
-        this.$forceUpdate()
+        console.log('without items, skipping...')
         return
       }
       let promises = []
