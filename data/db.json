@@ -3,32 +3,38 @@
     {
       "id": 0,
       "code": "acces-handicape",
-      "name": "Accès handicapé"
+      "name": "Accès handicapé",
+      "shortName": "Accès handicapé"
     },
     {
       "id": 1,
       "code": "agriculture-bio",
-      "name": "Agriculture biologique"
+      "name": "Agriculture biologique",
+      "shortName": "Agri. biologique"
     },
     {
       "id": 2,
       "code": "agriculture-biodynamique",
-      "name": "Agriculture biodynamique"
+      "name": "Agriculture biodynamique",
+      "shortName": "Agri. biodynamique"
     },
     {
       "id": 3,
       "code": "agriculture-raisonnee",
-      "name": "Agriculture raisonnée"
+      "name": "Agriculture raisonnée",
+      "shortName": "Agri. raisonnée"
     },
     {
       "id": 4,
       "code": "accepte-animaux",
-      "name": "Animaux acceptés"
+      "name": "Animaux acceptés",
+      "shortName": "Animaux acceptés"
     },
     {
       "id": 5,
       "code": "vente-propriete",
-      "name": "Vente à la propriété"
+      "name": "Vente à la propriété",
+      "shortName": "Vente à la propriété"
     }
   ],
   "vineyards": [

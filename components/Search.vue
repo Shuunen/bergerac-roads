@@ -1,12 +1,14 @@
 <template>
-  <el-container direction="vertical" class="search-container">
+  <el-container class="search-container" direction="vertical">
     <el-main>
 
       <h2>{{ $t('search.header') }}</h2>
 
-      <div class="line search-pictos">
-        <el-checkbox class="search-picto col" :class="['icon-' + filter.code]" v-for="filter in filters" :key="filter.code" :checked="filter.checked" :label="filter.name" @change="updateFilter(filter)" border />
-      </div>
+      <el-row class="search-pictos" :gutter="20">
+        <el-col :xs="12" :span="8" :lg="4" v-for="filter in filters" :key="filter.code">
+          <el-checkbox class="search-picto col" :class="['icon-' + filter.code]" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border />
+        </el-col>
+      </el-row>
 
       <lazy-component @show="doShowMap">
         <el-row class="map-container" v-loading="loading">
@@ -107,25 +109,56 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .search-container {
+  $picto-height: 187px;
+
   background: $green-d4;
   min-height: 100vh;
   h2 {
     text-align: center;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
+  }
+  .search-pictos {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    min-height: $picto-height;
   }
   .search-picto {
+    margin-top: 20px;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    height: 140px;
-    line-height: 200px;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    height: $picto-height;
     background-color: $white;
-    flex: 1;
+    filter: grayscale(0.8);
+    transition: filter 0.4s;
+    text-align: center;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    font-weight: bold;
     &.is-bordered {
-      margin-left: 20px;
-      padding-left: 15px;
+      margin-left: 0;
+    }
+    &.is-checked {
+      filter: grayscale(0);
+    }
+    .el-checkbox,
+    .el-checkbox__input {
+      display: block;
+    }
+    .el-checkbox__input {
+      opacity: 0;
+      margin-top: 105px;
+    }
+    .el-checkbox__label {
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 10px;
+      padding-left: 0;
     }
   }
   .no-result {
@@ -134,5 +167,23 @@ export default {
   .map-container {
     margin: 2rem 0;
   }
+}
+.icon-agriculture-biodynamique {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/earth-globe-americas_1f30e.png');
+}
+.icon-agriculture-bio {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/evergreen-tree_1f332.png');
+}
+.icon-acces-handicape {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/wheelchair-symbol_267f.png');
+}
+.icon-agriculture-raisonnee {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/black-universal-recycling-symbol_267b.png');
+}
+.icon-accepte-animaux {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/paw-prints_1f43e.png');
+}
+.icon-vente-propriete {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/shopping-trolley_1f6d2.png');
 }
 </style>
