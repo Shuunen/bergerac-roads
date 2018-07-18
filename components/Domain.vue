@@ -67,7 +67,7 @@ export default {
       if (this.data.thumbnail) {
         path = this.data.thumbnail
       } else if (this.data.photos && this.data.photos.length) {
-        path = this.data.photos[0]
+        path = process.env.cdnBase + this.data.photos[0]
       }
       return path
     },
