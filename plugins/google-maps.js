@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './polyfills'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.use(VueGoogleMaps, {
