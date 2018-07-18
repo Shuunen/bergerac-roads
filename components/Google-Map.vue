@@ -12,7 +12,7 @@
       :position="marker.position"
       :clickable="true"
       :draggable="true"
-      :icon="'http://maps.google.com/mapfiles/ms/micons/'+ (marker.selected ? 'green-dot' : 'yellow')+'.png'"
+      :icon="'https://maps.google.com/mapfiles/ms/micons/'+ (marker.selected ? 'green-dot' : 'yellow')+'.png'"
       @click="openInfoWindow(marker)"
     >
       <GmapInfoWindow
