@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.0.8",
+    "babel-polyfill": "^6.26.0",
     "element-ui": "^2.3.9",
     "lodash": "^4.17.10",
     "node-sass": "^4.9.0",
@@ -42,7 +43,6 @@
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "cypress": "^2.1.0",
     "eslint": "^4.19.1",
