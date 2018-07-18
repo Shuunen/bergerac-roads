@@ -140,19 +140,15 @@ export default {
     border-width: 5px;
     font-weight: bold;
     &::after {
+      @include sprite($check);
+
       transition: opacity 0.4s;
       display: block;
       opacity: 0;
       content: '';
-      background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/heavy-check-mark_2714.png');
-      background-position: center;
-      background-repeat: no-repeat;
       position: absolute;
       top: 8px;
       right: 8px;
-      height: 18px;
-      width: 18px;
-      background-size: contain;
     }
     &.is-bordered {
       margin-left: 0;

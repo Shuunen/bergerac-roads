@@ -10,7 +10,7 @@ nsg({
     'assets/icons/**//* \.png',
   ],
   layout: 'packed', // packed
-  spritePath: 'static/images/icons.png',
+  spritePath: 'assets/images/icons.png',
   stylesheet: 'scss',
   stylesheetPath: 'assets/styles/ressources/icons-transparent.scss',
   stylesheetOptions: {
@@ -34,7 +34,7 @@ nsg({
     'assets/icons/**/*.jpg',
   ],
   layout: 'packed', // packed
-  spritePath: 'static/images/icons.jpg',
+  spritePath: 'assets/images/icons.jpg',
   stylesheet: 'scss',
   stylesheetPath: 'assets/styles/ressources/icons.scss'
 }, function(err) {
@@ -42,6 +42,9 @@ nsg({
     console.log('Sprite JPG failed !', err)
   } else {
     console.log('Sprite JPG generated!')
-    console.log('Fix "../../../static/images/icons.jpg" into "/static/images/icons.jpg" in icons.scss')
+    console.log('TODO : Upload sprite to CDN')
+    console.log('TODO : Background should target "#{$cdn}/images/icons.jpg" in icons.scss')
+    console.log('TODO : Invalidate https://admin-v3.cloudimg.io/admin/project/invalidation')
+    console.log('URL : /cdn/none/none/bergerac.lebowsky-dev.xyz/images/icons.jpg')
   }
 })

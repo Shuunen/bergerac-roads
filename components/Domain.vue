@@ -6,9 +6,7 @@
           <div class="image" v-lazy:background-image="image">
             <div class="number line" v-if="number">
               {{ number }}
-              <svg class="icon pin" viewbox="0 0 24 24">
-                <use xlink:href="./images/icons.svg#pin" />
-              </svg>
+              <div class="icon pin" />
             </div>
             <div class="label" v-if="label" :class="['label-' + label]">
               <div class="icon" />
@@ -18,9 +16,7 @@
             <div class="line">
               <span class="title">{{ data.title }}</span>
               <span class="glasses line">
-                <svg class="icon glass" viewbox="0 0 24 24" v-for="(wine, index) in wines" :key="index" :class="wine">
-                  <use xlink:href="./images/icons.svg#glass" />
-                </svg>
+                <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
               </span>
             </div>
             <div class="description" v-if="description">{{ description }}</div>
@@ -173,9 +169,12 @@ export default {
     border-top-right-radius: 7px;
     .icon.pin {
       height: 24px;
-      width: 24px;
-      margin-left: -2px;
+      width: 20px;
+      background-image: url(#{$cdn}/images/pin.png);
+      background-repeat: no-repeat;
+      background-size: contain;
       margin-right: 2px;
+      margin-left: 2px;
     }
   }
   .label {
@@ -195,22 +194,20 @@ export default {
       color: $red-d4;
     }
     .icon.glass {
-      height: 24px;
-      width: 18px;
       &.vin-rouge {
-        color: $rouge;
+        @include sprite($glass-rouge);
       }
       &.vin-blanc {
-        color: $blanc;
+        @include sprite($glass-blanc);
       }
       &.vin-moelleux {
-        color: $moelleux;
+        @include sprite($glass-moelleux);
       }
       &.vin-liquoreux {
-        color: $liquoreux;
+        @include sprite($glass-liquoreux);
       }
       &.vin-rose {
-        color: $rose;
+        @include sprite($glass-rose);
       }
     }
   }
