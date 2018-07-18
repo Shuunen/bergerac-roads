@@ -18,7 +18,7 @@ module.exports = {
       },
     ],
     script: [
-      { src: '/scripts/polyfills.js', defer: false },
+      { src: '/scripts/polyfills.js', rel: 'preload' },
       { src: '/scripts/rollbar.js', defer: true },
     ],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
