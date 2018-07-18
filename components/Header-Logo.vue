@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="$i18n.path('')" class="logo" title="Retour à l'accueil">
-    <img src="/logos/logo-2016-bergerac-duras.svg" alt="logo">
+    <img src="/images/bergerac-duras.png" alt="logo">
   </nuxt-link>
 </template>
 

@@ -22,19 +22,27 @@
   margin-right: 10px;
 }
 .flag {
-  padding-left: 22px;
-  background-position: center left;
-  background-repeat: no-repeat;
-  &.french {
-    background-image: url('/icons/french-flag-small.png');
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -21px;
+    top: 5px;
   }
-  &.english {
-    background-image: url('/icons/english-flag-small.png');
+  &.french::before {
+    @include sprite($french-flag);
   }
-  &.el-dropdown-menu__item {
-    padding-left: 30px;
-    background-position-x: 7px;
-    padding-right: 20px;
+  &.english::before {
+    @include sprite($english-flag);
   }
+  &.el-dropdown-menu__item::before {
+    left: 6px;
+    top: 12px;
+  }
+}
+.el-dropdown-menu__item {
+  padding-left: 30px;
+  padding-right: 20px;
 }
 </style>

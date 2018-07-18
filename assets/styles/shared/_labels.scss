@@ -1,30 +1,29 @@
 .label {
-  background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: center;
+  display: inline-block;
+  padding: 7px;
 }
 
 .label-vignobles-et-decouvertes {
-  height: 64px;
-  width: 51px;
-  background-image: url('/labels/vignobles-et-decouvertes.jpg');
   background-color: #1c7c4e;
+  .icon {
+    @include sprite($vignobles-et-decouvertes);
+  }
 }
 .label-agriculture-biologique {
-  height: 64px;
-  width: 48px;
-  background-image: url('/labels/agriculture-biologique.png');
   background-color: #fff;
+  .icon {
+    @include sprite($agriculture-biologique);
+  }
 }
 .label-bienvenue-a-la-ferme {
-  height: 65px;
-  width: 56px;
-  background-image: url('/labels/bienvenue-a-la-ferme.jpg');
   background-color: #50ac25;
+  .icon {
+    @include sprite($bienvenue-a-la-ferme);
+  }
 }
 .label-saveurs-du-perigord {
-  background-image: url('/labels/saveurs-du-perigord.jpg');
   background-color: #50ac25;
-  width: 52px;
-  height: 47px;
+  .icon {
+    @include sprite($saveurs-du-perigord);
+  }
 }

@@ -7,17 +7,19 @@
             <div class="number line" v-if="number">
               {{ number }}
               <svg class="icon pin" viewbox="0 0 24 24">
-                <use xlink:href="./icons/icons.svg#pin" />
+                <use xlink:href="./images/icons.svg#pin" />
               </svg>
             </div>
-            <div class="label" v-if="label" :class="['label-' + label]" />
+            <div class="label" v-if="label" :class="['label-' + label]">
+              <div class="icon" />
+            </div>
           </div>
           <div class="infos col">
             <div class="line">
               <span class="title">{{ data.title }}</span>
               <span class="glasses line">
                 <svg class="icon glass" viewbox="0 0 24 24" v-for="(wine, index) in wines" :key="index" :class="wine">
-                  <use xlink:href="./icons/icons.svg#glass" />
+                  <use xlink:href="./images/icons.svg#glass" />
                 </svg>
               </span>
             </div>
