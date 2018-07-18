@@ -40,7 +40,7 @@
 .grappe {
   height: 80px;
   width: 60px;
-  background: url('/images/grappe.svg');
+  background-image: url(#{$cdn}/images/grappe.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;

@@ -58,6 +58,31 @@ $check-y: -210px;
 $check-width: 30px;
 $check-height: 30px;
 $check: $check-x $check-y $check-width $check-height;
+$glass-rose-x: -753px;
+$glass-rose-y: -210px;
+$glass-rose-width: 24px;
+$glass-rose-height: 24px;
+$glass-rose: $glass-rose-x $glass-rose-y $glass-rose-width $glass-rose-height;
+$glass-rouge-x: -723px;
+$glass-rouge-y: -240px;
+$glass-rouge-width: 24px;
+$glass-rouge-height: 24px;
+$glass-rouge: $glass-rouge-x $glass-rouge-y $glass-rouge-width $glass-rouge-height;
+$glass-moelleux-x: -747px;
+$glass-moelleux-y: -240px;
+$glass-moelleux-width: 24px;
+$glass-moelleux-height: 24px;
+$glass-moelleux: $glass-moelleux-x $glass-moelleux-y $glass-moelleux-width $glass-moelleux-height;
+$glass-liquoreux-x: -723px;
+$glass-liquoreux-y: -264px;
+$glass-liquoreux-width: 24px;
+$glass-liquoreux-height: 24px;
+$glass-liquoreux: $glass-liquoreux-x $glass-liquoreux-y $glass-liquoreux-width $glass-liquoreux-height;
+$glass-blanc-x: -747px;
+$glass-blanc-y: -264px;
+$glass-blanc-width: 24px;
+$glass-blanc-height: 24px;
+$glass-blanc: $glass-blanc-x $glass-blanc-y $glass-blanc-width $glass-blanc-height;
 $french-flag-x: -773px;
 $french-flag-y: -140px;
 $french-flag-width: 16px;
@@ -70,7 +95,7 @@ $english-flag-height: 11px;
 $english-flag: $english-flag-x $english-flag-y $english-flag-width $english-flag-height;
 
 @mixin sprite-image {
-  background-image: url("/static/images/icons.jpg");
+  background-image: url("#{$cdn}/images/icons.jpg");
 }
 @mixin sprite-position($sprite) {
   background-position: nth($sprite, 1) nth($sprite, 2);
