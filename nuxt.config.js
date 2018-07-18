@@ -53,7 +53,7 @@ module.exports = {
     [
       'nuxt-sass-resources-loader',
       {
-        resources: ['./assets/styles/ressources/variables.scss'],
+        resources: ['./assets/styles/ressources/variables.scss', './assets/styles/ressources/icons.scss', './assets/styles/ressources/icons-transparent.scss'],
       },
     ],
     '@nuxtjs/pwa',

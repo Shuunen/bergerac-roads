@@ -6,7 +6,10 @@
 
       <el-row class="search-pictos" :gutter="20">
         <el-col :xs="12" :span="8" :lg="4" v-for="filter in filters" :key="filter.code">
-          <el-checkbox class="search-picto col" :class="['icon-' + filter.code]" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border />
+          <el-checkbox class="search-picto col" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border>
+            <div :class="['icon', 'icon-' + filter.code]" />
+            <div class="label">{{ filter.shortName }}</div>
+          </el-checkbox>
         </el-col>
       </el-row>
 
@@ -16,7 +19,7 @@
             <SelectList :items="domains" :height="mapContainerHeight" />
           </el-col>
           <el-col :span="16" :sm="14" :xs="24">
-            <div v-show="!showMap" v-lazy:background-image="'/icons/map-placeholder.jpg'" :style="'height: ' + mapContainerHeight + 'px' " />
+            <div class="map-placeholder" v-show="!showMap" :style="'height: ' + mapContainerHeight + 'px' " />
             <GoogleMap v-if="showMap" :markers="domains" :height="mapContainerHeight" />
           </el-col>
         </el-row>
@@ -111,7 +114,7 @@ export default {
 
 <style lang="scss">
 .search-container {
-  $picto-height: 187px;
+  $picto-height: 175px;
 
   background: $green-d4;
   min-height: 100vh;
@@ -134,8 +137,6 @@ export default {
     filter: grayscale(0.8);
     transition: filter 0.4s;
     text-align: center;
-    background-position: center 25%;
-    background-repeat: no-repeat;
     border-width: 5px;
     font-weight: bold;
     &::after {
@@ -162,15 +163,21 @@ export default {
     &.is-checked::after {
       opacity: 1;
     }
-    .el-checkbox,
-    .el-checkbox__input {
+    .el-checkbox {
       display: block;
     }
     .el-checkbox__input {
-      opacity: 0;
-      margin-top: 105px;
+      display: none;
     }
     .el-checkbox__label {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .label {
       text-overflow: ellipsis;
       width: 100%;
       overflow: hidden;
@@ -185,22 +192,25 @@ export default {
     margin: 2rem 0;
   }
 }
+.map-placeholder {
+  @include sprite($map-placeholder);
+}
 .icon-agriculture-biodynamique {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/earth-globe-americas_1f30e.png');
+  @include sprite($earth);
 }
 .icon-agriculture-bio {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/evergreen-tree_1f332.png');
+  @include sprite($tree);
 }
 .icon-acces-handicape {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/wheelchair-symbol_267f.png');
+  @include sprite($wheelchair);
 }
 .icon-agriculture-raisonnee {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/black-universal-recycling-symbol_267b.png');
+  @include sprite($recycling);
 }
 .icon-accepte-animaux {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/paw-prints_1f43e.png');
+  @include sprite($paw);
 }
 .icon-vente-propriete {
-  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/138/shopping-trolley_1f6d2.png');
+  @include sprite($shopping);
 }
 </style>

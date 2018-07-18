@@ -1,0 +1,89 @@
+$map-placeholder-x: 0;
+$map-placeholder-y: 0;
+$map-placeholder-width: 723px;
+$map-placeholder-height: 600px;
+$map-placeholder: $map-placeholder-x $map-placeholder-y $map-placeholder-width $map-placeholder-height;
+$wheelchair-x: 0;
+$wheelchair-y: -600px;
+$wheelchair-width: 100px;
+$wheelchair-height: 100px;
+$wheelchair: $wheelchair-x $wheelchair-y $wheelchair-width $wheelchair-height;
+$recycling-x: -100px;
+$recycling-y: -600px;
+$recycling-width: 100px;
+$recycling-height: 100px;
+$recycling: $recycling-x $recycling-y $recycling-width $recycling-height;
+$shopping-x: -200px;
+$shopping-y: -600px;
+$shopping-width: 100px;
+$shopping-height: 100px;
+$shopping: $shopping-x $shopping-y $shopping-width $shopping-height;
+$tree-x: -300px;
+$tree-y: -600px;
+$tree-width: 100px;
+$tree-height: 100px;
+$tree: $tree-x $tree-y $tree-width $tree-height;
+$paw-x: -400px;
+$paw-y: -600px;
+$paw-width: 100px;
+$paw-height: 100px;
+$paw: $paw-x $paw-y $paw-width $paw-height;
+$earth-x: -500px;
+$earth-y: -600px;
+$earth-width: 100px;
+$earth-height: 100px;
+$earth: $earth-x $earth-y $earth-width $earth-height;
+$saveurs-du-perigord-x: -600px;
+$saveurs-du-perigord-y: -600px;
+$saveurs-du-perigord-width: 78px;
+$saveurs-du-perigord-height: 70px;
+$saveurs-du-perigord: $saveurs-du-perigord-x $saveurs-du-perigord-y $saveurs-du-perigord-width $saveurs-du-perigord-height;
+$vignobles-et-decouvertes-x: -723px;
+$vignobles-et-decouvertes-y: 0;
+$vignobles-et-decouvertes-width: 69px;
+$vignobles-et-decouvertes-height: 70px;
+$vignobles-et-decouvertes: $vignobles-et-decouvertes-x $vignobles-et-decouvertes-y $vignobles-et-decouvertes-width $vignobles-et-decouvertes-height;
+$bienvenue-a-la-ferme-x: -723px;
+$bienvenue-a-la-ferme-y: -70px;
+$bienvenue-a-la-ferme-width: 62px;
+$bienvenue-a-la-ferme-height: 70px;
+$bienvenue-a-la-ferme: $bienvenue-a-la-ferme-x $bienvenue-a-la-ferme-y $bienvenue-a-la-ferme-width $bienvenue-a-la-ferme-height;
+$agriculture-biologique-x: -723px;
+$agriculture-biologique-y: -140px;
+$agriculture-biologique-width: 50px;
+$agriculture-biologique-height: 70px;
+$agriculture-biologique: $agriculture-biologique-x $agriculture-biologique-y $agriculture-biologique-width $agriculture-biologique-height;
+$check-x: -723px;
+$check-y: -210px;
+$check-width: 30px;
+$check-height: 30px;
+$check: $check-x $check-y $check-width $check-height;
+$french-flag-x: -773px;
+$french-flag-y: -140px;
+$french-flag-width: 16px;
+$french-flag-height: 11px;
+$french-flag: $french-flag-x $french-flag-y $french-flag-width $french-flag-height;
+$english-flag-x: -773px;
+$english-flag-y: -151px;
+$english-flag-width: 16px;
+$english-flag-height: 11px;
+$english-flag: $english-flag-x $english-flag-y $english-flag-width $english-flag-height;
+
+@mixin sprite-image {
+  background-image: url("/static/images/icons.jpg");
+}
+@mixin sprite-position($sprite) {
+  background-position: nth($sprite, 1) nth($sprite, 2);
+}
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@mixin sprite($sprite) {
+  @include sprite-image;
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

@@ -40,10 +40,14 @@
 .grappe {
   height: 80px;
   width: 60px;
-  background: url('/logos/grappe.svg');
+  background: url('/images/grappe.svg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
+}
+
+.icon {
+  flex-shrink: 0;
 }
 
 .tip {
