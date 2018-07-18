@@ -118,11 +118,10 @@ export default {
   h2 {
     text-align: center;
     margin: 1rem 0;
+    min-height: 55px;
   }
   .search-pictos {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    min-height: $picto-height;
+    min-height: $picto-height + 20;
   }
   .search-picto {
     margin-top: 20px;
