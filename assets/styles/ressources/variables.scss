@@ -7,6 +7,12 @@ $pink: #f78e9d;
 $orange: #f89c21;
 $black: #231f20;
 
+$blanc: #f0ec88;
+$moelleux: #ffde7d;
+$liquoreux: #fbbd4e;
+$rose: #f6b4b4;
+$rouge: #921633;
+
 /* Lighter & Darker */
 $green-d1: darken($green, 10);
 $green-d2: darken($green, 20);
@@ -27,7 +33,34 @@ $black-l4: lighten($black, 40);
 $black-l5: lighten($black, 50);
 $black-l6: lighten($black, 60);
 $black-l7: lighten($black, 70);
+$blanc-l1: lighten($blanc, 10);
+$blanc-l2: lighten($blanc, 20);
+$blanc-l3: lighten($blanc, 30);
+$blanc-l4: lighten($blanc, 40);
+$moelleux-l1: lighten($moelleux, 10);
+$moelleux-l2: lighten($moelleux, 20);
+$moelleux-l3: lighten($moelleux, 30);
+$moelleux-l4: lighten($moelleux, 40);
+$liquoreux-l1: lighten($liquoreux, 10);
+$liquoreux-l2: lighten($liquoreux, 20);
+$liquoreux-l3: lighten($liquoreux, 30);
+$liquoreux-l4: lighten($liquoreux, 40);
+$rose-l1: lighten($rose, 10);
+$rose-l2: lighten($rose, 20);
+$rose-l3: lighten($rose, 30);
+$rose-l4: lighten($rose, 40);
+$rouge-l1: lighten($rouge, 10);
+$rouge-l2: lighten($rouge, 20);
+$rouge-l3: lighten($rouge, 30);
+$rouge-l4: lighten($rouge, 40);
 
 /* Added */
 
-$white: #fdfcf1;
+$white: #fff;
+
+/* Fonts */
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'EB Garamond', serif;
+
+/* CDN */
+$cdn: 'https://atg502nfn.cloudimg.io/cdn/none/none/bergerac.lebowsky-dev.xyz';

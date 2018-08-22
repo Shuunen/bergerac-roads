@@ -1,0 +1,29 @@
+.label {
+  display: inline-block;
+  padding: 7px;
+}
+
+.label-vignobles-et-decouvertes {
+  background-color: #1c7c4e;
+  .icon {
+    @include sprite($vignobles-et-decouvertes);
+  }
+}
+.label-agriculture-biologique {
+  background-color: #fff;
+  .icon {
+    @include sprite($agriculture-biologique);
+  }
+}
+.label-bienvenue-a-la-ferme {
+  background-color: #50ac25;
+  .icon {
+    @include sprite($bienvenue-a-la-ferme);
+  }
+}
+.label-saveurs-du-perigord {
+  background-color: #50ac25;
+  .icon {
+    @include sprite($saveurs-du-perigord);
+  }
+}

@@ -1,12 +1,25 @@
 <template>
-  <el-container direction="vertical" class="domain">
+  <el-container direction="vertical" class="domain" :class="size">
     <nuxt-link :to="$i18n.path(link)">
-      <el-card :body-style="{ padding: '0px' }"> <!-- class="take-height" -->
-        <el-container direction="vertical">
-          <div class="image" v-lazy:background-image="image" />
-          <div class="infos">
-            <span class="title">{{ data.title }}</span>
-            <time class="time">ajouté le {{ added }}</time>
+      <el-card class="domain-card take-height">
+        <el-container :direction="size === 'small' ? 'horizontal' : 'vertical'">
+          <div class="image" v-lazy:background-image="image">
+            <div class="number line" v-if="number">
+              {{ number }}
+              <div class="icon pin" />
+            </div>
+            <div class="label" v-if="label" :class="['label-' + label]">
+              <div class="icon" />
+            </div>
+          </div>
+          <div class="infos col">
+            <div class="line">
+              <span class="title">{{ data.title }}</span>
+              <span class="glasses line">
+                <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
+              </span>
+            </div>
+            <div class="description" v-if="description">{{ description }}</div>
           </div>
         </el-container>
       </el-card>
@@ -16,9 +29,23 @@
 
 <script>
 import getSlug from 'speakingurl'
+import truncate from 'lodash/truncate'
+
+const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
+
+const descriptionSize = {
+  small: 140,
+  medium: 150,
+  large: 230,
+}
 
 export default {
   props: {
+    size: {
+      type: String,
+      default: 'medium',
+      required: false,
+    },
     data: {
       type: Object,
       required: true,
@@ -28,14 +55,59 @@ export default {
     link: function() {
       return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
     },
+    number: function() {
+      return this.data.number
+    },
     image: function() {
-      let path = '/icones/no-image.png'
+      let path = '/icons/no-image.png'
       if (this.data.thumbnail) {
         path = this.data.thumbnail
       } else if (this.data.photos && this.data.photos.length) {
-        path = this.data.photos[0]
+        path = process.env.cdnBase + this.data.photos[0]
       }
       return path
+    },
+    description: function() {
+      let description = ''
+      if (this.data.description && this.data.description.length) {
+        description = this.cleanDescription(this.data.description)
+        const max = descriptionSize[this.size]
+        let extract = truncate(description, {
+          length: max,
+          omission: '.',
+          separator: '.',
+        })
+        // if the text extract is too far from the targeted max length
+        // we stop cutting plain sentences and start cutting inside sentences
+        if (extract.length < 0.7 * description.length) {
+          extract = truncate(description, {
+            length: max,
+            omission: '...',
+            separator: ' ',
+          })
+        }
+        description = extract
+      }
+      return description
+    },
+    label: function() {
+      let label = null
+      if (this.data.labels && this.data.labels.length) {
+        label = this.data.labels[0]
+      }
+      return label
+    },
+    wines: function() {
+      let wines = []
+      if (this.data.tags && this.data.tags.length) {
+        winesToDisplay.forEach(wine => {
+          const tag = 'vin-' + wine
+          if (this.data.tags.includes(tag)) {
+            wines.push(tag)
+          }
+        })
+      }
+      return wines
     },
     added: function() {
       if (!this.data.updated) {
@@ -55,41 +127,135 @@ export default {
       return added
     },
   },
+  methods: {
+    cleanDescription(str) {
+      str = str.replace(/(\\n)+([\s]+)?/gim, '. ')
+      str = str.replace(/[\\.\s]+(\.)/gim, '.')
+      str = str.replace(/\\"/gim, '"')
+      str = str.replace(/[\n]([a-z1-9])/gim, ' $1')
+      return str
+    },
+  },
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .domain {
-  cursor: pointer;
-  a {
+  &,
+  & a {
+    cursor: pointer;
+    height: 100%;
     text-decoration: none;
   }
-}
-.image {
-  width: 100%;
-  display: block;
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-}
-.infos {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: $white;
-  .title {
-    font-size: 120%;
+  .domain-card {
+    overflow: hidden;
+    .el-card__body {
+      padding: 0;
+    }
   }
-  .time {
-    margin-top: 6px;
-    color: $red-d4;
+  .image {
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
+  .number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $red-d2;
+    color: $white;
+    padding: 2px 2px 2px 7px;
+    border-top-right-radius: 7px;
+    .icon.pin {
+      height: 24px;
+      width: 20px;
+      background-image: url(#{$cdn}/images/pin.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 2px;
+      margin-left: 2px;
+    }
+  }
+  .label {
+    border-bottom-right-radius: 7px;
+  }
+  .infos {
+    padding: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .title {
+      font-size: 120%;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+    .time {
+      margin-top: 6px;
+      color: $red-d4;
+    }
+    .icon.glass {
+      &.vin-rouge {
+        @include sprite($glass-rouge);
+      }
+      &.vin-blanc {
+        @include sprite($glass-blanc);
+      }
+      &.vin-moelleux {
+        @include sprite($glass-moelleux);
+      }
+      &.vin-liquoreux {
+        @include sprite($glass-liquoreux);
+      }
+      &.vin-rose {
+        @include sprite($glass-rose);
+      }
+    }
+  }
+  &.small,
+  &.medium {
+    .number + .label {
+      display: none;
+    }
+    .domain-card,
+    .image {
+      border-top-left-radius: 60px;
+    }
+    .image {
+      border-bottom-right-radius: 60px;
+    }
+  }
+  &.small {
+    .image {
+      height: 160px;
+      min-width: 140px;
+    }
+  }
+  &.medium {
+    .image {
+      height: 220px;
+      min-width: 170px;
+    }
+  }
+  &.large {
+    .domain-card,
+    .image {
+      border-top-right-radius: 60px;
+    }
+    .image {
+      height: 220px;
+      min-width: 350px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    &.small {
+      max-width: 30%;
+    }
+    &.medium {
+      max-width: 40%;
+    }
+    &.large {
+      max-width: 60%;
+    }
   }
 }
-
-/* height fix
-.domain, .domain a {
-  height: 100%;
-} */
 </style>

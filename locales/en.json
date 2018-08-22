@@ -6,29 +6,48 @@
   },
   "links": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "more": "Learn more"
+  },
+  "legal": {
+    "title": "Legal notice"
+  },
+  "charter": {
+    "title": "Charter of the wine route"
   },
   "home": {
     "title": "Welcome",
     "introduction": "This is an introduction in English."
   },
   "home-top": {
-    "header": "Come discover our producers"
+    "title": "The most beautiful wine route, yours",
+    "subtitle": "The vine growers of Bergerac & Duras welcome you"
+  },
+  "footer": {
+    "alcoolWarning": "Alcohol abuse is dangerous for your health, consume with moderation",
+    "copyright": "Bergerac Duras Wines ©️ 2018"
   },
   "last-domains": {
-    "header": "Domains recently added"
+    "header": "Domains of Bergerac"
   },
   "search": {
-    "header": "Search",
+    "header": "My wine route",
     "placeholder": "Select one or multiple tag(s)",
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",
     "selected": "Selected",
-    "noResult": "No results were found for your search...",
-    "introduction": "To view an itinerary, select the domains wanted as waypoints and enter a starting point (your location will be taken as default if no address is filled in).",
-    "start": "Start",
+    "domainsSelected": "You have selected {nb} domain",
+    "introduction": "To create your itinerary, select the domains you want to visit",
+    "start": "Starting point",
     "selectButton": "Select",
-    "unselectButton": "Unselect"
+    "unselectButton": "Unselect",
+    "itinerary": "Create my itinerary",
+    "helpStart": "Fill the starting point or click on \"Find me\"",
+    "helpCreateBefore": "Select at leat one domain and one starting point to create an itinerary.",
+    "helpCreateAfter": "Click on the button below to create your itinerary.",
+    "findMe": "Find me",
+    "findMeDisallowed": "Geolocation must be allowed for this feature to work.",
+    "findMeFailed": "Geolocation is not supported by this browser."
   },
   "vineyards": {
     "titles": {

@@ -18,9 +18,7 @@ module.exports = {
       },
     ],
     script: [
-      { src: 'https://cdn.logrocket.io/LogRocket.min.js' },
-      { src: '/scripts/rollbar.js' },
-      { src: '/scripts/logrocket.js' },
+      { src: '/scripts/rollbar.js', defer: true },
     ],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
@@ -32,7 +30,8 @@ module.exports = {
   ],
   env: {
     api: 'http://localhost:3003',
-    cdn: 'http://bergerac.lebowsky-dev.xyz'
+    cdn: 'https://atg502nfn.cloudimg.io/cdn/none/none/bergerac.lebowsky-dev.xyz',
+    cdnBase: 'https://atg502nfn.cloudimg.io/cdn/none/none/'
   },
   /*
   ** Customize the progress bar color
@@ -46,7 +45,8 @@ module.exports = {
   },
   plugins: [
     'plugins/element-ui',
-    'plugins/i18n.js',
+    'plugins/db',
+    'plugins/i18n',
     'plugins/lazyload',
     'plugins/google-maps',
   ],
@@ -54,13 +54,13 @@ module.exports = {
     [
       'nuxt-sass-resources-loader',
       {
-        resources: ['./assets/styles/ressources/variables.scss'],
+        resources: ['./assets/styles/ressources/variables.scss', './assets/styles/ressources/icons.scss', './assets/styles/ressources/icons-transparent.scss'],
       },
     ],
     '@nuxtjs/pwa',
   ],
   build: {
-    vendor: ['element-ui', 'speakingurl'],
+    vendor: ['babel-polyfill', 'element-ui'],
     /*
     ** Run ESLint on save
     */

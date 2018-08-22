@@ -7,11 +7,21 @@
   height: 100%;
 }
 
+.parent-width {
+  width: 100%
+}
+
+.parent-size {
+  height: 100%;
+  width: 100%
+}
+
 .line, .col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-shrink: 0;
   &.col {
     flex-direction: column;
   }
@@ -28,11 +38,16 @@
 }
 
 .grappe {
-  height: 100px;
-  width: 70px;
-  background: url('/logos/grappe.svg');
+  height: 80px;
+  width: 60px;
+  background-image: url(#{$cdn}/images/grappe.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin: auto;
+}
+
+.icon {
+  flex-shrink: 0;
 }
 
 .tip {
@@ -48,16 +63,54 @@ img:not([src]) {
   visibility: hidden;
 }
 
-.encart {
+.encart, .encart--simple {
   background: $white;
   padding: 0 40px;
-  margin-top: -150px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   @media (max-width: 530px) {
     padding: 0 20px;
     margin-left: 0;
     margin-right: 0;
+  }
+  &.encart {
+    margin-top: -150px;
+  }
+}
+
+.page-encart {
+  background: $red-d2;
+  min-height: 100vh;
+
+  .color-line {
+    background-color: $red-d3;
+  }
+  .title, .subtitle {
+    color: $red-d2;
+  }
+  .background {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+  .back {
+    margin: 20px auto 60px;
+  }
+  .encart {
+    margin-bottom: 20px;
+
+    .title, .subtitle, p, ul {
+      max-width: 920px;
+      margin: 0 auto 10px;
+      &.title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      &.subtitle {
+        margin-top: 20px;
+      }
+    }
   }
 }
 

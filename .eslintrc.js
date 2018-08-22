@@ -20,16 +20,24 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // préférer utiliser `plugin:vue/strongly-recommended` ou `plugin:vue/recommended` pour des règles stictes.
-    'plugin:vue/recommended',
+    'plugin:vue/recommended'
   ],
   // required to lint *.vue files
   plugins: ['vue'],
   // add your custom rules here
   rules: {
-    semi: [2, 'never'],
-    quotes: 'off',
+    semi: ["error", 'never'],
+    quotes: ["error", "single"],
+    "brace-style": "error",
+    "yoda": "error",
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "block-spacing": "error",
+    "no-irregular-whitespace": "error",
+    "spaced-comment": ["error", "always"],
+    "space-before-function-paren": ["error", "never"],
+    "space-before-blocks": ["error", "always"],
     'no-console': 'off',
     'vue/attributes-order': 'off',
     'vue/max-attributes-per-line': 'off',

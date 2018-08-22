@@ -4,7 +4,7 @@ html * {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-primary;
   font-size: 15px;
   line-height: 1.7;
   @media (max-width: 450px) {
@@ -14,21 +14,22 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3 {
   margin-top: 0;
-  font-family: 'Cabin', sans-serif;
-  font-weight: normal;
+  font-family: $font-secondary;
+  font-weight: bold;
   color: $white;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 350%;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 250%;
 }
 
 p {
@@ -36,6 +37,7 @@ p {
 }
 
 @import 'element-fixes';
+@import 'labels';
 @import 'helpers';
 @import 'responsive';
 @import 'transitions';

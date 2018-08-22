@@ -11,8 +11,6 @@
 </template>
 
 <script>
-import { getVineyards } from '~/utils/db'
-
 export default {
   data() {
     return {
@@ -27,7 +25,7 @@ export default {
     init() {
       this.loading = true
       console.log('Header Vineyards : init')
-      getVineyards().then(vineyards => {
+      this.$db.getVineyards().then(vineyards => {
         console.log('Header Vineyards : got ', vineyards)
         this.vineyards = vineyards
         this.loading = false

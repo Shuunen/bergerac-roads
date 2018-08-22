@@ -3,32 +3,38 @@
     {
       "id": 0,
       "code": "acces-handicape",
-      "name": "Accès handicapé"
+      "name": "Accès handicapé",
+      "shortName": "Accès handicapé"
     },
     {
       "id": 1,
       "code": "agriculture-bio",
-      "name": "Agriculture biologique"
+      "name": "Agriculture biologique",
+      "shortName": "Agri. biologique"
     },
     {
       "id": 2,
       "code": "agriculture-biodynamique",
-      "name": "Agriculture biodynamique"
+      "name": "Agriculture biodynamique",
+      "shortName": "Agri. biodynamique"
     },
     {
       "id": 3,
       "code": "agriculture-raisonnee",
-      "name": "Agriculture raisonnée"
+      "name": "Agriculture raisonnée",
+      "shortName": "Agri. raisonnée"
     },
     {
       "id": 4,
       "code": "accepte-animaux",
-      "name": "Animaux acceptés"
+      "name": "Animaux acceptés",
+      "shortName": "Animaux acceptés"
     },
     {
       "id": 5,
       "code": "vente-propriete",
-      "name": "Vente à la propriété"
+      "name": "Vente à la propriété",
+      "shortName": "Vente à la propriété"
     }
   ],
   "vineyards": [
@@ -63,12 +69,13 @@
   ],
   "domains": [
     {
-      "id": "DEGAQU024FS00004",
-      "updated": 1528654507584,
-      "title": "Château Corbiac Pécharmant",
       "active": true,
+      "description": "Corbiac, coeur originel de Puycharman, vignoble aujourd'hui appelé Pécharmant et implanté au XI° siècle par les Comtes du Périgord sur les coteaux argilo-sableux au nord-est de Bergerac, se transmet depuis 1587 au sein de la famille du célèbre Cyrano de Bergerac.\nCette connaissance du terroir, acquise par 17 générations successives de vignerons, et une culture respectueuse des traditions et cépages (Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec) confèrent une grande richesse à notre production en Pécharmant...",
+      "id": "DEGAQU024FS00004",
+      "labels": [],
       "latitude": "44.8778672",
       "longitude": "0.52102446",
+      "number": "607",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-corbiac-pecharmant-2018.png",
         "http://cdt24.media.tourinsoft.eu/upload/P1000085-2.JPG",
@@ -76,19 +83,28 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1000088.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Corbiac-Pecharmant-2.jpg"
       ],
+      "plus": "Depuis 1587, le vignoble se transmet au sein de la famille du célèbre Cyrano de Bergerac.",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Corbiac Pécharmant",
+      "updated": 1530814347590
     },
     {
-      "id": "DEGAQU024FS0000A",
-      "updated": 1528655054926,
-      "title": "Château de la Jaubertie",
       "active": true,
+      "description": "Magnifique demeure inscrite à l’inventaire des monuments historiques, le château de la Jaubertie fut une propriété de chasse d’Henri IV au XVIe siècle, qui l’offrit par la suite à sa maîtresse Gabrielle d’Estrée. Trônant fièrement au milieu des 52 hectares de vignes du domaine à 10 km au sud de Bergerac et à quelques minutes de Monbazillac, il est le cadre idéal d’une découverte des vins AOC Bergerac rouge, blanc et rosé.\nDepuis les bâtiments aux belles portes cintrées, admirez le vignoble et pénétrez ensuite dans les chais où les cuves inox modernes cohabitent avec les fûts de chêne dans lesquels vieillissent les meilleures parcelles. Terminez votre visite dans la vaste salle de dégustation, digne du cadre historique du château de la Jaubertie, nous serons ravis de vous faire apprécier toute la gamme de nos vins, dont la célèbre cuvée Mirabelle.\n",
+      "id": "DEGAQU024FS0000A",
+      "labels": [],
       "latitude": "44.7744249",
       "longitude": "0.51891088",
+      "number": "431",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--12-.jpg",
@@ -106,19 +122,25 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--9-.jpg"
       ],
+      "plus": "La magnifique propriété classée monument historique.",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château de la Jaubertie",
+      "updated": 1530814347970
     },
     {
-      "id": "DEGAQU024FS00005",
-      "updated": 1528655054889,
-      "title": "Cave Coopérative de Monbazillac",
       "active": true,
+      "description": "La cave de Monbazillac, qui regroupe 50 vignerons, est le plus  important producteur de vins d'appellation Monbazillac. Nos vignerons se sont engagés dans des démarches d'amélioration continue. Nous vinifions et commercialisons notamment plusieurs châteaux qui au 17ème siècle étaient connus sous le nom de marques hollandaises.\nDate de création : 1940\n50 viticulteurs-adhérents et 10 salariés\n927 hectares de vignes et 28 000 hectolitres de production annuelle\nAire de production : Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 filiales employant 24 salariés",
+      "id": "DEGAQU024FS00005",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8106440",
       "longitude": "0.47397851",
+      "number": "420",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/magasin-cave-reduite-OTBergerac.jpg",
@@ -127,19 +149,28 @@
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--5-.jpg"
       ],
+      "plus": "Une gamme de vins très importante et pour tous les budgets et un magasin faisant la part belle aux produits régionaux.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
-        "agriculture-raisonnee"
-      ]
+        "agriculture-raisonnee",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Cave Coopérative de Monbazillac",
+      "updated": 1530814347660
     },
     {
-      "id": "DEGAQU024FS00006",
-      "updated": 1528654507600,
-      "title": "Alliance Aquitaine - Site de Bergerac",
       "active": true,
+      "description": "Bienvenue chez Alliance Aquitaine, cave coopérative, regroupant 133 viticulteurs représentant les appellations Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant et Bordeaux. C’est 1356 hectares dont 95% sont certifiés en Agri Confiance, norme de qualité et des bonnes pratiques environnementales.\nAlliance Aquitaine est représentée par 3 sites de production et 3 magasins de vente directe : Bergerac-Le Fleix –Saint Vivien.\nVenez déguster nos vins et découvrir notre chai au « 400 barriques «  sur le site de Bergerac.\n\n\nAccès gratuit au Chai à Barriques sur demande.",
+      "id": "DEGAQU024FS00006",
+      "labels": [],
       "latitude": "44.8584165",
       "longitude": "0.48904180",
+      "number": "600",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Site-de-Bergerac.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Site-du-Fleix-Siege-Social.jpg",
@@ -149,19 +180,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/stv-montravel.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vieux-sapin-pecharmant.jpg"
       ],
+      "plus": "La surprenante visite du chai aux 400 barriques.",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Alliance Aquitaine - Site de Bergerac",
+      "updated": 1530814347748
     },
     {
-      "id": "DEGAQU024FS00009",
-      "updated": 1528654507632,
-      "title": "Château la Renaudie",
       "active": true,
+      "description": "Le Château du XVIIIe siècle est situé à Lembras sur la route nationale 21, dominant Bergerac avec une exposition plain sud, à flanc de coteau sur un terroir argilo-ferrugineux.\nNotre vignoble de 34 hectares, d'un seul tenant, représente 10 % de l'ensemble de la production de vin rouge d’Appellation d'Origine Contrôlée Pécharmant.\nVin de fête du Périgord le Pécharmant est un vin rouge de garde, élevé en fût de chêne, composés de 4 cépages. Bien charpenté, fruité et généreux, après trois ans en bouteille ce vin dévoile tous ses secrets.\nNous ne manquerons pas de vous les faire découvrir en notre domaine où vous serez assurés de notre meilleur accueil.",
+      "id": "DEGAQU024FS00009",
+      "labels": [],
       "latitude": "44.8888291",
       "longitude": "0.53272426",
+      "number": "608",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/cour1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/degust21.jpg",
@@ -170,12 +205,19 @@
         "http://cdt24.media.tourinsoft.eu/upload/entree1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/le-chateau1.jpg"
       ],
+      "plus": "Belle propriété du XVIIIe siècle dominant Bergerac.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rose",
+        "vin-rouge",
+        "vin-liquoreux",
+        "vin-moelleux"
+      ],
+      "title": "Château la Renaudie",
+      "updated": 1530814347904
     },
     {
       "id": "DEGAQU024FS00007",
@@ -186,12 +228,13 @@
       "longitude": "0.52416265"
     },
     {
-      "id": "DEGAQU024FS00008",
-      "updated": 1528654507615,
-      "title": "Château la Vieille Bergerie",
       "active": true,
+      "description": "Facile et rapide à trouver, les chais et le point de vente du Château La Vieille Bergerie ne pourront que vous séduire. Nous sommes producteur de toutes les couleurs des vins de Bergerac pour satisfaire les dégustateurs les plus avertis. Nous vous conseillerons en Français ou en Anglais. ",
+      "id": "DEGAQU024FS00008",
+      "labels": [],
       "latitude": "44.8760882",
       "longitude": "0.50798356",
+      "number": "506",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--2-.jpg",
@@ -201,19 +244,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--7-.jpg"
       ],
+      "plus": "Idéalement situé en sortie de Bergerac sur la RN21 en direction de Périgueux.",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château la Vieille Bergerie",
+      "updated": 1530814347841
     },
     {
-      "id": "DEGAQU024FS0000C",
-      "updated": 1528655054944,
-      "title": "Domaine de l'Ancienne Cure",
       "active": true,
+      "description": "En 1984, Christian ROCHE a hérité d'une partie de la propriété familiale et en 1989, il a aménagé son chai de vinification afin de devenir vigneron indépendant.\nDans cette optique, il a réalisé qu'il fallait revenir sur les fondamentaux (terme rugbystique cher à notre sud ouest ) à savoir la terre et la plante.\nLa vraie question est: quels sont les besoins de la plante pour produire de beaux raisins permettant d'élaborer le meilleur vin possible ?\nDepuis quelques années, le respect de l'environnement, le travail du sol en profondeur pour un meilleur enracinement, l'implantation des cépages, les densités de plantation, les sélections massales ont contribué à satisfaire notre volonté de gains qualitatifs. Ces préoccupations ont pris, depuis 2012, un tour plus concret : nous sommes en effet en Agriculture Biologique.",
+      "id": "DEGAQU024FS0000C",
+      "labels": [],
       "latitude": "44.7746762",
       "longitude": "0.53281545",
+      "number": "433",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-2.JPG",
@@ -221,20 +268,26 @@
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-degustation.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-vue-aerienne.jpg"
       ],
+      "plus": "La recherche de la plus pure et authentique expression du terroir.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine de l'Ancienne Cure",
+      "updated": 1530814348040
     },
     {
-      "id": "DEGAQU024FS00003",
-      "updated": 1528654507573,
-      "title": "Domaine du Haut Pécharmant",
       "active": true,
+      "description": "Situé au cœur de l’appellation d’origine, sur le sommet du coteau, le Domaine du Haut Pécharmant étale ses 35 ha de vignes basses, exposées plein sud. Héritier d’une tradition vigneronne de cinq générations, depuis 1929 la famille Roches exploite ce terroir de sables et de graviers du Périgord avec ses argiles grises et rouges ferrugineuses. Les cépages merlot, malbec et cabernets donnent des vins très raffinés, à la richesse et aux bouquets remarquables. \nDécouvrez librement nos chais -avec espace musée-  et vignes (parcours avec explications en français, anglais et hollandais). Visites guidées juillet / aout (voir site). Visites et dégustation sont gratuites. \nDégustation gourmande avec des pâtés de la Ferme de Barbe les mercredis du 14 juillet au 15 août.\nAire pique nique au sommet de la colline. Panier pique nique (pain, fromages, charcuterie, gâteau aux noix) 30,- euros pour 4 pers",
+      "id": "DEGAQU024FS00003",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8678234",
       "longitude": "0.53087353",
+      "number": "508",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/DHP-RdV-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/DHP-RdV-4.JPG",
@@ -246,20 +299,30 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-haut-pecharmant-2018--2-.JPG"
       ],
+      "plus": "Un parcours pédestre sur la propriété pour découvrir les cépages et profiter du magnifique panorama sur le coteau de Monbazillac et la vallée de la Dordogne. Sur place un petit musée du vin.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux"
+      ],
+      "title": "Domaine du Haut Pécharmant",
+      "updated": 1530814347493
     },
     {
-      "id": "DEGAQU024FS0000E",
-      "updated": 1528654128465,
-      "title": "Château du Haut Pezaud",
       "active": true,
+      "description": "Passionnée par la vigne, j'ai quitté ma Belgique  natale en 1999 pour devenir vigneronne à Monbazillac (au sud de Bergerac) en Périgord- Dordogne. \n\nSur ma petite exploitation de près de 10ha, j'élabore avec passion du Monbazillac et du Bergerac rouge, rosé, sec et du côtes de Bergerac Moelleux. \n\nAimant l'accueil et le partage j'ai à coeur de faire découvrir mon métier et ma passion grâce à de nombreuses animations oenotouristiques (balade guidée par la vigneronne dans les vignes, visite de chai, parcours fléchés en autonomie, jeu de style chasse au trésor pour les enfants,.. apéro buffet dînatoire, pique nique au milieu des vignes.\n\nAccueil camping car, réseau France Passion.\n\nFête nationale du 21 juillet avec repas \n",
+      "id": "DEGAQU024FS0000E",
+      "labels": [
+        "bienvenue-a-la-ferme",
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7846373",
       "longitude": "0.48715353",
+      "number": "425",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--5-.jpg",
@@ -271,14 +334,19 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-du-haut-pezaud--9-.jpg"
       ],
-      "tags": []
+      "plus": "Un parcours fléché dans les vignes pour petits et grands avec des jeux et des questions. Une véritable chasse aux trésors pour les enfants ! ",
+      "tags": [],
+      "title": "Château du Haut Pezaud",
+      "updated": 1530814348107
     },
     {
+      "active": true,
+      "description": "Romain jeune vigneron épicurien de 30 ans se lance un défit en 2014 : celui de reprendre le Château Haut Bernasse, propriété de 14 hectares, plantée de 11 hectares de blanc (sémillon, muscadelle, sauvignon blanc et gris) et de 3 hectares de rouge (cabernet sauvignon, merlot et cabernet franc) en conversion vers l’agriculture biologique.\nIl travaille de façon traditionnelle ces vignes âgées de 35ans de moyenne, avec un rang enherbé et un rang labouré, dans le but de réaliser des vins de qualités sur ce terroir d’exception.",
       "id": "DEGAQU024FS0000F",
-      "title": "Château Haut Bernasse",
+      "labels": [],
       "latitude": "44.7892194",
       "longitude": "0.46526402",
-      "active": true,
+      "number": "419",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse4.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse11.jpeg",
@@ -291,21 +359,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse1.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Haut-Bernasse9.jpeg"
       ],
-      "updated": 1528655054967,
+      "plus": "Les cuvées LES OENOPOTES de ce jeune vigneron trentenaire à découvrir...entre amis ! ",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Haut Bernasse",
+      "updated": 1530814348175
     },
     {
+      "active": true,
+      "description": "Au cœur de la Maison des Vins de Bergerac, le Cloître des Récollets est lié depuis toujours à l’histoire du vignoble bergeracois et de ses hommes.\nAujourd’hui, cette demeure bâtie autour d’une cour intérieure élégante, au coeur du vieux Bergerac, garde ses allures XVIIème, mais a su allier la beauté de ses pierres aux besoins de la Maison des Vins et de l’Interprofession des Vins de Bergerac et Duras. \nPromenez-vous librement du Cloître des Récollets à la Vinothèque, en passant par le Caveau de la Vinée, et découvrez l’exposition permanente \"Le Vin est Voyage\". Fresque historique de l’ère tertiaire à nos jours, diaporama, table sensorielle,...laissez-vous guider dans ce voyage à travers le temps et les sens ! \nLa Maison des Vins c’est aussi le lieu idéal pour s’initier aux secrets de la dégustation dans le cadre d’une splendide salle et avec les les conseils d’un(e) œnologue. ",
       "id": "DEGAQU024FS0000G",
-      "title": "Maison des Vins de Bergerac",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8501253",
       "longitude": "0.4830213",
-      "active": true,
+      "number": null,
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau.JPG",
@@ -314,20 +388,24 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--4-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-vins-de-Bergerac-Cloitre-des-Recollets-2-4.jpg"
       ],
-      "updated": 1528655054981,
+      "plus": "La pointe de départ de vos escapades dans le vignoble ! \nOuvert 7 jours/7 en été 10h-19h.",
       "tags": [
         "agriculture-bio",
         "agriculture-biodynamique",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Maison des Vins de Bergerac",
+      "updated": 1530814348240
     },
     {
+      "active": true,
+      "description": "Les MAYET, vieille famille dont l'origine remonte au XVI siècle, sont à cette époque des bâtisseurs de cathédrales venus du centre de la France.\nIls se sont installés dans le Sud Ouest en 1852, sur des terres agricoles ou ils pratiquent la polyculture.\nEn 1971, les premières bouteilles du Domaine du Bois de Pourquié furent produites et petit à petit, l'exploitation familiale se tourne exclusivement vers la production de vin, pour atteindre aujourd'hui la surface de 30 Ha. ",
       "id": "DEGAQU024FS0000H",
-      "title": "Domaine du Bois de Pourquié",
+      "labels": [],
       "latitude": "44.7908013",
       "longitude": "0.53319633",
-      "active": true,
+      "number": "434",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/P1040816.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/bq4.jpg",
@@ -335,15 +413,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1040492-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bois-de-Pourquie.jpg"
       ],
-      "updated": 1528654128505,
-      "tags": []
+      "plus": "Elus vignerons de l'année 2016 !",
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine du Bois de Pourquié",
+      "updated": 1530814348303
     },
     {
+      "active": true,
+      "description": "Domaine familial depuis 3 générations et géré aujourd'hui par les familles Garcia et Métifet .\nLe Domaine domine la vallée de Bergerac sur les coteaux de Monbazillac .\nIl est possible de séjourner dans nos gîtes ou chambres d'hôtes pour un court ou long séjour .\nNotre propriété cultive 70 hectares de vignes, a dominance Monbazillac .\nPour découvrir notre vignoble, nous avons créé un chemin retraçant tout le domaine.\nAccueil camping-cars (France Passion).",
       "id": "DEGAQU024FS0000I",
-      "title": "Domaine du Haut Montlong",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7988906",
       "longitude": "0.39534151",
-      "active": true,
+      "number": "403",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-02.jpg",
@@ -351,20 +441,32 @@
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Haut-Montlong-05.jpg"
       ],
-      "updated": 1528654507702,
+      "plus": "Le « chemin de la vigne » est un parcours ludique pour les adultes et les enfants ; une sensibilisation à notre écosystème ; possibilité de pique-niquer, sous un noyer ; un pur moment de convivialité ! ",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine du Haut Montlong",
+      "updated": 1530814348370
     },
     {
+      "active": true,
+      "description": "Pousser la porte du Domaine du Siorac : c’est rentrer dans l’univers de la vigne et du vin en toute simplicité ; c’est faire une vraie rencontre, partager un moment authentique et chaleureux.\nAvec grand plaisir, nous vous montrerons nos vignes et paysages environnants, ils sont les fidèles témoins de notre histoire.\nSans être un professionnel de la dégustation, vous pourrez découvrir, autour d’un verre, nos productions et les multiples facettes de notre métier.\nProfitez de nos visites guidées du 10 juillet au 30 août : le mardi matin à 10h et jeudi après-midi à 14h30 ( Sur rendez-vous les autres jours/saisons).\nPaniers pique-nique sur réservation le midi (10€ par personne)\nBalade en Gyropode les lundi sur RDV (juillet et Août).\nA partir de juin 2018, Chasse au trésor connecté sur le domaine (Terra Aventura). \nAccueil camping-cars",
       "id": "DEGAQU024FS0000J",
-      "title": "Domaine du Siorac",
+      "labels": [
+        "bienvenue-a-la-ferme",
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.6983228",
       "longitude": "0.47913908",
-      "active": true,
+      "number": "108",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/11-gamme-verjus-web.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-visite-.jpg",
@@ -381,20 +483,31 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-chasse-au-tresor.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-siorac-pique-nique.JPG"
       ],
-      "updated": 1528654507717,
+      "plus": "Le domaine produit du verjus, un produit ancien typique du Périgord (remplace le jus de citron ou la vinaigrette). ",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Domaine du Siorac",
+      "updated": 1530814348439
     },
     {
+      "active": true,
+      "description": "Depuis 1896, les générations de la famille CASTAING se succèdent sur ce vignoble de Pomport qui produit des vins de Bergerac et Monbazillac. Depuis toujours le Domaine de Grange Neuve est ouvert au public. Labellisé Bienvenue à la Ferme, Vignobles et découverte, ferme pédagogique, Haute Valeur Environnementale et membre de la Route des Vins, le domaine accueille les visiteurs souhaitant découvrir le monde du vin, et l'histoire de la viticulture en Bergeracois, pour une simple dégustation gratuite jusqu'à une visite plus complète du vignoble et des chais (sur rendez vous) pour percer les secrets de l'élaboration du vin. \nLe domaine dispose également d'un gîte grande capacité pouvant accueillir jusqu'à 13 personnes, primé d'un Best of d'Or Wine Tourism 2016. ",
       "id": "DEGAQU024FS0000K",
-      "title": "Domaine de Grange Neuve",
+      "labels": [
+        "bienvenue-a-la-ferme",
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7941590",
       "longitude": "0.40167152",
-      "active": true,
+      "number": "406",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-Anthony-CASTAING.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-gamme-de-vins-sur-comptoir.JPG",
@@ -403,20 +516,31 @@
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-GRANGE-NEUVE-vue-aerienne-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-GRANGE-NEUVE-Caveau-2.JPG"
       ],
-      "updated": 1528654507729,
+      "plus": "La propriété est classée ferme pédagogique. Idéal pour les familles !",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine de Grange Neuve",
+      "updated": 1530814348508
     },
     {
+      "active": true,
+      "description": "Situés sur la rive droite de la Dordogne à 5 km de Bergerac, les 8 hectares de vignes du domaine de Coutancie s’épanouissent sur les coteaux de Prigonrieux exposés plein sud. Représentant la cinquième génération de vignerons sur l’exploitation, Nicole Maury a repris le flambeau familial et apporte des touches féminines à l’évolution du domaine, notamment en s’engageant résolument dans l’oenotourisme. Elle ouvre tout d’abord un gîte puis, avec l’aide de ses enfants et de son époux Hervé qui élève des limousines et des blondes d’Aquitaine, elle met en place des moments conviviaux pour vous familiariser avec les vins du domaine de Coutancie (AOC rosette, bergerac rouge, sec et rosé ou côtes de bergerac) et possibilité d'acheter des morceaux.",
       "id": "DEGAQU024FS0000M",
-      "title": "Domaine de Coutancie",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8675952",
       "longitude": "0.41904687",
-      "active": true,
+      "number": "501",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/00--800x600-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/1Desir.JPG",
@@ -428,20 +552,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/p05011w52--800x600-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Coutancie-2.jpg"
       ],
-      "updated": 1528655055019,
+      "plus": "Hervé, son mari, se consacre à l'élevage bovin (en conversion bio) avec un concept de \"boucherie à la ferme\" : de beaux accords mets-vins en perspective!",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
+      ],
+      "title": "Domaine de Coutancie",
+      "updated": 1530814348572
     },
     {
+      "active": true,
+      "description": "Originaire de Saint Emilion, la famille Fourtout se consacre à la vigne depuis quatre générations.\nConjuguant passion, savoir-faire et goût pour l'innovation, David Fourtout oeuvre aujourd'hui à la poursuite de l'action entreprise il y a plus d'un siècle.\nSituée au sud de Bergerac, l’exploitation borde l'appellation ‘Monbazillac’ et est principalement constituée d’un long plateau de trois kilomètres de long, jouissant ainsi de terroirs très divers.\nLe Vignoble des  Verdots est doté d’une impressionnante cave de vieillissement de 300 m² creusée dans la roche au milieu de laquelle coule la rivière souterraine des Verdots.\n\nDeux chambres d’hôtes sont aménagées dans l’une des tours du chai.\n",
       "id": "DEGAQU024FS0000N",
-      "title": "Vignoble des Verdots",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7760928",
       "longitude": "0.55463254",
-      "active": true,
+      "number": "435",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/coucher-du-soleil-sur-les-vignes.jpg",
@@ -449,20 +582,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/VERDOTS--3-.jpg"
       ],
-      "updated": 1528654507760,
+      "plus": "Le chai réservé à l'élevage et au vieillissement des vins est creusé dans la roche. Mis en valeur par des ouvertures et un éclairage adapté, il est traversé par la rivière des Verdots. Du grand spectacle!",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Vignoble des Verdots",
+      "updated": 1530814348640
     },
     {
+      "active": true,
+      "description": "Propriété familiale depuis 1749, le Château Moulin Caresse cultive un vignoble de 50ha sur les coteaux de Montravel.\nLe domaine est reconnu depuis plusieurs années par les labels TERRA VITIS et Haute Valeur Environnementale ( HVE3 ) suite aux efforts permanents effectués depuis de nombreuses années dans tous les secteurs du métier ( traitements, carburant, centrale photovoltaïque, gestion des déchets, ...).\nVenez y découvrir une large gamme de vins rouges, blancs secs, moelleux et liquoreux et vins rosés.\nVous pourrez y déguster nos différentes cuvées, de la plus fruitée à la plus puissante.\nPropose également une location de vacances.",
       "id": "DEGAQU024FS0000R",
-      "title": "Château Moulin Caresse",
+      "labels": [],
       "latitude": "44.8591428",
       "longitude": "0.13468980",
-      "active": true,
+      "number": "205",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-02.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-04.jpg",
@@ -470,20 +612,31 @@
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Moulin-Caresse-05.jpg"
       ],
-      "updated": 1528654507773,
+      "plus": "Les expositions, concerts et pièces de théâtre dans le chai tout au long de l'année.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux",
+        "vin-moelleux"
+      ],
+      "title": "Château Moulin Caresse",
+      "updated": 1530814348708
     },
     {
+      "active": true,
+      "description": "Domaine familial depuis 3 générations au point culminant de la région.\n50 ha en culture raisonnée produisent des vins blancs, rosé et rouges.\nNombreuses possibilités de randonnées ou de promenades dans les vignes.\nSitué le long du chemin de St Jacques sur voie de Vézelay, nous accueillons les pèlerins  à la propriété dans un gite prévu pour 6 personnes.\nGite de tourisme pour 10 personnes avec label \"Vignobles et découvertes\".",
       "id": "DEGAQU024FS0000S",
-      "title": "Château Puy Servain",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8746285",
       "longitude": "0.21288156",
-      "active": true,
+      "number": "209",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--25-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--20-.jpg",
@@ -503,19 +656,30 @@
         "http://cdt24.media.tourinsoft.eu/upload/hecquet-puy-servain--26-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/puy-servain-2018.png"
       ],
-      "updated": 1528654473682,
+      "plus": "Un itinéraire pédestre vous permettra de parcourir cette ancienne propriété de la célèbre famille des Ségur, point culminant de la région depuis l’océan.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux",
+        "vin-moelleux"
+      ],
+      "title": "Château Puy Servain",
+      "updated": 1530814348777
     },
     {
+      "active": true,
+      "description": "Gérome, Dolores Morand Monteil et leurs enfants, vous accueilleront au Château Terre Vieille pour vous faire découvrir le charme de leur vignoble familial et leurs vins de Pécharmant élaborés avec passion. Le philosophe Maine de Biran est né au Domaine de Grateloup. Terre Vieille est une dépendance de son château qu'on peut apercevoir depuis la propriété.  Amateurs d'Histoire, de pierres et de bons vins tomberont sous le charme!",
       "id": "DEGAQU024FS00011",
-      "title": "Château Terre Vieille",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8819340",
       "longitude": "0.5586150",
-      "active": true,
+      "number": "609",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/TV1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/TV2.jpg",
@@ -523,15 +687,24 @@
         "http://cdt24.media.tourinsoft.eu/upload/TV4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Terre-Vieille-2.jpg"
       ],
-      "updated": 1528654128629,
-      "tags": []
+      "plus": "Un petit musée de la préhistoire; exposition de silex taillés (bifaces, lames, haches...) retrouvés sur le domaine lors des labours dans les vignes. Certains outils ont plus de 100 000 ans!",
+      "tags": [
+        "vin-rouge"
+      ],
+      "title": "Château Terre Vieille",
+      "updated": 1530814348843
     },
     {
+      "active": true,
+      "description": "A 5mn de Bergerac et Monbazillac,  le château Ladesvignes  offre, à l'ombre d'un cèdre bicentenaire,  une vue panoramique sur Bergerac et la vallée de la Dordogne.\nVins rouges, rosés, blancs secs, liquoreux ou moelleux... c'est une gamme complète qu'il vous est  proposé de venir découvrir et déguster, sans oublier le jus de raisin pour les petits et les grands ! \nSeul ou en groupe, laissez vous séduire par les diverses propositions qui s'offrent à vous : dégustations de vins du lundi au vendredi, audio tour (en français et en anglais) dans les chais et leurs alentours à partir du mois de mai, dégustations de vins et fromages avec visites commentées à heures fixes tous les jeudis de Juillet et Août. \nVous profiterez ainsi du site à votre guise. Parking aménagé, accès facile, et accueil convivial vous attendent.\n",
       "id": "DEGAQU024FS00015",
-      "title": "Château Ladesvignes",
+      "labels": [
+        "bienvenue-a-la-ferme",
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8038998",
       "longitude": "0.44878721",
-      "active": true,
+      "number": "416",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-ladesvignes-2018-Veronique-et-Michel.png",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Lasdesvignes-Degustation-vins-et-fromages---MC-Grasseau--17-.JPG",
@@ -544,20 +717,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chai---vins----Jean-Christophe-Amelin.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/EQUIPE-LADESVIGNES.jpg"
       ],
-      "updated": 1528654507796,
+      "plus": "La visite libre audio-guidée dans les vignes et dans les chais.\nUn panorama à couper le souffle sur la vallée de la Dordogne et la ville de Bergerac.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Ladesvignes",
+      "updated": 1530814348907
     },
     {
+      "active": true,
+      "description": "Les Vignobles Dubard sont installés depuis le début de l'aventure familiale en 1977 dans la partie Ouest de l'appellation Bergerac, appelée Montravel. Ces coteaux argilo-calcaires  de la rive droite de la Dordogne, choisis pour leur exposition favorable, offrent a notre vignoble de 85 ha une diversité de terroirs d'exception qui inspire  nos vins d'Appellations Bergerac et Montravel: vins blancs aromatiques et rosés fruités, vins rouges souples et friands mais aussi cuvées de garde épicées et généreuses.",
       "id": "DEGAQU024FS00016",
-      "title": "Château Laulerie / Domaine du Gouyat",
+      "labels": [],
       "latitude": "44.8919987",
       "longitude": "0.19006132",
-      "active": true,
+      "number": "208",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--10-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--11-.jpg",
@@ -571,55 +753,74 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--9-.jpg"
       ],
-      "updated": 1528654507810,
+      "plus": "La ferme périgourdine typique du XVIIIe siècle.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château Laulerie / Domaine du Gouyat",
+      "updated": 1530814348975
     },
     {
+      "active": true,
+      "description": "Vins biologiques AOP Bergerac.\nVisite et dégustation du domaine sur rendez-vous toute l'année.",
       "id": "DEGAQU024FS0001G",
-      "title": "Clos le Joncal",
+      "labels": [],
       "latitude": "44.7246415",
       "longitude": "0.43966161",
-      "active": true,
+      "number": "106",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-2.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-3.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/clos-le-joncal-4.JPG"
       ],
-      "updated": 1528655055063,
+      "plus": "En août, les dégustations alliant vins du domaine et produits du terroir.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
+      ],
+      "title": "Clos le Joncal",
+      "updated": 1530814349059
     },
     {
+      "active": true,
+      "description": "1610 : C'est la date butoir de l'arbre généalogique de la famille Barde sur la commune de Saint Méard de Gurçon. Depuis cette époque, les générations vont se succéder et développer le patrimoine actuel.\nCette vieille demeure située à l'ouest de Bergerac (30 km) ressemble,\nsans être une gentilhommière du Périgord, à une maison de maître\ndatant du XVII ème siècle. Sur le toit à la Mansarde, trônent deux généreuses\ngirouettes fleurdelisées représentant un dauphin.\nIci donc en Périgord Pourpre, la famille Barde, exploite, vinifie et commercialise\nla production d'un vignoble de 60 ha, répartis comme suit :                                                                \n- 30 ha de cépages blancs : Sauvignon, Sémillon et Muscadelle.\n- 30 ha de cépages rouges : Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec. ",
       "id": "DEGAQU024FS0001L",
-      "title": "Château le Raz",
+      "labels": [],
       "latitude": "44.8957153",
       "longitude": "0.16073942",
-      "active": true,
+      "number": "206",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/logo-le-Raz.jpg"
       ],
-      "updated": 1528654495814,
+      "plus": "Le domaine transmis et développé de génération en génération depuis 1610.",
       "tags": [
         "acces-handicape",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château le Raz",
+      "updated": 1530814349131
     },
     {
+      "active": true,
+      "description": "Petite propriété de 12 ha, surplombant la magnifique vallée de la Dordogne, Le Château le Tap est situé sur le site d’une ancienne carrière inscrite au cadastre napoléonien, au lieu dit « Tas de pierre » raccourci au fil du temps « au Tap ». Un terroir d’exception argilo-calcaire,\nLes vignes sont restructurés à plus de  5000 pieds par hectare ,constitué à 50% de cépages blancs (Sauvignon, Sauvignon Gris, Sémillon, Muscadelle et Chenin) et 50% de cépages rouges (Merlot, Cabernet franc,cabernet Sauvignon et Malbec), elles bénéficient d’une très belle exposition sur coteaux. Notre mode de culture est biologique depuis 2007 certifié en 2010, dans le respect et l’équilibre du terroir, sans pesticide ni engrais de synthèse.",
       "id": "DEGAQU024FS0001M",
-      "title": "Château le Tap",
+      "labels": [],
       "latitude": "44.8035040",
       "longitude": "0.32755136",
-      "active": true,
+      "number": "307",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--2-.jpg",
@@ -631,20 +832,26 @@
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Le-Tap-siteweb--9-.jpg"
       ],
-      "updated": 1528655055083,
+      "plus": "La vue sur la vallée, les gîtes de charme.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château le Tap",
+      "updated": 1530814349198
     },
     {
+      "active": true,
+      "description": "Au cœur d'un parc à la française, le Château de Tiregand est une élégante seigneuriale du XVIIIe siècle. Son Vignoble de 35 hectares est situé sur les coteaux de Pécharmant. Dominant la vallée de la Dordogne en amont de Bergerac, les sols dits sables et graviers du Périgord donnent des vins racés et élégants qui sont élevés en barriques pendant 12 mois. Ils sont réputés et ont obtenus de nombreuses médailles d'Or dans tous les guides.",
       "id": "DEGAQU024FS0001N",
-      "title": "Château de Tiregand",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8569335",
       "longitude": "0.54347991",
-      "active": true,
+      "number": "610",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--4-.jpg",
@@ -652,19 +859,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Tiregand--3-.jpg"
       ],
-      "updated": 1528654473763,
+      "plus": "Tiregand est un château historique : à travers cette visite, c'est l'histoire de la destination que vous découvrirez.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-blanc",
+        "vin-rouge"
+      ],
+      "title": "Château de Tiregand",
+      "updated": 1530814349280
     },
     {
+      "active": true,
+      "description": "Ce vignoble familial de 15 ha créé au XVIIème siècle est situé à 3kms de Bergerac perché sur une haute terrasse de la vallée de la Dordogne. Nous accueillons avec plaisir ceux qui veulent partager notre esprit vigneron. Nous proposons une gamme de 7 vins déclinés en Bergerac sec, rosé, rouge et Rosette.",
       "id": "DEGAQU024FS0001O",
-      "title": "Château Combrillac",
+      "labels": [
+        "bienvenue-a-la-ferme"
+      ],
       "latitude": "44.8687814",
       "longitude": "0.42670726",
-      "active": true,
+      "number": "502",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--1-.jpg",
@@ -672,37 +887,47 @@
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/COMBRILLAC--5-.jpg"
       ],
-      "updated": 1528654507863,
+      "plus": "\" Nous accueillons avec plaisir ceux qui veulent partager notre esprit vigneron. \"",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Combrillac",
+      "updated": 1530814349345
     },
     {
+      "active": true,
+      "description": "Au cœur des coteaux sud de la Dordogne, 57 Ha, généreusement médaillé, Château Court-les-Mûts vous accueillera dans ses jolis chais, son laboratoire d’œnologie et son musée du vin. Rencontrez, écoutez la famille Sadoux vous parler du vin et de ses traditions tout en vous initiant à la dégustation. Délectez vous des notes de pêche et poire des blancs secs, de l'exotisme d'un moelleux détonnant, d'un rosé qui fleure le bonbon, des rouges friands ou puissants et racés. Enfin découvrez la quintessence du Saussignac issu de vendanges tardives de vieux sémillions : un vin rare !",
       "id": "DEGAQU024FS0001P",
-      "title": "Château Court les Mûts",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8128056",
       "longitude": "0.31024575",
-      "active": true,
+      "number": "304",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/1-74.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignes1-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignes3-2.jpg"
       ],
-      "updated": 1528654507878,
+      "plus": "Pierre Sadoux ne se contente pas de produire des bons vins, c'est aussi un poète! Au cours de la dégustation, demandez-lui qu'il vous conte quelques vers...",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Court les Mûts",
+      "updated": 1530814349421
     },
     {
+      "active": true,
+      "description": "Au Moyen-Âge Le Chabrier était une forteresse et elle fut détruite en 1345 au début de la Guerre de cent ans. Le Château actuel fut fondé en 1640. La vigne y est la culture principale depuis le XIème  siècle. Situé au milieu de valons et de coteaux dominant la vallée de la Dordogne, Le Chabrier produit des vins blancs secs et doux et des vins rouges ou rosés en respectant les règles de l’Agriculture Biologique certifiée.",
       "id": "DEGAQU024FS0002G",
-      "title": "Château le Chabrier",
+      "labels": [],
       "latitude": "44.8074547",
       "longitude": "0.30771911",
-      "active": true,
+      "number": "301",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/DSC-1401a.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DSC-6276a.jpg",
@@ -710,21 +935,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/P1060697.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/P1130341.jpg"
       ],
-      "updated": 1528655055111,
+      "plus": "Un ancienne forteresse datant du Moyen-Age où la vigne est cultivée depuis le XIe siècle !",
       "tags": [
         "agriculture-bio",
         "agriculture-biodynamique",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château le Chabrier",
+      "updated": 1530814349486
     },
     {
+      "active": true,
+      "description": "Éveillez vos sens. Vignoble certifié bio et biodynamie avec une école du vin certifiée et hébergements charmants et écologiques. \nVisites et dégustations pédagogiques et gourmandes. Accords avec les produits locaux et bios.\nServices: Visites pédagogiques d'1 heure à 3 jours, Ecole du vin certifiée, Deux gîtes écologiques et luxe. Best of Wine Tourism Or 2017 Hébergement. Best of Wine Tourism Or 2013 Visites et Valorisation des pratiques environnementales.",
       "id": "DEGAQU024FS0002H",
-      "title": "Château Feely",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8067011",
       "longitude": "0.32898902",
-      "active": true,
+      "number": "308",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/282838-466829716696763-1040212764-n.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/734677-481644761881925-1868532878-n.jpg",
@@ -735,20 +966,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-feely--2-.JPG"
       ],
-      "updated": 1528655055124,
+      "plus": "Caro a créé une école du vin qui organise des visites-découvertes de vignobles, des initiations à la dégustation ou encore des journées vendanges…",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Feely",
+      "updated": 1530814349552
     },
     {
+      "active": true,
+      "description": "\"In monte revelationem\"\nNous nous inscrivons dans les pas de Michel de Montaigne en élaborant des vins responsables, vous faisant ainsi partager le plasir de la révélation.\nDes vignes à perte de vue, entrecoupées de bosquets … \nVous êtes sur les côteaux de Lamothe Montravel, dans la vallée de la Dordogne. Entre Castillon-la-Bataille et Ste-Foy-la-Grande, nous vous accueillons à 2 km du château de Montaigne, sur notre domaine viticole de 9 hectares en AOC Montravel rouge et blanc, Bergerac rouge et rosé. Engagés dans un mode de production biologique, nous vous expliquerons comment nous avons  banni l’usage des pesticides et autres engrais, ainsi que les différentes façons de vinifier nos vins.\nAprès la visite du chai, vous êtes conviés à une dégustation : que pensez-vous de ce Montravel rouge, élevé 15 mois en barriques de chêne français et mis en bouteille au domaine ?",
       "id": "DEGAQU024FS0002J",
-      "title": "Domaine Moulin Garreau",
+      "labels": [],
       "latitude": "44.8640536",
       "longitude": "0.03911733",
-      "active": true,
+      "number": "200",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/1-domaine-moulin-garreau.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/2-vignes.jpg",
@@ -758,20 +996,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/6-Mouton.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/7-cheval.jpg"
       ],
-      "updated": 1528655055138,
+      "plus": "A proximité : Tour historique de Montaigne.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
+      ],
+      "title": "Domaine Moulin Garreau",
+      "updated": 1530814349618
     },
     {
+      "active": true,
+      "description": "Le Domaine du Boyer est une exploitation familiale depuis 1936 de 15 ha et a vu succéder 3 générations de viticulteurs. Il est situé à 12 km au Sud de Bergerac, dans l'appellation Monbazillac et Bergerac.\nMonbazillac, Vin de Bergerac rouge, sec, et rosé.",
       "id": "DEGAQU024FS0005B",
-      "title": "Domaine du Boyer",
+      "labels": [],
       "latitude": "44.7765786",
       "longitude": "0.42091582",
-      "active": true,
+      "number": "410",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--10-.jpg",
@@ -785,20 +1030,24 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--8-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-du-boyer--9-.jpg"
       ],
-      "updated": 1528654507920,
+      "plus": "Les gîtes et chambres d'hôtes, les paniers pique-nique sur commande.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine du Boyer",
+      "updated": 1530814349685
     },
     {
+      "active": true,
+      "description": "Petit domaine en AB, conduit par Brigitte Soulier, une femme passionnée qui produit des \"vins d'artisan\". Si vous lui rendez visite (de préférence, en prévenant au préalable pour s'assurer de sa disponibilité), elle vous partagera avec enthousiasme l'amour de son métier, les joies et les difficultés aussi qui y sont attachées et essaiera toujours de répondre avec authenticité à votre curiosité. \nEn dégustation, une gamme complète : Bergerac secs, rosé, rouges, moelleux et Monbazillac (liquoreux) : des cuvées sur le plaisir du fruit jusqu'aux cuvées de garde haut de gamme, régulièrement médaillées ou reconnues. Bienvenue !",
       "id": "DEGAQU024FS0007B",
-      "title": "Château La Robertie",
+      "labels": [],
       "latitude": "44.7728413",
       "longitude": "0.42994884",
-      "active": true,
+      "number": "411",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/LaRobertie-photoa6-0812.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/LaRobertie-sauvgris.JPG",
@@ -808,38 +1057,58 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-robertie--3-.JPG"
       ],
-      "updated": 1528655055154,
+      "plus": "Une vigneronne passionnée qui produit des vins \" d'artisan \" en bio.",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château La Robertie",
+      "updated": 1530814349752
     },
     {
+      "active": true,
+      "description": "Plongez dans la mémoire du Château Bélingard et découvrez une terre que les Celtes baptisèrent le «Jardin du Soleil».\nAu-delà d'un terroir d'exception, Château Bélingard est une page d'histoire à ciel ouvert. Au cœur de l'appellation Bergerac et Monbazillac, le vignoble s'épanouit sur des sols argilo-calcaires.\nEn plus d'un panorama exceptionnel, Bélingard se distingue parmi les meilleurs vins des AOC Bergerac et Monbazillac : Secs, Rouges, Rosé, Moelleux et Liquoreux.\nAlliant savoir-faire traditionnel et le meilleur de la technique, l’équipe de Bélingard élabore des vins élégants, complexes et attrayants.\n",
       "id": "DEGAQU024FS0008K",
-      "title": "Château Bélingard",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.799831",
       "longitude": "0.43322",
-      "active": true,
+      "number": "414",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Panneau-visite-libre.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Chai-a-Barriques-8.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Les-vignes-2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-43.JPG"
       ],
-      "updated": 1528654507952,
+      "plus": "Un parcours interactif permettant de découvrir le travail de viticulteur et les secrets de l’élaboration des vins. Un point de vue époustouflant sur le vignoble.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Bélingard",
+      "updated": 1530814349821
     },
     {
+      "active": true,
+      "description": "Domaine dynamique en plein re nouveau. Vignoble en agriculture biologique poussant la démarche jusqu à la vinification en proposant des cuvées sans aucun sulfites.\nAccueil camping-cars.",
       "id": "DEGAQU024FS0008L",
-      "title": "Château Barouillet",
+      "labels": [],
       "latitude": "44.793698",
       "longitude": "0.431321",
-      "active": true,
+      "number": "412",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo4.JPG",
@@ -852,40 +1121,60 @@
         "http://cdt24.media.tourinsoft.eu/upload/Barouillet--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/barouillet-bergerac-photo3.JPG"
       ],
-      "updated": 1528655055172,
+      "plus": "Un domaine en biodynamie proposant des cuvées sans sulfites.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Barouillet",
+      "updated": 1530814349889
     },
     {
+      "active": true,
+      "description": "Jolie petite propriété viticole située à 5 km au nord-ouest de Bergerac. Charles Blanc y élabore des vins de grande qualité en misant sur la diversité des cépages, des modes de vinification et dans le respect de l'environnement.",
       "id": "DEGAQU024FS0008M",
-      "title": "Château Montplaisir",
+      "labels": [
+        "saveurs-du-perigord"
+      ],
       "latitude": "44.873207",
       "longitude": "0.429722",
-      "active": true,
+      "number": "503",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montplaisir--2-.jpg"
       ],
-      "updated": 1528654507974,
+      "plus": "Situé sur les hauteurs de Bergerac, un château qui porte bien son nom !",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château Montplaisir",
+      "updated": 1530814349958
     },
     {
+      "active": true,
+      "description": "Situé à 10km au sud de Bergerac sur la rive gauche de la Dordogne, le Château Kalian, d'une superficie d'un peu plus de 10 ha, est entièrement implanté sur la commune de Monbazillac. 90% de sa superficie d'exploitation est consacré à l'élaboration de vins liquoreux.\nChâteau Kalian est une propriété familiale 100% BIO depuis 2012 qui fête en 2017 ses 25 ans d'existence. Le nom KALIAN est le résultat d'une combinaison des prénoms des deux enfants Katell et Kilian, tous deux jeunes œnologues. Kilian, le fils, est aujourd'hui le responsable de la propriété.\nVous serez accueilli avec convivialité dans une magnifique salle de dégustation aménagée dans une ancienne grange aux murs de pierre et colombages.",
       "id": "DEGAQU024FS0008N",
-      "title": "Château Kalian",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.786252",
       "longitude": "0.467327",
-      "active": true,
+      "number": "421",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/CH.-KALIAN-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/BOUTEILLE-MBZ.JPG",
@@ -893,38 +1182,49 @@
         "http://cdt24.media.tourinsoft.eu/upload/DSCF2717.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/image-56.jpg"
       ],
-      "updated": 1528655055195,
+      "plus": "Un soin tout particulier est apporté à l'accueil de chaque visiteur et à la simplicité des explications données.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-liquoreux"
+      ],
+      "title": "Château Kalian",
+      "updated": 1530814350028
     },
     {
+      "active": true,
+      "description": "Situé sur le coteau nord de la commune de Bergerac, le Château du Rooy est une jolie propriété du XIXème siècle que nous avons reprise en 1998.\nElle dispose d’un vignoble diversifié où d’importants investissements ont été réalisés tant au niveau des vignes que du chai de vinification.\nAvec un domaine de\n19 hectares de vignes réparties sur trois appellations, nous élaborons nos vins en tenant compte du terroir et en respectant la biodiversité par la pratique\nd'une agriculture raisonnée.\nContrairement aux propriétés familiales, le Château du Rooy est tout d'abord une aventure viticole dans laquelle nous nous sommes lancés afin de recréer et développer le domaine au fil du temps.\nAujourd'hui nous continuons de restructurer l’exploitation dans le but d'améliorer les conditions de production ainsi que la qualité\nde nos vins.",
       "id": "DEGAQU024FS0008O",
-      "title": "Château du Rooy",
+      "labels": [],
       "latitude": "44.877863",
       "longitude": "0.468952",
-      "active": true,
+      "number": "505",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/telechargement-107.jpg"
       ],
-      "updated": 1528654508002,
+      "plus": "Un domaine qui renaît grâce au travail d'un jeune couple de vignerons, des vins références.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château du Rooy",
+      "updated": 1530814350093
     },
     {
+      "active": true,
+      "description": "Vignoble situé au sommet du coteau de Pécharmant orienté plein sud. Vigne étroite, panorama sur la vallée de la Dordogne et le coteau de Monbazillac. Le terroir et la vinification contribuent à l'élaboration d'un vin à la robe d'un rouge profond assez intense aux senteurs de truffes, de cassis et de mûres. L'attaque intense et généreuse s'appuie sur une trame tannique permettant un vieillissement prometteur.\nVieille bâtisse Périgourdine.",
       "id": "DEGAQU024FS0009H",
-      "title": "Château Champarel",
+      "labels": [],
       "latitude": "44.87005",
       "longitude": "0.52343859",
-      "active": true,
+      "number": "611",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-2.jpg",
@@ -932,20 +1232,24 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-champarel-5.jpg"
       ],
-      "updated": 1528655055214,
+      "plus": "La vieille bâtisse périgourdine pleine de charme, le panorama sur la vallée de la Dordogne.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Champarel",
+      "updated": 1530814350160
     },
     {
+      "active": true,
+      "description": "Propriété familiale depuis 4 générations, actuellement Baudry Bertrand et Baudry Bernadette (frère et sœur) sont à la tête du Domaine depuis 1992 et produisent du Pécharmant et du Rosette. \n",
       "id": "DEGAQU024FS0009K",
-      "title": "Domaine du Grand Jaure",
+      "labels": [],
       "latitude": "44.89358",
       "longitude": "0.504939",
-      "active": true,
+      "number": "507",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/IMG-9820.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--1-.jpg",
@@ -956,19 +1260,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-grand-jaure--7-.jpg"
       ],
-      "updated": 1528654508028,
+      "plus": "Un Rosette multi-médaillé !",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine du Grand Jaure",
+      "updated": 1530814350229
     },
     {
+      "active": true,
+      "description": "Tirant son nom du vieux français qui signifiait « côtes » ou « coteaux », le Domaine des Costes est situé à Bergerac, l’une des quatre communes produisant des vins de l’appellation Pécharmant.\nDepuis 1992, une attention toute particulière est alors portée au vignoble : replantation en vignes étroites, de faibles rendements, culture raisonnée de la vigne, entretien du sol sans désherbant… Depuis 2003, la vigne est conduite en culture biologique dans un souci écologique, bien sûr, mais également dans le but de laisser le terroir s’exprimer au mieux. Nous produisons des vins de Pécharmant ronds, concentrés et de longue garde avec de la finesse et de l’élégance. Un vin rosé aux arômes délicats vient compléter la gamme. C’est un élément indispensable pour mettre en valeur les jeunes plantations.\n",
       "id": "DEGAQU024FS0009N",
-      "title": "Domaine des Costes",
+      "labels": [],
       "latitude": "44.858911",
       "longitude": "0.509445",
-      "active": true,
+      "number": "604",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--10-.jpg",
@@ -979,85 +1287,107 @@
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--7-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-costes--8-.JPG"
       ],
-      "updated": 1528655055233,
+      "plus": "Au cœur de la ville, vignoble en biodynamie, entouré de ruches et d'arbres fruitiers.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine des Costes",
+      "updated": 1530814350308
     },
     {
+      "active": true,
+      "description": "Figurant sur le Feret de 1903 sous le nom de \"vignoble de Campréal et des Costes\", connu sous le nom \"Clos les Côtes\" depuis 1975. Sables et graviers du Périgord, vin de terroir riche et subtil, un sommet d'élégance.",
       "id": "DEGAQU024FS0009O",
-      "title": "Clos Les Côtes",
+      "labels": [],
       "latitude": "44.8593768",
       "longitude": "0.5068232",
-      "active": true,
+      "number": "601",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo3.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/clos-les-cotes-photo1.jpg"
       ],
-      "updated": 1528654128952,
-      "tags": []
+      "plus": "Le pique-nique au domaine le week-end de Pentecôte et en été.",
+      "tags": [],
+      "title": "Clos Les Côtes",
+      "updated": 1530814350379
     },
     {
+      "active": true,
+      "description": "Vigneron passionné et installé depuis 20 ans à Pécharmant et Monbazillac, élu vigneron de l'année 2015.\nMes vins sont l'expression de mes terroirs, de mes envies, une œuvre comparable à une peinture à qui l'on donne 12 ou 24 mois pour naître et vivre.",
       "id": "DEGAQU024FS0009S",
-      "title": "Château Beauportail",
+      "labels": [],
       "latitude": "44.8695110",
       "longitude": "0.51141918",
-      "active": true,
+      "number": "605",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-012-resultat.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/CF-Merlot-resultat.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/photo-2-resultat.JPG"
       ],
-      "updated": 1528654508057,
+      "plus": "\" Chaque vin est une oeuvre comparable à une peinture. \"",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-liquoreux"
+      ],
+      "title": "Château Beauportail",
+      "updated": 1530814350444
     },
     {
+      "active": true,
+      "description": "Dans la ville de Bergerac, 15 ha de Pécharmant, un parc planté d'arbres centenaires, 5 chambres d’hôtes de charme.",
       "id": "DEGAQU024V5029W2",
-      "title": "Château Les Farcies du Pech",
+      "labels": [],
       "latitude": "44.8645611",
       "longitude": "0.50757049",
-      "active": true,
+      "number": "602",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/dubard31.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/dubard01.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/dubard36.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/dubard33.jpg"
       ],
-      "updated": 1528654508067,
+      "plus": "Le parc aux arbres centenaires et les chambres d'hôtes de charme.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Les Farcies du Pech",
+      "updated": 1530814350512
     },
     {
+      "active": true,
+      "description": "Réception et dégustation aux horaires indiqués. Visite de la propriété sur rendez-vous.\nVins produits : AOC Pécharmant, Bergerac Rosé, Bergerac Rouge\nLangues parlées : français, anglais, néerlandais et espagnol\nOuverture : du lundi au samedi de 9 h  à 12 h  et de 14 h  à 18 h",
       "id": "DEGAQU024V5029W3",
-      "title": "Château La Tilleraie",
+      "labels": [],
       "latitude": "44.8616623",
       "longitude": "0.50954774",
-      "active": true,
+      "number": "603",
       "photos": [],
-      "updated": 1528654474006,
+      "plus": null,
       "tags": [
         "vente-propriete"
-      ]
+      ],
+      "title": "Château La Tilleraie",
+      "updated": 1530814350580
     },
     {
+      "active": true,
+      "description": "Le Château Poulvère est une ancienne dépendance du Château de Monbazillac qui date de la même époque, XVIème siècle. La Famille BORDERIE s’est installée sur la propriété de Poulvère en 1923. Le Château Poulvère s’étend sur 104 hectares de vignes, exclusivement en Appellation d’Origine Contrôlée, dont 54 hectares en Monbazillac, 12 hectares en Pécharmant et 38 hectares en Bergerac. Le vignoble du Château Poulvère est l’une des plus grandes exploitations de la région de Bergerac, mais reste néanmoins à l’échelle humaine et familiale.\nVigneron indépendant - labellisé Haute Valeur environnementale.\n",
       "id": "DEGAQU024V5029WM",
-      "title": "Château Poulvère",
+      "labels": [],
       "latitude": "44.8049031",
       "longitude": "0.49419478",
-      "active": true,
+      "number": "429",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere-02.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere.jpg",
@@ -1066,54 +1396,74 @@
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere-05.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Poulvere-06.jpg"
       ],
-      "updated": 1528654508085,
+      "plus": "La propriété est une ancienne dépendance du Château de Monbazillac datant du XVIe siècle.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Poulvère",
+      "updated": 1530814350645
     },
     {
+      "active": true,
+      "description": "Vignoble le plus haut de l'appellation Monbazillac, sur les coteaux sud de Bergerac, à 40 mètres de la Tour des Vents et du moulin de Malfourat.\nPropriété familiale depuis 3 générations.",
       "id": "DEGAQU024V5029WQ",
-      "title": "Vignobles Chabrol - Château Malfourat",
+      "labels": [],
       "latitude": "44.7960341",
       "longitude": "0.46016291",
-      "active": true,
+      "number": "437",
       "photos": [],
-      "updated": 1528654508096,
+      "plus": "Le vignoble le plus haut de l'appellation Monbazillac à 2 pas du restaurant étoilé la Tour des Vents.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Vignobles Chabrol - Château Malfourat",
+      "updated": 1530814350711
     },
     {
+      "active": true,
+      "description": "Le Château VARI est un domaine viticole familial qui s’étend sur 20 hectares dans l’aire d’Appellation d’Origine Contrôlée Monbazillac et Bergerac.\nDepuis 1994, Sylvie et Yann JESTIN produisent, sur un terroir argilo-calcaire, des vins francs de caractère, bien équilibrés et d’une grande finesse. Vins produits à partir de raisins issus de l’Agriculture Biologique à compter du millésime 2012, en conversion pour les millésimes 2010 et 2011.\nSoucieuse de la qualité des produits mais également respectueuse du terroir, la famille JESTIN a toujours exploité son domaine en privilégiant le travail du sol et en limitant l’utilisation de produits chimiques.",
       "id": "DEGAQU024V502OWN",
-      "title": "Château Vari - Maison Vari",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7789620",
       "longitude": "0.47906108",
-      "active": true,
+      "number": "427",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/arton10754.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-vari--3-.JPG"
       ],
-      "updated": 1528655055275,
+      "plus": "La maison Vari propose des ateliers découvertes et notamment des initiations à la dégustation.",
       "tags": [
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Vari - Maison Vari",
+      "updated": 1530814350783
     },
     {
+      "active": true,
+      "description": "C’est au cœur du terroir de Monbazillac, sur une colline surplombant les rives de la Dordogne et la cité historique de Bergerac, que sont produits depuis des décennies les vins du Château Grande Maison.\nCette ancienne maison forte du XIIIème siècle dispose des qualités d’un environnement unique :\n- L’exposition générale est plein sud et toutes les parcelles sont en coteaux plus ou moins accentués.\n- Son étang au cœur du domaine est un atout exceptionnel pour favoriser le botrytis, ce champignon qui fait toute la singularité et la richesse du Monbazillac\n- Terroir argilo-calcaire avec un affleurement de silice qui donne une certaine acidité.\nDans une optique toujours qualitative, l’ensemble de la production est soumis aux règles de l’agriculture biologique auxquelles vient s’ajouter la méthode biodynamique, ce qui permet à nos vins d’exprimer tout leur caractère.",
       "id": "DEGAQU024V503LPL",
-      "title": "Château Grande Maison",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7829601",
       "longitude": "0.48690387",
-      "active": true,
+      "number": "424",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Grande-Maison--MC-Grasseau--10-.JPG",
@@ -1123,22 +1473,32 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grande-Maison4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/R-Chateau-Grande-Maison--MC-Grasseau--22-.jpg"
       ],
-      "updated": 1528655055291,
+      "plus": "Grande Maison est une magnifique Maison Forte du XIIIe siècle : émergeant majestueusement au dessus des vignes, son architecture vous surprendra!",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Grande Maison",
+      "updated": 1530814350847
     },
     {
+      "active": true,
+      "description": "En 1939, un petit  groupe  d’amis vignerons décide d’optimiser leur développement au travers d’un outil commun de vinification et crée « La Cave Coopérative de Sigoulès ».\n\nC’est aujourd’hui la 3ème génération de viticulteurs qui porte les valeurs de notre coopérative et la qualité de nos vins. Un chai à  la  pointe  de  la  technologie  et  un   savoir-faire   traditionnel nous permettent de vous proposer une large gamme de vins représentative  de  l’appellation  Bergerac. \n\nLes Vignerons de Sigoulès vous accueillent dans leur magasin pour déguster et apprécier leurs vins dans  un  cadre   et   une  ambiance  conviviale. \n \nNotre boutique vous propose  également une   gamme   de  produits locaux d’épicerie fine. Dans  notre  espace   vidéo, découvrez la naissance du vin de la parcelle à la bouteille.\n",
       "id": "DEGAQU024V503MGE",
-      "title": "Les Vignerons de Sigoulès",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7545186",
       "longitude": "0.41652873",
-      "active": true,
+      "number": "105",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Facade.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/-DSC2338-copie-2.jpg",
@@ -1149,19 +1509,28 @@
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Magasin-Epicerie-Fine.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vignerons-de-Sigoules-Vendangeurs.jpg"
       ],
-      "updated": 1528655055306,
+      "plus": "Dans un vaste espace de vente, la diversité de la gamme et les qualités exceptionnelles des vins de Bergerac, Blancs secs, Moelleux, Rouges, Rosés, Liquoreux ainsi qu’une épicerie fine et des idées cadeaux.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Les Vignerons de Sigoulès",
+      "updated": 1530814350912
     },
     {
+      "active": true,
+      "description": "Trés beau belvédère en arrivant au Domaine sur un vallon donnant avec au loin la vallée de la Dordogne et les côteaux Girondins de Sainte Radegonde. \nAccueil camping-cars.",
       "id": "DEGAQU024V505KB3",
-      "title": "Domaine de Grimardy",
+      "labels": [],
       "latitude": "44.890998",
       "longitude": "0.12560499",
-      "active": true,
+      "number": "212",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-02.jpg",
@@ -1169,19 +1538,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-05.jpg"
       ],
-      "updated": 1528655055317,
+      "plus": "Le point de vue depuis le belvédère où est installé le domaine.",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine de Grimardy",
+      "updated": 1530814350975
     },
     {
+      "active": true,
+      "description": "Le Château La Maurigne situé sur de magnifiques coteaux s'étend sur 17 ha dont 5 ha de vignes et 2 ha de vergers le tout cultivé en Agriculture Biologique. \nLa faune et la flore sont préservées afin de maintenir l'exploitation en équilibre Biologique. En saison vous pourrez découvrir 10 variétés d'orchidées sauvages dans les vignes.\n",
       "id": "DEGAQU024V505KJY",
-      "title": "Château La Maurigne",
+      "labels": [],
       "latitude": "44.8027119",
       "longitude": "0.30966549",
-      "active": true,
+      "number": "302",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne-002.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne005.jpg",
@@ -1190,40 +1563,58 @@
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne5.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/lamaurigne735.jpg"
       ],
-      "updated": 1528655055332,
+      "plus": "Le château produit aussi des fruits et légumes bio issus de variétés anciennes.",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château La Maurigne",
+      "updated": 1530814351041
     },
     {
+      "active": true,
+      "description": "Le Château La Rayre, acquis depuis 1999 par Vincent VESSELLE, comprend 25 ha de vignes situées sur les côteaux argilo-calcaires Sud de Monbazillac sur la commune de Colombier réunissant les meilleures conditions climatiques et géologiques pour faire éclore de grands vins. En agriculture biologique et au niveau 3 HVE.\nVisite/Dégustation de 11h à 13h  par le vigneron du 14/07 au 15/08.",
       "id": "DEGAQU024V505KLW",
-      "title": "Château la Rayre",
+      "labels": [],
       "latitude": "44.7763845",
       "longitude": "0.50800629",
-      "active": true,
+      "number": "438",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-02.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/La-Rayre-04.jpg"
       ],
-      "updated": 1528655055343,
+      "plus": "La randonnée gourmande !",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château la Rayre",
+      "updated": 1530814351109
     },
     {
+      "active": true,
+      "description": "Lieu habité depuis le XIIIème siècle par la famille Lambert.\nSon exposition à flanc de coteau dominant la vallée de la Dordogne et ses méthodes traditionnelles de vinification permettent au \"Domaine de Montlong\" d'élaborer des vins fins au corps et au bouquet typiques.\nAccueil camping-cars. Propose également un meublé en location saisonnière labellisé Gîte de France et tourisme et handicap.",
       "id": "DEGAQU024V505KU7",
-      "title": "Domaine de Montlong",
+      "labels": [],
       "latitude": "44.7992833",
       "longitude": "0.39228270",
-      "active": true,
+      "number": "402",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--3-.JPG",
@@ -1234,21 +1625,25 @@
         "http://cdt24.media.tourinsoft.eu/upload/2007-0101JANV130347.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINE-DE-MONTLONG--4-.JPG"
       ],
-      "updated": 1528655055353,
+      "plus": "L'aire de camping-car aménagée ombragée et calme dominant les vignes du domaine.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Domaine de Montlong",
+      "updated": 1530814351175
     },
     {
+      "active": true,
+      "description": "La renaissance d'un vignoble.\nGrace à un travail patient et méticuleux réalisé avec passion, le Château de Peyrel a retrouvé sa vocation de vignoble en 2013. Nos vins sont élaborés dans le respect des méthodes artisanales traditionnelles, avec le souci constant de préserver la plante et son fruit, afin de réaliser des produits naturels et de grande qualité gustative et aromatique.\n",
       "id": "DEGAQU024V506AOS",
-      "title": "Château de Peyrel",
+      "labels": [],
       "latitude": "44.8862338",
       "longitude": "0.39468372",
-      "active": true,
+      "number": "500",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--2-.JPG",
@@ -1261,20 +1656,24 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-de-peyrel--9-.JPG"
       ],
-      "updated": 1528654508185,
+      "plus": "Le belle histoire de renaissance du domaine grâce au travail minutieux et patient d'un vigneron passionné.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château de Peyrel",
+      "updated": 1530814351242
     },
     {
+      "active": true,
+      "description": "Au coeur du plateau, une halte sur la randonnée entre Bridoire et Monbazillac.\nPlusieurs niveaux de cuvées par appellation.\nAccueil camping-cars.",
       "id": "DEGAQU024V506ARS",
-      "title": "Domaine de Combet",
+      "labels": [],
       "latitude": "44.7838419",
       "longitude": "0.47984140",
-      "active": true,
+      "number": "423",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Combet1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Combet2.jpg",
@@ -1282,20 +1681,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/Combet4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Combet5.jpg"
       ],
-      "updated": 1528654508198,
+      "plus": "Idéal pour une halte randonnée entre Monbazillac et Bridoire ! ",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine de Combet",
+      "updated": 1530814351311
     },
     {
+      "active": true,
+      "description": "Terroir en vignes depuis plusieurs siècles et en agriculture biologique depuis plus de 25 ans. Pionnier du renouveau des vins liquoreux de l'appellation Saussignac.\nEn agriculture bio depuis 1991, vendanges manuelles.\nLarge gamme de vins, Blanc sec rosé rouge moelleux et plusieurs cuvées de Liquoreux en appellation Saussignac  et deux vins sans sulfite ajouté La cuvée osée en Bergerac Rouge et Le Richard Osé Blanc Sec.",
       "id": "DEGAQU024V506AS9",
-      "title": "Château Richard",
+      "labels": [],
       "latitude": "44.7790042",
       "longitude": "0.31578975",
-      "active": true,
+      "number": "303",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--2-.JPG",
@@ -1303,19 +1711,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Richard--5-.jpg"
       ],
-      "updated": 1528655055388,
+      "plus": "Le vignoble est en bio depuis plus de 25 ans !",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Richard",
+      "updated": 1530814351376
     },
     {
+      "active": true,
+      "description": "Un ensemble architectural remarquable avec un château du XViè siècle, une chapelle du XVIiè et un pigeonnier à colombage sur colonnes, sertis dans un parc arboré d'un hectare. \nUn terroir sur plateau calcaire dominant la vallée de la Dordogne où sont présents les cépages traditionnels du Bordelais : Merlot, Cabernet Sauvignon et Cabernet Franc pour les AOC Bergerac rouge, Sémillon et Sauvignon pour les Blancs secs et les Saussignac.\nNous n’utilisons aucun herbicide. Nos vins sont l'expression authentique d'un terroir exceptionnel.",
       "id": "DEGAQU024V506N08",
-      "title": "Château de Fayolle",
+      "labels": [],
       "latitude": "44.8051540",
       "longitude": "0.31564301",
-      "active": true,
+      "number": "305",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-02.jpg",
@@ -1323,19 +1735,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-04.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Fayolle-05.jpg"
       ],
-      "updated": 1528654508226,
+      "plus": "Le charmant château du XVe siècle qu'il est possible de louer toute l'année !",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château de Fayolle",
+      "updated": 1530814351442
     },
     {
+      "active": true,
+      "description": "Château CLUZEAU c'est d'abord un chai ultra moderne dans un cadre enchanteur qui propose des vins biologiques de grande tenue, élaborés dans un strict respect de la nature et de la biodiversité.\nChâteau Cluzeau c'est aussi une scénographie inattendue qui parle de la vigne et du vin sous un angle ludique, onirique et malicieusement non conventionnel.\nC'est un endroit dont la visite a été conçue pour laisser aux adultes et aux enfants qui n'ont pas été oubliés, des souvenirs amusants de leurs vacances en Dordogne.\nCoin enfants (lecture, coloriages, vidéo, jouets...)\nAccueil Camping-cars.",
       "id": "DEGAQU024V506P0I",
-      "title": "Château Cluzeau",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7688008",
       "longitude": "0.41494209",
-      "active": true,
+      "number": "409",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--1-.JPG",
@@ -1343,20 +1765,29 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Cluzeau--2-.JPG"
       ],
-      "updated": 1528655055406,
+      "plus": "Le chai ultra moderne et le parcours de visite à la scénographie ludique.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Cluzeau",
+      "updated": 1530814351508
     },
     {
+      "active": true,
+      "description": "Chateau La Brie est situé au coeur du vignoble de Bergerac, sur les côteaux de Monbazillac, disposant de 35 hectares répartis sur 2 terroirs. D'origine privée, le domaine est racheté en 1962 par les communes de Bergerac et de Monbazillac afin que le Ministère de l'Agriculture y implante un Lycée agricole et viticole.\nLe domaine viticole est un véritable outil pédagogique, confronté aux réalités économiques et environnementales, qui permet de former les viticulteurs de demain.\nDepuis 2013, le Château La Brie est titulaire du niveau III de la norme HVE (haute valeur environnementale) qui reconnaît officiellement les pratiques respectueuses de l'environnement mises en oeuvre sur l'exploitation : la biodiversité, la stratégie\nphytosanitaire, la gestion de la fertilisation et la maîtrise des ressources en eau.\nDe plus, il est certifié en Agriculture Biologique depuis 2013 sur 12 ha",
       "id": "DEGAQU024V506T01",
-      "title": "Château La Brie",
+      "labels": [],
       "latitude": "44.8164874",
       "longitude": "0.48754760",
-      "active": true,
+      "number": "426",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--2-.jpg",
@@ -1364,33 +1795,41 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--4-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-la-brie--5-.JPG"
       ],
-      "updated": 1528655055418,
+      "plus": "L'exemplaire domaine du lycée viticole qui forme les viticulteurs de demain !",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château La Brie",
+      "updated": 1530814351577
     },
     {
+      "active": true,
+      "description": "Le Château de La Mallevieille est un domaine viticole situé à Monfaucon, petit village périgourdin surplombant la rivière Dordogne, dans le Pays de Bergerac. Les 30 hectares de vignes sont aujourd'hui gérés par Philippe Biau et Thierry Bernardinis, qui, au quotidien, partagent un savoir-faire et un amour commun pour la vigne et le vin.",
       "id": "DEGAQU024V506TJQ",
-      "title": "Château de la Mallevieille",
+      "labels": [],
       "latitude": "44.894222",
       "longitude": "0.24928199",
-      "active": true,
+      "number": "210",
       "photos": [],
-      "updated": 1528654496291,
+      "plus": "Belle gentilhommière du XVIIIe siècle, le château est un ancien relais de poste.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château de la Mallevieille",
+      "updated": 1530814351643
     },
     {
+      "active": true,
+      "description": "Le Domaine de Perreau est une propriété familiale de 20 hectares sur les appellations Bergerac et Montravel.\nGaëlle Reynou-Gravier, jeune vigneronne, cinquième génération, a repris le domaine en 2013. Elle développe une nouvelle identité pour le Domaine de Perreau à la fois féminine et moderne.\nDepuis 2014, le Domaine de Perreau est certifié Terra Vitis®, pour le plaisir du vin et une terre vivante.\nVisite vigne et chai \nEn 2018, Gaëlle développe une nouvelle offre familiale autour d'un sentier dans les vignes autour de la biodiversité. Petits et grands pourront découvrir le métier de vigneron au travers d'un parcours de 1.5km riche d'explications, découvertes et petits jeux. La visite se termine par une dégustation pour les parents et un gouter pour les enfants.\n\n",
       "id": "DEGAQU024V506TL3",
-      "title": "Domaine de Perreau",
+      "labels": [],
       "latitude": "44.876575",
       "longitude": "0.04700500",
-      "active": true,
+      "number": "201",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau---Gaelle.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau---Cuves-inox-nouvelles.jpg",
@@ -1398,20 +1837,28 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Chai-a-barrique.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Perreau-Sauvignon-Gris-2.JPG"
       ],
-      "updated": 1528654508262,
+      "plus": "Une jeune vigneronne dynamique qui crée des vocations avec sa visite dédiée aux enfants !",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Domaine de Perreau",
+      "updated": 1530814351707
     },
     {
+      "active": true,
+      "description": "Voilà plus de 25 ans que Thierry a repris la tête du domaine familial. L'ensemble du domaine a été converti à l'agriculture biologique en 2005 et, désormais, les principes de la biodynamie sont appliqués à la vigne comme au chai. Les vins sont vendus à l'export et en France en caves et restaurants. C'est dans la maison du domaine, une demeure girondine du XIXème siècle que vous serez reçus pour la dégustation.",
       "id": "DEGAQU024V506TN3",
-      "title": "Château Le Payral",
+      "labels": [],
       "latitude": "44.8058264",
       "longitude": "0.28383658",
-      "active": true,
+      "number": "312",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/le-Payral--2-.jpg",
@@ -1422,20 +1869,28 @@
         "http://cdt24.media.tourinsoft.eu/upload/PAYRAL--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/peyral-3.jpg"
       ],
-      "updated": 1528655055438,
+      "plus": null,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Le Payral",
+      "updated": 1530814351774
     },
     {
+      "active": true,
+      "description": "Nous vous invitons à la découverte des vins créés par Fabien Castaing sur la propriété familiale du Domaine de Moulin-Pouzy transmise de Père en Fils depuis 1898. La propriété de 55ha de vignes est certifiée Exploitation de Haute Valeur environnementale. Vous pourrez y déguster nos Bergerac rouge, rosé et blanc sec, ainsi que nos Côtes de Bergerac blanc et nos Monbazillac. \nNous vous proposons de découvrir également nos vins du Château Les Mailleries. Ce vignoble de 11ha est cultivé en agriculture biologique AB. Nous y produisons des Bergerac Rouge et Bergerac Blanc sec.\nDe nos cuvées traditionnelles à nos cuvées les plus extravagantes (comme nos vinifications en cuve ovoïde), nous vous ferons voyager dans notre univers où le respect de la nature est primordial, afin de récolter de beaux raisins et vous apporter le\nmeilleur de notre savoir faire et de notre terroir.",
       "id": "DEGAQU024V506TP1",
-      "title": "Vignobles Castaing",
+      "labels": [],
       "latitude": "44.7819232",
       "longitude": "0.37418656",
-      "active": true,
+      "number": "400",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---barrique.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Fabien-Moulin-Pouzy.jpg",
@@ -1443,38 +1898,51 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---vigne.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-de-Moulin-Pouzy---bouteille.jpg"
       ],
-      "updated": 1528655055453,
+      "plus": "Un domaine engagé pour préserver la faune et la flore remarquables de son vignoble.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Vignobles Castaing",
+      "updated": 1530814351843
     },
     {
+      "active": true,
+      "description": "Propriété familiale depuis 300 ans située sur la côte Nord de Monbazillac.\nBelle chartreuse empire dominant la propriété.\nPoint de vue imprenable sur la vallée de Bergerac.",
       "id": "DEGAQU024V506U03",
-      "title": "Château Le Fagé",
+      "labels": [],
       "latitude": "44.8079614",
       "longitude": "0.43558429",
-      "active": true,
+      "number": "415",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-Le-Fage-01-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-des-vignes---chateau.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/photo-vue-propriete.jpg"
       ],
-      "updated": 1528654474266,
+      "plus": "La belle chartreuse empire de ce domaine vieux de 300 ans.",
       "tags": [
         "agriculture-raisonnee",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Le Fagé",
+      "updated": 1530814351908
     },
     {
+      "active": true,
+      "description": "Propriété familiale depuis 4 générations, situé sur le petit village médiéval de Puyguilhem (commune de Thenac). Nous sommes à cheval des 2 appellations Bergerac et Duras. ",
       "id": "DEGAQU024V506U4Y",
-      "title": "Château Les Brandeaux",
+      "labels": [],
       "latitude": "44.7283458",
       "longitude": "0.34327422",
-      "active": true,
+      "number": "102",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Ch-les-Brandeaux-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Ch-les-Brandeaux-2.jpg",
@@ -1483,19 +1951,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--2-.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-brandeaux--3-.jpeg"
       ],
-      "updated": 1528654496334,
+      "plus": "Le charme du village médiéval de Puyguilhem !",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château Les Brandeaux",
+      "updated": 1530814351978
     },
     {
+      "active": true,
+      "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois.\n\nVenez découvrir notre domaine \n\n                                     Au programme\n\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\n\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \n\nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des adresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\n\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
       "id": "DEGAQU024V506U5L",
-      "title": "Château Les Gérales",
+      "labels": [],
       "latitude": "44.809619",
       "longitude": "0.39993900",
-      "active": true,
+      "number": "404",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---1-.jpg",
@@ -1515,34 +1987,45 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales---9-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-gerales-2018--1-.JPG"
       ],
-      "updated": 1528654508312,
+      "plus": "Les cours de cuisine de Sandra !",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Les Gérales",
+      "updated": 1530814352044
     },
     {
+      "active": true,
+      "description": "Propriété familiale de 32 ha de vignes.",
       "id": "DEGAQU024V506UMP",
-      "title": "Domaine du Lac",
+      "labels": [],
       "latitude": "44.9030300",
       "longitude": "0.4425400",
-      "active": true,
+      "number": "504",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-1.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-2.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-lac-3.JPG"
       ],
-      "updated": 1528654129294,
-      "tags": []
+      "plus": "\" Le vin égaye la vie \", telle est la devise du domaine.",
+      "tags": [],
+      "title": "Domaine du Lac",
+      "updated": 1530814352109
     },
     {
+      "active": true,
+      "description": "Viticulteur de père en fils depuis 5 générations, la famille Lajonie a mis tout leur cœur dans l’élaboration de leurs produits afin de satisfaire vos palais et vous apporter du bonheur au quotidien. Aucun de nos gestes n'est anodin. Tous sont guidés par l'esprit car le caractère vient du terroir, la personnalité des conditions climatiques mais l'excellence reste le fait de l'Homme.\n\nPour animer vos vacances et venir découvrir le cœur de notre passion en famille ou entre amis, nous vous proposons tout l'été des visites de notre vignoble ainsi que des dégustations vins & gastronomie locale ! Les visites ainsi que les dégustations sont adaptées pour les adultes mais aussi pour vos enfants. Ces visites seront sur rendez-vous.",
       "id": "DEGAQU024V506UTS",
-      "title": "Vignobles Lajonie",
+      "labels": [],
       "latitude": "44.7985630",
       "longitude": "0.50995241",
-      "active": true,
+      "number": "430",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo1.jpg",
@@ -1551,19 +2034,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo5.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/vignobleslajonie-photo6.jpg"
       ],
-      "updated": 1528654508329,
+      "plus": "\" Le caractère vient du terroir, la personnalité du climat, mais l'excellence reste le fait de l'Homme. \"",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Vignobles Lajonie",
+      "updated": 1530814352176
     },
     {
+      "active": true,
+      "description": "Vignoble dans la famille depuis 1642;\nTroisième génération en exploitation direct.\nNous avons transformé notre grange du 16ème en chai à barriques.",
       "id": "DEGAQU024V506UUM",
-      "title": "Château Les Grimard",
+      "labels": [],
       "latitude": "44.890998",
       "longitude": "0.12560499",
-      "active": true,
+      "number": "204",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-grimards.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/grimard-1.jpg",
@@ -1571,38 +2058,53 @@
         "http://cdt24.media.tourinsoft.eu/upload/Grimard-3.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/les-grimard-juillet-2013-039.JPG"
       ],
-      "updated": 1528654508343,
+      "plus": "Le chai à barriques installé dans un bâtiment datant du XVIIe siècle.",
       "tags": [
         "acces-handicape",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Les Grimard",
+      "updated": 1530814352240
     },
     {
+      "active": true,
+      "description": "Situé au cœur de l’appellation de Bergerac, sur la commune de Monbazillac, Château MONTDOYEN domine avec élégance un vignoble établi sur les coteaux alentours. La propriété s’étend sur 83 hectares dont 37 plantés en vignes, le reste se répartissant entre prés et bois.\nPour préserver cet environnement exceptionnel, mais aussi pour exprimer au mieux la typicité de notre terroir, l’ensemble du domaine est travaillé en conciliant approche bio et lutte raisonnée: engrais verts, désherbage mécanique pour favoriser la vie des sols…\nAinsi, Château MONTDOYEN s’est vu décerner de nombreuses médailles tant à Lyon, Bordeaux, Bruxelles qu'au Concours Général Agricole de Paris. Le Guide Hachette en reconnaît également la qualité en lui ayant déjà attribué plusieurs coups de cœur, le classant ainsi parmi les références de l’appellation.\nNous proposons une palette de vins répartie sur six appellations.",
       "id": "DEGAQU024V506V2O",
-      "title": "Château Montdoyen",
+      "labels": [],
       "latitude": "44.7836607",
       "longitude": "0.46164819",
-      "active": true,
+      "number": "418",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-montdoyen--4-.JPG"
       ],
-      "updated": 1528654508355,
+      "plus": "\" La passion pour un terroir dans le respect de la devise de notre famille : noblesse et persévérance. \"",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Montdoyen",
+      "updated": 1530814352308
     },
     {
+      "active": true,
+      "description": "Le Château de Panisseau est situé au cœur d'un vignoble de 60 hectares et notre équipe dédiée vous accueille pour visites et dégustations tout au long de l'année du Lundi au Vendredi. Notre visite-dégustation est complète et ludique, que vous soyez amateur de vins ou simplement curieux, vous repartirez comblé à la fin de votre visite! \n\nSpécialistes de l'oeno-tourisme, nous vous proposons des gîtes de grand standing pour vos vacances ou weekends dans la région. Entre nos Marchés Gourmands Nocturnes à la propriété et nos dégustations, vous trouverez toujours quelque chose à faire au Château de Panisseau:\n\nNos Marchés Gourmands Nocturnes dans la cour de la propriété (18 et 25 Juillet et 1er et 8 Aout) sauront vous séduire : découvrez nos vins, rencontrez des producteurs locaux, goûtez leurs produits et participez aux animations (visite, balades à poney, jeux...). ",
       "id": "DEGAQU024V506YB6",
-      "title": "Château de Panisseau",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.760304",
       "longitude": "0.36475900",
-      "active": true,
+      "number": "103",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Chateau.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Degustation.jpeg",
@@ -1610,19 +2112,27 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Marches-Gourmands.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-panisseau-Vins.jpeg"
       ],
-      "updated": 1528654508370,
+      "plus": "Les marchés gourmands dans la cour du château en été : incontournables ! ",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château de Panisseau",
+      "updated": 1530814352379
     },
     {
+      "active": true,
+      "description": "Petite propriété situé sur un plateau argilocalcaire, convertie à l’agriculture biologique depuis 2011.\n",
       "id": "DEGAQU024V5070YW",
-      "title": "Château des Tertres du Plantou",
+      "labels": [],
       "latitude": "44.715917",
       "longitude": "0.65404499",
-      "active": true,
+      "number": "112",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--01-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--02-.jpg",
@@ -1639,40 +2149,53 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--13-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-tertres-du-plantou-vin-bio--14-.jpg"
       ],
-      "updated": 1528655055501,
+      "plus": "Les visites interactives des vignes suivies d'une dégustation gourmande en été.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
+      ],
+      "title": "Château des Tertres du Plantou",
+      "updated": 1530814352443
     },
     {
+      "active": true,
+      "description": "Un rêve de vigneron: 18 ha d'un seul tenant avec la maison au milieu des vignes, en agriculture biologique avec un panorama exceptionnel.\nDe très beaux terroirs préservés et des vins avec un minimum d'intrants.",
       "id": "DEGAQU024V50714R",
-      "title": "Château Les Hauts de Caillevel",
+      "labels": [
+        "bienvenue-a-la-ferme"
+      ],
       "latitude": "44.7751451",
       "longitude": "0.41596124",
-      "active": true,
+      "number": "408",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/cruchon01.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/f-chai-barrique-1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/20130707-211219.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/maison-40.jpg"
       ],
-      "updated": 1528655055518,
+      "plus": "Le panorama exceptionnel depuis le château.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Les Hauts de Caillevel",
+      "updated": 1530814352507
     },
     {
+      "active": true,
+      "description": "Le Château du Bloy existe dans sa configuration actuelle depuis le début des années 60. Le domaine a été repris en 2001 par Olivier LAMBERT et Bertrand LEPOITTEVIN-DUBOST avec pour objectif de le hisser au niveau des meilleurs du sud-ouest de la France. Soucieuse tant de restituer l'expression du terroir dans ses vins que de préserver l'environnement, la propriété, formalisant ainsi les pratiques culturales qu'elle adoptait depuis plusieurs années déjà, s'est officiellement engagée au respect du mode de production biologique depuis le mois de juillet 2011.",
       "id": "DEGAQU024V5071DW",
-      "title": "Château du Bloy",
+      "labels": [],
       "latitude": "44.872258",
       "longitude": "0.08214599",
-      "active": true,
+      "number": "202",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-2.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-1.JPG",
@@ -1680,37 +2203,53 @@
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-4.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-5.jpg"
       ],
-      "updated": 1528655055530,
+      "plus": "\" Exprimer au mieux le terroir, préserver l'environnement. \"",
       "tags": [
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château du Bloy",
+      "updated": 1530814352570
     },
     {
+      "active": true,
+      "description": "Le vignoble du Domaine le Castellat est situé sur le coteau Nord-Est dominant la Vallée de la Dordogne. Il s'étend sur 22 hectares de bonne terre à vigne.\nLa propriété est située sur un emplacement stratégique vu son panorama. L'origine du Castellat « Castellum » remonterait vers l'an 1000 et plus selon la racine latine.\nDepuis, six générations ont pris soin de la vigne et du vin avec tous les progrès...\nAujourd'hui, Jean-Luc et son épouse Isabelle sont les maîtres du Domaine. Pour eux plus qu'une tradition, c'est une véritable passion qu'ils font partager à leurs garçons Hugo et Justin !...\nNous produisons également de la méthode traditionnelle \"les bulles du Castellat\"\nAu plaisir de vous accueillir !!! Visite du site sur rendez-vous.\nA très bientôt !!! See You soon !!!",
       "id": "DEGAQU024V5071NA",
-      "title": "Domaine Le Castellat",
+      "labels": [],
       "latitude": "44.8123268",
       "longitude": "0.30362056",
-      "active": true,
+      "number": "300",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/0021-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/0024-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/0028-nd7-2014-10-01-Razac-de-Saussignac-24-Domaine-du-Castellat-vignes.JPG"
       ],
-      "updated": 1528654508420,
+      "plus": "La vue imprenable sur la vallée de la Dordogne. Accueil France Passion.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine Le Castellat",
+      "updated": 1530814352640
     },
     {
+      "active": true,
+      "description": "Notre vignoble est situé sur l'un des beaux coteaux de la Dordogne donnant sur une vallée cachée des forêts de chênes. Notre objectif est de produire d'excellents vins tout en respectant la nature qui nous entoure. Nous avons, par exemple, plus de quinze espèces d'orchidées sauvages. Nos vins ont remporté de nombreuses médailles.",
       "id": "DEGAQU024V5071V0",
-      "title": "Château Lestevenie",
+      "labels": [],
       "latitude": "44.7830155",
       "longitude": "0.34478659",
-      "active": true,
+      "number": "309",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/PA310034-1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-lestevenie-vignobles-temperley--1-.JPG",
@@ -1719,18 +2258,22 @@
         "http://cdt24.media.tourinsoft.eu/upload/IMG-2346.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/wine-tour.jpg"
       ],
-      "updated": 1528654496487,
+      "plus": "Les 15 espèces d'orchidées sauvages et les oiseaux rares à observer dans les vignes pendant la visite guidée.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château Lestevenie",
+      "updated": 1530814352707
     },
     {
+      "active": true,
+      "description": "En agriculture Biologique depuis 1989, adhérent à la mention Nature et Progrès, j’accompagne mon vignoble dans le Respect des terroirs, de sa biodiversité, profitant de la richesse de la faune auxiliaire et de la flore spontanée pour donner au terroir toute son expression.\nSur un sol bien pourvu en énergie, la vigne bien accompagnée, puise tout ce dont elle a besoin pour produire des raisins qui, une fois cueillis, chouchoutés, révèlent tous leurs arômes, arômes de fruits et surtout richesse du terroir.\nJe suis paysan-vigneron, pas apprenti sorcier !!!\nAprès une cueillette manuelle, les vins révélés dans mes chais sont honnêtes et authentiques.\nPas de levure sur mes vins, pas de chaptalisation ni artifices œnologiques, doses de sulfites très modérées.\nChaque millésime est le reflet de l’année. Chaque millésime raconte son histoire.",
       "id": "DEGAQU024V5071W5",
-      "title": "Château Larchère",
+      "labels": [],
       "latitude": "44.79489",
       "longitude": "0.38560099",
-      "active": true,
+      "number": "401",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-juments.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-maison.jpg",
@@ -1739,20 +2282,26 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignes-orchidees.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-larchere-vignoble-ete.jpg"
       ],
-      "updated": 1528655055553,
+      "plus": "La balade dans les vignes pour observer la biodiversité, la rencontre avec les juments de trait.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-liquoreux"
+      ],
+      "title": "Château Larchère",
+      "updated": 1530814352775
     },
     {
+      "active": true,
+      "description": "Un domaine familial qui possède un terroir remarquable et bénéficie d'un panorama exceptionnel.\nNotre domaine s'est totalement tourné vers l'oenotourisme depuis quelques années.\n\n\n\n",
       "id": "DEGAQU024V5072D5",
-      "title": "Moulins de Boisse",
+      "labels": [],
       "latitude": "44.7175637",
       "longitude": "0.65739239",
-      "active": true,
+      "number": "113",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--2-.JPG",
@@ -1764,20 +2313,30 @@
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/moulins-de-boisse--9-.JPG"
       ],
-      "updated": 1528654508450,
+      "plus": "La balade commentée des vignes suivie d'un dîner à l'auberge vigneronne du domaine.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Moulins de Boisse",
+      "updated": 1530814352840
     },
     {
+      "active": true,
+      "description": "C'est une histoire de famille où deux générations installées sur un domaine viticole de la région de BERGERAC, au cœur de la vallée de la Dordogne, mettent en commun la passion d'un métier, l'exigence de la qualité et l'ouverture aux autres.\nLe trio de vignerons Michel Durand, Julien Durand et Nicolas Pouget aime à produire sur un magnifique terroir, de grands vins Blanc Moelleux, Rouges et Rosés, fins, élégants et fruités.\nLa conduite traditionnelle du vignoble s’appuie sur les principes de l’agriculture raisonnée et du développement durable.",
       "id": "DEGAQU024V50744K",
-      "title": "Château Haut Lamouthe",
+      "labels": [
+        "saveurs-du-perigord"
+      ],
       "latitude": "44.8176520",
       "longitude": "0.41639245",
-      "active": true,
+      "number": "104",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--2-.jpg",
@@ -1787,34 +2346,46 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-lamouthe-2018--7-.jpg"
       ],
-      "updated": 1528654508471,
+      "plus": "Le trio de vignerons produit également des pommes et de pruneaux mi-cuits du Périgord.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Haut Lamouthe",
+      "updated": 1530814352908
     },
     {
+      "active": true,
+      "description": "Vignerons indépendants depuis 2000 sur une exploitation de 26 ha, Eric cultive et veille sur la vigne jusqu'aux vendanges. Cécile vinifie la récolte en bio depuis 2009.",
       "id": "DEGAQU024V5074QL",
-      "title": "Château Tuquet Monceau",
+      "labels": [],
       "latitude": "44.8873219",
       "longitude": "0.09052157",
-      "active": true,
+      "number": "211",
       "photos": [],
-      "updated": 1528655055577,
+      "plus": "Situé sur les coteaux à mi-chemin entre Bergerac et Saint-Emilion, le domaine est converti en bio depuis 2012.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château Tuquet Monceau",
+      "updated": 1530814352976
     },
     {
+      "active": true,
+      "description": "Château Caillavel, anciennement Domaine de Courson de Cailhavel, repaire noble en 1322, vous invite à venir leur rendre visite et déguster leurs produits représentatifs du savoir vivre en Périgord : blanc sec barrique, côte de bergerac rouge; rosé et Monbazillac médaillé au Guide Hachette 2017.",
       "id": "DEGAQU024V5075IZ",
-      "title": "Château Caillavel",
+      "labels": [],
       "latitude": "44.7752518",
       "longitude": "0.41477034",
-      "active": true,
+      "number": "407",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--2-.JPG",
@@ -1823,71 +2394,96 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--5-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-caillavel--6-.JPG"
       ],
-      "updated": 1528654508490,
+      "plus": "Un lieu chargé d'histoire datant du XIVe siècle.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Caillavel",
+      "updated": 1530814353044
     },
     {
+      "active": true,
+      "description": "Propriétaire Récoltant et Négociant, nous sommes spécialisés dans la commercialisation et la production de vins de la région de Bergerac que nous distribuons dans nos points de vente et auprès d’une clientèle de professionnels de la restauration.\n\nL’idée de réaliser notre propre gamme a pour origine de créer des vins typiques du terroir de Bergerac portant notre signature. Le partenariat développé avec certains viticulteurs nous permet une sélection rigoureuse de parcelles. Une vinification et un élevage dans nos chais, sont autant de garanties sur la qualité de nos vins.\nLes vins Julien de Savignac ont obtenu depuis le premier millésime un franc succès : Guide Hachette (1998 à 2013), presse spécialisée...",
       "id": "DEGAQU024V5075ZA",
-      "title": "Clos l'Envège - SAS Julien de Savignac",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7926381",
       "longitude": "0.45568295",
-      "active": true,
+      "number": "417",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/julien-de-savignac--4-.jpg"
       ],
-      "updated": 1528654496570,
+      "plus": "Clos l'Envège est une propriété de Julien de Savignac, négociant spécialisé dans les vins de Bergerac.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "accepte-animaux"
-      ]
+        "accepte-animaux",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Clos l'Envège - SAS Julien de Savignac",
+      "updated": 1530814353107
     },
     {
+      "active": true,
+      "description": "Domaine de 5 ha acquis en 2015, en agriculture biologique depuis 2018. Vente directe au domaine.",
       "id": "DEGAQU024V5076I3",
-      "title": "Domaine des Trois Saules",
+      "labels": [],
       "latitude": "44.9502833",
       "longitude": "0.04888925",
-      "active": true,
+      "number": "101",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-des-3-saules--3-.JPG"
       ],
-      "updated": 1528655055602,
+      "plus": "Une aventure qui commence pour ce jeune domaine en conversion AB !",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc"
+      ],
+      "title": "Domaine des Trois Saules",
+      "updated": 1530814353176
     },
     {
+      "active": true,
+      "description": "Exploitation familiale depuis 1881 - Vignoble ancien (1928 et 1954 pour 40% de la surface - à 2 minutes de la cité médiévale d'Issigeac",
       "id": "DEGAQU024V5076IN",
-      "title": "Château Colin-Madrigal",
+      "labels": [],
       "latitude": "44.7504217",
       "longitude": "0.60030970",
-      "active": true,
+      "number": "111",
       "photos": [],
-      "updated": 1528654398880,
+      "plus": "Les vieilles vignes préservées et âgées de plus de 80 ans.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee"
-      ]
+      ],
+      "title": "Château Colin-Madrigal",
+      "updated": 1530814353244
     },
     {
+      "active": true,
+      "description": "Entreprise familiale depuis 30 ans, le Château Tour des Gendres expérimente sans cesse de nouvelles techniques de vinification et de viticulture  afin que l'expression de ses différents terroirs se retrouve dans chacun de ses vins, des cuvées les plus simples aux grands vins de gastronomie. Venez découvrir la finesse et la complexité de ces blancs secs et rouges des coteaux sud de Bergerac !",
       "id": "DEGAQU024V5076J0",
-      "title": "Château Tour des Gendres",
+      "labels": [],
       "latitude": "44.7583498",
       "longitude": "0.48242933",
-      "active": true,
+      "number": "107",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES2.JPG",
@@ -1897,18 +2493,22 @@
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES7.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/TOUR-DES-GENDRES-6.JPG"
       ],
-      "updated": 1528655055620,
+      "plus": "La propriété fut la ferme viticole du Château de Bridoire au XIIe siècle.",
       "tags": [
         "acces-handicape",
         "agriculture-bio"
-      ]
+      ],
+      "title": "Château Tour des Gendres",
+      "updated": 1530814353306
     },
     {
+      "active": true,
+      "description": "Propriété située sur les coteaux de Montravel, entre Saint Emilion et Bergerac. Grand chai à l'équipement performant. Production annuelle environ 400 000 bouteilles de Montravel et Bergerac rouge et rosé, Montravel blanc sec, Côtes de Montravel moelleux régulièrement primés aux concours nationaux et internationaux.\nGrand élevage de bovins de race Limousine HBL.",
       "id": "DEGAQU024V5076J8",
-      "title": "Château Pique-Sègue",
+      "labels": [],
       "latitude": "44.8853806",
       "longitude": "0.21400900",
-      "active": true,
+      "number": "213",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pique-segue-2018--1-.png",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pique-segue-2018--2-.png",
@@ -1916,49 +2516,66 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison---Chateau-Pique-Segue.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vallee---Chateau-Pique-Segue.jpg"
       ],
-      "updated": 1528654474499,
+      "plus": "Le château est également réputé pour son élevage bovin limousin.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château Pique-Sègue",
+      "updated": 1530814353373
     },
     {
+      "active": true,
+      "description": "Le Château de Planques est une des plus vieilles propriétés de Monbazillac. Les actuels propriétaires s'efforcent de maintenir la qualité traditionnelle qui fait le renom de notre petite patrie.\nParking très grand. Possibilité d'accueillir des bus.",
       "id": "DEGAQU024V5076LG",
-      "title": "Château de Planques",
+      "labels": [],
       "latitude": "44.8019817",
       "longitude": "0.51763170",
-      "active": true,
+      "number": "436",
       "photos": [],
-      "updated": 1528654496609,
+      "plus": "L'une des plus anciennes propriétés familiales de Monbazillac datant du XVIIIe siècle.",
       "tags": [
         "acces-handicape",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château de Planques",
+      "updated": 1530814353438
     },
     {
+      "active": true,
+      "description": "Le 5 mai 1960, les viticulteurs de la coopérative décidèrent l’achat du château de Monbazillac et de son domaine.Monument historique, ouvert au public, ce sont  les enfants ou petits enfants de ces viticulteurs qui œuvrent désormais à la préservation du château pour le rendre accessible au plus grand nombre. Le château présente une architecture singulière qui associe avec talent des parties empruntées à l’architecture médiévale et d’autres qui témoignent de l’influence de l’époque : la Renaissance. Ce château emblématique du Bergeracois est demeuré imperturbable depuis la fin du XVIe siècle, alors que la qualité de ses vins était notoire bien au-delà des frontières de l’Aquitaine.\n",
       "id": "DEGAQU024V5076MU",
-      "title": "Château de Monbazillac",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7966125",
       "longitude": "0.4941352",
-      "active": true,
+      "number": "428",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--33-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--35-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--36-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateaudemonbazillac-chateaudemonbazillac--37-.jpg"
       ],
-      "updated": 1528654474516,
+      "plus": "50 vignerons réunis, le plus gros producteur de Monbazillac.",
       "tags": [
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château de Monbazillac",
+      "updated": 1530814353506
     },
     {
+      "active": true,
+      "description": "Le domaine de Pécoula et les valeurs qui le caractérisent existent depuis 3 générations. Travail, , bon sens, et recherche constante d'une qualité irréprochable sont les maître mots. \nEn venant au domaine, vous bénéficierez d'un accueil simple, authentique et convivial, avec les commentaires de ceux qui élaborent le vin, de la grappe à la bouteille. Vous y dégusterez le Monbazillac, régulièrement récompensé, ainsi que les Bergerac rosé, sec, et moelleux, et enfin les côtes de Bergerac.\nSitué à 10 Km au Sud de Bergerac, la propriété est entourée de vignes des divers cépages, Sauvignon, Sémillon, Merlot, Cabernet, et est toute proche du Château de Bridoire, à visiter impérativement si vous êtes dans le coin !\nVous serez également tout près des Bastides du Périgord. \n",
       "id": "DEGAQU024V5076S6",
-      "title": "Domaine de Pécoula",
+      "labels": [],
       "latitude": "44.7958649",
       "longitude": "0.40708850",
-      "active": true,
+      "number": "405",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-de-pecoula-2018--2-.JPG",
@@ -1970,51 +2587,65 @@
         "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pecoula-siteweb2.jpg"
       ],
-      "updated": 1528654496626,
+      "plus": "Domaine familial proposant un accueil simple et chaleureux.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Domaine de Pécoula",
+      "updated": 1530814353575
     },
     {
+      "active": true,
+      "description": "Exploitation de 20 ha de vignes et 7 ha de pruniers d'ente d'un seul tenant sur les coteaux au sud de Monestier.",
       "id": "DEGAQU024V5076SA",
-      "title": "Château Grands Quintins",
+      "labels": [],
       "latitude": "44.7669854",
       "longitude": "0.32797771",
-      "active": true,
+      "number": "306",
       "photos": [],
-      "updated": 1528654496638,
+      "plus": "20 hectares de vignes, 7 de pruniers, sur les côteaux Sud de Monestier.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château Grands Quintins",
+      "updated": 1530814353641
     },
     {
+      "active": true,
+      "description": "Nous sommes une exploitation familiale, nous exploitons depuis quatre générations. Nous produisons des vins de Bergerac de façon traditionnelle avec un grand respect de la qualité et des caractéristiques de notre vignobles.\nVous pourrez découvrir chez nous une gamme de vin diversifiée, notamment des vin de cépages.\nNous vous accueillerons avec plaisir dans notre boutique pour vous faire déguster nos produits et vous faire visiter notre domaine. ",
       "id": "DEGAQU024V5076T4",
-      "title": "Château des Masseries",
+      "labels": [
+        "bienvenue-a-la-ferme"
+      ],
       "latitude": "44.8620832",
       "longitude": "0.31213669",
-      "active": true,
+      "number": "114",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--3-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-des-masseries--4-.JPG"
       ],
-      "updated": 1528654496650,
+      "plus": "Les petits déjeuners vignerons : petit déj' copieux, balade dans les vignes, visite du chai et dégustation.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château des Masseries",
+      "updated": 1530814353705
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V5076TR",
-      "title": "Vignobles Beigner / Château Pecany",
+      "labels": [],
       "latitude": "44.7892790",
       "longitude": "0.42487691",
-      "active": true,
+      "number": "413",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--3-.jpg",
@@ -2022,33 +2653,43 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-pecany-beigner--6-.jpg"
       ],
-      "updated": 1528654129612,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Vignobles Beigner / Château Pecany",
+      "updated": 1530814353774
     },
     {
+      "active": true,
+      "description": "Propriété viticole sur un coteau cultivée par les moines bénédictins du 12ème au 16ème siècle. Productions Bergerac rouge, rosé, blanc sec et moelleux, Montagne St Emilion. Situé sur la Route des Vins de Bergerac. Accueil sympathique et convivial.",
       "id": "DEGAQU024V5077CU",
-      "title": "Château La Plante",
+      "labels": [],
       "latitude": "44.9420893",
       "longitude": "0.05047787",
-      "active": true,
+      "number": "100",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Plante.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Bouteille-3.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Vigne-11.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Carte-8.jpg"
       ],
-      "updated": 1528654508574,
+      "plus": "Accueil convivial, culture traditionnelle de la vigne.",
       "tags": [
         "accepte-animaux",
         "vente-propriete"
-      ]
+      ],
+      "title": "Château La Plante",
+      "updated": 1530814353840
     },
     {
+      "active": true,
+      "description": "Un site incontournable dans le ciel du Tourisme Viticole du Pays de Bergerac.\nAu cœur du village récemment réaménagé, la Maison du Tourisme et du Vin de Monbazillac vous propose une exposition dédiée au Monbazillac, des dégustations et la vente des vins des 28 viticulteurs indépendants (présents sur place en saison estivale).\nA découvrir 7 modules audio-visuels pour tout savoir, à son rythme, sur ce célèbre liquoreux.\nDécouvrez également notre page Facebook Maison du Tourisme et du Vin de Monbazillac.\nTerrasse panoramique sur la vallée de la Dordogne et sur le Château de Monbazillac\nÉgalement à votre disposition de l’information touristique.",
       "id": "DEGAQU024V507LYM",
-      "title": "Maison du Tourisme et du Vin de Monbazillac",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7938754",
       "longitude": "0.49131878",
-      "active": true,
+      "number": null,
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--11-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--12-.JPG",
@@ -2057,19 +2698,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Monbazillac----MC-Grasseau--10-.JPG"
       ],
-      "updated": 1528655055703,
+      "plus": "A proximité : Château de Monbazillac, Château de Bridoire.",
       "tags": [
         "agriculture-bio",
         "agriculture-biodynamique",
         "agriculture-raisonnee"
-      ]
+      ],
+      "title": "Maison du Tourisme et du Vin de Monbazillac",
+      "updated": 1530814353912
     },
     {
+      "active": true,
+      "description": "Le Clos du Breil est une exploitation familiale située à proximité du village médiéval d’Issigeac. L’exploitation comprend 9,5 hectares de vigne.\nAu Clos du Breil le travail de la vigne et les vinifications sont dictés par plusieurs principes : la patience, l’humilité et le partage. Une grande attention est portée au travail de la vigne (travail sous le rang avec un inter-cep, plus de désherbage chimique) afin de magnifier l’expression du terroir composé de calcaires d’Issigeac auxquels se mêlent des silex.\nAfin de proposer une gamme de vins en adéquation avec nos principes, nous vendangeons nos parcelles en fonction de l’évolution aromatique des baies. Nous prenons soin de vinifier chaque parcelle et chaque cépage séparément jusqu’à l’assemblage final.\nNous proposons différentes cuvées. Des vins souples sur le fruit et des vins typés de caractère qui font la réputation du domaine. ",
       "id": "DEGAQU024V507O9S",
-      "title": "Le Clos du Breil",
+      "labels": [],
       "latitude": "44.714975",
       "longitude": "0.68274999",
-      "active": true,
+      "number": "118",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Photo-Le-Clos-du-Breil.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Expression.jpg",
@@ -2077,36 +2722,48 @@
         "http://cdt24.media.tourinsoft.eu/upload/maison-breil-N-B--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pied-de-vigne-pierre.jpg"
       ],
-      "updated": 1528654508600,
+      "plus": "Insolite : la cuvée d'Odyssée vinifiée dans des cuves en béton ovoïdes.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Le Clos du Breil",
+      "updated": 1530814353978
     },
     {
+      "active": true,
+      "description": "Depuis 500 ans, la famille Goubault de Brugière produit du vin dans notre région de Bergerac. La propriété s'étend sur 24 hectares sur les coteaux qui longent la Dordogne.",
       "id": "DEGAQU024V508CW2",
-      "title": "Château de la Reynaudie",
+      "labels": [],
       "latitude": "44.8886906",
       "longitude": "0.09117049",
-      "active": true,
+      "number": "216",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/18010305-446460685690949-3259859663478776668-n.jpg"
       ],
-      "updated": 1528654496694,
+      "plus": "La famille Goubault de Brugière, c'est plus de 500 ans d'histoire viticole !",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château de la Reynaudie",
+      "updated": 1530814354041
     },
     {
+      "active": true,
+      "description": "Situé entre Saint-Emilion et Sarlat, dans le vignoble de Bergerac, le Château Haut-Fongrive repose sur le point culminant du département en versant sud et collines orientées sud-ouest qui sont des atouts majeurs pour la qualité des vins.\nDoriane passionnée par le vin, s’installe en 2006 comme vigneronne. Tout est à faire. La construction du chai débute en 2007 pour la première vinification du domaine.\nGrand millésime et savoir-faire reconnu par la Vinalie d’Or Internationale.\nJulien rejoint sa compagne dans l’aventure dès le millésime 2010. Sa jeunesse et sa passion pour la vigne donnent un formidable élan à l’exploitation.Il entreprend l’amélioration du vignoble\nL’arrivée de nouvelles technologies entraîne une mise à niveau du chai de vinification et de la salle de mise en bouteille.\nDoriane s’ouvre au commerce, Julien à la technique, leur fusion se retrouve aujourd’hui dans leurs vins.",
       "id": "DEGAQU024V508D06",
-      "title": "Château Haut-Fongrive",
+      "labels": [],
       "latitude": "44.7490485",
       "longitude": "0.32332577",
-      "active": true,
+      "number": "117",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--10-.JPG",
@@ -2114,19 +2771,25 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--8-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-haut-fongrive-thenac--9-.JPG"
       ],
-      "updated": 1528655055721,
+      "plus": "Wine bird, cuvée d'exception à \"picorer\" élaborée par ces deux jeunes artisans vignerons.",
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-raisonnee"
-      ]
+      ],
+      "title": "Château Haut-Fongrive",
+      "updated": 1530814354107
     },
     {
+      "active": true,
+      "description": "4 hectares repris en 2014",
       "id": "DEGAQU024V508D0Q",
-      "title": "Domaine du Bout du Monde",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.7643990",
       "longitude": "0.4670950",
-      "active": true,
+      "number": "116",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--11-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--16-.JPG",
@@ -2139,15 +2802,21 @@
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--7-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Domaine-du-Bout-du-Monde--9-.jpg"
       ],
-      "updated": 1528654129687,
-      "tags": []
+      "plus": "Un accueil spécifique pour les enfants et les concerts en saison.",
+      "tags": [
+        "vin-blanc"
+      ],
+      "title": "Domaine du Bout du Monde",
+      "updated": 1530814354172
     },
     {
+      "active": true,
+      "description": "Les bâtis dont les fondations datent de la guerre de 100 ans. Domaine accueillant également des voitures de collection, et des chevaux, nos deux autres passions respectives.",
       "id": "DEGAQU024V508D0Y",
-      "title": "Domaine de la Linière",
+      "labels": [],
       "latitude": "44.7673429",
       "longitude": "0.3629190",
-      "active": true,
+      "number": "310",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE1.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/DOMAINEDELALINIERE2.jpg",
@@ -2158,38 +2827,56 @@
         "http://cdt24.media.tourinsoft.eu/upload/hachette.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/IMG-5251.JPG"
       ],
-      "updated": 1528654508632,
+      "plus": "Des chevaux dans les prés...et sous le capot ! Chevaux et voitures de collection sont les deux autres passions des vignerons.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine de la Linière",
+      "updated": 1530814354240
     },
     {
+      "active": true,
+      "description": "Château Thénac a une longue et fabuleuse histoire. Les premières traces de son existence remontent à 1109 lorsqu’un prieuré bénédictin fut construit à l’emplacement de l’actuel Château.\nLa propriété, de plus de 200 hectares au total, se trouve sur le village de Thénac. Le vignoble s’étend à perte de vue autour du Château. La propriété est également composée d’une plantation de pruniers d’ente, de bois, d’étangs et de terres cultivables.\nLa vigne est plantée sur le prolongement de la fameuse croupe calcaire de St Emilion. L’altitude, comprise entre 150 et 200 mètres, confère la présence d’un microclimat proche de celui de Bordeaux. Il  permet aux raisins de mûrir dans les meilleures conditions tout en gardant leur fraîcheur aromatique.\nLes cépages plantés sont Merlot, Cabernet Sauvignon, Cabernet Franc et Malbec pour les rouges ; Sauvignon, Sémillon et Muscadelle pour les blancs.",
       "id": "DEGAQU024V508D1D",
-      "title": "Château Thénac",
+      "labels": [],
       "latitude": "44.7495967",
       "longitude": "0.34156833",
-      "active": true,
+      "number": "115",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--1-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--2-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--3-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-thenac--4-.jpg"
       ],
-      "updated": 1528654474616,
+      "plus": "La vue à couper le souffle depuis le château construit sur les ruines d'un ancien prieuré bénédictin.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château Thénac",
+      "updated": 1530814354309
     },
     {
+      "active": true,
+      "description": "Au cœur d’un vaste domaine viticole de 19 hectares trône le Magnifique Château de Montaigne, demeure du XIXème entièrement meublée d’époque, et la Tour Historique de Michel Eyquem de Montaigne, célèbre humaniste, auteur des Essais. \nTout au long de l’année, vous pouvez parcourir ces lieux chargés d’Histoire lors de visites guidées et conclure par une dégustation de nos vins. Un voyage gustatif et visuel à couper le souffle. \nVisites guidées uniquement selon horaires",
       "id": "DEGAQU024V508D27",
-      "title": "Château Michel de Montaigne",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "latitude": "44.8740850",
       "longitude": "0.0302640",
-      "active": true,
+      "number": "215",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--2-.jpg",
@@ -2197,15 +2884,23 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--4-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-michel-de-montaigne--5-.jpg"
       ],
-      "updated": 1528654129724,
-      "tags": []
+      "plus": "Le château du célèbre auteur des essais, Michel Eyquem de Montaigne !",
+      "tags": [
+        "vin-rouge",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Château Michel de Montaigne",
+      "updated": 1530814354376
     },
     {
+      "active": true,
+      "description": "Situé dans le village de Monestier, le Chateau Monestier La Tour cultive 27.5 ha de vignes. Nous produisons des vins rouges en AOP Bergerac, Côtes de Bergerac, blancs secs, rosés et un liquoreux sous AOP Saussignac.\nDepuis juin 2016, le Château Monestier La Tour bénéficie d’un nouveau cuvier, de nouveaux bâtiments de stockage et d’un accueil au public. Au-delà de cette restructuration, ce sont surtout les nouvelles pratiques culturales qui sont la vraie révolution, en effet le vignoble est en conversion biologique (le millésime 2018 sera certifié bio) et bio dynamique sur les conseils de Derenoncourt consultants. La culture apparaît dès lors plus respectueuse du terroir et de l’environnement, idées fondamentales du propriétaire.",
       "id": "DEGAQU024V50ASLN",
-      "title": "Château Monestier La Tour",
+      "labels": [],
       "latitude": "44.7746174",
       "longitude": "0.32736617",
-      "active": true,
+      "number": "314",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-MG-8292.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-exploitation.jpg",
@@ -2214,161 +2909,226 @@
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-a-barriques.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-monestier-la-tour-Les-chais-de-vinification.jpg"
       ],
-      "updated": 1528655055749,
+      "plus": null,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "agriculture-biodynamique",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Château Monestier La Tour",
+      "updated": 1530814354445
     },
     {
+      "active": true,
+      "description": "Le Château des MIAUDOUX est une exploitation agricole que Gérard et Nathalie Cuisset ont acquis en 1987. Ils se sont alors lancés dans la production et la commercialisation de vin de Bergerac ( blancs sec et moelleux, rosé et rouge) et de Saussignac sur 25 ha, ainsi que dans  la production de pruneaux d'agen sur 8 ha.\nEn 2003, ils décident de convertir l'exploitation à l'agriculture Biologique, certifiée par Ecocert.  \nEn 2014 avec l'installation sur l'exploitation de leur fils ainé et son épouse, Samuel et Lisa, toute l'exploitation est aussi convertie en biodynamie, certifiée par Demeter. \nDe ce fait, quelques jeunes parcelles sont travaillées en prestation avec un cheval dans le but de reprendre contact avec le monde animal et de minimiser l'impact du travail du sol.\nAux Miaudoux, la qualité des vins est recherchée.\nDepuis 2009, une cuvée est vinifiée sans ajout de sulfites pour faire",
       "id": "DEGAQU024V50ASZG",
-      "title": "Château Les Miaudoux",
+      "labels": [],
       "latitude": "44.796593",
       "longitude": "0.31962999",
-      "active": true,
+      "number": "313",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--1-.png",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--1-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-les-miaudoux-2018--2-.png"
       ],
-      "updated": 1528655055760,
+      "plus": null,
       "tags": [
         "agriculture-bio",
         "agriculture-biodynamique"
-      ]
+      ],
+      "title": "Château Les Miaudoux",
+      "updated": 1530814354512
     },
     {
+      "active": true,
+      "description": "Ayant fait carrière dans l’environnement, Laurent Russac a préféré retrouver son environnement à lui : la vigne ! Avec ce retour aux sources il a décidé de concilier ses deux passions : la vigne et l’environnement. Il a convertit le domaine familial en Bio en 2014. \nLa propriété viticole s'étend sur 24 ha et bénéficie de l'appellation Monbazillac.\nVenez découvrir nos vins, nos vignes et la biodiversité locale.",
       "id": "DEGAQU024V50ATZW",
-      "title": "Château Le Terme Blanc",
+      "labels": [],
       "latitude": "44.7759371",
       "longitude": "0.44670162",
-      "active": true,
+      "number": "440",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/1-280.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/2-238.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/3-219.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/4-208.JPG"
       ],
-      "updated": 1528655055771,
+      "plus": null,
       "tags": [
         "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Château Le Terme Blanc",
+      "updated": 1530814354576
     },
     {
+      "active": true,
+      "description": "DES VINS CADEAUX DES VINS PLAISIRS DES VINS DE PASSIONS DES VINS POUR TOUS.\n\nAppellation Pecharmant\n\nExploitation familiale depuis 4 germinations, nous vinifions en jarre et a L ancienne sur 1ha40,nous produisons moins de 4000 bouteilles. \nmoins de 4000 bouteilles .\n\nL  INATTENDUE élevé en jarre,300 bouteilles \nCUVÉE MARGUERITE  vin fruité, 1400 bouteilles\nCUVÉE DESIRE vin boisé ,2100 bouteilles\n\nNous commercialisons d'autre appellations,\nMonbazillac,Montravel ,Bergerac.\nNos étiquettes sont traduites en braille et nos emballages sont fait dans des ateliers protégés. \n\n\n\n\n\n\n",
       "id": "DEGAQU024V50AU01",
-      "title": "Domaine Le Martinat",
+      "labels": [],
       "latitude": "44.8932180",
       "longitude": "0.54694826",
-      "active": true,
+      "number": "612",
       "photos": [],
-      "updated": 1528654508679,
+      "plus": null,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rose",
+        "vin-rouge",
+        "vin-blanc",
+        "vin-liquoreux"
+      ],
+      "title": "Domaine Le Martinat",
+      "updated": 1530814354642
     },
     {
+      "active": true,
+      "description": "Après avoir acheté mes premières vignes en 1992 sur le coteau de SAUSSIGNAC , agrandi avec l'acquisition de nouvelles parcelles , restructuré en partie puis acheté les 12 ha du Château les plaguettes (exploitation familiale ). Le vignoble s’étend aujourd'hui sur 38 ha .\nAlliance entre une nature généreuse ,un magnifique terroir, fruit du savoir-faire et de la passion.",
       "id": "DEGAQU024V50AU0C",
-      "title": "Vignobles Serge Gazziola",
+      "labels": [],
       "latitude": "44.8130854",
       "longitude": "0.32407586",
-      "active": true,
+      "number": "315",
       "photos": [],
-      "updated": 1528654496784,
+      "plus": null,
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
         "accepte-animaux"
-      ]
+      ],
+      "title": "Vignobles Serge Gazziola",
+      "updated": 1530814354710
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B0P2",
-      "title": "Château de Gurson",
+      "labels": [],
       "latitude": "44.9464500",
       "longitude": "0.0909819",
-      "active": true,
+      "number": "217",
       "photos": [],
-      "updated": 1528654129807,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Château de Gurson",
+      "updated": 1530814354776
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B0PF",
-      "title": "Château de Puypezat-Rosette",
+      "labels": [],
       "latitude": "44.867126",
       "longitude": "0.476432",
-      "active": true,
+      "number": "509",
       "photos": [],
-      "updated": 1528654129818,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Château de Puypezat-Rosette",
+      "updated": 1530814354838
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B0PK",
-      "title": "Domaine du Grand Boisse",
+      "labels": [],
       "latitude": "44.89277",
       "longitude": "0.480058",
-      "active": true,
+      "number": "510",
       "photos": [],
-      "updated": 1528654129830,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Domaine du Grand Boisse",
+      "updated": 1530814354927
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B0Q8",
-      "title": "Château Le Chrisly / Clos la Selmonie",
+      "labels": [],
       "latitude": "44.7944517",
       "longitude": "0.42727285",
-      "active": true,
+      "number": "439",
       "photos": [],
-      "updated": 1528654129848,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Château Le Chrisly / Clos la Selmonie",
+      "updated": 1530814354998
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B0QH",
-      "title": "Château Thenoux",
+      "labels": [],
       "latitude": "44.783243",
       "longitude": "0.507124",
-      "active": true,
+      "number": "441",
       "photos": [],
-      "updated": 1528654508718,
+      "plus": null,
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Thenoux",
+      "updated": 1530814355069
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B5LT",
-      "title": "Château Brunet-Charpentière",
+      "labels": [],
       "latitude": "44.8954562",
       "longitude": "0.13264019",
-      "active": true,
+      "number": "214",
       "photos": [],
-      "updated": 1528654129871,
-      "tags": []
+      "plus": null,
+      "tags": [],
+      "title": "Château Brunet-Charpentière",
+      "updated": 1530814355139
     },
     {
+      "active": true,
+      "description": null,
       "id": "DEGAQU024V50B5M4",
-      "title": "Château des Ganfards",
+      "labels": [],
       "latitude": "44.790326",
       "longitude": "0.310379",
-      "active": true,
+      "number": "311",
       "photos": [],
-      "updated": 1528654129881,
-      "tags": []
+      "plus": "6 générations de vignerons se sont déjà succédées aux Ganfards!",
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-liquoreux"
+      ],
+      "title": "Château des Ganfards",
+      "updated": 1530814355210
     },
     {
+      "active": true,
+      "description": "Le Clos du Pech Bessou se situe dans le Sud Bergeracois sur la commune de Plaisance et à la limite du Lot et Garonne, région touristique puisque proche des Bastides d'Issigeac et d'Eymet.\nLe Clos du Pech Bessou est un petit vignoble de 8Ha mené dans la tradition familiale par Sylvie et Pascal THOMASSIN afin de mettre en avant l'authenticité de son terroir.Nous apportons un grand intérêt à la culture de la vigne (agriculture raisonnée) afin d'avoir des fruits de qualité qui nous permettront d'avoir un potentiel de vinification et de satisfaire notre clientèle.\nL'encépagement est composé de merlot, cabernet, malbec, sémillon et muscadelle qui permettent de présenter des vins aux typicités variées.\nNous vous invitons à venir déguster nos vins avec grand plaisir avec un accueil simple et chaleureux.\nA très bientôt!",
       "id": "DEGAQU047FS000AP",
-      "title": "Clos du Pech Bessou",
+      "labels": [],
       "latitude": "44.69402",
       "longitude": "0.55691",
-      "active": true,
+      "number": "110",
       "photos": [
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--5-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou--3-.JPG",
@@ -2387,12 +3147,18 @@
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance11.JPG",
         "http://cdt24.media.tourinsoft.eu/upload/pech-bessou-plaisance21.JPG"
       ],
-      "updated": 1528654474715,
+      "plus": "A proximité : Village médiéval d'Issigeac, Bastide d'Eymet.",
       "tags": [
         "acces-handicape",
         "agriculture-raisonnee",
-        "vente-propriete"
-      ]
+        "vente-propriete",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux"
+      ],
+      "title": "Clos du Pech Bessou",
+      "updated": 1530814355274
     }
   ]
 }

@@ -1,6 +1,6 @@
 /_nuxt/*
   Cache-Control: public, max-age=31536000
-/icones/*
+/icons/*
   Cache-Control: public, max-age=31536000
 /images/*
   Cache-Control: public, max-age=31536000

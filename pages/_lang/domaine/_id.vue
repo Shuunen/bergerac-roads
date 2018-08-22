@@ -1,8 +1,8 @@
 <template>
-  <el-container direction="vertical" class="page-domaine">
+  <el-container direction="vertical" class="page-encart page-domaine">
     <Header />
     <div class="color-line"/>
-    <div class="background" :style="backgroundImage"/>
+    <div class="background" :style="backgroundStyle"/>
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
@@ -20,25 +20,26 @@
           <nuxt-link :to="$i18n.path('')">
             <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
-          <div class="grappe"/>
         </div>
       </div>
     </el-main>
+    <Footer />
   </el-container>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
-import { getDomain } from '~/utils/db'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
     Header,
+    Footer,
   },
   data() {
     return {
       loading: true,
-      backgroundImage: {},
+      backgroundStyle: {},
       data: {},
     }
   },
@@ -85,7 +86,7 @@ export default {
       if (matches && matches.length === 2) {
         const id = matches[1]
         this.loading = true
-        getDomain(id).then(domain => {
+        this.$db.getDomain(id).then(domain => {
           if (domain) {
             console.log('Domain page : got domain', domain)
             this.data = domain
@@ -93,43 +94,17 @@ export default {
             console.error('failed at getting domain with id "' + id + '"')
           }
           this.loading = false
-          this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+          this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
         })
       } else {
         this.loading = false
         this.data = {
           title: 'Domaine inconnu',
-          message: "Désolé mais ce domaine n'a pas été trouvé.",
+          message: 'Désolé mais ce domaine n\'a pas été trouvé.',
         }
-        this.backgroundImage = { backgroundImage: 'url(' + this.image + ')' }
+        this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
       }
     },
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.color-line {
-  background-color: $red-d3;
-}
-.page-domaine {
-  background: $red-d2;
-  min-height: 100vh;
-  padding-bottom: 10px;
-}
-.title {
-  margin: 30px 0 20px;
-  color: $red-d2;
-}
-.background {
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-.back {
-  margin-top: 10px;
-}
-.grappe {
-  margin: 20px;
-}
-</style>

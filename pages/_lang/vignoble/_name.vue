@@ -1,5 +1,5 @@
 <template>
-  <el-container direction="vertical" class="page-domaine">
+  <el-container direction="vertical" class="page-encart page-domaine">
     <Header />
     <div class="color-line" />
     <div class="background" :style="backgroundStyle" />
@@ -57,25 +57,25 @@
             </ul>
           </div>
         </template>
-        <div class="col push-bottom">
-          <!-- TODO: make a component of this : -->
+        <div class="col">
           <nuxt-link :to="$i18n.path('')">
             <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
-          <div class="grappe"/>
         </div>
       </div>
     </el-main>
+    <Footer />
   </el-container>
 </template>
 
 <script>
 import Header from '~/components/Header.vue'
-import { getVineyards } from '~/utils/db'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
     Header,
+    Footer,
   },
   asyncData({ params }) {
     return {
@@ -94,7 +94,7 @@ export default {
   methods: {
     init() {
       this.loading = true
-      getVineyards().then(vineyards => {
+      this.$db.getVineyards().then(vineyards => {
         this.vineyards = vineyards
         const exists = vineyards.some(vineyard => this.name === vineyard.name)
         let image = `${process.env.cdn}/images/`
@@ -112,42 +112,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.color-line {
-  background-color: $red-d3;
-}
-.page-domaine {
-  background: $red-d2;
-  min-height: 100vh;
-}
-.title {
-  margin: 30px 0 20px;
-  color: $red-d2;
-}
-.subtitle {
-  margin: 1rem 0 0;
-  color: $red-d2;
-}
-.background {
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-}
-.encart {
-  background: $white;
-  padding: 0 40px;
-  margin-top: -150px;
-  margin-left: 20px;
-  margin-right: 20px;
-  @media (max-width: 450px) {
-    margin-top: -300px;
-  }
-}
-.back {
-  margin-top: 10px;
-}
-.grappe {
-  margin: 20px;
-}
-</style>

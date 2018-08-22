@@ -6,29 +6,48 @@
   },
   "links": {
     "home": "Accueil",
-    "about": "À propos"
+    "about": "À propos",
+    "more": "En savoir plus"
+  },
+  "legal": {
+    "title": "Mentions légales"
+  },
+  "charter": {
+    "title": "Charte de la route des vins"
   },
   "home": {
     "title": "Bienvenue",
     "introduction": "Ceci est un texte d'introduction en Français."
   },
   "home-top": {
-    "header": "Venez découvrir nos producteurs"
+    "title": "La plus belle route des vins, la vôtre",
+    "subtitle": "Les vignerons de Bergerac & Duras vous accueillent"
+  },
+  "footer": {
+    "alcoolWarning": "L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
+    "copyright": "Vins de Bergerac Duras ©️ 2018"
   },
   "last-domains": {
-    "header": "Domaines ajoutés récemment"
+    "header": "Domaines de Bergerac"
   },
   "search": {
-    "header": "Recherche",
+    "header": "Ma route des vins",
     "placeholder": "Sélectionnez un ou plusieurs tag(s)",
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",
     "selected": "Sélectionné",
-    "noResult": "Aucun résultat ne correspond à votre recherche...",
-    "introduction": "Pour visualiser un itinéraire, sélectionnez les domaines désirés en points de passage et entrez un lieu de départ (votre localisation sera prise par défaut si aucune adresse n'est renseignée).",
-    "start": "Départ",
+    "domainsSelected": "Vous avez sélectionné {nb} domaine",
+    "introduction": "Pour créer votre itinéraire, sélectionnez les domaines que vous souhaitez visiter",
+    "start": "Point de départ",
     "selectButton": "Sélectionner",
-    "unselectButton": "Désélectionner"
+    "unselectButton": "Désélectionner",
+    "itinerary": "Calculer mon itinéraire",
+    "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
+    "helpCreateBefore": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
+    "helpCreateAfter": "Cliquez sur le bouton ci-dessous pour créer votre itinéraire.",
+    "findMe": "Localisez-moi",
+    "findMeDisallowed": "La géolocalisation doit être autorisée afin de pouvoir vous localiser.",
+    "findMeFailed": "La géolocalisation n'est pas disponible sur votre navigateur."
   },
   "vineyards": {
     "titles": {
