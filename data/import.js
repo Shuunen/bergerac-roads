@@ -1,5 +1,9 @@
 import { localApi, remoteApi, remoteDomainsUrl } from './common'
 const isEqual = require('fast-deep-equal')
+const jsonServer = require('json-server')
+const server = jsonServer.create()
+const router = jsonServer.router('data/db.json')
+const middlewares = jsonServer.defaults()
 const justProcessOne = false
 const justLogChanges = true
 let stopProcessing = false
@@ -254,9 +258,17 @@ function getRemoteDomains() {
       console.error(error)
       stopProcessing = true
     })
+    .then(() => process.exit(0))
 }
 
-getRemoteDomains()
+// start Json Server
+server.use(middlewares)
+server.use(router)
+server.listen(3003, () => {
+  console.log('Json Server is running')
+  getRemoteDomains()
+})
+
 
 // For testing purpose :
 // const sampleDomains = require('./sample-domains.json').value

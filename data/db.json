@@ -426,7 +426,7 @@
     },
     {
       "active": true,
-      "description": "Domaine familial depuis 3 générations et géré aujourd'hui par les familles Garcia et Métifet .\nLe Domaine domine la vallée de Bergerac sur les coteaux de Monbazillac .\nIl est possible de séjourner dans nos gîtes ou chambres d'hôtes pour un court ou long séjour .\nNotre propriété cultive 70 hectares de vignes, a dominance Monbazillac .\nPour découvrir notre vignoble, nous avons créé un chemin retraçant tout le domaine.\nAccueil camping-cars (France Passion).",
+      "description": "Domaine familial depuis 3 générations et géré aujourd'hui Philippe et Laurence Métifet.\nLe Domaine domine la vallée de Bergerac sur les coteaux de Monbazillac.\nNotre propriété cultive 70 hectares de vignes, à dominance Monbazillac.\nPour découvrir notre vignoble, nous vous proposons une dégustation de nos vins et une visite de la propriété sur rendez-vous.\nNous accueillons les camping-cars gratuitement sur un emplacement verdoyant avec une vue imprenable sur nos vignes. (France Passion).",
       "id": "DEGAQU024FS0000I",
       "labels": [
         "vignobles-et-decouvertes"
@@ -454,7 +454,7 @@
         "vin-liquoreux"
       ],
       "title": "Domaine du Haut Montlong",
-      "updated": 1530814348370
+      "updated": 1535021343276
     },
     {
       "active": true,
@@ -486,6 +486,7 @@
       "plus": "Le domaine produit du verjus, un produit ancien typique du Périgord (remplace le jus de citron ou la vinaigrette). ",
       "tags": [
         "acces-handicape",
+        "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
@@ -495,11 +496,11 @@
         "vin-moelleux"
       ],
       "title": "Domaine du Siorac",
-      "updated": 1530814348439
+      "updated": 1535021343354
     },
     {
       "active": true,
-      "description": "Depuis 1896, les générations de la famille CASTAING se succèdent sur ce vignoble de Pomport qui produit des vins de Bergerac et Monbazillac. Depuis toujours le Domaine de Grange Neuve est ouvert au public. Labellisé Bienvenue à la Ferme, Vignobles et découverte, ferme pédagogique, Haute Valeur Environnementale et membre de la Route des Vins, le domaine accueille les visiteurs souhaitant découvrir le monde du vin, et l'histoire de la viticulture en Bergeracois, pour une simple dégustation gratuite jusqu'à une visite plus complète du vignoble et des chais (sur rendez vous) pour percer les secrets de l'élaboration du vin. \nLe domaine dispose également d'un gîte grande capacité pouvant accueillir jusqu'à 13 personnes, primé d'un Best of d'Or Wine Tourism 2016. ",
+      "description": "Depuis 1896, les générations de la famille CASTAING se succèdent sur ce vignoble de Pomport qui produit des vins de Bergerac et Monbazillac. Depuis toujours le Domaine de Grange Neuve est ouvert au public. Labellisé Bienvenue à la Ferme, Vignobles et découverte, Ferme Pédagogique, Haute Valeur Environnementale et membre de la Route des Vins, le domaine accueille les visiteurs souhaitant découvrir le monde du vin, et l'histoire de la viticulture en Bergeracois, pour une simple dégustation gratuite jusqu'à une visite plus complète du vignoble et des chais (sur rendez-vous) pour percer les secrets de l'élaboration du vin. \nLe domaine dispose également d'un gîte grande capacité pouvant accueillir jusqu'à 13 personnes, primé d'un Best of d'Or Wine Tourism 2016. ",
       "id": "DEGAQU024FS0000K",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -529,7 +530,7 @@
         "vin-liquoreux"
       ],
       "title": "Domaine de Grange Neuve",
-      "updated": 1530814348508
+      "updated": 1535021343420
     },
     {
       "active": true,
@@ -741,16 +742,17 @@
       "longitude": "0.19006132",
       "number": "208",
       "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--10-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--11-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--2-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--3-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--1-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-vignobles-dubard--39--2.png",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-vignobles-dubard--81--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-vignobles-dubard--110--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-vignobles-dubard--112--2.png",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--6-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--7-.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-vignobles-dubard--85--2.png",
         "http://cdt24.media.tourinsoft.eu/upload/chateau-laulerie--9-.jpg"
       ],
       "plus": "La ferme périgourdine typique du XVIIIe siècle.",
@@ -765,7 +767,7 @@
         "vin-moelleux"
       ],
       "title": "Château Laulerie / Domaine du Gouyat",
-      "updated": 1530814348975
+      "updated": 1535021343823
     },
     {
       "active": true,
@@ -803,7 +805,14 @@
       "longitude": "0.16073942",
       "number": "206",
       "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/logo-le-Raz.jpg"
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--cadre-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--17--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--70--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--105--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--12--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--37--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--80--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-le-raz--88--2.png"
       ],
       "plus": "Le domaine transmis et développé de génération en génération depuis 1610.",
       "tags": [
@@ -811,7 +820,7 @@
         "accepte-animaux"
       ],
       "title": "Château le Raz",
-      "updated": 1530814349131
+      "updated": 1535021343943
     },
     {
       "active": true,
@@ -1059,6 +1068,7 @@
       ],
       "plus": "Une vigneronne passionnée qui produit des vins \" d'artisan \" en bio.",
       "tags": [
+        "acces-handicape",
         "agriculture-bio",
         "accepte-animaux",
         "vente-propriete",
@@ -1069,7 +1079,7 @@
         "vin-liquoreux"
       ],
       "title": "Château La Robertie",
-      "updated": 1530814349752
+      "updated": 1535021344467
     },
     {
       "active": true,
@@ -1372,13 +1382,20 @@
       "latitude": "44.8616623",
       "longitude": "0.50954774",
       "number": "603",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--39--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--20--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--44--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--17--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--33--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-chateau-la-tilleraie--11--2.png"
+      ],
       "plus": null,
       "tags": [
         "vente-propriete"
       ],
       "title": "Château La Tilleraie",
-      "updated": 1530814350580
+      "updated": 1535021345158
     },
     {
       "active": true,
@@ -1532,11 +1549,19 @@
       "longitude": "0.12560499",
       "number": "212",
       "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--cadre-coul-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--58--2.png",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-02.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--9--2.png",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-03.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Grimardy-04.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-05.jpg"
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-05.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--13--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--15--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--30--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--4--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-domaine-de-grimardy--65--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/Grimardy-02.jpg"
       ],
       "plus": "Le point de vue depuis le belvédère où est installé le domaine.",
       "tags": [
@@ -1545,7 +1570,7 @@
         "vente-propriete"
       ],
       "title": "Domaine de Grimardy",
-      "updated": 1530814350975
+      "updated": 1535021345509
     },
     {
       "active": true,
@@ -1824,7 +1849,7 @@
     },
     {
       "active": true,
-      "description": "Le Domaine de Perreau est une propriété familiale de 20 hectares sur les appellations Bergerac et Montravel.\nGaëlle Reynou-Gravier, jeune vigneronne, cinquième génération, a repris le domaine en 2013. Elle développe une nouvelle identité pour le Domaine de Perreau à la fois féminine et moderne.\nDepuis 2014, le Domaine de Perreau est certifié Terra Vitis®, pour le plaisir du vin et une terre vivante.\nVisite vigne et chai \nEn 2018, Gaëlle développe une nouvelle offre familiale autour d'un sentier dans les vignes autour de la biodiversité. Petits et grands pourront découvrir le métier de vigneron au travers d'un parcours de 1.5km riche d'explications, découvertes et petits jeux. La visite se termine par une dégustation pour les parents et un gouter pour les enfants.\n\n",
+      "description": "Le Domaine de Perreau est une propriété familiale de 20 hectares sur les appellations Bergerac et Montravel. Gaëlle Reynou-Gravier, jeune vigneronne, cinquième génération, a repris le domaine en 2013 et lui construit une nouvelle identité, à la fois féminine et moderne.\nDepuis 2014, le Domaine de Perreau est certifié Terra Vitis®, pour le plaisir du vin et une terre vivante. Vous pouvez y visiter les vignes et le chai. En 2018, Gaëlle développe une nouvelle offre familiale, un sentier dans les vignes autour de la biodiversité. Petits et grands pourront découvrir le métier de vigneron au travers d'un parcours de 1,5 km riche d'explications et de petits jeux. La visite se termine par une dégustation pour les parents et un goûter pour les enfants.",
       "id": "DEGAQU024V506TL3",
       "labels": [],
       "latitude": "44.876575",
@@ -1849,7 +1874,7 @@
         "vin-moelleux"
       ],
       "title": "Domaine de Perreau",
-      "updated": 1530814351707
+      "updated": 1535021346149
     },
     {
       "active": true,
@@ -2193,15 +2218,16 @@
       "description": "Le Château du Bloy existe dans sa configuration actuelle depuis le début des années 60. Le domaine a été repris en 2001 par Olivier LAMBERT et Bertrand LEPOITTEVIN-DUBOST avec pour objectif de le hisser au niveau des meilleurs du sud-ouest de la France. Soucieuse tant de restituer l'expression du terroir dans ses vins que de préserver l'environnement, la propriété, formalisant ainsi les pratiques culturales qu'elle adoptait depuis plusieurs années déjà, s'est officiellement engagée au respect du mode de production biologique depuis le mois de juillet 2011.",
       "id": "DEGAQU024V5071DW",
       "labels": [],
-      "latitude": "44.872258",
-      "longitude": "0.08214599",
+      "latitude": "44.8719405",
+      "longitude": "0.08264488",
       "number": "202",
       "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-2.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-1.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-3.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-4.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-du-Bloy-5.jpg"
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--cadre-coul--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--37--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--39--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--33--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--15--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-du-bloy--22--2.jpg"
       ],
       "plus": "\" Exprimer au mieux le terroir, préserver l'environnement. \"",
       "tags": [
@@ -2214,7 +2240,7 @@
         "vin-moelleux"
       ],
       "title": "Château du Bloy",
-      "updated": 1530814352570
+      "updated": 1535021346892
     },
     {
       "active": true,
@@ -2368,7 +2394,14 @@
       "latitude": "44.8873219",
       "longitude": "0.09052157",
       "number": "211",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--cadre-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--2--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--10--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--56--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--39--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/auour-velines-chateau-tuquet-monceau--19--2.jpg"
+      ],
       "plus": "Situé sur les coteaux à mi-chemin entre Bergerac et Saint-Emilion, le domaine est converti en bio depuis 2012.",
       "tags": [
         "acces-handicape",
@@ -2376,7 +2409,7 @@
         "accepte-animaux"
       ],
       "title": "Château Tuquet Monceau",
-      "updated": 1530814352976
+      "updated": 1535021347240
     },
     {
       "active": true,
@@ -2601,17 +2634,24 @@
       "description": "Exploitation de 20 ha de vignes et 7 ha de pruniers d'ente d'un seul tenant sur les coteaux au sud de Monestier.",
       "id": "DEGAQU024V5076SA",
       "labels": [],
-      "latitude": "44.7669854",
-      "longitude": "0.32797771",
+      "latitude": "44.7675414",
+      "longitude": "0.32908278",
       "number": "306",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--cadre-coul-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--17--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--14--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--48--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--42--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-chateau-grands-quintins--83--2.png"
+      ],
       "plus": "20 hectares de vignes, 7 de pruniers, sur les côteaux Sud de Monestier.",
       "tags": [
         "agriculture-raisonnee",
         "accepte-animaux"
       ],
       "title": "Château Grands Quintins",
-      "updated": 1530814353641
+      "updated": 1535021347811
     },
     {
       "active": true,
@@ -2745,7 +2785,15 @@
       "longitude": "0.09117049",
       "number": "216",
       "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/18010305-446460685690949-3259859663478776668-n.jpg"
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--cadre-nb-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--50--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--39--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--70--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--72--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--19--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--73--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--76--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-velines-chateau-la-reynaudie--93--2.png"
       ],
       "plus": "La famille Goubault de Brugière, c'est plus de 500 ans d'histoire viticole !",
       "tags": [
@@ -2754,7 +2802,7 @@
         "accepte-animaux"
       ],
       "title": "Château de la Reynaudie",
-      "updated": 1530814354041
+      "updated": 1535021348160
     },
     {
       "active": true,
@@ -3000,7 +3048,13 @@
       "latitude": "44.8130854",
       "longitude": "0.32407586",
       "number": "315",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-vignobles-gazziola--cadre-coul-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-vignobles-gazziola--50--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-vignobles-gazziola--66--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-vignobles-gazziola--12--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-saussignac-vignobles-gazziola--68--2.png"
+      ],
       "plus": null,
       "tags": [
         "acces-handicape",
@@ -3008,7 +3062,7 @@
         "accepte-animaux"
       ],
       "title": "Vignobles Serge Gazziola",
-      "updated": 1530814354710
+      "updated": 1535021348729
     },
     {
       "active": true,
@@ -3043,14 +3097,22 @@
       "description": null,
       "id": "DEGAQU024V50B0PK",
       "labels": [],
-      "latitude": "44.89277",
-      "longitude": "0.480058",
+      "latitude": "44.8863107",
+      "longitude": "0.46258398",
       "number": "510",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--cadre-coul-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--35--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--16--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--33--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--19--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--39--2.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-bergerac-domaine-du-grand-boisse--7--2.png"
+      ],
       "plus": null,
       "tags": [],
       "title": "Domaine du Grand Boisse",
-      "updated": 1530814354927
+      "updated": 1535021348902
     },
     {
       "active": true,
@@ -3094,14 +3156,20 @@
       "description": null,
       "id": "DEGAQU024V50B5LT",
       "labels": [],
-      "latitude": "44.8954562",
-      "longitude": "0.13264019",
+      "latitude": "44.8778817",
+      "longitude": "0.11922914",
       "number": "214",
-      "photos": [],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/autour-montravel-chateau-brunet-charpentiere--cadreNB-.png",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-montravel-chateau-brunet-charpentiere--1--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-montravel-chateau-brunet-charpentiere--10--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-montravel-chateau-brunet-charpentiere--25--2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/autour-montravel-chateau-brunet-charpentiere--18--2.jpg"
+      ],
       "plus": null,
       "tags": [],
       "title": "Château Brunet-Charpentière",
-      "updated": 1530814355139
+      "updated": 1535021349084
     },
     {
       "active": true,
