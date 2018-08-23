@@ -44,7 +44,7 @@
     "itinerary": "Create my itinerary",
     "helpStart": "Fill the starting point or click on \"Find me\"",
     "helpCreateBefore": "Select at leat one domain and one starting point to create an itinerary.",
-    "helpCreateAfter": "Click on the button below to create your itinerary.",
+    "helpCreateAfter": "Select at leat one domain and one starting point to create an itinerary.",
     "findMe": "Find me",
     "findMeDisallowed": "Geolocation must be allowed for this feature to work.",
     "findMeFailed": "Geolocation is not supported by this browser."
