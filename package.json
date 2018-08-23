@@ -11,7 +11,7 @@
     "analyze": "nuxt build --analyze",
     "dev": "nuxt",
     "dev:import": "nodemon --exec babel-node data/import.js --watch data/import.js",
-    "build": "npm-run-all build:data build:app",
+    "build": "./node_modules/.bin/npm-run-all build:data build:app",
     "build:data": "npm run data:import",
     "build:app": "nuxt build --spa",
     "start": "nuxt start --spa",
