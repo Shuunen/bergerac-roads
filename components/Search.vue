@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      mapContainerHeight: 600,
+      mapContainerHeight: 900,
       filters: [],
       checkedFilters: {},
       domains: [],

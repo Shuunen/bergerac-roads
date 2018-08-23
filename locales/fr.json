@@ -44,7 +44,7 @@
     "itinerary": "Calculer mon itinéraire",
     "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
     "helpCreateBefore": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
-    "helpCreateAfter": "Cliquez sur le bouton ci-dessous pour créer votre itinéraire.",
+    "helpCreateAfter": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
     "findMe": "Localisez-moi",
     "findMeDisallowed": "La géolocalisation doit être autorisée afin de pouvoir vous localiser.",
     "findMeFailed": "La géolocalisation n'est pas disponible sur votre navigateur."

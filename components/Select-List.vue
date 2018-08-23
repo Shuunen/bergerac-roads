@@ -1,21 +1,26 @@
 <template>
   <div class="select-list-container col" :style="{ height: `${height}px` }" v-loading="loading">
+
+    <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+
+    <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
+    <div class="line">
+      <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
+        <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+      </el-input>
+    </div>
+
     <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
-      {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's :' : ' :') }}
+      2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
+    </div>
+    <div class="line">
+      <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
     </div>
     <div class="line list">
       <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
         <el-checkbox v-for="item in itemsSorted" :key="item.id" :label="item.title" />
       </el-checkbox-group>
     </div>
-    <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">{{ $t('search.helpStart') }}</div>
-    <div class="line">
-      <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
-        <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
-      </el-input>
-    </div>
-    <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
-    <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
   </div>
 </template>
 
