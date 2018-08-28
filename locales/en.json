@@ -32,6 +32,7 @@
   },
   "search": {
     "header": "My wine route",
+    "subheader": "Click on the images below to filter the Domaines you are interested in",
     "placeholder": "Select one or multiple tag(s)",
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",
