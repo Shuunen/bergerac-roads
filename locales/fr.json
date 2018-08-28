@@ -32,6 +32,7 @@
   },
   "search": {
     "header": "Ma route des vins",
+    "subheader": "Cliquez sur les images ci-dessous pour filtrer les domaines qui vous intéressent",
     "placeholder": "Sélectionnez un ou plusieurs tag(s)",
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",

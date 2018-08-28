@@ -3,7 +3,7 @@
     <el-main>
 
       <h2>{{ $t('search.header') }}</h2>
-
+      <h3>{{ $t('search.subheader') }}</h3>
       <el-row class="search-pictos" :gutter="20">
         <el-col :xs="12" :span="8" :lg="4" v-for="filter in filters" :key="filter.code">
           <el-checkbox class="search-picto col" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border>
@@ -122,6 +122,9 @@ export default {
     text-align: center;
     margin: 1rem 0;
     min-height: 55px;
+  }
+  h3 {
+  text-align:center
   }
   .search-pictos {
     min-height: $picto-height + 20;
