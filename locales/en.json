@@ -33,6 +33,8 @@
   "search": {
     "header": "My wine route",
     "subheader": "Click on the images below to filter the Domaines you are interested in",
+    "noEntries": "We did not find any domain corresponding to this search, we advise you to make a new less specific search.",
+    "filterDomains": "Filter domains",
     "filterVineyards": "Filter by region and vineyards",
     "placeholder": "Select one or multiple tag(s)",
     "select": "Press Enter to select",

@@ -1,27 +1,37 @@
 <template>
-  <div class="select-list-container col" :style="{ height: `${height}px` }" v-loading="loading">
+  <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
 
-    <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
-
-    <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
-    <div class="line">
-      <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
-        <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
-      </el-input>
+    <div class="col" v-show="!itemsSorted.length">
+      <div class="line help-text todo">{{ $t('search.noEntries') }}</div>
     </div>
 
-    <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
-      2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
-    </div>
-    <div class="line">
-      <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
-    </div>
-    <div class="line list">
-      <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems">
-        <el-checkbox v-for="item in itemsSorted" :key="item.id" :label="item.title" />
-      </el-checkbox-group>
+    <div class="col" v-show="itemsSorted.length">
+      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+
+      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
+      <div class="line">
+        <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
+          <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+        </el-input>
+      </div>
+
+      <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
+        2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
+      </div>
+      <div class="line">
+        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
+      </div>
+      <div class="line">
+        <el-input class="filter-domain" :placeholder="$t('search.filterDomains')" prefix-icon="el-icon-search" />
+      </div>
+      <div class="line list">
+        <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
+          <el-checkbox v-for="item in itemsSorted" :key="item.id" :label="item.title" />
+        </el-checkbox-group>
+      </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -49,6 +59,7 @@ export default {
       retry: 3,
       loading: false,
       showMap: false,
+      filteringDomains: false,
       iteneraryDisplayed: false,
     }
   },
@@ -84,6 +95,8 @@ export default {
 
     eventBus.$on('checked-items', () => this.sortItemsDebounced())
 
+    eventBus.$on('domains-search-complete', () => this.filteringDomains = false)
+
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
         console.log(
@@ -98,9 +111,16 @@ export default {
         )
       }
     })
+
     this.initAutoComplete()
+
     this.sortItemsDebounced = debounce(this.sortItems, 1500)
     this.sortItemsDebounced(true)
+
+    this.listenFilterDomain(true)
+  },
+  beforeDestroy() {
+    this.listenFilterDomain(false)
   },
   methods: {
     initAutoComplete() {
@@ -126,6 +146,21 @@ export default {
       autocomplete.addListener('place_changed', () => {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
+    },
+    listenFilterDomain(activate) {
+      const el = document.querySelector('.filter-domain input:not(.handled)')
+      if (!el) {
+        console.log('cannot find filter domain to add or remove listener, aborting.')
+        return
+      }
+      console.log((activate ? 'adding' : 'removing') + ' event listener on filter domain...')
+      if (activate) {
+        el.addEventListener('keyup', this.emitFilterDomain)
+        el.classList.add('handled')
+      } else {
+        el.removeEventListener('keyup', this.emitFilterDomain)
+        el.classList.remove('handled')
+      }
     },
     sortItems(noTimeout) {
       const timeout = noTimeout ? 0 : 300
@@ -193,6 +228,11 @@ export default {
         eventBus.$emit('get-navigator-position')
       }
     },
+    emitFilterDomain(event) {
+      const value = event.target.value
+      this.filteringDomains = true
+      eventBus.$emit('filter-domain', value)
+    },
     setStartingPoint(value) {
       if (!this.showMap) {
         eventBus.$emit('show-map')
@@ -237,7 +277,7 @@ export default {
 .select-list-container {
   padding: 1.5rem;
   background-color: $white;
-  & > .line {
+  & > .col > .line {
     margin-bottom: 1.5rem;
     width: 100%;
     font-weight: 600;
