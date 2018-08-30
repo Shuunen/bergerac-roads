@@ -19,6 +19,16 @@ const remoteTagsToLocal = {
   VENTEPROPRIETE: 'vente-propriete',
 }
 const remoteTags = Object.keys(remoteTagsToLocal)
+const remoteVineyardsToLocal = {
+  Bergerac: 'bergerac',
+  Duras: 'duras',
+  Monbazillac: 'monbazillac',
+  Montravel: 'montravel',
+  'Pécharmant': 'pecharmant',
+  Rosette: 'rosette',
+  Saussignac: 'saussignac',
+}
+const remoteVineyards = Object.keys(remoteVineyardsToLocal)
 
 /**
  * Convert large remote data into data that we will store in our db
@@ -39,8 +49,23 @@ function remoteDomainToLocal(remote) {
     plus: remote.PETITPLUS,
     tags: getTagsFromRemoteDomain(remote),
     title: remote.SyndicObjectName,
+    vineyards: getVineyardsFromRemoteDomain(remote),
   }
   return local
+}
+
+function getVineyardsFromRemoteDomain(domain) {
+  let vineyards = []
+  remoteVineyards.forEach(vineyard => {
+    if (domain.AOC && domain.AOC.includes(vineyard)) {
+      // console.log('vineyard "'+vineyard+'" found')
+      vineyards.push(remoteVineyardsToLocal[vineyard])
+    }
+  })
+  if (justProcessOne) {
+    console.log('found vineyards', vineyards)
+  }
+  return vineyards
 }
 
 function getTagsFromRemoteDomain(domain) {
@@ -258,7 +283,9 @@ function getRemoteDomains() {
       console.error(error)
       stopProcessing = true
     })
-    .then(() => process.exit(0))
+    .then(() => {
+      setTimeout(() => process.exit(0), 1000)
+    })
 }
 
 // start Json Server
