@@ -263,6 +263,9 @@ export default {
         text-overflow: ellipsis;
         vertical-align: top;
       }
+      .el-checkbox__input.is-checked + .el-checkbox__label {
+        color: $green-d2;
+      }
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;

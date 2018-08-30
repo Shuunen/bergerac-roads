@@ -14,6 +14,10 @@ $rose: #f6b4b4;
 $rouge: #921633;
 
 /* Lighter & Darker */
+$green-l1: lighten($green, 10);
+$green-l2: lighten($green, 20);
+$green-l3: lighten($green, 30);
+$green-l4: lighten($green, 40);
 $green-d1: darken($green, 10);
 $green-d2: darken($green, 20);
 $green-d3: darken($green, 30);

@@ -33,6 +33,7 @@
   "search": {
     "header": "My wine route",
     "subheader": "Click on the images below to filter the Domaines you are interested in",
+    "filterVineyards": "Filter by region and vineyards",
     "placeholder": "Select one or multiple tag(s)",
     "select": "Press Enter to select",
     "deselect": "Press Enter to remove",

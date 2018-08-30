@@ -33,6 +33,7 @@
   "search": {
     "header": "Ma route des vins",
     "subheader": "Cliquez sur les images ci-dessous pour filtrer les domaines qui vous intéressent",
+    "filterVineyards": "Filtrer par région et vignobles",
     "placeholder": "Sélectionnez un ou plusieurs tag(s)",
     "select": "Pressez Entrée pour sélectionner",
     "deselect": "Pressez Entrée pour supprimer",

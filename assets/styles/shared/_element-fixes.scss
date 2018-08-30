@@ -32,4 +32,21 @@ section {
       height: 100%;
     }
   }
+  .el-switch__label {
+    color: $white;
+    &.is-active {
+      color: $green-l3;
+    }
+  }
+  .el-switch__core {
+    background-color: $black-l4;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+  .el-switch.is-checked .el-switch__core {
+    background-color: $green-d1;
+    border-color: $green-d2;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: $green-l2;
+  }
 }
