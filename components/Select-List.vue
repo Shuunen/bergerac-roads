@@ -1,7 +1,7 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
 
-    <div class="col parent-height" v-show="!itemsSorted.length">
+    <div class="col parent-height" v-show="showMap && !itemsSorted.length">
       <div class="line help-text todo">{{ $t('search.noEntries') }}</div>
     </div>
 
@@ -26,7 +26,9 @@
       </div>
       <div class="line list">
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
-          <el-checkbox v-for="item in itemsSorted" :key="item.id" :label="item.title" />
+          <el-checkbox-button v-for="domain in itemsSorted" :key="domain.id" :label="domain.title">
+            <Domain :data="domain" :size="'inline'" />
+          </el-checkbox-button>
         </el-checkbox-group>
       </div>
     </div>
@@ -35,12 +37,16 @@
 </template>
 
 <script>
+import Domain from './Domain.vue'
 import { gmapApi } from 'vue2-google-maps'
 import { eventBus } from '../store/index'
 import orderBy from 'lodash/orderBy'
 import debounce from 'lodash/debounce'
 
 export default {
+  components: {
+    Domain,
+  },
   props: {
     height: {
       type: Number,
@@ -95,7 +101,10 @@ export default {
 
     eventBus.$on('checked-items', () => this.sortItemsDebounced())
 
-    eventBus.$on('domains-search-complete', () => this.filteringDomains = false)
+    eventBus.$on(
+      'domains-search-complete',
+      () => (this.filteringDomains = false),
+    )
 
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
@@ -150,10 +159,15 @@ export default {
     listenFilterDomain(activate) {
       const el = document.querySelector('.filter-domain input:not(.handled)')
       if (!el) {
-        console.log('cannot find filter domain to add or remove listener, aborting.')
+        console.log(
+          'cannot find filter domain to add or remove listener, aborting.',
+        )
         return
       }
-      console.log((activate ? 'adding' : 'removing') + ' event listener on filter domain...')
+      console.log(
+        (activate ? 'adding' : 'removing') +
+          ' event listener on filter domain...',
+      )
       if (activate) {
         el.addEventListener('keyup', this.emitFilterDomain)
         el.classList.add('handled')
@@ -183,11 +197,11 @@ export default {
       }, timeout)
     },
     getCityByCoordinates(coords) {
-      console.log(
+      /* console.log(
         'getCityByCoordinates : looking for city at coords "' +
           JSON.stringify(coords) +
           '"',
-      )
+      ) */
       const geocoder = new this.google.maps.Geocoder()
       const location = { lat: coords.latitude, lng: coords.longitude }
       geocoder.geocode({ location }, (results, status) => {
@@ -295,6 +309,30 @@ export default {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    .el-checkbox-button {
+      &,
+      .el-checkbox-button__inner {
+        display: block;
+      }
+      .el-checkbox-button__inner {
+        padding: 0;
+        border-radius: 6px;
+        border: 2px solid lightgray;
+        overflow: hidden;
+        margin: 0 4px 8px 0;
+        &:hover {
+          border: 2px solid $green-l1;
+        }
+      }
+      &.is-checked {
+        .el-checkbox-button__inner {
+          border: 2px solid $green-d2;
+        }
+        .number {
+          background-color: $green-d2;
+        }
+      }
+    }
     .el-checkbox {
       display: block;
       .el-checkbox__label {

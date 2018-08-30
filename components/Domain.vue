@@ -1,21 +1,21 @@
 <template>
-  <el-container direction="vertical" class="domain" :class="size">
-    <nuxt-link :to="$i18n.path(link)">
+  <el-container :direction="size === 'inline' ? 'horizontal' : 'vertical'" class="domain" :class="size">
+    <nuxt-link :to="size === 'inline' ? '#' : $i18n.path(link)">
       <el-card class="domain-card take-height">
-        <el-container :direction="size === 'small' ? 'horizontal' : 'vertical'">
+        <el-container :direction="['small', 'inline'].includes(size) ? 'horizontal' : 'vertical'">
           <div class="image" v-lazy:background-image="image">
             <div class="number line" v-if="number">
               {{ number }}
               <div class="icon pin" />
             </div>
-            <div class="label" v-if="label" :class="['label-' + label]">
+            <div class="label" v-if="label && size !== 'inline'" :class="['label-' + label]">
               <div class="icon" />
             </div>
           </div>
           <div class="infos col">
             <div class="line">
               <span class="title">{{ data.title }}</span>
-              <span class="glasses line">
+              <span class="glasses line" v-if="size !== 'inline'">
                 <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
               </span>
             </div>
@@ -34,9 +34,17 @@ import truncate from 'lodash/truncate'
 const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
 
 const descriptionSize = {
+  inline: 140,
   small: 140,
   medium: 150,
   large: 230,
+}
+
+const imageSize = {
+  inline:'60x60',
+  small: '587x260',
+  medium: '587x260',
+  large: '658x260',
 }
 
 export default {
@@ -64,6 +72,7 @@ export default {
         path = this.data.thumbnail
       } else if (this.data.photos && this.data.photos.length) {
         path = process.env.cdnBase + this.data.photos[0]
+        path = path.replace('cdn/none', 'crop/' + imageSize[this.size])
       }
       return path
     },
@@ -123,7 +132,9 @@ export default {
         minute: "numeric"
       */
       // see : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/DateTimeFormat
-      const added = new Intl.DateTimeFormat('fr-FR', options).format(new Date(this.data.updated))
+      const added = new Intl.DateTimeFormat('fr-FR', options).format(
+        new Date(this.data.updated),
+      )
       return added
     },
   },
@@ -244,6 +255,32 @@ export default {
     .image {
       height: 220px;
       min-width: 350px;
+    }
+  }
+  &.inline {
+    & > a {
+      pointer-events: none;
+      width: 100%;
+    }
+    .el-card {
+      border: 0;
+    }
+    .image {
+      height: 60px;
+      width: 60px;
+      & + .infos {
+        width: calc(100% - 60px);
+      }
+    }
+    .number {
+      border-radius: 0;
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 19px;
     }
   }
   @media only screen and (min-width: 768px) {

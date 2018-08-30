@@ -90,10 +90,8 @@ export default {
     augment(domains) {
       domains = domains.map(domain => {
         domain.infoWindowOpen = false
-        if (domain.number) {
-          domain.title += ' (' + domain.number + ')'
-        }
         domain.title = trimStart(domain.title, 'Les ')
+        domain.titleWithNumber = domain.title + ' (' + domain.number + ')'
         return domain
       })
       return domains
