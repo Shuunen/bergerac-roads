@@ -21,7 +21,7 @@
 
         <el-container direction="vertical" v-if="!data.message">
           <p>{{ data.description }} </p>
-        
+
         </el-container>
         <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
         <div class="col">
@@ -61,10 +61,12 @@ export default {
         return path
       }
       if (this.data.photos && this.data.photos.length) {
-        path = this.data.photos[0]
+        path = process.env.cdnBase + this.data.photos[0]
       } else {
         console.warn('image not available, using default one...')
       }
+      // path =  path
+      path = path.replace('cdn/none', 'height/' + 400)
       return path
     },
     added: function() {
