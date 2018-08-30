@@ -95,7 +95,10 @@
         "vin-liquoreux"
       ],
       "title": "Château Corbiac Pécharmant",
-      "updated": 1530814347590
+      "vineyards": [
+        "pecharmant"
+      ],
+      "updated": 1535617419937
     },
     {
       "active": true,
@@ -129,7 +132,11 @@
         "vente-propriete"
       ],
       "title": "Château de la Jaubertie",
-      "updated": 1530814347970
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420255
     },
     {
       "active": true,
@@ -161,7 +168,11 @@
         "vin-liquoreux"
       ],
       "title": "Cave Coopérative de Monbazillac",
-      "updated": 1530814347660
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420004
     },
     {
       "active": true,
@@ -187,7 +198,13 @@
         "vente-propriete"
       ],
       "title": "Alliance Aquitaine - Site de Bergerac",
-      "updated": 1530814347748
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "montravel",
+        "pecharmant"
+      ],
+      "updated": 1535617420067
     },
     {
       "active": true,
@@ -217,7 +234,12 @@
         "vin-moelleux"
       ],
       "title": "Château la Renaudie",
-      "updated": 1530814347904
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617420191
     },
     {
       "id": "DEGAQU024FS00007",
@@ -251,7 +273,13 @@
         "vente-propriete"
       ],
       "title": "Château la Vieille Bergerie",
-      "updated": 1530814347841
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant",
+        "rosette"
+      ],
+      "updated": 1535617420128
     },
     {
       "active": true,
@@ -276,7 +304,12 @@
         "vente-propriete"
       ],
       "title": "Domaine de l'Ancienne Cure",
-      "updated": 1530814348040
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617420320
     },
     {
       "active": true,
@@ -310,7 +343,12 @@
         "vin-moelleux"
       ],
       "title": "Domaine du Haut Pécharmant",
-      "updated": 1530814347493
+      "vineyards": [
+        "bergerac",
+        "pecharmant",
+        "rosette"
+      ],
+      "updated": 1535617419858
     },
     {
       "active": true,
@@ -337,7 +375,11 @@
       "plus": "Un parcours fléché dans les vignes pour petits et grands avec des jeux et des questions. Une véritable chasse aux trésors pour les enfants ! ",
       "tags": [],
       "title": "Château du Haut Pezaud",
-      "updated": 1530814348107
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420385
     },
     {
       "active": true,
@@ -368,7 +410,11 @@
         "vente-propriete"
       ],
       "title": "Château Haut Bernasse",
-      "updated": 1530814348175
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420452
     },
     {
       "active": true,
@@ -396,7 +442,15 @@
         "accepte-animaux"
       ],
       "title": "Maison des Vins de Bergerac",
-      "updated": 1530814348240
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "montravel",
+        "pecharmant",
+        "rosette",
+        "saussignac"
+      ],
+      "updated": 1535617420515
     },
     {
       "active": true,
@@ -422,7 +476,11 @@
         "vin-liquoreux"
       ],
       "title": "Domaine du Bois de Pourquié",
-      "updated": 1530814348303
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420577
     },
     {
       "active": true,
@@ -454,11 +512,15 @@
         "vin-liquoreux"
       ],
       "title": "Domaine du Haut Montlong",
-      "updated": 1535021343276
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420642
     },
     {
       "active": true,
-      "description": "Pousser la porte du Domaine du Siorac : c’est rentrer dans l’univers de la vigne et du vin en toute simplicité ; c’est faire une vraie rencontre, partager un moment authentique et chaleureux.\nAvec grand plaisir, nous vous montrerons nos vignes et paysages environnants, ils sont les fidèles témoins de notre histoire.\nSans être un professionnel de la dégustation, vous pourrez découvrir, autour d’un verre, nos productions et les multiples facettes de notre métier.\nProfitez de nos visites guidées du 10 juillet au 30 août : le mardi matin à 10h et jeudi après-midi à 14h30 ( Sur rendez-vous les autres jours/saisons).\nPaniers pique-nique sur réservation le midi (10€ par personne)\nBalade en Gyropode les lundi sur RDV (juillet et Août).\nA partir de juin 2018, Chasse au trésor connecté sur le domaine (Terra Aventura). \nAccueil camping-cars",
+      "description": "Pousser la porte du Domaine du Siorac : c’est rentrer dans l’univers de la vigne et du vin en toute simplicité ; c’est faire une vraie rencontre, partager un moment authentique et chaleureux.\nAvec grand plaisir, nous vous montrerons nos vignes et paysages environnants, ils sont les fidèles témoins de notre histoire.\nSans être un professionnel de la dégustation, vous pourrez découvrir, autour d’un verre, nos productions et les multiples facettes de notre métier.\nProfitez de nos visites guidées du 10 juillet au 30 août : le mardi matin à 10h et jeudi après-midi à 14h30 ( Sur rendez-vous les autres jours/saisons).\nPaniers pique-nique sur réservation le midi (10€ par personne)\nBalade en Gyropode ou trottinette cross électriques, du lundi au samedi sur RDV (juillet, août et septembre).\nChasse au trésor connecté sur le domaine (Terra Aventura). \nAccueil camping-cars",
       "id": "DEGAQU024FS0000J",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -476,6 +538,7 @@
         "http://cdt24.media.tourinsoft.eu/upload/Siorac-vignes.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/domaine-siorac-vignoble.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Accueil-et-Vente-au-Domaine.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/les-randos-de-nico.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Degustation-et-Pique-Nique-Vignoble.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Soiree-a-la-Ferme.jpeg",
         "http://cdt24.media.tourinsoft.eu/upload/animations-siorac-Visite-Vignoble.jpeg",
@@ -496,7 +559,11 @@
         "vin-moelleux"
       ],
       "title": "Domaine du Siorac",
-      "updated": 1535021343354
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420705
     },
     {
       "active": true,
@@ -530,7 +597,11 @@
         "vin-liquoreux"
       ],
       "title": "Domaine de Grange Neuve",
-      "updated": 1535021343420
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420771
     },
     {
       "active": true,
@@ -564,7 +635,11 @@
         "vin-blanc"
       ],
       "title": "Domaine de Coutancie",
-      "updated": 1530814348572
+      "vineyards": [
+        "bergerac",
+        "rosette"
+      ],
+      "updated": 1535617420835
     },
     {
       "active": true,
@@ -596,7 +671,11 @@
         "vin-liquoreux"
       ],
       "title": "Vignoble des Verdots",
-      "updated": 1530814348640
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617420896
     },
     {
       "active": true,
@@ -626,7 +705,11 @@
         "vin-moelleux"
       ],
       "title": "Château Moulin Caresse",
-      "updated": 1530814348708
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617420958
     },
     {
       "active": true,
@@ -669,7 +752,12 @@
         "vin-moelleux"
       ],
       "title": "Château Puy Servain",
-      "updated": 1530814348777
+      "vineyards": [
+        "bergerac",
+        "montravel",
+        "pecharmant"
+      ],
+      "updated": 1535617421023
     },
     {
       "active": true,
@@ -693,7 +781,10 @@
         "vin-rouge"
       ],
       "title": "Château Terre Vieille",
-      "updated": 1530814348843
+      "vineyards": [
+        "pecharmant"
+      ],
+      "updated": 1535617421086
     },
     {
       "active": true,
@@ -731,7 +822,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Ladesvignes",
-      "updated": 1530814348907
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617421150
     },
     {
       "active": true,
@@ -767,7 +862,11 @@
         "vin-moelleux"
       ],
       "title": "Château Laulerie / Domaine du Gouyat",
-      "updated": 1535021343823
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617421213
     },
     {
       "active": true,
@@ -794,7 +893,10 @@
         "vin-blanc"
       ],
       "title": "Clos le Joncal",
-      "updated": 1530814349059
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617421276
     },
     {
       "active": true,
@@ -820,7 +922,11 @@
         "accepte-animaux"
       ],
       "title": "Château le Raz",
-      "updated": 1535021343943
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617421338
     },
     {
       "active": true,
@@ -849,7 +955,11 @@
         "vente-propriete"
       ],
       "title": "Château le Tap",
-      "updated": 1530814349198
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617421403
     },
     {
       "active": true,
@@ -877,7 +987,11 @@
         "vin-rouge"
       ],
       "title": "Château de Tiregand",
-      "updated": 1530814349280
+      "vineyards": [
+        "bergerac",
+        "pecharmant"
+      ],
+      "updated": 1535617421471
     },
     {
       "active": true,
@@ -903,7 +1017,11 @@
         "vente-propriete"
       ],
       "title": "Château Combrillac",
-      "updated": 1530814349345
+      "vineyards": [
+        "bergerac",
+        "rosette"
+      ],
+      "updated": 1535617421539
     },
     {
       "active": true,
@@ -927,7 +1045,11 @@
         "vente-propriete"
       ],
       "title": "Château Court les Mûts",
-      "updated": 1530814349421
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617421602
     },
     {
       "active": true,
@@ -953,7 +1075,11 @@
         "vente-propriete"
       ],
       "title": "Château le Chabrier",
-      "updated": 1530814349486
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617421669
     },
     {
       "active": true,
@@ -986,7 +1112,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Feely",
-      "updated": 1530814349552
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617421736
     },
     {
       "active": true,
@@ -1016,7 +1146,11 @@
         "vin-blanc"
       ],
       "title": "Domaine Moulin Garreau",
-      "updated": 1530814349618
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617421799
     },
     {
       "active": true,
@@ -1047,7 +1181,11 @@
         "vente-propriete"
       ],
       "title": "Domaine du Boyer",
-      "updated": 1530814349685
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617421864
     },
     {
       "active": true,
@@ -1079,7 +1217,11 @@
         "vin-liquoreux"
       ],
       "title": "Château La Robertie",
-      "updated": 1535021344467
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617421930
     },
     {
       "active": true,
@@ -1109,7 +1251,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Bélingard",
-      "updated": 1530814349821
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617421993
     },
     {
       "active": true,
@@ -1144,7 +1290,12 @@
         "vin-liquoreux"
       ],
       "title": "Château Barouillet",
-      "updated": 1530814349889
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617422055
     },
     {
       "active": true,
@@ -1173,7 +1324,11 @@
         "vin-moelleux"
       ],
       "title": "Château Montplaisir",
-      "updated": 1530814349958
+      "vineyards": [
+        "bergerac",
+        "rosette"
+      ],
+      "updated": 1535617422119
     },
     {
       "active": true,
@@ -1204,7 +1359,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Kalian",
-      "updated": 1530814350028
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617422185
     },
     {
       "active": true,
@@ -1225,7 +1384,12 @@
         "vente-propriete"
       ],
       "title": "Château du Rooy",
-      "updated": 1530814350093
+      "vineyards": [
+        "bergerac",
+        "pecharmant",
+        "rosette"
+      ],
+      "updated": 1535617422250
     },
     {
       "active": true,
@@ -1250,7 +1414,10 @@
         "vente-propriete"
       ],
       "title": "Château Champarel",
-      "updated": 1530814350160
+      "vineyards": [
+        "pecharmant"
+      ],
+      "updated": 1535617422316
     },
     {
       "active": true,
@@ -1277,7 +1444,12 @@
         "vente-propriete"
       ],
       "title": "Domaine du Grand Jaure",
-      "updated": 1530814350229
+      "vineyards": [
+        "bergerac",
+        "pecharmant",
+        "rosette"
+      ],
+      "updated": 1535617422380
     },
     {
       "active": true,
@@ -1306,7 +1478,12 @@
         "vente-propriete"
       ],
       "title": "Domaine des Costes",
-      "updated": 1530814350308
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617422443
     },
     {
       "active": true,
@@ -1323,7 +1500,10 @@
       "plus": "Le pique-nique au domaine le week-end de Pentecôte et en été.",
       "tags": [],
       "title": "Clos Les Côtes",
-      "updated": 1530814350379
+      "vineyards": [
+        "pecharmant"
+      ],
+      "updated": 1535617422507
     },
     {
       "active": true,
@@ -1348,7 +1528,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Beauportail",
-      "updated": 1530814350444
+      "vineyards": [
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617422571
     },
     {
       "active": true,
@@ -1372,7 +1556,11 @@
         "vente-propriete"
       ],
       "title": "Château Les Farcies du Pech",
-      "updated": 1530814350512
+      "vineyards": [
+        "bergerac",
+        "pecharmant"
+      ],
+      "updated": 1535617422638
     },
     {
       "active": true,
@@ -1395,7 +1583,11 @@
         "vente-propriete"
       ],
       "title": "Château La Tilleraie",
-      "updated": 1535021345158
+      "vineyards": [
+        "bergerac",
+        "pecharmant"
+      ],
+      "updated": 1535617422702
     },
     {
       "active": true,
@@ -1420,7 +1612,12 @@
         "vente-propriete"
       ],
       "title": "Château Poulvère",
-      "updated": 1530814350645
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617422765
     },
     {
       "active": true,
@@ -1439,7 +1636,12 @@
         "vente-propriete"
       ],
       "title": "Vignobles Chabrol - Château Malfourat",
-      "updated": 1530814350711
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617422827
     },
     {
       "active": true,
@@ -1469,7 +1671,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Vari - Maison Vari",
-      "updated": 1530814350783
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617422893
     },
     {
       "active": true,
@@ -1504,7 +1710,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Grande Maison",
-      "updated": 1530814350847
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617422956
     },
     {
       "active": true,
@@ -1538,7 +1748,12 @@
         "vin-liquoreux"
       ],
       "title": "Les Vignerons de Sigoulès",
-      "updated": 1530814350912
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "saussignac"
+      ],
+      "updated": 1535617423021
     },
     {
       "active": true,
@@ -1570,7 +1785,11 @@
         "vente-propriete"
       ],
       "title": "Domaine de Grimardy",
-      "updated": 1535021345509
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617423087
     },
     {
       "active": true,
@@ -1600,7 +1819,11 @@
         "vin-liquoreux"
       ],
       "title": "Château La Maurigne",
-      "updated": 1530814351041
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617423151
     },
     {
       "active": true,
@@ -1630,7 +1853,11 @@
         "vin-liquoreux"
       ],
       "title": "Château la Rayre",
-      "updated": 1530814351109
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423213
     },
     {
       "active": true,
@@ -1659,7 +1886,11 @@
         "vente-propriete"
       ],
       "title": "Domaine de Montlong",
-      "updated": 1530814351175
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423277
     },
     {
       "active": true,
@@ -1689,7 +1920,11 @@
         "vente-propriete"
       ],
       "title": "Château de Peyrel",
-      "updated": 1530814351242
+      "vineyards": [
+        "bergerac",
+        "rosette"
+      ],
+      "updated": 1535617423341
     },
     {
       "active": true,
@@ -1719,7 +1954,11 @@
         "vin-liquoreux"
       ],
       "title": "Domaine de Combet",
-      "updated": 1530814351311
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423405
     },
     {
       "active": true,
@@ -1743,7 +1982,11 @@
         "vente-propriete"
       ],
       "title": "Château Richard",
-      "updated": 1530814351376
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617423477
     },
     {
       "active": true,
@@ -1771,7 +2014,11 @@
         "vin-liquoreux"
       ],
       "title": "Château de Fayolle",
-      "updated": 1530814351442
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617423540
     },
     {
       "active": true,
@@ -1803,7 +2050,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Cluzeau",
-      "updated": 1530814351508
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423602
     },
     {
       "active": true,
@@ -1828,7 +2079,11 @@
         "accepte-animaux"
       ],
       "title": "Château La Brie",
-      "updated": 1530814351577
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423665
     },
     {
       "active": true,
@@ -1845,7 +2100,11 @@
         "accepte-animaux"
       ],
       "title": "Château de la Mallevieille",
-      "updated": 1530814351643
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617423728
     },
     {
       "active": true,
@@ -1874,7 +2133,11 @@
         "vin-moelleux"
       ],
       "title": "Domaine de Perreau",
-      "updated": 1535021346149
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617423793
     },
     {
       "active": true,
@@ -1906,7 +2169,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Le Payral",
-      "updated": 1530814351774
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617423854
     },
     {
       "active": true,
@@ -1932,7 +2199,11 @@
         "vente-propriete"
       ],
       "title": "Vignobles Castaing",
-      "updated": 1530814351843
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423915
     },
     {
       "active": true,
@@ -1958,7 +2229,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Le Fagé",
-      "updated": 1530814351908
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617423978
     },
     {
       "active": true,
@@ -1983,7 +2258,11 @@
         "accepte-animaux"
       ],
       "title": "Château Les Brandeaux",
-      "updated": 1530814351978
+      "vineyards": [
+        "bergerac",
+        "duras"
+      ],
+      "updated": 1535617424043
     },
     {
       "active": true,
@@ -2023,7 +2302,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Les Gérales",
-      "updated": 1530814352044
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617424106
     },
     {
       "active": true,
@@ -2041,7 +2324,11 @@
       "plus": "\" Le vin égaye la vie \", telle est la devise du domaine.",
       "tags": [],
       "title": "Domaine du Lac",
-      "updated": 1530814352109
+      "vineyards": [
+        "bergerac",
+        "rosette"
+      ],
+      "updated": 1535617424171
     },
     {
       "active": true,
@@ -2066,7 +2353,12 @@
         "vente-propriete"
       ],
       "title": "Vignobles Lajonie",
-      "updated": 1530814352176
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617424234
     },
     {
       "active": true,
@@ -2090,7 +2382,11 @@
         "vente-propriete"
       ],
       "title": "Château Les Grimard",
-      "updated": 1530814352240
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617424295
     },
     {
       "active": true,
@@ -2118,7 +2414,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Montdoyen",
-      "updated": 1530814352308
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617424359
     },
     {
       "active": true,
@@ -2148,7 +2448,10 @@
         "vin-moelleux"
       ],
       "title": "Château de Panisseau",
-      "updated": 1530814352379
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617424426
     },
     {
       "active": true,
@@ -2185,7 +2488,10 @@
         "vin-blanc"
       ],
       "title": "Château des Tertres du Plantou",
-      "updated": 1530814352443
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617424489
     },
     {
       "active": true,
@@ -2211,7 +2517,11 @@
         "vente-propriete"
       ],
       "title": "Château Les Hauts de Caillevel",
-      "updated": 1530814352507
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617424551
     },
     {
       "active": true,
@@ -2240,7 +2550,11 @@
         "vin-moelleux"
       ],
       "title": "Château du Bloy",
-      "updated": 1535021346892
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617424614
     },
     {
       "active": true,
@@ -2266,7 +2580,11 @@
         "vin-liquoreux"
       ],
       "title": "Domaine Le Castellat",
-      "updated": 1530814352640
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617424678
     },
     {
       "active": true,
@@ -2290,7 +2608,11 @@
         "accepte-animaux"
       ],
       "title": "Château Lestevenie",
-      "updated": 1530814352707
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617424741
     },
     {
       "active": true,
@@ -2318,7 +2640,12 @@
         "vin-liquoreux"
       ],
       "title": "Château Larchère",
-      "updated": 1530814352775
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "saussignac"
+      ],
+      "updated": 1535617424804
     },
     {
       "active": true,
@@ -2351,7 +2678,10 @@
         "vin-moelleux"
       ],
       "title": "Moulins de Boisse",
-      "updated": 1530814352840
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617424871
     },
     {
       "active": true,
@@ -2384,7 +2714,10 @@
         "vin-liquoreux"
       ],
       "title": "Château Haut Lamouthe",
-      "updated": 1530814352908
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617424935
     },
     {
       "active": true,
@@ -2409,7 +2742,11 @@
         "accepte-animaux"
       ],
       "title": "Château Tuquet Monceau",
-      "updated": 1535021347240
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617424996
     },
     {
       "active": true,
@@ -2435,7 +2772,11 @@
         "vente-propriete"
       ],
       "title": "Château Caillavel",
-      "updated": 1530814353044
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617425057
     },
     {
       "active": true,
@@ -2464,7 +2805,16 @@
         "vin-liquoreux"
       ],
       "title": "Clos l'Envège - SAS Julien de Savignac",
-      "updated": 1530814353107
+      "vineyards": [
+        "bergerac",
+        "duras",
+        "monbazillac",
+        "montravel",
+        "pecharmant",
+        "rosette",
+        "saussignac"
+      ],
+      "updated": 1535617425121
     },
     {
       "active": true,
@@ -2490,7 +2840,10 @@
         "vin-blanc"
       ],
       "title": "Domaine des Trois Saules",
-      "updated": 1530814353176
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425184
     },
     {
       "active": true,
@@ -2507,7 +2860,10 @@
         "agriculture-raisonnee"
       ],
       "title": "Château Colin-Madrigal",
-      "updated": 1530814353244
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425248
     },
     {
       "active": true,
@@ -2532,7 +2888,10 @@
         "agriculture-bio"
       ],
       "title": "Château Tour des Gendres",
-      "updated": 1530814353306
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425312
     },
     {
       "active": true,
@@ -2556,7 +2915,11 @@
         "vente-propriete"
       ],
       "title": "Château Pique-Sègue",
-      "updated": 1530814353373
+      "vineyards": [
+        "bergerac",
+        "montravel"
+      ],
+      "updated": 1535617425376
     },
     {
       "active": true,
@@ -2573,7 +2936,11 @@
         "accepte-animaux"
       ],
       "title": "Château de Planques",
-      "updated": 1530814353438
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617425438
     },
     {
       "active": true,
@@ -2599,7 +2966,11 @@
         "vin-liquoreux"
       ],
       "title": "Château de Monbazillac",
-      "updated": 1530814353506
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617425500
     },
     {
       "active": true,
@@ -2627,7 +2998,11 @@
         "accepte-animaux"
       ],
       "title": "Domaine de Pécoula",
-      "updated": 1530814353575
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617425564
     },
     {
       "active": true,
@@ -2651,7 +3026,11 @@
         "accepte-animaux"
       ],
       "title": "Château Grands Quintins",
-      "updated": 1535021347811
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617425629
     },
     {
       "active": true,
@@ -2676,7 +3055,10 @@
         "accepte-animaux"
       ],
       "title": "Château des Masseries",
-      "updated": 1530814353705
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425695
     },
     {
       "active": true,
@@ -2696,7 +3078,11 @@
       "plus": null,
       "tags": [],
       "title": "Vignobles Beigner / Château Pecany",
-      "updated": 1530814353774
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617425757
     },
     {
       "active": true,
@@ -2718,7 +3104,10 @@
         "vente-propriete"
       ],
       "title": "Château La Plante",
-      "updated": 1530814353840
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425821
     },
     {
       "active": true,
@@ -2745,7 +3134,10 @@
         "agriculture-raisonnee"
       ],
       "title": "Maison du Tourisme et du Vin de Monbazillac",
-      "updated": 1530814353912
+      "vineyards": [
+        "monbazillac"
+      ],
+      "updated": 1535617425882
     },
     {
       "active": true,
@@ -2774,7 +3166,10 @@
         "vin-moelleux"
       ],
       "title": "Le Clos du Breil",
-      "updated": 1530814353978
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617425947
     },
     {
       "active": true,
@@ -2802,7 +3197,10 @@
         "accepte-animaux"
       ],
       "title": "Château de la Reynaudie",
-      "updated": 1535021348160
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617426011
     },
     {
       "active": true,
@@ -2826,7 +3224,10 @@
         "agriculture-raisonnee"
       ],
       "title": "Château Haut-Fongrive",
-      "updated": 1530814354107
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617426075
     },
     {
       "active": true,
@@ -2855,7 +3256,10 @@
         "vin-blanc"
       ],
       "title": "Domaine du Bout du Monde",
-      "updated": 1530814354172
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617426137
     },
     {
       "active": true,
@@ -2887,7 +3291,11 @@
         "vin-liquoreux"
       ],
       "title": "Domaine de la Linière",
-      "updated": 1530814354240
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617426201
     },
     {
       "active": true,
@@ -2913,7 +3321,10 @@
         "vin-moelleux"
       ],
       "title": "Château Thénac",
-      "updated": 1530814354309
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617426263
     },
     {
       "active": true,
@@ -2939,7 +3350,10 @@
         "vin-moelleux"
       ],
       "title": "Château Michel de Montaigne",
-      "updated": 1530814354376
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617426326
     },
     {
       "active": true,
@@ -2965,7 +3379,11 @@
         "accepte-animaux"
       ],
       "title": "Château Monestier La Tour",
-      "updated": 1530814354445
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617426391
     },
     {
       "active": true,
@@ -2987,7 +3405,11 @@
         "agriculture-biodynamique"
       ],
       "title": "Château Les Miaudoux",
-      "updated": 1530814354512
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617426458
     },
     {
       "active": true,
@@ -3015,7 +3437,11 @@
         "vin-liquoreux"
       ],
       "title": "Château Le Terme Blanc",
-      "updated": 1530814354576
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "updated": 1535617426520
     },
     {
       "active": true,
@@ -3038,7 +3464,13 @@
         "vin-liquoreux"
       ],
       "title": "Domaine Le Martinat",
-      "updated": 1530814354642
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "montravel",
+        "pecharmant"
+      ],
+      "updated": 1535617426580
     },
     {
       "active": true,
@@ -3062,7 +3494,11 @@
         "accepte-animaux"
       ],
       "title": "Vignobles Serge Gazziola",
-      "updated": 1535021348729
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617426643
     },
     {
       "active": true,
@@ -3076,7 +3512,8 @@
       "plus": null,
       "tags": [],
       "title": "Château de Gurson",
-      "updated": 1530814354776
+      "vineyards": [],
+      "updated": 1535617426707
     },
     {
       "active": true,
@@ -3090,7 +3527,8 @@
       "plus": null,
       "tags": [],
       "title": "Château de Puypezat-Rosette",
-      "updated": 1530814354838
+      "vineyards": [],
+      "updated": 1535617426769
     },
     {
       "active": true,
@@ -3112,7 +3550,8 @@
       "plus": null,
       "tags": [],
       "title": "Domaine du Grand Boisse",
-      "updated": 1535021348902
+      "vineyards": [],
+      "updated": 1535617426835
     },
     {
       "active": true,
@@ -3126,7 +3565,8 @@
       "plus": null,
       "tags": [],
       "title": "Château Le Chrisly / Clos la Selmonie",
-      "updated": 1530814354998
+      "vineyards": [],
+      "updated": 1535617426897
     },
     {
       "active": true,
@@ -3149,7 +3589,12 @@
         "vin-liquoreux"
       ],
       "title": "Château Thenoux",
-      "updated": 1530814355069
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "updated": 1535617426959
     },
     {
       "active": true,
@@ -3169,7 +3614,8 @@
       "plus": null,
       "tags": [],
       "title": "Château Brunet-Charpentière",
-      "updated": 1535021349084
+      "vineyards": [],
+      "updated": 1535617427024
     },
     {
       "active": true,
@@ -3187,7 +3633,11 @@
         "vin-liquoreux"
       ],
       "title": "Château des Ganfards",
-      "updated": 1530814355210
+      "vineyards": [
+        "bergerac",
+        "saussignac"
+      ],
+      "updated": 1535617427089
     },
     {
       "active": true,
@@ -3226,7 +3676,10 @@
         "vin-moelleux"
       ],
       "title": "Clos du Pech Bessou",
-      "updated": 1530814355274
+      "vineyards": [
+        "bergerac"
+      ],
+      "updated": 1535617427153
     }
   ]
 }
