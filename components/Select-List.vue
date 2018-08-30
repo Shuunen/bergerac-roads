@@ -1,11 +1,7 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
 
-    <div class="col parent-height" v-show="showMap && !itemsSorted.length">
-      <div class="line help-text todo">{{ $t('search.noEntries') }}</div>
-    </div>
-
-    <div class="col parent-height" v-show="itemsSorted.length">
+    <div class="col start parent-height">
       <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
 
       <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
@@ -22,15 +18,19 @@
         <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
       </div>
       <div class="line">
-        <el-input class="filter-domain" :placeholder="$t('search.filterDomains')" prefix-icon="el-icon-search" />
+        <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
+        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">{{ $t('search.filterDomains') }}</el-button>
       </div>
-      <div class="line list">
+      <div class="line list" v-show="itemsSorted.length">
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
           <el-checkbox-button v-for="domain in itemsSorted" :key="domain.id" :label="domain.title">
             <Domain :data="domain" :size="'inline'" />
           </el-checkbox-button>
         </el-checkbox-group>
       </div>
+
+      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
+
     </div>
   </div>
 
@@ -63,8 +63,9 @@ export default {
       itemsSorted: [],
       startingPoint: '',
       retry: 3,
-      loading: false,
+      loading: true,
       showMap: false,
+      filterDomain: '',
       filteringDomains: false,
       iteneraryDisplayed: false,
     }
@@ -126,10 +127,9 @@ export default {
     this.sortItemsDebounced = debounce(this.sortItems, 1500)
     this.sortItemsDebounced(true)
 
-    this.listenFilterDomain(true)
-  },
-  beforeDestroy() {
-    this.listenFilterDomain(false)
+    this.emitFilterDomainDebounced = debounce(this.emitFilterDomain, 500)
+
+    // this.listenFilterDomain(true)
   },
   methods: {
     initAutoComplete() {
@@ -156,6 +156,7 @@ export default {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
     },
+    /*
     listenFilterDomain(activate) {
       const el = document.querySelector('.filter-domain input:not(.handled)')
       if (!el) {
@@ -176,6 +177,12 @@ export default {
         el.classList.remove('handled')
       }
     },
+    scrollToNoEntries() {
+      document.querySelector('.no-entries').scrollIntoView({
+        behavior: 'smooth',
+      })
+    },
+    */
     sortItems(noTimeout) {
       const timeout = noTimeout ? 0 : 300
       if (timeout) {
@@ -191,9 +198,9 @@ export default {
           ['selected', 'title'],
           ['desc', 'asc'],
         )
-        if (timeout) {
-          this.loading = false
-        }
+        // if (timeout) {
+        this.loading = false
+        // }
       }, timeout)
     },
     getCityByCoordinates(coords) {
@@ -242,10 +249,12 @@ export default {
         eventBus.$emit('get-navigator-position')
       }
     },
-    emitFilterDomain(event) {
-      const value = event.target.value
+    doFilterDomains() {
+      this.emitFilterDomainDebounced()
+    },
+    emitFilterDomain() {
       this.filteringDomains = true
-      eventBus.$emit('filter-domain', value)
+      eventBus.$emit('filter-domain', this.filterDomain)
     },
     setStartingPoint(value) {
       if (!this.showMap) {
@@ -358,6 +367,10 @@ export default {
   }
   .el-input-group__append {
     flex-shrink: 0;
+  }
+  .filter-domain {
+    flex: 1;
+    margin-right: 10px;
   }
 }
 </style>
