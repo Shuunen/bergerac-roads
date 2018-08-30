@@ -13,6 +13,21 @@
         </el-col>
       </el-row>
 
+      <el-row class="search-filters">
+        <el-col>
+          <el-switch v-model="showVineyardFilter" :active-text="$t('search.filterVineyards')" @change="onFiltersChange()" />
+        </el-col>
+        <transition name="fade">
+          <el-col v-show="showVineyardFilter">
+            <el-checkbox-group class="vineyards-checkboxes" v-model="checkedVineyards" size="large" @change="onFiltersChange()">
+              <el-checkbox v-for="(vineyard, index) in vineyards" :key="index" :label="vineyard.name" checked>
+                {{ $t(`vineyards.${vineyard.name}.title`) }}
+              </el-checkbox>
+            </el-checkbox-group>
+          </el-col>
+        </transition>
+      </el-row>
+
       <lazy-component @show="doShowMap">
         <el-row class="map-container" v-loading="loading">
           <el-col :span="8" :sm="10" :xs="24">
@@ -48,12 +63,18 @@ export default {
       filters: [],
       checkedFilters: {},
       domains: [],
+      vineyards: [],
       searchValue: [],
       loading: false,
       showMap: false,
+      showVineyardFilter: false,
+      checkedVineyards: [],
+      searchDebounced: null,
     }
   },
   mounted() {
+    this.$db.getVineyards().then(this.setVineyards)
+
     this.$db.getDomains().then(this.setDomains)
 
     this.$db.getTags().then(this.setFilters)
@@ -63,7 +84,7 @@ export default {
     this.searchDebounced = debounce(this.search, 1500)
   },
   methods: {
-    addInfoWindowState(domains) {
+    augment(domains) {
       domains = domains.map(domain => {
         domain.infoWindowOpen = false
         if (domain.number) {
@@ -72,7 +93,25 @@ export default {
         domain.title = trimStart(domain.title, 'Les ')
         return domain
       })
+      return domains
+    },
+    sort(domains) {
       return orderBy(domains, ['title'], ['asc'])
+    },
+    filter(domains) {
+      if (this.showVineyardFilter) {
+        console.log('filtering with checked vineyards :', this.checkedVineyards)
+        domains = domains.filter(domain => {
+          let keep = false
+          this.checkedVineyards.forEach(vineyard => {
+            if (!keep) {
+              keep = domain.vineyards.includes(vineyard)
+            }
+          })
+          return keep
+        })
+      }
+      return domains
     },
     onFiltersChange() {
       console.log('filters are', this.checkedFilters)
@@ -84,8 +123,11 @@ export default {
       this.checkedFilters[filter.code] = filter.checked
       this.onFiltersChange()
     },
+    setVineyards(vineyards) {
+      this.vineyards = vineyards
+    },
     setDomains(domains) {
-      this.domains = this.addInfoWindowState(domains)
+      this.domains = this.sort(this.augment(this.filter(domains)))
       this.loading = false
     },
     setFilters(tags) {
@@ -124,7 +166,7 @@ export default {
     min-height: 55px;
   }
   h3 {
-  text-align:center
+    text-align: center;
   }
   .search-pictos {
     min-height: $picto-height + 20;
@@ -182,6 +224,15 @@ export default {
       overflow: hidden;
       margin-top: 10px;
       padding-left: 0;
+    }
+  }
+  .search-filters {
+    margin-top: 25px;
+  }
+  .vineyards-checkboxes {
+    margin-top: 15px;
+    .el-checkbox {
+      color: $white;
     }
   }
   .no-result {
