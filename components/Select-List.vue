@@ -1,11 +1,11 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
 
-    <div class="col" v-show="!itemsSorted.length">
+    <div class="col parent-height" v-show="!itemsSorted.length">
       <div class="line help-text todo">{{ $t('search.noEntries') }}</div>
     </div>
 
-    <div class="col" v-show="itemsSorted.length">
+    <div class="col parent-height" v-show="itemsSorted.length">
       <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
 
       <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
