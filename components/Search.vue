@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import getSlug from 'speakingurl'
 import GoogleMap from '~/components/Google-Map.vue'
 import SelectList from '~/components/Select-List.vue'
 import orderBy from 'lodash/orderBy'
@@ -63,8 +64,8 @@ export default {
       filters: [],
       checkedFilters: {},
       domains: [],
+      filterDomain: '',
       vineyards: [],
-      searchValue: [],
       loading: false,
       showMap: false,
       showVineyardFilter: false,
@@ -81,7 +82,9 @@ export default {
 
     eventBus.$on('show-map', this.doShowMap)
 
-    this.searchDebounced = debounce(this.search, 1500)
+    eventBus.$on('filter-domain', this.setFilterDomain)
+
+    this.searchDebounced = debounce(this.search, 500)
   },
   methods: {
     augment(domains) {
@@ -99,6 +102,11 @@ export default {
       return orderBy(domains, ['title'], ['asc'])
     },
     filter(domains) {
+      if (this.filterDomain.length) {
+        const str = getSlug(this.filterDomain)
+        console.log('filtering with str :', str)
+        domains = domains.filter(domain => getSlug(domain.title).includes(str))
+      }
       if (this.showVineyardFilter) {
         console.log('filtering with checked vineyards :', this.checkedVineyards)
         domains = domains.filter(domain => {
@@ -129,6 +137,7 @@ export default {
     setDomains(domains) {
       this.domains = this.sort(this.augment(this.filter(domains)))
       this.loading = false
+      eventBus.$emit('domains-search-complete')
     },
     setFilters(tags) {
       this.filters = tags.map(tag => {
@@ -136,6 +145,11 @@ export default {
         return tag
       })
       console.log('filters init with', this.filters)
+    },
+    setFilterDomain(value) {
+      console.log('user want to filter domains with', value)
+      this.filterDomain = value
+      this.searchDebounced()
     },
     doShowMap() {
       if (!this.showMap) {
@@ -224,6 +238,12 @@ export default {
       overflow: hidden;
       margin-top: 10px;
       padding-left: 0;
+    }
+    &.el-checkbox.is-bordered.is-checked {
+      border-color: $green;
+    }
+    .el-checkbox__input.is-checked + .el-checkbox__label {
+      color: $green-d2;
     }
   }
   .search-filters {
