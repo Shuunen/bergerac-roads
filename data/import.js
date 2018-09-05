@@ -31,6 +31,18 @@ const remoteVineyardsToLocal = {
 const remoteVineyards = Object.keys(remoteVineyardsToLocal)
 
 /**
+ * Convert ugly string with variable separators into nice arrays
+ * @param {string} tag remote input tag string
+ * @param {string} separator the separator (often # or |)
+ */
+function getArrayFromRemoteTag(tag, separator) {
+  if (!tag) {
+    return []
+  }
+  return tag.split(separator).filter(data => data.length)
+}
+
+/**
  * Convert large remote data into data that we will store in our db
  * Look at sample-domains.json to see remote data structure
  * @param {Domain} remote the domain data from remote API
@@ -39,17 +51,29 @@ function remoteDomainToLocal(remote) {
   // console.log('converting remote data to local')
   const local = {
     active: true,
+    activities: remote.ANIMATIONS,
     description: remote.DESCRIPTIF,
     id: remote.SyndicObjectID,
     labels: getLabelsFromRemoteDomain(remote),
+    langs: getArrayFromRemoteTag(remote.LANGPARLE, '#'),
     latitude: remote.GmapLatitude,
     longitude: remote.GmapLongitude,
+    mail: remote.MAIL,
     number: remote.NUMEROCARTE,
-    photos: remote.PHOTO ? remote.PHOTO.split('#') : [],
+    openHours: getArrayFromRemoteTag(remote.OUVERTURE, '#'),
+    phones: getArrayFromRemoteTag(remote.TELCOMPLET, '|'),
+    photos: getArrayFromRemoteTag(remote.PHOTO, '#'),
     plus: remote.PETITPLUS,
+    services: getArrayFromRemoteTag(remote.PRESTATIONS, '#'),
+    socialFacebook: remote.FACEBOOK,
+    statuses:  getArrayFromRemoteTag(remote.STATUTEXPLOIT, '#'),
     tags: getTagsFromRemoteDomain(remote),
     title: remote.SyndicObjectName,
+    tourContitions: getArrayFromRemoteTag(remote.VISITECONDITIONS, '#'),
+    tourMinutes: remote.VISITEDUREE,
+    town: remote.COMMUNE,
     vineyards: getVineyardsFromRemoteDomain(remote),
+    websites: getArrayFromRemoteTag(remote.URLCOMPLET, '|'),
   }
   return local
 }
