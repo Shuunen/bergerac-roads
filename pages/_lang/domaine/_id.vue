@@ -3,34 +3,88 @@
     <Header />
     <div class="color-line"/>
     <div class="background" :style="backgroundStyle"/>
-    <el-main>
-      <div class="encart" v-loading="loading">
-        <div class="line">
-          <h1 class="title">{{ data.title }}</h1>
+
+
+    <el-container>
+      <el-aside class="aside">
+
+        <el-card class="box-card">
+          <span><i class="el-icon-info"/>  Infos</span>
+          <p v-if="data.mail" ><i class="el-icon-message"/> {{ data.mail }}</p>
+
+          <ul v-if="data.phones">
+            <li v-for="phone in data.phones" :key="phone" ><i class="el-icon-phone"/> {{ phone }} </li>
+          </ul>
+
+          <p><i class="el-icon-location-outline"/> {{ data.town }}</p>
+          <h3>Site web</h3>
+          <ul v-if="data.websites">
+            <li v-for="website in data.websites" :key="website" > {{ website }} </li>
+          </ul>
+
+          <div v-if="data.socialFacebook">
+            <a :href="data.socialFacebook">
+              <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">
+            </a>
+          </div>
+
+        </el-card>
+
+        <p>Cépage :</p>
+        <ul v-if="data.vineyards">
+          <li v-for="vineyard in data.vineyards" :key="vineyard" > {{ vineyard }} </li>
+        </ul>
+
+        <span>Langues parlées</span>
+        <ul v-if="data.langs">
+          <li v-for="lang in data.langs" :key="lang" > {{ lang }} </li>
+        </ul>
+
+        <span>Services</span>
+        <ul v-if="data.services">
+          <li v-for="service in data.services" :key="service" > {{ service }} </li>
+        </ul>
+
+        <span>Status</span>
+        <ul v-if="data.statuses">
+          <li v-for="statuse in data.statuses" :key="statuse" > {{ statuse }} </li>
+        </ul>
+
+
+
+
+      </el-aside>
+      <el-main>
+        <div class="encart" v-loading="loading">
+          <div class="line">
+            <h1 class="title">{{ data.title }}</h1>
+          </div>
+
+          <el-row :gutter="20">
+            <el-tag v-for="tag in data.tags" :key="tag" type="info" size="medium">
+              {{ tag }}
+            </el-tag>
+          </el-row>
+
+          <span class="glasses line">
+            <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
+          </span>
+
+          <el-container direction="vertical" v-if="!data.message">
+            <p>{{ data.description }} </p>
+
+          </el-container>
+          <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
+          <div class="col">
+            <nuxt-link :to="$i18n.path('')">
+              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+            </nuxt-link>
+          </div>
         </div>
+      </el-main>
+    </el-container>
 
-        <el-row :gutter="20">
-          <el-tag v-for="tag in data.tags" :key="tag" type="info" size="medium">
-            {{ tag }}
-          </el-tag>
-        </el-row>
 
-        <span class="glasses line">
-          <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
-        </span>
-
-        <el-container direction="vertical" v-if="!data.message">
-          <p>{{ data.description }} </p>
-
-        </el-container>
-        <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
-        <div class="col">
-          <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-          </nuxt-link>
-        </div>
-      </div>
-    </el-main>
     <Footer />
   </el-container>
 </template>
@@ -153,4 +207,26 @@ export default {
     @include sprite($glass-rose);
   }
 }
+
+
+ .aside{
+   width: 27%;
+   margin: 18px;
+   background-color: #f1a029b0;
+   padding: 10px 20px;
+   border-radius: 7px;
+ }
+
+ .aside ul {
+   list-style: none;
+   padding: 0;
+ }
+
+.aside > h1{
+  color: white;
+  font-size: 201%;
+  text-align: center;
+}
+
+
 </style>
