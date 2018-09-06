@@ -72,6 +72,7 @@ function remoteDomainToLocal(remote) {
     tourContitions: getArrayFromRemoteTag(remote.VISITECONDITIONS, '#'),
     tourMinutes: remote.VISITEDUREE,
     town: remote.COMMUNE,
+    adress: remote.AD2,
     vineyards: getVineyardsFromRemoteDomain(remote),
     websites: getArrayFromRemoteTag(remote.URLCOMPLET, '|'),
   }
