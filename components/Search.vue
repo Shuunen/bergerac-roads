@@ -269,9 +269,7 @@ export default {
 .icon-agriculture-bio {
   @include sprite($tree);
 }
-.icon-acces-handicape {
-  @include sprite($wheelchair);
-}
+
 .icon-agriculture-raisonnee {
   @include sprite($recycling);
 }
@@ -281,4 +279,31 @@ export default {
 .icon-vente-propriete {
   @include sprite($shopping);
 }
+
+.icon{
+  width: 70%;
+  height: 70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.icon-acces-handicape {
+  background-image: url("#{$cdn}/images/pictos/Z3_Accessibilitee_web.png");
+}
+.icon-hebergement {
+  background-image: url("#{$cdn}/images/pictos/Z3_Hebergement_web.png");
+}
+.icon-camping {
+  background-image: url("#{$cdn}/images/pictos/Z3_Camping-car_web.png");
+}
+.icon-restauration {
+  background-image: url("#{$cdn}/images/pictos/Z3_Restaurant_web.png");
+}
+.icon-env-humain {
+  background-image: url("#{$cdn}/images/pictos/Z3_Hebergement_web.png");
+}
+
+
+
 </style>
