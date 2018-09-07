@@ -65,7 +65,7 @@ function remoteDomainToLocal(remote) {
     plus: remote.PETITPLUS,
     services: getArrayFromRemoteTag(remote.PRESTATIONS, '#'),
     socialFacebook: remote.FACEBOOK,
-    statuses:  getArrayFromRemoteTag(remote.STATUTEXPLOIT, '#'),
+    statuses: getArrayFromRemoteTag(remote.STATUTEXPLOIT, '#'),
     tags: getTagsFromRemoteDomain(remote),
     title: remote.SyndicObjectName,
     tourContitions: getArrayFromRemoteTag(remote.VISITECONDITIONS, '#'),
@@ -97,36 +97,33 @@ function getTagsFromRemoteDomain(domain) {
   let prestations = domain['PRESTATIONS']
 
   if (prestations) {
-      prestations = prestations.split('#')
-      prestations.forEach(presta => {
-        if (presta === 'Hébergement sur place') {
-            domain['HEBERGEMENT'] = 'oui'
-        }
-        if (presta === 'Aire de camping-car sur place') {
-            domain['CAMPING'] = 'oui'
-        }
-        if (presta === 'Restauration sur place') {
-            domain['RESAURATION'] = 'oui'
-        }
+    prestations = prestations.split('#')
+    prestations.forEach(presta => {
+      if (presta === 'Hébergement sur place') {
+        domain['HEBERGEMENT'] = 'oui'
+      }
+      if (presta === 'Aire de camping-car sur place') {
+        domain['CAMPING'] = 'oui'
+      }
+      if (presta === 'Restauration sur place') {
+        domain['RESAURATION'] = 'oui'
+      }
 
-      })
+    })
   }
 
   let agribio = domain['AGRIBIO']
   if (agribio === 'non') {
-      let labelsCharte = domain['LABELSCHARTE']
-      labelsCharte = labelsCharte.split('#')
-      labelsCharte.forEach(labelCharte => {
-          if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis' ) {
-              domain['ENV_HUMAIN'] = 'oui'
-          }
-      })
-
+    let labelsCharte = domain['LABELSCHARTE']
+    labelsCharte = labelsCharte.split('#')
+    labelsCharte.forEach(labelCharte => {
+      if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
+        domain['ENV_HUMAIN'] = 'oui'
+      }
+    })
   } else {
-      domain['ENV_HUMAIN'] = 'oui'
+    domain['ENV_HUMAIN'] = 'oui'
   }
-
-
   remoteTags.forEach(tag => {
     if (domain[tag] && domain[tag] === 'oui') {
       // console.log('tag "'+tag+'" found')
