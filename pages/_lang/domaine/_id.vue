@@ -16,7 +16,7 @@
             <li v-for="phone in data.phones" :key="phone" ><i class="el-icon-phone"/> {{ phone }} </li>
           </ul>
 
-          <p><i class="el-icon-location-outline"/> {{ data.town }}</p>
+          <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
           <h3>Site web</h3>
           <ul v-if="data.websites">
             <li v-for="website in data.websites" :key="website" > {{ website }} </li>
