@@ -12,11 +12,10 @@ let domainUpdated = 0
 let domainSkipped = 0
 const remoteTagsToLocal = {
   ACCESHANDI: 'acces-handicape',
-  AGRIBIO: 'agriculture-bio',
-  AGRIBIODYN: 'agriculture-biodynamique',
-  AGRIRAISONNE: 'agriculture-raisonnee',
-  ANIMAUX: 'accepte-animaux',
-  VENTEPROPRIETE: 'vente-propriete',
+  HEBERGEMENT: 'hebergement',
+  CAMPING: 'camping',
+  RESAURATION: 'restauration',
+  ENV_HUMAIN: 'env-humain',
 }
 const remoteTags = Object.keys(remoteTagsToLocal)
 const remoteVineyardsToLocal = {
@@ -66,7 +65,7 @@ function remoteDomainToLocal(remote) {
     plus: remote.PETITPLUS,
     services: getArrayFromRemoteTag(remote.PRESTATIONS, '#'),
     socialFacebook: remote.FACEBOOK,
-    statuses:  getArrayFromRemoteTag(remote.STATUTEXPLOIT, '#'),
+    statuses: getArrayFromRemoteTag(remote.STATUTEXPLOIT, '#'),
     tags: getTagsFromRemoteDomain(remote),
     title: remote.SyndicObjectName,
     tourContitions: getArrayFromRemoteTag(remote.VISITECONDITIONS, '#'),
@@ -95,6 +94,36 @@ function getVineyardsFromRemoteDomain(domain) {
 
 function getTagsFromRemoteDomain(domain) {
   let tags = []
+  let prestations = domain['PRESTATIONS']
+
+  if (prestations) {
+    prestations = prestations.split('#')
+    prestations.forEach(presta => {
+      if (presta === 'Hébergement sur place') {
+        domain['HEBERGEMENT'] = 'oui'
+      }
+      if (presta === 'Aire de camping-car sur place') {
+        domain['CAMPING'] = 'oui'
+      }
+      if (presta === 'Restauration sur place') {
+        domain['RESAURATION'] = 'oui'
+      }
+
+    })
+  }
+
+  let agribio = domain['AGRIBIO']
+  if (agribio === 'non') {
+    let labelsCharte = domain['LABELSCHARTE']
+    labelsCharte = labelsCharte.split('#')
+    labelsCharte.forEach(labelCharte => {
+      if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
+        domain['ENV_HUMAIN'] = 'oui'
+      }
+    })
+  } else {
+    domain['ENV_HUMAIN'] = 'oui'
+  }
   remoteTags.forEach(tag => {
     if (domain[tag] && domain[tag] === 'oui') {
       // console.log('tag "'+tag+'" found')

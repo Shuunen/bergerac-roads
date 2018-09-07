@@ -8,33 +8,27 @@
     },
     {
       "id": 1,
-      "code": "agriculture-bio",
-      "name": "Agriculture biologique",
-      "shortName": "Agri. biologique"
+      "code": "hebergement",
+      "name": "Hébergement",
+      "shortName": "hébergement"
     },
     {
       "id": 2,
-      "code": "agriculture-biodynamique",
-      "name": "Agriculture biodynamique",
-      "shortName": "Agri. biodynamique"
+      "code": "camping",
+      "name": "Camping",
+      "shortName": "Camping"
     },
     {
       "id": 3,
-      "code": "agriculture-raisonnee",
-      "name": "Agriculture raisonnée",
-      "shortName": "Agri. raisonnée"
+      "code": "restauration",
+      "name": "Restauration",
+      "shortName": "Restauration"
     },
     {
       "id": 4,
-      "code": "accepte-animaux",
-      "name": "Animaux acceptés",
-      "shortName": "Animaux acceptés"
-    },
-    {
-      "id": 5,
-      "code": "vente-propriete",
-      "name": "Vente à la propriété",
-      "shortName": "Vente à la propriété"
+      "code": "env-humain",
+      "name": "Engagement environnement & Humain",
+      "shortName": "Env & Humain"
     }
   ],
   "vineyards": [
@@ -103,8 +97,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -118,6 +111,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "Route de Corbiac",
       "vineyards": [
         "pecharmant"
       ],
@@ -125,7 +119,7 @@
         "https://www.corbiac.com",
         "#https://www.lemeilleurpecharmant.com"
       ],
-      "updated": 1536154949288
+      "updated": 1536313270935
     },
     {
       "active": true,
@@ -169,9 +163,7 @@
         "Producteur"
       ],
       "tags": [
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château de la Jaubertie",
       "tourContitions": [
@@ -179,6 +171,7 @@
       ],
       "tourMinutes": null,
       "town": "COLOMBIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -186,7 +179,7 @@
       "websites": [
         "http://www.chateau-jaubertie.com "
       ],
-      "updated": 1536154949609
+      "updated": 1536313271286
     },
     {
       "active": true,
@@ -231,8 +224,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-raisonnee",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -245,6 +238,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": "Route de Mont de Marsan",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -252,7 +246,7 @@
       "websites": [
         "http://cave.chateau-monbazillac.com/"
       ],
-      "updated": 1536154949354
+      "updated": 1536313271003
     },
     {
       "active": true,
@@ -292,13 +286,13 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Alliance Aquitaine - Site de Bergerac",
       "tourContitions": [],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "70 boulevard Santraille",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -308,7 +302,7 @@
       "websites": [
         "http://www.allianceaquitaine.com"
       ],
-      "updated": 1536154949418
+      "updated": 1536313271073
     },
     {
       "active": true,
@@ -348,9 +342,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rose",
         "vin-rouge",
         "vin-liquoreux",
@@ -363,6 +355,7 @@
       ],
       "tourMinutes": "90",
       "town": "LEMBRAS",
+      "adress": "46 Route de Périgueux",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -371,7 +364,7 @@
       "websites": [
         "http://www.chateaurenaudie.com"
       ],
-      "updated": 1536154949547
+      "updated": 1536313271218
     },
     {
       "id": "DEGAQU024FS00007",
@@ -419,8 +412,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château la Vieille Bergerie",
       "tourContitions": [
@@ -428,6 +420,7 @@
       ],
       "tourMinutes": null,
       "town": "LEMBRAS",
+      "adress": "2 Route de Villamblard",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -437,7 +430,7 @@
       "websites": [
         "http://www.vieille-bergerie.fr/"
       ],
-      "updated": 1536154949482
+      "updated": 1536313271146
     },
     {
       "active": true,
@@ -477,9 +470,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Domaine de l'Ancienne Cure",
       "tourContitions": [
@@ -488,6 +479,7 @@
       ],
       "tourMinutes": null,
       "town": "COLOMBIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -496,7 +488,7 @@
       "websites": [
         "http://www.domaine-anciennecure.fr"
       ],
-      "updated": 1536154949671
+      "updated": 1536313271352
     },
     {
       "active": true,
@@ -547,9 +539,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-moelleux"
@@ -561,6 +552,7 @@
       ],
       "tourMinutes": "45",
       "town": "BERGERAC",
+      "adress": "Chemin de la Briasse",
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -569,7 +561,7 @@
       "websites": [
         "http://www.haut-pecharmant.fr"
       ],
-      "updated": 1536154949209
+      "updated": 1536313270847
     },
     {
       "active": true,
@@ -625,6 +617,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -632,7 +625,7 @@
       "websites": [
         "http://www.chateau-du-haut-pezaud.com"
       ],
-      "updated": 1536154949733
+      "updated": 1536310850495
     },
     {
       "active": true,
@@ -676,10 +669,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château Haut Bernasse",
       "tourContitions": [
@@ -688,6 +678,7 @@
       ],
       "tourMinutes": "15",
       "town": "MONBAZILLAC",
+      "adress": "Bernasse",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -695,7 +686,7 @@
       "websites": [
         "http://www.chateau-hautbernasse.fr"
       ],
-      "updated": 1536154949798
+      "updated": 1536313271476
     },
     {
       "active": true,
@@ -733,10 +724,7 @@
         "Groupement de producteurs"
       ],
       "tags": [
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "agriculture-raisonnee",
-        "accepte-animaux"
+        "env-humain"
       ],
       "title": "Maison des Vins de Bergerac",
       "tourContitions": [
@@ -744,6 +732,7 @@
       ],
       "tourMinutes": "45",
       "town": "BERGERAC",
+      "adress": "1 rue des Récollets",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -755,7 +744,7 @@
       "websites": [
         "http://www.vins-bergeracduras.fr"
       ],
-      "updated": 1536154949861
+      "updated": 1536313271544
     },
     {
       "active": true,
@@ -794,6 +783,7 @@
         "Producteur"
       ],
       "tags": [
+        "camping",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -806,6 +796,7 @@
       ],
       "tourMinutes": "30",
       "town": "CONNE-DE-LABARDE",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -813,7 +804,7 @@
       "websites": [
         "http://www.vins-bdp.com"
       ],
-      "updated": 1536154949929
+      "updated": 1536312655876
     },
     {
       "active": true,
@@ -857,9 +848,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "hebergement",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -873,6 +864,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -880,7 +872,7 @@
       "websites": [
         "http://www.haut-montlong.com"
       ],
-      "updated": 1536154949995
+      "updated": 1536313271668
     },
     {
       "active": true,
@@ -933,10 +925,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -949,6 +939,7 @@
       ],
       "tourMinutes": "120",
       "town": "SAINT-AUBIN-DE-CADELECH",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -956,7 +947,7 @@
       "websites": [
         "http://www.domainedusiorac.fr"
       ],
-      "updated": 1536154950059
+      "updated": 1536313271739
     },
     {
       "active": true,
@@ -1000,9 +991,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "hebergement",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1015,6 +1006,7 @@
       ],
       "tourMinutes": "90",
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1022,7 +1014,7 @@
       "websites": [
         "http://www.grangeneuve.fr"
       ],
-      "updated": 1536154950121
+      "updated": 1536313271808
     },
     {
       "active": true,
@@ -1071,9 +1063,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete",
+        "hebergement",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc"
@@ -1085,6 +1077,7 @@
       ],
       "tourMinutes": null,
       "town": "PRIGONRIEUX",
+      "adress": "Route de Simondie",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -1093,7 +1086,7 @@
         "http://www.domaine-de-coutancie.com/",
         "Propriété viticole"
       ],
-      "updated": 1536154950189
+      "updated": 1536313271870
     },
     {
       "active": true,
@@ -1138,9 +1131,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "hebergement",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1154,6 +1146,7 @@
       ],
       "tourMinutes": "30",
       "town": "CONNE-DE-LABARDE",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1161,7 +1154,7 @@
       "websites": [
         "http://www.verdots.com"
       ],
-      "updated": 1536154950253
+      "updated": 1536313271933
     },
     {
       "active": true,
@@ -1202,9 +1195,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1217,6 +1208,7 @@
       ],
       "tourMinutes": "60",
       "town": "SAINT-ANTOINE-DE-BREUILH",
+      "adress": "1235 route de Couin",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1224,7 +1216,7 @@
       "websites": [
         "http://www.moulincaresse.fr"
       ],
-      "updated": 1536154950317
+      "updated": 1536313271998
     },
     {
       "active": true,
@@ -1277,8 +1269,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "vente-propriete",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1291,6 +1283,7 @@
       ],
       "tourMinutes": "30",
       "town": "PORT-SAINTE-FOY-ET-PONCHAPT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel",
@@ -1299,7 +1292,7 @@
       "websites": [
         "http://www.puyservain.com"
       ],
-      "updated": 1536154950378
+      "updated": 1536313272061
     },
     {
       "active": true,
@@ -1343,6 +1336,8 @@
         "Producteur"
       ],
       "tags": [
+        "hebergement",
+        "camping",
         "vin-rouge"
       ],
       "title": "Château Terre Vieille",
@@ -1351,13 +1346,14 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-SAUVEUR",
+      "adress": "36 Route de Grateloup",
       "vineyards": [
         "pecharmant"
       ],
       "websites": [
         "http://www.terrevieille.com"
       ],
-      "updated": 1536154950440
+      "updated": 1536312656372
     },
     {
       "active": true,
@@ -1402,9 +1398,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1418,6 +1412,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1425,7 +1420,7 @@
       "websites": [
         "http://www.ladesvignes.com"
       ],
-      "updated": 1536154950502
+      "updated": 1536313272182
     },
     {
       "active": true,
@@ -1470,9 +1465,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -1484,6 +1477,7 @@
       ],
       "tourMinutes": "30",
       "town": "SAINT-MEARD-DE-GURCON",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1491,7 +1485,7 @@
       "websites": [
         "http://www.vignoblesdubard.com/"
       ],
-      "updated": 1536154950564
+      "updated": 1536313272251
     },
     {
       "active": true,
@@ -1526,9 +1520,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc"
@@ -1539,13 +1531,14 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-JULIEN-D'EYMET",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.closlejoncal.com"
       ],
-      "updated": 1536154950626
+      "updated": 1536313272318
     },
     {
       "active": true,
@@ -1585,7 +1578,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux"
+        "env-humain"
       ],
       "title": "Château le Raz",
       "tourContitions": [
@@ -1593,6 +1586,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-MEARD-DE-GURCON",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1600,7 +1594,7 @@
       "websites": [
         "http://www.le-raz.com"
       ],
-      "updated": 1536154950690
+      "updated": 1536313272384
     },
     {
       "active": true,
@@ -1641,9 +1635,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château le Tap",
       "tourContitions": [
@@ -1652,6 +1644,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -1659,7 +1652,7 @@
       "websites": [
         "http://www.chateauletap.fr/"
       ],
-      "updated": 1536154950751
+      "updated": 1536313272448
     },
     {
       "active": true,
@@ -1701,8 +1694,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "vente-propriete",
+        "camping",
+        "env-humain",
         "vin-blanc",
         "vin-rouge"
       ],
@@ -1713,6 +1706,7 @@
       ],
       "tourMinutes": "75",
       "town": "CREYSSE",
+      "adress": "118 Route de Sainte Alvère",
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -1720,7 +1714,7 @@
       "websites": [
         "http://www.chateau-de-tiregand.com"
       ],
-      "updated": 1536154950820
+      "updated": 1536313272512
     },
     {
       "active": true,
@@ -1759,8 +1753,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château Combrillac",
       "tourContitions": [
@@ -1769,6 +1762,7 @@
       ],
       "tourMinutes": null,
       "town": "PRIGONRIEUX",
+      "adress": "Impasse Coucombre",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -1776,7 +1770,7 @@
       "websites": [
         "http://www.combrillac.fr"
       ],
-      "updated": 1536154950886
+      "updated": 1536313272579
     },
     {
       "active": true,
@@ -1815,9 +1809,8 @@
         "Producteur"
       ],
       "tags": [
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete"
+        "camping",
+        "env-humain"
       ],
       "title": "Château Court les Mûts",
       "tourContitions": [
@@ -1825,6 +1818,7 @@
       ],
       "tourMinutes": null,
       "town": "RAZAC-DE-SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -1832,7 +1826,7 @@
       "websites": [
         "http://www.court-les-muts.com/"
       ],
-      "updated": 1536154950955
+      "updated": 1536313272647
     },
     {
       "active": true,
@@ -1868,11 +1862,7 @@
         "Producteur"
       ],
       "tags": [
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château le Chabrier",
       "tourContitions": [
@@ -1881,6 +1871,7 @@
       ],
       "tourMinutes": null,
       "town": "RAZAC-DE-SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -1888,7 +1879,7 @@
       "websites": [
         "http://chabrier.jimdo.com/"
       ],
-      "updated": 1536154951020
+      "updated": 1536313272712
     },
     {
       "active": true,
@@ -1933,9 +1924,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "vente-propriete",
+        "hebergement",
+        "env-humain",
         "vin-rouge",
         "vin-blanc",
         "vin-liquoreux"
@@ -1946,6 +1936,7 @@
       ],
       "tourMinutes": "60",
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -1953,7 +1944,7 @@
       "websites": [
         "http://www.chateaufeely.com"
       ],
-      "updated": 1536154951084
+      "updated": 1536313272813
     },
     {
       "active": true,
@@ -1994,9 +1985,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc"
@@ -2007,6 +1996,7 @@
       ],
       "tourMinutes": "30",
       "town": "LAMOTHE-MONTRAVEL",
+      "adress": "10 Route du Coteau",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -2014,7 +2004,7 @@
       "websites": [
         "https://www.domainemoulingarreau.fr/"
       ],
-      "updated": 1536154951147
+      "updated": 1536313272880
     },
     {
       "active": true,
@@ -2058,9 +2048,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Domaine du Boyer",
       "tourContitions": [
@@ -2069,12 +2057,13 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1536154951212
+      "updated": 1536313272948
     },
     {
       "active": true,
@@ -2114,9 +2103,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -2130,6 +2117,7 @@
       ],
       "tourMinutes": null,
       "town": "ROUFFIGNAC-DE-SIGOULES",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2137,7 +2125,7 @@
       "websites": [
         "http://www.chateau-larobertie.com"
       ],
-      "updated": 1536154951276
+      "updated": 1536313273017
     },
     {
       "active": true,
@@ -2176,9 +2164,7 @@
         "Producteur"
       ],
       "tags": [
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -2193,6 +2179,7 @@
       ],
       "tourMinutes": "45",
       "town": "POMPORT",
+      "adress": "D17",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2200,7 +2187,7 @@
       "websites": [
         "http://www.belingard.com"
       ],
-      "updated": 1536154951341
+      "updated": 1536313273082
     },
     {
       "active": true,
@@ -2247,10 +2234,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "accepte-animaux",
-        "vente-propriete",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -2263,6 +2248,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2271,7 +2257,7 @@
       "websites": [
         "http://www.barouillet.com"
       ],
-      "updated": 1536154951405
+      "updated": 1536313273150
     },
     {
       "active": true,
@@ -2307,8 +2293,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -2321,6 +2306,7 @@
       ],
       "tourMinutes": "60",
       "town": "PRIGONRIEUX",
+      "adress": "137 Route de Peymilou, D13",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -2328,7 +2314,7 @@
       "websites": [
         "http://www.chateau-montplaisir.com"
       ],
-      "updated": 1536154951469
+      "updated": 1536313273218
     },
     {
       "active": true,
@@ -2367,10 +2353,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "accepte-animaux",
-        "vente-propriete",
+        "env-humain",
         "vin-rouge",
         "vin-rose",
         "vin-liquoreux"
@@ -2382,6 +2365,7 @@
       ],
       "tourMinutes": "45",
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2389,7 +2373,7 @@
       "websites": [
         "http://www.chateaukalian.com"
       ],
-      "updated": 1536154951532
+      "updated": 1536313273286
     },
     {
       "active": true,
@@ -2421,9 +2405,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château du Rooy",
       "tourContitions": [
@@ -2431,6 +2413,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -2439,7 +2422,7 @@
       "websites": [
         "http://www.chateau-du-rooy.com/"
       ],
-      "updated": 1536154951593
+      "updated": 1536313273356
     },
     {
       "active": true,
@@ -2479,9 +2462,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château Champarel",
       "tourContitions": [
@@ -2490,11 +2471,12 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "1637 chemin du Hameau de Pécharmant",
       "vineyards": [
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1536154951656
+      "updated": 1536313273421
     },
     {
       "active": true,
@@ -2531,8 +2513,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Domaine du Grand Jaure",
       "tourContitions": [
@@ -2540,6 +2521,7 @@
       ],
       "tourMinutes": "20",
       "town": "LEMBRAS",
+      "adress": "16 chemin de Jaure",
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -2548,7 +2530,7 @@
       "websites": [
         "http://www.domainedugrandjaure.com"
       ],
-      "updated": 1536154951720
+      "updated": 1536313273486
     },
     {
       "active": true,
@@ -2588,10 +2570,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-bio",
-        "agriculture-biodynamique",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Domaine des Costes",
       "tourContitions": [
@@ -2599,6 +2578,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "4 rue Jean Brun",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2607,7 +2587,7 @@
       "websites": [
         "http://www.domainedescostes.fr"
       ],
-      "updated": 1536154951782
+      "updated": 1536313273553
     },
     {
       "active": true,
@@ -2651,11 +2631,12 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "2 rue Jean Brun",
       "vineyards": [
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1536154951843
+      "updated": 1536310852791
     },
     {
       "active": true,
@@ -2692,9 +2673,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete",
+        "hebergement",
+        "camping",
+        "env-humain",
         "vin-rouge",
         "vin-liquoreux"
       ],
@@ -2704,12 +2685,13 @@
       ],
       "tourMinutes": "60",
       "town": "BERGERAC",
+      "adress": "Route du Hameau de Pécharmant",
       "vineyards": [
         "monbazillac",
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1536154951904
+      "updated": 1536313273678
     },
     {
       "active": true,
@@ -2745,9 +2727,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "agriculture-raisonnee",
-        "accepte-animaux",
-        "vente-propriete"
+        "env-humain"
       ],
       "title": "Château Les Farcies du Pech",
       "tourContitions": [
@@ -2755,6 +2735,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -2762,7 +2743,7 @@
       "websites": [
         "http://www.farciesdupech.com/"
       ],
-      "updated": 1536154951966
+      "updated": 1536313273747
     },
     {
       "active": true,
@@ -2807,6 +2788,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -2814,7 +2796,7 @@
       "websites": [
         "http://www.chateaulatilleraie.com"
       ],
-      "updated": 1536154952034
+      "updated": 1536310852989
     },
     {
       "active": true,
@@ -2862,6 +2844,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2870,7 +2853,7 @@
       "websites": [
         "http://www.poulvere.com"
       ],
-      "updated": 1536154952100
+      "updated": 1536310853063
     },
     {
       "active": true,
@@ -2910,6 +2893,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2918,7 +2902,7 @@
       "websites": [
         "http://www.chateau-malfourat.fr/"
       ],
-      "updated": 1536154952165
+      "updated": 1536310853131
     },
     {
       "active": true,
@@ -2965,6 +2949,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "restauration",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -2976,6 +2961,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2983,7 +2969,7 @@
       "websites": [
         "http://chateau-vari.com/"
       ],
-      "updated": 1536154952231
+      "updated": 1536312657978
     },
     {
       "active": true,
@@ -3031,6 +3017,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "hebergement",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -3043,6 +3030,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3050,7 +3038,7 @@
       "websites": [
         "http://www.grandemaison-monbazillac.com/"
       ],
-      "updated": 1536154952293
+      "updated": 1536312272821
     },
     {
       "active": true,
@@ -3108,6 +3096,7 @@
       ],
       "tourMinutes": "30",
       "town": "MESCOULES",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -3116,7 +3105,7 @@
       "websites": [
         "http://www.vigneronsdesigoules.com/"
       ],
-      "updated": 1536154952357
+      "updated": 1536310853337
     },
     {
       "active": true,
@@ -3169,6 +3158,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "MONTAZEAU",
+      "adress": "14 les Grimards",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -3176,7 +3166,7 @@
       "websites": [
         "http://www.vins-bergerac-grimardy.com"
       ],
-      "updated": 1536154952424
+      "updated": 1536310853404
     },
     {
       "active": true,
@@ -3228,6 +3218,7 @@
       ],
       "tourMinutes": "60",
       "town": "RAZAC-DE-SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -3235,7 +3226,7 @@
       "websites": [
         "http://www.chateaulamaurigne.com"
       ],
-      "updated": 1536154952486
+      "updated": 1536310853469
     },
     {
       "active": true,
@@ -3289,6 +3280,7 @@
       ],
       "tourMinutes": "30",
       "town": "COLOMBIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3296,7 +3288,7 @@
       "websites": [
         "http://www.chateau-la-rayre.fr"
       ],
-      "updated": 1536154952548
+      "updated": 1536310853534
     },
     {
       "active": true,
@@ -3340,7 +3332,8 @@
         "agriculture-bio",
         "agriculture-raisonnee",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "camping"
       ],
       "title": "Domaine de Montlong",
       "tourContitions": [
@@ -3348,6 +3341,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3355,7 +3349,7 @@
       "websites": [
         "http://www.domainedemontlong.fr"
       ],
-      "updated": 1536154952609
+      "updated": 1536312658339
     },
     {
       "active": true,
@@ -3408,6 +3402,7 @@
       ],
       "tourMinutes": null,
       "town": "PRIGONRIEUX",
+      "adress": "21 route de Peyrel",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -3415,7 +3410,7 @@
       "websites": [
         "http://www.chateaudepeyrel.com"
       ],
-      "updated": 1536154952669
+      "updated": 1536310853668
     },
     {
       "active": true,
@@ -3456,6 +3451,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "camping",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -3468,6 +3464,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3475,7 +3472,7 @@
       "websites": [
         "http://www.combet-vins.com"
       ],
-      "updated": 1536154952735
+      "updated": 1536312658459
     },
     {
       "active": true,
@@ -3522,6 +3519,7 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -3529,7 +3527,7 @@
       "websites": [
         "http://www.chateaurichard.com"
       ],
-      "updated": 1536154952802
+      "updated": 1536310853804
     },
     {
       "active": true,
@@ -3570,6 +3568,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "hebergement",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -3582,6 +3581,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -3589,7 +3589,7 @@
       "websites": [
         "http://www.chateaufayolle.com"
       ],
-      "updated": 1536154952867
+      "updated": 1536312273334
     },
     {
       "active": true,
@@ -3646,6 +3646,7 @@
       ],
       "tourMinutes": null,
       "town": "FLAUGEAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3653,7 +3654,7 @@
       "websites": [
         "http://www.chateaucluzeau.com"
       ],
-      "updated": 1536154952931
+      "updated": 1536310853946
     },
     {
       "active": true,
@@ -3703,6 +3704,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3710,7 +3712,7 @@
       "websites": [
         "http://www.boutique-chateau-la-brie.educagri.fr"
       ],
-      "updated": 1536154952994
+      "updated": 1536310854015
     },
     {
       "active": true,
@@ -3750,6 +3752,7 @@
       ],
       "tourMinutes": null,
       "town": "MONFAUCON",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -3757,7 +3760,7 @@
       "websites": [
         "http://www.mallevieille.com"
       ],
-      "updated": 1536154953058
+      "updated": 1536310854134
     },
     {
       "active": true,
@@ -3803,6 +3806,8 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "hebergement",
+        "camping",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -3815,6 +3820,7 @@
       ],
       "tourMinutes": "45",
       "town": "SAINT-MICHEL-DE-MONTAIGNE",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -3822,7 +3828,7 @@
       "websites": [
         "http://www.domainedeperreau.fr"
       ],
-      "updated": 1536154953122
+      "updated": 1536312658808
     },
     {
       "active": true,
@@ -3878,6 +3884,7 @@
       ],
       "tourMinutes": "60",
       "town": "RAZAC-DE-SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -3885,7 +3892,7 @@
       "websites": [
         "http://www.le-payral.com"
       ],
-      "updated": 1536154953186
+      "updated": 1536310854272
     },
     {
       "active": true,
@@ -3934,6 +3941,7 @@
       ],
       "tourMinutes": null,
       "town": "CUNEGES",
+      "adress": "12 Route des Rivailles",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3941,7 +3949,7 @@
       "websites": [
         "http://www.fabiencastaing.com/"
       ],
-      "updated": 1536154953250
+      "updated": 1536310854338
     },
     {
       "active": true,
@@ -3990,6 +3998,7 @@
       ],
       "tourMinutes": "20",
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3997,7 +4006,7 @@
       "websites": [
         "http://www.chateau-le-fage.com"
       ],
-      "updated": 1536154953315
+      "updated": 1536310854408
     },
     {
       "active": true,
@@ -4041,6 +4050,7 @@
       ],
       "tourMinutes": null,
       "town": "THENAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "duras"
@@ -4048,7 +4058,7 @@
       "websites": [
         "http://www.chateau-les-brandeaux.com"
       ],
-      "updated": 1536154953381
+      "updated": 1536310854480
     },
     {
       "active": true,
@@ -4110,6 +4120,7 @@
       ],
       "tourMinutes": "30",
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4117,7 +4128,7 @@
       "websites": [
         "http://www.chateau-les-gerales.com"
       ],
-      "updated": 1536154953444
+      "updated": 1536310854550
     },
     {
       "active": true,
@@ -4154,12 +4165,13 @@
       ],
       "tourMinutes": null,
       "town": "GINESTET",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "rosette"
       ],
       "websites": [],
-      "updated": 1536154953509
+      "updated": 1536310854621
     },
     {
       "active": true,
@@ -4208,6 +4220,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -4216,7 +4229,7 @@
       "websites": [
         "http://www.vignobleslajonie.com"
       ],
-      "updated": 1536154953575
+      "updated": 1536310854691
     },
     {
       "active": true,
@@ -4256,7 +4269,8 @@
       "tags": [
         "acces-handicape",
         "accepte-animaux",
-        "vente-propriete"
+        "vente-propriete",
+        "camping"
       ],
       "title": "Château Les Grimard",
       "tourContitions": [
@@ -4265,6 +4279,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONTAZEAU",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -4272,7 +4287,7 @@
       "websites": [
         "http://chateaulesgrimard.fr"
       ],
-      "updated": 1536154953643
+      "updated": 1536312659263
     },
     {
       "active": true,
@@ -4323,6 +4338,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4330,7 +4346,7 @@
       "websites": [
         "http://www.chateau-montdoyen.com/"
       ],
-      "updated": 1536154953711
+      "updated": 1536310854830
     },
     {
       "active": true,
@@ -4377,6 +4393,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "hebergement",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -4389,13 +4406,14 @@
       ],
       "tourMinutes": "90",
       "town": "THENAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateaudepanisseau.com"
       ],
-      "updated": 1536154953778
+      "updated": 1536312274158
     },
     {
       "active": true,
@@ -4453,13 +4471,14 @@
       ],
       "tourMinutes": "60",
       "town": "BOISSE",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.tertres-du-plantou.com/"
       ],
-      "updated": 1536154953842
+      "updated": 1536310855007
     },
     {
       "active": true,
@@ -4507,6 +4526,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4514,7 +4534,7 @@
       "websites": [
         "http://www.leshautsdecaillevel.com"
       ],
-      "updated": 1536154953905
+      "updated": 1536310855079
     },
     {
       "active": true,
@@ -4566,12 +4586,13 @@
       ],
       "tourMinutes": null,
       "town": "BONNEVILLE-ET-SAINT-AVIT-DE-FUMADIERES",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
       ],
       "websites": [],
-      "updated": 1536154953970
+      "updated": 1536310855146
     },
     {
       "active": true,
@@ -4612,6 +4633,7 @@
         "agriculture-raisonnee",
         "accepte-animaux",
         "vente-propriete",
+        "camping",
         "vin-rouge",
         "vin-rose",
         "vin-moelleux",
@@ -4624,12 +4646,13 @@
       ],
       "tourMinutes": "45",
       "town": "RAZAC-DE-SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
       ],
       "websites": [],
-      "updated": 1536154954034
+      "updated": 1536312659610
     },
     {
       "active": true,
@@ -4678,6 +4701,7 @@
       ],
       "tourMinutes": null,
       "town": "GAGEAC-ET-ROUILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -4685,7 +4709,7 @@
       "websites": [
         "http://www.chateau-lestevenie.com/"
       ],
-      "updated": 1536154954097
+      "updated": 1536310855280
     },
     {
       "active": true,
@@ -4737,6 +4761,7 @@
       ],
       "tourMinutes": "45",
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -4745,7 +4770,7 @@
       "websites": [
         "http://www.chateaularchere.fr/"
       ],
-      "updated": 1536154954160
+      "updated": 1536310855347
     },
     {
       "active": true,
@@ -4801,13 +4826,14 @@
       ],
       "tourMinutes": "40",
       "town": "BOISSE",
+      "adress": "Route de Faurilles",
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.moulinsdeboisse.com/"
       ],
-      "updated": 1536154954223
+      "updated": 1536310855413
     },
     {
       "active": true,
@@ -4862,13 +4888,14 @@
       ],
       "tourMinutes": null,
       "town": "LAMONZIE-SAINT-MARTIN",
+      "adress": "56 Route de Lamouthe",
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateau-haut-lamouthe.com/"
       ],
-      "updated": 1536154954308
+      "updated": 1536310855481
     },
     {
       "active": true,
@@ -4917,6 +4944,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-VIVIEN",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -4924,7 +4952,7 @@
       "websites": [
         "http://www.tuquetmonceau.com/"
       ],
-      "updated": 1536154954372
+      "updated": 1536310855549
     },
     {
       "active": true,
@@ -4973,6 +5001,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4980,7 +5009,7 @@
       "websites": [
         "http://www.chateau-caillavel.fr/"
       ],
-      "updated": 1536154954439
+      "updated": 1536310855618
     },
     {
       "active": true,
@@ -5034,6 +5063,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "duras",
@@ -5046,7 +5076,7 @@
       "websites": [
         "http://www.julien-de-savignac.com/"
       ],
-      "updated": 1536154954503
+      "updated": 1536310855684
     },
     {
       "active": true,
@@ -5096,11 +5126,12 @@
       ],
       "tourMinutes": "15",
       "town": "VILLEFRANCHE-DE-LONCHAT",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [],
-      "updated": 1536154954567
+      "updated": 1536310855752
     },
     {
       "active": true,
@@ -5135,11 +5166,12 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-CERNIN-DE-LABARDE",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [],
-      "updated": 1536154954630
+      "updated": 1536310855822
     },
     {
       "active": true,
@@ -5182,13 +5214,14 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "RIBAGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateautourdesgendres.com/"
       ],
-      "updated": 1536154954696
+      "updated": 1536310855889
     },
     {
       "active": true,
@@ -5235,6 +5268,7 @@
       ],
       "tourMinutes": null,
       "town": "PORT-SAINTE-FOY-ET-PONCHAPT",
+      "adress": "Ponchapt ",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -5242,7 +5276,7 @@
       "websites": [
         "http://chateaupiquesegue.com/"
       ],
-      "updated": 1536154954758
+      "updated": 1536310856006
     },
     {
       "active": true,
@@ -5281,12 +5315,13 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1536154954823
+      "updated": 1536310856074
     },
     {
       "active": true,
@@ -5343,6 +5378,7 @@
       ],
       "tourMinutes": "45",
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5350,7 +5386,7 @@
       "websites": [
         "http://chateau-monbazillac.com/"
       ],
-      "updated": 1536154954886
+      "updated": 1536310856141
     },
     {
       "active": true,
@@ -5399,6 +5435,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5406,7 +5443,7 @@
       "websites": [
         "http://www.domaine-de-pecoula.com/"
       ],
-      "updated": 1536154954950
+      "updated": 1536310856207
     },
     {
       "active": true,
@@ -5452,12 +5489,13 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
       ],
       "websites": [],
-      "updated": 1536154955019
+      "updated": 1536310856273
     },
     {
       "active": true,
@@ -5500,11 +5538,12 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-PIERRE-D'EYRAUD",
+      "adress": "67 Route des Masseries",
       "vineyards": [
         "bergerac"
       ],
       "websites": [],
-      "updated": 1536154955083
+      "updated": 1536310856343
     },
     {
       "active": true,
@@ -5542,12 +5581,13 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1536154955148
+      "updated": 1536310856414
     },
     {
       "active": true,
@@ -5569,9 +5609,13 @@
         "+33 5 53 80 77 43"
       ],
       "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Autour-de-Velines--Chateau-La-Plante--30---cadre-couleur.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Autour-de-Velines--Chateau-La-Plante--15-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Autour-de-Velines--Chateau-La-Plante--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Vigne-11.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Autour-de-Velines--Chateau-La-Plante--20--2.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Chateau-Plante.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Bouteille-3.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Vigne-11.jpg",
         "http://cdt24.media.tourinsoft.eu/upload/Carte-8.jpg"
       ],
       "plus": "Accueil convivial, culture traditionnelle de la vigne.",
@@ -5588,11 +5632,12 @@
       "tourContitions": [],
       "tourMinutes": "60",
       "town": "MINZAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [],
-      "updated": 1536154955212
+      "updated": 1536310856482
     },
     {
       "active": true,
@@ -5642,13 +5687,14 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
+      "adress": null,
       "vineyards": [
         "monbazillac"
       ],
       "websites": [
         "http://maisondesvins-monbazillac.jimdo.com/"
       ],
-      "updated": 1536154955281
+      "updated": 1536310856548
     },
     {
       "active": true,
@@ -5698,13 +5744,14 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-LEON-D'ISSIGEAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://leclosdubreil.free.fr/"
       ],
-      "updated": 1536154955346
+      "updated": 1536310856613
     },
     {
       "active": true,
@@ -5751,13 +5798,14 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-VIVIEN",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateaudelareynaudie.fr/"
       ],
-      "updated": 1536154955409
+      "updated": 1536310856679
     },
     {
       "active": true,
@@ -5801,13 +5849,14 @@
       ],
       "tourMinutes": null,
       "town": "THENAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.haut-fongrive.com/"
       ],
-      "updated": 1536154955473
+      "updated": 1536310856746
     },
     {
       "active": true,
@@ -5861,13 +5910,14 @@
       ],
       "tourMinutes": null,
       "town": "RIBAGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.domaineduboutdumonde.com/"
       ],
-      "updated": 1536154955539
+      "updated": 1536310856813
     },
     {
       "active": true,
@@ -5923,6 +5973,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONESTIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -5930,7 +5981,7 @@
       "websites": [
         "https://domainedelaliniere.jimdo.com/"
       ],
-      "updated": 1536154955603
+      "updated": 1536310856881
     },
     {
       "active": true,
@@ -5978,13 +6029,14 @@
       ],
       "tourMinutes": "60",
       "town": "THENAC",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateau-thenac.com/"
       ],
-      "updated": 1536154955668
+      "updated": 1536310856953
     },
     {
       "active": true,
@@ -6039,13 +6091,14 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-MICHEL-DE-MONTAIGNE",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [
         "http://www.chateau-montaigne.com/"
       ],
-      "updated": 1536154955734
+      "updated": 1536310857062
     },
     {
       "active": true,
@@ -6094,6 +6147,7 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6101,7 +6155,7 @@
       "websites": [
         "http://www.chateaumonestierlatour.com/"
       ],
-      "updated": 1536154955800
+      "updated": 1536310857133
     },
     {
       "active": true,
@@ -6138,7 +6192,8 @@
       ],
       "tags": [
         "agriculture-bio",
-        "agriculture-biodynamique"
+        "agriculture-biodynamique",
+        "hebergement"
       ],
       "title": "Château Les Miaudoux",
       "tourContitions": [
@@ -6146,6 +6201,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6153,7 +6209,7 @@
       "websites": [
         "http://www.chateaulesmiaudoux.com"
       ],
-      "updated": 1536154955866
+      "updated": 1536312275976
     },
     {
       "active": true,
@@ -6201,6 +6257,7 @@
       ],
       "tourMinutes": null,
       "town": "ROUFFIGNAC-DE-SIGOULES",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -6208,7 +6265,7 @@
       "websites": [
         "https://chateau-letermeblanc.jimdo.com/"
       ],
-      "updated": 1536154955930
+      "updated": 1536310857264
     },
     {
       "active": true,
@@ -6255,6 +6312,7 @@
       ],
       "tourMinutes": null,
       "town": "LEMBRAS",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -6262,7 +6320,7 @@
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1536154955994
+      "updated": 1536310857330
     },
     {
       "active": true,
@@ -6307,6 +6365,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6314,7 +6373,7 @@
       "websites": [
         "http://www.vignobles-gazziola.com/"
       ],
-      "updated": 1536154956055
+      "updated": 1536310857399
     },
     {
       "active": true,
@@ -6343,9 +6402,10 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "CARSAC-DE-GURSON",
+      "adress": null,
       "vineyards": [],
       "websites": [],
-      "updated": 1536154956119
+      "updated": 1536310857467
     },
     {
       "active": true,
@@ -6372,9 +6432,10 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "23 Route de Rosette",
       "vineyards": [],
       "websites": [],
-      "updated": 1536154956184
+      "updated": 1536310857536
     },
     {
       "active": true,
@@ -6413,9 +6474,10 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "BERGERAC",
+      "adress": "Sainte-Foy-Des-Vignes",
       "vineyards": [],
       "websites": [],
-      "updated": 1536154956248
+      "updated": 1536310857602
     },
     {
       "active": true,
@@ -6444,9 +6506,10 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "POMPORT",
+      "adress": null,
       "vineyards": [],
       "websites": [],
-      "updated": 1536154956313
+      "updated": 1536310857671
     },
     {
       "active": true,
@@ -6488,6 +6551,7 @@
       ],
       "tourMinutes": null,
       "town": "COLOMBIER",
+      "adress": "Thenoux",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -6496,7 +6560,7 @@
       "websites": [
         "http://www.chateauthenoux.com/"
       ],
-      "updated": 1536154956380
+      "updated": 1536310857740
     },
     {
       "active": true,
@@ -6535,9 +6599,10 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "MONTAZEAU",
+      "adress": null,
       "vineyards": [],
       "websites": [],
-      "updated": 1536154956449
+      "updated": 1536310857809
     },
     {
       "active": true,
@@ -6577,6 +6642,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
+      "adress": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6584,7 +6650,7 @@
       "websites": [
         "http://www.chateaudesganfards.com/"
       ],
-      "updated": 1536154956512
+      "updated": 1536310857876
     },
     {
       "active": true,
@@ -6635,6 +6701,7 @@
         "acces-handicape",
         "agriculture-raisonnee",
         "vente-propriete",
+        "camping",
         "vin-rouge",
         "vin-rose",
         "vin-blanc",
@@ -6647,11 +6714,12 @@
       ],
       "tourMinutes": "30",
       "town": "PLAISANCE",
+      "adress": null,
       "vineyards": [
         "bergerac"
       ],
       "websites": [],
-      "updated": 1536154956581
+      "updated": 1536312661812
     }
   ]
 }

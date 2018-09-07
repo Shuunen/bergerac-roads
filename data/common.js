@@ -3,17 +3,22 @@ const localApi = axios.create({
   baseURL: 'http://localhost:3003',
   timeout: 1000,
 })
+/*
 const fs = require('fs')
 const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
 const variables = readVariablesFromFile(postmanFile)
 let remoteDomainsUrl = `/${variables.syndic_name}`
 remoteDomainsUrl += `/${variables.syndic_key}`
 remoteDomainsUrl += '/Objects?$format=json'
+*/
+let remoteDomainsUrl = '/cdt24/64fb655d-796e-495b-96b0-e5bb01854cdb/Objects?$format=json'
+let baseUrl = 'http://wcf.tourinsoft.com/Syndication/3.0'
 const remoteApi = axios.create({
-  baseURL: `http://${variables.syndic_url_opt}`,
+  baseUrl,
   timeout: 1000,
 })
 
+/*
 function readVariablesFromFile(fileContent) {
   // console.log('reading variables')
   const variables = {}
@@ -28,5 +33,6 @@ function readVariablesFromFile(fileContent) {
   // console.log(variables)
   return variables
 }
+*/
 
 export { localApi, remoteApi, remoteDomainsUrl }
