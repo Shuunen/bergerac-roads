@@ -9,8 +9,11 @@ const variables = readVariablesFromFile(postmanFile)
 let remoteDomainsUrl = `/${variables.syndic_name}`
 remoteDomainsUrl += `/${variables.syndic_key}`
 remoteDomainsUrl += '/Objects?$format=json'
+
+remoteDomainsUrl = '/cdt24/64fb655d-796e-495b-96b0-e5bb01854cdb/Objects?$format=json'
+let BaseUrl = 'http://wcf.tourinsoft.com/Syndication/3.0'
 const remoteApi = axios.create({
-  baseURL: `http://${variables.syndic_url_opt}`,
+  baseURL: BaseUrl,
   timeout: 1000,
 })
 
