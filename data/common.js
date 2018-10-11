@@ -6,12 +6,24 @@ const localApi = axios.create({
 /*
 const fs = require('fs')
 const postmanFile = fs.readFileSync('data/data.postman_config', 'utf-8')
-const variables = readVariablesFromFile(postmanFile)
-let remoteDomainsUrl = `/${variables.syndic_name}`
-remoteDomainsUrl += `/${variables.syndic_key}`
-remoteDomainsUrl += '/Objects?$format=json'
-*/
-let remoteDomainsUrl = '/cdt24/64fb655d-796e-495b-96b0-e5bb01854cdb/Objects?$format=json'
+const variables = readVariablesFromFile(postmanFile) */
+
+let syndic_key = '64fb655d-796e-495b-96b0-e5bb01854cdb'
+let syndic_key_uk = '8118b915-4d0d-4f30-a64e-42aac576c0d0'
+let syndic_name = 'cdt24'
+let syndic_url_opt = 'wcf.tourinsoft.com/Syndication/3.0'
+
+
+let remoteDomainsUrl = 'http://' + syndic_url_opt
+    + '/' + syndic_name
+    + '/' + syndic_key
+    + '/Objects?$format=json'
+
+let remoteDomainsUKTraductionsUrl = 'http://' + syndic_url_opt
+    + '/' + syndic_name
+    + '/' + syndic_key_uk
+    + '/Objects?$format=json'
+
 let baseUrl = 'http://wcf.tourinsoft.com/Syndication/3.0'
 const remoteApi = axios.create({
   baseUrl,
@@ -35,4 +47,4 @@ function readVariablesFromFile(fileContent) {
 }
 */
 
-export { localApi, remoteApi, remoteDomainsUrl }
+export { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl }

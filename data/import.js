@@ -1,4 +1,4 @@
-import { localApi, remoteApi, remoteDomainsUrl } from './common'
+import { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } from './common'
 const isEqual = require('fast-deep-equal')
 const jsonServer = require('json-server')
 const server = jsonServer.create()
@@ -10,6 +10,10 @@ let stopProcessing = false
 let domainCreated = 0
 let domainUpdated = 0
 let domainSkipped = 0
+const objectMapping = {
+  domains: remoteDomainsUrl,
+  traductions: remoteDomainsUKTraductionsUrl,
+}
 const remoteTagsToLocal = {
   ACCESHANDI: 'acces-handicape',
   HEBERGEMENT: 'hebergement',
@@ -78,6 +82,13 @@ function remoteDomainToLocal(remote) {
   return local
 }
 
+function remoteTraductionToLocal(remote) {
+    return {
+        description: remote.DESCRIPTIF,
+        id: remote.SyndicObjectID
+    }
+}
+
 function getVineyardsFromRemoteDomain(domain) {
   let vineyards = []
   remoteVineyards.forEach(vineyard => {
@@ -93,6 +104,7 @@ function getVineyardsFromRemoteDomain(domain) {
 }
 
 function getTagsFromRemoteDomain(domain) {
+  console.log('Domaine = ', domain)
   let tags = []
   let prestations = domain['PRESTATIONS']
 
@@ -115,12 +127,14 @@ function getTagsFromRemoteDomain(domain) {
   let agribio = domain['AGRIBIO']
   if (agribio === 'non') {
     let labelsCharte = domain['LABELSCHARTE']
-    labelsCharte = labelsCharte.split('#')
-    labelsCharte.forEach(labelCharte => {
-      if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
-        domain['ENV_HUMAIN'] = 'oui'
+      if (labelsCharte) {
+        labelsCharte = labelsCharte.split('#')
+        labelsCharte.forEach(labelCharte => {
+            if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
+                domain['ENV_HUMAIN'] = 'oui'
+            }
+        })
       }
-    })
   } else {
     domain['ENV_HUMAIN'] = 'oui'
   }
@@ -206,10 +220,10 @@ function getWineTagFromName(name) {
   }
 }
 
-function getLocalDomain(id) {
+function getLocalDomain(id, type) {
   // console.log(id, ': getting local domain')
   return localApi
-    .get('/domains/' + id)
+    .get('/' + type + '/' + id)
     .then(response => {
       const localDomain = response.data
       delete localDomain.updated // so we dont to compare or check this
@@ -226,10 +240,10 @@ function getLocalDomain(id) {
     })
 }
 
-function addLocalDomain(data) {
+function addLocalDomain(data, type) {
   console.log('adding local domain with id', data.id)
   return localApi
-    .post('/domains', data)
+    .post('/' + type, data)
     .then(() => {
       domainCreated++
       console.log(data.id, ': freshly added !')
@@ -240,9 +254,9 @@ function addLocalDomain(data) {
     })
 }
 
-function patchLocalDomain(data) {
+function patchLocalDomain(data, type) {
   return localApi
-    .put('/domains/' + data.id, data)
+    .put('/' + type + '/' + data.id, data)
     .then(() => {
       domainUpdated++
       console.log(data.id, ': updated')
@@ -253,19 +267,30 @@ function patchLocalDomain(data) {
     })
 }
 
-function updateLocalDomain(remoteDomain) {
+function updateLocalObject(remoteObject, type = 'domains') {
   if (stopProcessing) {
     return Promise.error('stop processing requested')
   }
-  const newData = remoteDomainToLocal(remoteDomain)
-  return getLocalDomain(newData.id).then(response => {
+
+  console.log('updateLocalObject type = ', type )
+  let newData = ''
+
+  if (type === 'domains' ) {
+    newData = remoteDomainToLocal(remoteObject)
+  }
+  if (type === 'traductions') {
+    newData = remoteTraductionToLocal(remoteObject)
+  }
+
+
+  return getLocalDomain(newData.id, type).then(response => {
     if (response === 'does-not-exists') {
-      return addLocalDomain(newData)
+      return addLocalDomain(newData, type)
     }
     const localData = response
     if (!isEqual(localData, newData)) {
       newData.updated = Date.now()
-      return patchLocalDomain(newData)
+      return patchLocalDomain(newData, type)
     } else {
       domainSkipped++
       if (!justLogChanges) {
@@ -279,11 +304,11 @@ async function pause(time) {
   return new Promise((resolve) => setTimeout(() => resolve('success, pause ended'), time))
 }
 
-async function updateLocalDomains(remoteDomains) {
-  console.log('checking ' + remoteDomains.length + ' remote domains')
-  for (let i = 0; i < remoteDomains.length; i++) {
+async function updateLocalDomains(remoteObjects, type) {
+  console.log('checking ' + remoteObjects.length + ' remote ' + type)
+  for (let i = 0; i < remoteObjects.length; i++) {
     await pause(50)
-    await updateLocalDomain(remoteDomains[i])
+    await updateLocalObject(remoteObjects[i], type)
   }
 }
 
@@ -342,12 +367,41 @@ function getRemoteDomains() {
     })
 }
 
+function getRemoteObjects(type) {
+    console.log('getting remote ' + type + ' from api')
+
+    let apiurl = objectMapping[type]
+
+    console.log('using url :', apiurl)
+    remoteApi.get(apiurl)
+        .then(response => {
+            if (response.data) {
+                const remoteObjects = response.data.value
+                if (justProcessOne) {
+                    return updateLocalDomains(remoteObjects.splice(0, 1), type)
+                }
+                return updateLocalDomains(remoteObjects, type)
+            } else {
+                console.error('failed at getting remote traductions')
+            }
+        })
+        .then(() => showSummary())
+        .catch(error => {
+            console.error(error)
+            stopProcessing = true
+        })
+        .then(() => {
+            setTimeout(() => process.exit(0), 1000)
+        })
+}
+
 // start Json Server
 server.use(middlewares)
 server.use(router)
 server.listen(3003, () => {
   console.log('Json Server is running')
-  getRemoteDomains()
+    getRemoteObjects('traductions')
+  // getRemoteDomains()
 })
 
 
