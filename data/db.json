@@ -64,430 +64,6 @@
   "domains": [
     {
       "active": true,
-      "activities": null,
-      "description": "Corbiac, coeur originel de Puycharman, vignoble aujourd'hui appelé Pécharmant et implanté au XI° siècle par les Comtes du Périgord sur les coteaux argilo-sableux au nord-est de Bergerac, se transmet depuis 1587 au sein de la famille du célèbre Cyrano de Bergerac.\nCette connaissance du terroir, acquise par 17 générations successives de vignerons, et une culture respectueuse des traditions et cépages (Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec) confèrent une grande richesse à notre production en Pécharmant...",
-      "id": "DEGAQU024FS00004",
-      "labels": [],
-      "langs": [
-        "Français",
-        "Anglais"
-      ],
-      "latitude": "44.8778672",
-      "longitude": "0.52102446",
-      "mail": "corbiac@corbiac.com",
-      "number": "607",
-      "openHours": [
-        "01/01/2018|31/12/2018|10:00|||19:00|"
-      ],
-      "phones": [
-        "+33 5 53 57 20 75"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-corbiac-pecharmant-2018.png",
-        "http://cdt24.media.tourinsoft.eu/upload/P1000085-2.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/P1000080-2.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/P1000088.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Corbiac-Pecharmant-2.jpg"
-      ],
-      "plus": "Depuis 1587, le vignoble se transmet au sein de la famille du célèbre Cyrano de Bergerac.",
-      "services": [],
-      "socialFacebook": null,
-      "statuses": [
-        "Producteur"
-      ],
-      "tags": [
-        "acces-handicape",
-        "vin-rouge",
-        "vin-rose",
-        "vin-blanc",
-        "vin-moelleux",
-        "vin-liquoreux"
-      ],
-      "title": "Château Corbiac Pécharmant",
-      "tourContitions": [
-        "Visite libre",
-        "Visite guidée uniquement sur rendez-vous"
-      ],
-      "tourMinutes": null,
-      "town": "BERGERAC",
-      "adress": "Route de Corbiac",
-      "vineyards": [
-        "pecharmant"
-      ],
-      "websites": [
-        "https://www.corbiac.com",
-        "#https://www.lemeilleurpecharmant.com"
-      ],
-      "updated": 1539248562946
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "Magnifique demeure inscrite à l’inventaire des monuments historiques, le château de la Jaubertie fut une propriété de chasse d’Henri IV au XVIe siècle, qui l’offrit par la suite à sa maîtresse Gabrielle d’Estrée. Trônant fièrement au milieu des 52 hectares de vignes du domaine à 10 km au sud de Bergerac et à quelques minutes de Monbazillac, il est le cadre idéal d’une découverte des vins AOC Bergerac rouge, blanc et rosé.\nDepuis les bâtiments aux belles portes cintrées, admirez le vignoble et pénétrez ensuite dans les chais où les cuves inox modernes cohabitent avec les fûts de chêne dans lesquels vieillissent les meilleures parcelles. Terminez votre visite dans la vaste salle de dégustation, digne du cadre historique du château de la Jaubertie, nous serons ravis de vous faire apprécier toute la gamme de nos vins, dont la célèbre cuvée Mirabelle.\n",
-      "id": "DEGAQU024FS0000A",
-      "labels": [],
-      "langs": [
-        "Français",
-        "Anglais"
-      ],
-      "latitude": "44.7744249",
-      "longitude": "0.51891088",
-      "mail": "jaubertie@wanadoo.fr",
-      "number": "431",
-      "openHours": [],
-      "phones": [
-        "+33 5 53 58 32 11"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--1-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--12-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--13-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--14-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--15-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--2-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--3-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--4-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--10-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--11-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--5-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--6-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--7-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--8-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--9-.jpg"
-      ],
-      "plus": "La magnifique propriété classée monument historique.",
-      "services": [],
-      "socialFacebook": null,
-      "statuses": [
-        "Producteur"
-      ],
-      "tags": [
-        "env-humain"
-      ],
-      "title": "Château de la Jaubertie",
-      "tourContitions": [
-        "Visite libre uniquement sur rendez-vous"
-      ],
-      "tourMinutes": null,
-      "town": "COLOMBIER",
-      "adress": null,
-      "vineyards": [
-        "bergerac",
-        "monbazillac"
-      ],
-      "websites": [
-        "http://www.chateau-jaubertie.com "
-      ],
-      "updated": 1536313271286
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "La cave de Monbazillac, qui regroupe 50 vignerons, est le plus  important producteur de vins d'appellation Monbazillac. Nos vignerons se sont engagés dans des démarches d'amélioration continue. Nous vinifions et commercialisons notamment plusieurs châteaux qui au 17ème siècle étaient connus sous le nom de marques hollandaises.\nDate de création : 1940\n50 viticulteurs-adhérents et 10 salariés\n927 hectares de vignes et 28 000 hectolitres de production annuelle\nAire de production : Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 filiales employant 24 salariés",
-      "id": "DEGAQU024FS00005",
-      "labels": [
-        "vignobles-et-decouvertes"
-      ],
-      "langs": [
-        "Anglais",
-        "Espagnol"
-      ],
-      "latitude": "44.8106440",
-      "longitude": "0.47397851",
-      "mail": "monbazillac@chateau-monbazillac.com",
-      "number": "420",
-      "openHours": [
-        "01/01/2018|28/02/2018|10:00|12:30|14:00|18:00|Dimanche",
-        "01/03/2018|30/06/2018|10:00|12:30|13:30|19:00|Dimanche",
-        "01/07/2018|31/08/2018|09:00|||19:00|Dimanche",
-        "01/09/2018|31/12/2018|10:00|12:30|13:30|19:00|Dimanche"
-      ],
-      "phones": [
-        "+33 5 53 63 65 00"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--3-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/magasin-cave-reduite-OTBergerac.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--1-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--2-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--4-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--5-.jpg"
-      ],
-      "plus": "Une gamme de vins très importante et pour tous les budgets et un magasin faisant la part belle aux produits régionaux.",
-      "services": [
-        "Aire de camping-car sur place"
-      ],
-      "socialFacebook": "https://www.facebook.com/Cave-de-Monbazillac-474549802689020/",
-      "statuses": [
-        "Coopérative"
-      ],
-      "tags": [
-        "acces-handicape",
-        "camping",
-        "env-humain",
-        "vin-rouge",
-        "vin-rose",
-        "vin-blanc",
-        "vin-moelleux",
-        "vin-liquoreux"
-      ],
-      "title": "Cave Coopérative de Monbazillac",
-      "tourContitions": [
-        "Visite guidée uniquement sur rendez-vous"
-      ],
-      "tourMinutes": null,
-      "town": "MONBAZILLAC",
-      "adress": "Route de Mont de Marsan",
-      "vineyards": [
-        "bergerac",
-        "monbazillac"
-      ],
-      "websites": [
-        "http://cave.chateau-monbazillac.com/"
-      ],
-      "updated": 1536313271003
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "Bienvenue chez Alliance Aquitaine, cave coopérative, regroupant 133 viticulteurs représentant les appellations Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant et Bordeaux. C’est 1356 hectares dont 95% sont certifiés en Agri Confiance, norme de qualité et des bonnes pratiques environnementales.\nAlliance Aquitaine est représentée par 3 sites de production et 3 magasins de vente directe : Bergerac-Le Fleix –Saint Vivien.\nVenez déguster nos vins et découvrir notre chai au « 400 barriques «  sur le site de Bergerac.\n\n\nAccès gratuit au Chai à Barriques sur demande.",
-      "id": "DEGAQU024FS00006",
-      "labels": [],
-      "langs": [
-        "Anglais"
-      ],
-      "latitude": "44.8584165",
-      "longitude": "0.48904180",
-      "mail": "contact@allianceaquitaine.com",
-      "number": "600",
-      "openHours": [
-        "02/01/2018|30/06/2018|09:00|12:00|14:00|18:00|Dimanche",
-        "01/07/2018|31/08/2018|09:00|12:00|14:00|18:00|Lundi-Dimanche",
-        "01/09/2018|30/12/2018|09:00|12:00|18:00||Dimanche"
-      ],
-      "phones": [
-        "+33 5 53 57 16 27"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Bergerac.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Site-du-Fleix-Siege-Social.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Saint-Vivien.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Logo-AA.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-la-vaure-bergerac-futs-de-chene.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/stv-montravel.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/vieux-sapin-pecharmant.jpg"
-      ],
-      "plus": "La surprenante visite du chai aux 400 barriques.",
-      "services": [],
-      "socialFacebook": null,
-      "statuses": [
-        "Coopérative"
-      ],
-      "tags": [
-        "acces-handicape"
-      ],
-      "title": "Alliance Aquitaine - Site de Bergerac",
-      "tourContitions": [],
-      "tourMinutes": null,
-      "town": "BERGERAC",
-      "adress": "70 boulevard Santraille",
-      "vineyards": [
-        "bergerac",
-        "monbazillac",
-        "montravel",
-        "pecharmant"
-      ],
-      "websites": [
-        "http://www.allianceaquitaine.com"
-      ],
-      "updated": 1539248563099
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "Le Château du XVIIIe siècle est situé à Lembras sur la route nationale 21, dominant Bergerac avec une exposition plain sud, à flanc de coteau sur un terroir argilo-ferrugineux.\nNotre vignoble de 34 hectares, d'un seul tenant, représente 10 % de l'ensemble de la production de vin rouge d’Appellation d'Origine Contrôlée Pécharmant.\nVin de fête du Périgord le Pécharmant est un vin rouge de garde, élevé en fût de chêne, composés de 4 cépages. Bien charpenté, fruité et généreux, après trois ans en bouteille ce vin dévoile tous ses secrets.\nNous ne manquerons pas de vous les faire découvrir en notre domaine où vous serez assurés de notre meilleur accueil.",
-      "id": "DEGAQU024FS00009",
-      "labels": [],
-      "langs": [
-        "Français",
-        "Anglais"
-      ],
-      "latitude": "44.8888291",
-      "longitude": "0.53272426",
-      "mail": "contact@chateaurenaudie.com",
-      "number": "608",
-      "openHours": [
-        "02/01/2018|30/04/2018|10:00|12:30|14:00|17:30|Samedi-Dimanche",
-        "01/05/2018|30/09/2018|09:30|12:30|13:30|18:00|Dimanche",
-        "01/10/2018|21/12/2018|10:00|12:30|14:00|17:30|Samedi-Dimanche"
-      ],
-      "phones": [
-        "+33 5 53 27 05 75"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/cour1.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/degust21.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/chai3.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/degustation1.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/entree1.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/le-chateau1.jpg"
-      ],
-      "plus": "Belle propriété du XVIIIe siècle dominant Bergerac.",
-      "services": [],
-      "socialFacebook": "https://www.facebook.com/profile.php?id=100009816647739",
-      "statuses": [
-        "Producteur"
-      ],
-      "tags": [
-        "acces-handicape",
-        "vin-rose",
-        "vin-rouge",
-        "vin-liquoreux",
-        "vin-moelleux"
-      ],
-      "title": "Château la Renaudie",
-      "tourContitions": [
-        "Visite libre",
-        "Visite guidée uniquement sur rendez-vous"
-      ],
-      "tourMinutes": "90",
-      "town": "LEMBRAS",
-      "adress": "46 Route de Périgueux",
-      "vineyards": [
-        "bergerac",
-        "monbazillac",
-        "pecharmant"
-      ],
-      "websites": [
-        "http://www.chateaurenaudie.com"
-      ],
-      "updated": 1539248563243
-    },
-    {
-      "id": "DEGAQU024FS00007",
-      "updated": 1527768657903,
-      "title": "Château d'Elle",
-      "active": true,
-      "latitude": "44.8616334",
-      "longitude": "0.52416265"
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "Facile et rapide à trouver, les chais et le point de vente du Château La Vieille Bergerie ne pourront que vous séduire. Nous sommes producteur de toutes les couleurs des vins de Bergerac pour satisfaire les dégustateurs les plus avertis. Nous vous conseillerons en Français ou en Anglais. ",
-      "id": "DEGAQU024FS00008",
-      "labels": [],
-      "langs": [
-        "Anglais"
-      ],
-      "latitude": "44.8760882",
-      "longitude": "0.50798356",
-      "mail": "lavieillebergerie@free.fr",
-      "number": "506",
-      "openHours": [
-        "01/01/2018|30/06/2018|10:00|12:00|15:00|19:00|",
-        "01/07/2018|15/09/2018|10:00|12:00|15:00|19:00|",
-        "16/09/2018|31/12/2018|10:00|12:00|15:00|19:00|"
-      ],
-      "phones": [
-        "+33 5 53 61 35 19"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--1-.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--2-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--3-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--4-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--5-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--6-.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--7-.jpg"
-      ],
-      "plus": "Idéalement situé en sortie de Bergerac sur la RN21 en direction de Périgueux.",
-      "services": [],
-      "socialFacebook": "https://www.facebook.com/Ch%C3%A2teau-La-Vieille-Bergerie-1564381107213127/?fref=ts",
-      "statuses": [
-        "Producteur"
-      ],
-      "tags": [
-        "acces-handicape"
-      ],
-      "title": "Château la Vieille Bergerie",
-      "tourContitions": [
-        "Visite guidée uniquement sur rendez-vous"
-      ],
-      "tourMinutes": null,
-      "town": "LEMBRAS",
-      "adress": "2 Route de Villamblard",
-      "vineyards": [
-        "bergerac",
-        "monbazillac",
-        "pecharmant",
-        "rosette"
-      ],
-      "websites": [
-        "http://www.vieille-bergerie.fr/"
-      ],
-      "updated": 1539248563172
-    },
-    {
-      "active": true,
-      "activities": null,
-      "description": "En 1984, Christian ROCHE a hérité d'une partie de la propriété familiale et en 1989, il a aménagé son chai de vinification afin de devenir vigneron indépendant.\nDans cette optique, il a réalisé qu'il fallait revenir sur les fondamentaux (terme rugbystique cher à notre sud ouest ) à savoir la terre et la plante.\nLa vraie question est: quels sont les besoins de la plante pour produire de beaux raisins permettant d'élaborer le meilleur vin possible ?\nDepuis quelques années, le respect de l'environnement, le travail du sol en profondeur pour un meilleur enracinement, l'implantation des cépages, les densités de plantation, les sélections massales ont contribué à satisfaire notre volonté de gains qualitatifs. Ces préoccupations ont pris, depuis 2012, un tour plus concret : nous sommes en effet en Agriculture Biologique.",
-      "id": "DEGAQU024FS0000C",
-      "labels": [],
-      "langs": [
-        "Français",
-        "Allemand",
-        "Anglais"
-      ],
-      "latitude": "44.7746762",
-      "longitude": "0.53281545",
-      "mail": "ancienne-cure@orange.fr",
-      "number": "433",
-      "openHours": [
-        "02/01/2018|01/07/2018|09:00|||18:00|Dimanche",
-        "02/07/2018|31/08/2018|09:00|||18:00|",
-        "01/09/2018|31/12/2018|09:00|||18:00|Dimanche"
-      ],
-      "phones": [
-        "+33 5 53 58 27 90"
-      ],
-      "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-1.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-2.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-Christian-Roche.jpg",
-        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-degustation.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-vue-aerienne.jpg"
-      ],
-      "plus": "La recherche de la plus pure et authentique expression du terroir.",
-      "services": [],
-      "socialFacebook": "https://www.facebook.com/DomaineLAncienneCure/?fref=ts",
-      "statuses": [
-        "Producteur"
-      ],
-      "tags": [
-        "acces-handicape",
-        "env-humain"
-      ],
-      "title": "Domaine de l'Ancienne Cure",
-      "tourContitions": [
-        "Visite libre",
-        "Visite guidée uniquement sur rendez-vous"
-      ],
-      "tourMinutes": null,
-      "town": "COLOMBIER",
-      "adress": null,
-      "vineyards": [
-        "bergerac",
-        "monbazillac",
-        "pecharmant"
-      ],
-      "websites": [
-        "http://www.domaine-anciennecure.fr"
-      ],
-      "updated": 1536313271352
-    },
-    {
-      "active": true,
       "activities": "Juillet et août:\nDégustation gourmande: dégustation de nos vins accompagnés des pâtés de la ferme de Barbe, les mercredis du 14 juillet au 15 août.\nVisites guidées de nos chais (vinification et vieillissement).\nPique-nique dans les vignes: panier avec des produits locaux, 30 euros pour 4 personnes. Des tables pique-nique sont à votre disposition au sommet de la colline.",
       "description": "Situé au cœur de l’appellation d’origine, sur le sommet du coteau, le Domaine du Haut Pécharmant étale ses 35 ha de vignes basses, exposées plein sud. Héritier d’une tradition vigneronne de cinq générations, depuis 1929 la famille Roches exploite ce terroir de sables et de graviers du Périgord avec ses argiles grises et rouges ferrugineuses. Les cépages merlot, malbec et cabernets donnent des vins très raffinés, à la richesse et aux bouquets remarquables. \nDécouvrez librement nos chais -avec espace musée-  et vignes (parcours avec explications en français, anglais et hollandais). Visites guidées juillet / aout (voir site). Visites et dégustation sont gratuites. \nDégustation gourmande avec des pâtés de la Ferme de Barbe les mercredis du 14 juillet au 15 août.\nAire pique nique au sommet de la colline. Panier pique nique (pain, fromages, charcuterie, gâteau aux noix) 30,- euros pour 4 pers",
       "id": "DEGAQU024FS00003",
@@ -555,8 +131,416 @@
       ],
       "websites": [
         "http://www.haut-pecharmant.fr"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "Corbiac, coeur originel de Puycharman, vignoble aujourd'hui appelé Pécharmant et implanté au XI° siècle par les Comtes du Périgord sur les coteaux argilo-sableux au nord-est de Bergerac, se transmet depuis 1587 au sein de la famille du célèbre Cyrano de Bergerac.\nCette connaissance du terroir, acquise par 17 générations successives de vignerons, et une culture respectueuse des traditions et cépages (Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec) confèrent une grande richesse à notre production en Pécharmant...",
+      "id": "DEGAQU024FS00004",
+      "labels": [],
+      "langs": [
+        "Français",
+        "Anglais"
       ],
-      "updated": 1539247737429
+      "latitude": "44.8778672",
+      "longitude": "0.52102446",
+      "mail": "corbiac@corbiac.com",
+      "number": "607",
+      "openHours": [
+        "01/01/2018|31/12/2018|10:00|||19:00|"
+      ],
+      "phones": [
+        "+33 5 53 57 20 75"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-corbiac-pecharmant-2018.png",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000085-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000080-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/P1000088.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Chateau-Corbiac-Pecharmant-2.jpg"
+      ],
+      "plus": "Depuis 1587, le vignoble se transmet au sein de la famille du célèbre Cyrano de Bergerac.",
+      "services": [],
+      "socialFacebook": null,
+      "statuses": [
+        "Producteur"
+      ],
+      "tags": [
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Château Corbiac Pécharmant",
+      "tourContitions": [
+        "Visite libre",
+        "Visite guidée uniquement sur rendez-vous"
+      ],
+      "tourMinutes": null,
+      "town": "BERGERAC",
+      "adress": "Route de Corbiac",
+      "vineyards": [
+        "pecharmant"
+      ],
+      "websites": [
+        "https://www.corbiac.com",
+        "#https://www.lemeilleurpecharmant.com"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "La cave de Monbazillac, qui regroupe 50 vignerons, est le plus  important producteur de vins d'appellation Monbazillac. Nos vignerons se sont engagés dans des démarches d'amélioration continue. Nous vinifions et commercialisons notamment plusieurs châteaux qui au 17ème siècle étaient connus sous le nom de marques hollandaises.\nDate de création : 1940\n50 viticulteurs-adhérents et 10 salariés\n927 hectares de vignes et 28 000 hectolitres de production annuelle\nAire de production : Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 filiales employant 24 salariés",
+      "id": "DEGAQU024FS00005",
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
+      "langs": [
+        "Anglais",
+        "Espagnol"
+      ],
+      "latitude": "44.8106440",
+      "longitude": "0.47397851",
+      "mail": "monbazillac@chateau-monbazillac.com",
+      "number": "420",
+      "openHours": [
+        "01/01/2018|28/02/2018|10:00|12:30|14:00|18:00|Dimanche",
+        "01/03/2018|30/06/2018|10:00|12:30|13:30|19:00|Dimanche",
+        "01/07/2018|31/08/2018|09:00|||19:00|Dimanche",
+        "01/09/2018|31/12/2018|10:00|12:30|13:30|19:00|Dimanche"
+      ],
+      "phones": [
+        "+33 5 53 63 65 00"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/magasin-cave-reduite-OTBergerac.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/cave-coop-monbazillac--5-.jpg"
+      ],
+      "plus": "Une gamme de vins très importante et pour tous les budgets et un magasin faisant la part belle aux produits régionaux.",
+      "services": [
+        "Aire de camping-car sur place"
+      ],
+      "socialFacebook": "https://www.facebook.com/Cave-de-Monbazillac-474549802689020/",
+      "statuses": [
+        "Coopérative"
+      ],
+      "tags": [
+        "acces-handicape",
+        "camping",
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc",
+        "vin-moelleux",
+        "vin-liquoreux"
+      ],
+      "title": "Cave Coopérative de Monbazillac",
+      "tourContitions": [
+        "Visite guidée uniquement sur rendez-vous"
+      ],
+      "tourMinutes": null,
+      "town": "MONBAZILLAC",
+      "adress": "Route de Mont de Marsan",
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "websites": [
+        "http://cave.chateau-monbazillac.com/"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "Bienvenue chez Alliance Aquitaine, cave coopérative, regroupant 133 viticulteurs représentant les appellations Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant et Bordeaux. C’est 1356 hectares dont 95% sont certifiés en Agri Confiance, norme de qualité et des bonnes pratiques environnementales.\nAlliance Aquitaine est représentée par 3 sites de production et 3 magasins de vente directe : Bergerac-Le Fleix –Saint Vivien.\nVenez déguster nos vins et découvrir notre chai au « 400 barriques «  sur le site de Bergerac.\n\n\nAccès gratuit au Chai à Barriques sur demande.",
+      "id": "DEGAQU024FS00006",
+      "labels": [],
+      "langs": [
+        "Anglais"
+      ],
+      "latitude": "44.8584165",
+      "longitude": "0.48904180",
+      "mail": "contact@allianceaquitaine.com",
+      "number": "600",
+      "openHours": [
+        "02/01/2018|30/06/2018|09:00|12:00|14:00|18:00|Dimanche",
+        "01/07/2018|31/08/2018|09:00|12:00|14:00|18:00|Lundi-Dimanche",
+        "01/09/2018|30/12/2018|09:00|12:00|18:00||Dimanche"
+      ],
+      "phones": [
+        "+33 5 53 57 16 27"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Bergerac.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Site-du-Fleix-Siege-Social.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Site-de-Saint-Vivien.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Logo-AA.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-de-la-vaure-bergerac-futs-de-chene.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/stv-montravel.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/vieux-sapin-pecharmant.jpg"
+      ],
+      "plus": "La surprenante visite du chai aux 400 barriques.",
+      "services": [],
+      "socialFacebook": null,
+      "statuses": [
+        "Coopérative"
+      ],
+      "tags": [
+        "acces-handicape"
+      ],
+      "title": "Alliance Aquitaine - Site de Bergerac",
+      "tourContitions": [],
+      "tourMinutes": null,
+      "town": "BERGERAC",
+      "adress": "70 boulevard Santraille",
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "montravel",
+        "pecharmant"
+      ],
+      "websites": [
+        "http://www.allianceaquitaine.com"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "Facile et rapide à trouver, les chais et le point de vente du Château La Vieille Bergerie ne pourront que vous séduire. Nous sommes producteur de toutes les couleurs des vins de Bergerac pour satisfaire les dégustateurs les plus avertis. Nous vous conseillerons en Français ou en Anglais. ",
+      "id": "DEGAQU024FS00008",
+      "labels": [],
+      "langs": [
+        "Anglais"
+      ],
+      "latitude": "44.8760882",
+      "longitude": "0.50798356",
+      "mail": "lavieillebergerie@free.fr",
+      "number": "506",
+      "openHours": [
+        "01/01/2018|30/06/2018|10:00|12:00|15:00|19:00|",
+        "01/07/2018|15/09/2018|10:00|12:00|15:00|19:00|",
+        "16/09/2018|31/12/2018|10:00|12:00|15:00|19:00|"
+      ],
+      "phones": [
+        "+33 5 53 61 35 19"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--1-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/la-vieille-bergerie--7-.jpg"
+      ],
+      "plus": "Idéalement situé en sortie de Bergerac sur la RN21 en direction de Périgueux.",
+      "services": [],
+      "socialFacebook": "https://www.facebook.com/Ch%C3%A2teau-La-Vieille-Bergerie-1564381107213127/?fref=ts",
+      "statuses": [
+        "Producteur"
+      ],
+      "tags": [
+        "acces-handicape"
+      ],
+      "title": "Château la Vieille Bergerie",
+      "tourContitions": [
+        "Visite guidée uniquement sur rendez-vous"
+      ],
+      "tourMinutes": null,
+      "town": "LEMBRAS",
+      "adress": "2 Route de Villamblard",
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant",
+        "rosette"
+      ],
+      "websites": [
+        "http://www.vieille-bergerie.fr/"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "Le Château du XVIIIe siècle est situé à Lembras sur la route nationale 21, dominant Bergerac avec une exposition plain sud, à flanc de coteau sur un terroir argilo-ferrugineux.\nNotre vignoble de 34 hectares, d'un seul tenant, représente 10 % de l'ensemble de la production de vin rouge d’Appellation d'Origine Contrôlée Pécharmant.\nVin de fête du Périgord le Pécharmant est un vin rouge de garde, élevé en fût de chêne, composés de 4 cépages. Bien charpenté, fruité et généreux, après trois ans en bouteille ce vin dévoile tous ses secrets.\nNous ne manquerons pas de vous les faire découvrir en notre domaine où vous serez assurés de notre meilleur accueil.",
+      "id": "DEGAQU024FS00009",
+      "labels": [],
+      "langs": [
+        "Français",
+        "Anglais"
+      ],
+      "latitude": "44.8888291",
+      "longitude": "0.53272426",
+      "mail": "contact@chateaurenaudie.com",
+      "number": "608",
+      "openHours": [
+        "02/01/2018|30/04/2018|10:00|12:30|14:00|17:30|Samedi-Dimanche",
+        "01/05/2018|30/09/2018|09:30|12:30|13:30|18:00|Dimanche",
+        "01/10/2018|21/12/2018|10:00|12:30|14:00|17:30|Samedi-Dimanche"
+      ],
+      "phones": [
+        "+33 5 53 27 05 75"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/cour1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/degust21.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chai3.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/degustation1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/entree1.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/le-chateau1.jpg"
+      ],
+      "plus": "Belle propriété du XVIIIe siècle dominant Bergerac.",
+      "services": [],
+      "socialFacebook": "https://www.facebook.com/profile.php?id=100009816647739",
+      "statuses": [
+        "Producteur"
+      ],
+      "tags": [
+        "acces-handicape",
+        "vin-rose",
+        "vin-rouge",
+        "vin-liquoreux",
+        "vin-moelleux"
+      ],
+      "title": "Château la Renaudie",
+      "tourContitions": [
+        "Visite libre",
+        "Visite guidée uniquement sur rendez-vous"
+      ],
+      "tourMinutes": "90",
+      "town": "LEMBRAS",
+      "adress": "46 Route de Périgueux",
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "websites": [
+        "http://www.chateaurenaudie.com"
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "Magnifique demeure inscrite à l’inventaire des monuments historiques, le château de la Jaubertie fut une propriété de chasse d’Henri IV au XVIe siècle, qui l’offrit par la suite à sa maîtresse Gabrielle d’Estrée. Trônant fièrement au milieu des 52 hectares de vignes du domaine à 10 km au sud de Bergerac et à quelques minutes de Monbazillac, il est le cadre idéal d’une découverte des vins AOC Bergerac rouge, blanc et rosé.\nDepuis les bâtiments aux belles portes cintrées, admirez le vignoble et pénétrez ensuite dans les chais où les cuves inox modernes cohabitent avec les fûts de chêne dans lesquels vieillissent les meilleures parcelles. Terminez votre visite dans la vaste salle de dégustation, digne du cadre historique du château de la Jaubertie, nous serons ravis de vous faire apprécier toute la gamme de nos vins, dont la célèbre cuvée Mirabelle.\n",
+      "id": "DEGAQU024FS0000A",
+      "labels": [],
+      "langs": [
+        "Français",
+        "Anglais"
+      ],
+      "latitude": "44.7744249",
+      "longitude": "0.51891088",
+      "mail": "jaubertie@wanadoo.fr",
+      "number": "431",
+      "openHours": [],
+      "phones": [
+        "+33 5 53 58 32 11"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--1-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--12-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--13-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--14-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--15-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--2-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--3-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--4-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--10-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--11-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--5-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--6-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--7-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--8-.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/chateau-la-jaubertie--9-.jpg"
+      ],
+      "plus": "La magnifique propriété classée monument historique.",
+      "services": [],
+      "socialFacebook": null,
+      "statuses": [
+        "Producteur"
+      ],
+      "tags": [
+        "env-humain"
+      ],
+      "title": "Château de la Jaubertie",
+      "tourContitions": [
+        "Visite libre uniquement sur rendez-vous"
+      ],
+      "tourMinutes": null,
+      "town": "COLOMBIER",
+      "adress": null,
+      "vineyards": [
+        "bergerac",
+        "monbazillac"
+      ],
+      "websites": [
+        "http://www.chateau-jaubertie.com "
+      ]
+    },
+    {
+      "active": true,
+      "activities": null,
+      "description": "En 1984, Christian ROCHE a hérité d'une partie de la propriété familiale et en 1989, il a aménagé son chai de vinification afin de devenir vigneron indépendant.\nDans cette optique, il a réalisé qu'il fallait revenir sur les fondamentaux (terme rugbystique cher à notre sud ouest ) à savoir la terre et la plante.\nLa vraie question est: quels sont les besoins de la plante pour produire de beaux raisins permettant d'élaborer le meilleur vin possible ?\nDepuis quelques années, le respect de l'environnement, le travail du sol en profondeur pour un meilleur enracinement, l'implantation des cépages, les densités de plantation, les sélections massales ont contribué à satisfaire notre volonté de gains qualitatifs. Ces préoccupations ont pris, depuis 2012, un tour plus concret : nous sommes en effet en Agriculture Biologique.",
+      "id": "DEGAQU024FS0000C",
+      "labels": [],
+      "langs": [
+        "Français",
+        "Allemand",
+        "Anglais"
+      ],
+      "latitude": "44.7746762",
+      "longitude": "0.53281545",
+      "mail": "ancienne-cure@orange.fr",
+      "number": "433",
+      "openHours": [
+        "02/01/2018|01/07/2018|09:00|||18:00|Dimanche",
+        "02/07/2018|31/08/2018|09:00|||18:00|",
+        "01/09/2018|31/12/2018|09:00|||18:00|Dimanche"
+      ],
+      "phones": [
+        "+33 5 53 58 27 90"
+      ],
+      "photos": [
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-1.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-2.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-Christian-Roche.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-degustation.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Ancienne-Cure-vue-aerienne.jpg"
+      ],
+      "plus": "La recherche de la plus pure et authentique expression du terroir.",
+      "services": [],
+      "socialFacebook": "https://www.facebook.com/DomaineLAncienneCure/?fref=ts",
+      "statuses": [
+        "Producteur"
+      ],
+      "tags": [
+        "acces-handicape",
+        "env-humain"
+      ],
+      "title": "Domaine de l'Ancienne Cure",
+      "tourContitions": [
+        "Visite libre",
+        "Visite guidée uniquement sur rendez-vous"
+      ],
+      "tourMinutes": null,
+      "town": "COLOMBIER",
+      "adress": null,
+      "vineyards": [
+        "bergerac",
+        "monbazillac",
+        "pecharmant"
+      ],
+      "websites": [
+        "http://www.domaine-anciennecure.fr"
+      ]
     },
     {
       "active": true,
@@ -621,8 +605,7 @@
       ],
       "websites": [
         "http://www.chateau-du-haut-pezaud.com"
-      ],
-      "updated": 1539248563428
+      ]
     },
     {
       "active": true,
@@ -682,8 +665,7 @@
       ],
       "websites": [
         "http://www.chateau-hautbernasse.fr"
-      ],
-      "updated": 1536313271476
+      ]
     },
     {
       "active": true,
@@ -742,8 +724,7 @@
       ],
       "websites": [
         "http://www.vins-bergeracduras.fr"
-      ],
-      "updated": 1539248563559
+      ]
     },
     {
       "active": true,
@@ -803,8 +784,7 @@
       ],
       "websites": [
         "http://www.vins-bdp.com"
-      ],
-      "updated": 1539248563631
+      ]
     },
     {
       "active": true,
@@ -871,8 +851,7 @@
       ],
       "websites": [
         "http://www.haut-montlong.com"
-      ],
-      "updated": 1536313271668
+      ]
     },
     {
       "active": true,
@@ -946,8 +925,7 @@
       ],
       "websites": [
         "http://www.domainedusiorac.fr"
-      ],
-      "updated": 1536313271739
+      ]
     },
     {
       "active": true,
@@ -1013,8 +991,7 @@
       ],
       "websites": [
         "http://www.grangeneuve.fr"
-      ],
-      "updated": 1536313271808
+      ]
     },
     {
       "active": true,
@@ -1085,8 +1062,7 @@
       "websites": [
         "http://www.domaine-de-coutancie.com/",
         "Propriété viticole"
-      ],
-      "updated": 1536313271870
+      ]
     },
     {
       "active": true,
@@ -1152,8 +1128,7 @@
       ],
       "websites": [
         "http://www.verdots.com"
-      ],
-      "updated": 1539248563930
+      ]
     },
     {
       "active": true,
@@ -1219,8 +1194,7 @@
       ],
       "websites": [
         "http://www.moulincaresse.fr"
-      ],
-      "updated": 1539248564003
+      ]
     },
     {
       "active": true,
@@ -1297,8 +1271,7 @@
       ],
       "websites": [
         "http://www.puyservain.com"
-      ],
-      "updated": 1539248564074
+      ]
     },
     {
       "active": true,
@@ -1359,8 +1332,7 @@
       ],
       "websites": [
         "http://www.terrevieille.com"
-      ],
-      "updated": 1539248564143
+      ]
     },
     {
       "active": true,
@@ -1426,8 +1398,7 @@
       ],
       "websites": [
         "http://www.ladesvignes.com"
-      ],
-      "updated": 1536313272182
+      ]
     },
     {
       "active": true,
@@ -1491,8 +1462,7 @@
       ],
       "websites": [
         "http://www.vignoblesdubard.com/"
-      ],
-      "updated": 1536313272251
+      ]
     },
     {
       "active": true,
@@ -1544,8 +1514,7 @@
       ],
       "websites": [
         "http://www.closlejoncal.com"
-      ],
-      "updated": 1536313272318
+      ]
     },
     {
       "active": true,
@@ -1604,8 +1573,7 @@
       ],
       "websites": [
         "http://www.le-raz.com"
-      ],
-      "updated": 1539248564388
+      ]
     },
     {
       "active": true,
@@ -1662,8 +1630,7 @@
       ],
       "websites": [
         "http://www.chateauletap.fr/"
-      ],
-      "updated": 1536313272448
+      ]
     },
     {
       "active": true,
@@ -1724,8 +1691,7 @@
       ],
       "websites": [
         "http://www.chateau-de-tiregand.com"
-      ],
-      "updated": 1536313272512
+      ]
     },
     {
       "active": true,
@@ -1779,8 +1745,7 @@
       ],
       "websites": [
         "http://www.combrillac.fr"
-      ],
-      "updated": 1539248564576
+      ]
     },
     {
       "active": true,
@@ -1834,8 +1799,7 @@
       ],
       "websites": [
         "http://www.court-les-muts.com/"
-      ],
-      "updated": 1539248564649
+      ]
     },
     {
       "active": true,
@@ -1887,8 +1851,7 @@
       ],
       "websites": [
         "http://chabrier.jimdo.com/"
-      ],
-      "updated": 1536313272712
+      ]
     },
     {
       "active": true,
@@ -1952,8 +1915,7 @@
       ],
       "websites": [
         "http://www.chateaufeely.com"
-      ],
-      "updated": 1536313272813
+      ]
     },
     {
       "active": true,
@@ -2012,8 +1974,7 @@
       ],
       "websites": [
         "https://www.domainemoulingarreau.fr/"
-      ],
-      "updated": 1539248564842
+      ]
     },
     {
       "active": true,
@@ -2070,8 +2031,7 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": [],
-      "updated": 1539248564916
+      "websites": []
     },
     {
       "active": true,
@@ -2132,8 +2092,7 @@
       ],
       "websites": [
         "http://www.chateau-larobertie.com"
-      ],
-      "updated": 1536313273017
+      ]
     },
     {
       "active": true,
@@ -2193,8 +2152,7 @@
       ],
       "websites": [
         "http://www.belingard.com"
-      ],
-      "updated": 1539248565051
+      ]
     },
     {
       "active": true,
@@ -2263,8 +2221,7 @@
       ],
       "websites": [
         "http://www.barouillet.com"
-      ],
-      "updated": 1536313273150
+      ]
     },
     {
       "active": true,
@@ -2319,8 +2276,7 @@
       ],
       "websites": [
         "http://www.chateau-montplaisir.com"
-      ],
-      "updated": 1539248565187
+      ]
     },
     {
       "active": true,
@@ -2378,8 +2334,7 @@
       ],
       "websites": [
         "http://www.chateaukalian.com"
-      ],
-      "updated": 1536313273286
+      ]
     },
     {
       "active": true,
@@ -2438,8 +2393,7 @@
       ],
       "websites": [
         "http://www.chateau-du-rooy.com/"
-      ],
-      "updated": 1539248565316
+      ]
     },
     {
       "active": true,
@@ -2499,8 +2453,7 @@
       "vineyards": [
         "pecharmant"
       ],
-      "websites": [],
-      "updated": 1539248565385
+      "websites": []
     },
     {
       "active": true,
@@ -2560,8 +2513,7 @@
       ],
       "websites": [
         "http://www.domainedugrandjaure.com"
-      ],
-      "updated": 1539248565457
+      ]
     },
     {
       "active": true,
@@ -2622,8 +2574,7 @@
       ],
       "websites": [
         "http://www.domainedescostes.fr"
-      ],
-      "updated": 1539248565529
+      ]
     },
     {
       "active": true,
@@ -2675,8 +2626,7 @@
       "vineyards": [
         "pecharmant"
       ],
-      "websites": [],
-      "updated": 1539248565598
+      "websites": []
     },
     {
       "active": true,
@@ -2729,8 +2679,7 @@
         "monbazillac",
         "pecharmant"
       ],
-      "websites": [],
-      "updated": 1539248565670
+      "websites": []
     },
     {
       "active": true,
@@ -2780,8 +2729,7 @@
       ],
       "websites": [
         "http://www.farciesdupech.com/"
-      ],
-      "updated": 1539248565742
+      ]
     },
     {
       "active": true,
@@ -2833,8 +2781,7 @@
       ],
       "websites": [
         "http://www.chateaulatilleraie.com"
-      ],
-      "updated": 1539248565867
+      ]
     },
     {
       "active": true,
@@ -2888,8 +2835,7 @@
       ],
       "websites": [
         "http://www.poulvere.com"
-      ],
-      "updated": 1539248565943
+      ]
     },
     {
       "active": true,
@@ -2945,8 +2891,7 @@
       ],
       "websites": [
         "http://www.chateau-malfourat.fr/"
-      ],
-      "updated": 1539248566015
+      ]
     },
     {
       "active": true,
@@ -3009,8 +2954,7 @@
       ],
       "websites": [
         "http://chateau-vari.com/"
-      ],
-      "updated": 1539248566086
+      ]
     },
     {
       "active": true,
@@ -3074,8 +3018,7 @@
       ],
       "websites": [
         "http://www.grandemaison-monbazillac.com/"
-      ],
-      "updated": 1539248566155
+      ]
     },
     {
       "active": true,
@@ -3140,8 +3083,7 @@
       ],
       "websites": [
         "http://www.vigneronsdesigoules.com/"
-      ],
-      "updated": 1539248566230
+      ]
     },
     {
       "active": true,
@@ -3202,8 +3144,7 @@
       ],
       "websites": [
         "http://www.vins-bergerac-grimardy.com"
-      ],
-      "updated": 1539248566302
+      ]
     },
     {
       "active": true,
@@ -3260,8 +3201,7 @@
       ],
       "websites": [
         "http://www.chateaulamaurigne.com"
-      ],
-      "updated": 1539248566371
+      ]
     },
     {
       "active": true,
@@ -3319,8 +3259,7 @@
       ],
       "websites": [
         "http://www.chateau-la-rayre.fr"
-      ],
-      "updated": 1539248566443
+      ]
     },
     {
       "active": true,
@@ -3377,8 +3316,7 @@
       ],
       "websites": [
         "http://www.domainedemontlong.fr"
-      ],
-      "updated": 1539248566514
+      ]
     },
     {
       "active": true,
@@ -3435,8 +3373,7 @@
       ],
       "websites": [
         "http://www.chateaudepeyrel.com"
-      ],
-      "updated": 1539248566586
+      ]
     },
     {
       "active": true,
@@ -3495,8 +3432,7 @@
       ],
       "websites": [
         "http://www.combet-vins.com"
-      ],
-      "updated": 1539248566703
+      ]
     },
     {
       "active": true,
@@ -3548,8 +3484,7 @@
       ],
       "websites": [
         "http://www.chateaurichard.com"
-      ],
-      "updated": 1539248566774
+      ]
     },
     {
       "active": true,
@@ -3607,8 +3542,7 @@
       ],
       "websites": [
         "http://www.chateaufayolle.com"
-      ],
-      "updated": 1539248566843
+      ]
     },
     {
       "active": true,
@@ -3670,8 +3604,7 @@
       ],
       "websites": [
         "http://www.chateaucluzeau.com"
-      ],
-      "updated": 1539248566916
+      ]
     },
     {
       "active": true,
@@ -3726,8 +3659,7 @@
       ],
       "websites": [
         "http://www.boutique-chateau-la-brie.educagri.fr"
-      ],
-      "updated": 1539248566989
+      ]
     },
     {
       "active": true,
@@ -3776,8 +3708,7 @@
       ],
       "websites": [
         "http://www.mallevieille.com"
-      ],
-      "updated": 1539248567060
+      ]
     },
     {
       "active": true,
@@ -3842,8 +3773,7 @@
       ],
       "websites": [
         "http://www.domainedeperreau.fr"
-      ],
-      "updated": 1539248567132
+      ]
     },
     {
       "active": true,
@@ -3904,8 +3834,7 @@
       ],
       "websites": [
         "http://www.le-payral.com"
-      ],
-      "updated": 1539248567203
+      ]
     },
     {
       "active": true,
@@ -3958,8 +3887,7 @@
       ],
       "websites": [
         "http://www.fabiencastaing.com/"
-      ],
-      "updated": 1539248567267
+      ]
     },
     {
       "active": true,
@@ -4013,8 +3941,7 @@
       ],
       "websites": [
         "http://www.chateau-le-fage.com"
-      ],
-      "updated": 1539248567331
+      ]
     },
     {
       "active": true,
@@ -4063,8 +3990,7 @@
       ],
       "websites": [
         "http://www.chateau-les-brandeaux.com"
-      ],
-      "updated": 1539248567394
+      ]
     },
     {
       "active": true,
@@ -4130,8 +4056,7 @@
       ],
       "websites": [
         "http://www.chateau-les-gerales.com"
-      ],
-      "updated": 1539248567487
+      ]
     },
     {
       "active": true,
@@ -4185,8 +4110,7 @@
         "bergerac",
         "rosette"
       ],
-      "websites": [],
-      "updated": 1539248567555
+      "websites": []
     },
     {
       "active": true,
@@ -4239,8 +4163,7 @@
       ],
       "websites": [
         "http://www.vignobleslajonie.com"
-      ],
-      "updated": 1539248567622
+      ]
     },
     {
       "active": true,
@@ -4303,8 +4226,7 @@
       ],
       "websites": [
         "http://chateaulesgrimard.fr"
-      ],
-      "updated": 1539248567692
+      ]
     },
     {
       "active": true,
@@ -4359,8 +4281,7 @@
       ],
       "websites": [
         "http://www.chateau-montdoyen.com/"
-      ],
-      "updated": 1539248567762
+      ]
     },
     {
       "active": true,
@@ -4423,8 +4344,7 @@
       ],
       "websites": [
         "http://www.chateaudepanisseau.com"
-      ],
-      "updated": 1539248567830
+      ]
     },
     {
       "active": true,
@@ -4486,8 +4406,7 @@
       ],
       "websites": [
         "http://www.tertres-du-plantou.com/"
-      ],
-      "updated": 1539248567901
+      ]
     },
     {
       "active": true,
@@ -4545,8 +4464,7 @@
       ],
       "websites": [
         "http://www.leshautsdecaillevel.com"
-      ],
-      "updated": 1539248567972
+      ]
     },
     {
       "active": true,
@@ -4601,8 +4519,7 @@
         "bergerac",
         "montravel"
       ],
-      "websites": [],
-      "updated": 1539248568041
+      "websites": []
     },
     {
       "active": true,
@@ -4658,8 +4575,7 @@
         "bergerac",
         "saussignac"
       ],
-      "websites": [],
-      "updated": 1539248568113
+      "websites": []
     },
     {
       "active": true,
@@ -4712,8 +4628,7 @@
       ],
       "websites": [
         "http://www.chateau-lestevenie.com/"
-      ],
-      "updated": 1539248568232
+      ]
     },
     {
       "active": true,
@@ -4771,8 +4686,7 @@
       ],
       "websites": [
         "http://www.chateaularchere.fr/"
-      ],
-      "updated": 1539248568306
+      ]
     },
     {
       "active": true,
@@ -4831,8 +4745,7 @@
       ],
       "websites": [
         "http://www.moulinsdeboisse.com/"
-      ],
-      "updated": 1539248568383
+      ]
     },
     {
       "active": true,
@@ -4890,8 +4803,7 @@
       ],
       "websites": [
         "http://www.chateau-haut-lamouthe.com/"
-      ],
-      "updated": 1539248568454
+      ]
     },
     {
       "active": true,
@@ -4949,8 +4861,7 @@
       ],
       "websites": [
         "http://www.tuquetmonceau.com/"
-      ],
-      "updated": 1539248568524
+      ]
     },
     {
       "active": true,
@@ -5003,8 +4914,7 @@
       ],
       "websites": [
         "http://www.chateau-caillavel.fr/"
-      ],
-      "updated": 1539248568595
+      ]
     },
     {
       "active": true,
@@ -5068,8 +4978,7 @@
       ],
       "websites": [
         "http://www.julien-de-savignac.com/"
-      ],
-      "updated": 1539248568667
+      ]
     },
     {
       "active": true,
@@ -5126,8 +5035,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248568738
+      "websites": []
     },
     {
       "active": true,
@@ -5167,8 +5075,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248568809
+      "websites": []
     },
     {
       "active": true,
@@ -5217,8 +5124,7 @@
       ],
       "websites": [
         "http://www.chateautourdesgendres.com/"
-      ],
-      "updated": 1539248568881
+      ]
     },
     {
       "active": true,
@@ -5274,8 +5180,7 @@
       ],
       "websites": [
         "http://chateaupiquesegue.com/"
-      ],
-      "updated": 1539248568949
+      ]
     },
     {
       "active": true,
@@ -5326,8 +5231,7 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": [],
-      "updated": 1539248569059
+      "websites": []
     },
     {
       "active": true,
@@ -5391,8 +5295,7 @@
       ],
       "websites": [
         "http://chateau-monbazillac.com/"
-      ],
-      "updated": 1539248569132
+      ]
     },
     {
       "active": true,
@@ -5446,8 +5349,7 @@
       ],
       "websites": [
         "http://www.domaine-de-pecoula.com/"
-      ],
-      "updated": 1539248569205
+      ]
     },
     {
       "active": true,
@@ -5495,8 +5397,7 @@
         "bergerac",
         "saussignac"
       ],
-      "websites": [],
-      "updated": 1539248569276
+      "websites": []
     },
     {
       "active": true,
@@ -5541,8 +5442,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248569347
+      "websites": []
     },
     {
       "active": true,
@@ -5587,8 +5487,7 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": [],
-      "updated": 1539248569418
+      "websites": []
     },
     {
       "active": true,
@@ -5639,8 +5538,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248569491
+      "websites": []
     },
     {
       "active": true,
@@ -5694,8 +5592,7 @@
       ],
       "websites": [
         "http://maisondesvins-monbazillac.jimdo.com/"
-      ],
-      "updated": 1539248569562
+      ]
     },
     {
       "active": true,
@@ -5748,8 +5645,7 @@
       ],
       "websites": [
         "http://leclosdubreil.free.fr/"
-      ],
-      "updated": 1539248569634
+      ]
     },
     {
       "active": true,
@@ -5805,8 +5701,7 @@
       ],
       "websites": [
         "http://www.chateaudelareynaudie.fr/"
-      ],
-      "updated": 1539248569701
+      ]
     },
     {
       "active": true,
@@ -5861,8 +5756,7 @@
       ],
       "websites": [
         "http://www.haut-fongrive.com/"
-      ],
-      "updated": 1539248569772
+      ]
     },
     {
       "active": true,
@@ -5923,8 +5817,7 @@
       ],
       "websites": [
         "http://www.domaineduboutdumonde.com/"
-      ],
-      "updated": 1539248569898
+      ]
     },
     {
       "active": true,
@@ -5984,8 +5877,7 @@
       ],
       "websites": [
         "https://domainedelaliniere.jimdo.com/"
-      ],
-      "updated": 1539248569971
+      ]
     },
     {
       "active": true,
@@ -6037,8 +5929,7 @@
       ],
       "websites": [
         "http://www.chateau-thenac.com/"
-      ],
-      "updated": 1539248570044
+      ]
     },
     {
       "active": true,
@@ -6104,8 +5995,7 @@
       ],
       "websites": [
         "http://www.chateau-montaigne.com/"
-      ],
-      "updated": 1539248570115
+      ]
     },
     {
       "active": true,
@@ -6159,8 +6049,7 @@
       ],
       "websites": [
         "http://www.chateaumonestierlatour.com/"
-      ],
-      "updated": 1539248570185
+      ]
     },
     {
       "active": true,
@@ -6212,8 +6101,7 @@
       ],
       "websites": [
         "http://www.chateaulesmiaudoux.com"
-      ],
-      "updated": 1539248570256
+      ]
     },
     {
       "active": true,
@@ -6273,8 +6161,7 @@
       ],
       "websites": [
         "https://chateau-letermeblanc.jimdo.com/"
-      ],
-      "updated": 1539248570327
+      ]
     },
     {
       "active": true,
@@ -6336,8 +6223,7 @@
         "montravel",
         "pecharmant"
       ],
-      "websites": [],
-      "updated": 1539248570398
+      "websites": []
     },
     {
       "active": true,
@@ -6387,8 +6273,7 @@
       ],
       "websites": [
         "http://www.vignobles-gazziola.com/"
-      ],
-      "updated": 1539248570465
+      ]
     },
     {
       "active": true,
@@ -6431,8 +6316,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248570537
+      "websites": []
     },
     {
       "active": true,
@@ -6463,8 +6347,7 @@
       "town": "BERGERAC",
       "adress": "23 Route de Rosette",
       "vineyards": [],
-      "websites": [],
-      "updated": 1539248570613
+      "websites": []
     },
     {
       "active": true,
@@ -6507,8 +6390,7 @@
       "town": "BERGERAC",
       "adress": "Sainte-Foy-Des-Vignes",
       "vineyards": [],
-      "websites": [],
-      "updated": 1539248570682
+      "websites": []
     },
     {
       "active": true,
@@ -6541,8 +6423,7 @@
       "town": "POMPORT",
       "adress": null,
       "vineyards": [],
-      "websites": [],
-      "updated": 1539248570753
+      "websites": []
     },
     {
       "active": true,
@@ -6590,8 +6471,7 @@
       ],
       "websites": [
         "http://www.chateauthenoux.com/"
-      ],
-      "updated": 1539248570822
+      ]
     },
     {
       "active": true,
@@ -6642,8 +6522,7 @@
         "bergerac",
         "montravel"
       ],
-      "websites": [],
-      "updated": 1539248570891
+      "websites": []
     },
     {
       "active": true,
@@ -6703,8 +6582,7 @@
       ],
       "websites": [
         "http://www.chateaudesganfards.com/"
-      ],
-      "updated": 1539248571012
+      ]
     },
     {
       "active": true,
@@ -6770,8 +6648,7 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": [],
-      "updated": 1539248571088
+      "websites": []
     }
   ],
   "traductions": [

@@ -400,8 +400,11 @@ server.use(middlewares)
 server.use(router)
 server.listen(3003, () => {
   console.log('Json Server is running')
+
     getRemoteObjects('traductions')
-  // getRemoteDomains()
+    getRemoteObjects('domains')
+
+
 })
 
 
