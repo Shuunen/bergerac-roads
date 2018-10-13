@@ -342,6 +342,7 @@ function showSummary() {
   console.log('╚' + '═'.repeat(box) + '╝')
 }
 
+/*
 function getRemoteDomains() {
   console.log('getting remote domains from api')
   console.log('using url :', remoteDomainsUrl)
@@ -366,6 +367,7 @@ function getRemoteDomains() {
       setTimeout(() => process.exit(0), 1000)
     })
 }
+*/
 
 function getRemoteObjects(type) {
     console.log('getting remote ' + type + ' from api')
