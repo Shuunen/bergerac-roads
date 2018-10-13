@@ -15,7 +15,7 @@
         2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
       </div>
       <div class="line">
-        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
+        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.calcItinerary') }}</el-button>
       </div>
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
