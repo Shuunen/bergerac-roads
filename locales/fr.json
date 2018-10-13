@@ -33,6 +33,7 @@
   "search": {
     "header": "Ma route des vins",
     "subheader": "Choisissez parmis les itinéraires les plus populaires ou utilisez les filtres ci-dessous pour créer le votre.",
+    "itinerary": "itineraire",
     "noEntries": "Nous n'avons trouvé aucun domaine correspondant à cette recherche, nous vous conseillons de faire une nouvelle recherche moins spécifique.",
     "filterDomains": "Filtrer les domaines",
     "filterVineyards": "Filtrer par région et vignobles",
@@ -45,7 +46,7 @@
     "start": "Point de départ",
     "selectButton": "Sélectionner",
     "unselectButton": "Désélectionner",
-    "itinerary": "Calculer mon itinéraire",
+    "calcItinerary": "Calculer mon itinéraire",
     "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
     "helpCreateBefore": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
     "helpCreateAfter": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",

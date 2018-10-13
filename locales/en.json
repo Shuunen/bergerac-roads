@@ -33,6 +33,7 @@
   "search": {
     "header": "My wine route",
     "subheader": "Choose from the most popular routes or use the filters below to create your own.",
+    "itinerary": "itinerary",
     "noEntries": "We did not find any domain corresponding to this search, we advise you to make a new less specific search.",
     "filterDomains": "Filter domains",
     "filterVineyards": "Filter by region and vineyards",
@@ -45,7 +46,7 @@
     "start": "Starting point",
     "selectButton": "Select",
     "unselectButton": "Unselect",
-    "itinerary": "Create my itinerary",
+    "calcItinerary": "Create my itinerary",
     "helpStart": "Fill the starting point or click on \"Find me\"",
     "helpCreateBefore": "Select at leat one domain and one starting point to create an itinerary.",
     "helpCreateAfter": "Select at leat one domain and one starting point to create an itinerary.",

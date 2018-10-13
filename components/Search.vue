@@ -188,11 +188,11 @@ export default {
       this.prebuilts.pop()
 
       if (prebuilt.checked) {
-        console.log('user wants to load prebuilt itinerary', prebuilt.shortName)
+        console.log('user load prebuilt itinerary', prebuilt.shortName)
         this.setDomainsInUrl(prebuilt.ids)
         eventBus.$emit('preselect-items', prebuilt.ids.map(id => baseId + id))
       } else {
-        console.log('user wants to unload prebuilt itinerary', prebuilt.shortName)
+        console.log('user un-load prebuilt itinerary', prebuilt.shortName)
         this.setDomainsInUrl([])
         eventBus.$emit('preselect-items', [])
       }
@@ -200,8 +200,12 @@ export default {
     setDomainsInUrl(ids) {
       const selected = ids.map(id => id.replace(baseId, '')).join(',')
       console.log('here is the selected domains ids', selected)
-      document.location.hash = 'itineraire=' + selected
       this.loading = false
+      if (typeof this.$t !== 'function') {
+        console.error('this.$t not available ?!')
+        return
+      }
+      document.location.hash = this.$t('search.itinerary') + '=' + selected
     },
     onFiltersChange() {
       console.log('filters are', this.checkedFilters)
