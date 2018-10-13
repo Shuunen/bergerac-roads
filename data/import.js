@@ -83,10 +83,10 @@ function remoteDomainToLocal(remote) {
 }
 
 function remoteTraductionToLocal(remote) {
-    return {
-        description: remote.DESCRIPTIF,
-        id: remote.SyndicObjectID
-    }
+  return {
+    description: remote.DESCRIPTIF,
+    id: remote.SyndicObjectID
+  }
 }
 
 function getVineyardsFromRemoteDomain(domain) {
@@ -104,7 +104,7 @@ function getVineyardsFromRemoteDomain(domain) {
 }
 
 function getTagsFromRemoteDomain(domain) {
-  console.log('Domaine = ', domain)
+  // console.log('Domaine = ', domain)
   let tags = []
   let prestations = domain['PRESTATIONS']
 
@@ -127,14 +127,14 @@ function getTagsFromRemoteDomain(domain) {
   let agribio = domain['AGRIBIO']
   if (agribio === 'non') {
     let labelsCharte = domain['LABELSCHARTE']
-      if (labelsCharte) {
-        labelsCharte = labelsCharte.split('#')
-        labelsCharte.forEach(labelCharte => {
-            if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
-                domain['ENV_HUMAIN'] = 'oui'
-            }
-        })
-      }
+    if (labelsCharte) {
+      labelsCharte = labelsCharte.split('#')
+      labelsCharte.forEach(labelCharte => {
+        if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
+          domain['ENV_HUMAIN'] = 'oui'
+        }
+      })
+    }
   } else {
     domain['ENV_HUMAIN'] = 'oui'
   }
@@ -272,16 +272,16 @@ function updateLocalObject(remoteObject, type = 'domains') {
     return Promise.error('stop processing requested')
   }
 
-  console.log('updateLocalObject type = ', type )
+  // console.log('updateLocalObject type = ', type)
   let newData = ''
 
-  if (type === 'domains' ) {
+  if (type === 'domains') {
     newData = remoteDomainToLocal(remoteObject)
-  }
-  if (type === 'traductions') {
+  } else if (type === 'traductions') {
     newData = remoteTraductionToLocal(remoteObject)
+  } else {
+    return Promise.error('update local object does not handle type "' + type + '"')
   }
-
 
   return getLocalDomain(newData.id, type).then(response => {
     if (response === 'does-not-exists') {
@@ -300,11 +300,15 @@ function updateLocalObject(remoteObject, type = 'domains') {
   })
 }
 
+/**
+ * Handy helper to pause sequentials tasks
+ * @param {number} time time in milliseconds
+ */
 async function pause(time) {
   return new Promise((resolve) => setTimeout(() => resolve('success, pause ended'), time))
 }
 
-async function updateLocalDomains(remoteObjects, type) {
+async function updateLocalObjects(remoteObjects, type) {
   console.log('checking ' + remoteObjects.length + ' remote ' + type)
   for (let i = 0; i < remoteObjects.length; i++) {
     await pause(50)
@@ -342,20 +346,22 @@ function showSummary() {
   console.log('╚' + '═'.repeat(box) + '╝')
 }
 
-/*
-function getRemoteDomains() {
-  console.log('getting remote domains from api')
-  console.log('using url :', remoteDomainsUrl)
-  remoteApi.get(remoteDomainsUrl)
+function getRemoteObjects(type) {
+  console.log('getting remote ' + type + ' from api')
+
+  let apiurl = objectMapping[type]
+
+  console.log('using url :', apiurl)
+  remoteApi.get(apiurl)
     .then(response => {
       if (response.data) {
-        const remoteDomains = response.data.value
+        const remoteObjects = response.data.value
         if (justProcessOne) {
-          return updateLocalDomains(remoteDomains.splice(0, 1))
+          return updateLocalObjects(remoteObjects.splice(0, 1), type)
         }
-        return updateLocalDomains(remoteDomains)
+        return updateLocalObjects(remoteObjects, type)
       } else {
-        console.error('failed at getting remote domains')
+        console.error('failed at getting remote traductions')
       }
     })
     .then(() => showSummary())
@@ -367,49 +373,16 @@ function getRemoteDomains() {
       setTimeout(() => process.exit(0), 1000)
     })
 }
-*/
-
-function getRemoteObjects(type) {
-    console.log('getting remote ' + type + ' from api')
-
-    let apiurl = objectMapping[type]
-
-    console.log('using url :', apiurl)
-    remoteApi.get(apiurl)
-        .then(response => {
-            if (response.data) {
-                const remoteObjects = response.data.value
-                if (justProcessOne) {
-                    return updateLocalDomains(remoteObjects.splice(0, 1), type)
-                }
-                return updateLocalDomains(remoteObjects, type)
-            } else {
-                console.error('failed at getting remote traductions')
-            }
-        })
-        .then(() => showSummary())
-        .catch(error => {
-            console.error(error)
-            stopProcessing = true
-        })
-        .then(() => {
-            setTimeout(() => process.exit(0), 1000)
-        })
-}
 
 // start Json Server
 server.use(middlewares)
 server.use(router)
 server.listen(3003, () => {
   console.log('Json Server is running')
-
-    getRemoteObjects('traductions')
-    getRemoteObjects('domains')
-
-
+  getRemoteObjects('traductions')
+  getRemoteObjects('domains')
 })
-
 
 // For testing purpose :
 // const sampleDomains = require('./sample-domains.json').value
-// updateLocalDomains(sampleDomains)
+// updateLocalObjects(sampleDomains)
