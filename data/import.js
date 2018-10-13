@@ -51,7 +51,9 @@ function getArrayFromRemoteTag(tag, separator) {
  * @param {Domain} remote the domain data from remote API
  */
 function remoteDomainToLocal(remote) {
-  // console.log('converting remote data to local')
+  if (justProcessOne) {
+    console.log('converting remote data to local')
+  }
   const local = {
     active: true,
     activities: remote.ANIMATIONS,
@@ -93,7 +95,9 @@ function getVineyardsFromRemoteDomain(domain) {
   let vineyards = []
   remoteVineyards.forEach(vineyard => {
     if (domain.AOC && domain.AOC.includes(vineyard)) {
-      // console.log('vineyard "'+vineyard+'" found')
+      if (justProcessOne) {
+        console.log('vineyard "' + vineyard + '" found')
+      }
       vineyards.push(remoteVineyardsToLocal[vineyard])
     }
   })
@@ -104,7 +108,9 @@ function getVineyardsFromRemoteDomain(domain) {
 }
 
 function getTagsFromRemoteDomain(domain) {
-  // console.log('Domaine = ', domain)
+  if (justProcessOne) {
+    console.log('get tags from remote', domain)
+  }
   let tags = []
   let prestations = domain['PRESTATIONS']
 
@@ -140,7 +146,9 @@ function getTagsFromRemoteDomain(domain) {
   }
   remoteTags.forEach(tag => {
     if (domain[tag] && domain[tag] === 'oui') {
-      // console.log('tag "'+tag+'" found')
+      if (justProcessOne) {
+        console.log('tag "' + tag + '" found')
+      }
       tags.push(remoteTagsToLocal[tag])
     }
   })
@@ -283,6 +291,10 @@ function updateLocalObject(remoteObject, type = 'domains') {
     throw Error('update local object does not handle type "' + type + '"')
   }
 
+  if (justProcessOne) {
+    console.log('data should be', newData)
+  }
+
   return getLocalDomain(newData.id, type).then(response => {
     if (response === 'does-not-exists') {
       return addLocalDomain(newData, type)
@@ -293,7 +305,7 @@ function updateLocalObject(remoteObject, type = 'domains') {
       return patchLocalDomain(newData, type)
     } else {
       objectSkipped++
-      if (!justLogChanges) {
+      if (!justLogChanges || justProcessOne) {
         console.log(newData.id, ': no updates \n')
       }
     }
