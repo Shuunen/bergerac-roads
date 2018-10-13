@@ -218,8 +218,14 @@ export default {
       }
     },
     setDomainsInUrl(ids) {
-      const selected = ids.map(id => id.replace(baseId, '')).join(',')
-      console.log('here is the selected domains ids', selected)
+      let selected = ids.map(id => id.replace(baseId, '')).join(',')
+      const prebuilt = this.prebuilts.find(p => p.ids.join(',') === selected)
+      if (prebuilt) {
+        selected = prebuilt.code
+        console.log('here is the selected prebuilt code', selected)
+      } else {
+        console.log('here is the selected domains ids', selected)
+      }
       this.loading = false
       if (typeof this.$t !== 'function') {
         console.error('this.$t not available ?!')
