@@ -5,6 +5,7 @@ const db = require('~/data/db.json')
 
 Vue.prototype.$db = {
   getVineyards: () => Promise.resolve(cloneDeep(db.vineyards)),
+  getPrebuilts: () => Promise.resolve(cloneDeep(db.prebuilts)),
   getDomains: () => Promise.resolve(cloneDeep(db.domains)),
   getDomain: (id) => {
     let domain = db.domains.filter(domain => domain.id === id)

@@ -31,6 +31,88 @@
       "shortName": "Env & Humain"
     }
   ],
+  "prebuilts": [
+    {
+      "ids": [
+        "24FS00005",
+        "24V506P0I",
+        "24V50744K",
+        "24V5071W5",
+        "24V506V2O",
+        "24V5076J0",
+        "24V505KLW",
+        "24V508D0Q",
+        "24V503MGE",
+        "24V506UTS"
+      ],
+      "code": "top-10",
+      "shortName": "Top 10"
+    },
+    {
+      "ids": [
+        "24FS00005",
+        "24V506P0I",
+        "24FS0001O",
+        "24V50744K",
+        "24V506T01",
+        "24FS0007B",
+        "24V50ATZW",
+        "24V506U5L",
+        "24V50714R",
+        "24V506V2O",
+        "24FS0008M",
+        "24V50B0PF",
+        "24FS0008O",
+        "24FS0000M",
+        "24FS0000K",
+        "24V50B0PK",
+        "24FS0000I",
+        "24V506UMP",
+        "24FS0000G"
+      ],
+      "code": "les-petillants",
+      "shortName": "Les pétillants"
+    },
+    {
+      "ids": [
+        "24V5076IN",
+        "24V508D06",
+        "24FS00011",
+        "24V506TJQ",
+        "24V5076TR"
+      ],
+      "code": "spot-photo",
+      "shortName": "Spots photo"
+    },
+    {
+      "ids": [
+        "24V5076SA",
+        "24V508D06",
+        "24V506U4Y",
+        "24V5071V0",
+        "24V50ASLN",
+        "24V508D1D",
+        "24V506YB6",
+        "24V508D0Y",
+        "24V506TP1"
+      ],
+      "code": "en-groupe",
+      "shortName": "En groupe"
+    },
+    {
+      "ids": [
+        "24V50B5LT",
+        "24FS00016",
+        "24FS0000R",
+        "24V5076J8",
+        "24FS0000S",
+        "24FS0001L",
+        "24V505KB3"
+      ],
+      "code": "route-equestre",
+      "shortName": "Route equestre"
+    }
+  ],
   "vineyards": [
     {
       "id": 1,
