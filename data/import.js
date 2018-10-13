@@ -7,9 +7,9 @@ const middlewares = jsonServer.defaults()
 const justProcessOne = false
 const justLogChanges = true
 let stopProcessing = false
-let domainCreated = 0
-let domainUpdated = 0
-let domainSkipped = 0
+let objectCreated = 0
+let objectUpdated = 0
+let objectSkipped = 0
 const objectMapping = {
   domains: remoteDomainsUrl,
   traductions: remoteDomainsUKTraductionsUrl,
@@ -245,7 +245,7 @@ function addLocalDomain(data, type) {
   return localApi
     .post('/' + type, data)
     .then(() => {
-      domainCreated++
+      objectCreated++
       console.log(data.id, ': freshly added !')
     })
     .catch(error => {
@@ -258,7 +258,7 @@ function patchLocalDomain(data, type) {
   return localApi
     .put('/' + type + '/' + data.id, data)
     .then(() => {
-      domainUpdated++
+      objectUpdated++
       console.log(data.id, ': updated')
     })
     .catch(error => {
@@ -269,7 +269,7 @@ function patchLocalDomain(data, type) {
 
 function updateLocalObject(remoteObject, type = 'domains') {
   if (stopProcessing) {
-    return Promise.error('stop processing requested')
+    throw Error('stop processing requested')
   }
 
   // console.log('updateLocalObject type = ', type)
@@ -280,7 +280,7 @@ function updateLocalObject(remoteObject, type = 'domains') {
   } else if (type === 'traductions') {
     newData = remoteTraductionToLocal(remoteObject)
   } else {
-    return Promise.error('update local object does not handle type "' + type + '"')
+    throw Error('update local object does not handle type "' + type + '"')
   }
 
   return getLocalDomain(newData.id, type).then(response => {
@@ -292,7 +292,7 @@ function updateLocalObject(remoteObject, type = 'domains') {
       newData.updated = Date.now()
       return patchLocalDomain(newData, type)
     } else {
-      domainSkipped++
+      objectSkipped++
       if (!justLogChanges) {
         console.log(newData.id, ': no updates \n')
       }
@@ -316,43 +316,28 @@ async function updateLocalObjects(remoteObjects, type) {
   }
 }
 
-// https://github.com/uxitten/polyfill/blob/master/string.polyfill.js
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd
-if (!String.prototype.padEnd) {
-  String.prototype.padEnd = function padEnd(targetLength, padString) {
-    targetLength = targetLength >> 0 // floor if number or convert non-number to 0;
-    padString = String((typeof padString !== 'undefined' ? padString : ' '))
-    if (this.length > targetLength) {
-      return String(this)
-    } else {
-      targetLength = targetLength - this.length
-      if (targetLength > padString.length) {
-        padString += padString.repeat(targetLength / padString.length) // append to original to ensure we are longer than needed
-      }
-      return String(this) + padString.slice(0, targetLength)
-    }
-  }
-}
-
-function showSummary() {
+function showSummary(type) {
   const box = 30
   console.log('╔' + '═'.repeat(box) + '╗')
   console.log('║ import summary               ║')
   console.log('║ file : db.json               ║')
   console.log('║ ---                          ║')
-  console.log('║ domain(s) created :', String(domainCreated).padEnd(box - 22), '║')
-  console.log('║ domain(s) updated :', String(domainUpdated).padEnd(box - 22), '║')
-  console.log('║ domain(s) skipped :', String(domainSkipped).padEnd(box - 22), '║')
-  console.log('╚' + '═'.repeat(box) + '╝')
+  console.log('║ ' + type + ' created :', objectCreated)
+  console.log('║ ' + type + ' updated :', objectUpdated)
+  console.log('║ ' + type + ' skipped :', objectSkipped)
+  console.log('╚' + '═'.repeat(box) + '═')
 }
 
-function getRemoteObjects(type) {
+async function getRemoteObjects(type) {
+  objectCreated = 0
+  objectUpdated = 0
+  objectSkipped = 0
   console.log('getting remote ' + type + ' from api')
 
   let apiurl = objectMapping[type]
-
   console.log('using url :', apiurl)
-  remoteApi.get(apiurl)
+
+  return remoteApi.get(apiurl)
     .then(response => {
       if (response.data) {
         const remoteObjects = response.data.value
@@ -361,27 +346,28 @@ function getRemoteObjects(type) {
         }
         return updateLocalObjects(remoteObjects, type)
       } else {
-        console.error('failed at getting remote traductions')
+        throw Error('failed at getting remote ' + type)
       }
     })
-    .then(() => showSummary())
+    .then(() => showSummary(type))
     .catch(error => {
       console.error(error)
       stopProcessing = true
     })
-    .then(() => {
-      setTimeout(() => process.exit(0), 1000)
-    })
+}
+
+async function start() {
+  console.log('Json Server is running')
+  await getRemoteObjects('traductions')
+  await getRemoteObjects('domains')
+  await pause(1000)
+  process.exit(0)
 }
 
 // start Json Server
 server.use(middlewares)
 server.use(router)
-server.listen(3003, () => {
-  console.log('Json Server is running')
-  getRemoteObjects('traductions')
-  getRemoteObjects('domains')
-})
+server.listen(3003, start)
 
 // For testing purpose :
 // const sampleDomains = require('./sample-domains.json').value
