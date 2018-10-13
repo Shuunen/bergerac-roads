@@ -6,7 +6,7 @@
       <h3>{{ $t('search.subheader') }}</h3>
 
       <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
-        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code">
+        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">
           <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>
             <div :class="['icon', 'icon-' + prebuilt.code]" />
             <div class="label">{{ prebuilt.shortName }}</div>
@@ -150,8 +150,8 @@ export default {
     },
     checkPrebuiltInUrl() {
       console.log('handle prebuilt itineraries')
-      const regex = /[(itineraire|itinerary)=]([0-9A-Z]+,?)+/
-      const matches = document.location.hash.match(regex)
+      let regex = /[(itineraire|itinerary)=]([0-9A-Z]+,?)+/
+      let matches = document.location.hash.match(regex)
       if (matches && matches.length === 2) {
         this.loading = true
         const ids = matches[0]
@@ -169,16 +169,36 @@ export default {
           console.log('and these are matching real ids', matchingIds)
           eventBus.$emit('preselect-items', matchingIds)
         } else {
-          this.loading = true
+          this.loading = false
           console.log('but none of them match real ids')
           console.warn('hack detected, calling the police...')
         }
       } else {
-        this.loading = false
-        console.log('no domains ids found in url')
+        regex = /[(itineraire|itinerary)]=([\w-]+)/i
+        matches = document.location.hash.match(regex)
+        if (matches && matches.length === 2) {
+          this.loading = true
+          const code = matches[1]
+          console.log('found this code in url', code)
+          const prebuilt = this.prebuilts.find(
+            p => getSlug(p.code) === getSlug(code),
+          )
+          if (prebuilt) {
+            console.log('and this matching prebuilt', prebuilt.code)
+            this.loadPrebuilt(prebuilt)
+          } else {
+            this.loading = false
+            console.log('but does not match any real code')
+            console.warn('hack happening, calling the police !!!')
+          }
+        } else {
+          this.loading = false
+          console.log('no domains ids found in url')
+        }
       }
     },
     loadPrebuilt(prebuilt) {
+      this.loading = true
       // allow only one loaded prebuilt
       this.prebuilts.map(
         p => (p.checked = p.code === prebuilt.code ? !p.checked : false),
