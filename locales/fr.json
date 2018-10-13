@@ -32,7 +32,7 @@
   },
   "search": {
     "header": "Ma route des vins",
-    "subheader": "Cliquez sur les images ci-dessous pour filtrer les domaines qui vous intéressent",
+    "subheader": "Choisissez parmis les itinéraires les plus populaires ou utilisez les filtres ci-dessous pour créer le votre.",
     "noEntries": "Nous n'avons trouvé aucun domaine correspondant à cette recherche, nous vous conseillons de faire une nouvelle recherche moins spécifique.",
     "filterDomains": "Filtrer les domaines",
     "filterVineyards": "Filtrer par région et vignobles",
