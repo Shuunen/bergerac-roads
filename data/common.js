@@ -15,19 +15,19 @@ let syndic_url_opt = 'wcf.tourinsoft.com/Syndication/3.0'
 
 
 let remoteDomainsUrl = 'http://' + syndic_url_opt
-    + '/' + syndic_name
-    + '/' + syndic_key
-    + '/Objects?$format=json'
+  + '/' + syndic_name
+  + '/' + syndic_key
+  + '/Objects?$format=json'
 
 let remoteDomainsUKTraductionsUrl = 'http://' + syndic_url_opt
-    + '/' + syndic_name
-    + '/' + syndic_key_uk
-    + '/Objects?$format=json'
+  + '/' + syndic_name
+  + '/' + syndic_key_uk
+  + '/Objects?$format=json'
 
 let baseUrl = 'http://wcf.tourinsoft.com/Syndication/3.0'
 const remoteApi = axios.create({
   baseUrl,
-  timeout: 1000,
+  timeout: 3000,
 })
 
 /*
