@@ -15,7 +15,7 @@
         2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
       </div>
       <div class="line">
-        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.itinerary') }}</el-button>
+        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.calcItinerary') }}</el-button>
       </div>
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
@@ -78,7 +78,8 @@ export default {
   },
   watch: {
     items: function() {
-      // Reinitialize the checked items' list when the items' list changes.
+      // Reinitialize the checked items list when the items list changes.
+      console.log('cleared checked items')
       this.checkedItems = []
       this.sortItems(true)
     },
@@ -101,6 +102,8 @@ export default {
     eventBus.$on('show-map', () => (this.showMap = true))
 
     eventBus.$on('checked-items', () => this.sortItemsDebounced())
+
+    eventBus.$on('preselect-items', this.preselectItems)
 
     eventBus.$on(
       'domains-search-complete',
@@ -183,6 +186,16 @@ export default {
       })
     },
     */
+    preselectItems(itemIds) {
+      console.log('preselecting domains...')
+      this.checkedItems = []
+      itemIds.forEach(itemId => {
+        this.checkedItems.push(
+          this.items.find(item => item.id === itemId).title,
+        )
+      })
+      this.emitCheckedItems(this.checkedItems)
+    },
     sortItems(noTimeout) {
       const timeout = noTimeout ? 0 : 300
       if (timeout) {
@@ -201,7 +214,13 @@ export default {
         // if (timeout) {
         this.loading = false
         // }
+        this.emitItemIdsForUrl()
       }, timeout)
+    },
+    emitItemIdsForUrl() {
+      const ids = this.items.filter(item => item.selected).map(item => item.id)
+      // console.log('will set theses domains ids in url', ids)
+      eventBus.$emit('set-domains-url', ids)
     },
     getCityByCoordinates(coords) {
       /* console.log(
@@ -284,11 +303,12 @@ export default {
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
     emitCheckedItems(value) {
-      console.log('emitCheckedItems', value)
+      // console.log('emitCheckedItems', value)
       if (!this.showMap) {
         eventBus.$emit('show-map')
         setTimeout(() => eventBus.$emit('checked-items', value), 1000)
       } else {
+        // console.log('checked-items', value)
         eventBus.$emit('checked-items', value)
       }
     },

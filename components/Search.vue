@@ -4,8 +4,18 @@
 
       <h2>{{ $t('search.header') }}</h2>
       <h3>{{ $t('search.subheader') }}</h3>
-      <el-row class="search-pictos" :gutter="20">
-        <el-col :xs="12" :span="8" :lg="4" v-for="filter in filters" :key="filter.code">
+
+      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
+        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">
+          <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>
+            <div :class="['icon', 'icon-' + prebuilt.code]" />
+            <div class="label">{{ prebuilt.shortName }}</div>
+          </el-checkbox>
+        </el-col>
+      </el-row>
+
+      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
+        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="filter in filters" :key="filter.code">
           <el-checkbox class="search-picto col" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border>
             <div :class="['icon', 'icon-' + filter.code]" />
             <div class="label">{{ filter.shortName }}</div>
@@ -52,6 +62,7 @@ import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
 import debounce from 'lodash/debounce'
 import { eventBus } from '../store/index'
+const baseId = 'DEGAQU0'
 
 export default {
   components: {
@@ -71,7 +82,18 @@ export default {
       showVineyardFilter: false,
       checkedVineyards: [],
       searchDebounced: null,
+      prebuilts: [],
+      prebuiltHandled: false,
     }
+  },
+  watch: {
+    showMap: function() {
+      console.log('showMap is', this.showMap)
+      if (this.showMap && !this.prebuiltHandled) {
+        this.prebuiltHandled = true
+        this.checkPrebuiltInUrl()
+      }
+    },
   },
   mounted() {
     this.$db.getVineyards().then(this.setVineyards)
@@ -80,9 +102,13 @@ export default {
 
     this.$db.getTags().then(this.setFilters)
 
+    this.$db.getPrebuilts().then(this.setPrebuilts)
+
     eventBus.$on('show-map', this.doShowMap)
 
     eventBus.$on('filter-domain', this.setFilterDomain)
+
+    eventBus.$on('set-domains-url', this.setDomainsInUrl)
 
     this.searchDebounced = debounce(this.search, 500)
   },
@@ -118,6 +144,94 @@ export default {
         })
       }
       return domains
+    },
+    setPrebuilts(prebuilts) {
+      this.prebuilts = prebuilts
+    },
+    checkPrebuiltInUrl() {
+      console.log('handle prebuilt itineraries')
+      let regex = /[(itineraire|itinerary)=]([0-9A-Z]+,?)+/
+      let matches = document.location.hash.match(regex)
+      if (matches && matches.length === 2) {
+        this.loading = true
+        const ids = matches[0]
+          .substring(1)
+          .split(',')
+          .map(id => baseId + id)
+        const matchingIds = []
+        this.domains.forEach(domain => {
+          if (ids.includes(domain.id) && !matchingIds.includes(domain.id)) {
+            matchingIds.push(domain.id)
+          }
+        })
+        console.log('found these domains ids in url', ids)
+        if (matchingIds.length) {
+          console.log('and these are matching real ids', matchingIds)
+          eventBus.$emit('preselect-items', matchingIds)
+        } else {
+          this.loading = false
+          console.log('but none of them match real ids')
+          console.warn('hack detected, calling the police...')
+        }
+      } else {
+        regex = /[(itineraire|itinerary)]=([\w-]+)/i
+        matches = document.location.hash.match(regex)
+        if (matches && matches.length === 2) {
+          this.loading = true
+          const code = matches[1]
+          console.log('found this code in url', code)
+          const prebuilt = this.prebuilts.find(
+            p => getSlug(p.code) === getSlug(code),
+          )
+          if (prebuilt) {
+            console.log('and this matching prebuilt', prebuilt.code)
+            this.loadPrebuilt(prebuilt)
+          } else {
+            this.loading = false
+            console.log('but does not match any real code')
+            console.warn('hack happening, calling the police !!!')
+          }
+        } else {
+          this.loading = false
+          console.log('no domains ids found in url')
+        }
+      }
+    },
+    loadPrebuilt(prebuilt) {
+      this.loading = true
+      // allow only one loaded prebuilt
+      this.prebuilts.map(
+        p => (p.checked = p.code === prebuilt.code ? !p.checked : false),
+      )
+      // these two lines will force Vue to update DOM
+      this.prebuilts.push('')
+      this.prebuilts.pop()
+
+      if (prebuilt.checked) {
+        console.log('user load prebuilt itinerary', prebuilt.shortName)
+        this.setDomainsInUrl(prebuilt.ids)
+        eventBus.$emit('preselect-items', prebuilt.ids.map(id => baseId + id))
+      } else {
+        console.log('user un-load prebuilt itinerary', prebuilt.shortName)
+        this.setDomainsInUrl([])
+        eventBus.$emit('preselect-items', [])
+      }
+    },
+    setDomainsInUrl(ids) {
+      let selected = ids.map(id => id.replace(baseId, '')).join(',')
+      const prebuilt = this.prebuilts.find(p => p.ids.join(',') === selected)
+      if (prebuilt) {
+        selected = prebuilt.code
+        console.log('here is the selected prebuilt code', selected)
+      } else {
+        console.log('here is the selected domains ids', selected)
+      }
+      this.loading = false
+      if (typeof this.$t !== 'function') {
+        console.error('this.$t not available ?!')
+        return
+      }
+      document.location.hash = this.$t('search.itinerary') + '=' + selected
     },
     onFiltersChange() {
       console.log('filters are', this.checkedFilters)
@@ -182,6 +296,10 @@ export default {
   }
   .search-pictos {
     min-height: $picto-height + 20;
+    flex-wrap: wrap;
+    & > .el-col {
+      min-width: 150px;
+    }
   }
   .search-picto {
     margin-top: 20px;
@@ -210,10 +328,10 @@ export default {
     &.is-bordered {
       margin-left: 0;
     }
-    &.is-checked {
+    &.is-checked:not(.unchecked) {
       filter: grayscale(0);
     }
-    &.is-checked::after {
+    &.is-checked:not(.unchecked)::after {
       opacity: 1;
     }
     .el-checkbox {
@@ -237,10 +355,10 @@ export default {
       margin-top: 10px;
       padding-left: 0;
     }
-    &.el-checkbox.is-bordered.is-checked {
+    &.el-checkbox.is-bordered.is-checked:not(.unchecked) {
       border-color: $green;
     }
-    .el-checkbox__input.is-checked + .el-checkbox__label {
+    .el-checkbox__input.is-checked:not(.unchecked) + .el-checkbox__label {
       color: $green-d2;
     }
   }
@@ -269,7 +387,6 @@ export default {
 .icon-agriculture-bio {
   @include sprite($tree);
 }
-
 .icon-agriculture-raisonnee {
   @include sprite($recycling);
 }
@@ -280,30 +397,51 @@ export default {
   @include sprite($shopping);
 }
 
-.icon{
+.icon {
   width: 70%;
   height: 70%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
 .icon-acces-handicape {
-  background-image: url("#{$cdn}/images/pictos/Z3_Accessibilitee_web.png");
+  background-image: url('#{$cdn}/images/pictos/Z3_Accessibilitee_web.png');
 }
 .icon-hebergement {
-  background-image: url("#{$cdn}/images/pictos/Z3_Hebergement_web.png");
+  background-image: url('#{$cdn}/images/pictos/Z3_Hebergement_web.png');
 }
 .icon-camping {
-  background-image: url("#{$cdn}/images/pictos/Z3_Camping-car_web.png");
+  background-image: url('#{$cdn}/images/pictos/Z3_Camping-car_web.png');
 }
 .icon-restauration {
-  background-image: url("#{$cdn}/images/pictos/Z3_Restaurant_web.png");
+  background-image: url('#{$cdn}/images/pictos/Z3_Restaurant_web.png');
 }
 .icon-env-humain {
-  background-image: url("#{$cdn}/images/pictos/Z3_Hebergement_web.png");
+  background-image: url('#{$cdn}/images/pictos/Z3_Hebergement_web.png');
 }
+.icon-top-10 {
+  @include sprite($recycling);
 
+  background-size: 792px;
+}
+.icon-les-petillants {
+  @include sprite($shopping);
 
+  background-size: 792px;
+}
+.icon-spot-photo {
+  @include sprite($tree);
 
+  background-size: 792px;
+}
+.icon-en-groupe {
+  @include sprite($earth);
+
+  background-size: 792px;
+}
+.icon-route-equestre {
+  @include sprite($paw);
+
+  background-size: 792px;
+}
 </style>

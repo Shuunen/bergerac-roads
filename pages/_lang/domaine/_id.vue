@@ -142,17 +142,17 @@ export default {
       return added
     },
     wines: function() {
-  let wines = []
-  if (this.data.tags && this.data.tags.length) {
-    winesToDisplay.forEach(wine => {
-      const tag = 'vin-' + wine
-      if (this.data.tags.includes(tag)) {
-        wines.push(tag)
+      let wines = []
+      if (this.data.tags && this.data.tags.length) {
+        winesToDisplay.forEach(wine => {
+          const tag = 'vin-' + wine
+          if (this.data.tags.includes(tag)) {
+            wines.push(tag)
+          }
+        })
       }
-    })
-  }
-  return wines
-},
+      return wines
+    },
   },
   mounted() {
     this.init()
@@ -189,7 +189,6 @@ export default {
 
 
 <style lang="scss">
-
 .icon.glass {
   &.vin-rouge {
     @include sprite($glass-rouge);
@@ -208,25 +207,22 @@ export default {
   }
 }
 
+.aside {
+  width: 27%;
+  margin: 18px;
+  background-color: #f1a029b0;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
 
- .aside{
-   width: 27%;
-   margin: 18px;
-   background-color: #f1a029b0;
-   padding: 10px 20px;
-   border-radius: 7px;
- }
+.aside ul {
+  list-style: none;
+  padding: 0;
+}
 
- .aside ul {
-   list-style: none;
-   padding: 0;
- }
-
-.aside > h1{
+.aside > h1 {
   color: white;
   font-size: 201%;
   text-align: center;
 }
-
-
 </style>
