@@ -45,6 +45,19 @@ function getArrayFromRemoteTag(tag, separator) {
   return tag.split(separator).filter(data => data.length)
 }
 
+
+function getLocalTraduction(syndicObjectID) {
+
+    return localApi
+        .get('/traductions/' + syndicObjectID)
+        .then(response => {
+            const des = response.data
+            return des.description
+        })
+
+}
+
+
 /**
  * Convert large remote data into data that we will store in our db
  * Look at sample-domains.json to see remote data structure
@@ -52,10 +65,13 @@ function getArrayFromRemoteTag(tag, separator) {
  */
 function remoteDomainToLocal(remote) {
   // console.log('converting remote data to local')
+   let des =  getLocalTraduction(remote.SyndicObjectID)
+
   const local = {
     active: true,
     activities: remote.ANIMATIONS,
     description: remote.DESCRIPTIF,
+    descriptionUk: des,
     id: remote.SyndicObjectID,
     labels: getLabelsFromRemoteDomain(remote),
     langs: getArrayFromRemoteTag(remote.LANGPARLE, '#'),
@@ -104,7 +120,7 @@ function getVineyardsFromRemoteDomain(domain) {
 }
 
 function getTagsFromRemoteDomain(domain) {
-  console.log('Domaine = ', domain)
+  // console.log('Domaine = ', domain)
   let tags = []
   let prestations = domain['PRESTATIONS']
 
@@ -304,7 +320,7 @@ async function pause(time) {
   return new Promise((resolve) => setTimeout(() => resolve('success, pause ended'), time))
 }
 
-async function updateLocalDomains(remoteObjects, type) {
+async function updateLocalObjects(remoteObjects, type) {
   console.log('checking ' + remoteObjects.length + ' remote ' + type)
   for (let i = 0; i < remoteObjects.length; i++) {
     await pause(50)
@@ -330,42 +346,18 @@ if (!String.prototype.padEnd) {
   }
 }
 
-function showSummary() {
+function showSummary(type) {
   const box = 30
   console.log('╔' + '═'.repeat(box) + '╗')
   console.log('║ import summary               ║')
   console.log('║ file : db.json               ║')
   console.log('║ ---                          ║')
-  console.log('║ domain(s) created :', String(domainCreated).padEnd(box - 22), '║')
-  console.log('║ domain(s) updated :', String(domainUpdated).padEnd(box - 22), '║')
-  console.log('║ domain(s) skipped :', String(domainSkipped).padEnd(box - 22), '║')
+  console.log('║ ', type,'(s) created :', String(domainCreated).padEnd(box - 22), '║')
+  console.log('║ ', type,'(s) updated :', String(domainUpdated).padEnd(box - 22), '║')
+  console.log('║ ', type,'(s) skipped :', String(domainSkipped).padEnd(box - 22), '║')
   console.log('╚' + '═'.repeat(box) + '╝')
 }
 
-function getRemoteDomains() {
-  console.log('getting remote domains from api')
-  console.log('using url :', remoteDomainsUrl)
-  remoteApi.get(remoteDomainsUrl)
-    .then(response => {
-      if (response.data) {
-        const remoteDomains = response.data.value
-        if (justProcessOne) {
-          return updateLocalDomains(remoteDomains.splice(0, 1))
-        }
-        return updateLocalDomains(remoteDomains)
-      } else {
-        console.error('failed at getting remote domains')
-      }
-    })
-    .then(() => showSummary())
-    .catch(error => {
-      console.error(error)
-      stopProcessing = true
-    })
-    .then(() => {
-      setTimeout(() => process.exit(0), 1000)
-    })
-}
 
 function getRemoteObjects(type) {
     console.log('getting remote ' + type + ' from api')
@@ -378,14 +370,14 @@ function getRemoteObjects(type) {
             if (response.data) {
                 const remoteObjects = response.data.value
                 if (justProcessOne) {
-                    return updateLocalDomains(remoteObjects.splice(0, 1), type)
+                    return updateLocalObjects(remoteObjects.splice(0, 1), type)
                 }
-                return updateLocalDomains(remoteObjects, type)
+                return updateLocalObjects(remoteObjects, type)
             } else {
                 console.error('failed at getting remote traductions')
             }
         })
-        .then(() => showSummary())
+        .then(() => showSummary(type))
         .catch(error => {
             console.error(error)
             stopProcessing = true
@@ -410,4 +402,4 @@ server.listen(3003, () => {
 
 // For testing purpose :
 // const sampleDomains = require('./sample-domains.json').value
-// updateLocalDomains(sampleDomains)
+// updateLocalObjects(sampleDomains)
