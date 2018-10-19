@@ -75,7 +75,7 @@ async function remoteDomainToLocal(remote) {
     active: true,
     activities: remote.ANIMATIONS,
     description: remote.DESCRIPTIF,
-    descriptionEn: remoteTrad.DESCRIPTIF,
+    descriptionEn: remoteTrad.DESCRIPTIF || null,
     id: remote.SyndicObjectID,
     labels: getLabelsFromRemoteDomain(remote),
     langs: getArrayFromRemoteTag(remote.LANGPARLE, '#'),
@@ -310,6 +310,7 @@ async function updateLocalObject(remoteObject, type = 'domains') {
     }
     const localData = response
     if (!isEqual(localData, newData)) {
+      // console.log(localData, 'IS NOT', newData)
       newData.updated = Date.now()
       return patchLocalDomain(newData, type)
     } else {

@@ -6575,6 +6575,7 @@
       "active": true,
       "activities": null,
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B0P2",
       "labels": [],
       "langs": [],
@@ -6613,12 +6614,13 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1539940232542
+      "updated": 1539940710711
     },
     {
       "active": true,
       "activities": null,
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B0PF",
       "labels": [],
       "langs": [],
@@ -6645,7 +6647,7 @@
       "adress": "23 Route de Rosette",
       "vineyards": [],
       "websites": [],
-      "updated": 1539940232702
+      "updated": 1539940710859
     },
     {
       "active": true,
@@ -6696,6 +6698,7 @@
       "active": true,
       "activities": null,
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B0Q8",
       "labels": [],
       "langs": [],
@@ -6724,12 +6727,13 @@
       "adress": null,
       "vineyards": [],
       "websites": [],
-      "updated": 1539940232902
+      "updated": 1539940711113
     },
     {
       "active": true,
       "activities": "LAND ART période estivale du 15 JUIN au 15 AOUT.",
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B0QH",
       "labels": [],
       "langs": [
@@ -6773,12 +6777,13 @@
       "websites": [
         "http://www.chateauthenoux.com/"
       ],
-      "updated": 1539940233025
+      "updated": 1539940711258
     },
     {
       "active": true,
       "activities": null,
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B5LT",
       "labels": [],
       "langs": [
@@ -6825,12 +6830,13 @@
         "montravel"
       ],
       "websites": [],
-      "updated": 1539940233152
+      "updated": 1539940711380
     },
     {
       "active": true,
       "activities": null,
       "description": null,
+      "descriptionEn": null,
       "id": "DEGAQU024V50B5M4",
       "labels": [],
       "langs": [
@@ -6886,7 +6892,7 @@
       "websites": [
         "http://www.chateaudesganfards.com/"
       ],
-      "updated": 1539940233324
+      "updated": 1539940711508
     },
     {
       "active": true,
