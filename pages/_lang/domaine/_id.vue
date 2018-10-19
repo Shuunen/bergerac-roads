@@ -71,9 +71,10 @@
           </span>
 
           <el-container direction="vertical" v-if="!data.message">
-            <p>{{ data.description }} </p>
-
+            <p v-if="$i18n.locale === 'fr'">{{ data.description }} </p>
+            <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }} </p>
           </el-container>
+          
           <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
           <div class="col">
             <nuxt-link :to="$i18n.path('')">
