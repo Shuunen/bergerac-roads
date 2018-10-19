@@ -17,41 +17,22 @@
           </ul>
 
           <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
-          <h3>Site web</h3>
-          <ul v-if="data.websites">
-            <li v-for="website in data.websites" :key="website" > {{ website }} </li>
-          </ul>
 
-          <div v-if="data.socialFacebook">
-            <a :href="data.socialFacebook">
-              <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">
-            </a>
-          </div>
+          <p v-if="data.websites && data.websites.length"><strong>Site web</strong> : {{ data.websites.join(', ') }}</p>
+
+          <a v-if="data.socialFacebook" :href="data.socialFacebook">
+            <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">
+          </a>
 
         </el-card>
 
-        <p>Cépage :</p>
-        <ul v-if="data.vineyards">
-          <li v-for="vineyard in data.vineyards" :key="vineyard" > {{ vineyard }} </li>
-        </ul>
+        <p v-if="data.vineyards && data.vineyards.length"><strong>Cépages</strong> : {{ data.vineyards.join(', ') }}</p>
 
-        <span>Langues parlées</span>
-        <ul v-if="data.langs">
-          <li v-for="lang in data.langs" :key="lang" > {{ lang }} </li>
-        </ul>
+        <p v-if="data.langs && data.langs.length"><strong>Langues parlées</strong> : {{ data.langs.join(', ') }}</p>
 
-        <span>Services</span>
-        <ul v-if="data.services">
-          <li v-for="service in data.services" :key="service" > {{ service }} </li>
-        </ul>
+        <p v-if="data.services && data.services.length"><strong>Services</strong> : {{ data.services.join(', ') }}</p>
 
-        <span>Status</span>
-        <ul v-if="data.statuses">
-          <li v-for="statuse in data.statuses" :key="statuse" > {{ statuse }} </li>
-        </ul>
-
-
-
+        <p v-if="data.statuses && data.statuses.length"><strong>Status</strong> : {{ data.statuses.join(', ') }}</p>
 
       </el-aside>
       <el-main>
@@ -74,7 +55,7 @@
             <p v-if="$i18n.locale === 'fr'">{{ data.description }} </p>
             <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }} </p>
           </el-container>
-          
+
           <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
           <div class="col">
             <nuxt-link :to="$i18n.path('')">
