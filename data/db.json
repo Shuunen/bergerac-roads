@@ -148,7 +148,6 @@
       "active": true,
       "activities": "Juillet et août:\nDégustation gourmande: dégustation de nos vins accompagnés des pâtés de la ferme de Barbe, les mercredis du 14 juillet au 15 août.\nVisites guidées de nos chais (vinification et vieillissement).\nPique-nique dans les vignes: panier avec des produits locaux, 30 euros pour 4 personnes. Des tables pique-nique sont à votre disposition au sommet de la colline.",
       "description": "Situé au cœur de l’appellation d’origine, sur le sommet du coteau, le Domaine du Haut Pécharmant étale ses 35 ha de vignes basses, exposées plein sud. Héritier d’une tradition vigneronne de cinq générations, depuis 1929 la famille Roches exploite ce terroir de sables et de graviers du Périgord avec ses argiles grises et rouges ferrugineuses. Les cépages merlot, malbec et cabernets donnent des vins très raffinés, à la richesse et aux bouquets remarquables. \nDécouvrez librement nos chais -avec espace musée-  et vignes (parcours avec explications en français, anglais et hollandais). Visites guidées juillet / aout (voir site). Visites et dégustation sont gratuites. \nDégustation gourmande avec des pâtés de la Ferme de Barbe les mercredis du 14 juillet au 15 août.\nAire pique nique au sommet de la colline. Panier pique nique (pain, fromages, charcuterie, gâteau aux noix) 30,- euros pour 4 pers",
-      "descriptionUk": {},
       "id": "DEGAQU024FS00003",
       "labels": [
         "vignobles-et-decouvertes"
@@ -214,7 +213,8 @@
       ],
       "websites": [
         "http://www.haut-pecharmant.fr"
-      ]
+      ],
+      "updated": 1539939574182
     },
     {
       "active": true,
