@@ -16,4 +16,7 @@ dist
 sw.*
 
 .DS_Store
+
+# working with yarn
 yarn-error.log
+package-lock.json
