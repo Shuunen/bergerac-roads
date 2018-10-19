@@ -148,6 +148,7 @@
       "active": true,
       "activities": "Juillet et août:\nDégustation gourmande: dégustation de nos vins accompagnés des pâtés de la ferme de Barbe, les mercredis du 14 juillet au 15 août.\nVisites guidées de nos chais (vinification et vieillissement).\nPique-nique dans les vignes: panier avec des produits locaux, 30 euros pour 4 personnes. Des tables pique-nique sont à votre disposition au sommet de la colline.",
       "description": "Situé au cœur de l’appellation d’origine, sur le sommet du coteau, le Domaine du Haut Pécharmant étale ses 35 ha de vignes basses, exposées plein sud. Héritier d’une tradition vigneronne de cinq générations, depuis 1929 la famille Roches exploite ce terroir de sables et de graviers du Périgord avec ses argiles grises et rouges ferrugineuses. Les cépages merlot, malbec et cabernets donnent des vins très raffinés, à la richesse et aux bouquets remarquables. \nDécouvrez librement nos chais -avec espace musée-  et vignes (parcours avec explications en français, anglais et hollandais). Visites guidées juillet / aout (voir site). Visites et dégustation sont gratuites. \nDégustation gourmande avec des pâtés de la Ferme de Barbe les mercredis du 14 juillet au 15 août.\nAire pique nique au sommet de la colline. Panier pique nique (pain, fromages, charcuterie, gâteau aux noix) 30,- euros pour 4 pers",
+      "descriptionEn": "The Domaine du Haut Pécharmant has 35 hectares of vineyards on the top of the hill, in the heart of the Pécharmant appellation. The family bought the property in 1929, ever since, five generations have been working the soils of sand, pebbles and and grey and red clay, rich in iron. The grape varieties merlot, malbec, cabernet franc and cabernet sauvignon are the ingredients of our remarkable wines, full bodied and with a rich bouquet.",
       "id": "DEGAQU024FS00003",
       "labels": [
         "vignobles-et-decouvertes"
@@ -214,13 +215,13 @@
       "websites": [
         "http://www.haut-pecharmant.fr"
       ],
-      "updated": 1539939574182
+      "updated": 1539939997004
     },
     {
       "active": true,
       "activities": null,
       "description": "Corbiac, coeur originel de Puycharman, vignoble aujourd'hui appelé Pécharmant et implanté au XI° siècle par les Comtes du Périgord sur les coteaux argilo-sableux au nord-est de Bergerac, se transmet depuis 1587 au sein de la famille du célèbre Cyrano de Bergerac.\nCette connaissance du terroir, acquise par 17 générations successives de vignerons, et une culture respectueuse des traditions et cépages (Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec) confèrent une grande richesse à notre production en Pécharmant...",
-      "descriptionUk": {},
+      "descriptionEn": "Corbiac, original heart of Puycharman, now called Pécharmant, was established during the XIth century by the Counts of Perigord on the sandy-clay soils in North-East Bergerac. Since 1587, it has been passing on to the family of the famous Cyrano de Bergerac.\nThis knowledge of the land, acquired by 17 successive generations of winemakers, and a respectful culture of traditions and grape varieties (Merlot, Cabernet Franc, Cabernet Sauvignon and Malbec) give a great wealth to our production in Pécharmant.\n",
       "id": "DEGAQU024FS00004",
       "labels": [],
       "langs": [
@@ -272,13 +273,14 @@
       "websites": [
         "https://www.corbiac.com",
         "#https://www.lemeilleurpecharmant.com"
-      ]
+      ],
+      "updated": 1539940031245
     },
     {
       "active": true,
       "activities": null,
       "description": "La cave de Monbazillac, qui regroupe 50 vignerons, est le plus  important producteur de vins d'appellation Monbazillac. Nos vignerons se sont engagés dans des démarches d'amélioration continue. Nous vinifions et commercialisons notamment plusieurs châteaux qui au 17ème siècle étaient connus sous le nom de marques hollandaises.\nDate de création : 1940\n50 viticulteurs-adhérents et 10 salariés\n927 hectares de vignes et 28 000 hectolitres de production annuelle\nAire de production : Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 filiales employant 24 salariés",
-      "descriptionUk": {},
+      "descriptionEn": "Gathering 50 winemakers, the Monbazillac cellar is the most important producer of Monbazillac appellation wines. Our winemakers have signed up for continuous improvement initiative. We vinify and commercialize wines from various castles which were known under Dutch brands during the XVIIth century.\nCreation date: 1940\n50 winemakers and 10 employees\n927 hectares of vines and 28,000 hectoliters produced per year.\nProduction area: Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 subsidiaries with 24 employees \n",
       "id": "DEGAQU024FS00005",
       "labels": [
         "vignobles-et-decouvertes"
@@ -339,13 +341,14 @@
       ],
       "websites": [
         "http://cave.chateau-monbazillac.com/"
-      ]
+      ],
+      "updated": 1539940031386
     },
     {
       "active": true,
       "activities": null,
       "description": "Bienvenue chez Alliance Aquitaine, cave coopérative, regroupant 133 viticulteurs représentant les appellations Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant et Bordeaux. C’est 1356 hectares dont 95% sont certifiés en Agri Confiance, norme de qualité et des bonnes pratiques environnementales.\nAlliance Aquitaine est représentée par 3 sites de production et 3 magasins de vente directe : Bergerac-Le Fleix –Saint Vivien.\nVenez déguster nos vins et découvrir notre chai au « 400 barriques «  sur le site de Bergerac.\n\n\nAccès gratuit au Chai à Barriques sur demande.",
-      "descriptionUk": {},
+      "descriptionEn": "Welcome to Alliance Aquitaine, a cooperative cellar which gathers 133 winegrowers representing the appellations of Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant and Bordeaux. Representing a total of 1,356 hectares, with 95% that are certified by Agri Confiance (quality, health and environment norm).\nAlliance Aquitaine is represented by 3 production sites and 3 direct selling stores in Bergerac, Le Fleix and Saint Vivien.\nCome and taste our wines and discover our “400 barrels” winery on Bergerac’s site.\nFree access to the barrels warehouse on demand.\n",
       "id": "DEGAQU024FS00006",
       "labels": [],
       "langs": [
@@ -394,13 +397,14 @@
       ],
       "websites": [
         "http://www.allianceaquitaine.com"
-      ]
+      ],
+      "updated": 1539940031500
     },
     {
       "active": true,
       "activities": null,
       "description": "Facile et rapide à trouver, les chais et le point de vente du Château La Vieille Bergerie ne pourront que vous séduire. Nous sommes producteur de toutes les couleurs des vins de Bergerac pour satisfaire les dégustateurs les plus avertis. Nous vous conseillerons en Français ou en Anglais. ",
-      "descriptionUk": {},
+      "descriptionEn": "Easy to find, you will be amazed and seduced by the warehouses and shop of Château La Vieille Bergerie. We produce every color of Bergerac wines in order to satisfy the most experienced tasters.\nWe will advise you in French or in English.\n",
       "id": "DEGAQU024FS00008",
       "labels": [],
       "langs": [
@@ -451,13 +455,14 @@
       ],
       "websites": [
         "http://www.vieille-bergerie.fr/"
-      ]
+      ],
+      "updated": 1539940031609
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château du XVIIIe siècle est situé à Lembras sur la route nationale 21, dominant Bergerac avec une exposition plain sud, à flanc de coteau sur un terroir argilo-ferrugineux.\nNotre vignoble de 34 hectares, d'un seul tenant, représente 10 % de l'ensemble de la production de vin rouge d’Appellation d'Origine Contrôlée Pécharmant.\nVin de fête du Périgord le Pécharmant est un vin rouge de garde, élevé en fût de chêne, composés de 4 cépages. Bien charpenté, fruité et généreux, après trois ans en bouteille ce vin dévoile tous ses secrets.\nNous ne manquerons pas de vous les faire découvrir en notre domaine où vous serez assurés de notre meilleur accueil.",
-      "descriptionUk": {},
+      "descriptionEn": "This XVIIIth century castle is situated in the town of Lembras, 6 km from  Bergerac.\n\nBuilt on the top of a hill, it dominates the region and offers an unforgettable setting, between vineyards and forests. The Pécharmant, its appellation contrôlée vineyard, faces south and covers 40 hectares. The ground rich in iron gives to this \"vin de garde\" a subtle bouquet, and its incomparable taste makes it one of the finest products of the Dordogne.\nIf on your trip you come to the Périgord, we will ensure you the best reception.",
       "id": "DEGAQU024FS00009",
       "labels": [],
       "langs": [
@@ -512,13 +517,14 @@
       ],
       "websites": [
         "http://www.chateaurenaudie.com"
-      ]
+      ],
+      "updated": 1539940031721
     },
     {
       "active": true,
       "activities": null,
       "description": "Magnifique demeure inscrite à l’inventaire des monuments historiques, le château de la Jaubertie fut une propriété de chasse d’Henri IV au XVIe siècle, qui l’offrit par la suite à sa maîtresse Gabrielle d’Estrée. Trônant fièrement au milieu des 52 hectares de vignes du domaine à 10 km au sud de Bergerac et à quelques minutes de Monbazillac, il est le cadre idéal d’une découverte des vins AOC Bergerac rouge, blanc et rosé.\nDepuis les bâtiments aux belles portes cintrées, admirez le vignoble et pénétrez ensuite dans les chais où les cuves inox modernes cohabitent avec les fûts de chêne dans lesquels vieillissent les meilleures parcelles. Terminez votre visite dans la vaste salle de dégustation, digne du cadre historique du château de la Jaubertie, nous serons ravis de vous faire apprécier toute la gamme de nos vins, dont la célèbre cuvée Mirabelle.\n",
-      "descriptionUk": {},
+      "descriptionEn": "Only 12kms south of Bergerac, take advantage of your stay in our beautiful region to disciver one of the finest wine estates nearly. In a remarkable historic site, we would be delighted to welcome you for tasting the full range of our renowned wines, including the famous Mirabelle cuvee.",
       "id": "DEGAQU024FS0000A",
       "labels": [],
       "langs": [
@@ -572,13 +578,14 @@
       ],
       "websites": [
         "http://www.chateau-jaubertie.com "
-      ]
+      ],
+      "updated": 1539940031835
     },
     {
       "active": true,
       "activities": null,
       "description": "En 1984, Christian ROCHE a hérité d'une partie de la propriété familiale et en 1989, il a aménagé son chai de vinification afin de devenir vigneron indépendant.\nDans cette optique, il a réalisé qu'il fallait revenir sur les fondamentaux (terme rugbystique cher à notre sud ouest ) à savoir la terre et la plante.\nLa vraie question est: quels sont les besoins de la plante pour produire de beaux raisins permettant d'élaborer le meilleur vin possible ?\nDepuis quelques années, le respect de l'environnement, le travail du sol en profondeur pour un meilleur enracinement, l'implantation des cépages, les densités de plantation, les sélections massales ont contribué à satisfaire notre volonté de gains qualitatifs. Ces préoccupations ont pris, depuis 2012, un tour plus concret : nous sommes en effet en Agriculture Biologique.",
-      "descriptionUk": {},
+      "descriptionEn": "In 1984, Christian ROCHE inherited from a part of the family property, and in 1989 he created his wine cellar in order to become an independent winemaker.\n\nIn this way, he realized he had to come back to the basics, that is to say the land and the plant.\n\nThe real question is: what are the needs of the plant to produce great grapes to create the best wine possible?\n\nFor a few years now, the respect of the environment, deep soil working, grape varieties implantation, plantation densities and the special selections have improved the quality of the wine. And since 2012, they are working in organic agriculture.\n",
       "id": "DEGAQU024FS0000C",
       "labels": [],
       "langs": [
@@ -630,13 +637,14 @@
       ],
       "websites": [
         "http://www.domaine-anciennecure.fr"
-      ]
+      ],
+      "updated": 1539940031950
     },
     {
       "active": true,
       "activities": "BALADE APERITIVE : juillet et août : lundi au vendredi (sauf mardi) à 11h - \n- Présentation de l’exploitation\n- Présentation du Monbazillac et de ses particularités\n- Visite des caves (ou chai) et explication de la vinification des différents vins\n- Explication des différents travaux effectués dans la vigne \n- Balade  dans les vignes permettant de découvrir trois cépages différents\n- Dégustation de toute la gamme des vins (entre 8 et 10 vins différents) et de jus de raisins\nTarif : 3,50 €/adulte\n\nVISITE DE CHAI : juillet et août : lundi au dimanche (sauf mardi) à 15h\n- Présentation de l’exploitation\n- Présentation du Monbazillac et de ses particularités\n- Visite des caves (ou chai) et explication de la vinification des différents vins\n- Dégustation de toute la gamme des vins (entre 8 et 10 vins différents) et de jus de raisins\nTarif : 2,00 €/adulte\n\nBALADE FLÉCHÉE DANS LES VIGNES : d'avril à octobre \nParcours ludique et didactique pour adulte et enfant - arrivée libre\ndurée : d'1/2 h à 2h  avec possibilité de pique niquer au milieu des vignes - 2€/par famille avec question/jeu pour adulte\n\nJEU POUR ENFANTS DE STYLE CHASSE AU TRÉSOR \"LOULOU ET LOLOTTE\" : vacances de printemps, week-end et jours fériés en mai et juin et juillet et août\nDans le parcours fléchés, un véritable jeu de style chasse au trésor a été créé pour les enfant de 3 à 14 ans - durée environ 1h avec petite récompense à la clé !\nTarif : 3€ pour le 1er enfant - 2 € pour le 2ème enfant et 1€ par enfant suivant\n\nPIQUE NIQUE au milieu des vignes : d'avril à septembre\nA base de produits locaux et de vins du domaine\nsalade de crudités, choix de différents pâtés, fromage de chèvre, dessert maison, pain et vins du domaine\n12€/adulte - 8€/enfant jusque 12 ans et 10€ de 13 à 17 ans\nsur commande\n\n\nAFTERDAY BUFFET APÉRO DINATOIRE : d'avril à septembre à 19h30\nsur réservation (pas le mardi et le mercredi en été)\nDégustation de toute la gamme des vins \nPetit atelier de d'initiation à la dégustation\nSuivi d'un apéro dînatoire servi sous forme de buffet de produits locaux et artisanaux\nAssortiment de charcuterie et/ou de pâtés (canard, ..)\nSalade de crudités (tomates, concombres)\nFromage de chèvre et/ou vache\nDessert : gâteau maison et/ou fruit de saison\nTarif 20€/adulte y compris 2 verres de vins\n10€ enfant jusque 12 ans et 15€ enfant de 13 à 17 ans\n\nVISITE GUIDÉE PRIVÉE : toute l'année sur rendez-vous - nous consulter \n\n21 juillet Fête Nationale Belge; repas franco-belge\n",
       "description": "Passionnée par la vigne, j'ai quitté ma Belgique  natale en 1999 pour devenir vigneronne à Monbazillac (au sud de Bergerac) en Périgord- Dordogne. \n\nSur ma petite exploitation de près de 10ha, j'élabore avec passion du Monbazillac et du Bergerac rouge, rosé, sec et du côtes de Bergerac Moelleux. \n\nAimant l'accueil et le partage j'ai à coeur de faire découvrir mon métier et ma passion grâce à de nombreuses animations oenotouristiques (balade guidée par la vigneronne dans les vignes, visite de chai, parcours fléchés en autonomie, jeu de style chasse au trésor pour les enfants,.. apéro buffet dînatoire, pique nique au milieu des vignes.\n\nAccueil camping car, réseau France Passion.\n\nFête nationale du 21 juillet avec repas \n",
-      "descriptionUk": {},
+      "descriptionEn": "Driven by a passion for wine, I left my native Belgium in 1999 in order to become a winemaker in Monbazillac (south of Bergerac) in the Périgord-Dordogne region. On my small vineyard holding of almost 10 hectares, I make with passion Monbazillac wines, as well as red, rosé, dry white Bergerac and sweet Côtes de Bergerac wines. Enjoying meeting people and sharing my knowledge, I am keen to let you discover my profession and passion through many œnotouristic activities that I organise all year round.",
       "id": "DEGAQU024FS0000E",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -696,13 +704,14 @@
       ],
       "websites": [
         "http://www.chateau-du-haut-pezaud.com"
-      ]
+      ],
+      "updated": 1539940032065
     },
     {
       "active": true,
       "activities": null,
       "description": "Romain jeune vigneron épicurien de 30 ans se lance un défit en 2014 : celui de reprendre le Château Haut Bernasse, propriété de 14 hectares, plantée de 11 hectares de blanc (sémillon, muscadelle, sauvignon blanc et gris) et de 3 hectares de rouge (cabernet sauvignon, merlot et cabernet franc) en conversion vers l’agriculture biologique.\nIl travaille de façon traditionnelle ces vignes âgées de 35ans de moyenne, avec un rang enherbé et un rang labouré, dans le but de réaliser des vins de qualités sur ce terroir d’exception.",
-      "descriptionUk": {},
+      "descriptionEn": "Romain, a 30-year-old epicurean winemaker, decided to challenge himself in 2014: take over Château Haut Bernasse, a 14-ha property, and develop an organic agriculture. It has 11 ha of white (sémillon, muscadelle, white and grey sauvignon) and 3 ha of red (cabernet sauvignon, merlot and cabernet franc).\nHe grows these 35-year-old vines traditionally, with grassing and ploughed rows, for the purpose of making quality wines on this exceptional land.\n",
       "id": "DEGAQU024FS0000F",
       "labels": [],
       "langs": [
@@ -757,13 +766,14 @@
       ],
       "websites": [
         "http://www.chateau-hautbernasse.fr"
-      ]
+      ],
+      "updated": 1539940032188
     },
     {
       "active": true,
       "activities": null,
       "description": "Au cœur de la Maison des Vins de Bergerac, le Cloître des Récollets est lié depuis toujours à l’histoire du vignoble bergeracois et de ses hommes.\nAujourd’hui, cette demeure bâtie autour d’une cour intérieure élégante, au coeur du vieux Bergerac, garde ses allures XVIIème, mais a su allier la beauté de ses pierres aux besoins de la Maison des Vins et de l’Interprofession des Vins de Bergerac et Duras. \nPromenez-vous librement du Cloître des Récollets à la Vinothèque, en passant par le Caveau de la Vinée, et découvrez l’exposition permanente \"Le Vin est Voyage\". Fresque historique de l’ère tertiaire à nos jours, diaporama, table sensorielle,...laissez-vous guider dans ce voyage à travers le temps et les sens ! \nLa Maison des Vins c’est aussi le lieu idéal pour s’initier aux secrets de la dégustation dans le cadre d’une splendide salle et avec les les conseils d’un(e) œnologue. ",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024FS0000G",
       "labels": [
         "vignobles-et-decouvertes"
@@ -817,13 +827,14 @@
       ],
       "websites": [
         "http://www.vins-bergeracduras.fr"
-      ]
+      ],
+      "updated": 1539940032300
     },
     {
       "active": true,
       "activities": null,
       "description": "Les MAYET, vieille famille dont l'origine remonte au XVI siècle, sont à cette époque des bâtisseurs de cathédrales venus du centre de la France.\nIls se sont installés dans le Sud Ouest en 1852, sur des terres agricoles ou ils pratiquent la polyculture.\nEn 1971, les premières bouteilles du Domaine du Bois de Pourquié furent produites et petit à petit, l'exploitation familiale se tourne exclusivement vers la production de vin, pour atteindre aujourd'hui la surface de 30 Ha. ",
-      "descriptionUk": {},
+      "descriptionEn": "The Mayet family was in the XVIth century a family of cathedral builders in the center of France.\n\nThey settled in South-West in 1852 on agricultural lands where they do polyculture.\n\nIn 1971, the first bottles of the Domaine du Bois de Pourquié were made and now the family exploitation is producing only wine, on a 30-ha surface.\n",
       "id": "DEGAQU024FS0000H",
       "labels": [],
       "langs": [
@@ -878,13 +889,14 @@
       ],
       "websites": [
         "http://www.vins-bdp.com"
-      ]
+      ],
+      "updated": 1539940032433
     },
     {
       "active": true,
       "activities": null,
       "description": "Domaine familial depuis 3 générations et géré aujourd'hui Philippe et Laurence Métifet.\nLe Domaine domine la vallée de Bergerac sur les coteaux de Monbazillac.\nNotre propriété cultive 70 hectares de vignes, à dominance Monbazillac.\nPour découvrir notre vignoble, nous vous proposons une dégustation de nos vins et une visite de la propriété sur rendez-vous.\nNous accueillons les camping-cars gratuitement sur un emplacement verdoyant avec une vue imprenable sur nos vignes. (France Passion).",
-      "descriptionUk": {},
+      "descriptionEn": "Family area for 3 generations and manage today by families and Métifet Garcia.\nBergerac Domaine dominates the valley on the slopes of Monbazillac.\nIt is possible to stay in our cottages or guest rooms for short or long stay.\nOur property cultivates 70 hectares, has monbazillac dominance.\nTo discover our vineyard, we have created a path retracing the entire domain",
       "id": "DEGAQU024FS0000I",
       "labels": [
         "vignobles-et-decouvertes"
@@ -946,13 +958,14 @@
       ],
       "websites": [
         "http://www.haut-montlong.com"
-      ]
+      ],
+      "updated": 1539940032573
     },
     {
       "active": true,
       "activities": "- Visites Guidées : Mardi à 10h et jeudi à 14h30 (du 10 juillet au 31 août)\n- Soirée à la ferme le Vendredi 20 juillet \n- Chasse au Trésor connectée \"Terra Aventura\", 7 jours / 7  \n- Balades en Gyropode : du Lundi au Vendredi en juillet, Août et septembre sur réservation 24h à l'avance)\n- Pique-nique le midi de la semaine (en juillet et août sur réservation 24h à l'avance)",
       "description": "Pousser la porte du Domaine du Siorac : c’est rentrer dans l’univers de la vigne et du vin en toute simplicité ; c’est faire une vraie rencontre, partager un moment authentique et chaleureux.\nAvec grand plaisir, nous vous montrerons nos vignes et paysages environnants, ils sont les fidèles témoins de notre histoire.\nSans être un professionnel de la dégustation, vous pourrez découvrir, autour d’un verre, nos productions et les multiples facettes de notre métier.\nProfitez de nos visites guidées du 10 juillet au 30 août : le mardi matin à 10h et jeudi après-midi à 14h30 ( Sur rendez-vous les autres jours/saisons).\nPaniers pique-nique sur réservation le midi (10€ par personne)\nBalade en Gyropode ou trottinette cross électriques, du lundi au samedi sur RDV (juillet, août et septembre).\nChasse au trésor connecté sur le domaine (Terra Aventura). \nAccueil camping-cars",
-      "descriptionUk": {},
+      "descriptionEn": "Push the door of the Domaine du Siorac: it is back in the world of vines and wine with ease; is to make a real encounter, share an authentic and warm moment.\nWith great pleasure we will show you our vineyards and surrounding landscapes, they are faithful witnesses to our history.\nWithout being a professional tasting, discover, over a drink, our productions and the many facets of our business.\nEnjoy our guided tours from 12 July to 30 August: Tuesday morning at 10am and Thursday afternoon, at 2:30 p.m. (by appointment on other days / seasons).",
       "id": "DEGAQU024FS0000J",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -1021,13 +1034,14 @@
       ],
       "websites": [
         "http://www.domainedusiorac.fr"
-      ]
+      ],
+      "updated": 1539940032695
     },
     {
       "active": true,
       "activities": "Tous les mardis soirs de juillet et août, à 17h, visite de l'exploitation pour tout apprendre sur l'histoire de la viticulture en Périgord, les secrets de l'élaboration des vins, la particularité des vins blancs liquoreux, dégustation mets et vins.  Inscription obligatoire. \n4€/adulte et 2€/enfant.",
       "description": "Depuis 1896, les générations de la famille CASTAING se succèdent sur ce vignoble de Pomport qui produit des vins de Bergerac et Monbazillac. Depuis toujours le Domaine de Grange Neuve est ouvert au public. Labellisé Bienvenue à la Ferme, Vignobles et découverte, Ferme Pédagogique, Haute Valeur Environnementale et membre de la Route des Vins, le domaine accueille les visiteurs souhaitant découvrir le monde du vin, et l'histoire de la viticulture en Bergeracois, pour une simple dégustation gratuite jusqu'à une visite plus complète du vignoble et des chais (sur rendez-vous) pour percer les secrets de l'élaboration du vin. \nLe domaine dispose également d'un gîte grande capacité pouvant accueillir jusqu'à 13 personnes, primé d'un Best of d'Or Wine Tourism 2016. ",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024FS0000K",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -1088,13 +1102,14 @@
       ],
       "websites": [
         "http://www.grangeneuve.fr"
-      ]
+      ],
+      "updated": 1539940032812
     },
     {
       "active": true,
       "activities": null,
       "description": "Situés sur la rive droite de la Dordogne à 5 km de Bergerac, les 8 hectares de vignes du domaine de Coutancie s’épanouissent sur les coteaux de Prigonrieux exposés plein sud. Représentant la cinquième génération de vignerons sur l’exploitation, Nicole Maury a repris le flambeau familial et apporte des touches féminines à l’évolution du domaine, notamment en s’engageant résolument dans l’oenotourisme. Elle ouvre tout d’abord un gîte puis, avec l’aide de ses enfants et de son époux Hervé qui élève des limousines et des blondes d’Aquitaine, elle met en place des moments conviviaux pour vous familiariser avec les vins du domaine de Coutancie (AOC rosette, bergerac rouge, sec et rosé ou côtes de bergerac) et possibilité d'acheter des morceaux.",
-      "descriptionUk": {},
+      "descriptionEn": "Located on the right bank of Dordogne, 5km away from Bergerac, the 8 ha vines of Domaine de Coutancie grow on Prigonrieux hillsides, orientated south. Representinf the 5th generation of winemakers on the exploitation, Nicole Maury followed the path of her family and gives a feminine touch to the estate, in particular by working in oenotourism. She opened a lodge then, with the help of her children and her husband Hervé (breeding Limousin and Blonde d’Aquitaine cows), she put in place friendly moment to familiarize yourself with the wines of Domaine de Coutancie (AOC Rosette, Bergerac red, dry, rosé or Côtes de Bergerac) and it’s possible to buy directly there.",
       "id": "DEGAQU024FS0000M",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1160,13 +1175,14 @@
       "websites": [
         "http://www.domaine-de-coutancie.com/",
         "Propriété viticole"
-      ]
+      ],
+      "updated": 1539940032942
     },
     {
       "active": true,
       "activities": "Juillet et Aout (Mardi et Vendredi à 11h ) CASSE CROUTE VIGNERON : Visite de notre chai de vieillissement\nDégustation de nos différents vins agrémentés de spécialités du terroir périgourdin. (charcuteries et fromages)\nPrix : 6 € / pers. Sur réservation.\n\nLES VERDOTS EN FETE le 28 & 29 Juillet 2018 : Week-end Portes-Ouvertes avec concert, animation, restauration sur place ...\n\nBALADE GOURMANDE : Balade au cœur des vignes avec un sac à dos pique-nique Juin/Juillet/Aout/Septembre sur réservation.",
       "description": "Originaire de Saint Emilion, la famille Fourtout se consacre à la vigne depuis quatre générations.\nConjuguant passion, savoir-faire et goût pour l'innovation, David Fourtout oeuvre aujourd'hui à la poursuite de l'action entreprise il y a plus d'un siècle.\nSituée au sud de Bergerac, l’exploitation borde l'appellation ‘Monbazillac’ et est principalement constituée d’un long plateau de trois kilomètres de long, jouissant ainsi de terroirs très divers.\nLe Vignoble des  Verdots est doté d’une impressionnante cave de vieillissement de 300 m² creusée dans la roche au milieu de laquelle coule la rivière souterraine des Verdots.\n\nDeux chambres d’hôtes sont aménagées dans l’une des tours du chai.\n",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024FS0000N",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1227,13 +1243,14 @@
       ],
       "websites": [
         "http://www.verdots.com"
-      ]
+      ],
+      "updated": 1539940033124
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété familiale depuis 1749, le Château Moulin Caresse cultive un vignoble de 50ha sur les coteaux de Montravel.\nLe domaine est reconnu depuis plusieurs années par les labels TERRA VITIS et Haute Valeur Environnementale ( HVE3 ) suite aux efforts permanents effectués depuis de nombreuses années dans tous les secteurs du métier ( traitements, carburant, centrale photovoltaïque, gestion des déchets, ...).\nVenez y découvrir une large gamme de vins rouges, blancs secs, moelleux et liquoreux et vins rosés.\nVous pourrez y déguster nos différentes cuvées, de la plus fruitée à la plus puissante.\nPropose également une location de vacances.",
-      "descriptionUk": {},
+      "descriptionEn": "Family property since 1749, Château Moulin Caresse grows a 50ha-vineyard on the Montravel hillsides.\n\nThe estate is recognized for several years now by the TERRA VITIS and Haute Valeur Environnementale (HVE3) labels, thanks to the constant efforts made in every branch of the job (treatments, fuel, photovoltaic plant, waste management, etc.).\n\nCome discover a large range of red, dry whites, soft, sweet and rosé wines.\n\nYou can taste our different cuvées, from the fruitiest to the most powerful.\n\nWe also propose holiday rentals.\n",
       "id": "DEGAQU024FS0000R",
       "labels": [
         "bienvenue-a-la-ferme"
@@ -1294,13 +1311,14 @@
       ],
       "websites": [
         "http://www.moulincaresse.fr"
-      ]
+      ],
+      "updated": 1539940033240
     },
     {
       "active": true,
       "activities": null,
       "description": "Domaine familial depuis 3 générations au point culminant de la région.\n50 ha en culture raisonnée produisent des vins blancs, rosé et rouges.\nNombreuses possibilités de randonnées ou de promenades dans les vignes.\nSitué le long du chemin de St Jacques sur voie de Vézelay, nous accueillons les pèlerins  à la propriété dans un gite prévu pour 6 personnes.\nGite de tourisme pour 10 personnes avec label \"Vignobles et découvertes\".",
-      "descriptionUk": {},
+      "descriptionEn": "The property represents 50 hectares of vineyards and produces wines of different appelations: Montravel, Haut Montravel, Bergerac and Pécharmant.\nIt offers a beautiful point of view of the Dordogne valley and is the departure of nices hiking trails.",
       "id": "DEGAQU024FS0000S",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1372,13 +1390,14 @@
       ],
       "websites": [
         "http://www.puyservain.com"
-      ]
+      ],
+      "updated": 1539940033359
     },
     {
       "active": true,
       "activities": "Entre les maisons périgourdines et le pigeonnier, les visiteurs apprécieront de pique-niquer sur les tables mises à leur disposition et ensuite de jouer à la pétanque sur le boulodrome.",
       "description": "Gérome, Dolores Morand Monteil et leurs enfants, vous accueilleront au Château Terre Vieille pour vous faire découvrir le charme de leur vignoble familial et leurs vins de Pécharmant élaborés avec passion. Le philosophe Maine de Biran est né au Domaine de Grateloup. Terre Vieille est une dépendance de son château qu'on peut apercevoir depuis la propriété.  Amateurs d'Histoire, de pierres et de bons vins tomberont sous le charme!",
-      "descriptionUk": {},
+      "descriptionEn": "Gérome, Dolores Morand Monteil and their children will welcome you to the Chateau Terre Vieille to show you the charm of their family vineyard and their Pécharmant wines made with love. The philosopher Maine de Biran was born in the Domaine de Grateloup and Terre Vieille is a dependency of the castle which we can see from the estate. History, rocks and good wines lovers will fall in love with this place!",
       "id": "DEGAQU024FS00011",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1434,13 +1453,14 @@
       ],
       "websites": [
         "http://www.terrevieille.com"
-      ]
+      ],
+      "updated": 1539940033477
     },
     {
       "active": true,
       "activities": "Dégustation de vins et fromages tous les jeudis de Juillet et août de 10h à 18h.\n\nExposition \"l'Art et le Vin\" de peintures et photos, les samedi et dimanche de Pentecôte. \n\nPique-nique des Vignerons Indépendants le dimanche de Pentecôte.\n\nAudio tour en français et en anglais dans les chais et les alentours, à partir du mois de juin et jusqu'à septembre.  ",
       "description": "A 5mn de Bergerac et Monbazillac,  le château Ladesvignes  offre, à l'ombre d'un cèdre bicentenaire,  une vue panoramique sur Bergerac et la vallée de la Dordogne.\nVins rouges, rosés, blancs secs, liquoreux ou moelleux... c'est une gamme complète qu'il vous est  proposé de venir découvrir et déguster, sans oublier le jus de raisin pour les petits et les grands ! \nSeul ou en groupe, laissez vous séduire par les diverses propositions qui s'offrent à vous : dégustations de vins du lundi au vendredi, audio tour (en français et en anglais) dans les chais et leurs alentours à partir du mois de mai, dégustations de vins et fromages avec visites commentées à heures fixes tous les jeudis de Juillet et Août. \nVous profiterez ainsi du site à votre guise. Parking aménagé, accès facile, et accueil convivial vous attendent.\n",
-      "descriptionUk": {},
+      "descriptionEn": "5 minutes away from Bergerac and Monbazillac, Château Ladesvignes offers a panoramic view of Bergerac and the Dordogne valley, under the shade of a bicentenary cedar tree.\n\nYou are invited to discover and taste a complete range of wines: red, rosé, dry white, fortified or sweet. And of course, grape juice for children young and old!\n\nOn your own or in group, let yourself be tempted by various propositions: wine tasting from Monday to Friday, audio tour (French and English) in the warehouses and surroundings since May, wine and cheese tasting with commentary tour every Thursday in July and August.\n\nYou will enjoy everything as you wish. Car park, easy access and friendly welcome are waiting for you.  \n",
       "id": "DEGAQU024FS00015",
       "labels": [
         "bienvenue-a-la-ferme",
@@ -1501,13 +1521,14 @@
       ],
       "websites": [
         "http://www.ladesvignes.com"
-      ]
+      ],
+      "updated": 1539940033604
     },
     {
       "active": true,
       "activities": null,
       "description": "Les Vignobles Dubard sont installés depuis le début de l'aventure familiale en 1977 dans la partie Ouest de l'appellation Bergerac, appelée Montravel. Ces coteaux argilo-calcaires  de la rive droite de la Dordogne, choisis pour leur exposition favorable, offrent a notre vignoble de 85 ha une diversité de terroirs d'exception qui inspire  nos vins d'Appellations Bergerac et Montravel: vins blancs aromatiques et rosés fruités, vins rouges souples et friands mais aussi cuvées de garde épicées et généreuses.",
-      "descriptionUk": {},
+      "descriptionEn": "Vignobles Dubard settled their vineyards in 1977 in the western part of Bergerac Wine Region, called Montravel. The calcareous-clayish hillsides on the right bank of the river Dordogne, selected for their favourable exposure, offer to our 85-ha vineyard a diversity of exceptional terroirs that inspire our Bergerac & Montravel wines : aromatic dry white, fruity rosés, easy to drink to full-bodied red wines.",
       "id": "DEGAQU024FS00016",
       "labels": [],
       "langs": [
@@ -1566,13 +1587,14 @@
       ],
       "websites": [
         "http://www.vignoblesdubard.com/"
-      ]
+      ],
+      "updated": 1539940033724
     },
     {
       "active": true,
       "activities": null,
       "description": "Vins biologiques AOP Bergerac.\nVisite et dégustation du domaine sur rendez-vous toute l'année.",
-      "descriptionUk": {},
+      "descriptionEn": "Organic wines AOP Bergerac.\nVisits and tastings in the estate all year by appointment.\n",
       "id": "DEGAQU024FS0001G",
       "labels": [],
       "langs": [],
@@ -1619,13 +1641,14 @@
       ],
       "websites": [
         "http://www.closlejoncal.com"
-      ]
+      ],
+      "updated": 1539940033848
     },
     {
       "active": true,
       "activities": null,
       "description": "1610 : C'est la date butoir de l'arbre généalogique de la famille Barde sur la commune de Saint Méard de Gurçon. Depuis cette époque, les générations vont se succéder et développer le patrimoine actuel.\nCette vieille demeure située à l'ouest de Bergerac (30 km) ressemble,\nsans être une gentilhommière du Périgord, à une maison de maître\ndatant du XVII ème siècle. Sur le toit à la Mansarde, trônent deux généreuses\ngirouettes fleurdelisées représentant un dauphin.\nIci donc en Périgord Pourpre, la famille Barde, exploite, vinifie et commercialise\nla production d'un vignoble de 60 ha, répartis comme suit :                                                                \n- 30 ha de cépages blancs : Sauvignon, Sémillon et Muscadelle.\n- 30 ha de cépages rouges : Merlot, Cabernet Franc, Cabernet Sauvignon et Malbec. ",
-      "descriptionUk": {},
+      "descriptionEn": "1610: This is the date when the BARDE family tree began to flourish in the commune of Saint Méard de Gurçon. Since that time succeeding generations have formed the present inheritance.\nHere  in  “Perigord Pourpre”, the BARDE family practice the art of wine-making over their 60 hectares of vineyards, divided up as follows:      \n-30 ha white wine varieties : Sauvignon, Semillon and Muscadelle.      \n-30 ha red wine varieties : Merlot, Cabernet Sauvignon, Cabernet Franc and Malbec. Grown on wires that are staked in lines .\nThis ancient abode situated to the west of\nBergerac (30 km), though not a country seat,\nit is however a landowners home dating from\nthe 17 th century. On the mansard roof sit two\nsplendid weathervanes marked with fleur-de-lis\nand representing dolphins.",
       "id": "DEGAQU024FS0001L",
       "labels": [],
       "langs": [
@@ -1679,13 +1702,14 @@
       ],
       "websites": [
         "http://www.le-raz.com"
-      ]
+      ],
+      "updated": 1539940033974
     },
     {
       "active": true,
       "activities": null,
       "description": "Petite propriété de 12 ha, surplombant la magnifique vallée de la Dordogne, Le Château le Tap est situé sur le site d’une ancienne carrière inscrite au cadastre napoléonien, au lieu dit « Tas de pierre » raccourci au fil du temps « au Tap ». Un terroir d’exception argilo-calcaire,\nLes vignes sont restructurés à plus de  5000 pieds par hectare ,constitué à 50% de cépages blancs (Sauvignon, Sauvignon Gris, Sémillon, Muscadelle et Chenin) et 50% de cépages rouges (Merlot, Cabernet franc,cabernet Sauvignon et Malbec), elles bénéficient d’une très belle exposition sur coteaux. Notre mode de culture est biologique depuis 2007 certifié en 2010, dans le respect et l’équilibre du terroir, sans pesticide ni engrais de synthèse.",
-      "descriptionUk": {},
+      "descriptionEn": "Little 12-ha-property overlooking at the beautiful Dordogne valley, Château le Tap is located on an old quarry site registered in Napoleonic cadaster, in the place called “Tas de pierre” (i.e. pile of stones) shortened as “au Tap”. This is a excepcional terroir with clay-limestone soils.\n\nThere are 5,000 vines in each hectare, constituted by 50% of white grape varieties (Sauvignon, Sauvignon Gris, Sémillon, Muscadelle et Chenin), and 50% of red grape varieties (Merlot, Cabernet franc,cabernet Sauvignon et Malbec), they have a great exposure on the hills. Our culture method is organic since 2007, certified in 2010, respecting terroir’s balance, without pesticides nor fertilizers. \n",
       "id": "DEGAQU024FS0001M",
       "labels": [],
       "langs": [
@@ -1737,13 +1761,14 @@
       ],
       "websites": [
         "http://www.chateauletap.fr/"
-      ]
+      ],
+      "updated": 1539940034104
     },
     {
       "active": true,
       "activities": "visites commentées tous les mardi et vendredi des mois de juillet et aout, à 10h30 en Français, à 14h30 en Anglais. Tous les jeudis des mois de juillet et août, le jeu de la dégustation, découverte des arômes pour les enfants.",
       "description": "Au cœur d'un parc à la française, le Château de Tiregand est une élégante seigneuriale du XVIIIe siècle. Son Vignoble de 35 hectares est situé sur les coteaux de Pécharmant. Dominant la vallée de la Dordogne en amont de Bergerac, les sols dits sables et graviers du Périgord donnent des vins racés et élégants qui sont élevés en barriques pendant 12 mois. Ils sont réputés et ont obtenus de nombreuses médailles d'Or dans tous les guides.",
-      "descriptionUk": {},
+      "descriptionEn": "At the heart of a Frenchie park, Château de Tiregand is an elegant seigneury of the XVIIIth century. Its 35ha vineyard is located on the Pécharmant hills. Overlooking the Dordogne valley on top of Bergerac, the “sand and rocks” soils of Perigord give raced and elegant wines which are left in barrels for 12 months. They are famous and have been rewarded by golden medals in every guide.",
       "id": "DEGAQU024FS0001N",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1799,13 +1824,14 @@
       ],
       "websites": [
         "http://www.chateau-de-tiregand.com"
-      ]
+      ],
+      "updated": 1539940034234
     },
     {
       "active": true,
       "activities": null,
       "description": "Ce vignoble familial de 15 ha créé au XVIIème siècle est situé à 3kms de Bergerac perché sur une haute terrasse de la vallée de la Dordogne. Nous accueillons avec plaisir ceux qui veulent partager notre esprit vigneron. Nous proposons une gamme de 7 vins déclinés en Bergerac sec, rosé, rouge et Rosette.",
-      "descriptionUk": {},
+      "descriptionEn": "This 15ha family vineyard, created in the XVIIth century, is located at 3kms of Bergerac, perched on a high outside sitting area of Dordogne valley. We welcome those who want to share our winemaker spirit. We propose a wide range of 7 wines declined in dry Bergerac, rosé, red and Rosette. ",
       "id": "DEGAQU024FS0001O",
       "labels": [
         "bienvenue-a-la-ferme"
@@ -1854,13 +1880,14 @@
       ],
       "websites": [
         "http://www.combrillac.fr"
-      ]
+      ],
+      "updated": 1539940034366
     },
     {
       "active": true,
       "activities": null,
       "description": "Au cœur des coteaux sud de la Dordogne, 57 Ha, généreusement médaillé, Château Court-les-Mûts vous accueillera dans ses jolis chais, son laboratoire d’œnologie et son musée du vin. Rencontrez, écoutez la famille Sadoux vous parler du vin et de ses traditions tout en vous initiant à la dégustation. Délectez vous des notes de pêche et poire des blancs secs, de l'exotisme d'un moelleux détonnant, d'un rosé qui fleure le bonbon, des rouges friands ou puissants et racés. Enfin découvrez la quintessence du Saussignac issu de vendanges tardives de vieux sémillions : un vin rare !",
-      "descriptionUk": {},
+      "descriptionEn": "At the heart of the south hills of Dordogne, with 57ha and plenty of medals, Château Court-les-Mûts will welcome you in its nice warehouses, its oenology laboratory and its wine museum. Meet and listen to the Sadoux family talk about wine and traditions while you will discover the art of tasting. Discover the peach and pear aromas of dry white wines, the exoticism of sweet wine, a rosé tasting like sweets, and intense red wines. Then, discover the quintessence of Saussignac coming from late harvests and early-maturing Semillon, that is to say a pretty rare wine! ",
       "id": "DEGAQU024FS0001P",
       "labels": [
         "vignobles-et-decouvertes"
@@ -1909,13 +1936,14 @@
       ],
       "websites": [
         "http://www.court-les-muts.com/"
-      ]
+      ],
+      "updated": 1539940034502
     },
     {
       "active": true,
       "activities": null,
       "description": "Au Moyen-Âge Le Chabrier était une forteresse et elle fut détruite en 1345 au début de la Guerre de cent ans. Le Château actuel fut fondé en 1640. La vigne y est la culture principale depuis le XIème  siècle. Situé au milieu de valons et de coteaux dominant la vallée de la Dordogne, Le Chabrier produit des vins blancs secs et doux et des vins rouges ou rosés en respectant les règles de l’Agriculture Biologique certifiée.",
-      "descriptionUk": {},
+      "descriptionEn": "Château Le Chabrier, settled in 1640, is situated on a beautiful hilltop overlooking the Valley of the Dordogne. Its vineyard of 20 hectares (49 acres) produces certified organic white and red wines that are much appreciated by faithful wine-lovers.  The vine is methodically and patiently cultivated so as to obtain a small yield and the wine is matured slowly.  This pursuit of quality, combined with one of the best Aquitaine soils, make Le Chabrier worthy of its international reputation and numerous prizes.",
       "id": "DEGAQU024FS0002G",
       "labels": [],
       "langs": [
@@ -1962,13 +1990,14 @@
       ],
       "websites": [
         "http://chabrier.jimdo.com/"
-      ]
+      ],
+      "updated": 1539940034625
     },
     {
       "active": true,
       "activities": null,
       "description": "Éveillez vos sens. Vignoble certifié bio et biodynamie avec une école du vin certifiée et hébergements charmants et écologiques. \nVisites et dégustations pédagogiques et gourmandes. Accords avec les produits locaux et bios.\nServices: Visites pédagogiques d'1 heure à 3 jours, Ecole du vin certifiée, Deux gîtes écologiques et luxe. Best of Wine Tourism Or 2017 Hébergement. Best of Wine Tourism Or 2013 Visites et Valorisation des pratiques environnementales.",
-      "descriptionUk": {},
+      "descriptionEn": "Delight your senses with a day or half day at an award winning organic and biodynamic vineyard estate that is also a certified WSET wine school. \nExperience gourmet pairings like wine and chocolate, a half day with a wine and food pairing lunch, wine growing and winemaking, or a full day playing the winemaker. Reception of groups of upto 20 people and accommodation for 6 people in two luxury ecological gites. \nLocated between Bordeaux and Sarlat in Saussignac (20 mins west of Bergerac).",
       "id": "DEGAQU024FS0002H",
       "labels": [
         "vignobles-et-decouvertes"
@@ -2027,13 +2056,14 @@
       ],
       "websites": [
         "http://www.chateaufeely.com"
-      ]
+      ],
+      "updated": 1539940034757
     },
     {
       "active": true,
       "activities": null,
       "description": "\"In monte revelationem\"\nNous nous inscrivons dans les pas de Michel de Montaigne en élaborant des vins responsables, vous faisant ainsi partager le plasir de la révélation.\nDes vignes à perte de vue, entrecoupées de bosquets … \nVous êtes sur les côteaux de Lamothe Montravel, dans la vallée de la Dordogne. Entre Castillon-la-Bataille et Ste-Foy-la-Grande, nous vous accueillons à 2 km du château de Montaigne, sur notre domaine viticole de 9 hectares en AOC Montravel rouge et blanc, Bergerac rouge et rosé. Engagés dans un mode de production biologique, nous vous expliquerons comment nous avons  banni l’usage des pesticides et autres engrais, ainsi que les différentes façons de vinifier nos vins.\nAprès la visite du chai, vous êtes conviés à une dégustation : que pensez-vous de ce Montravel rouge, élevé 15 mois en barriques de chêne français et mis en bouteille au domaine ?",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024FS0002J",
       "labels": [],
       "langs": [
@@ -2087,13 +2117,14 @@
       ],
       "websites": [
         "https://www.domainemoulingarreau.fr/"
-      ]
+      ],
+      "updated": 1539940034881
     },
     {
       "active": true,
       "activities": "Dégustation-vente toute l'année.",
       "description": "Le Domaine du Boyer est une exploitation familiale depuis 1936 de 15 ha et a vu succéder 3 générations de viticulteurs. Il est situé à 12 km au Sud de Bergerac, dans l'appellation Monbazillac et Bergerac.\nMonbazillac, Vin de Bergerac rouge, sec, et rosé.",
-      "descriptionUk": {},
+      "descriptionEn": "Since 1936  “Domaine Du Boyer” has been run by the same family for 3 generations.\nThe 15 hectare vineyard  is situated 12 kms south of Bergerac and is in the appellation area of Bergerac and Monbazilac\nVisits to the vineyard with tasting and purchasing are available all year\nMonbazillac, Bergerac red, white, and rosé.",
       "id": "DEGAQU024FS0005B",
       "labels": [],
       "langs": [
@@ -2145,13 +2176,14 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940035012
     },
     {
       "active": true,
       "activities": null,
       "description": "Petit domaine en AB, conduit par Brigitte Soulier, une femme passionnée qui produit des \"vins d'artisan\". Si vous lui rendez visite (de préférence, en prévenant au préalable pour s'assurer de sa disponibilité), elle vous partagera avec enthousiasme l'amour de son métier, les joies et les difficultés aussi qui y sont attachées et essaiera toujours de répondre avec authenticité à votre curiosité. \nEn dégustation, une gamme complète : Bergerac secs, rosé, rouges, moelleux et Monbazillac (liquoreux) : des cuvées sur le plaisir du fruit jusqu'aux cuvées de garde haut de gamme, régulièrement médaillées ou reconnues. Bienvenue !",
-      "descriptionUk": {},
+      "descriptionEn": "30 acres vineyard, organic viticulture, managed by a passionate woman : \"the passion and love of the vine that she brings is evident in every bottle of wine you open from Château La Robertie\". She winemakes dry and sweet wines, rosé and red ones. Many of them have got medals. ",
       "id": "DEGAQU024FS0007B",
       "labels": [],
       "langs": [
@@ -2207,13 +2239,14 @@
       ],
       "websites": [
         "http://www.chateau-larobertie.com"
-      ]
+      ],
+      "updated": 1539940035152
     },
     {
       "active": true,
       "activities": "Parcours découverte interactif gratuit toute l'année.\n\nLes Apéros de Belingard: venez passer un moment convivial en famille ou entre amis autour de plateaux de produits locaux et des vins de Belingard. Les Jeudis 12 & 26 Juillet et 9 & 23 Août de 18h30 à 21h",
       "description": "Plongez dans la mémoire du Château Bélingard et découvrez une terre que les Celtes baptisèrent le «Jardin du Soleil».\nAu-delà d'un terroir d'exception, Château Bélingard est une page d'histoire à ciel ouvert. Au cœur de l'appellation Bergerac et Monbazillac, le vignoble s'épanouit sur des sols argilo-calcaires.\nEn plus d'un panorama exceptionnel, Bélingard se distingue parmi les meilleurs vins des AOC Bergerac et Monbazillac : Secs, Rouges, Rosé, Moelleux et Liquoreux.\nAlliant savoir-faire traditionnel et le meilleur de la technique, l’équipe de Bélingard élabore des vins élégants, complexes et attrayants.\n",
-      "descriptionUk": {},
+      "descriptionEn": "Dive in the memory of Château Bélingard and discover a land named by the Celts as the “Sun Garden”.\nBeyond an exceptional terroir, Château Bélingard has a true history content. At the heart of the appellations of Bergerac and Monbazillac, the vineyard stands on clay-limestone soils.\n",
       "id": "DEGAQU024FS0008K",
       "labels": [
         "vignobles-et-decouvertes"
@@ -2268,13 +2301,14 @@
       ],
       "websites": [
         "http://www.belingard.com"
-      ]
+      ],
+      "updated": 1539940035282
     },
     {
       "active": true,
       "activities": null,
       "description": "Domaine dynamique en plein re nouveau. Vignoble en agriculture biologique poussant la démarche jusqu à la vinification en proposant des cuvées sans aucun sulfites.\nAccueil camping-cars.",
-      "descriptionUk": {},
+      "descriptionEn": "A dynamic area which is experiencing a renewal. The vineyard follows an organic production from its planting to its winemaking by proposing wine batches without sulphites.\nCamper vans are welcomed.\n",
       "id": "DEGAQU024FS0008L",
       "labels": [],
       "langs": [
@@ -2338,13 +2372,14 @@
       ],
       "websites": [
         "http://www.barouillet.com"
-      ]
+      ],
+      "updated": 1539940035398
     },
     {
       "active": true,
       "activities": null,
       "description": "Jolie petite propriété viticole située à 5 km au nord-ouest de Bergerac. Charles Blanc y élabore des vins de grande qualité en misant sur la diversité des cépages, des modes de vinification et dans le respect de l'environnement.",
-      "descriptionUk": {},
+      "descriptionEn": "Lovely little wine property located at 5km north west away from Bergerac. Charles Blanc creates high quality wines there and relies on the diversity of the grape varieties and the vinification methods while respecting the environment.",
       "id": "DEGAQU024FS0008M",
       "labels": [
         "saveurs-du-perigord"
@@ -2394,13 +2429,14 @@
       ],
       "websites": [
         "http://www.chateau-montplaisir.com"
-      ]
+      ],
+      "updated": 1539940035512
     },
     {
       "active": true,
       "activities": null,
       "description": "Situé à 10km au sud de Bergerac sur la rive gauche de la Dordogne, le Château Kalian, d'une superficie d'un peu plus de 10 ha, est entièrement implanté sur la commune de Monbazillac. 90% de sa superficie d'exploitation est consacré à l'élaboration de vins liquoreux.\nChâteau Kalian est une propriété familiale 100% BIO depuis 2012 qui fête en 2017 ses 25 ans d'existence. Le nom KALIAN est le résultat d'une combinaison des prénoms des deux enfants Katell et Kilian, tous deux jeunes œnologues. Kilian, le fils, est aujourd'hui le responsable de la propriété.\nVous serez accueilli avec convivialité dans une magnifique salle de dégustation aménagée dans une ancienne grange aux murs de pierre et colombages.",
-      "descriptionUk": {},
+      "descriptionEn": "Located at 10 km south Bergerac on Dordogne left bank and with a surface of more than 10 ha, Château Kalian is completely settled in Monbazillac town. 90% of its exploitation area is dedicated to the creation of sweet wines.\nChâteau Kalian is a 100% organic family property since 2012 which celebrated its 25 years anniversary in 2017. The name KALIAN comes from the mixing of their children names Katell and Kilian, who are two young oenologists. Kilian, their son, is now the owner of the property.\nYou will be welcomed with conviviality in a magnificent tasting room converted into an old barn with stone and stud walls.  \n",
       "id": "DEGAQU024FS0008N",
       "labels": [
         "vignobles-et-decouvertes"
@@ -2453,13 +2489,14 @@
       ],
       "websites": [
         "http://www.chateaukalian.com"
-      ]
+      ],
+      "updated": 1539940035638
     },
     {
       "active": true,
       "activities": null,
       "description": "Situé sur le coteau nord de la commune de Bergerac, le Château du Rooy est une jolie propriété du XIXème siècle que nous avons reprise en 1998.\nElle dispose d’un vignoble diversifié où d’importants investissements ont été réalisés tant au niveau des vignes que du chai de vinification.\nAvec un domaine de\n19 hectares de vignes réparties sur trois appellations, nous élaborons nos vins en tenant compte du terroir et en respectant la biodiversité par la pratique\nd'une agriculture raisonnée.\nContrairement aux propriétés familiales, le Château du Rooy est tout d'abord une aventure viticole dans laquelle nous nous sommes lancés afin de recréer et développer le domaine au fil du temps.\nAujourd'hui nous continuons de restructurer l’exploitation dans le but d'améliorer les conditions de production ainsi que la qualité\nde nos vins.",
-      "descriptionUk": {},
+      "descriptionEn": "Located on the north hill of Bergerac, Château du Rooy is a pretty property from the XIXth century that we bought in 1998.\n\nIt has a diversified vineyard where important investments were made for the vines and the vinification wine cellar. \nWith a property of 19ha of vines and three appellations, we create our wines by respecting the land and biodiversity with a sustainable agriculture.\n\nContrary to family properties, Château du Rooy is first and foremost a viticultural adventure in which we try de recreate and develop the estate through time.\n\nNow, we continue to reshape the exploitation for the purpose of improving the conditions of production as well as our wines’ quality.  \n",
       "id": "DEGAQU024FS0008O",
       "labels": [],
       "langs": [
@@ -2513,13 +2550,14 @@
       ],
       "websites": [
         "http://www.chateau-du-rooy.com/"
-      ]
+      ],
+      "updated": 1539940035753
     },
     {
       "active": true,
       "activities": null,
       "description": "Vignoble situé au sommet du coteau de Pécharmant orienté plein sud. Vigne étroite, panorama sur la vallée de la Dordogne et le coteau de Monbazillac. Le terroir et la vinification contribuent à l'élaboration d'un vin à la robe d'un rouge profond assez intense aux senteurs de truffes, de cassis et de mûres. L'attaque intense et généreuse s'appuie sur une trame tannique permettant un vieillissement prometteur.\nVieille bâtisse Périgourdine.",
-      "descriptionUk": {},
+      "descriptionEn": "The vineyard is located at the top of Pécharmant hill, oriented south. Tiny vine, with a view of Dordogne valley and Monbazillac hill. The land and vinification mixed together give this beautiful creation of an intense dark red wine with aromas of truffles, blackcurrants, and blackberries. This intensity and generosity underline a tannic structure that can age easily.\n\nOld building of the Perigord \n",
       "id": "DEGAQU024FS0009H",
       "labels": [],
       "langs": [
@@ -2574,13 +2612,14 @@
       "vineyards": [
         "pecharmant"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940035893
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété familiale depuis 4 générations, actuellement Baudry Bertrand et Baudry Bernadette (frère et sœur) sont à la tête du Domaine depuis 1992 et produisent du Pécharmant et du Rosette. \n",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024FS0009K",
       "labels": [],
       "langs": [
@@ -2635,13 +2674,14 @@
       ],
       "websites": [
         "http://www.domainedugrandjaure.com"
-      ]
+      ],
+      "updated": 1539940036033
     },
     {
       "active": true,
       "activities": null,
       "description": "Tirant son nom du vieux français qui signifiait « côtes » ou « coteaux », le Domaine des Costes est situé à Bergerac, l’une des quatre communes produisant des vins de l’appellation Pécharmant.\nDepuis 1992, une attention toute particulière est alors portée au vignoble : replantation en vignes étroites, de faibles rendements, culture raisonnée de la vigne, entretien du sol sans désherbant… Depuis 2003, la vigne est conduite en culture biologique dans un souci écologique, bien sûr, mais également dans le but de laisser le terroir s’exprimer au mieux. Nous produisons des vins de Pécharmant ronds, concentrés et de longue garde avec de la finesse et de l’élégance. Un vin rosé aux arômes délicats vient compléter la gamme. C’est un élément indispensable pour mettre en valeur les jeunes plantations.\n",
-      "descriptionUk": {},
+      "descriptionEn": "The Domaine des Costes’s name refers to the old French for “hillsides” (coteaux). It is located in Bergerac, one of the four towns producing Pécharmant appellation wines.\n\nSince 1992, the vineyard is being cared of very carefully: replantation, poor yield, sustainable growing of vine, managing soils without weed killer.\n\nSince 2003, the vine is worked in organic agriculture in an environmental way and in order to let the nature do its thing. We produce round, elegant and intense Pécharmant wines that you can keep for years. The rosé has delicate aromas. \n",
       "id": "DEGAQU024FS0009N",
       "labels": [],
       "langs": [
@@ -2697,13 +2737,14 @@
       ],
       "websites": [
         "http://www.domainedescostes.fr"
-      ]
+      ],
+      "updated": 1539940036166
     },
     {
       "active": true,
       "activities": null,
       "description": "Figurant sur le Feret de 1903 sous le nom de \"vignoble de Campréal et des Costes\", connu sous le nom \"Clos les Côtes\" depuis 1975. Sables et graviers du Périgord, vin de terroir riche et subtil, un sommet d'élégance.",
-      "descriptionUk": {},
+      "descriptionEn": "Named “Campréal et des Costes vineyard” in 1903, and since 1975 “Clos les Côtes”. Sand and gravels of Périgord, wine of rich and subtle terroir, elegant hill.",
       "id": "DEGAQU024FS0009O",
       "labels": [],
       "langs": [
@@ -2750,13 +2791,14 @@
       "vineyards": [
         "pecharmant"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940036286
     },
     {
       "active": true,
       "activities": null,
       "description": "Vigneron passionné et installé depuis 20 ans à Pécharmant et Monbazillac, élu vigneron de l'année 2015.\nMes vins sont l'expression de mes terroirs, de mes envies, une œuvre comparable à une peinture à qui l'on donne 12 ou 24 mois pour naître et vivre.",
-      "descriptionUk": {},
+      "descriptionEn": "Passionate winemaker working for 20 years in Pécharmant and Monbazillac. Elected winemaker of the year 2015.\nMy wines are the expression of my local products and my desires, that is to say a work comparable to a painting to which we give 12 or 24 months to create and live.\n",
       "id": "DEGAQU024FS0009S",
       "labels": [],
       "langs": [
@@ -2804,13 +2846,14 @@
         "monbazillac",
         "pecharmant"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940036439
     },
     {
       "active": true,
       "activities": null,
       "description": "Dans la ville de Bergerac, 15 ha de Pécharmant, un parc planté d'arbres centenaires, 5 chambres d’hôtes de charme.",
-      "descriptionUk": {},
+      "descriptionEn": "The countryside in the city of Bergerac\n15Ha of vines AOC Pécharmant\nPark with 100-years-old trees and 5 charming guestrooms",
       "id": "DEGAQU024V5029W2",
       "labels": [],
       "langs": [
@@ -2855,13 +2898,14 @@
       ],
       "websites": [
         "http://www.farciesdupech.com/"
-      ]
+      ],
+      "updated": 1539940036574
     },
     {
       "active": true,
       "activities": null,
       "description": "Réception et dégustation aux horaires indiqués. Visite de la propriété sur rendez-vous.\nVins produits : AOC Pécharmant, Bergerac Rosé, Bergerac Rouge\nLangues parlées : français, anglais, néerlandais et espagnol\nOuverture : du lundi au samedi de 9 h  à 12 h  et de 14 h  à 18 h",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V5029W3",
       "labels": [],
       "langs": [
@@ -2908,13 +2952,14 @@
       ],
       "websites": [
         "http://www.chateaulatilleraie.com"
-      ]
+      ],
+      "updated": 1539940036696
     },
     {
       "active": true,
       "activities": "Pique-nique des Vignerons indépendants en Mai.",
       "description": "Le Château Poulvère est une ancienne dépendance du Château de Monbazillac qui date de la même époque, XVIème siècle. La Famille BORDERIE s’est installée sur la propriété de Poulvère en 1923. Le Château Poulvère s’étend sur 104 hectares de vignes, exclusivement en Appellation d’Origine Contrôlée, dont 54 hectares en Monbazillac, 12 hectares en Pécharmant et 38 hectares en Bergerac. Le vignoble du Château Poulvère est l’une des plus grandes exploitations de la région de Bergerac, mais reste néanmoins à l’échelle humaine et familiale.\nVigneron indépendant - labellisé Haute Valeur environnementale.\n",
-      "descriptionUk": {},
+      "descriptionEn": "Château Poulvère is a former dependency of the Château de Monbazillac. Built in the 16th century, its construction is contemporaneous with that of the Château. The Borderie family has been established at the Poulvère property since 1923 when Louis Borderie was appointed estate manager. Château Poulvère wine estate encompasses 104 hectares, with all of the vineyards carrying the AOC (appellation controled) label. The estate comprises 54 hectares of Monbazillac, 12 hectares of Pécharmant and 38 hectares of Bergerac. château Poulvère is proud to be one of the most substantial wine estates in the Bergerac region, a successful business that remains a dedicated family enterprise.",
       "id": "DEGAQU024V5029WM",
       "labels": [],
       "langs": [
@@ -2963,13 +3008,14 @@
       ],
       "websites": [
         "http://www.poulvere.com"
-      ]
+      ],
+      "updated": 1539940036824
     },
     {
       "active": true,
       "activities": null,
       "description": "Vignoble le plus haut de l'appellation Monbazillac, sur les coteaux sud de Bergerac, à 40 mètres de la Tour des Vents et du moulin de Malfourat.\nPropriété familiale depuis 3 générations.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V5029WQ",
       "labels": [],
       "langs": [
@@ -3020,13 +3066,14 @@
       ],
       "websites": [
         "http://www.chateau-malfourat.fr/"
-      ]
+      ],
+      "updated": 1539940036983
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château VARI est un domaine viticole familial qui s’étend sur 20 hectares dans l’aire d’Appellation d’Origine Contrôlée Monbazillac et Bergerac.\nDepuis 1994, Sylvie et Yann JESTIN produisent, sur un terroir argilo-calcaire, des vins francs de caractère, bien équilibrés et d’une grande finesse. Vins produits à partir de raisins issus de l’Agriculture Biologique à compter du millésime 2012, en conversion pour les millésimes 2010 et 2011.\nSoucieuse de la qualité des produits mais également respectueuse du terroir, la famille JESTIN a toujours exploité son domaine en privilégiant le travail du sol et en limitant l’utilisation de produits chimiques.",
-      "descriptionUk": {},
+      "descriptionEn": "The Château Vari, situated in Monbazillac, is a family-owned wine estate, producing organic wine since 2012. It covers 20 hectares in AOC Bergerac and AOC Monbazillac.\nSince 1994, Sylvie and Yann Jestin have been producing open, well-balanced and delicate wines with character, on a clayey-limestone « terroir ». After going through the conversion period in 2010 and 2011, Château Vari now produces organic wines as from the 2012 vintage.\nAttentive to the quality whilst respecting the « terroir », the Jestin family have always farmed the estate through ploughing the soil and limiting the use of chemical products. Convinced that organic farming is the future, Yann Jestin decided to start coverting the estate in 2009. The results are incredible : plants and wildlife have returned and the wines are even better!",
       "id": "DEGAQU024V502OWN",
       "labels": [
         "vignobles-et-decouvertes"
@@ -3084,13 +3131,14 @@
       ],
       "websites": [
         "http://chateau-vari.com/"
-      ]
+      ],
+      "updated": 1539940037116
     },
     {
       "active": true,
       "activities": "- Tous mardi 18h/20h30 (juillet et août):\nDégustation-apéritif au château comprenant la gamme de 8 vins et des tapas \"maison\" élaborées avec des produits bio régionaux.\n\n- Tous mes mardi et jeudi 11h :\nVisite guidée de nos chais suivie d'une dégustation de 8 vins.\n\n- Parcours fléché à travers les vignes, vous pourrez vous promener près d'un joli étang et découvrir les différents cépages.",
       "description": "C’est au cœur du terroir de Monbazillac, sur une colline surplombant les rives de la Dordogne et la cité historique de Bergerac, que sont produits depuis des décennies les vins du Château Grande Maison.\nCette ancienne maison forte du XIIIème siècle dispose des qualités d’un environnement unique :\n- L’exposition générale est plein sud et toutes les parcelles sont en coteaux plus ou moins accentués.\n- Son étang au cœur du domaine est un atout exceptionnel pour favoriser le botrytis, ce champignon qui fait toute la singularité et la richesse du Monbazillac\n- Terroir argilo-calcaire avec un affleurement de silice qui donne une certaine acidité.\nDans une optique toujours qualitative, l’ensemble de la production est soumis aux règles de l’agriculture biologique auxquelles vient s’ajouter la méthode biodynamique, ce qui permet à nos vins d’exprimer tout leur caractère.",
-      "descriptionUk": {},
+      "descriptionEn": "In the heart of Monbazillac, on a hill overlooking the banks of the Dordogne and the historic town of Bergerac, the organic wines of exception of Château Grande Maison have been produced for decades (Monbazillac, Côtes de Bergerac, red/white Bergerac and rosé).\nThe thirteenth century fortified house has a unique environment :\n- Overall exposure is south facing on more or less accentuated hills.\n- The lake at the heart of the property offers an exceptional asset to promote botrytis, the fungus that creates the uniqueness and richness of Monbazillac\n- The soil is clay-limestone with silica in places that gives a certain acidity.\nWith quality as the overarching objective, the entire production is subject to the rules of organic farming and the biodynamic method, allowing our wines to express their character and the best of this region.",
       "id": "DEGAQU024V503LPL",
       "labels": [
         "vignobles-et-decouvertes"
@@ -3149,13 +3197,14 @@
       ],
       "websites": [
         "http://www.grandemaison-monbazillac.com/"
-      ]
+      ],
+      "updated": 1539940037225
     },
     {
       "active": true,
       "activities": "6 Avril 2018 : Jazz en chais\nVisite du Chai tous les vendredis à 10h en Juillet et Août par un viticulteur.",
       "description": "En 1939, un petit  groupe  d’amis vignerons décide d’optimiser leur développement au travers d’un outil commun de vinification et crée « La Cave Coopérative de Sigoulès ».\n\nC’est aujourd’hui la 3ème génération de viticulteurs qui porte les valeurs de notre coopérative et la qualité de nos vins. Un chai à  la  pointe  de  la  technologie  et  un   savoir-faire   traditionnel nous permettent de vous proposer une large gamme de vins représentative  de  l’appellation  Bergerac. \n\nLes Vignerons de Sigoulès vous accueillent dans leur magasin pour déguster et apprécier leurs vins dans  un  cadre   et   une  ambiance  conviviale. \n \nNotre boutique vous propose  également une   gamme   de  produits locaux d’épicerie fine. Dans  notre  espace   vidéo, découvrez la naissance du vin de la parcelle à la bouteille.\n",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V503MGE",
       "labels": [
         "vignobles-et-decouvertes"
@@ -3215,13 +3264,14 @@
       ],
       "websites": [
         "http://www.vigneronsdesigoules.com/"
-      ]
+      ],
+      "updated": 1539940037334
     },
     {
       "active": true,
       "activities": null,
       "description": "Trés beau belvédère en arrivant au Domaine sur un vallon donnant avec au loin la vallée de la Dordogne et les côteaux Girondins de Sainte Radegonde. \nAccueil camping-cars.",
-      "descriptionUk": {},
+      "descriptionEn": "Beautiful belvedere when you arrive at the estate, on a valley with a view on Dordogne’s valley and the Gironde hillsides of Sainte Radegonde.\n\nCamper vans are welcomed.\n",
       "id": "DEGAQU024V505KB3",
       "labels": [],
       "langs": [
@@ -3277,13 +3327,14 @@
       ],
       "websites": [
         "http://www.vins-bergerac-grimardy.com"
-      ]
+      ],
+      "updated": 1539940037483
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château La Maurigne situé sur de magnifiques coteaux s'étend sur 17 ha dont 5 ha de vignes et 2 ha de vergers le tout cultivé en Agriculture Biologique. \nLa faune et la flore sont préservées afin de maintenir l'exploitation en équilibre Biologique. En saison vous pourrez découvrir 10 variétés d'orchidées sauvages dans les vignes.\n",
-      "descriptionUk": {},
+      "descriptionEn": "Standing on beautiful hills, Château La Maurigne represents 17 ha with 5 ha of vines and 2 ha of orchards that are currently under organic management.\nThe fauna and flora are preserved in order to maintain the exploitation with an organic balance. During the summer, you can find at least 10 varieties of wild orchids in the vines.\n",
       "id": "DEGAQU024V505KJY",
       "labels": [],
       "langs": [
@@ -3335,13 +3386,14 @@
       ],
       "websites": [
         "http://www.chateaulamaurigne.com"
-      ]
+      ],
+      "updated": 1539940037621
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château La Rayre, acquis depuis 1999 par Vincent VESSELLE, comprend 25 ha de vignes situées sur les côteaux argilo-calcaires Sud de Monbazillac sur la commune de Colombier réunissant les meilleures conditions climatiques et géologiques pour faire éclore de grands vins. En agriculture biologique et au niveau 3 HVE.\nVisite/Dégustation de 11h à 13h  par le vigneron du 14/07 au 15/08.",
-      "descriptionUk": {},
+      "descriptionEn": "Managed since 1999 by Vincent VESSELLE, Château La Rayre represents 25 ha of vines situated on the South Monbazillac clay-limestone hills in Colombier. All of this gather the best meteorological and geological conditions to make great wines. \nBiological agriculture and level 3 of HVE.\n\nTour/tasting from 11 am to 1 pm by the winemaker, from July 14 to August 15.\n",
       "id": "DEGAQU024V505KLW",
       "labels": [],
       "langs": [
@@ -3394,13 +3446,14 @@
       ],
       "websites": [
         "http://www.chateau-la-rayre.fr"
-      ]
+      ],
+      "updated": 1539940037728
     },
     {
       "active": true,
       "activities": null,
       "description": "Lieu habité depuis le XIIIème siècle par la famille Lambert.\nSon exposition à flanc de coteau dominant la vallée de la Dordogne et ses méthodes traditionnelles de vinification permettent au \"Domaine de Montlong\" d'élaborer des vins fins au corps et au bouquet typiques.\nAccueil camping-cars. Propose également un meublé en location saisonnière labellisé Gîte de France et tourisme et handicap.",
-      "descriptionUk": {},
+      "descriptionEn": "The place is inhabited by the Lambert family since the XIIIth century.\n\nDomaine de Montlong is able to create unique wines thanks to its orientation on the hillside looking at the Dordogne valley and its traditional vinification methods. \n\nCamper vans are welcomed.\n\nLodge on rent during high season (Gîte de France, Tourisme & Handicap labels)\n",
       "id": "DEGAQU024V505KU7",
       "labels": [],
       "langs": [
@@ -3452,13 +3505,14 @@
       ],
       "websites": [
         "http://www.domainedemontlong.fr"
-      ]
+      ],
+      "updated": 1539940037845
     },
     {
       "active": true,
       "activities": null,
       "description": "La renaissance d'un vignoble.\nGrace à un travail patient et méticuleux réalisé avec passion, le Château de Peyrel a retrouvé sa vocation de vignoble en 2013. Nos vins sont élaborés dans le respect des méthodes artisanales traditionnelles, avec le souci constant de préserver la plante et son fruit, afin de réaliser des produits naturels et de grande qualité gustative et aromatique.\n",
-      "descriptionUk": {},
+      "descriptionEn": "A vineyard reborn\nAfter much patient, meticulous and passionate work, Château de Peyrel was restored to its original winemaking vocation in 2013. Our wines are elaborated in keeping with traditional craftsmanship, preserving both the plant and its fruit, in order to produce natural products of the highest gustative and aromatic quality.",
       "id": "DEGAQU024V506AOS",
       "labels": [],
       "langs": [
@@ -3510,13 +3564,14 @@
       ],
       "websites": [
         "http://www.chateaudepeyrel.com"
-      ]
+      ],
+      "updated": 1539940037967
     },
     {
       "active": true,
       "activities": "Ballades en toute liberté dans les vignes",
       "description": "Au coeur du plateau, une halte sur la randonnée entre Bridoire et Monbazillac.\nPlusieurs niveaux de cuvées par appellation.\nAccueil camping-cars.",
-      "descriptionUk": {},
+      "descriptionEn": "At the heart of the plateau, hiking resting stop between Bridoire and Monbazillac.\n\nSeveral levels of cuvées by appellation.\n\nCampsite for campervans.\n",
       "id": "DEGAQU024V506ARS",
       "labels": [],
       "langs": [
@@ -3570,13 +3625,14 @@
       ],
       "websites": [
         "http://www.combet-vins.com"
-      ]
+      ],
+      "updated": 1539940038088
     },
     {
       "active": true,
       "activities": null,
       "description": "Terroir en vignes depuis plusieurs siècles et en agriculture biologique depuis plus de 25 ans. Pionnier du renouveau des vins liquoreux de l'appellation Saussignac.\nEn agriculture bio depuis 1991, vendanges manuelles.\nLarge gamme de vins, Blanc sec rosé rouge moelleux et plusieurs cuvées de Liquoreux en appellation Saussignac  et deux vins sans sulfite ajouté La cuvée osée en Bergerac Rouge et Le Richard Osé Blanc Sec.",
-      "descriptionUk": {},
+      "descriptionEn": "Estate planted in vines for several centuries, producing organic wines since 1991. Pioneer in the revival of Saussignac noble rot sweet wines.\n\nHarvests are made by hand.\n\nWide range of wines, white, dry, rosé, red, soft and several cuvees of sweet wines in Saussignac appellation. 2 wines without sulphite: Cuvée Osée in Bergerac red and Richard Osé dry white.  \n",
       "id": "DEGAQU024V506AS9",
       "labels": [],
       "langs": [
@@ -3623,13 +3679,14 @@
       ],
       "websites": [
         "http://www.chateaurichard.com"
-      ]
+      ],
+      "updated": 1539940038242
     },
     {
       "active": true,
       "activities": null,
       "description": "Un ensemble architectural remarquable avec un château du XViè siècle, une chapelle du XVIiè et un pigeonnier à colombage sur colonnes, sertis dans un parc arboré d'un hectare. \nUn terroir sur plateau calcaire dominant la vallée de la Dordogne où sont présents les cépages traditionnels du Bordelais : Merlot, Cabernet Sauvignon et Cabernet Franc pour les AOC Bergerac rouge, Sémillon et Sauvignon pour les Blancs secs et les Saussignac.\nNous n’utilisons aucun herbicide. Nos vins sont l'expression authentique d'un terroir exceptionnel.",
-      "descriptionUk": {},
+      "descriptionEn": "A medieval château with its private 16th century chapel and  a half-timbered dovecote on columns,in the midst of a two acre park.\nA  vineyard sitting  on a well drained limestone-clay plateau overlooking the Dordogne riverwhere can be found the traditional Bordeaux grape varieties : Merlot, Cabernet Sauvignon and Cabernet Franc for AOC Bergerac reds ; Semillon and Sauvignon for AOC dry Bergerac white and sweet Saussignac. The vineyard has a strict policy of not using any  herbicide. Our wines are the true expression of an exceptionnal terroir.",
       "id": "DEGAQU024V506N08",
       "labels": [],
       "langs": [
@@ -3682,13 +3739,14 @@
       ],
       "websites": [
         "http://www.chateaufayolle.com"
-      ]
+      ],
+      "updated": 1539940038375
     },
     {
       "active": true,
       "activities": null,
       "description": "Château CLUZEAU c'est d'abord un chai ultra moderne dans un cadre enchanteur qui propose des vins biologiques de grande tenue, élaborés dans un strict respect de la nature et de la biodiversité.\nChâteau Cluzeau c'est aussi une scénographie inattendue qui parle de la vigne et du vin sous un angle ludique, onirique et malicieusement non conventionnel.\nC'est un endroit dont la visite a été conçue pour laisser aux adultes et aux enfants qui n'ont pas été oubliés, des souvenirs amusants de leurs vacances en Dordogne.\nCoin enfants (lecture, coloriages, vidéo, jouets...)\nAccueil Camping-cars.",
-      "descriptionUk": {},
+      "descriptionEn": "Château Cluzeau is foremost an ultra modern winery in an enchanting setting that offers organic and noble wines, developed in a strict respect of nature and biodiversity.\nChâteau Cluzeau is also an unexpected scenography which speaks of the vine and wine with a playful perspective, dreamlike and unconventional.\nIt is a place for which the tour has been designed to allow adults and children, who have not been forgotten, fun memories of their holidays in Dordogne.",
       "id": "DEGAQU024V506P0I",
       "labels": [
         "vignobles-et-decouvertes"
@@ -3745,13 +3803,14 @@
       ],
       "websites": [
         "http://www.chateaucluzeau.com"
-      ]
+      ],
+      "updated": 1539940038515
     },
     {
       "active": true,
       "activities": null,
       "description": "Chateau La Brie est situé au coeur du vignoble de Bergerac, sur les côteaux de Monbazillac, disposant de 35 hectares répartis sur 2 terroirs. D'origine privée, le domaine est racheté en 1962 par les communes de Bergerac et de Monbazillac afin que le Ministère de l'Agriculture y implante un Lycée agricole et viticole.\nLe domaine viticole est un véritable outil pédagogique, confronté aux réalités économiques et environnementales, qui permet de former les viticulteurs de demain.\nDepuis 2013, le Château La Brie est titulaire du niveau III de la norme HVE (haute valeur environnementale) qui reconnaît officiellement les pratiques respectueuses de l'environnement mises en oeuvre sur l'exploitation : la biodiversité, la stratégie\nphytosanitaire, la gestion de la fertilisation et la maîtrise des ressources en eau.\nDe plus, il est certifié en Agriculture Biologique depuis 2013 sur 12 ha",
-      "descriptionUk": {},
+      "descriptionEn": "Château La Brie is located at the heart of Bergerac vineyard, on Monbazillac hills, with 35 ha and 2 lands. Originally private, the estate was bought in 1962 by the towns of Bergerac and Monbazillac in order for the Ministry of Agriculture to establish an agricultural and viticultural high school.\nThe wine estate is a real pedagogical tool, facing economic and environmental realities, which enable the teaching of the future winemakers.\n\nSince 2013, Château La Brie owns the level 3 of the HVE norm (high environmental value certification), which officially shows the environmentally friendly policies used on the exploitation: such as biodiversity, health strategy, fertilizer management and water resources management. Furthermore, it has been certified Organic Agriculture since 2013 on 12 ha. \n",
       "id": "DEGAQU024V506T01",
       "labels": [],
       "langs": [
@@ -3801,13 +3860,14 @@
       ],
       "websites": [
         "http://www.boutique-chateau-la-brie.educagri.fr"
-      ]
+      ],
+      "updated": 1539940038666
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château de La Mallevieille est un domaine viticole situé à Monfaucon, petit village périgourdin surplombant la rivière Dordogne, dans le Pays de Bergerac. Les 30 hectares de vignes sont aujourd'hui gérés par Philippe Biau et Thierry Bernardinis, qui, au quotidien, partagent un savoir-faire et un amour commun pour la vigne et le vin.",
-      "descriptionUk": {},
+      "descriptionEn": "Château de la Mallevieille is a wine estate located in Monfaucon, a little town in Perigord overlooking the Dordogne river, in Bergerac town. The 30ha of vines are today manufactured by Philippe Biau and Thierry Bernardinis, who share daily a know-how and a common love for wine and vine.",
       "id": "DEGAQU024V506TJQ",
       "labels": [],
       "langs": [
@@ -3851,13 +3911,14 @@
       ],
       "websites": [
         "http://www.mallevieille.com"
-      ]
+      ],
+      "updated": 1539940038809
     },
     {
       "active": true,
       "activities": "Marché de producteurs de Dordogne dernier mercredi de juillet à partir de 19h00",
       "description": "Le Domaine de Perreau est une propriété familiale de 20 hectares sur les appellations Bergerac et Montravel. Gaëlle Reynou-Gravier, jeune vigneronne, cinquième génération, a repris le domaine en 2013 et lui construit une nouvelle identité, à la fois féminine et moderne.\nDepuis 2014, le Domaine de Perreau est certifié Terra Vitis®, pour le plaisir du vin et une terre vivante. Vous pouvez y visiter les vignes et le chai. En 2018, Gaëlle développe une nouvelle offre familiale, un sentier dans les vignes autour de la biodiversité. Petits et grands pourront découvrir le métier de vigneron au travers d'un parcours de 1,5 km riche d'explications et de petits jeux. La visite se termine par une dégustation pour les parents et un goûter pour les enfants.",
-      "descriptionUk": {},
+      "descriptionEn": "The Domaine de Perreau is a family property of 20 ha covering the appellations of Bergerac and Montravel.\n\nGaëlle Reynou-Gravier, young winemaker from the 5th generation, took back the estate in 2013. She develops a new identity of the Domaine de Perreau: feminine and modern.\n\nSince 2014, it is certified Terra Vitis®, for the pleasure of wine and a living land.\n\nVisits of vine and wine cellars.\n\nIn 2018, Gaëlle developed a new family offer around a biodiversity vine walk. Kids and adults will be able to discover the profession of winemaker thanks to a 1.5km walk full of explanations, discoveries and games. At the end of the visit you will have a tasting for the parents and a snack for the children.\n",
       "id": "DEGAQU024V506TL3",
       "labels": [],
       "langs": [
@@ -3917,13 +3978,14 @@
       ],
       "websites": [
         "http://www.domainedeperreau.fr"
-      ]
+      ],
+      "updated": 1539940038936
     },
     {
       "active": true,
       "activities": null,
       "description": "Voilà plus de 25 ans que Thierry a repris la tête du domaine familial. L'ensemble du domaine a été converti à l'agriculture biologique en 2005 et, désormais, les principes de la biodynamie sont appliqués à la vigne comme au chai. Les vins sont vendus à l'export et en France en caves et restaurants. C'est dans la maison du domaine, une demeure girondine du XIXème siècle que vous serez reçus pour la dégustation.",
-      "descriptionUk": {},
+      "descriptionEn": "Château le Payral is a family property of which Thierry DAULHIAC is the youngest son. This the vineyard of 15 ha is situated about 20 km from Bergerac on the South of river Dordogne between vineyards of Monbazillac and vineyards of Ste Foy- Bordeaux. Grapes are produced without use of pesticides or chemical fertilizers. Since 2006, wines are organic. We have also been using principles of “biodynamie” in the Vineyard and in the cellar.   Its soils are clayey and limestone grounds. Area is so parcelled out.",
       "id": "DEGAQU024V506TN3",
       "labels": [],
       "langs": [
@@ -3979,13 +4041,14 @@
       ],
       "websites": [
         "http://www.le-payral.com"
-      ]
+      ],
+      "updated": 1539940039074
     },
     {
       "active": true,
       "activities": null,
       "description": "Nous vous invitons à la découverte des vins créés par Fabien Castaing sur la propriété familiale du Domaine de Moulin-Pouzy transmise de Père en Fils depuis 1898. La propriété de 55ha de vignes est certifiée Exploitation de Haute Valeur environnementale. Vous pourrez y déguster nos Bergerac rouge, rosé et blanc sec, ainsi que nos Côtes de Bergerac blanc et nos Monbazillac. \nNous vous proposons de découvrir également nos vins du Château Les Mailleries. Ce vignoble de 11ha est cultivé en agriculture biologique AB. Nous y produisons des Bergerac Rouge et Bergerac Blanc sec.\nDe nos cuvées traditionnelles à nos cuvées les plus extravagantes (comme nos vinifications en cuve ovoïde), nous vous ferons voyager dans notre univers où le respect de la nature est primordial, afin de récolter de beaux raisins et vous apporter le\nmeilleur de notre savoir faire et de notre terroir.",
-      "descriptionUk": {},
+      "descriptionEn": "In the heart of Bergerac vineyards, the Domain of Moulin Pouzy and its sunny hills cover 55 hectares.\nThe property belongs to the Castaing family since 1898 – the year of its creation.\nAt its head, Fabien Castaing represents the fifth generation of winegrowers.\nPampered vineyards, a well thought-out viticulture, high quality oenological and wine supports contribute to the making of fine wines.\nThese creations, made thanks to the meticulous work of men, honour Nature.\nBy strolling through vines and flavours, Fabien Castaing invites you to discover his world – world he wants unique, contemporary and rooted.\nTo show how we respect the Nature, the property has the certification \" High Environmental Value\".",
       "id": "DEGAQU024V506TP1",
       "labels": [],
       "langs": [
@@ -4033,13 +4096,14 @@
       ],
       "websites": [
         "http://www.fabiencastaing.com/"
-      ]
+      ],
+      "updated": 1539940039189
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété familiale depuis 300 ans située sur la côte Nord de Monbazillac.\nBelle chartreuse empire dominant la propriété.\nPoint de vue imprenable sur la vallée de Bergerac.",
-      "descriptionUk": {},
+      "descriptionEn": "Family property for 300 years, located on the North side of Monbazillac\nBeautiful Empire-style Chartreuse overlooking the property.\nAmazing view on Bergerac valley\n",
       "id": "DEGAQU024V506U03",
       "labels": [],
       "langs": [
@@ -4088,13 +4152,14 @@
       ],
       "websites": [
         "http://www.chateau-le-fage.com"
-      ]
+      ],
+      "updated": 1539940039334
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété familiale depuis 4 générations, situé sur le petit village médiéval de Puyguilhem (commune de Thenac). Nous sommes à cheval des 2 appellations Bergerac et Duras. ",
-      "descriptionUk": {},
+      "descriptionEn": "Family property for 4 generations, located in the small medieval town of Puyguilhem (municipality of Thenac). We gather both wine appellations Bergerac and Duras.",
       "id": "DEGAQU024V506U4Y",
       "labels": [],
       "langs": [],
@@ -4138,13 +4203,14 @@
       ],
       "websites": [
         "http://www.chateau-les-brandeaux.com"
-      ]
+      ],
+      "updated": 1539940039462
     },
     {
       "active": true,
       "activities": "Une visite du domaine sur rendez-vous, randonnée lieu historique et chapelle libre - les enfants peuvent admirer des blondes d'Aquitaine au domaine et chez un voisin à 1km peuvent voir un élevage de chèvres.",
       "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois.\n\nVenez découvrir notre domaine \n\n                                     Au programme\n\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\n\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \n\nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des adresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\n\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
-      "descriptionUk": {},
+      "descriptionEn": "Searching for a walk with your relatives or alone at the heart of our Bergeracois vineyard?\nCome discover our estate!\nOur program:\n- free tasting of our wines and we will share our recipes (matching food and wines with Sandra FAUCHE)\n- a guided tour (by appointment) or on your own, picnic with gift basket (order only)\n- tours to visit the essentials of our 4 “Perigord” will be advised to you, addresses of good restaurants, a bit of history (for those who want to do some hiking), admire a totally restored chapel (St Mayme). All of this amidst the vines to enjoy a beautiful moment in the nature.\nWe also propose you bed and breakfast at our neighbours’ 500m and 2km away.  \n",
       "id": "DEGAQU024V506U5L",
       "labels": [],
       "langs": [
@@ -4205,13 +4271,14 @@
       ],
       "websites": [
         "http://www.chateau-les-gerales.com"
-      ]
+      ],
+      "updated": 1539940039575
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété familiale de 32 ha de vignes. \"Le vin égaye la vie\", telle est la devise du domaine.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V506UMP",
       "labels": [],
       "langs": [
@@ -4260,13 +4327,14 @@
         "bergerac",
         "rosette"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940039724
     },
     {
       "active": true,
       "activities": null,
       "description": "Viticulteur de père en fils depuis 5 générations, la famille Lajonie a mis tout leur cœur dans l’élaboration de leurs produits afin de satisfaire vos palais et vous apporter du bonheur au quotidien. Aucun de nos gestes n'est anodin. Tous sont guidés par l'esprit car le caractère vient du terroir, la personnalité des conditions climatiques mais l'excellence reste le fait de l'Homme.\n\nPour animer vos vacances et venir découvrir le cœur de notre passion en famille ou entre amis, nous vous proposons tout l'été des visites de notre vignoble ainsi que des dégustations vins & gastronomie locale ! Les visites ainsi que les dégustations sont adaptées pour les adultes mais aussi pour vos enfants. Ces visites seront sur rendez-vous.",
-      "descriptionUk": {},
+      "descriptionEn": "Not one of our gestures is insignificant. They are all guided by a vision of the mind for if character comes from climatic conditions, excellence is the work of human being.",
       "id": "DEGAQU024V506UTS",
       "labels": [],
       "langs": [
@@ -4314,13 +4382,14 @@
       ],
       "websites": [
         "http://www.vignobleslajonie.com"
-      ]
+      ],
+      "updated": 1539940039874
     },
     {
       "active": true,
       "activities": null,
       "description": "Vignoble dans la famille depuis 1642;\nTroisième génération en exploitation direct.\nNous avons transformé notre grange du 16ème en chai à barriques.",
-      "descriptionUk": {},
+      "descriptionEn": "Family vineyard since 1642\nThird generation in direct exploitation.\nWe have transformed our XVIth century barn into a barrel warehouse \n",
       "id": "DEGAQU024V506UUM",
       "labels": [],
       "langs": [
@@ -4378,13 +4447,14 @@
       ],
       "websites": [
         "http://chateaulesgrimard.fr"
-      ]
+      ],
+      "updated": 1539940039991
     },
     {
       "active": true,
       "activities": null,
       "description": "Situé au cœur de l’appellation de Bergerac, sur la commune de Monbazillac, Château MONTDOYEN domine avec élégance un vignoble établi sur les coteaux alentours. La propriété s’étend sur 83 hectares dont 37 plantés en vignes, le reste se répartissant entre prés et bois.\nPour préserver cet environnement exceptionnel, mais aussi pour exprimer au mieux la typicité de notre terroir, l’ensemble du domaine est travaillé en conciliant approche bio et lutte raisonnée: engrais verts, désherbage mécanique pour favoriser la vie des sols…\nAinsi, Château MONTDOYEN s’est vu décerner de nombreuses médailles tant à Lyon, Bordeaux, Bruxelles qu'au Concours Général Agricole de Paris. Le Guide Hachette en reconnaît également la qualité en lui ayant déjà attribué plusieurs coups de cœur, le classant ainsi parmi les références de l’appellation.\nNous proposons une palette de vins répartie sur six appellations.",
-      "descriptionUk": {},
+      "descriptionEn": "Situated in the heart of the appellation of Bergerac, in the commune of Monbazillac, Château MONTDOYEN dominates with elegance a vineyard established on the surrounding slopes. The property covers 83 hectares including 37 which are planted with vines, the rest is divided between meadows and woods.  \n\nTo protect this exceptionnal environment - but also to express at best the characteristic of our soil, the whole domain is worked in the most natural way possible : green manure, mechanical weeding to favor the life of grounds…\n\nSo, Château MONTDOYEN was awarded many medals as in Lyon, Bordeaux, Brussels or at the Concours Général Agricole of Paris.\nThe Guide Hachette also recognizes the quality by having already attribued  several «coups de coeur», placing it among the references of the appelation.",
       "id": "DEGAQU024V506V2O",
       "labels": [],
       "langs": [
@@ -4434,13 +4504,14 @@
       ],
       "websites": [
         "http://www.chateau-montdoyen.com/"
-      ]
+      ],
+      "updated": 1539940040124
     },
     {
       "active": true,
       "activities": "Marchés Gourmands Nocturnes : Mercredi 18 et 25 Juillet, Mercredi 1er et 8 Août à partir de 18h30. Entrée payante, 3€ par adulte, gratuit pour les moins de 12 ans.\nMusique, stands de producteurs locaux, dégustation gratuite de nos vins, vente à la bouteille ou au verre, animations diverses.",
       "description": "Le Château de Panisseau est situé au cœur d'un vignoble de 60 hectares et notre équipe dédiée vous accueille pour visites et dégustations tout au long de l'année du Lundi au Vendredi. Notre visite-dégustation est complète et ludique, que vous soyez amateur de vins ou simplement curieux, vous repartirez comblé à la fin de votre visite! \n\nSpécialistes de l'oeno-tourisme, nous vous proposons des gîtes de grand standing pour vos vacances ou weekends dans la région. Entre nos Marchés Gourmands Nocturnes à la propriété et nos dégustations, vous trouverez toujours quelque chose à faire au Château de Panisseau:\n\nNos Marchés Gourmands Nocturnes dans la cour de la propriété (18 et 25 Juillet et 1er et 8 Aout) sauront vous séduire : découvrez nos vins, rencontrez des producteurs locaux, goûtez leurs produits et participez aux animations (visite, balades à poney, jeux...). ",
-      "descriptionUk": {},
+      "descriptionEn": "Château de Panisseau, located at the heart of a vineyard, spread over 60 hectares, is happy to welcome you to the property for wine-tours and wine-tastings. Specialists in Enotourism, we offer high quality holiday accomodation for your vacations in this area, as well as Summer Evening Foodie Markets in the courtyard of the property where you can taste our wines, try local produce and enjoy various activities.\nPlease book your visit, from Monday to Friday from 10am to 4pm!",
       "id": "DEGAQU024V506YB6",
       "labels": [
         "vignobles-et-decouvertes"
@@ -4498,13 +4569,14 @@
       ],
       "websites": [
         "http://www.chateaudepanisseau.com"
-      ]
+      ],
+      "updated": 1539940040243
     },
     {
       "active": true,
       "activities": "Présent sur le marché nocturne de producteurs à Issigeac tous les vendredi soir de juillet et août.",
       "description": "Petite propriété situé sur un plateau argilocalcaire, convertie à l’agriculture biologique depuis 2011.\n",
-      "descriptionUk": {},
+      "descriptionEn": "Small propriety located on a clay-limestone plateau, converted to organic agriculture since 2011.\n\n",
       "id": "DEGAQU024V5070YW",
       "labels": [],
       "langs": [
@@ -4561,13 +4633,14 @@
       ],
       "websites": [
         "http://www.tertres-du-plantou.com/"
-      ]
+      ],
+      "updated": 1539940040365
     },
     {
       "active": true,
       "activities": null,
       "description": "Un rêve de vigneron: 18 ha d'un seul tenant avec la maison au milieu des vignes, en agriculture biologique avec un panorama exceptionnel.\nDe très beaux terroirs préservés et des vins avec un minimum d'intrants.",
-      "descriptionUk": {},
+      "descriptionEn": "A winemaker dream: 18 contiguous hectares of vines, with a house in the middle of them, organic agriculture with an amazing panorama. \nBeautiful preserved terroirs and wines with a minimum of inputs.\n",
       "id": "DEGAQU024V50714R",
       "labels": [
         "bienvenue-a-la-ferme"
@@ -4620,13 +4693,14 @@
       ],
       "websites": [
         "http://www.leshautsdecaillevel.com"
-      ]
+      ],
+      "updated": 1539940040508
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château du Bloy existe dans sa configuration actuelle depuis le début des années 60. Le domaine a été repris en 2001 par Olivier LAMBERT et Bertrand LEPOITTEVIN-DUBOST avec pour objectif de le hisser au niveau des meilleurs du sud-ouest de la France. Soucieuse tant de restituer l'expression du terroir dans ses vins que de préserver l'environnement, la propriété, formalisant ainsi les pratiques culturales qu'elle adoptait depuis plusieurs années déjà, s'est officiellement engagée au respect du mode de production biologique depuis le mois de juillet 2011.",
-      "descriptionUk": {},
+      "descriptionEn": "The Château du Bloy itself exists since the beginning of the nineteen sixties. It was taken over in 2001 by Olivier LAMBERT and Bertrand LEPOITTEVIN-DUBOST with the objective to become one of the best in South west France. Wanting to keep the expressive taste of the \"terroir\" in the wines and, at the same time, preserve the environment, the Château, that had already been working organically for numerous years, formalised it in july 2011 and started the official process to become certified organic.",
       "id": "DEGAQU024V5071DW",
       "labels": [],
       "langs": [
@@ -4676,13 +4750,14 @@
         "bergerac",
         "montravel"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940040647
     },
     {
       "active": true,
       "activities": null,
       "description": "Le vignoble du Domaine le Castellat est situé sur le coteau Nord-Est dominant la Vallée de la Dordogne. Il s'étend sur 22 hectares de bonne terre à vigne.\nLa propriété est située sur un emplacement stratégique vu son panorama. L'origine du Castellat « Castellum » remonterait vers l'an 1000 et plus selon la racine latine.\nDepuis, six générations ont pris soin de la vigne et du vin avec tous les progrès...\nAujourd'hui, Jean-Luc et son épouse Isabelle sont les maîtres du Domaine. Pour eux plus qu'une tradition, c'est une véritable passion qu'ils font partager à leurs garçons Hugo et Justin !...\nNous produisons également de la méthode traditionnelle \"les bulles du Castellat\"\nAu plaisir de vous accueillir !!! Visite du site sur rendez-vous.\nA très bientôt !!! See You soon !!!",
-      "descriptionUk": {},
+      "descriptionEn": "The Domaine du Castellat vineyard is located on the northeast slope overlooking the Dordogne Valley. It extends over 22 hectares of good wine-producing land.\nThe property is located on a strategic site considering its panorama. The origin of Castellat \"Castellum\" would go back to about the year 1000, and farther according to the Latin root.\nSince then, six generations have taken care of the vineyard and the wine with progress...\nToday, Jean-Luc and his Isabelle wife are the masters of the estate.\nFor them, more than a tradition, it is a true passion, which they share with their boys Hugo and Justin!...",
       "id": "DEGAQU024V5071NA",
       "labels": [],
       "langs": [
@@ -4733,13 +4808,14 @@
         "bergerac",
         "saussignac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940040774
     },
     {
       "active": true,
       "activities": null,
       "description": "Notre vignoble est situé sur l'un des beaux coteaux de la Dordogne donnant sur une vallée cachée des forêts de chênes. Notre objectif est de produire d'excellents vins tout en respectant la nature qui nous entoure. Nous avons, par exemple, plus de quinze espèces d'orchidées sauvages. Nos vins ont remporté de nombreuses médailles.",
-      "descriptionUk": {},
+      "descriptionEn": "Our vineyard is situated on one of the beautiful Dordogne hillsides overlooking a hidden valley of oak woodlands. Our aim is to produce excellent wines whilst respecting the nature which surrounds us. we have, for example, more than fifteen species of wild orchid. Our wines have won medals and Hachette awards.",
       "id": "DEGAQU024V5071V0",
       "labels": [],
       "langs": [
@@ -4787,13 +4863,14 @@
       ],
       "websites": [
         "http://www.chateau-lestevenie.com/"
-      ]
+      ],
+      "updated": 1539940040890
     },
     {
       "active": true,
       "activities": null,
       "description": "En agriculture Biologique depuis 1989, adhérent à la mention Nature et Progrès, j’accompagne mon vignoble dans le Respect des terroirs, de sa biodiversité, profitant de la richesse de la faune auxiliaire et de la flore spontanée pour donner au terroir toute son expression.\nSur un sol bien pourvu en énergie, la vigne bien accompagnée, puise tout ce dont elle a besoin pour produire des raisins qui, une fois cueillis, chouchoutés, révèlent tous leurs arômes, arômes de fruits et surtout richesse du terroir.\nJe suis paysan-vigneron, pas apprenti sorcier !!!\nAprès une cueillette manuelle, les vins révélés dans mes chais sont honnêtes et authentiques.\nPas de levure sur mes vins, pas de chaptalisation ni artifices œnologiques, doses de sulfites très modérées.\nChaque millésime est le reflet de l’année. Chaque millésime raconte son histoire.",
-      "descriptionUk": {},
+      "descriptionEn": "Organic agriculture since 1989, belonging to the Nature and Progress appellation, I make sure my vineyard respects the lands, its biodiversity, by enjoying fauna and flora wealth to have the best of the land.\nOn an abundant energy soil, the vine draws everything it needs to produce the best grapes as possible. Once they are picked, they reveal all their aromas and of course the land’s wealth.\nI am a farmer and a winemaker not a sorcerer’s apprentice!\nAfter harvesting by hand, the wines in my warehouses are honest and authentic.\nEvery vintage is a reflection of the year. Each one of them tells a story. \n",
       "id": "DEGAQU024V5071W5",
       "labels": [],
       "langs": [
@@ -4846,13 +4923,14 @@
       ],
       "websites": [
         "http://www.chateaularchere.fr/"
-      ]
+      ],
+      "updated": 1539940041002
     },
     {
       "active": true,
       "activities": "Nous proposons des visites du domaine, des dégustations commentées, des repas pour les groupes comme les particuliers (nous consulter).\nNous avons aussi un gîte pouvant accueillir jusqu'à 10 personnes.\n\nL'été nous proposons le mardi à 11h, le mercredi et le jeudi à 18h \"les Apéros des Moulins de Boisse\" cela commence par une balade pédagogique dans les vignes avec ascension du coteau des moulins de Boisse pour profiter du panorama exceptionnel puis retour à l'auberge vigneronne du domaine pour une dégustation des vins  accompagnée de \"tapas périgourdines\".\n\nLe reste de l'année  balade pour les groupes sur RDV avec dégustation des vins du domaine. (prestation payante). ",
       "description": "Un domaine familial qui possède un terroir remarquable et bénéficie d'un panorama exceptionnel.\nNotre domaine s'est totalement tourné vers l'oenotourisme depuis quelques années.\n\n\n\n",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V5072D5",
       "labels": [],
       "langs": [
@@ -4906,13 +4984,14 @@
       ],
       "websites": [
         "http://www.moulinsdeboisse.com/"
-      ]
+      ],
+      "updated": 1539940041127
     },
     {
       "active": true,
       "activities": null,
       "description": "C'est une histoire de famille où deux générations installées sur un domaine viticole de la région de BERGERAC, au cœur de la vallée de la Dordogne, mettent en commun la passion d'un métier, l'exigence de la qualité et l'ouverture aux autres.\nLe trio de vignerons Michel Durand, Julien Durand et Nicolas Pouget aime à produire sur un magnifique terroir, de grands vins Blanc Moelleux, Rouges et Rosés, fins, élégants et fruités.\nLa conduite traditionnelle du vignoble s’appuie sur les principes de l’agriculture raisonnée et du développement durable.",
-      "descriptionUk": {},
+      "descriptionEn": "This is the story of a family where two generations living in a viticultural property of the Bergerac region, at the heart of the Dordogne valley, put together their job passion, the importance of quality and opened up to others.\nThree winemakers, Michel Durand, Julien Durand and Nicolas Pouget, produce big wines on this exceptional land: sweet whites, red and rosé, that are tasty, elegant and fruity.\nThe traditional work of the vineyard underlines the sustainable agriculture and development principles.\n",
       "id": "DEGAQU024V50744K",
       "labels": [
         "saveurs-du-perigord"
@@ -4965,13 +5044,14 @@
       ],
       "websites": [
         "http://www.chateau-haut-lamouthe.com/"
-      ]
+      ],
+      "updated": 1539940041234
     },
     {
       "active": true,
       "activities": null,
       "description": "Vignerons indépendants depuis 2000 sur une exploitation de 26 ha, Eric cultive et veille sur la vigne jusqu'aux vendanges. Cécile vinifie la récolte en bio depuis 2009.",
-      "descriptionUk": {},
+      "descriptionEn": "Independent winemakers since 2000 on a 26-ha exploitation, Eric grows and takes care of his vine until harvests, and Cécile is working organically since 2009.",
       "id": "DEGAQU024V5074QL",
       "labels": [],
       "langs": [
@@ -5024,13 +5104,14 @@
       ],
       "websites": [
         "http://www.tuquetmonceau.com/"
-      ]
+      ],
+      "updated": 1539940041355
     },
     {
       "active": true,
       "activities": null,
       "description": "Château Caillavel, anciennement Domaine de Courson de Cailhavel, repaire noble en 1322, vous invite à venir leur rendre visite et déguster leurs produits représentatifs du savoir vivre en Périgord : blanc sec barrique, côte de bergerac rouge; rosé et Monbazillac médaillé au Guide Hachette 2017.",
-      "descriptionUk": {},
+      "descriptionEn": "Château Caillavel, formely known as Courson de Cailhavel Domain, noble den of 1322, invites you to come visit and taste their local products of Périgord. The latest represents what they do best in the region such as dry white wine, Côte de Bergerac red, rosé wine, and Monbazillac which was given a medal by Guide Hachette in 2017.",
       "id": "DEGAQU024V5075IZ",
       "labels": [],
       "langs": [
@@ -5078,13 +5159,14 @@
       ],
       "websites": [
         "http://www.chateau-caillavel.fr/"
-      ]
+      ],
+      "updated": 1539940041497
     },
     {
       "active": true,
       "activities": "Le Clos l'Envège est ouvert au public toute l'année.\nDe Pâques à Toussaint : \nOuverture du mardi au samedi de 10h30 à 12h00 et de 14h30 à 17h00\nLe reste de l'année :\nDu lundi au vendredi de 10h30 à 12h00 et de 14h30 à 17h00 \nFermé le samedi et le dimanche\n \nLes Apéros du Clos : jeudi 19 et 26 Juillet 2018 ; et jeudi 2, 9 et 16 Août 2018. A partir de 18 heures, jusqu’à 20 heures : dégustation de vins en présence du viticulteur ; avec planches de charcuteries et/ou fromages ; ambiance musicale. RESERVATION CONSEILLEE. Prix encore à définir.\n    Les Visites Guidées du vignoble, des chais, et dégustation gratuite : chaque vendredi des mois de Juillet et Août (possibilité Septembre également) à 11 heures.\nUn concert pour fêter la fin de saison, fin Septembre 2018 : date encore à définir (le 21 ou 22 Septembre).\n",
       "description": "Propriétaire Récoltant et Négociant, nous sommes spécialisés dans la commercialisation et la production de vins de la région de Bergerac que nous distribuons dans nos points de vente et auprès d’une clientèle de professionnels de la restauration.\n\nL’idée de réaliser notre propre gamme a pour origine de créer des vins typiques du terroir de Bergerac portant notre signature. Le partenariat développé avec certains viticulteurs nous permet une sélection rigoureuse de parcelles. Une vinification et un élevage dans nos chais, sont autant de garanties sur la qualité de nos vins.\nLes vins Julien de Savignac ont obtenu depuis le premier millésime un franc succès : Guide Hachette (1998 à 2013), presse spécialisée...",
-      "descriptionUk": {},
+      "descriptionEn": "Wine grower and merchant owners, we are specialized in commercialization and wine production in the region of Bergerac. We deliver them in our points of sales and to restaurant professionals. \n\nThe idea to make our own wine range came because we want to create Bergerac terroir wines that wear our signature. The partnership developed with some wine makers allows us a rigorous selection of parcels of land. A vinification and ageing in our wineries ensure the quality of our wines.\n\nThe Julien de Savignac wines have been appreciated since the first vintage: Guide Hachette (1998 to 2013), specialized press…\n",
       "id": "DEGAQU024V5075ZA",
       "labels": [
         "vignobles-et-decouvertes"
@@ -5143,13 +5225,14 @@
       ],
       "websites": [
         "http://www.julien-de-savignac.com/"
-      ]
+      ],
+      "updated": 1539940041639
     },
     {
       "active": true,
       "activities": null,
       "description": "Domaine de 5 ha acquis en 2015, en agriculture biologique depuis 2018. Vente directe au domaine.",
-      "descriptionUk": {},
+      "descriptionEn": "5-ha estate owned since 2015, and in organic agriculture since 2018. You can buy directly in the estate",
       "id": "DEGAQU024V5076I3",
       "labels": [],
       "langs": [
@@ -5201,13 +5284,14 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940041754
     },
     {
       "active": true,
       "activities": null,
       "description": "Exploitation familiale depuis 1881 - Vignoble ancien (1928 et 1954 pour 40% de la surface - à 2 minutes de la cité médiévale d'Issigeac",
-      "descriptionUk": {},
+      "descriptionEn": "Family exploitation since 1881. Old vinery: 40% of the surface is from 1928 or 1954. It is located at 2 minutes from the medieval city of Issigeac.",
       "id": "DEGAQU024V5076IN",
       "labels": [],
       "langs": [],
@@ -5242,13 +5326,14 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940041907
     },
     {
       "active": true,
       "activities": null,
       "description": "Entreprise familiale depuis 30 ans, le Château Tour des Gendres expérimente sans cesse de nouvelles techniques de vinification et de viticulture  afin que l'expression de ses différents terroirs se retrouve dans chacun de ses vins, des cuvées les plus simples aux grands vins de gastronomie. Venez découvrir la finesse et la complexité de ces blancs secs et rouges des coteaux sud de Bergerac !",
-      "descriptionUk": {},
+      "descriptionEn": "Family company for 30 years, the Chateau Tour des Gendres experiments new methods of vinification and viticulture to make sure that the expression of the different terroirs can be found in every wine, from the simplest cuvees to the gastronomy great wines. Come discover the delicacy and complexity of those dry white and red wines of the south hillsides of Bergerac.",
       "id": "DEGAQU024V5076J0",
       "labels": [],
       "langs": [],
@@ -5292,13 +5377,14 @@
       ],
       "websites": [
         "http://www.chateautourdesgendres.com/"
-      ]
+      ],
+      "updated": 1539940042037
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété située sur les coteaux de Montravel, entre Saint Emilion et Bergerac. Grand chai à l'équipement performant. Production annuelle environ 400 000 bouteilles de Montravel et Bergerac rouge et rosé, Montravel blanc sec, Côtes de Montravel moelleux régulièrement primés aux concours nationaux et internationaux.\nGrand élevage de bovins de race Limousine HBL.",
-      "descriptionUk": {},
+      "descriptionEn": "The estate is located on Montravel hills between St Emilion & Bergerac. Great winery with performing equipment. Anual production about 400 000 bottles of Montravel & Bergerac red & rosé, Montravel dry   and Côtes de Montravel sweet white wines, regularly awarded at national & international competitions.",
       "id": "DEGAQU024V5076J8",
       "labels": [],
       "langs": [
@@ -5349,13 +5435,14 @@
       ],
       "websites": [
         "http://chateaupiquesegue.com/"
-      ]
+      ],
+      "updated": 1539940042168
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château de Planques est une des plus vieilles propriétés de Monbazillac. Les actuels propriétaires s'efforcent de maintenir la qualité traditionnelle qui fait le renom de notre petite patrie.\nParking très grand. Possibilité d'accueillir des bus.",
-      "descriptionUk": {},
+      "descriptionEn": "Château de Planques is one of the oldest properties of Monbazillac. The current owners are trying to maintain the traditional quality that makes the famous name of our little town.\nVery large car park. Buses are welcomed.\n",
       "id": "DEGAQU024V5076LG",
       "labels": [],
       "langs": [
@@ -5401,13 +5488,14 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940042312
     },
     {
       "active": true,
       "activities": "\nRéouverture du pavillon de dégustation, le Samedi 1er Avril",
       "description": "Le 5 mai 1960, les viticulteurs de la coopérative décidèrent l’achat du château de Monbazillac et de son domaine.Monument historique, ouvert au public, ce sont  les enfants ou petits enfants de ces viticulteurs qui œuvrent désormais à la préservation du château pour le rendre accessible au plus grand nombre. Le château présente une architecture singulière qui associe avec talent des parties empruntées à l’architecture médiévale et d’autres qui témoignent de l’influence de l’époque : la Renaissance. Ce château emblématique du Bergeracois est demeuré imperturbable depuis la fin du XVIe siècle, alors que la qualité de ses vins était notoire bien au-delà des frontières de l’Aquitaine.\n",
-      "descriptionUk": {},
+      "descriptionEn": "On May 5th, 1960, the winemakers of the cooperative decided to buy the Château de Monbazillac and its estate. Historical monument, opened to the public, it is now the children and grandchildren of those winemakers who work for the preservation of the castle in order to make it accessible to as many people as possible. The castle presents a unique architecture which combines parts taken from the medieval architecture and others that show the ancient influence: The Renaissance style. This emblematic castle of Bergerac has been insensitive since the end of the XVIth century, whereas its wine quality was famous outside of the Aquitaine borders. ",
       "id": "DEGAQU024V5076MU",
       "labels": [
         "vignobles-et-decouvertes"
@@ -5466,13 +5554,14 @@
       ],
       "websites": [
         "http://chateau-monbazillac.com/"
-      ]
+      ],
+      "updated": 1539940042479
     },
     {
       "active": true,
       "activities": null,
       "description": "Le domaine de Pécoula et les valeurs qui le caractérisent existent depuis 3 générations. Travail, , bon sens, et recherche constante d'une qualité irréprochable sont les maître mots. \nEn venant au domaine, vous bénéficierez d'un accueil simple, authentique et convivial, avec les commentaires de ceux qui élaborent le vin, de la grappe à la bouteille. Vous y dégusterez le Monbazillac, régulièrement récompensé, ainsi que les Bergerac rosé, sec, et moelleux, et enfin les côtes de Bergerac.\nSitué à 10 Km au Sud de Bergerac, la propriété est entourée de vignes des divers cépages, Sauvignon, Sémillon, Merlot, Cabernet, et est toute proche du Château de Bridoire, à visiter impérativement si vous êtes dans le coin !\nVous serez également tout près des Bastides du Périgord. \n",
-      "descriptionUk": {},
+      "descriptionEn": "The Domaine de Pécoula and its characteristic values exist for 3 generations. Their key words are work, good sense, and constant searching of an irreproachable quality.\n\nBy coming to the estate, you will experience a simple, authentic and friendly welcome with the comments of the winemakers, from the grape to the bottle. You will taste Monbazillac, highly awarded, as well as Bergerac rosé, dry, soft and Côtes de Bergerac. \n\nLocated 10km away from Bergerac at the south, the property is surrounded by vines from different grape varieties (Sauvignon, Sémillon, Merlot, Cabernet) and it is near the Château de Bridoire that you should visit if you are around!\nYou will also be close to the Bastides of Périgord.\n",
       "id": "DEGAQU024V5076S6",
       "labels": [],
       "langs": [
@@ -5521,13 +5610,14 @@
       ],
       "websites": [
         "http://www.domaine-de-pecoula.com/"
-      ]
+      ],
+      "updated": 1539940042601
     },
     {
       "active": true,
       "activities": null,
       "description": "Exploitation de 20 ha de vignes et 7 ha de pruniers d'ente d'un seul tenant sur les coteaux au sud de Monestier.",
-      "descriptionUk": {},
+      "descriptionEn": "Exploitation representing 20 ha of vines and 7 ha of plum trees located on the Monestier south hills.",
       "id": "DEGAQU024V5076SA",
       "labels": [],
       "langs": [
@@ -5570,13 +5660,14 @@
         "bergerac",
         "saussignac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940042727
     },
     {
       "active": true,
       "activities": null,
       "description": "Nous sommes une exploitation familiale, nous exploitons depuis quatre générations. Nous produisons des vins de Bergerac de façon traditionnelle avec un grand respect de la qualité et des caractéristiques de notre vignobles.\nVous pourrez découvrir chez nous une gamme de vin diversifiée, notamment des vin de cépages.\nNous vous accueillerons avec plaisir dans notre boutique pour vous faire déguster nos produits et vous faire visiter notre domaine. ",
-      "descriptionUk": {},
+      "descriptionEn": "We are a family exploitation, working for four generations. We produce Bergerac wines traditionally with a great respect from quality and features of our vineyard.\nYou will be able to discover our great range of wines, with for example varietal wines.\nWe will welcome you in our shop and propose a tasting session of our local products and a visit of our property.\n",
       "id": "DEGAQU024V5076T4",
       "labels": [
         "bienvenue-a-la-ferme"
@@ -5616,13 +5707,14 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940042858
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V5076TR",
       "labels": [],
       "langs": [
@@ -5662,13 +5754,14 @@
         "bergerac",
         "monbazillac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940042997
     },
     {
       "active": true,
       "activities": null,
       "description": "Propriété viticole sur un coteau cultivée par les moines bénédictins du 12ème au 16ème siècle. Productions Bergerac rouge, rosé, blanc sec et moelleux, Montagne St Emilion. Situé sur la Route des Vins de Bergerac. Accueil sympathique et convivial.",
-      "descriptionUk": {},
+      "descriptionEn": "Viticultural property standing on a hill which was cultivated by Benedictine monks between the XIIth and XVIth centuries.\nProduction of red, rosé, white, dry and sweet Bergerac wines, and Montagne St Emilion. \nBelongs to the “Route des Vins de Bergerac” (i.e. Bergerac wine road).\nFriendly welcome.\n",
       "id": "DEGAQU024V5077CU",
       "labels": [],
       "langs": [
@@ -5714,13 +5807,14 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940043145
     },
     {
       "active": true,
       "activities": null,
       "description": "Un site incontournable dans le ciel du Tourisme Viticole du Pays de Bergerac.\nAu cœur du village récemment réaménagé, la Maison du Tourisme et du Vin de Monbazillac vous propose une exposition dédiée au Monbazillac, des dégustations et la vente des vins des 28 viticulteurs indépendants (présents sur place en saison estivale).\nA découvrir 7 modules audio-visuels pour tout savoir, à son rythme, sur ce célèbre liquoreux.\nDécouvrez également notre page Facebook Maison du Tourisme et du Vin de Monbazillac.\nTerrasse panoramique sur la vallée de la Dordogne et sur le Château de Monbazillac\nÉgalement à votre disposition de l’information touristique.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V507LYM",
       "labels": [
         "vignobles-et-decouvertes"
@@ -5769,13 +5863,14 @@
       ],
       "websites": [
         "http://maisondesvins-monbazillac.jimdo.com/"
-      ]
+      ],
+      "updated": 1539940043258
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Clos du Breil est une exploitation familiale située à proximité du village médiéval d’Issigeac. L’exploitation comprend 9,5 hectares de vigne.\nAu Clos du Breil le travail de la vigne et les vinifications sont dictés par plusieurs principes : la patience, l’humilité et le partage. Une grande attention est portée au travail de la vigne (travail sous le rang avec un inter-cep, plus de désherbage chimique) afin de magnifier l’expression du terroir composé de calcaires d’Issigeac auxquels se mêlent des silex.\nAfin de proposer une gamme de vins en adéquation avec nos principes, nous vendangeons nos parcelles en fonction de l’évolution aromatique des baies. Nous prenons soin de vinifier chaque parcelle et chaque cépage séparément jusqu’à l’assemblage final.\nNous proposons différentes cuvées. Des vins souples sur le fruit et des vins typés de caractère qui font la réputation du domaine. ",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V507O9S",
       "labels": [],
       "langs": [
@@ -5823,13 +5918,14 @@
       ],
       "websites": [
         "http://leclosdubreil.free.fr/"
-      ]
+      ],
+      "updated": 1539940043382
     },
     {
       "active": true,
       "activities": null,
       "description": "Depuis 500 ans, la famille Goubault de Brugière produit du vin dans notre région de Bergerac. La propriété s'étend sur 24 hectares sur les coteaux qui longent la Dordogne.",
-      "descriptionUk": {},
+      "descriptionEn": "For 500 years, the Goubault de Brugière family produces wine in our region of Bergerac. The property represents 24 hectares on the hills that go along the Dordogne.",
       "id": "DEGAQU024V508CW2",
       "labels": [],
       "langs": [
@@ -5880,13 +5976,14 @@
       ],
       "websites": [
         "http://www.chateaudelareynaudie.fr/"
-      ]
+      ],
+      "updated": 1539940043509
     },
     {
       "active": true,
       "activities": null,
       "description": "Situé entre Saint-Emilion et Sarlat, dans le vignoble de Bergerac, le Château Haut-Fongrive repose sur le point culminant du département en versant sud et collines orientées sud-ouest qui sont des atouts majeurs pour la qualité des vins.\nDoriane passionnée par le vin, s’installe en 2006 comme vigneronne. Tout est à faire. La construction du chai débute en 2007 pour la première vinification du domaine.\nGrand millésime et savoir-faire reconnu par la Vinalie d’Or Internationale.\nJulien rejoint sa compagne dans l’aventure dès le millésime 2010. Sa jeunesse et sa passion pour la vigne donnent un formidable élan à l’exploitation.Il entreprend l’amélioration du vignoble\nL’arrivée de nouvelles technologies entraîne une mise à niveau du chai de vinification et de la salle de mise en bouteille.\nDoriane s’ouvre au commerce, Julien à la technique, leur fusion se retrouve aujourd’hui dans leurs vins.",
-      "descriptionUk": {},
+      "descriptionEn": "Situated between Saint-Emilion and Sarlat, in Bergerac vineyard, Château Haut-Fongrive stands on the south region peak and south-west hills which are important pros for the quality of wines.\nWith a strong interest in wine, Doriane decided to settle in 2006 as a winemaker. Everything is to be done. The warehouse construction started in 2007 for the very first vinification of the estate.\nGreat vintage and expertise recognized by Vinalie d’Or Internationale (competition for the bests wines on an international scale).\nJulien has joined his wife in this adventure since 2010. His youth and passion for the vine give a great boost to the exploitation. He works on improving the vineyard.\nWith the arrival of new technologies, there is an update for the wine warehouse and for the bottling room.\nWith market and technique, and their combination can be found today in today in their wines.",
       "id": "DEGAQU024V508D06",
       "labels": [],
       "langs": [],
@@ -5936,13 +6033,14 @@
       ],
       "websites": [
         "http://www.haut-fongrive.com/"
-      ]
+      ],
+      "updated": 1539940043642
     },
     {
       "active": true,
       "activities": "- dégustation gratuite tous les jours sans rendez-vous.\n- Atelier dégustation 1h30. tous les jours sur réservation.\n 15€/personne\n- Atelier Assemblage 2h30. Après une initiation à la dégustation, découvrez nos différents cépages et créez votre propre cuvée!!!\n30€/personne",
       "description": "4 hectares repris en 2014",
-      "descriptionUk": {},
+      "descriptionEn": "4 hectares owned in 2015",
       "id": "DEGAQU024V508D0Q",
       "labels": [
         "vignobles-et-decouvertes"
@@ -5998,13 +6096,14 @@
       ],
       "websites": [
         "http://www.domaineduboutdumonde.com/"
-      ]
+      ],
+      "updated": 1539940043772
     },
     {
       "active": true,
       "activities": null,
       "description": "Les bâtis dont les fondations datent de la guerre de 100 ans. Domaine accueillant également des voitures de collection, et des chevaux, nos deux autres passions respectives.",
-      "descriptionUk": {},
+      "descriptionEn": "The foundations of the buildings dates from the Hundred Years War. The estate also welcomes collection cars and horses, our two other passions. ",
       "id": "DEGAQU024V508D0Y",
       "labels": [],
       "langs": [
@@ -6059,13 +6158,14 @@
       ],
       "websites": [
         "https://domainedelaliniere.jimdo.com/"
-      ]
+      ],
+      "updated": 1539940043898
     },
     {
       "active": true,
       "activities": null,
       "description": "Château Thénac a une longue et fabuleuse histoire. Les premières traces de son existence remontent à 1109 lorsqu’un prieuré bénédictin fut construit à l’emplacement de l’actuel Château.\nLa propriété, de plus de 200 hectares au total, se trouve sur le village de Thénac. Le vignoble s’étend à perte de vue autour du Château. La propriété est également composée d’une plantation de pruniers d’ente, de bois, d’étangs et de terres cultivables.\nLa vigne est plantée sur le prolongement de la fameuse croupe calcaire de St Emilion. L’altitude, comprise entre 150 et 200 mètres, confère la présence d’un microclimat proche de celui de Bordeaux. Il  permet aux raisins de mûrir dans les meilleures conditions tout en gardant leur fraîcheur aromatique.\nLes cépages plantés sont Merlot, Cabernet Sauvignon, Cabernet Franc et Malbec pour les rouges ; Sauvignon, Sémillon et Muscadelle pour les blancs.",
-      "descriptionUk": {},
+      "descriptionEn": "The Château Thénac estate is situated to the east of Bordeaux in the heart of the Périgord region, famed for its picturesque countryside, medieval castles, fine wines and black truffles.\n\nThe estate is located in the hamlet of Thénac and comprises in total almost 200 hectares.\n\nThe house is surrounded by rolling vineyards as far as the eye can see but the estate also includes plum orchards, ancient woodlands, lakes and farmland.\n\nThe property includes a small private Roe deer park as well as sheep, goats and other animals. The lakes host a menagerie of ducks and other wildfowl including a pair of rare black swans – the inspiration behind the label of the eau de vie made from our own plum orchards.\n\nThe principal parts of the Château are built on the ruins of a Benedictine Priory dating as far back as the 12th century (1109). ",
       "id": "DEGAQU024V508D1D",
       "labels": [],
       "langs": [
@@ -6112,13 +6212,14 @@
       ],
       "websites": [
         "http://www.chateau-thenac.com/"
-      ]
+      ],
+      "updated": 1539940044023
     },
     {
       "active": true,
       "activities": null,
       "description": "Au cœur d’un vaste domaine viticole de 19 hectares trône le Magnifique Château de Montaigne, demeure du XIXème entièrement meublée d’époque, et la Tour Historique de Michel Eyquem de Montaigne, célèbre humaniste, auteur des Essais. \nTout au long de l’année, vous pouvez parcourir ces lieux chargés d’Histoire lors de visites guidées et conclure par une dégustation de nos vins. Un voyage gustatif et visuel à couper le souffle. \nVisites guidées uniquement selon horaires",
-      "descriptionUk": {},
+      "descriptionEn": "At the heart of a great vinicultural estate of 19 hectares stand the wonderful Chateau of Montaigne, a XIXth century home with its period furniture, and the historical tower of Michel Eyquem de Montaigne, the famous humanist who wrote Les Essais. \n \nAll year you can walk around these places full of history during guided tours and finish with a tasting of our wines. A visual and tasty voyage that will leave you breathless! \n\nCheck out the schedule for the guided tours.\n",
       "id": "DEGAQU024V508D27",
       "labels": [
         "vignobles-et-decouvertes"
@@ -6179,13 +6280,14 @@
       ],
       "websites": [
         "http://www.chateau-montaigne.com/"
-      ]
+      ],
+      "updated": 1539940044148
     },
     {
       "active": true,
       "activities": null,
       "description": "Situé dans le village de Monestier, le Chateau Monestier La Tour cultive 27.5 ha de vignes. Nous produisons des vins rouges en AOP Bergerac, Côtes de Bergerac, blancs secs, rosés et un liquoreux sous AOP Saussignac.\nDepuis juin 2016, le Château Monestier La Tour bénéficie d’un nouveau cuvier, de nouveaux bâtiments de stockage et d’un accueil au public. Au-delà de cette restructuration, ce sont surtout les nouvelles pratiques culturales qui sont la vraie révolution, en effet le vignoble est en conversion biologique (le millésime 2018 sera certifié bio) et bio dynamique sur les conseils de Derenoncourt consultants. La culture apparaît dès lors plus respectueuse du terroir et de l’environnement, idées fondamentales du propriétaire.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V50ASLN",
       "labels": [],
       "langs": [
@@ -6234,13 +6336,14 @@
       ],
       "websites": [
         "http://www.chateaumonestierlatour.com/"
-      ]
+      ],
+      "updated": 1539940044268
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Château des MIAUDOUX est une exploitation agricole que Gérard et Nathalie Cuisset ont acquis en 1987. Ils se sont alors lancés dans la production et la commercialisation de vin de Bergerac ( blancs sec et moelleux, rosé et rouge) et de Saussignac sur 25 ha, ainsi que dans  la production de pruneaux d'agen sur 8 ha.\nEn 2003, ils décident de convertir l'exploitation à l'agriculture Biologique, certifiée par Ecocert.  \nEn 2014 avec l'installation sur l'exploitation de leur fils ainé et son épouse, Samuel et Lisa, toute l'exploitation est aussi convertie en biodynamie, certifiée par Demeter. \nDe ce fait, quelques jeunes parcelles sont travaillées en prestation avec un cheval dans le but de reprendre contact avec le monde animal et de minimiser l'impact du travail du sol.\nAux Miaudoux, la qualité des vins est recherchée.\nDepuis 2009, une cuvée est vinifiée sans ajout de sulfites pour faire",
-      "descriptionUk": {},
+      "descriptionEn": "The Château of Miaudoux is a farm that Gérard and Nathalie Cuisset have owned since 1987. They started their production and commercialization of Bergerac wine (white, dry and sweet, rosé and red) and Saussignac representing 25ha, and also a production of Agen prune representing 8ha.\n\nIn 2003, they decided to go from farming to organic agriculture, certified by Ecocert.\n\nIn 2014, Samuel and Lisa, their son and his wife, have joined the exploitation and now it is also converted in biodynamics, certified by Demeter.\n\nHence, some young parcels are worked with a horse in order to have a contact with the wild world and to minimize the tillage impact.\nOf course they are looking for the quality of their wines.\n",
       "id": "DEGAQU024V50ASZG",
       "labels": [],
       "langs": [
@@ -6287,13 +6390,14 @@
       ],
       "websites": [
         "http://www.chateaulesmiaudoux.com"
-      ]
+      ],
+      "updated": 1539940044419
     },
     {
       "active": true,
       "activities": null,
       "description": "Ayant fait carrière dans l’environnement, Laurent Russac a préféré retrouver son environnement à lui : la vigne ! Avec ce retour aux sources il a décidé de concilier ses deux passions : la vigne et l’environnement. Il a convertit le domaine familial en Bio en 2014. \nLa propriété viticole s'étend sur 24 ha et bénéficie de l'appellation Monbazillac.\nVenez découvrir nos vins, nos vignes et la biodiversité locale.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V50ATZW",
       "labels": [],
       "langs": [
@@ -6348,13 +6452,14 @@
       ],
       "websites": [
         "https://chateau-letermeblanc.jimdo.com/"
-      ]
+      ],
+      "updated": 1539940044556
     },
     {
       "active": true,
       "activities": null,
       "description": "Des vins cadeaux, des vins plaisirs, des vins de passions, des vins pour tous.\nExploitation familiale depuis 4 genérations, nous vinifions en jarre et a  l'ancienne sur 1ha40,nous produisons moins de 4000 bouteilles. \n\nNous commercialisons d'autre appellations, Monbazillac,Montravel ,Bergerac.\nNos étiquettes sont traduites en braille et nos emballages sont fait dans des ateliers protégés. \n\n\n\n\n\n\n",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V50AU01",
       "labels": [],
       "langs": [
@@ -6411,13 +6516,14 @@
         "montravel",
         "pecharmant"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940044693
     },
     {
       "active": true,
       "activities": null,
       "description": "Après avoir acheté mes premières vignes en 1992 sur le coteau de SAUSSIGNAC , agrandi avec l'acquisition de nouvelles parcelles , restructuré en partie puis acheté les 12 ha du Château les plaguettes (exploitation familiale ). Le vignoble s’étend aujourd'hui sur 38 ha .\nAlliance entre une nature généreuse ,un magnifique terroir, fruit du savoir-faire et de la passion.",
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V50AU0C",
       "labels": [],
       "langs": [
@@ -6462,13 +6568,13 @@
       ],
       "websites": [
         "http://www.vignobles-gazziola.com/"
-      ]
+      ],
+      "updated": 1539940044810
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B0P2",
       "labels": [],
       "langs": [],
@@ -6506,13 +6612,13 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940232542
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B0PF",
       "labels": [],
       "langs": [],
@@ -6538,13 +6644,14 @@
       "town": "BERGERAC",
       "adress": "23 Route de Rosette",
       "vineyards": [],
-      "websites": []
+      "websites": [],
+      "updated": 1539940232702
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
+      "descriptionEn": null,
       "id": "DEGAQU024V50B0PK",
       "labels": [],
       "langs": [],
@@ -6582,13 +6689,13 @@
       "town": "BERGERAC",
       "adress": "Sainte-Foy-Des-Vignes",
       "vineyards": [],
-      "websites": []
+      "websites": [],
+      "updated": 1539940045279
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B0Q8",
       "labels": [],
       "langs": [],
@@ -6616,13 +6723,13 @@
       "town": "POMPORT",
       "adress": null,
       "vineyards": [],
-      "websites": []
+      "websites": [],
+      "updated": 1539940232902
     },
     {
       "active": true,
       "activities": "LAND ART période estivale du 15 JUIN au 15 AOUT.",
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B0QH",
       "labels": [],
       "langs": [
@@ -6665,13 +6772,13 @@
       ],
       "websites": [
         "http://www.chateauthenoux.com/"
-      ]
+      ],
+      "updated": 1539940233025
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B5LT",
       "labels": [],
       "langs": [
@@ -6717,13 +6824,13 @@
         "bergerac",
         "montravel"
       ],
-      "websites": []
+      "websites": [],
+      "updated": 1539940233152
     },
     {
       "active": true,
       "activities": null,
       "description": null,
-      "descriptionUk": {},
       "id": "DEGAQU024V50B5M4",
       "labels": [],
       "langs": [
@@ -6778,13 +6885,14 @@
       ],
       "websites": [
         "http://www.chateaudesganfards.com/"
-      ]
+      ],
+      "updated": 1539940233324
     },
     {
       "active": true,
       "activities": null,
       "description": "Le Clos du Pech Bessou se situe dans le Sud Bergeracois sur la commune de Plaisance et à la limite du Lot et Garonne, région touristique puisque proche des Bastides d'Issigeac et d'Eymet.\nLe Clos du Pech Bessou est un petit vignoble de 8Ha mené dans la tradition familiale par Sylvie et Pascal THOMASSIN afin de mettre en avant l'authenticité de son terroir.Nous apportons un grand intérêt à la culture de la vigne (agriculture raisonnée) afin d'avoir des fruits de qualité qui nous permettront d'avoir un potentiel de vinification et de satisfaire notre clientèle.\nL'encépagement est composé de merlot, cabernet, malbec, sémillon et muscadelle qui permettent de présenter des vins aux typicités variées.\nNous vous invitons à venir déguster nos vins avec grand plaisir avec un accueil simple et chaleureux.\nA très bientôt!",
-      "descriptionUk": {},
+      "descriptionEn": "The Clos du Pech Bessou is located in the South Bergeracois in the town of Plaisance and near Lot-et-Garonne, it is a touristic region because it is near the fortified towns of Eymet and Issigeac.\n\nThe Clos du Pech Bessou, little vineyard of 8 ha, is under the family tradition of Sylvie and Pascal THOMASSIN. They highlight the authenticity of the terroir. For us, vine culture is very important (sustainable agriculture) in order to have quality fruits that will allow us to have a vinification potential and to please our customers.\n\nThe grape varieties are: Merlot, Cabernet, Malbec, Sémillon and Muscadelle. They are the origin of the various and different types of wines.\n\nWe invite you to come and taste our wines with a simple and friendly welcome.\n\nSee you soon! \n",
       "id": "DEGAQU047FS000AP",
       "labels": [],
       "langs": [
@@ -6845,445 +6953,8 @@
       "vineyards": [
         "bergerac"
       ],
-      "websites": []
-    }
-  ],
-  "traductions": [
-    {
-      "description": "The Domaine du Haut Pécharmant has 35 hectares of vineyards on the top of the hill, in the heart of the Pécharmant appellation. The family bought the property in 1929, ever since, five generations have been working the soils of sand, pebbles and and grey and red clay, rich in iron. The grape varieties merlot, malbec, cabernet franc and cabernet sauvignon are the ingredients of our remarkable wines, full bodied and with a rich bouquet.",
-      "id": "DEGAQU024FS00003"
-    },
-    {
-      "description": "Corbiac, original heart of Puycharman, now called Pécharmant, was established during the XIth century by the Counts of Perigord on the sandy-clay soils in North-East Bergerac. Since 1587, it has been passing on to the family of the famous Cyrano de Bergerac.\nThis knowledge of the land, acquired by 17 successive generations of winemakers, and a respectful culture of traditions and grape varieties (Merlot, Cabernet Franc, Cabernet Sauvignon and Malbec) give a great wealth to our production in Pécharmant.\n",
-      "id": "DEGAQU024FS00004"
-    },
-    {
-      "description": "Gathering 50 winemakers, the Monbazillac cellar is the most important producer of Monbazillac appellation wines. Our winemakers have signed up for continuous improvement initiative. We vinify and commercialize wines from various castles which were known under Dutch brands during the XVIIth century.\nCreation date: 1940\n50 winemakers and 10 employees\n927 hectares of vines and 28,000 hectoliters produced per year.\nProduction area: Bergerac, Colombier, Eymet, Monbazillac, Saint-Laurent des Vignes, Pomport, Rouffignac de Sigoulès\n2 subsidiaries with 24 employees \n",
-      "id": "DEGAQU024FS00005"
-    },
-    {
-      "description": "Welcome to Alliance Aquitaine, a cooperative cellar which gathers 133 winegrowers representing the appellations of Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant and Bordeaux. Representing a total of 1,356 hectares, with 95% that are certified by Agri Confiance (quality, health and environment norm).\nAlliance Aquitaine is represented by 3 production sites and 3 direct selling stores in Bergerac, Le Fleix and Saint Vivien.\nCome and taste our wines and discover our “400 barrels” winery on Bergerac’s site.\nFree access to the barrels warehouse on demand.\n",
-      "id": "DEGAQU024FS00006"
-    },
-    {
-      "description": "Easy to find, you will be amazed and seduced by the warehouses and shop of Château La Vieille Bergerie. We produce every color of Bergerac wines in order to satisfy the most experienced tasters.\nWe will advise you in French or in English.\n",
-      "id": "DEGAQU024FS00008"
-    },
-    {
-      "description": "This XVIIIth century castle is situated in the town of Lembras, 6 km from  Bergerac.\n\nBuilt on the top of a hill, it dominates the region and offers an unforgettable setting, between vineyards and forests. The Pécharmant, its appellation contrôlée vineyard, faces south and covers 40 hectares. The ground rich in iron gives to this \"vin de garde\" a subtle bouquet, and its incomparable taste makes it one of the finest products of the Dordogne.\nIf on your trip you come to the Périgord, we will ensure you the best reception.",
-      "id": "DEGAQU024FS00009"
-    },
-    {
-      "description": "Only 12kms south of Bergerac, take advantage of your stay in our beautiful region to disciver one of the finest wine estates nearly. In a remarkable historic site, we would be delighted to welcome you for tasting the full range of our renowned wines, including the famous Mirabelle cuvee.",
-      "id": "DEGAQU024FS0000A"
-    },
-    {
-      "description": "In 1984, Christian ROCHE inherited from a part of the family property, and in 1989 he created his wine cellar in order to become an independent winemaker.\n\nIn this way, he realized he had to come back to the basics, that is to say the land and the plant.\n\nThe real question is: what are the needs of the plant to produce great grapes to create the best wine possible?\n\nFor a few years now, the respect of the environment, deep soil working, grape varieties implantation, plantation densities and the special selections have improved the quality of the wine. And since 2012, they are working in organic agriculture.\n",
-      "id": "DEGAQU024FS0000C"
-    },
-    {
-      "description": "Driven by a passion for wine, I left my native Belgium in 1999 in order to become a winemaker in Monbazillac (south of Bergerac) in the Périgord-Dordogne region. On my small vineyard holding of almost 10 hectares, I make with passion Monbazillac wines, as well as red, rosé, dry white Bergerac and sweet Côtes de Bergerac wines. Enjoying meeting people and sharing my knowledge, I am keen to let you discover my profession and passion through many œnotouristic activities that I organise all year round.",
-      "id": "DEGAQU024FS0000E"
-    },
-    {
-      "description": "Romain, a 30-year-old epicurean winemaker, decided to challenge himself in 2014: take over Château Haut Bernasse, a 14-ha property, and develop an organic agriculture. It has 11 ha of white (sémillon, muscadelle, white and grey sauvignon) and 3 ha of red (cabernet sauvignon, merlot and cabernet franc).\nHe grows these 35-year-old vines traditionally, with grassing and ploughed rows, for the purpose of making quality wines on this exceptional land.\n",
-      "id": "DEGAQU024FS0000F"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024FS0000G"
-    },
-    {
-      "description": "The Mayet family was in the XVIth century a family of cathedral builders in the center of France.\n\nThey settled in South-West in 1852 on agricultural lands where they do polyculture.\n\nIn 1971, the first bottles of the Domaine du Bois de Pourquié were made and now the family exploitation is producing only wine, on a 30-ha surface.\n",
-      "id": "DEGAQU024FS0000H"
-    },
-    {
-      "description": "Family area for 3 generations and manage today by families and Métifet Garcia.\nBergerac Domaine dominates the valley on the slopes of Monbazillac.\nIt is possible to stay in our cottages or guest rooms for short or long stay.\nOur property cultivates 70 hectares, has monbazillac dominance.\nTo discover our vineyard, we have created a path retracing the entire domain",
-      "id": "DEGAQU024FS0000I"
-    },
-    {
-      "description": "Push the door of the Domaine du Siorac: it is back in the world of vines and wine with ease; is to make a real encounter, share an authentic and warm moment.\nWith great pleasure we will show you our vineyards and surrounding landscapes, they are faithful witnesses to our history.\nWithout being a professional tasting, discover, over a drink, our productions and the many facets of our business.\nEnjoy our guided tours from 12 July to 30 August: Tuesday morning at 10am and Thursday afternoon, at 2:30 p.m. (by appointment on other days / seasons).",
-      "id": "DEGAQU024FS0000J"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024FS0000K"
-    },
-    {
-      "description": "Located on the right bank of Dordogne, 5km away from Bergerac, the 8 ha vines of Domaine de Coutancie grow on Prigonrieux hillsides, orientated south. Representinf the 5th generation of winemakers on the exploitation, Nicole Maury followed the path of her family and gives a feminine touch to the estate, in particular by working in oenotourism. She opened a lodge then, with the help of her children and her husband Hervé (breeding Limousin and Blonde d’Aquitaine cows), she put in place friendly moment to familiarize yourself with the wines of Domaine de Coutancie (AOC Rosette, Bergerac red, dry, rosé or Côtes de Bergerac) and it’s possible to buy directly there.",
-      "id": "DEGAQU024FS0000M"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024FS0000N"
-    },
-    {
-      "description": "Family property since 1749, Château Moulin Caresse grows a 50ha-vineyard on the Montravel hillsides.\n\nThe estate is recognized for several years now by the TERRA VITIS and Haute Valeur Environnementale (HVE3) labels, thanks to the constant efforts made in every branch of the job (treatments, fuel, photovoltaic plant, waste management, etc.).\n\nCome discover a large range of red, dry whites, soft, sweet and rosé wines.\n\nYou can taste our different cuvées, from the fruitiest to the most powerful.\n\nWe also propose holiday rentals.\n",
-      "id": "DEGAQU024FS0000R"
-    },
-    {
-      "description": "The property represents 50 hectares of vineyards and produces wines of different appelations: Montravel, Haut Montravel, Bergerac and Pécharmant.\nIt offers a beautiful point of view of the Dordogne valley and is the departure of nices hiking trails.",
-      "id": "DEGAQU024FS0000S"
-    },
-    {
-      "description": "Gérome, Dolores Morand Monteil and their children will welcome you to the Chateau Terre Vieille to show you the charm of their family vineyard and their Pécharmant wines made with love. The philosopher Maine de Biran was born in the Domaine de Grateloup and Terre Vieille is a dependency of the castle which we can see from the estate. History, rocks and good wines lovers will fall in love with this place!",
-      "id": "DEGAQU024FS00011"
-    },
-    {
-      "description": "5 minutes away from Bergerac and Monbazillac, Château Ladesvignes offers a panoramic view of Bergerac and the Dordogne valley, under the shade of a bicentenary cedar tree.\n\nYou are invited to discover and taste a complete range of wines: red, rosé, dry white, fortified or sweet. And of course, grape juice for children young and old!\n\nOn your own or in group, let yourself be tempted by various propositions: wine tasting from Monday to Friday, audio tour (French and English) in the warehouses and surroundings since May, wine and cheese tasting with commentary tour every Thursday in July and August.\n\nYou will enjoy everything as you wish. Car park, easy access and friendly welcome are waiting for you.  \n",
-      "id": "DEGAQU024FS00015"
-    },
-    {
-      "description": "Vignobles Dubard settled their vineyards in 1977 in the western part of Bergerac Wine Region, called Montravel. The calcareous-clayish hillsides on the right bank of the river Dordogne, selected for their favourable exposure, offer to our 85-ha vineyard a diversity of exceptional terroirs that inspire our Bergerac & Montravel wines : aromatic dry white, fruity rosés, easy to drink to full-bodied red wines.",
-      "id": "DEGAQU024FS00016"
-    },
-    {
-      "description": "Organic wines AOP Bergerac.\nVisits and tastings in the estate all year by appointment.\n",
-      "id": "DEGAQU024FS0001G"
-    },
-    {
-      "description": "1610: This is the date when the BARDE family tree began to flourish in the commune of Saint Méard de Gurçon. Since that time succeeding generations have formed the present inheritance.\nHere  in  “Perigord Pourpre”, the BARDE family practice the art of wine-making over their 60 hectares of vineyards, divided up as follows:      \n-30 ha white wine varieties : Sauvignon, Semillon and Muscadelle.      \n-30 ha red wine varieties : Merlot, Cabernet Sauvignon, Cabernet Franc and Malbec. Grown on wires that are staked in lines .\nThis ancient abode situated to the west of\nBergerac (30 km), though not a country seat,\nit is however a landowners home dating from\nthe 17 th century. On the mansard roof sit two\nsplendid weathervanes marked with fleur-de-lis\nand representing dolphins.",
-      "id": "DEGAQU024FS0001L"
-    },
-    {
-      "description": "Little 12-ha-property overlooking at the beautiful Dordogne valley, Château le Tap is located on an old quarry site registered in Napoleonic cadaster, in the place called “Tas de pierre” (i.e. pile of stones) shortened as “au Tap”. This is a excepcional terroir with clay-limestone soils.\n\nThere are 5,000 vines in each hectare, constituted by 50% of white grape varieties (Sauvignon, Sauvignon Gris, Sémillon, Muscadelle et Chenin), and 50% of red grape varieties (Merlot, Cabernet franc,cabernet Sauvignon et Malbec), they have a great exposure on the hills. Our culture method is organic since 2007, certified in 2010, respecting terroir’s balance, without pesticides nor fertilizers. \n",
-      "id": "DEGAQU024FS0001M"
-    },
-    {
-      "description": "At the heart of a Frenchie park, Château de Tiregand is an elegant seigneury of the XVIIIth century. Its 35ha vineyard is located on the Pécharmant hills. Overlooking the Dordogne valley on top of Bergerac, the “sand and rocks” soils of Perigord give raced and elegant wines which are left in barrels for 12 months. They are famous and have been rewarded by golden medals in every guide.",
-      "id": "DEGAQU024FS0001N"
-    },
-    {
-      "description": "This 15ha family vineyard, created in the XVIIth century, is located at 3kms of Bergerac, perched on a high outside sitting area of Dordogne valley. We welcome those who want to share our winemaker spirit. We propose a wide range of 7 wines declined in dry Bergerac, rosé, red and Rosette. ",
-      "id": "DEGAQU024FS0001O"
-    },
-    {
-      "description": "At the heart of the south hills of Dordogne, with 57ha and plenty of medals, Château Court-les-Mûts will welcome you in its nice warehouses, its oenology laboratory and its wine museum. Meet and listen to the Sadoux family talk about wine and traditions while you will discover the art of tasting. Discover the peach and pear aromas of dry white wines, the exoticism of sweet wine, a rosé tasting like sweets, and intense red wines. Then, discover the quintessence of Saussignac coming from late harvests and early-maturing Semillon, that is to say a pretty rare wine! ",
-      "id": "DEGAQU024FS0001P"
-    },
-    {
-      "description": "Château Le Chabrier, settled in 1640, is situated on a beautiful hilltop overlooking the Valley of the Dordogne. Its vineyard of 20 hectares (49 acres) produces certified organic white and red wines that are much appreciated by faithful wine-lovers.  The vine is methodically and patiently cultivated so as to obtain a small yield and the wine is matured slowly.  This pursuit of quality, combined with one of the best Aquitaine soils, make Le Chabrier worthy of its international reputation and numerous prizes.",
-      "id": "DEGAQU024FS0002G"
-    },
-    {
-      "description": "Delight your senses with a day or half day at an award winning organic and biodynamic vineyard estate that is also a certified WSET wine school. \nExperience gourmet pairings like wine and chocolate, a half day with a wine and food pairing lunch, wine growing and winemaking, or a full day playing the winemaker. Reception of groups of upto 20 people and accommodation for 6 people in two luxury ecological gites. \nLocated between Bordeaux and Sarlat in Saussignac (20 mins west of Bergerac).",
-      "id": "DEGAQU024FS0002H"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024FS0002J"
-    },
-    {
-      "description": "Since 1936  “Domaine Du Boyer” has been run by the same family for 3 generations.\nThe 15 hectare vineyard  is situated 12 kms south of Bergerac and is in the appellation area of Bergerac and Monbazilac\nVisits to the vineyard with tasting and purchasing are available all year\nMonbazillac, Bergerac red, white, and rosé.",
-      "id": "DEGAQU024FS0005B"
-    },
-    {
-      "description": "30 acres vineyard, organic viticulture, managed by a passionate woman : \"the passion and love of the vine that she brings is evident in every bottle of wine you open from Château La Robertie\". She winemakes dry and sweet wines, rosé and red ones. Many of them have got medals. ",
-      "id": "DEGAQU024FS0007B"
-    },
-    {
-      "description": "Dive in the memory of Château Bélingard and discover a land named by the Celts as the “Sun Garden”.\nBeyond an exceptional terroir, Château Bélingard has a true history content. At the heart of the appellations of Bergerac and Monbazillac, the vineyard stands on clay-limestone soils.\n",
-      "id": "DEGAQU024FS0008K"
-    },
-    {
-      "description": "A dynamic area which is experiencing a renewal. The vineyard follows an organic production from its planting to its winemaking by proposing wine batches without sulphites.\nCamper vans are welcomed.\n",
-      "id": "DEGAQU024FS0008L"
-    },
-    {
-      "description": "Lovely little wine property located at 5km north west away from Bergerac. Charles Blanc creates high quality wines there and relies on the diversity of the grape varieties and the vinification methods while respecting the environment.",
-      "id": "DEGAQU024FS0008M"
-    },
-    {
-      "description": "Located at 10 km south Bergerac on Dordogne left bank and with a surface of more than 10 ha, Château Kalian is completely settled in Monbazillac town. 90% of its exploitation area is dedicated to the creation of sweet wines.\nChâteau Kalian is a 100% organic family property since 2012 which celebrated its 25 years anniversary in 2017. The name KALIAN comes from the mixing of their children names Katell and Kilian, who are two young oenologists. Kilian, their son, is now the owner of the property.\nYou will be welcomed with conviviality in a magnificent tasting room converted into an old barn with stone and stud walls.  \n",
-      "id": "DEGAQU024FS0008N"
-    },
-    {
-      "description": "Located on the north hill of Bergerac, Château du Rooy is a pretty property from the XIXth century that we bought in 1998.\n\nIt has a diversified vineyard where important investments were made for the vines and the vinification wine cellar. \nWith a property of 19ha of vines and three appellations, we create our wines by respecting the land and biodiversity with a sustainable agriculture.\n\nContrary to family properties, Château du Rooy is first and foremost a viticultural adventure in which we try de recreate and develop the estate through time.\n\nNow, we continue to reshape the exploitation for the purpose of improving the conditions of production as well as our wines’ quality.  \n",
-      "id": "DEGAQU024FS0008O"
-    },
-    {
-      "description": "The vineyard is located at the top of Pécharmant hill, oriented south. Tiny vine, with a view of Dordogne valley and Monbazillac hill. The land and vinification mixed together give this beautiful creation of an intense dark red wine with aromas of truffles, blackcurrants, and blackberries. This intensity and generosity underline a tannic structure that can age easily.\n\nOld building of the Perigord \n",
-      "id": "DEGAQU024FS0009H"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024FS0009K"
-    },
-    {
-      "description": "The Domaine des Costes’s name refers to the old French for “hillsides” (coteaux). It is located in Bergerac, one of the four towns producing Pécharmant appellation wines.\n\nSince 1992, the vineyard is being cared of very carefully: replantation, poor yield, sustainable growing of vine, managing soils without weed killer.\n\nSince 2003, the vine is worked in organic agriculture in an environmental way and in order to let the nature do its thing. We produce round, elegant and intense Pécharmant wines that you can keep for years. The rosé has delicate aromas. \n",
-      "id": "DEGAQU024FS0009N"
-    },
-    {
-      "description": "Named “Campréal et des Costes vineyard” in 1903, and since 1975 “Clos les Côtes”. Sand and gravels of Périgord, wine of rich and subtle terroir, elegant hill.",
-      "id": "DEGAQU024FS0009O"
-    },
-    {
-      "description": "Passionate winemaker working for 20 years in Pécharmant and Monbazillac. Elected winemaker of the year 2015.\nMy wines are the expression of my local products and my desires, that is to say a work comparable to a painting to which we give 12 or 24 months to create and live.\n",
-      "id": "DEGAQU024FS0009S"
-    },
-    {
-      "description": "The countryside in the city of Bergerac\n15Ha of vines AOC Pécharmant\nPark with 100-years-old trees and 5 charming guestrooms",
-      "id": "DEGAQU024V5029W2"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V5029W3"
-    },
-    {
-      "description": "Château Poulvère is a former dependency of the Château de Monbazillac. Built in the 16th century, its construction is contemporaneous with that of the Château. The Borderie family has been established at the Poulvère property since 1923 when Louis Borderie was appointed estate manager. Château Poulvère wine estate encompasses 104 hectares, with all of the vineyards carrying the AOC (appellation controled) label. The estate comprises 54 hectares of Monbazillac, 12 hectares of Pécharmant and 38 hectares of Bergerac. château Poulvère is proud to be one of the most substantial wine estates in the Bergerac region, a successful business that remains a dedicated family enterprise.",
-      "id": "DEGAQU024V5029WM"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V5029WQ"
-    },
-    {
-      "description": "The Château Vari, situated in Monbazillac, is a family-owned wine estate, producing organic wine since 2012. It covers 20 hectares in AOC Bergerac and AOC Monbazillac.\nSince 1994, Sylvie and Yann Jestin have been producing open, well-balanced and delicate wines with character, on a clayey-limestone « terroir ». After going through the conversion period in 2010 and 2011, Château Vari now produces organic wines as from the 2012 vintage.\nAttentive to the quality whilst respecting the « terroir », the Jestin family have always farmed the estate through ploughing the soil and limiting the use of chemical products. Convinced that organic farming is the future, Yann Jestin decided to start coverting the estate in 2009. The results are incredible : plants and wildlife have returned and the wines are even better!",
-      "id": "DEGAQU024V502OWN"
-    },
-    {
-      "description": "In the heart of Monbazillac, on a hill overlooking the banks of the Dordogne and the historic town of Bergerac, the organic wines of exception of Château Grande Maison have been produced for decades (Monbazillac, Côtes de Bergerac, red/white Bergerac and rosé).\nThe thirteenth century fortified house has a unique environment :\n- Overall exposure is south facing on more or less accentuated hills.\n- The lake at the heart of the property offers an exceptional asset to promote botrytis, the fungus that creates the uniqueness and richness of Monbazillac\n- The soil is clay-limestone with silica in places that gives a certain acidity.\nWith quality as the overarching objective, the entire production is subject to the rules of organic farming and the biodynamic method, allowing our wines to express their character and the best of this region.",
-      "id": "DEGAQU024V503LPL"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V503MGE"
-    },
-    {
-      "description": "Beautiful belvedere when you arrive at the estate, on a valley with a view on Dordogne’s valley and the Gironde hillsides of Sainte Radegonde.\n\nCamper vans are welcomed.\n",
-      "id": "DEGAQU024V505KB3"
-    },
-    {
-      "description": "Standing on beautiful hills, Château La Maurigne represents 17 ha with 5 ha of vines and 2 ha of orchards that are currently under organic management.\nThe fauna and flora are preserved in order to maintain the exploitation with an organic balance. During the summer, you can find at least 10 varieties of wild orchids in the vines.\n",
-      "id": "DEGAQU024V505KJY"
-    },
-    {
-      "description": "Managed since 1999 by Vincent VESSELLE, Château La Rayre represents 25 ha of vines situated on the South Monbazillac clay-limestone hills in Colombier. All of this gather the best meteorological and geological conditions to make great wines. \nBiological agriculture and level 3 of HVE.\n\nTour/tasting from 11 am to 1 pm by the winemaker, from July 14 to August 15.\n",
-      "id": "DEGAQU024V505KLW"
-    },
-    {
-      "description": "The place is inhabited by the Lambert family since the XIIIth century.\n\nDomaine de Montlong is able to create unique wines thanks to its orientation on the hillside looking at the Dordogne valley and its traditional vinification methods. \n\nCamper vans are welcomed.\n\nLodge on rent during high season (Gîte de France, Tourisme & Handicap labels)\n",
-      "id": "DEGAQU024V505KU7"
-    },
-    {
-      "description": "A vineyard reborn\nAfter much patient, meticulous and passionate work, Château de Peyrel was restored to its original winemaking vocation in 2013. Our wines are elaborated in keeping with traditional craftsmanship, preserving both the plant and its fruit, in order to produce natural products of the highest gustative and aromatic quality.",
-      "id": "DEGAQU024V506AOS"
-    },
-    {
-      "description": "At the heart of the plateau, hiking resting stop between Bridoire and Monbazillac.\n\nSeveral levels of cuvées by appellation.\n\nCampsite for campervans.\n",
-      "id": "DEGAQU024V506ARS"
-    },
-    {
-      "description": "Estate planted in vines for several centuries, producing organic wines since 1991. Pioneer in the revival of Saussignac noble rot sweet wines.\n\nHarvests are made by hand.\n\nWide range of wines, white, dry, rosé, red, soft and several cuvees of sweet wines in Saussignac appellation. 2 wines without sulphite: Cuvée Osée in Bergerac red and Richard Osé dry white.  \n",
-      "id": "DEGAQU024V506AS9"
-    },
-    {
-      "description": "A medieval château with its private 16th century chapel and  a half-timbered dovecote on columns,in the midst of a two acre park.\nA  vineyard sitting  on a well drained limestone-clay plateau overlooking the Dordogne riverwhere can be found the traditional Bordeaux grape varieties : Merlot, Cabernet Sauvignon and Cabernet Franc for AOC Bergerac reds ; Semillon and Sauvignon for AOC dry Bergerac white and sweet Saussignac. The vineyard has a strict policy of not using any  herbicide. Our wines are the true expression of an exceptionnal terroir.",
-      "id": "DEGAQU024V506N08"
-    },
-    {
-      "description": "Château Cluzeau is foremost an ultra modern winery in an enchanting setting that offers organic and noble wines, developed in a strict respect of nature and biodiversity.\nChâteau Cluzeau is also an unexpected scenography which speaks of the vine and wine with a playful perspective, dreamlike and unconventional.\nIt is a place for which the tour has been designed to allow adults and children, who have not been forgotten, fun memories of their holidays in Dordogne.",
-      "id": "DEGAQU024V506P0I"
-    },
-    {
-      "description": "Château La Brie is located at the heart of Bergerac vineyard, on Monbazillac hills, with 35 ha and 2 lands. Originally private, the estate was bought in 1962 by the towns of Bergerac and Monbazillac in order for the Ministry of Agriculture to establish an agricultural and viticultural high school.\nThe wine estate is a real pedagogical tool, facing economic and environmental realities, which enable the teaching of the future winemakers.\n\nSince 2013, Château La Brie owns the level 3 of the HVE norm (high environmental value certification), which officially shows the environmentally friendly policies used on the exploitation: such as biodiversity, health strategy, fertilizer management and water resources management. Furthermore, it has been certified Organic Agriculture since 2013 on 12 ha. \n",
-      "id": "DEGAQU024V506T01"
-    },
-    {
-      "description": "Château de la Mallevieille is a wine estate located in Monfaucon, a little town in Perigord overlooking the Dordogne river, in Bergerac town. The 30ha of vines are today manufactured by Philippe Biau and Thierry Bernardinis, who share daily a know-how and a common love for wine and vine.",
-      "id": "DEGAQU024V506TJQ"
-    },
-    {
-      "description": "The Domaine de Perreau is a family property of 20 ha covering the appellations of Bergerac and Montravel.\n\nGaëlle Reynou-Gravier, young winemaker from the 5th generation, took back the estate in 2013. She develops a new identity of the Domaine de Perreau: feminine and modern.\n\nSince 2014, it is certified Terra Vitis®, for the pleasure of wine and a living land.\n\nVisits of vine and wine cellars.\n\nIn 2018, Gaëlle developed a new family offer around a biodiversity vine walk. Kids and adults will be able to discover the profession of winemaker thanks to a 1.5km walk full of explanations, discoveries and games. At the end of the visit you will have a tasting for the parents and a snack for the children.\n",
-      "id": "DEGAQU024V506TL3"
-    },
-    {
-      "description": "Château le Payral is a family property of which Thierry DAULHIAC is the youngest son. This the vineyard of 15 ha is situated about 20 km from Bergerac on the South of river Dordogne between vineyards of Monbazillac and vineyards of Ste Foy- Bordeaux. Grapes are produced without use of pesticides or chemical fertilizers. Since 2006, wines are organic. We have also been using principles of “biodynamie” in the Vineyard and in the cellar.   Its soils are clayey and limestone grounds. Area is so parcelled out.",
-      "id": "DEGAQU024V506TN3"
-    },
-    {
-      "description": "In the heart of Bergerac vineyards, the Domain of Moulin Pouzy and its sunny hills cover 55 hectares.\nThe property belongs to the Castaing family since 1898 – the year of its creation.\nAt its head, Fabien Castaing represents the fifth generation of winegrowers.\nPampered vineyards, a well thought-out viticulture, high quality oenological and wine supports contribute to the making of fine wines.\nThese creations, made thanks to the meticulous work of men, honour Nature.\nBy strolling through vines and flavours, Fabien Castaing invites you to discover his world – world he wants unique, contemporary and rooted.\nTo show how we respect the Nature, the property has the certification \" High Environmental Value\".",
-      "id": "DEGAQU024V506TP1"
-    },
-    {
-      "description": "Family property for 300 years, located on the North side of Monbazillac\nBeautiful Empire-style Chartreuse overlooking the property.\nAmazing view on Bergerac valley\n",
-      "id": "DEGAQU024V506U03"
-    },
-    {
-      "description": "Family property for 4 generations, located in the small medieval town of Puyguilhem (municipality of Thenac). We gather both wine appellations Bergerac and Duras.",
-      "id": "DEGAQU024V506U4Y"
-    },
-    {
-      "description": "Searching for a walk with your relatives or alone at the heart of our Bergeracois vineyard?\nCome discover our estate!\nOur program:\n- free tasting of our wines and we will share our recipes (matching food and wines with Sandra FAUCHE)\n- a guided tour (by appointment) or on your own, picnic with gift basket (order only)\n- tours to visit the essentials of our 4 “Perigord” will be advised to you, addresses of good restaurants, a bit of history (for those who want to do some hiking), admire a totally restored chapel (St Mayme). All of this amidst the vines to enjoy a beautiful moment in the nature.\nWe also propose you bed and breakfast at our neighbours’ 500m and 2km away.  \n",
-      "id": "DEGAQU024V506U5L"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V506UMP"
-    },
-    {
-      "description": "Not one of our gestures is insignificant. They are all guided by a vision of the mind for if character comes from climatic conditions, excellence is the work of human being.",
-      "id": "DEGAQU024V506UTS"
-    },
-    {
-      "description": "Family vineyard since 1642\nThird generation in direct exploitation.\nWe have transformed our XVIth century barn into a barrel warehouse \n",
-      "id": "DEGAQU024V506UUM"
-    },
-    {
-      "description": "Situated in the heart of the appellation of Bergerac, in the commune of Monbazillac, Château MONTDOYEN dominates with elegance a vineyard established on the surrounding slopes. The property covers 83 hectares including 37 which are planted with vines, the rest is divided between meadows and woods.  \n\nTo protect this exceptionnal environment - but also to express at best the characteristic of our soil, the whole domain is worked in the most natural way possible : green manure, mechanical weeding to favor the life of grounds…\n\nSo, Château MONTDOYEN was awarded many medals as in Lyon, Bordeaux, Brussels or at the Concours Général Agricole of Paris.\nThe Guide Hachette also recognizes the quality by having already attribued  several «coups de coeur», placing it among the references of the appelation.",
-      "id": "DEGAQU024V506V2O"
-    },
-    {
-      "description": "Château de Panisseau, located at the heart of a vineyard, spread over 60 hectares, is happy to welcome you to the property for wine-tours and wine-tastings. Specialists in Enotourism, we offer high quality holiday accomodation for your vacations in this area, as well as Summer Evening Foodie Markets in the courtyard of the property where you can taste our wines, try local produce and enjoy various activities.\nPlease book your visit, from Monday to Friday from 10am to 4pm!",
-      "id": "DEGAQU024V506YB6"
-    },
-    {
-      "description": "Small propriety located on a clay-limestone plateau, converted to organic agriculture since 2011.\n\n",
-      "id": "DEGAQU024V5070YW"
-    },
-    {
-      "description": "A winemaker dream: 18 contiguous hectares of vines, with a house in the middle of them, organic agriculture with an amazing panorama. \nBeautiful preserved terroirs and wines with a minimum of inputs.\n",
-      "id": "DEGAQU024V50714R"
-    },
-    {
-      "description": "The Château du Bloy itself exists since the beginning of the nineteen sixties. It was taken over in 2001 by Olivier LAMBERT and Bertrand LEPOITTEVIN-DUBOST with the objective to become one of the best in South west France. Wanting to keep the expressive taste of the \"terroir\" in the wines and, at the same time, preserve the environment, the Château, that had already been working organically for numerous years, formalised it in july 2011 and started the official process to become certified organic.",
-      "id": "DEGAQU024V5071DW"
-    },
-    {
-      "description": "The Domaine du Castellat vineyard is located on the northeast slope overlooking the Dordogne Valley. It extends over 22 hectares of good wine-producing land.\nThe property is located on a strategic site considering its panorama. The origin of Castellat \"Castellum\" would go back to about the year 1000, and farther according to the Latin root.\nSince then, six generations have taken care of the vineyard and the wine with progress...\nToday, Jean-Luc and his Isabelle wife are the masters of the estate.\nFor them, more than a tradition, it is a true passion, which they share with their boys Hugo and Justin!...",
-      "id": "DEGAQU024V5071NA"
-    },
-    {
-      "description": "Our vineyard is situated on one of the beautiful Dordogne hillsides overlooking a hidden valley of oak woodlands. Our aim is to produce excellent wines whilst respecting the nature which surrounds us. we have, for example, more than fifteen species of wild orchid. Our wines have won medals and Hachette awards.",
-      "id": "DEGAQU024V5071V0"
-    },
-    {
-      "description": "Organic agriculture since 1989, belonging to the Nature and Progress appellation, I make sure my vineyard respects the lands, its biodiversity, by enjoying fauna and flora wealth to have the best of the land.\nOn an abundant energy soil, the vine draws everything it needs to produce the best grapes as possible. Once they are picked, they reveal all their aromas and of course the land’s wealth.\nI am a farmer and a winemaker not a sorcerer’s apprentice!\nAfter harvesting by hand, the wines in my warehouses are honest and authentic.\nEvery vintage is a reflection of the year. Each one of them tells a story. \n",
-      "id": "DEGAQU024V5071W5"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V5072D5"
-    },
-    {
-      "description": "This is the story of a family where two generations living in a viticultural property of the Bergerac region, at the heart of the Dordogne valley, put together their job passion, the importance of quality and opened up to others.\nThree winemakers, Michel Durand, Julien Durand and Nicolas Pouget, produce big wines on this exceptional land: sweet whites, red and rosé, that are tasty, elegant and fruity.\nThe traditional work of the vineyard underlines the sustainable agriculture and development principles.\n",
-      "id": "DEGAQU024V50744K"
-    },
-    {
-      "description": "Independent winemakers since 2000 on a 26-ha exploitation, Eric grows and takes care of his vine until harvests, and Cécile is working organically since 2009.",
-      "id": "DEGAQU024V5074QL"
-    },
-    {
-      "description": "Château Caillavel, formely known as Courson de Cailhavel Domain, noble den of 1322, invites you to come visit and taste their local products of Périgord. The latest represents what they do best in the region such as dry white wine, Côte de Bergerac red, rosé wine, and Monbazillac which was given a medal by Guide Hachette in 2017.",
-      "id": "DEGAQU024V5075IZ"
-    },
-    {
-      "description": "Wine grower and merchant owners, we are specialized in commercialization and wine production in the region of Bergerac. We deliver them in our points of sales and to restaurant professionals. \n\nThe idea to make our own wine range came because we want to create Bergerac terroir wines that wear our signature. The partnership developed with some wine makers allows us a rigorous selection of parcels of land. A vinification and ageing in our wineries ensure the quality of our wines.\n\nThe Julien de Savignac wines have been appreciated since the first vintage: Guide Hachette (1998 to 2013), specialized press…\n",
-      "id": "DEGAQU024V5075ZA"
-    },
-    {
-      "description": "5-ha estate owned since 2015, and in organic agriculture since 2018. You can buy directly in the estate",
-      "id": "DEGAQU024V5076I3"
-    },
-    {
-      "description": "Family exploitation since 1881. Old vinery: 40% of the surface is from 1928 or 1954. It is located at 2 minutes from the medieval city of Issigeac.",
-      "id": "DEGAQU024V5076IN"
-    },
-    {
-      "description": "Family company for 30 years, the Chateau Tour des Gendres experiments new methods of vinification and viticulture to make sure that the expression of the different terroirs can be found in every wine, from the simplest cuvees to the gastronomy great wines. Come discover the delicacy and complexity of those dry white and red wines of the south hillsides of Bergerac.",
-      "id": "DEGAQU024V5076J0"
-    },
-    {
-      "description": "The estate is located on Montravel hills between St Emilion & Bergerac. Great winery with performing equipment. Anual production about 400 000 bottles of Montravel & Bergerac red & rosé, Montravel dry   and Côtes de Montravel sweet white wines, regularly awarded at national & international competitions.",
-      "id": "DEGAQU024V5076J8"
-    },
-    {
-      "description": "Château de Planques is one of the oldest properties of Monbazillac. The current owners are trying to maintain the traditional quality that makes the famous name of our little town.\nVery large car park. Buses are welcomed.\n",
-      "id": "DEGAQU024V5076LG"
-    },
-    {
-      "description": "On May 5th, 1960, the winemakers of the cooperative decided to buy the Château de Monbazillac and its estate. Historical monument, opened to the public, it is now the children and grandchildren of those winemakers who work for the preservation of the castle in order to make it accessible to as many people as possible. The castle presents a unique architecture which combines parts taken from the medieval architecture and others that show the ancient influence: The Renaissance style. This emblematic castle of Bergerac has been insensitive since the end of the XVIth century, whereas its wine quality was famous outside of the Aquitaine borders. ",
-      "id": "DEGAQU024V5076MU"
-    },
-    {
-      "description": "The Domaine de Pécoula and its characteristic values exist for 3 generations. Their key words are work, good sense, and constant searching of an irreproachable quality.\n\nBy coming to the estate, you will experience a simple, authentic and friendly welcome with the comments of the winemakers, from the grape to the bottle. You will taste Monbazillac, highly awarded, as well as Bergerac rosé, dry, soft and Côtes de Bergerac. \n\nLocated 10km away from Bergerac at the south, the property is surrounded by vines from different grape varieties (Sauvignon, Sémillon, Merlot, Cabernet) and it is near the Château de Bridoire that you should visit if you are around!\nYou will also be close to the Bastides of Périgord.\n",
-      "id": "DEGAQU024V5076S6"
-    },
-    {
-      "description": "Exploitation representing 20 ha of vines and 7 ha of plum trees located on the Monestier south hills.",
-      "id": "DEGAQU024V5076SA"
-    },
-    {
-      "description": "We are a family exploitation, working for four generations. We produce Bergerac wines traditionally with a great respect from quality and features of our vineyard.\nYou will be able to discover our great range of wines, with for example varietal wines.\nWe will welcome you in our shop and propose a tasting session of our local products and a visit of our property.\n",
-      "id": "DEGAQU024V5076T4"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V5076TR"
-    },
-    {
-      "description": "Viticultural property standing on a hill which was cultivated by Benedictine monks between the XIIth and XVIth centuries.\nProduction of red, rosé, white, dry and sweet Bergerac wines, and Montagne St Emilion. \nBelongs to the “Route des Vins de Bergerac” (i.e. Bergerac wine road).\nFriendly welcome.\n",
-      "id": "DEGAQU024V5077CU"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V507LYM"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V507O9S"
-    },
-    {
-      "description": "For 500 years, the Goubault de Brugière family produces wine in our region of Bergerac. The property represents 24 hectares on the hills that go along the Dordogne.",
-      "id": "DEGAQU024V508CW2"
-    },
-    {
-      "description": "Situated between Saint-Emilion and Sarlat, in Bergerac vineyard, Château Haut-Fongrive stands on the south region peak and south-west hills which are important pros for the quality of wines.\nWith a strong interest in wine, Doriane decided to settle in 2006 as a winemaker. Everything is to be done. The warehouse construction started in 2007 for the very first vinification of the estate.\nGreat vintage and expertise recognized by Vinalie d’Or Internationale (competition for the bests wines on an international scale).\nJulien has joined his wife in this adventure since 2010. His youth and passion for the vine give a great boost to the exploitation. He works on improving the vineyard.\nWith the arrival of new technologies, there is an update for the wine warehouse and for the bottling room.\nWith market and technique, and their combination can be found today in today in their wines.",
-      "id": "DEGAQU024V508D06"
-    },
-    {
-      "description": "4 hectares owned in 2015",
-      "id": "DEGAQU024V508D0Q"
-    },
-    {
-      "description": "The foundations of the buildings dates from the Hundred Years War. The estate also welcomes collection cars and horses, our two other passions. ",
-      "id": "DEGAQU024V508D0Y"
-    },
-    {
-      "description": "The Château Thénac estate is situated to the east of Bordeaux in the heart of the Périgord region, famed for its picturesque countryside, medieval castles, fine wines and black truffles.\n\nThe estate is located in the hamlet of Thénac and comprises in total almost 200 hectares.\n\nThe house is surrounded by rolling vineyards as far as the eye can see but the estate also includes plum orchards, ancient woodlands, lakes and farmland.\n\nThe property includes a small private Roe deer park as well as sheep, goats and other animals. The lakes host a menagerie of ducks and other wildfowl including a pair of rare black swans – the inspiration behind the label of the eau de vie made from our own plum orchards.\n\nThe principal parts of the Château are built on the ruins of a Benedictine Priory dating as far back as the 12th century (1109). ",
-      "id": "DEGAQU024V508D1D"
-    },
-    {
-      "description": "At the heart of a great vinicultural estate of 19 hectares stand the wonderful Chateau of Montaigne, a XIXth century home with its period furniture, and the historical tower of Michel Eyquem de Montaigne, the famous humanist who wrote Les Essais. \n \nAll year you can walk around these places full of history during guided tours and finish with a tasting of our wines. A visual and tasty voyage that will leave you breathless! \n\nCheck out the schedule for the guided tours.\n",
-      "id": "DEGAQU024V508D27"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V50ASLN"
-    },
-    {
-      "description": "The Château of Miaudoux is a farm that Gérard and Nathalie Cuisset have owned since 1987. They started their production and commercialization of Bergerac wine (white, dry and sweet, rosé and red) and Saussignac representing 25ha, and also a production of Agen prune representing 8ha.\n\nIn 2003, they decided to go from farming to organic agriculture, certified by Ecocert.\n\nIn 2014, Samuel and Lisa, their son and his wife, have joined the exploitation and now it is also converted in biodynamics, certified by Demeter.\n\nHence, some young parcels are worked with a horse in order to have a contact with the wild world and to minimize the tillage impact.\nOf course they are looking for the quality of their wines.\n",
-      "id": "DEGAQU024V50ASZG"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V50ATZW"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V50AU01"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V50AU0C"
-    },
-    {
-      "description": null,
-      "id": "DEGAQU024V50B0PK"
-    },
-    {
-      "description": "The Clos du Pech Bessou is located in the South Bergeracois in the town of Plaisance and near Lot-et-Garonne, it is a touristic region because it is near the fortified towns of Eymet and Issigeac.\n\nThe Clos du Pech Bessou, little vineyard of 8 ha, is under the family tradition of Sylvie and Pascal THOMASSIN. They highlight the authenticity of the terroir. For us, vine culture is very important (sustainable agriculture) in order to have quality fruits that will allow us to have a vinification potential and to please our customers.\n\nThe grape varieties are: Merlot, Cabernet, Malbec, Sémillon and Muscadelle. They are the origin of the various and different types of wines.\n\nWe invite you to come and taste our wines with a simple and friendly welcome.\n\nSee you soon! \n",
-      "id": "DEGAQU047FS000AP"
+      "websites": [],
+      "updated": 1539940045949
     }
   ]
 }

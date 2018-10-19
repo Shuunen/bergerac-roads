@@ -1,4 +1,5 @@
 import { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } from './common'
+import find from 'lodash/find'
 const isEqual = require('fast-deep-equal')
 const jsonServer = require('json-server')
 const server = jsonServer.create()
@@ -10,7 +11,7 @@ let stopProcessing = false
 let objectCreated = 0
 let objectUpdated = 0
 let objectSkipped = 0
-const objectMapping = {
+const urlsByType = {
   domains: remoteDomainsUrl,
   traductions: remoteDomainsUKTraductionsUrl,
 }
@@ -32,6 +33,7 @@ const remoteVineyardsToLocal = {
   Saussignac: 'saussignac',
 }
 const remoteVineyards = Object.keys(remoteVineyardsToLocal)
+let traductions = []
 
 /**
  * Convert ugly string with variable separators into nice arrays
@@ -45,39 +47,35 @@ function getArrayFromRemoteTag(tag, separator) {
   return tag.split(separator).filter(data => data.length)
 }
 
-
-function getLocalTraduction(syndicObjectID) {
-
-    return localApi
-        .get('/traductions/' + syndicObjectID)
-        .then(response => {
-            const des = response.data
-            return des.description
-        })
-
+async function getRemoteDomainTraduction(id) {
+  if (traductions.length === 0) {
+    console.log('getting remote domain traductions once...')
+    traductions = await remoteApi.get(urlsByType.traductions).then(r => r.data.value)
+  }
+  if (justProcessOne) {
+    console.log('get remote domain traduction for id : ' + id)
+  }
+  const traduction = find(traductions, { SyndicObjectID: id }) || {}
+  // console.log('traduction.DESCRIPTIF', traduction.DESCRIPTIF)
+  return traduction
 }
-
 
 /**
  * Convert large remote data into data that we will store in our db
  * Look at sample-domains.json to see remote data structure
  * @param {Domain} remote the domain data from remote API
  */
-function remoteDomainToLocal(remote) {
-<<<<<<< HEAD
-  // console.log('converting remote data to local')
-   let des =  getLocalTraduction(remote.SyndicObjectID)
-
-=======
+async function remoteDomainToLocal(remote) {
+  const remoteTrad = await getRemoteDomainTraduction(remote.SyndicObjectID)
   if (justProcessOne) {
     console.log('converting remote data to local')
+    // console.log('remoteTrad found :', remoteTrad)
   }
->>>>>>> 1edbf4bc7c40bbce8af9cf83a9cfa0bc0e1a8028
   const local = {
     active: true,
     activities: remote.ANIMATIONS,
     description: remote.DESCRIPTIF,
-    descriptionUk: des,
+    descriptionEn: remoteTrad.DESCRIPTIF,
     id: remote.SyndicObjectID,
     labels: getLabelsFromRemoteDomain(remote),
     langs: getArrayFromRemoteTag(remote.LANGPARLE, '#'),
@@ -104,13 +102,6 @@ function remoteDomainToLocal(remote) {
   return local
 }
 
-function remoteTraductionToLocal(remote) {
-  return {
-    description: remote.DESCRIPTIF,
-    id: remote.SyndicObjectID
-  }
-}
-
 function getVineyardsFromRemoteDomain(domain) {
   let vineyards = []
   remoteVineyards.forEach(vineyard => {
@@ -128,13 +119,9 @@ function getVineyardsFromRemoteDomain(domain) {
 }
 
 function getTagsFromRemoteDomain(domain) {
-<<<<<<< HEAD
-  // console.log('Domaine = ', domain)
-=======
   if (justProcessOne) {
     console.log('get tags from remote', domain)
   }
->>>>>>> 1edbf4bc7c40bbce8af9cf83a9cfa0bc0e1a8028
   let tags = []
   let prestations = domain['PRESTATIONS']
 
@@ -299,7 +286,7 @@ function patchLocalDomain(data, type) {
     })
 }
 
-function updateLocalObject(remoteObject, type = 'domains') {
+async function updateLocalObject(remoteObject, type = 'domains') {
   if (stopProcessing) {
     throw Error('stop processing requested')
   }
@@ -308,9 +295,7 @@ function updateLocalObject(remoteObject, type = 'domains') {
   let newData = ''
 
   if (type === 'domains') {
-    newData = remoteDomainToLocal(remoteObject)
-  } else if (type === 'traductions') {
-    newData = remoteTraductionToLocal(remoteObject)
+    newData = await remoteDomainToLocal(remoteObject)
   } else {
     throw Error('update local object does not handle type "' + type + '"')
   }
@@ -352,68 +337,12 @@ async function updateLocalObjects(remoteObjects, type) {
   }
 }
 
-<<<<<<< HEAD
-// https://github.com/uxitten/polyfill/blob/master/string.polyfill.js
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd
-if (!String.prototype.padEnd) {
-  String.prototype.padEnd = function padEnd(targetLength, padString) {
-    targetLength = targetLength >> 0 // floor if number or convert non-number to 0;
-    padString = String((typeof padString !== 'undefined' ? padString : ' '))
-    if (this.length > targetLength) {
-      return String(this)
-    } else {
-      targetLength = targetLength - this.length
-      if (targetLength > padString.length) {
-        padString += padString.repeat(targetLength / padString.length) // append to original to ensure we are longer than needed
-      }
-      return String(this) + padString.slice(0, targetLength)
-    }
-  }
-}
-
-=======
->>>>>>> 1edbf4bc7c40bbce8af9cf83a9cfa0bc0e1a8028
 function showSummary(type) {
   const box = 30
   console.log('╔' + '═'.repeat(box) + '╗')
   console.log('║ import summary               ║')
   console.log('║ file : db.json               ║')
   console.log('║ ---                          ║')
-<<<<<<< HEAD
-  console.log('║ ', type,'(s) created :', String(domainCreated).padEnd(box - 22), '║')
-  console.log('║ ', type,'(s) updated :', String(domainUpdated).padEnd(box - 22), '║')
-  console.log('║ ', type,'(s) skipped :', String(domainSkipped).padEnd(box - 22), '║')
-  console.log('╚' + '═'.repeat(box) + '╝')
-}
-
-
-function getRemoteObjects(type) {
-    console.log('getting remote ' + type + ' from api')
-
-    let apiurl = objectMapping[type]
-
-    console.log('using url :', apiurl)
-    remoteApi.get(apiurl)
-        .then(response => {
-            if (response.data) {
-                const remoteObjects = response.data.value
-                if (justProcessOne) {
-                    return updateLocalObjects(remoteObjects.splice(0, 1), type)
-                }
-                return updateLocalObjects(remoteObjects, type)
-            } else {
-                console.error('failed at getting remote traductions')
-            }
-        })
-        .then(() => showSummary(type))
-        .catch(error => {
-            console.error(error)
-            stopProcessing = true
-        })
-        .then(() => {
-            setTimeout(() => process.exit(0), 1000)
-        })
-=======
   console.log('║ ' + type + ' created :', objectCreated)
   console.log('║ ' + type + ' updated :', objectUpdated)
   console.log('║ ' + type + ' skipped :', objectSkipped)
@@ -426,7 +355,7 @@ async function getRemoteObjects(type) {
   objectSkipped = 0
   console.log('getting remote ' + type + ' from api')
 
-  let apiurl = objectMapping[type]
+  let apiurl = urlsByType[type]
   console.log('using url :', apiurl)
 
   return remoteApi.get(apiurl)
@@ -450,11 +379,9 @@ async function getRemoteObjects(type) {
 
 async function start() {
   console.log('Json Server is running')
-  await getRemoteObjects('traductions')
   await getRemoteObjects('domains')
   await pause(1000)
   process.exit(0)
->>>>>>> 1edbf4bc7c40bbce8af9cf83a9cfa0bc0e1a8028
 }
 
 // start Json Server
