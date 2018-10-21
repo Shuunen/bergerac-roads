@@ -27,6 +27,12 @@
     "alcoolWarning": "Alcohol abuse is dangerous for your health, consume with moderation",
     "copyright": "Bergerac Duras Wines ©️ 2018"
   },
+  "domain": {
+    "unknownTitle": "Unknown domain",
+    "unknownMessage": "Sorry but this domain does not seems to exists.",
+    "sendMailSubject": "Bergerac Roads - Contact",
+    "sendMailBody": "Insert your message here. --- Send from Bergerac Roads website"
+  },
   "last-domains": {
     "header": "Domains of Bergerac"
   },

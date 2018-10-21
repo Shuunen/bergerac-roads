@@ -27,6 +27,12 @@
     "alcoolWarning": "L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
     "copyright": "Vins de Bergerac Duras ©️ 2018"
   },
+  "domain": {
+    "unknownTitle": "Domaine inconnu",
+    "unknownMessage": "Désolé mais ce domaine n'a pas été trouvé.",
+    "sendMailSubject": "Routes du Bergerac - Prise de contact",
+    "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac"
+  },
   "last-domains": {
     "header": "Domaines de Bergerac"
   },
