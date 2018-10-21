@@ -100,7 +100,7 @@ img:not([src]) {
   .encart {
     margin-bottom: 20px;
 
-    .title, .subtitle, p, ul {
+    .title, .subtitle, p, ul, .line {
       max-width: 920px;
       margin: 0 auto 10px;
       &.title {
