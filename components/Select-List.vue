@@ -16,6 +16,7 @@
       </div>
       <div class="line">
         <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.calcItinerary') }}</el-button>
+        <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
@@ -186,6 +187,14 @@ export default {
       })
     },
     */
+    sendItineraryByMail() {
+      const mail = ''
+      const subject = this.$t('search.sendItinerarySubject')
+      const body = this.$t('search.sendItineraryBody')
+      const url = document.location.href
+      // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
+      window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
+    },
     preselectItems(itemIds) {
       console.log('preselecting domains...')
       this.checkedItems = []
@@ -332,6 +341,12 @@ export default {
       color: $green-d2;
     }
   }
+  .el-button {
+    flex: none;
+  }
+  .el-button + .el-button {
+    margin-left: 12px;
+  }
   .el-checkbox-group {
     max-width: 100%;
     height: 100%;
@@ -339,8 +354,7 @@ export default {
     overflow-y: auto;
     overflow-x: hidden;
     .el-checkbox-button {
-      &,
-      .el-checkbox-button__inner {
+      &, .el-checkbox-button__inner {
         display: block;
       }
       .el-checkbox-button__inner {
@@ -376,11 +390,8 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: 0.5rem;
+      margin-top: .5rem;
     }
-  }
-  .el-button {
-    flex: none;
   }
   .el-icon-location-outline {
     transform: scaleX(1.7) scaleY(1.8) translateY(-1px) translateX(2px);
