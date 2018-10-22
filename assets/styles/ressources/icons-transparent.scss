@@ -1,1 +1,39 @@
-// transparent icons
+$accessibilitee-x: 0;
+$accessibilitee-y: 0;
+$accessibilitee-width: 285px;
+$accessibilitee-height: 284px;
+$accessibilitee: $accessibilitee-x $accessibilitee-y $accessibilitee-width $accessibilitee-height;
+$camping-car-x: -285px;
+$camping-car-y: 0;
+$camping-car-width: 285px;
+$camping-car-height: 284px;
+$camping-car: $camping-car-x $camping-car-y $camping-car-width $camping-car-height;
+$hebergement-x: 0;
+$hebergement-y: -284px;
+$hebergement-width: 285px;
+$hebergement-height: 284px;
+$hebergement: $hebergement-x $hebergement-y $hebergement-width $hebergement-height;
+$restaurant-x: -285px;
+$restaurant-y: -284px;
+$restaurant-width: 285px;
+$restaurant-height: 284px;
+$restaurant: $restaurant-x $restaurant-y $transparent-restaurant-width $transparent-restaurant-height;
+
+@mixin transparent-sprite-image {
+  background-image: url("#{$cdn}/images/icons.png");
+}
+@mixin transparent-sprite-position($sprite) {
+  background-position: nth($sprite, 1) nth($sprite, 2);
+}
+@mixin transparent-sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin transparent-sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@mixin transparent-sprite($sprite) {
+  @include transparent-sprite-image;
+  @include transparent-sprite-position($sprite);
+  @include transparent-sprite-width($sprite);
+  @include transparent-sprite-height($sprite);
+}
