@@ -8,12 +8,12 @@
 }
 
 .parent-width {
-  width: 100%
+  width: 100%;
 }
 
 .parent-size {
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 .line, .col {
@@ -40,7 +40,7 @@
 .grappe {
   height: 80px;
   width: 60px;
-  background-image: url(/images/grappe.svg); /* DO NOT USE CDN FOR SVG */
+  background-image: url('http://bergerac.lebowsky-dev.xyz/images/grappe.svg'); /* DO NOT USE CDN FOR SVG */
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
