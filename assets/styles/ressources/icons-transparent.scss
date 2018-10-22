@@ -17,7 +17,7 @@ $restaurant-x: -285px;
 $restaurant-y: -284px;
 $restaurant-width: 285px;
 $restaurant-height: 284px;
-$restaurant: $restaurant-x $restaurant-y $transparent-restaurant-width $transparent-restaurant-height;
+$restaurant: $restaurant-x $restaurant-y $restaurant-width $restaurant-height;
 
 @mixin transparent-sprite-image {
   background-image: url("#{$cdn}/images/icons.png");
