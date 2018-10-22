@@ -107,7 +107,7 @@ $english-flag: $english-flag-x $english-flag-y $english-flag-width $english-flag
   height: nth($sprite, 4);
 }
 @mixin sprite($sprite) {
-  background-size: 791px;
+  background-size: 792px;
   @include sprite-image;
   @include sprite-position($sprite);
   @include sprite-width($sprite);
