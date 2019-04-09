@@ -1,25 +1,30 @@
 <template>
   <el-container direction="vertical" class="page-encart page-domaine">
-    <Header />
+    <Header/>
     <div class="color-line"/>
     <div class="background" :style="backgroundStyle"/>
 
+    <el-main>
+      <div class="encart" v-loading="loading">
+        <div class="line">
+          <h1 class="title">{{ data.title }}</h1>
+        </div>
 
-    <el-container>
+        <div class="line quick-actions">
+          <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">{{ data.mail }}</el-button>
+          <el-button
+            v-show="data.phones && data.phones.length"
+            v-for="phone in data.phones"
+            :key="phone"
+            icon="el-icon-phone-outline"
+          >{{ phone }}</el-button>
+        </div>
 
-      <el-main>
-        <div class="encart" v-loading="loading">
-          <div class="line">
-            <h1 class="title">{{ data.title }}</h1>
-          </div>
-
-          <div class="line quick-actions">
-            <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">{{ data.mail }}</el-button>
-            <el-button v-show="data.phones && data.phones.length" v-for="phone in data.phones" :key="phone" icon="el-icon-phone-outline">{{ phone }}</el-button>
-          </div>
-
-          <p v-if="data.websites && data.websites.length"><strong>Site web</strong>&nbsp;: {{ data.websites.join(', ') }}</p>
-          <!--
+        <p v-if="data.websites && data.websites.length">
+          <strong>Site web</strong>
+          &nbsp;: {{ data.websites.join(', ') }}
+        </p>
+        <!--
           <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
 
 
@@ -32,34 +37,39 @@
               {{ tag }}
             </el-tag>
           </el-row>
-          -->
+        -->
 
-          <div class="glasses line start">
-            <strong>Cépages</strong>&nbsp;:
-            <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
-          </div>
-
-          <div class="separator line">
-            <i class="el-icon-more-outline" />
-          </div>
-
-          <el-container direction="vertical" v-if="!data.message" class="description">
-            <p v-if="$i18n.locale === 'fr'">{{ data.description }} </p>
-            <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }} </p>
-          </el-container>
-
-          <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon/>
-          <div class="col">
-            <nuxt-link :to="$i18n.path('')">
-              <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-            </nuxt-link>
-          </div>
+        <div class="glasses line start">
+          <strong>Cépages</strong>&nbsp;:
+          <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine"/>
         </div>
-      </el-main>
-    </el-container>
 
+        <div class="separator line">
+          <i class="el-icon-more-outline"/>
+        </div>
 
-    <Footer />
+        <el-container direction="vertical" v-if="!data.message" class="description">
+          <p v-if="$i18n.locale === 'fr'">{{ data.description }}</p>
+          <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }}</p>
+        </el-container>
+
+        <el-alert
+          v-if="data.message"
+          :title="data.message"
+          center
+          :closable="false"
+          type="warning"
+          show-icon
+        />
+        <div class="col">
+          <nuxt-link :to="$i18n.path('')">
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+          </nuxt-link>
+        </div>
+      </div>
+    </el-main>
+
+    <Footer/>
   </el-container>
 </template>
 
