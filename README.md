@@ -21,7 +21,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Note
 
-Build command on Netlify used to be `npm rebuild node-sass && yarn build` for a forgotten reason.
+Build command on Netlify used to be `npm rebuild node-sass && yarn build` for a forgotten reason...
 
 ## Thanks
 
