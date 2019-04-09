@@ -20,3 +20,6 @@ sw.*
 # working with yarn
 yarn-error.log
 package-lock.json
+
+# Project rules
+.vscode
