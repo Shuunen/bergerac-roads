@@ -3,7 +3,7 @@
     <el-main>
 
       <h2>{{ $t('search.header') }}</h2>
-      <h3>{{ $t('search.subheader') }}</h3>
+      <h3>{{ $t('search.subheading') }}</h3>
 
       <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
         <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">

@@ -38,7 +38,7 @@
   },
   "search": {
     "header": "My wine route",
-    "subheader": "Choose from the most popular routes or use the filters below to create your own.",
+    "subheading": "Choose from the most popular routes or use the filters below to create your own.",
     "itinerary": "itinerary",
     "noEntries": "We did not find any domain corresponding to this search, we advise you to make a new less specific search.",
     "filterDomains": "Filter domains",
@@ -57,8 +57,8 @@
     "sendItinerarySubject": "Bergerac Roads - My itinerary",
     "sendItineraryBody": "Here is the itinerary I made : ",
     "helpStart": "Fill the starting point or click on \"Find me\"",
-    "helpCreateBefore": "Select at leat one domain and one starting point to create an itinerary.",
-    "helpCreateAfter": "Select at leat one domain and one starting point to create an itinerary.",
+    "helpCreateBefore": "Select at least one domain and one starting point to create an itinerary.",
+    "helpCreateAfter": "Select at least one domain and one starting point to create an itinerary.",
     "findMe": "Find me",
     "findMeDisallowed": "Geolocation must be allowed for this feature to work.",
     "findMeFailed": "Geolocation is not supported by this browser."
