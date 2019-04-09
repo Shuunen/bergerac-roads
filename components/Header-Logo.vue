@@ -14,8 +14,9 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
+@import "@/assets/styles/ressources/variables.scss";
+
 .header-logo {
   display: block;
   padding: 0 10px;

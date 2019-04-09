@@ -13,13 +13,13 @@ Vue.prototype.$db = {
     return Promise.resolve(cloneDeep(domain))
   },
   getDomainsByTags: (tags) => {
-    let domains = []
-    for (let domain of db.domains) {
+    const domains = []
+    for (const domain of db.domains) {
       if (domain.hasOwnProperty('tags') && tags.every(tag => domain.tags.includes(tag))) {
         domains.push(domain)
       }
     }
     return Promise.resolve(cloneDeep(domains))
   },
-  getTags: () => Promise.resolve(cloneDeep(db.tags))
+  getTags: () => Promise.resolve(cloneDeep(db.tags)),
 }

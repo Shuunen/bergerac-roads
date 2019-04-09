@@ -1,49 +1,66 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
-
     <div class="col start parent-height">
-      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">
+        {{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}
+      </div>
 
-      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
+      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">
+        1) {{ $t('search.helpStart') }}
+      </div>
+
       <div class="line">
         <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
-          <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+          <el-button slot="append" @click="getNavigatorPosition">
+            {{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" />
+          </el-button>
         </el-input>
       </div>
 
       <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
         2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
       </div>
+
       <div class="line">
-        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.calcItinerary') }}</el-button>
-        <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
+        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">
+          {{ $t('search.calcItinerary') }}
+        </el-button>
+
+        <el-button :disabled="!canCreate" @click="sendItineraryByMail">
+          {{ $t('search.sendItinerary') }}
+        </el-button>
       </div>
+
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
-        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">{{ $t('search.filterDomains') }}</el-button>
+        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">
+          {{ $t('search.filterDomains') }}
+        </el-button>
       </div>
       <div class="line list" v-show="itemsSorted.length">
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
           <el-checkbox-button v-for="domain in itemsSorted" :key="domain.id" :label="domain.title">
             <Domain :data="domain" :size="'inline'" />
-            <el-button class="view-domain" :title="$t('domain.view')" @click="viewDomain(domain)"><i class="el-icon-view" /></el-button>
+            <el-button class="view-domain" :title="$t('domain.view')" @click="viewDomain(domain)">
+              <i class="el-icon-view" />
+            </el-button>
           </el-checkbox-button>
         </el-checkbox-group>
       </div>
 
-      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
-
+      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">
+        {{ $t('search.noEntries') }}
+      </div>
     </div>
   </div>
-
 </template>
 
 <script>
-import Domain from './Domain.vue'
 import { gmapApi } from 'vue2-google-maps'
-import { eventBus } from '../store'
 import orderBy from 'lodash/orderBy'
 import debounce from 'lodash/debounce'
+import { eventBus } from '../store'
+import Domain from './Domain.vue'
 
 export default {
   components: {
@@ -88,9 +105,9 @@ export default {
   },
   mounted() {
     // Selects or not by clicking on the button in infowindow.
-    eventBus.$on('select-marker', selectedMarker => {
+    eventBus.$on('select-marker', (selectedMarker) => {
       console.log('on select-marker')
-      let index = this.checkedItems.findIndex(
+      const index = this.checkedItems.findIndex(
         item => item === selectedMarker.title,
       )
       if (index === -1) {
@@ -107,23 +124,16 @@ export default {
 
     eventBus.$on('preselect-items', this.preselectItems)
 
-    eventBus.$on(
-      'domains-search-complete',
-      () => (this.filteringDomains = false),
-    )
+    eventBus.$on('domains-search-complete', () => (this.filteringDomains = false))
 
-    eventBus.$on('set-starting-point', async position => {
+    eventBus.$on('set-starting-point', (position) => {
       if (typeof position === 'object') {
-        console.log(
-          'set-starting-point (list) : converting object to string...',
-        )
+        console.log('set-starting-point (list) : converting object to string...')
         this.getCityByCoordinates(position.coords)
       } else {
         this.startingPoint = position
         this.loading = false
-        console.log(
-          'set-starting-point (list) : now set to "' + this.startingPoint + '"',
-        )
+        console.log('set-starting-point (list) : now set to "' + this.startingPoint + '"')
       }
     })
 
@@ -148,7 +158,7 @@ export default {
         return
       }
       console.log('in initAutoComplete')
-      let autocomplete = new this.google.maps.places.Autocomplete(
+      const autocomplete = new this.google.maps.places.Autocomplete(
         this.$refs.autocomplete.$refs.input,
         {
           // Restrict autocomplete to results in France.
@@ -199,10 +209,11 @@ export default {
     preselectItems(itemIds) {
       console.log('preselecting domains...')
       this.checkedItems = []
-      itemIds.forEach(itemId => {
-        this.checkedItems.push(
-          this.items.find(item => item.id === itemId).title,
-        )
+      itemIds.forEach((itemId) => {
+        const item = this.items.find(i => i.id === itemId)
+        if (item && item.title) {
+          this.checkedItems.push(item.title)
+        }
       })
       this.emitCheckedItems(this.checkedItems)
     },
@@ -256,7 +267,7 @@ export default {
     },
     getCityFromAddressComponents(components) {
       let city = ''
-      components.forEach(component => {
+      components.forEach((component) => {
         if (component.types.includes('locality')) {
           city = component.short_name
         }
@@ -296,9 +307,9 @@ export default {
         eventBus.$emit('show-map')
       }
       // Necessary to emit the checked items with their coordinates.
-      let formattedCheckedItems = []
-      for (let checkedItem of this.checkedItems) {
-        let originalCheckedItem = this.items.find(
+      const formattedCheckedItems = []
+      for (const checkedItem of this.checkedItems) {
+        const originalCheckedItem = this.items.find(
           item => item.title === checkedItem,
         )
         formattedCheckedItems.push({
@@ -324,12 +335,14 @@ export default {
     },
     viewDomain(domain) {
       eventBus.$emit('goto-domain', domain)
-    }
+    },
   },
 }
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/ressources/variables.scss';
+
 .select-list-container {
   padding: 1.5rem;
   background-color: $white;
@@ -358,7 +371,7 @@ export default {
     overflow-y: auto;
     overflow-x: hidden;
     .el-checkbox-button {
-        display: block;
+      display: block;
 
       .el-checkbox-button__inner {
         display: flex;
@@ -403,7 +416,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
   .el-icon-location-outline {

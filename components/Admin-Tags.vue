@@ -1,25 +1,35 @@
 <template>
   <el-container direction="vertical" class="admin-table">
-
     <h2>Mots clés</h2>
 
     <div class="line start">
-
       <div class="loading line" v-if="loading">
-        <i class="el-icon-loading"/>
+        <i class="el-icon-loading" />
       </div>
 
-      <el-tag :key="tag.id" v-for="tag in tags" closable
-              :disable-transitions="false" @close="deleteTag(tag.id)">
+      <el-tag
+        :key="tag.id"
+        v-for="tag in tags"
+        closable
+        :disable-transitions="false"
+        @close="deleteTag(tag.id)"
+      >
         {{ tag.name }}
       </el-tag>
 
-      <el-input class="input-new-tag" v-if="inputVisible" v-model="inputValue" ref="saveTagInput" size="mini"
-                @keyup.enter.native="handleInputConfirm" @blur="handleInputConfirm"/>
+      <el-input class="input-new-tag"
+                v-if="inputVisible"
+                v-model="inputValue"
+                ref="saveTagInput"
+                size="mini"
+                @keyup.enter.native="handleInputConfirm"
+                @blur="handleInputConfirm"
+      />
 
-      <el-button v-else class="button-new-tag" size="small" @click="showInput">+ Ajouter</el-button>
+      <el-button v-else class="button-new-tag" size="small" @click="showInput">
+        + Ajouter
+      </el-button>
     </div>
-
   </el-container>
 </template>
 
@@ -42,7 +52,7 @@ export default {
       this.loading = true
       fetch(this.api)
         .then(response => response.json())
-        .then(tags => {
+        .then((tags) => {
           this.tags = tags
           this.loading = false
         })
@@ -68,7 +78,7 @@ export default {
     },
 
     handleInputConfirm() {
-      let inputValue = this.inputValue
+      const inputValue = this.inputValue
       if (inputValue) {
         this.addTag(inputValue)
       }
@@ -80,6 +90,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .loading {
   height: 32px;
   width: 32px;

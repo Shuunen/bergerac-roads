@@ -1,6 +1,6 @@
 <template>
   <el-container direction="vertical" class="home-top">
-    <div class="color-line"/>
+    <div class="color-line" />
     <div class="line background" v-lazy:background-image="images.background">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .home-top {
   z-index: 1;
   position: relative;

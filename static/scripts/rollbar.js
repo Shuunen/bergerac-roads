@@ -1,13 +1,14 @@
 if (window.location.hostname !== 'localhost') {
-  var _rollbarConfig = {
+  let _rollbarConfig = {
     accessToken: '4203d12aa2be412aa0b4b38454122bac',
     captureUncaught: true,
     captureUnhandledRejections: true,
     payload: {
       environment: 'production',
-    }
+    },
   }
   // Rollbar Snippet
+  /* eslint-disable */
   !(function(r) {
     function o(n) {
       if (e[n]) return e[n].exports
@@ -337,4 +338,5 @@ if (window.location.hostname !== 'localhost') {
     },
   ])
   // End Rollbar Snippet
+  /* eslint-enable */
 }

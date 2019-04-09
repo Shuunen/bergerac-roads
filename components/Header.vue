@@ -1,11 +1,21 @@
 <template>
   <el-container class="header" :class="[ floating ? 'floating': 'fixed' ]">
-    <div class="wrapper wrapper--logo"><Logo /></div>
-    <div class="wrapper wrapper--charter hidden-xs-and-down"><nuxt-link :to="$i18n.path('charter')">{{ $t('charter.title') }}</nuxt-link></div>
+    <div class="wrapper wrapper--logo">
+      <Logo />
+    </div>
+    <div class="wrapper wrapper--charter hidden-xs-and-down">
+      <nuxt-link :to="$i18n.path('charter')">
+        {{ $t('charter.title') }}
+      </nuxt-link>
+    </div>
     <div class="push-right hidden-sm-and-up" />
-    <div class="wrapper wrapper--vineyards hidden-xxs-only"><Vineyards /></div>
+    <div class="wrapper wrapper--vineyards hidden-xxs-only">
+      <Vineyards />
+    </div>
     <div class="push-right hidden-xs-and-up" />
-    <div class="wrapper wrapper--lang"><Lang /></div>
+    <div class="wrapper wrapper--lang">
+      <Lang />
+    </div>
   </el-container>
 </template>
 
@@ -30,6 +40,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .header {
   width: 100%;
   padding: 0 20px;
@@ -39,7 +51,6 @@ export default {
     z-index: 10;
   }
 }
-// Next selector is temporary
 .menu {
   flex: 1;
   display: flex;

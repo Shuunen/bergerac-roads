@@ -1,6 +1,5 @@
 <template>
   <div class="search-bar">
-
     <div class="filters">
       <el-checkbox-group v-model="checkedFilters" @change="handleCheckedCitiesChange">
         <el-checkbox-button v-for="filter in filters" :label="filter.name" :key="filter.key" size="medium" border>
@@ -16,11 +15,13 @@
         </div>
       </el-col>
       <el-col :span="8">
-        <div class="grid-content bg-purple-light"/>
+        <div class="grid-content bg-purple-light" />
       </el-col>
       <el-col :span="8">
-        <div class="grid-content bg-purple"/>
-        <el-button type="primary" round icon="el-icon-refresh">Create</el-button>
+        <div class="grid-content bg-purple" />
+        <el-button type="primary" round icon="el-icon-refresh">
+          Create
+        </el-button>
       </el-col>
     </el-row>
 
@@ -28,15 +29,18 @@
       <li v-for="domaine in domaines" :key="domaine.key">
         <h4>{{ domaine.label }}</h4>
         <div>
-          <div v-for="filter in domaine.filters" :key="filter.key">{{ filter.label }}</div>
+          <div v-for="filter in domaine.filters" :key="filter.key">
+            {{ filter.label }}
+          </div>
         </div>
       </li>
     </ul>
-
   </div>
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .search-bar {
   background-color: #ffffff6b;
   padding: 20px;
@@ -46,14 +50,13 @@
 }
 </style>
 
-
 <script>
 const filters = [
   { key: 0, label: 'Vin Bio', name: 'filtre1' },
   { key: 1, label: 'Domaine skiable', name: 'filtre2' },
   { key: 2, label: 'Vin super bon', name: 'filtre3' },
 ]
-let domaines = [
+const domaines = [
   {
     key: 0,
     label: 'domaine 1',
@@ -115,12 +118,12 @@ export default {
     handleCheckedCitiesChange(value) {
       // console.log('handleCheckedCitiesChange value = ' + value);
 
-      let checkedCount = value.length
+      const checkedCount = value.length
       this.checkAll = checkedCount === this.filters.length
       this.isIndeterminate =
         checkedCount > 0 && checkedCount < this.filters.length
 
-      let checkedFiltersToApply = this.checkedFilters
+      const checkedFiltersToApply = this.checkedFilters
 
       this.domaines = domaines
 

@@ -18,7 +18,9 @@
               <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
             </span>
           </div>
-          <div class="description" v-if="description">{{ description }}</div>
+          <div class="description" v-if="description">
+            {{ description }}
+          </div>
         </div>
       </el-container>
     </el-card>
@@ -39,7 +41,7 @@ const descriptionSize = {
 }
 
 const imageSize = {
-  inline:'60x60',
+  inline: '60x60',
   small: '587x260',
   medium: '587x260',
   large: '658x260',
@@ -102,9 +104,9 @@ export default {
       return label
     },
     wines: function() {
-      let wines = []
+      const wines = []
       if (this.data.tags && this.data.tags.length) {
-        winesToDisplay.forEach(wine => {
+        winesToDisplay.forEach((wine) => {
           const tag = 'vin-' + wine
           if (this.data.tags.includes(tag)) {
             wines.push(tag)
@@ -146,12 +148,15 @@ export default {
         return
       }
       eventBus.$emit('goto-domain', this.data)
-    }
+    },
   },
 }
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/variables.scss";
+
 .domain {
   &,
   & a {

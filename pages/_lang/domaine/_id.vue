@@ -1,23 +1,29 @@
 <template>
   <el-container direction="vertical" class="page-encart page-domaine">
-    <Header/>
-    <div class="color-line"/>
-    <div class="background" :style="backgroundStyle"/>
+    <Header />
+    <div class="color-line" />
+    <div class="background" :style="backgroundStyle" />
 
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
-          <h1 class="title">{{ data.title }}</h1>
+          <h1 class="title">
+            {{ data.title }}
+          </h1>
         </div>
 
         <div class="line quick-actions">
-          <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">{{ data.mail }}</el-button>
+          <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">
+            {{ data.mail }}
+          </el-button>
           <el-button
             v-show="data.phones && data.phones.length"
             v-for="phone in data.phones"
             :key="phone"
             icon="el-icon-phone-outline"
-          >{{ phone }}</el-button>
+          >
+            {{ phone }}
+          </el-button>
         </div>
 
         <p v-if="data.websites && data.websites.length">
@@ -26,7 +32,6 @@
         </p>
         <!--
           <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
-
 
           <a v-if="data.socialFacebook" :href="data.socialFacebook">
             <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">
@@ -41,16 +46,20 @@
 
         <div class="glasses line start">
           <strong>Cépages</strong>&nbsp;:
-          <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine"/>
+          <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
         </div>
 
         <div class="separator line">
-          <i class="el-icon-more-outline"/>
+          <i class="el-icon-more-outline" />
         </div>
 
         <el-container direction="vertical" v-if="!data.message" class="description">
-          <p v-if="$i18n.locale === 'fr'">{{ data.description }}</p>
-          <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }}</p>
+          <p v-if="$i18n.locale === 'fr'">
+            {{ data.description }}
+          </p>
+          <p v-if="$i18n.locale === 'en'">
+            {{ data.descriptionEn }}
+          </p>
         </el-container>
 
         <el-alert
@@ -63,13 +72,15 @@
         />
         <div class="col">
           <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+            <el-button icon="el-icon-arrow-left" class="back">
+              {{ $t('common.back-home') }}
+            </el-button>
           </nuxt-link>
         </div>
       </div>
     </el-main>
 
-    <Footer/>
+    <Footer />
   </el-container>
 </template>
 
@@ -125,9 +136,9 @@ export default {
       return added
     },
     wines() {
-      let wines = []
+      const wines = []
       if (this.data.tags && this.data.tags.length) {
-        winesToDisplay.forEach(wine => {
+        winesToDisplay.forEach((wine) => {
           const tag = 'vin-' + wine
           if (this.data.tags.includes(tag)) {
             wines.push(tag)
@@ -147,7 +158,7 @@ export default {
       if (matches && matches.length === 2) {
         const id = matches[1]
         this.loading = true
-        this.$db.getDomain(id).then(domain => {
+        this.$db.getDomain(id).then((domain) => {
           if (domain) {
             console.log('Domain page : got domain', domain)
             this.data = domain
@@ -176,8 +187,9 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
+@import "@/assets/styles/ressources/icons.scss";
+
 .icon.glass {
   &.vin-rouge {
     @include sprite($glass-rouge);
