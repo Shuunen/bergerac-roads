@@ -21,9 +21,16 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Note
 
-Build command on Netlify used to be `npm rebuild node-sass && yarn build` for a forgotten reason...
+Build command on Netlify is `npm rebuild node-sass && yarn build:prod`.
 
-Also this build command trick allows more deployment logging : `npm run build; sleep 500; false`
+The first part avoid this error : 
+
+``` bash
+6:18:45 PM: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+6:18:45 PM: Error: ENOENT: no such file or directory, scandir '/opt/build/repo/node_modules/node-sass/vendor'
+```
+
+And the second part is a trick to see more deployment logs on Netlify CI : `npm run build; sleep 60; false`
 
 ## Thanks
 
