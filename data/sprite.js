@@ -1,5 +1,5 @@
-import nsg from 'node-sprite-generator'
-import isInstalled from 'is-installed'
+const nsg = require('node-sprite-generator')
+const isInstalled = require('is-installed')
 
 function createPngSprite() {
   nsg({
@@ -11,7 +11,7 @@ function createPngSprite() {
     stylesheet: 'scss',
     stylesheetPath: 'assets/styles/ressources/icons-transparent.scss',
     stylesheetOptions: { prefix: 'transparent-' }
-  }, function (err) {
+  }, function(err) {
     if (err) {
       console.log('Sprite PNG failed !', err)
     } else {
@@ -38,7 +38,7 @@ function createJpgSprite() {
     spritePath: 'assets/images/icons.jpg',
     stylesheet: 'scss',
     stylesheetPath: 'assets/styles/ressources/icons.scss'
-  }, function (err) {
+  }, function(err) {
     if (err) {
       console.log('Sprite JPG failed !', err)
     } else {

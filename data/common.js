@@ -47,4 +47,4 @@ function readVariablesFromFile(fileContent) {
 }
 */
 
-export { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl }
+module.exports = { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl }

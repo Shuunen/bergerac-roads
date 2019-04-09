@@ -1,5 +1,5 @@
-import { remoteApi, remoteDomainsUrl } from './common'
-import fs from 'fs'
+const { remoteApi, remoteDomainsUrl } = require('./common')
+const fs = require('fs')
 const isEqual = require('fast-deep-equal')
 const output = './data/sample-domains.json'
 const limit = 5

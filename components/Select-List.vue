@@ -1,41 +1,58 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
-
     <div class="col start parent-height">
-      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">
+        {{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}
+      </div>
 
-      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
+      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">
+        1) {{ $t('search.helpStart') }}
+      </div>
+
       <div class="line">
         <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
-          <el-button slot="append" @click="getNavigatorPosition">{{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" /></el-button>
+          <el-button slot="append" @click="getNavigatorPosition">
+            {{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" />
+          </el-button>
         </el-input>
       </div>
 
       <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
         2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
       </div>
+
       <div class="line">
-        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">{{ $t('search.calcItinerary') }}</el-button>
-        <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
+        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">
+          {{ $t('search.calcItinerary') }}
+        </el-button>
+
+        <el-button :disabled="!canCreate" @click="sendItineraryByMail">
+          {{ $t('search.sendItinerary') }}
+        </el-button>
       </div>
+
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
-        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">{{ $t('search.filterDomains') }}</el-button>
+        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">
+          {{ $t('search.filterDomains') }}
+        </el-button>
       </div>
       <div class="line list" v-show="itemsSorted.length">
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
           <el-checkbox-button v-for="domain in itemsSorted" :key="domain.id" :label="domain.title">
             <Domain :data="domain" :size="'inline'" />
-            <el-button class="view-domain" :title="$t('domain.view')" @click="viewDomain(domain)"><i class="el-icon-view" /></el-button>
+            <el-button class="view-domain" :title="$t('domain.view')" @click="viewDomain(domain)">
+              <i class="el-icon-view" />
+            </el-button>
           </el-checkbox-button>
         </el-checkbox-group>
       </div>
 
-      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
-
+      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">
+        {{ $t('search.noEntries') }}
+      </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -107,10 +124,7 @@ export default {
 
     eventBus.$on('preselect-items', this.preselectItems)
 
-    eventBus.$on(
-      'domains-search-complete',
-      () => (this.filteringDomains = false),
-    )
+    eventBus.$on('domains-search-complete', () => (this.filteringDomains = false))
 
     eventBus.$on('set-starting-point', async position => {
       if (typeof position === 'object') {
@@ -200,9 +214,10 @@ export default {
       console.log('preselecting domains...')
       this.checkedItems = []
       itemIds.forEach(itemId => {
-        this.checkedItems.push(
-          this.items.find(item => item.id === itemId).title,
-        )
+        const item = this.items.find(i => i.id === itemId)
+        if (item && item.title) {
+          this.checkedItems.push(item.title)
+        }
       })
       this.emitCheckedItems(this.checkedItems)
     },
@@ -324,12 +339,14 @@ export default {
     },
     viewDomain(domain) {
       eventBus.$emit('goto-domain', domain)
-    }
+    },
   },
 }
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/ressources/variables.scss';
+
 .select-list-container {
   padding: 1.5rem;
   background-color: $white;
@@ -358,7 +375,7 @@ export default {
     overflow-y: auto;
     overflow-x: hidden;
     .el-checkbox-button {
-        display: block;
+      display: block;
 
       .el-checkbox-button__inner {
         display: flex;
@@ -403,7 +420,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
   .el-icon-location-outline {

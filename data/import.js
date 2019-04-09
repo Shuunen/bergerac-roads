@@ -1,5 +1,5 @@
-import { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } from './common'
-import find from 'lodash/find'
+const { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } = require('./common')
+const find = require('lodash/find')
 const isEqual = require('fast-deep-equal')
 const jsonServer = require('json-server')
 const server = jsonServer.create()

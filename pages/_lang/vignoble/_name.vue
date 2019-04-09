@@ -7,34 +7,48 @@
       <div class="encart" v-loading="loading">
         <template v-if="loading || !loading && !vineyardExists">
           <div class="line">
-            <h1 class="title">{{ $t(`vineyards.loading.title`) }}</h1>
+            <h1 class="title">
+              {{ $t(`vineyards.loading.title`) }}
+            </h1>
           </div>
           <p>{{ $t(`vineyards.loading.message`) }}</p>
         </template>
         <template v-else-if="vineyardExists">
           <!-- TODO: make a component of this : -->
           <div class="line">
-            <h1 class="title">{{ $t(`vineyards.${name}.title`) }}</h1>
+            <h1 class="title">
+              {{ $t(`vineyards.${name}.title`) }}
+            </h1>
           </div>
           <div>
             <p>{{ $t(`vineyards.${name}.information`) }}</p>
-            <h2 class="subtitle">{{ $t(`vineyards.${name}.introduction`) }}</h2>
+            <h2 class="subtitle">
+              {{ $t(`vineyards.${name}.introduction`) }}
+            </h2>
             <p>{{ $t(`vineyards.${name}.presentation`) }}</p>
-            <h2 class="subtitle">{{ $t('vineyards.titles.summary') }}</h2>
+            <h2 class="subtitle">
+              {{ $t('vineyards.titles.summary') }}
+            </h2>
             <p>{{ $t(`vineyards.${name}.summary`) }}</p>
-            <h2 class="subtitle">{{ $t('vineyards.titles.numbers') }}</h2>
+            <h2 class="subtitle">
+              {{ $t('vineyards.titles.numbers') }}
+            </h2>
             <ul>
               <li v-for="(element, index) in $t(`vineyards.${name}.numbers`)" :key="index">
                 {{ element }}
               </li>
             </ul>
-            <h2 class="subtitle">{{ $t('vineyards.titles.varieties') }}</h2>
+            <h2 class="subtitle">
+              {{ $t('vineyards.titles.varieties') }}
+            </h2>
             <ul>
               <li v-for="(element, index) in $t(`vineyards.${name}.varieties`)" :key="index">
                 {{ element }}
               </li>
             </ul>
-            <h2 class="subtitle">{{ $t('vineyards.titles.typicity') }}</h2>
+            <h2 class="subtitle">
+              {{ $t('vineyards.titles.typicity') }}
+            </h2>
             <ul>
               <li v-for="(element, index) in $t(`vineyards.${name}.typicity`)" :key="index">
                 {{ element }}
@@ -44,10 +58,14 @@
         </template>
         <template v-else>
           <div class="line">
-            <h1 class="title">{{ $t(`vineyards.error.title`) }}</h1>
+            <h1 class="title">
+              {{ $t(`vineyards.error.title`) }}
+            </h1>
           </div>
           <div>
-            <h2 class="subtitle">{{ $t(`vineyards.error.available`) }}</h2>
+            <h2 class="subtitle">
+              {{ $t(`vineyards.error.available`) }}
+            </h2>
             <ul>
               <li v-for="(vineyard, index) in vineyards" :key="index">
                 <nuxt-link :to="$i18n.path(`vignoble/${vineyard.name}`)">
@@ -59,7 +77,9 @@
         </template>
         <div class="col">
           <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
+            <el-button icon="el-icon-arrow-left" class="back">
+              {{ $t('common.back-home') }}
+            </el-button>
           </nuxt-link>
         </div>
       </div>

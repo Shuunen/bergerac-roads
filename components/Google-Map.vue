@@ -15,11 +15,10 @@
       :icon="'https://maps.google.com/mapfiles/ms/micons/'+ (marker.selected ? 'green-dot' : 'yellow')+'.png'"
       @click="openInfoWindow(marker)"
     >
-      <GmapInfoWindow
-        :opened="marker.infoWindowOpen"
-        @closeclick="marker.infoWindowOpen = false"
-      >
-        <p class="infowindow-title">{{ marker.titleWithNumber }}</p>
+      <GmapInfoWindow :opened="marker.infoWindowOpen" @closeclick="marker.infoWindowOpen = false">
+        <p class="infowindow-title">
+          {{ marker.titleWithNumber }}
+        </p>
         <div class="button-container">
           <el-button @click="selectMarker(marker)">
             {{ marker.selected ? $t('search.unselectButton') : $t('search.selectButton') }}

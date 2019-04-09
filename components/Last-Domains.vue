@@ -2,12 +2,14 @@
   <el-container direction="vertical" class="last-domains">
     <el-main>
       <div class="encart--simple" v-loading="loading">
-        <el-row >
+        <el-row>
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
-                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id"
+                  :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
+                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}"
+          />
         </div>
       </div>
     </el-main>
@@ -52,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .last-domains {
   background-color: $blanc;
   padding-bottom: 30px;

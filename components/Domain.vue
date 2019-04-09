@@ -18,7 +18,9 @@
               <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
             </span>
           </div>
-          <div class="description" v-if="description">{{ description }}</div>
+          <div class="description" v-if="description">
+            {{ description }}
+          </div>
         </div>
       </el-container>
     </el-card>
@@ -152,6 +154,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/variables.scss";
+
 .domain {
   &,
   & a {

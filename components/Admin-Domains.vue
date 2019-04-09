@@ -2,10 +2,12 @@
   <el-container direction="vertical" class="admin-table">
     <h2>Domaines et chateaux</h2>
     <el-table :data="domains" stripe :style="'width: 100%'" v-loading="loading" :row-class-name="tableRowClassName">
-      <el-table-column type="selection" width="55"/>
-      <el-table-column prop="title" label="Nom"/>
+      <el-table-column type="selection" width="55" />
+      <el-table-column prop="title" label="Nom" />
       <el-table-column label="Actif ?" width="180">
-        <template slot-scope="scope">{{ scope.row.active ? 'oui' : 'non' }}</template>
+        <template slot-scope="scope">
+          {{ scope.row.active ? 'oui' : 'non' }}
+        </template>
       </el-table-column>
     </el-table>
   </el-container>
@@ -56,6 +58,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .admin-table .el-table {
   background-color: $white;
 }

@@ -1,7 +1,6 @@
 <template>
   <el-container class="search-container" direction="vertical">
     <el-main>
-
       <h2>{{ $t('search.header') }}</h2>
       <h3>{{ $t('search.subheading') }}</h3>
 
@@ -9,16 +8,20 @@
         <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">
           <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>
             <div :class="['icon', 'icon-' + prebuilt.code]" />
-            <div class="label">{{ prebuilt.shortName }}</div>
+            <div class="label">
+              {{ prebuilt.shortName }}
+            </div>
           </el-checkbox>
         </el-col>
       </el-row>
 
       <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
-        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="filter in filters" :key="filter.code">
-          <el-checkbox class="search-picto col" :checked="filter.checked" :label="filter.shortName" @change="updateFilter(filter)" border>
-            <div :class="['icon', 'icon-' + filter.code]" />
-            <div class="label">{{ filter.shortName }}</div>
+        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="f in filters" :key="f.code">
+          <el-checkbox class="search-picto col" :checked="f.checked" :label="f.shortName" @change="updateFilter(f)" border>
+            <div :class="['icon', 'icon-' + f.code]" />
+            <div class="label">
+              {{ f.shortName }}
+            </div>
           </el-checkbox>
         </el-col>
       </el-row>
@@ -49,7 +52,6 @@
           </el-col>
         </el-row>
       </lazy-component>
-
     </el-main>
   </el-container>
 </template>
@@ -96,13 +98,9 @@ export default {
     },
   },
   mounted() {
-    console.warn('Search mounted')
     this.$db.getVineyards().then(this.setVineyards)
-
     this.$db.getDomains().then(this.setDomains)
-
     this.$db.getTags().then(this.setFilters)
-
     this.$db.getPrebuilts().then(this.setPrebuilts)
 
     eventBus.$on('show-map', this.doShowMap)
@@ -112,7 +110,6 @@ export default {
     this.searchDebounced = debounce(this.search, 500)
   },
   destroyed() {
-    console.warn('Search destroyed')
     eventBus.$off('show-map', this.doShowMap)
     eventBus.$off('filter-domain', this.setFilterDomain)
     eventBus.$off('set-domains-url', this.setDomainsInUrl)
@@ -286,6 +283,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/variables.scss";
+
 .search-container {
   $picto-height: 175px;
 
