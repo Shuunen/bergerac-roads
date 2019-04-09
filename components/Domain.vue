@@ -1,35 +1,33 @@
 <template>
   <el-container :direction="size === 'inline' ? 'horizontal' : 'vertical'" class="domain" :class="size">
-    <nuxt-link :to="size === 'inline' ? '#' : $i18n.path(link)">
-      <el-card class="domain-card take-height">
-        <el-container :direction="['small', 'inline'].includes(size) ? 'horizontal' : 'vertical'">
-          <div class="image" v-lazy:background-image="image">
-            <div class="number line" v-if="number">
-              {{ number }}
-              <div class="icon pin" />
-            </div>
-            <div class="label" v-if="label && size !== 'inline'" :class="['label-' + label]">
-              <div class="icon" />
-            </div>
+    <el-card @click.native="viewDomain()" class="domain-card take-height">
+      <el-container :direction="['small', 'inline'].includes(size) ? 'horizontal' : 'vertical'">
+        <div class="image" v-lazy:background-image="image">
+          <div class="number line" v-if="number">
+            {{ number }}
+            <div class="icon pin" />
           </div>
-          <div class="infos col">
-            <div class="line">
-              <span class="title">{{ data.title }}</span>
-              <span class="glasses line" v-if="size !== 'inline'">
-                <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
-              </span>
-            </div>
-            <div class="description" v-if="description">{{ description }}</div>
+          <div class="label" v-if="label && size !== 'inline'" :class="['label-' + label]">
+            <div class="icon" />
           </div>
-        </el-container>
-      </el-card>
-    </nuxt-link>
+        </div>
+        <div class="infos col">
+          <div class="line">
+            <span class="title">{{ data.title }}</span>
+            <span class="glasses line" v-if="size !== 'inline'">
+              <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
+            </span>
+          </div>
+          <div class="description" v-if="description">{{ description }}</div>
+        </div>
+      </el-container>
+    </el-card>
   </el-container>
 </template>
 
 <script>
-import getSlug from 'speakingurl'
 import truncate from 'lodash/truncate'
+import { eventBus } from '../store'
 
 const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
 
@@ -60,9 +58,6 @@ export default {
     },
   },
   computed: {
-    link: function() {
-      return 'domaine/' + this.data.id + '-' + getSlug(this.data.title)
-    },
     number: function() {
       return this.data.number
     },
@@ -146,6 +141,12 @@ export default {
       str = str.replace(/[\n]([a-z1-9])/gim, ' $1')
       return str
     },
+    viewDomain() {
+      if (this.size === 'inline') {
+        return
+      }
+      eventBus.$emit('goto-domain', this.data)
+    }
   },
 }
 </script>
@@ -276,11 +277,22 @@ export default {
       border-radius: 0;
       width: 100%;
     }
+    .infos.col {
+      justify-content: space-around;
+      padding: 5px 10px;
+    }
+    .infos .line,
     .description {
       width: 100%;
+    }
+    .title,
+    .description {
       overflow: hidden;
       text-overflow: ellipsis;
-      height: 19px;
+      margin-right: auto;
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 1;
     }
   }
   @media only screen and (min-width: 768px) {

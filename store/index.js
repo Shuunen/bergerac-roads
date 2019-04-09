@@ -1,5 +1,3 @@
-import Vue from 'vue'
-
 export const state = () => ({
   locales: ['en', 'fr'],
   locale: 'fr',
@@ -10,9 +8,9 @@ export const mutations = {
     if (state.locales.includes(locale)) {
       state.locale = locale
     } else {
-      console.error('cannot use non-hanled locale', locale)
+      console.error('cannot use non-handled locale', locale)
     }
   },
 }
 
-export const eventBus = new Vue()
+export * from './bus.js'
