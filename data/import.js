@@ -185,8 +185,8 @@ function getWineTagsFromRemoteDomain(domain) {
   tags = str.match(/(blanc sec|moelleux|liquoreux|rosé|rouge)/gi)
   // and we should exactly find the same amount
   if (arr.length !== tags.length) {
-    console.error('ERROR : found', tags.length, 'wines instead of', arr.length)
-    console.error('ERROR : str was : "' + str + '"')
+    console.log('ERROR : found', tags.length, 'wines instead of', arr.length)
+    console.log('ERROR : str was : "' + str + '"')
     stopProcessing = true
     return tags
   }
@@ -216,7 +216,7 @@ function getLabelsFromRemoteDomain(domain) {
     } else if (label === 'Saveurs du Périgord') {
       return 'saveurs-du-perigord'
     } else {
-      console.error('ERROR : label not handled yet : "' + label + '"')
+      console.log('ERROR : label not handled yet : "' + label + '"')
       return null
     }
   })
@@ -252,7 +252,7 @@ function getLocalDomain(id, type) {
       if (error.response && error.response.status === 404) {
         return 'does-not-exists'
       } else {
-        console.error(error)
+        console.log(error)
         stopProcessing = true
       }
     })
@@ -267,7 +267,7 @@ function addLocalDomain(data, type) {
       console.log(data.id, ': freshly added !')
     })
     .catch((error) => {
-      console.error(error)
+      console.log(error)
       stopProcessing = true
     })
 }
@@ -280,7 +280,7 @@ function patchLocalDomain(data, type) {
       console.log(data.id, ': updated')
     })
     .catch((error) => {
-      console.error(error)
+      console.log(error)
       stopProcessing = true
     })
 }
@@ -332,8 +332,13 @@ function pause(time) {
 async function updateLocalObjects(remoteObjects, type) {
   console.log('checking ' + remoteObjects.length + ' remote ' + type)
   for (let i = 0; i < remoteObjects.length; i++) {
-    await pause(50)
-    await updateLocalObject(remoteObjects[i], type)
+    if (!stopProcessing) {
+      await pause(50)
+      await updateLocalObject(remoteObjects[i], type).catch((error) => {
+        console.log(error)
+        stopProcessing = true
+      })
+    }
   }
 }
 
@@ -372,7 +377,7 @@ function getRemoteObjects(type) {
     })
     .then(() => showSummary(type))
     .catch((error) => {
-      console.error(error)
+      console.log(error)
       stopProcessing = true
     })
 }
