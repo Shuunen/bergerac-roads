@@ -5,6 +5,7 @@ module.exports = {
     node: true,
   },
   globals: {
+    $nuxt: false,
     // Cypress : start
     Cypress: false,
     beforeEach: false,

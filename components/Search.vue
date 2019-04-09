@@ -96,6 +96,7 @@ export default {
     },
   },
   mounted() {
+    console.warn('Search mounted')
     this.$db.getVineyards().then(this.setVineyards)
 
     this.$db.getDomains().then(this.setDomains)
@@ -105,12 +106,16 @@ export default {
     this.$db.getPrebuilts().then(this.setPrebuilts)
 
     eventBus.$on('show-map', this.doShowMap)
-
     eventBus.$on('filter-domain', this.setFilterDomain)
-
     eventBus.$on('set-domains-url', this.setDomainsInUrl)
 
     this.searchDebounced = debounce(this.search, 500)
+  },
+  destroyed() {
+    console.warn('Search destroyed')
+    eventBus.$off('show-map', this.doShowMap)
+    eventBus.$off('filter-domain', this.setFilterDomain)
+    eventBus.$off('set-domains-url', this.setDomainsInUrl)
   },
   methods: {
     augment(domains) {
@@ -218,6 +223,11 @@ export default {
       }
     },
     setDomainsInUrl(ids) {
+      this.loading = false
+      if (!ids.length) {
+        console.log('no domains to setup in document location')
+        return
+      }
       let selected = ids.map(id => id.replace(baseId, '')).join(',')
       const prebuilt = this.prebuilts.find(p => p.ids.join(',') === selected)
       if (prebuilt) {
@@ -226,12 +236,7 @@ export default {
       } else {
         console.log('here is the selected domains ids', selected)
       }
-      this.loading = false
-      if (typeof this.$t !== 'function') {
-        console.error('this.$t not available ?!')
-        return
-      }
-      document.location.hash = this.$t('search.itinerary') + '=' + selected
+      document.location.hash = $nuxt.$t('search.itinerary') + '=' + selected
     },
     onFiltersChange() {
       console.log('filters are', this.checkedFilters)
