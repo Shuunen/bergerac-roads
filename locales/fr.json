@@ -31,7 +31,8 @@
     "unknownTitle": "Domaine inconnu",
     "unknownMessage": "Désolé mais ce domaine n'a pas été trouvé.",
     "sendMailSubject": "Routes du Bergerac - Prise de contact",
-    "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac"
+    "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac",
+    "view": "Voir la page du domaine"
   },
   "last-domains": {
     "header": "Domaines de Bergerac"
