@@ -50,9 +50,10 @@
   "private": true,
   "scripts": {
     "analyze": "nuxt build --analyze",
-    "build": "npm-run-all build:data build:app",
+    "build": "npm-run-all build:data build:app build:success",
     "build:app": "nuxt build --spa",
     "build:data": "npm run data:import",
+    "build:success": "exit 0",
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",
     "data:sample": "node data/sample.js",

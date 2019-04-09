@@ -19,6 +19,10 @@ $ yarn run build
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
+## Note
+
+Build command on Netlify used to be `npm rebuild node-sass && yarn build` for a forgotten reason.
+
 ## Thanks
 
 Thanks to [BrowserStack](https://www.browserstack.com) which provide a great online tool to test our app under tons of desktop & mobile browsers !
