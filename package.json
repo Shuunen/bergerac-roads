@@ -44,7 +44,7 @@
   "scripts": {
     "analyze": "nuxt build --analyze",
     "build": "nuxt build",
-    "build:prod": "cross-env NODE_ENV=production nuxt build",
+    "build:prod": "npm run build; sleep 500; false",
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",
     "data:sample": "node data/sample.js",
