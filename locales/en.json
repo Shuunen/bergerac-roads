@@ -31,7 +31,8 @@
     "unknownTitle": "Unknown domain",
     "unknownMessage": "Sorry but this domain does not seems to exists.",
     "sendMailSubject": "Bergerac Roads - Contact",
-    "sendMailBody": "Insert your message here. --- Send from Bergerac Roads website"
+    "sendMailBody": "Insert your message here. --- Send from Bergerac Roads website",
+    "view": "See the domain page"
   },
   "last-domains": {
     "header": "Domains of Bergerac"

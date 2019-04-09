@@ -26,6 +26,7 @@
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
           <el-checkbox-button v-for="domain in itemsSorted" :key="domain.id" :label="domain.title">
             <Domain :data="domain" :size="'inline'" />
+            <el-button class="view-domain" :title="$t('domain.view')" @click="viewDomain(domain)"><i class="el-icon-view" /></el-button>
           </el-checkbox-button>
         </el-checkbox-group>
       </div>
@@ -40,7 +41,7 @@
 <script>
 import Domain from './Domain.vue'
 import { gmapApi } from 'vue2-google-maps'
-import { eventBus } from '../store/index'
+import { eventBus } from '../store'
 import orderBy from 'lodash/orderBy'
 import debounce from 'lodash/debounce'
 
@@ -321,6 +322,9 @@ export default {
         eventBus.$emit('checked-items', value)
       }
     },
+    viewDomain(domain) {
+      eventBus.$emit('goto-domain', domain)
+    }
   },
 }
 </script>
@@ -354,10 +358,10 @@ export default {
     overflow-y: auto;
     overflow-x: hidden;
     .el-checkbox-button {
-      &, .el-checkbox-button__inner {
         display: block;
-      }
+
       .el-checkbox-button__inner {
+        display: flex;
         padding: 0;
         border-radius: 6px;
         border: 2px solid lightgray;
@@ -365,6 +369,15 @@ export default {
         margin: 0 4px 8px 0;
         &:hover {
           border: 2px solid $green-l1;
+        }
+        .el-card {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          width: 100%;
+        }
+        .el-button.view-domain {
+          border: 0;
+          border-radius: 0;
         }
       }
       &.is-checked {
