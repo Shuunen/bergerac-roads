@@ -1,7 +1,7 @@
-import { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } from './common'
-import find from 'lodash/find'
+const find = require('lodash/find')
 const isEqual = require('fast-deep-equal')
 const jsonServer = require('json-server')
+const { localApi, remoteApi, remoteDomainsUrl, remoteDomainsUKTraductionsUrl } = require('./common')
 const server = jsonServer.create()
 const router = jsonServer.router('data/db.json')
 const middlewares = jsonServer.defaults()
@@ -103,8 +103,8 @@ async function remoteDomainToLocal(remote) {
 }
 
 function getVineyardsFromRemoteDomain(domain) {
-  let vineyards = []
-  remoteVineyards.forEach(vineyard => {
+  const vineyards = []
+  remoteVineyards.forEach((vineyard) => {
     if (domain.AOC && domain.AOC.includes(vineyard)) {
       if (justProcessOne) {
         console.log('vineyard "' + vineyard + '" found')
@@ -123,39 +123,38 @@ function getTagsFromRemoteDomain(domain) {
     console.log('get tags from remote', domain)
   }
   let tags = []
-  let prestations = domain['PRESTATIONS']
+  let prestations = domain.PRESTATIONS
 
   if (prestations) {
     prestations = prestations.split('#')
-    prestations.forEach(presta => {
+    prestations.forEach((presta) => {
       if (presta === 'Hébergement sur place') {
-        domain['HEBERGEMENT'] = 'oui'
+        domain.HEBERGEMENT = 'oui'
       }
       if (presta === 'Aire de camping-car sur place') {
-        domain['CAMPING'] = 'oui'
+        domain.CAMPING = 'oui'
       }
       if (presta === 'Restauration sur place') {
-        domain['RESAURATION'] = 'oui'
+        domain.RESAURATION = 'oui'
       }
-
     })
   }
 
-  let agribio = domain['AGRIBIO']
+  const agribio = domain.AGRIBIO
   if (agribio === 'non') {
-    let labelsCharte = domain['LABELSCHARTE']
+    let labelsCharte = domain.LABELSCHARTE
     if (labelsCharte) {
       labelsCharte = labelsCharte.split('#')
-      labelsCharte.forEach(labelCharte => {
+      labelsCharte.forEach((labelCharte) => {
         if (labelCharte === 'Haute valeur environnementale' || labelCharte === 'Terravitis') {
-          domain['ENV_HUMAIN'] = 'oui'
+          domain.ENV_HUMAIN = 'oui'
         }
       })
     }
   } else {
-    domain['ENV_HUMAIN'] = 'oui'
+    domain.ENV_HUMAIN = 'oui'
   }
-  remoteTags.forEach(tag => {
+  remoteTags.forEach((tag) => {
     if (domain[tag] && domain[tag] === 'oui') {
       if (justProcessOne) {
         console.log('tag "' + tag + '" found')
@@ -186,8 +185,8 @@ function getWineTagsFromRemoteDomain(domain) {
   tags = str.match(/(blanc sec|moelleux|liquoreux|rosé|rouge)/gi)
   // and we should exactly find the same amount
   if (arr.length !== tags.length) {
-    console.error('ERROR : found', tags.length, 'wines instead of', arr.length)
-    console.error('ERROR : str was : "' + str + '"')
+    console.log('ERROR : found', tags.length, 'wines instead of', arr.length)
+    console.log('ERROR : str was : "' + str + '"')
     stopProcessing = true
     return tags
   }
@@ -209,7 +208,7 @@ function getLabelsFromRemoteDomain(domain) {
     return []
   }
   labels = labels.split('#')
-  labels = labels.map(label => {
+  labels = labels.map((label) => {
     if (label === 'Vignobles et découvertes') {
       return 'vignobles-et-decouvertes'
     } else if (label === 'Bienvenue à la Ferme') {
@@ -217,7 +216,7 @@ function getLabelsFromRemoteDomain(domain) {
     } else if (label === 'Saveurs du Périgord') {
       return 'saveurs-du-perigord'
     } else {
-      console.error('ERROR : label not handled yet : "' + label + '"')
+      console.log('ERROR : label not handled yet : "' + label + '"')
       return null
     }
   })
@@ -243,17 +242,17 @@ function getLocalDomain(id, type) {
   // console.log(id, ': getting local domain')
   return localApi
     .get('/' + type + '/' + id)
-    .then(response => {
+    .then((response) => {
       const localDomain = response.data
       delete localDomain.updated // so we dont to compare or check this
       // console.log('domain with id', id, 'has been found')
       return localDomain
     })
-    .catch(error => {
+    .catch((error) => {
       if (error.response && error.response.status === 404) {
         return 'does-not-exists'
       } else {
-        console.error(error)
+        console.log(error)
         stopProcessing = true
       }
     })
@@ -267,8 +266,8 @@ function addLocalDomain(data, type) {
       objectCreated++
       console.log(data.id, ': freshly added !')
     })
-    .catch(error => {
-      console.error(error)
+    .catch((error) => {
+      console.log(error)
       stopProcessing = true
     })
 }
@@ -280,8 +279,8 @@ function patchLocalDomain(data, type) {
       objectUpdated++
       console.log(data.id, ': updated')
     })
-    .catch(error => {
-      console.error(error)
+    .catch((error) => {
+      console.log(error)
       stopProcessing = true
     })
 }
@@ -304,7 +303,7 @@ async function updateLocalObject(remoteObject, type = 'domains') {
     console.log('data should be', newData)
   }
 
-  return getLocalDomain(newData.id, type).then(response => {
+  return getLocalDomain(newData.id, type).then((response) => {
     if (response === 'does-not-exists') {
       return addLocalDomain(newData, type)
     }
@@ -326,15 +325,20 @@ async function updateLocalObject(remoteObject, type = 'domains') {
  * Handy helper to pause sequentials tasks
  * @param {number} time time in milliseconds
  */
-async function pause(time) {
-  return new Promise((resolve) => setTimeout(() => resolve('success, pause ended'), time))
+function pause(time) {
+  return new Promise(resolve => setTimeout(() => resolve('success, pause ended'), time))
 }
 
 async function updateLocalObjects(remoteObjects, type) {
   console.log('checking ' + remoteObjects.length + ' remote ' + type)
   for (let i = 0; i < remoteObjects.length; i++) {
-    await pause(50)
-    await updateLocalObject(remoteObjects[i], type)
+    if (!stopProcessing) {
+      await pause(50)
+      await updateLocalObject(remoteObjects[i], type).catch((error) => {
+        console.log(error)
+        stopProcessing = true
+      })
+    }
   }
 }
 
@@ -350,17 +354,17 @@ function showSummary(type) {
   console.log('╚' + '═'.repeat(box) + '═')
 }
 
-async function getRemoteObjects(type) {
+function getRemoteObjects(type) {
   objectCreated = 0
   objectUpdated = 0
   objectSkipped = 0
   console.log('getting remote ' + type + ' from api')
 
-  let apiurl = urlsByType[type]
-  console.log('using url :', apiurl)
+  const apiUrl = urlsByType[type]
+  console.log('using url :', apiUrl)
 
-  return remoteApi.get(apiurl)
-    .then(response => {
+  return remoteApi.get(apiUrl)
+    .then((response) => {
       if (response.data) {
         const remoteObjects = response.data.value
         if (justProcessOne) {
@@ -372,8 +376,8 @@ async function getRemoteObjects(type) {
       }
     })
     .then(() => showSummary(type))
-    .catch(error => {
-      console.error(error)
+    .catch((error) => {
+      console.log(error)
       stopProcessing = true
     })
 }

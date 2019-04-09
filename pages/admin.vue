@@ -1,10 +1,12 @@
 <template>
   <el-container direction="vertical" class="page-admin">
     <Header />
-    <div class="color-line"/>
+    <div class="color-line" />
     <el-main>
       <div class="line">
-        <h1 class="title">Gestion du contenu</h1>
+        <h1 class="title">
+          Gestion du contenu
+        </h1>
       </div>
       <el-row :gutter="20">
         <el-col :span="16">
@@ -33,6 +35,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .color-line {
   background-color: $red-d2;
 }

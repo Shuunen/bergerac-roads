@@ -2,12 +2,14 @@
   <el-container direction="vertical" class="last-domains">
     <el-main>
       <div class="encart--simple" v-loading="loading">
-        <el-row >
+        <el-row>
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
-                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id"
+                  :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
+                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}"
+          />
         </div>
       </div>
     </el-main>
@@ -37,7 +39,7 @@ export default {
     init() {
       this.loading = true
       console.log('Home Mid : init')
-      this.$db.getDomains().then(domains => {
+      this.$db.getDomains().then((domains) => {
         // filter domains with photos & description
         domains = domains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
         // Limit
@@ -52,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/variables.scss";
+
 .last-domains {
   background-color: $blanc;
   padding-bottom: 30px;

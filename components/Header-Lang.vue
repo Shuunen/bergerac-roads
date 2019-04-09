@@ -4,16 +4,23 @@
     <span class="el-dropdown-link english flag" v-else>{{ $t('common.english') }}</span>
     <el-dropdown-menu slot="dropdown">
       <nuxt-link v-if="$i18n.locale === 'fr'" :to="`/en` + $route.fullPath">
-        <el-dropdown-item class="english flag">{{ $t('common.english') }}</el-dropdown-item>
+        <el-dropdown-item class="english flag">
+          {{ $t('common.english') }}
+        </el-dropdown-item>
       </nuxt-link>
       <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')">
-        <el-dropdown-item class="french flag">{{ $t('common.french') }}</el-dropdown-item>
+        <el-dropdown-item class="french flag">
+          {{ $t('common.french') }}
+        </el-dropdown-item>
       </nuxt-link>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/variables.scss";
+
 .el-dropdown {
   height: 20px;
   color: $white;
