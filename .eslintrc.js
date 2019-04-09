@@ -5,16 +5,7 @@ module.exports = {
     node: true,
   },
   globals: {
-    $nuxt: false,
-    // Cypress : start
-    Cypress: false,
-    beforeEach: false,
-    context: false,
-    cy: false,
-    describe: false,
-    expect: false,
-    it: false,
-    // Cypress : end
+    $nuxt: false
   },
   parserOptions: {
     parser: 'babel-eslint',
