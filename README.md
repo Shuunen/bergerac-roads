@@ -23,6 +23,8 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 Build command on Netlify used to be `npm rebuild node-sass && yarn build` for a forgotten reason...
 
+Also this build command trick allows more deployment logging : `npm run build; sleep 500; false`
+
 ## Thanks
 
 Thanks to [BrowserStack](https://www.browserstack.com) which provide a great online tool to test our app under tons of desktop & mobile browsers !
