@@ -42,7 +42,7 @@
     "nuxt-sass-resources-loader": "2.0.5",
     "sass-loader": "7.1.0",
     "speakingurl": "14.0.1",
-    "style-loader": "0.21.0",
+    "style-loader": "0.23.1",
     "vue-i18n": "7.8.1",
     "vue-lazyload": "1.2.6",
     "vue-multiselect": "2.1.4",
