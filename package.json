@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A great project",
   "engines": {
-    "node": ">=9.0.0"
+    "node": ">=10.15.0"
   },
   "private": true,
   "license": "AGPL-3.0",
