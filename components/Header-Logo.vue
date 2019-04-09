@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="$i18n.path('')" class="header-logo" title="Retour à l'accueil">
+  <nuxt-link :to="$i18n.path('')" class="header-logo" :title="$t('common.back-home')">
     <img :src="image" alt="logo">
   </nuxt-link>
 </template>
