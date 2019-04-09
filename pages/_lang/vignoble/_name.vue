@@ -114,7 +114,7 @@ export default {
   methods: {
     init() {
       this.loading = true
-      this.$db.getVineyards().then(vineyards => {
+      this.$db.getVineyards().then((vineyards) => {
         this.vineyards = vineyards
         const exists = vineyards.some(vineyard => this.name === vineyard.name)
         let image = `${process.env.cdn}/images/`

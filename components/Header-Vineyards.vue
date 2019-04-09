@@ -24,7 +24,7 @@ export default {
     init() {
       this.loading = true
       console.log('Header Vineyards : init')
-      this.$db.getVineyards().then(vineyards => {
+      this.$db.getVineyards().then((vineyards) => {
         console.log('Header Vineyards : got ', vineyards)
         this.vineyards = vineyards
         this.loading = false

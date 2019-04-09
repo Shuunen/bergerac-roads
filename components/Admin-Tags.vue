@@ -52,7 +52,7 @@ export default {
       this.loading = true
       fetch(this.api)
         .then(response => response.json())
-        .then(tags => {
+        .then((tags) => {
           this.tags = tags
           this.loading = false
         })
@@ -78,7 +78,7 @@ export default {
     },
 
     handleInputConfirm() {
-      let inputValue = this.inputValue
+      const inputValue = this.inputValue
       if (inputValue) {
         this.addTag(inputValue)
       }

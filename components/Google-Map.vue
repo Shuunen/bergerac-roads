@@ -31,8 +31,8 @@
 
 <script>
 import { gmapApi } from 'vue2-google-maps'
-import { eventBus } from '../store/index'
 import debounce from 'lodash/debounce'
+import { eventBus } from '../store/index'
 
 export default {
   props: {
@@ -65,7 +65,7 @@ export default {
       return new this.google.maps.DirectionsRenderer()
     },
     formattedMarkers: function() {
-      let markers = this.markers.map(marker => {
+      let markers = this.markers.map((marker) => {
         marker.position = {
           lat: +marker.latitude,
           lng: +marker.longitude,
@@ -80,29 +80,19 @@ export default {
     },
   },
   created() {
-
-    eventBus.$on('checked-items', checkedItems => {
-      for (let marker of this.markers) {
-        marker.selected =
-          checkedItems.findIndex(item => item === marker.title) !== -1
+    eventBus.$on('checked-items', (checkedItems) => {
+      for (const marker of this.markers) {
+        marker.selected = checkedItems.findIndex(item => item === marker.title) !== -1
       }
       this.$forceUpdate()
     })
 
-    eventBus.$on('set-starting-point', position => {
+    eventBus.$on('set-starting-point', (position) => {
       if (typeof position === 'string') {
-        console.log(
-          'set-starting-point (map) : setting starting point to "' +
-            position +
-            '"',
-        )
+        console.log('set-starting-point (map) : setting starting point to "' + position + '"')
         this.startingPoint = position
         if (typeof this.resolvedNavigatorPosition === 'object') {
-          console.log(
-            'set-starting-point (map) : detected that starting point was NavigatorPosition "' +
-              position +
-              '"',
-          )
+          console.log('set-starting-point (map) : detected that starting point was NavigatorPosition "' + position + '"')
           this.resolvedNavigatorPosition = position
         }
       } else {
@@ -115,7 +105,7 @@ export default {
       this.getStartingPointDebounced()
     })
 
-    eventBus.$on('process-itinerary', checkedItems => {
+    eventBus.$on('process-itinerary', (checkedItems) => {
       this.processItineraryDebounced(checkedItems)
     })
 
@@ -129,43 +119,33 @@ export default {
       console.log('in getStartingPoint')
       return new Promise((resolve, reject) => {
         if (this.startingPoint !== '') {
-          console.log(
-            'getStartingPoint : starting position is already defined to "' +
-              this.startingPoint +
-              '"',
-          )
+          console.log('getStartingPoint : starting position is already defined to "' + this.startingPoint + '"')
           // this.setStartingPoint(this.startingPoint)
           resolve(this.startingPoint)
         } else if (this.resolvedNavigatorPosition) {
-          console.log(
-            'getStartingPoint : resolved navigator position is "' +
-              this.resolvedNavigatorPosition +
-              '"',
-          )
+          console.log('getStartingPoint : resolved navigator position is "' + this.resolvedNavigatorPosition + '"')
           this.setStartingPoint(this.resolvedNavigatorPosition)
           resolve(this.resolvedNavigatorPosition)
         } else if (!navigator.geolocation) {
-          console.error(
-            'getStartingPoint : geolocation not supported or failed',
-          )
+          console.error('getStartingPoint : geolocation not supported or failed')
           alert(this.$t('search.findMeFailed'))
           this.setStartingPoint('')
-          reject('error, NOT_SUPPORTED')
+          reject(new Error('error, NOT_SUPPORTED'))
         } else {
           console.log('getStartingPoint : fetching geolocation...')
           navigator.geolocation.getCurrentPosition(
-            position => {
+            (position) => {
               console.log('getStartingPoint : got geolocation :)')
               this.resolvedNavigatorPosition = position
               this.setStartingPoint(position)
               resolve(position)
             },
-            error => {
+            (error) => {
               if (error.code === error.PERMISSION_DENIED) {
                 console.error('getStartingPoint : geolocation denied or failed')
                 alert(this.$t('search.findMeDisallowed'))
                 this.setStartingPoint('')
-                reject('error, PERMISSION_DENIED')
+                reject(new Error('error, PERMISSION_DENIED'))
               }
             },
           )
@@ -182,19 +162,19 @@ export default {
         console.log('without items, skipping...')
         return
       }
-      let promises = []
-      this.getStartingPoint().then(position => {
-        for (let item of checkedItems) {
+      const promises = []
+      this.getStartingPoint().then((position) => {
+        for (const item of checkedItems) {
           promises.push(this.createDistanceRequest(position, item.position))
         }
         // When all the promises are resolved, we can compare the distances.
-        Promise.all(promises).then(responses => {
-          let furthestPlace = this.getFurthestPlace(responses)
+        Promise.all(promises).then((responses) => {
+          const furthestPlace = this.getFurthestPlace(responses)
           // Delete the distance property to match the waypoint prototype.
           responses.forEach(response => delete response.distance)
           // Construct the request as follows : the furthest as arrival and the others
           // as waypoints (optimizeWaypoints equals to true to optimize the order).
-          let request = {
+          const request = {
             origin: this.getFormattedPosition(position),
             destination: furthestPlace.location,
             travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
@@ -212,8 +192,8 @@ export default {
         return
       }
       console.log('in displayItinerary')
-      this.$refs.mapRef.$mapPromise.then(map => {
-        let directionsService = new this.google.maps.DirectionsService()
+      this.$refs.mapRef.$mapPromise.then((map) => {
+        const directionsService = new this.google.maps.DirectionsService()
         directionsService.route(request, (response, status) => {
           if (status === this.google.maps.DirectionsStatus.OK) {
             this.directionsDisplay.setMap(map)
@@ -236,13 +216,13 @@ export default {
     createDistanceRequest(position, markerPosition) {
       console.log('in createDistanceRequest')
       // console.log('in createDistanceRequest with position "' + position + '"')
-      let directionsService = new this.google.maps.DirectionsService()
-      let request = {
+      const directionsService = new this.google.maps.DirectionsService()
+      const request = {
         origin: this.getFormattedPosition(position),
         destination: markerPosition,
         travelMode: this.google.maps.DirectionsTravelMode.DRIVING,
       }
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         directionsService.route(request, (response, status) => {
           if (status === this.google.maps.DirectionsStatus.OK) {
             resolve({
@@ -269,8 +249,8 @@ export default {
     // Get the furthest place between all selected places in order to set it as arrival point.
     getFurthestPlace(places) {
       console.log('in getFurthestPlace')
-      let maxDistance = Math.max(...places.map(place => place.distance))
-      let furthestPlaceIndex = places.findIndex(place => {
+      const maxDistance = Math.max(...places.map(place => place.distance))
+      const furthestPlaceIndex = places.findIndex((place) => {
         return place.distance === maxDistance
       })
       return places.splice(furthestPlaceIndex, 1)[0]

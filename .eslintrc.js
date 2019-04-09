@@ -11,11 +11,9 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
-    'eslint:recommended',
-    'plugin:vue/recommended'
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
   ],
-  // required to lint *.vue files
-  plugins: ['vue'],
   // add your custom rules here
   rules: {
     semi: ["error", 'never'],
@@ -28,6 +26,7 @@ module.exports = {
     "block-spacing": "error",
     "no-irregular-whitespace": "error",
     "spaced-comment": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
     "space-before-function-paren": ["error", "never"],
     "space-before-blocks": ["error", "always"],
     'no-console': 'off',

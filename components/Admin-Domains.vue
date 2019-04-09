@@ -1,7 +1,7 @@
 <template>
   <el-container direction="vertical" class="admin-table">
     <h2>Domaines et chateaux</h2>
-    <el-table :data="domains" stripe :style="'width: 100%'" v-loading="loading" :row-class-name="tableRowClassName">
+    <el-table :data="domains" stripe style="width: 100%" v-loading="loading" :row-class-name="tableRowClassName">
       <el-table-column type="selection" width="55" />
       <el-table-column prop="title" label="Nom" />
       <el-table-column label="Actif ?" width="180">
@@ -30,7 +30,7 @@ export default {
       this.loading = true
       fetch(this.api)
         .then(response => response.json())
-        .then(domains => {
+        .then((domains) => {
           this.domains = domains
           this.loading = false
         })

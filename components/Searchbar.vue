@@ -50,14 +50,13 @@
 }
 </style>
 
-
 <script>
 const filters = [
   { key: 0, label: 'Vin Bio', name: 'filtre1' },
   { key: 1, label: 'Domaine skiable', name: 'filtre2' },
   { key: 2, label: 'Vin super bon', name: 'filtre3' },
 ]
-let domaines = [
+const domaines = [
   {
     key: 0,
     label: 'domaine 1',
@@ -119,12 +118,12 @@ export default {
     handleCheckedCitiesChange(value) {
       // console.log('handleCheckedCitiesChange value = ' + value);
 
-      let checkedCount = value.length
+      const checkedCount = value.length
       this.checkAll = checkedCount === this.filters.length
       this.isIndeterminate =
         checkedCount > 0 && checkedCount < this.filters.length
 
-      let checkedFiltersToApply = this.checkedFilters
+      const checkedFiltersToApply = this.checkedFilters
 
       this.domaines = domaines
 

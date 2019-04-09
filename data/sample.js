@@ -1,6 +1,6 @@
-const { remoteApi, remoteDomainsUrl } = require('./common')
 const fs = require('fs')
 const isEqual = require('fast-deep-equal')
+const { remoteApi, remoteDomainsUrl } = require('./common')
 const output = './data/sample-domains.json'
 const limit = 5
 let domainUpdated = 0
@@ -11,7 +11,7 @@ function getRemoteDomainsSample() {
   console.log('getting remote domains samples from api')
   // console.log('using url :', remoteDomainsUrl)
   remoteApi.get(remoteDomainsUrl)
-    .then(response => {
+    .then((response) => {
       if (response.data) {
         const remoteDomains = response.data.value
         // console.log('found', remoteDomains.length, 'domains, but limit samples to', limit)

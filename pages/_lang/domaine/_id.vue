@@ -33,7 +33,6 @@
         <!--
           <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
 
-
           <a v-if="data.socialFacebook" :href="data.socialFacebook">
             <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">
           </a>
@@ -137,9 +136,9 @@ export default {
       return added
     },
     wines() {
-      let wines = []
+      const wines = []
       if (this.data.tags && this.data.tags.length) {
-        winesToDisplay.forEach(wine => {
+        winesToDisplay.forEach((wine) => {
           const tag = 'vin-' + wine
           if (this.data.tags.includes(tag)) {
             wines.push(tag)
@@ -159,7 +158,7 @@ export default {
       if (matches && matches.length === 2) {
         const id = matches[1]
         this.loading = true
-        this.$db.getDomain(id).then(domain => {
+        this.$db.getDomain(id).then((domain) => {
           if (domain) {
             console.log('Domain page : got domain', domain)
             this.data = domain
@@ -187,7 +186,6 @@ export default {
   },
 }
 </script>
-
 
 <style lang="scss">
 @import "@/assets/styles/ressources/icons.scss";

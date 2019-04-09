@@ -116,7 +116,7 @@ export default {
   },
   methods: {
     augment(domains) {
-      domains = domains.map(domain => {
+      domains = domains.map((domain) => {
         domain.infoWindowOpen = false
         domain.title = trimStart(domain.title, 'Les ')
         domain.titleWithNumber = domain.title + ' (' + domain.number + ')'
@@ -135,9 +135,9 @@ export default {
       }
       if (this.showVineyardFilter) {
         console.log('filtering with checked vineyards :', this.checkedVineyards)
-        domains = domains.filter(domain => {
+        domains = domains.filter((domain) => {
           let keep = false
-          this.checkedVineyards.forEach(vineyard => {
+          this.checkedVineyards.forEach((vineyard) => {
             if (!keep) {
               keep = domain.vineyards.includes(vineyard)
             }
@@ -161,7 +161,7 @@ export default {
           .split(',')
           .map(id => baseId + id)
         const matchingIds = []
-        this.domains.forEach(domain => {
+        this.domains.forEach((domain) => {
           if (ids.includes(domain.id) && !matchingIds.includes(domain.id)) {
             matchingIds.push(domain.id)
           }
@@ -254,7 +254,7 @@ export default {
       eventBus.$emit('domains-search-complete')
     },
     setFilters(tags) {
-      this.filters = tags.map(tag => {
+      this.filters = tags.map((tag) => {
         tag.checked = false
         return tag
       })

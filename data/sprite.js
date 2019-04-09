@@ -10,7 +10,7 @@ function createPngSprite() {
     spritePath: 'assets/images/icons.png',
     stylesheet: 'scss',
     stylesheetPath: 'assets/styles/ressources/icons-transparent.scss',
-    stylesheetOptions: { prefix: 'transparent-' }
+    stylesheetOptions: { prefix: 'transparent-' },
   }, function(err) {
     if (err) {
       console.log('Sprite PNG failed !', err)
@@ -37,7 +37,7 @@ function createJpgSprite() {
     layout: 'packed',
     spritePath: 'assets/images/icons.jpg',
     stylesheet: 'scss',
-    stylesheetPath: 'assets/styles/ressources/icons.scss'
+    stylesheetPath: 'assets/styles/ressources/icons.scss',
   }, function(err) {
     if (err) {
       console.log('Sprite JPG failed !', err)

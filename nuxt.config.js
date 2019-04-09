@@ -21,14 +21,14 @@ export default {
       { src: '/scripts/rollbar.js', defer: true },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
     noscript: [{ innerHTML: 'Ce site nécessite JavaScript.' }],
   },
   env: {
     api: 'http://localhost:3003',
     cdn: 'https://atg502nfn.cloudimg.io/cdn/none/none/bergerac.lebowsky-dev.xyz',
-    cdnBase: 'https://atg502nfn.cloudimg.io/cdn/none/none/'
+    cdnBase: 'https://atg502nfn.cloudimg.io/cdn/none/none/',
   },
   /*
   ** Customize the progress bar color

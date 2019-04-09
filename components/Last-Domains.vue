@@ -39,7 +39,7 @@ export default {
     init() {
       this.loading = true
       console.log('Home Mid : init')
-      this.$db.getDomains().then(domains => {
+      this.$db.getDomains().then((domains) => {
         // filter domains with photos & description
         domains = domains.filter(domain => (domain.photos && domain.photos.length && domain.description && domain.description.length))
         // Limit
