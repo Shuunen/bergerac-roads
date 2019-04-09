@@ -1,30 +1,5 @@
 {
-  "name": "bergerac-roads",
-  "version": "1.0.0",
-  "description": "A great project",
-  "engines": {
-    "node": ">=10.15.0"
-  },
-  "private": true,
-  "license": "AGPL-3.0",
-  "scripts": {
-    "analyze": "nuxt build --analyze",
-    "dev": "nuxt",
-    "dev:import": "nodemon --exec babel-node data/import.js --watch data/import.js",
-    "build": "npm-run-all build:data build:app",
-    "build:data": "npm run data:import",
-    "build:app": "nuxt build --spa",
-    "start": "nuxt start --spa",
-    "data:db": "json-server data/db.json",
-    "data:import": "babel-node data/import.js",
-    "data:sample": "babel-node data/sample.js",
-    "data:sprite": "babel-node data/sprite.js",
-    "generate": "nuxt generate --spa",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "test": "npm-run-all --parallel dev:* test:*",
-    "test:panel": "./node_modules/.bin/cypress open",
-    "precommit": "npm run lint"
-  },
+  "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
   "dependencies": {
     "@nuxtjs/pwa": "2.6.0",
     "axios": "0.18.0",
@@ -48,6 +23,7 @@
     "vue-multiselect": "2.1.4",
     "vue2-google-maps": "0.9.8"
   },
+  "description": "A great project",
   "devDependencies": {
     "@types/node-sass": "3.10.32",
     "eslint": "4.19.1",
@@ -59,5 +35,28 @@
     "node-sprite-generator": "0.10.2",
     "nodemon": "1.18.11",
     "stylelint-config-standard": "18.2.0"
-  }
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "license": "AGPL-3.0",
+  "name": "bergerac-roads",
+  "private": true,
+  "scripts": {
+    "analyze": "nuxt build --analyze",
+    "build": "npm-run-all build:data build:app",
+    "build:app": "nuxt build --spa",
+    "build:data": "npm run data:import",
+    "data:db": "json-server data/db.json",
+    "data:import": "babel-node data/import.js",
+    "data:sample": "babel-node data/sample.js",
+    "data:sprite": "babel-node data/sprite.js",
+    "dev": "nuxt",
+    "dev:import": "nodemon --exec babel-node data/import.js --watch data/import.js",
+    "generate": "nuxt generate --spa",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "start": "nuxt start --spa"
+  },
+  "version": "1.0.0"
 }
