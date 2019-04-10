@@ -16,6 +16,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'theme-color', content: '#ffffff' },
+      { name: 'google-site-verification', content: 'josobMWIbuspgkX6xJ2FyU5PufZXR8ThI2ZFl8-QxMI' },
     ],
     script: [
       { src: '/scripts/rollbar.js', defer: true },
