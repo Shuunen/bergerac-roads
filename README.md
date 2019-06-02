@@ -1,6 +1,6 @@
 # Bergerac Roads
 
-![test](https://cdn.rawgit.com/jongracecox/anybadge/master/examples/awesomeness.svg)
+[![GitHub license](https://img.shields.io/github/license/shuunen/bergerac-roads.svg?color=informational)](https://github.com/Shuunen/bergerac-roads/blob/master/LICENSE)
 
 > a Nuxt.js project
 
