@@ -38,8 +38,9 @@
   "engines": {
     "node": ">=10.15.0"
   },
+  "homepage": "https://github.com/Shuunen/bergerac-roads",
   "license": "AGPL-3.0",
-  "name": "bergerac-roads",
+  "name": "@shuunen/bergerac-roads",
   "private": true,
   "scripts": {
     "analyze": "nuxt build --analyze",
@@ -48,7 +49,9 @@
     "data:import": "node data/import.js",
     "dev": "nuxt",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "start": "nuxt",
+    "test": "npm run lint"
   },
   "version": "2.0.0"
 }
