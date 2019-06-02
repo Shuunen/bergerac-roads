@@ -1,0 +1,11 @@
+{
+  "include": [
+    "./components/**/*",
+    "./data/**/*",
+    "./layouts/**/*",
+    "./locales/**/*",
+    "./middleware/**/*",
+    "./pages/**/*",
+    "./plugins/**/*"
+  ]
+}
