@@ -4,16 +4,16 @@
       <h2>{{ $t('search.header') }}</h2>
       <h3>{{ $t('search.subheading') }}</h3>
 
-      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
-        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">
-          <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>
-            <div :class="['icon', 'icon-' + prebuilt.code]" />
-            <div class="label">
-              {{ prebuilt.shortName }}
-            </div>
-          </el-checkbox>
-        </el-col>
-      </el-row>
+<!--      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">-->
+<!--        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">-->
+<!--          <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>-->
+<!--            <div :class="['icon', 'icon-' + prebuilt.code]" />-->
+<!--            <div class="label">-->
+<!--              {{ prebuilt.shortName }}-->
+<!--            </div>-->
+<!--          </el-checkbox>-->
+<!--        </el-col>-->
+<!--      </el-row>-->
 
       <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
         <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="f in filters" :key="f.code">
@@ -410,19 +410,25 @@ export default {
 }
 
 .icon-acces-handicape {
-  background-image: url('#{$cdn}/images/pictos/Z3_Accessibilitee_web.png');
+  background-image: url('#{$cdn}/images/pictos/Z1_Accessibilitee_web.png');
 }
 .icon-hebergement {
-  background-image: url('#{$cdn}/images/pictos/Z3_Hebergement_web.png');
+  background-image: url('#{$cdn}/images/pictos/Z1_Hebergement_web.png');
 }
 .icon-camping {
-  background-image: url('#{$cdn}/images/pictos/Z3_Camping-car_web.png');
+  background-image: url('#{$cdn}/images/pictos/Z1_Camping-car_web.png');
 }
 .icon-restauration {
-  background-image: url('#{$cdn}/images/pictos/Z3_Restaurant_web.png');
+  background-image: url('#{$cdn}/images/pictos/Z1_Restaurant_web.png');
 }
 .icon-env-humain {
-  background-image: url('#{$cdn}/images/pictos/Z3_Hebergement_web.png');
+  background-image: url('#{$cdn}/images/pictos/Z1_Hebergement_web.png');
+}
+.icon icon-monument {
+  background-image: url('#{$cdn}/images/pictos/Z1_Monument_web.png');
+}
+.icon icon-famille {
+  background-image: url('#{$cdn}/images/pictos/Z1_Famille_web.png');
 }
 .icon-top-10 {
   @include sprite($recycling);

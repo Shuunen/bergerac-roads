@@ -20,6 +20,8 @@ const remoteTagsToLocal = {
   HEBERGEMENT: 'hebergement',
   CAMPING: 'camping',
   RESAURATION: 'restauration',
+  MONUMENT: 'monument',
+  COINENFANTS: 'famille',
   ENV_HUMAIN: 'env-humain',
 }
 const remoteTags = Object.keys(remoteTagsToLocal)
@@ -137,6 +139,9 @@ function getTagsFromRemoteDomain(domain) {
       if (presta === 'Restauration sur place') {
         domain.RESAURATION = 'oui'
       }
+      if (presta === 'Monument à visiter sur place') {
+        domain.MONUMENT = 'oui'
+      }
     })
   }
 
@@ -162,7 +167,9 @@ function getTagsFromRemoteDomain(domain) {
       tags.push(remoteTagsToLocal[tag])
     }
   })
-  tags = tags.concat(getWineTagsFromRemoteDomain(domain))
+
+  // TODO @romain il y a un bug avec cette fonction - elle fait planter le reste de l'import
+ //  tags = tags.concat(getWineTagsFromRemoteDomain(domain))
   if (justProcessOne) {
     console.log('found tags', tags)
   }
