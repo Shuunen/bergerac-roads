@@ -3,7 +3,7 @@ if (window.location.hostname !== 'localhost') {
     window.LogRocket.init('hipipp/bergerac-roads')
     if (window.Rollbar) {
       window.Rollbar.configure({
-        transform: function(obj) {
+        transform(obj) {
           obj.sessionURL = window.LogRocket.sessionURL
           return obj
         },

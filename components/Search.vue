@@ -58,12 +58,12 @@
 
 <script>
 import getSlug from 'speakingurl'
-import GoogleMap from '~/components/Google-Map.vue'
-import SelectList from '~/components/Select-List.vue'
 import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
 import debounce from 'lodash/debounce'
 import { eventBus } from '../store/index'
+import SelectList from '~/components/Select-List.vue'
+import GoogleMap from '~/components/Google-Map.vue'
 const baseId = 'DEGAQU0'
 
 export default {
@@ -89,7 +89,7 @@ export default {
     }
   },
   watch: {
-    showMap: function() {
+    showMap() {
       console.log('showMap is', this.showMap)
       if (this.showMap && !this.prebuiltHandled) {
         this.prebuiltHandled = true

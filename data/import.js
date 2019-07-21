@@ -168,7 +168,6 @@ function getTagsFromRemoteDomain(domain) {
     }
   })
 
-  // TODO @romain il y a un bug avec cette fonction - elle fait planter le reste de l'import
   tags = tags.concat(getWineTagsFromRemoteDomain(domain))
   if (justProcessOne) {
     console.log('found tags', tags)
@@ -297,7 +296,7 @@ function patchLocalDomain(data, type) {
 
 async function updateLocalObject(remoteObject, type = 'domains') {
   if (stopProcessing) {
-    throw Error('stop processing requested')
+    throw new Error('stop processing requested')
   }
 
   // console.log('updateLocalObject type = ', type)
@@ -306,7 +305,7 @@ async function updateLocalObject(remoteObject, type = 'domains') {
   if (type === 'domains') {
     newData = await remoteDomainToLocal(remoteObject)
   } else {
-    throw Error('update local object does not handle type "' + type + '"')
+    throw new Error('update local object does not handle type "' + type + '"')
   }
 
   if (justProcessOne) {
@@ -382,7 +381,7 @@ function getRemoteObjects(type) {
         }
         return updateLocalObjects(remoteObjects, type)
       } else {
-        throw Error('failed at getting remote ' + type)
+        throw new Error('failed at getting remote ' + type)
       }
     })
     .then(() => showSummary(type))

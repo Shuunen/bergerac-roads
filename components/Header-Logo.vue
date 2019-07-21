@@ -7,7 +7,7 @@
 <script>
 export default {
   computed: {
-    image: function() {
+    image() {
       return process.env.cdn + '/images/bergerac-duras.png'
     },
   },

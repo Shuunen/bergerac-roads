@@ -19,7 +19,15 @@ $ yarn run build
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
-## Note
+## Reminders
+
+### Upgrade
+
+Specifying "webpack": "4.33.0" to resolve missing peer deps is breaking the build : styles files not found and vue pages too.
+
+Updating core-js to v3 break the build.
+
+### Netlify
 
 Build command on Netlify is `npm rebuild node-sass && yarn build`.
 
