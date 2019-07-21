@@ -4,16 +4,16 @@
       <h2>{{ $t('search.header') }}</h2>
       <h3>{{ $t('search.subheading') }}</h3>
 
-<!--      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">-->
-<!--        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">-->
-<!--          <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>-->
-<!--            <div :class="['icon', 'icon-' + prebuilt.code]" />-->
-<!--            <div class="label">-->
-<!--              {{ prebuilt.shortName }}-->
-<!--            </div>-->
-<!--          </el-checkbox>-->
-<!--        </el-col>-->
-<!--      </el-row>-->
+      <!--      <el-row class="search-pictos" :gutter="20" type="flex" justify="center">-->
+      <!--        <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="prebuilt in prebuilts" :key="prebuilt.code+prebuilt.checked">-->
+      <!--          <el-checkbox class="search-picto col" :class="[prebuilt.checked ? '' : 'unchecked']" :checked="prebuilt.checked" :label="prebuilt.shortName" @change="loadPrebuilt(prebuilt)" border>-->
+      <!--            <div :class="['icon', 'icon-' + prebuilt.code]" />-->
+      <!--            <div class="label">-->
+      <!--              {{ prebuilt.shortName }}-->
+      <!--            </div>-->
+      <!--          </el-checkbox>-->
+      <!--        </el-col>-->
+      <!--      </el-row>-->
 
       <el-row class="search-pictos" :gutter="20" type="flex" justify="center">
         <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="f in filters" :key="f.code">

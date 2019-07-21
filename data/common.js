@@ -26,7 +26,7 @@ const remoteDomainsUKTraductionsUrl = 'http://' + syndicUrlOpt +
 const baseUrl = 'http://wcf.tourinsoft.com/Syndication/3.0'
 const remoteApi = axios.create({
   baseUrl,
-  timeout: 3000,
+  timeout: 10000,
 })
 
 /*

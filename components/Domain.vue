@@ -31,7 +31,7 @@
 import truncate from 'lodash/truncate'
 import { eventBus } from '../store'
 
-const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
+const winesToDisplay = ['blanc-sec', 'blanc-moelleux', 'blanc-liquoreux', 'rose', 'rouge']
 
 const descriptionSize = {
   inline: 140,
@@ -214,13 +214,13 @@ export default {
       &.vin-rouge {
         @include sprite($glass-rouge);
       }
-      &.vin-blanc {
+      &.vin-blanc-sec {
         @include sprite($glass-blanc);
       }
-      &.vin-moelleux {
+      &.vin-blanc-moelleux {
         @include sprite($glass-moelleux);
       }
-      &.vin-liquoreux {
+      &.vin-blanc-liquoreux {
         @include sprite($glass-liquoreux);
       }
       &.vin-rose {

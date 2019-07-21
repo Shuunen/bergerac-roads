@@ -88,7 +88,7 @@
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 
-const winesToDisplay = ['blanc', 'moelleux', 'liquoreux', 'rose', 'rouge']
+const winesToDisplay = ['blanc-sec', 'blanc-moelleux', 'blanc-liquoreux', 'rose', 'rouge']
 
 export default {
   components: {
@@ -194,13 +194,13 @@ export default {
   &.vin-rouge {
     @include sprite($glass-rouge);
   }
-  &.vin-blanc {
+  &.vin-blanc-sec {
     @include sprite($glass-blanc);
   }
-  &.vin-moelleux {
+  &.vin-blanc-moelleux {
     @include sprite($glass-moelleux);
   }
-  &.vin-liquoreux {
+  &.vin-blanc-liquoreux {
     @include sprite($glass-liquoreux);
   }
   &.vin-rose {
