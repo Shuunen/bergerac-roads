@@ -97,7 +97,7 @@ async function remoteDomainToLocal(remote) {
     tourContitions: getArrayFromRemoteTag(remote.VISITECONDITIONS, '#'),
     tourMinutes: remote.VISITEDUREE,
     town: remote.COMMUNE,
-    adress: remote.AD2,
+    address: remote.AD2,
     vineyards: getVineyardsFromRemoteDomain(remote),
     websites: getArrayFromRemoteTag(remote.URLCOMPLET, '|'),
   }
@@ -331,7 +331,7 @@ async function updateLocalObject(remoteObject, type = 'domains') {
 }
 
 /**
- * Handy helper to pause sequentials tasks
+ * Handy helper to pause sequential tasks
  * @param {number} time time in milliseconds
  */
 function pause(time) {
