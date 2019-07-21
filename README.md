@@ -2,7 +2,11 @@
 
 [![GitHub license](https://img.shields.io/github/license/shuunen/bergerac-roads.svg?color=informational)](https://github.com/Shuunen/bergerac-roads/blob/master/LICENSE)
 
-> a Nuxt.js project
+[![Build Status](https://travis-ci.org/Shuunen/bergerac-roads.svg?branch=master)](https://travis-ci.org/Shuunen/bergerac-roads)
+[![David](https://img.shields.io/david/shuunen/bergerac-roads.svg)](https://david-dm.org/shuunen/bergerac-roads)
+[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/Shuunen/bergerac-roads.svg)](https://lgtm.com/projects/g/Shuunen/bergerac-roads)
+
+> Promoting the great wines of Bergerac since 2018 !
 
 ## Usage
 
@@ -42,6 +46,9 @@ If needed use this trick to see more deployment logs on Netlify CI : `yarn build
 
 ## Thanks
 
-Thanks to [BrowserStack](https://www.browserstack.com) which provide a great online tool to test our app under tons of desktop & mobile browsers !
+- [Shields.io](https://shields.io) : nice badges on top of this readme
+- [Netlify](https://www.netlify.com) : awesome company that offers hosting for OSS
+- [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
+- [BrowserStack](https://www.browserstack.com) : great online tool to test our app under tons of desktop & mobile browsers
 
 ![BrowserStack Logo](https://www.browserstack.com/images/layout/browserstack-logo-600x315.png)
