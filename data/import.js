@@ -169,7 +169,7 @@ function getTagsFromRemoteDomain(domain) {
   })
 
   // TODO @romain il y a un bug avec cette fonction - elle fait planter le reste de l'import
- //  tags = tags.concat(getWineTagsFromRemoteDomain(domain))
+  tags = tags.concat(getWineTagsFromRemoteDomain(domain))
   if (justProcessOne) {
     console.log('found tags', tags)
   }
@@ -189,7 +189,7 @@ function getWineTagsFromRemoteDomain(domain) {
   // and to be sure we search via regex known wines types
   // in  :  "Bergerac (rouge)#Bergerac (rosé)#Bergerac (blanc sec)#Pécharmant (rouge)"
   // out : ["rouge", "rosé", "blanc sec", "rouge"]
-  tags = str.match(/(blanc sec|moelleux|liquoreux|rosé|rouge)/gi)
+  tags = str.match(/(sec|moelleux|liquoreux|rosé|rouge)/gi)
   // and we should exactly find the same amount
   if (arr.length !== tags.length) {
     console.log('ERROR : found', tags.length, 'wines instead of', arr.length)
@@ -204,7 +204,7 @@ function getWineTagsFromRemoteDomain(domain) {
   // because values contains accents, space and non-pretty usable dev names
   // let's clean these up
   // in  : ['rouge',    'rosé',    'blanc sec']
-  // out : ['vin-rouge','vin-rose','vin-blanc']
+  // out : ['vin-rouge','vin-rose','vin-blanc-sec']
   tags = tags.map(name => getWineTagFromName(name))
   return tags
 }
@@ -232,16 +232,19 @@ function getLabelsFromRemoteDomain(domain) {
 }
 
 function getWineTagFromName(name) {
-  if (name === 'blanc sec') {
-    return 'vin-blanc'
-  } else if (name === 'rosé') {
-    return 'vin-rose'
-  } else {
-    // ne need to have more case because other name are clean :
-    // vin-moelleux
-    // vin-liquoreux
-    // vin-rouge
-    return 'vin-' + name
+  switch (name.toLowerCase()) {
+    case 'rosé':
+      return 'vin-rose'
+    case 'rouge':
+      return 'vin-rouge'
+    case 'sec':
+    case 'moelleux':
+    case 'liquoreux':
+      return 'vin-blanc-' + name
+    default:
+      console.log('ERROR : case not handled for name :', name)
+      stopProcessing = true
+      return 'vin-' + name
   }
 }
 

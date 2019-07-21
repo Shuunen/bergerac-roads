@@ -205,7 +205,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine du Haut Pécharmant",
       "tourContitions": [
@@ -223,7 +226,7 @@
       "websites": [
         "http://www.haut-pecharmant.fr"
       ],
-      "updated": 1563352079743
+      "updated": 1563700451111
     },
     {
       "active": true,
@@ -271,7 +274,12 @@
       "tags": [
         "acces-handicape",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Cave Coopérative de Monbazillac",
       "tourContitions": [
@@ -287,7 +295,7 @@
       "websites": [
         "http://cave.chateau-monbazillac.com/"
       ],
-      "updated": 1563352079829
+      "updated": 1563700451198
     },
     {
       "active": true,
@@ -328,7 +336,12 @@
         "Coopérative"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Alliance Aquitaine - Site de Bergerac",
       "tourContitions": [
@@ -346,7 +359,7 @@
       "websites": [
         "http://www.allianceaquitaine.com"
       ],
-      "updated": 1563352079893
+      "updated": 1563700451268
     },
     {
       "active": true,
@@ -389,7 +402,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château la Vieille Bergerie",
       "tourContitions": [
@@ -407,7 +425,7 @@
       "websites": [
         "http://www.vieille-bergerie.fr/"
       ],
-      "updated": 1563352079958
+      "updated": 1563700451335
     },
     {
       "active": true,
@@ -454,7 +472,8 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rose"
       ],
       "title": "Château la Renaudie",
       "tourContitions": [
@@ -472,7 +491,7 @@
       "websites": [
         "http://www.chateaurenaudie.com"
       ],
-      "updated": 1563352080022
+      "updated": 1563700451404
     },
     {
       "active": true,
@@ -520,7 +539,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château de la Jaubertie",
       "tourContitions": [
@@ -536,7 +560,7 @@
       "websites": [
         "http://www.chateau-jaubertie.com "
       ],
-      "updated": 1563352080087
+      "updated": 1563700451472
     },
     {
       "active": true,
@@ -577,7 +601,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de l'Ancienne Cure",
       "tourContitions": [
@@ -595,7 +624,7 @@
       "websites": [
         "http://www.domaine-anciennecure.fr"
       ],
-      "updated": 1563352080152
+      "updated": 1563700451542
     },
     {
       "active": true,
@@ -650,7 +679,12 @@
         "acces-handicape",
         "camping",
         "famille",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château du Haut Pezaud",
       "tourContitions": [
@@ -668,7 +702,7 @@
       "websites": [
         "http://www.chateau-du-haut-pezaud.com"
       ],
-      "updated": 1563352080214
+      "updated": 1563700451609
     },
     {
       "active": true,
@@ -716,7 +750,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Haut Bernasse",
       "tourContitions": [
@@ -734,7 +773,7 @@
       "websites": [
         "http://www.chateau-hautbernasse.fr"
       ],
-      "updated": 1563352080277
+      "updated": 1563700451676
     },
     {
       "active": true,
@@ -839,7 +878,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine du Bois de Pourquié",
       "tourContitions": [
@@ -855,7 +899,7 @@
       "websites": [
         "http://www.vins-bdp.com"
       ],
-      "updated": 1563352080407
+      "updated": 1563700451801
     },
     {
       "active": true,
@@ -906,7 +950,12 @@
       "tags": [
         "acces-handicape",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine du Haut Montlong",
       "tourContitions": [
@@ -923,7 +972,7 @@
       "websites": [
         "http://www.haut-montlong.com"
       ],
-      "updated": 1563352080476
+      "updated": 1563700451867
     },
     {
       "active": true,
@@ -983,7 +1032,11 @@
         "camping",
         "restauration",
         "famille",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine du Siorac",
       "tourContitions": [
@@ -999,7 +1052,7 @@
       "websites": [
         "http://www.domainedusiorac.fr"
       ],
-      "updated": 1563352080577
+      "updated": 1563700451939
     },
     {
       "active": true,
@@ -1052,7 +1105,12 @@
         "hebergement",
         "camping",
         "famille",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de Grange Neuve",
       "tourContitions": [
@@ -1068,7 +1126,7 @@
       "websites": [
         "http://www.grangeneuve.fr"
       ],
-      "updated": 1563352080651
+      "updated": 1563700452009
     },
     {
       "active": true,
@@ -1121,7 +1179,11 @@
         "acces-handicape",
         "hebergement",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Coutancie",
       "tourContitions": [
@@ -1139,7 +1201,7 @@
         "http://www.domaine-de-coutancie.com/",
         "Propriété viticole"
       ],
-      "updated": 1563352080722
+      "updated": 1563700452078
     },
     {
       "active": true,
@@ -1185,7 +1247,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Vignoble des Verdots",
       "tourContitions": [
@@ -1202,7 +1269,7 @@
       "websites": [
         "http://www.verdots.com"
       ],
-      "updated": 1563352080797
+      "updated": 1563700452143
     },
     {
       "active": true,
@@ -1256,7 +1323,12 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Moulin Caresse",
       "tourContitions": [
@@ -1272,7 +1344,7 @@
       "websites": [
         "http://www.moulincaresse.fr"
       ],
-      "updated": 1563352080873
+      "updated": 1563700452208
     },
     {
       "active": true,
@@ -1322,7 +1394,12 @@
       "tags": [
         "acces-handicape",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Puy Servain - Calabre",
       "tourContitions": [
@@ -1340,7 +1417,7 @@
       "websites": [
         "http://www.puyservain.com"
       ],
-      "updated": 1563352080945
+      "updated": 1563700452277
     },
     {
       "active": true,
@@ -1392,7 +1469,8 @@
       "tags": [
         "hebergement",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge"
       ],
       "title": "Château Terre Vieille",
       "tourContitions": [
@@ -1407,7 +1485,7 @@
       "websites": [
         "http://www.terrevieille.com"
       ],
-      "updated": 1563352081016
+      "updated": 1563700452348
     },
     {
       "active": true,
@@ -1456,7 +1534,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Ladesvignes",
       "tourContitions": [
@@ -1473,7 +1556,7 @@
       "websites": [
         "http://www.ladesvignes.com"
       ],
-      "updated": 1563352081087
+      "updated": 1563700452420
     },
     {
       "active": true,
@@ -1519,7 +1602,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Laulerie / Domaine du Gouyat",
       "tourContitions": [
@@ -1535,7 +1622,7 @@
       "websites": [
         "http://www.vignoblesdubard.com/"
       ],
-      "updated": 1563352081162
+      "updated": 1563700452487
     },
     {
       "active": true,
@@ -1577,7 +1664,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Clos le Joncal",
       "tourContitions": [
@@ -1592,7 +1682,7 @@
       "websites": [
         "http://www.closlejoncal.com"
       ],
-      "updated": 1563352081232
+      "updated": 1563700452556
     },
     {
       "active": true,
@@ -1632,7 +1722,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château le Raz",
       "tourContitions": [
@@ -1648,7 +1742,7 @@
       "websites": [
         "http://www.le-raz.com"
       ],
-      "updated": 1563352081305
+      "updated": 1563700452622
     },
     {
       "active": true,
@@ -1694,7 +1788,12 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château le Tap",
       "tourContitions": [
@@ -1711,7 +1810,7 @@
       "websites": [
         "http://www.chateauletap.fr/"
       ],
-      "updated": 1563352081376
+      "updated": 1563700452695
     },
     {
       "active": true,
@@ -1756,7 +1855,9 @@
         "acces-handicape",
         "camping",
         "monument",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec"
       ],
       "title": "Château de Tiregand",
       "tourContitions": [
@@ -1773,7 +1874,7 @@
       "websites": [
         "http://www.chateau-de-tiregand.com"
       ],
-      "updated": 1563352081458
+      "updated": 1563700452770
     },
     {
       "active": true,
@@ -1812,7 +1913,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Combrillac",
       "tourContitions": [
@@ -1829,7 +1934,7 @@
       "websites": [
         "http://www.combrillac.fr"
       ],
-      "updated": 1563352081530
+      "updated": 1563700452839
     },
     {
       "active": true,
@@ -1877,7 +1982,12 @@
         "Producteur"
       ],
       "tags": [
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Court les Mûts",
       "tourContitions": [
@@ -1893,7 +2003,7 @@
       "websites": [
         "http://www.court-les-muts.com/"
       ],
-      "updated": 1563352081622
+      "updated": 1563700452906
     },
     {
       "active": true,
@@ -1935,7 +2045,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château le Chabrier",
       "tourContitions": [
@@ -1952,7 +2067,7 @@
       "websites": [
         "http://chabrier.jimdo.com/"
       ],
-      "updated": 1563352081693
+      "updated": 1563700452973
     },
     {
       "active": true,
@@ -2002,7 +2117,11 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Feely",
       "tourContitions": [
@@ -2019,7 +2138,7 @@
       "websites": [
         "http://www.chateaufeely.com"
       ],
-      "updated": 1563352081768
+      "updated": 1563700453043
     },
     {
       "active": true,
@@ -2067,7 +2186,11 @@
       "tags": [
         "acces-handicape",
         "restauration",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Pagnon",
       "tourContitions": [
@@ -2083,7 +2206,7 @@
       "websites": [
         "http://www.chateaupagnon.fr/"
       ],
-      "updated": 1563352081840
+      "updated": 1563700453107
     },
     {
       "active": true,
@@ -2137,7 +2260,10 @@
         "acces-handicape",
         "hebergement",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Domaine Moulin Garreau",
       "tourContitions": [
@@ -2153,7 +2279,7 @@
       "websites": [
         "https://www.domainemoulingarreau.fr/"
       ],
-      "updated": 1563352081920
+      "updated": 1563700453177
     },
     {
       "active": true,
@@ -2201,7 +2327,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine du Boyer",
       "tourContitions": [
@@ -2216,7 +2346,7 @@
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1563352081992
+      "updated": 1563700453246
     },
     {
       "active": true,
@@ -2257,7 +2387,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château La Robertie",
       "tourContitions": [
@@ -2274,7 +2409,7 @@
       "websites": [
         "http://www.chateau-larobertie.com"
       ],
-      "updated": 1563352082063
+      "updated": 1563700453314
     },
     {
       "active": true,
@@ -2313,7 +2448,13 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Château Bélingard SCEA",
       "tourContitions": [
         "Visite libre",
@@ -2330,7 +2471,7 @@
       "websites": [
         "http://www.belingard.com"
       ],
-      "updated": 1563352082140
+      "updated": 1563700453384
     },
     {
       "active": true,
@@ -2380,7 +2521,11 @@
       "tags": [
         "acces-handicape",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Barouillet",
       "tourContitions": [
@@ -2398,7 +2543,7 @@
       "websites": [
         "http://www.barouillet.com"
       ],
-      "updated": 1563352082211
+      "updated": 1563700453466
     },
     {
       "active": true,
@@ -2442,7 +2587,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Montplaisir",
       "tourContitions": [
@@ -2459,7 +2608,7 @@
       "websites": [
         "http://www.chateau-montplaisir.com"
       ],
-      "updated": 1563352082281
+      "updated": 1563700453536
     },
     {
       "active": true,
@@ -2499,7 +2648,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Kalian",
       "tourContitions": [
@@ -2516,7 +2668,7 @@
       "websites": [
         "http://www.chateaukalian.com"
       ],
-      "updated": 1563352082353
+      "updated": 1563700453621
     },
     {
       "active": true,
@@ -2556,7 +2708,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château du Rooy",
       "tourContitions": [
@@ -2573,7 +2729,7 @@
       "websites": [
         "http://www.chateau-du-rooy.com/"
       ],
-      "updated": 1563352082428
+      "updated": 1563700453691
     },
     {
       "active": true,
@@ -2620,7 +2776,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge"
       ],
       "title": "Château Champarel",
       "tourContitions": [
@@ -2634,7 +2791,7 @@
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1563352082501
+      "updated": 1563700453770
     },
     {
       "active": true,
@@ -2676,7 +2833,10 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine du Grand Jaure",
       "tourContitions": [
@@ -2693,7 +2853,7 @@
       "websites": [
         "http://www.domainedugrandjaure.com"
       ],
-      "updated": 1563352082575
+      "updated": 1563700453835
     },
     {
       "active": true,
@@ -2736,7 +2896,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine des Costes",
       "tourContitions": [
@@ -2753,7 +2916,7 @@
       "websites": [
         "http://www.domainedescostes.fr"
       ],
-      "updated": 1563352082669
+      "updated": 1563700453903
     },
     {
       "active": true,
@@ -2793,7 +2956,9 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose"
       ],
       "title": "Clos Les Côtes",
       "tourContitions": [
@@ -2807,7 +2972,7 @@
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1563352082742
+      "updated": 1563700453971
     },
     {
       "active": true,
@@ -2846,7 +3011,9 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Beauportail",
       "tourContitions": [
@@ -2860,7 +3027,7 @@
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1563352082816
+      "updated": 1563700454036
     },
     {
       "active": true,
@@ -2899,7 +3066,8 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge"
       ],
       "title": "Château Les Farcies du Pech",
       "tourContitions": [
@@ -2915,7 +3083,7 @@
       "websites": [
         "http://www.farciesdupech.com/"
       ],
-      "updated": 1563352082889
+      "updated": 1563700454105
     },
     {
       "active": true,
@@ -2960,7 +3128,9 @@
       ],
       "tags": [
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec"
       ],
       "title": "Château La Tilleraie",
       "tourContitions": [
@@ -2976,7 +3146,7 @@
       "websites": [
         "http://www.chateaulatilleraie.com"
       ],
-      "updated": 1563352082959
+      "updated": 1563700454175
     },
     {
       "active": true,
@@ -3019,7 +3189,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Poulvère",
       "tourContitions": [
@@ -3037,7 +3212,7 @@
       "websites": [
         "http://www.poulvere.com"
       ],
-      "updated": 1563352083029
+      "updated": 1563700454249
     },
     {
       "active": true,
@@ -3080,7 +3255,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Malfourat",
       "tourContitions": [
@@ -3099,7 +3279,7 @@
       "websites": [
         "http://www.chateau-malfourat.fr/"
       ],
-      "updated": 1563352083099
+      "updated": 1563700454316
     },
     {
       "active": true,
@@ -3150,7 +3330,11 @@
       ],
       "tags": [
         "restauration",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Vari - Maison Vari",
       "tourContitions": [
@@ -3166,7 +3350,7 @@
       "websites": [
         "http://chateau-vari.com/"
       ],
-      "updated": 1563352083173
+      "updated": 1563700454382
     },
     {
       "active": true,
@@ -3215,7 +3399,11 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Grande Maison",
       "tourContitions": [
@@ -3232,7 +3420,7 @@
       "websites": [
         "http://www.grandemaison-monbazillac.com/"
       ],
-      "updated": 1563352083241
+      "updated": 1563700454449
     },
     {
       "active": true,
@@ -3285,7 +3473,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Les Vignerons de Sigoulès",
       "tourContitions": [
@@ -3302,7 +3495,7 @@
       "websites": [
         "http://www.vigneronsdesigoules.com/"
       ],
-      "updated": 1563352083309
+      "updated": 1563700454516
     },
     {
       "active": true,
@@ -3349,7 +3542,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Grimardy",
       "tourContitions": [
@@ -3365,7 +3562,7 @@
       "websites": [
         "http://www.vins-bergerac-grimardy.com"
       ],
-      "updated": 1563352083380
+      "updated": 1563700454585
     },
     {
       "active": true,
@@ -3408,7 +3605,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château La Maurigne",
       "tourContitions": [
@@ -3425,7 +3627,7 @@
       "websites": [
         "http://www.chateaulamaurigne.com"
       ],
-      "updated": 1563352083450
+      "updated": 1563700454653
     },
     {
       "active": true,
@@ -3472,7 +3674,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château la Rayre",
       "tourContitions": [
@@ -3488,7 +3695,7 @@
       "websites": [
         "http://www.chateau-la-rayre.fr"
       ],
-      "updated": 1563352083525
+      "updated": 1563700454720
     },
     {
       "active": true,
@@ -3535,7 +3742,12 @@
         "acces-handicape",
         "hebergement",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de Montlong",
       "tourContitions": [
@@ -3551,7 +3763,7 @@
       "websites": [
         "http://www.domainedemontlong.fr"
       ],
-      "updated": 1563352083623
+      "updated": 1563700454789
     },
     {
       "active": true,
@@ -3595,7 +3807,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château de Peyrel",
       "tourContitions": [
@@ -3611,7 +3826,7 @@
       "websites": [
         "http://www.chateaudepeyrel.com"
       ],
-      "updated": 1563352083698
+      "updated": 1563700454855
     },
     {
       "active": true,
@@ -3658,7 +3873,12 @@
       "tags": [
         "acces-handicape",
         "camping",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de Combet",
       "tourContitions": [
@@ -3674,7 +3894,7 @@
       "websites": [
         "http://www.domainedecombet.com"
       ],
-      "updated": 1563352083772
+      "updated": 1563700454922
     },
     {
       "active": true,
@@ -3712,7 +3932,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Richard",
       "tourContitions": [
@@ -3728,7 +3953,7 @@
       "websites": [
         "http://www.chateaurichard.com"
       ],
-      "updated": 1563352083848
+      "updated": 1563700454994
     },
     {
       "active": true,
@@ -3772,7 +3997,12 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Château de Fayolle",
       "tourContitions": [
         "Visite libre",
@@ -3788,7 +4018,7 @@
       "websites": [
         "http://www.chateaufayolle.com"
       ],
-      "updated": 1563352083917
+      "updated": 1563700455065
     },
     {
       "active": true,
@@ -3832,7 +4062,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Cluzeau",
       "tourContitions": [
@@ -3849,7 +4084,7 @@
       "websites": [
         "http://www.chateaucluzeau.com"
       ],
-      "updated": 1563352083989
+      "updated": 1563700455144
     },
     {
       "active": true,
@@ -3889,7 +4124,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château La Brie",
       "tourContitions": [
@@ -3906,7 +4146,7 @@
       "websites": [
         "http://www.boutique-chateau-la-brie.educagri.fr"
       ],
-      "updated": 1563352084060
+      "updated": 1563700455211
     },
     {
       "active": true,
@@ -3941,7 +4181,12 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
+      ],
       "title": "Château de la Mallevieille",
       "tourContitions": [
         "Visite guidée uniquement sur rendez-vous"
@@ -3956,7 +4201,7 @@
       "websites": [
         "http://www.mallevieille.com"
       ],
-      "updated": 1563352084132
+      "updated": 1563700455281
     },
     {
       "active": true,
@@ -4010,7 +4255,11 @@
         "hebergement",
         "camping",
         "famille",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Perreau",
       "tourContitions": [
@@ -4027,7 +4276,7 @@
       "websites": [
         "http://www.domainedeperreau.fr"
       ],
-      "updated": 1563352084202
+      "updated": 1563700455349
     },
     {
       "active": true,
@@ -4073,7 +4322,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Le Payral",
       "tourContitions": [
@@ -4089,7 +4343,7 @@
       "websites": [
         "http://www.le-payral.com"
       ],
-      "updated": 1563352084277
+      "updated": 1563700455416
     },
     {
       "active": true,
@@ -4131,7 +4385,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Vignobles Fabien Castaing",
       "tourContitions": [
@@ -4147,7 +4406,7 @@
       "websites": [
         "http://www.fabiencastaing.com/"
       ],
-      "updated": 1563352084370
+      "updated": 1563700455486
     },
     {
       "active": true,
@@ -4190,7 +4449,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Le Fagé",
       "tourContitions": [
@@ -4206,7 +4470,7 @@
       "websites": [
         "http://www.chateau-le-fage.com"
       ],
-      "updated": 1563352084441
+      "updated": 1563700455555
     },
     {
       "active": true,
@@ -4245,7 +4509,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Les Brandeaux",
       "tourContitions": [
@@ -4261,7 +4529,7 @@
       "websites": [
         "http://www.chateau-les-brandeaux.com"
       ],
-      "updated": 1563352084513
+      "updated": 1563700455628
     },
     {
       "active": true,
@@ -4307,7 +4575,10 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Les Gérales",
       "tourContitions": [
@@ -4325,7 +4596,7 @@
       "websites": [
         "http://www.chateau-les-gerales.com"
       ],
-      "updated": 1563352084584
+      "updated": 1563700455696
     },
     {
       "active": true,
@@ -4366,7 +4637,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine du Lac",
       "tourContitions": [
@@ -4380,7 +4655,7 @@
         "rosette"
       ],
       "websites": [],
-      "updated": 1563352084660
+      "updated": 1563700455765
     },
     {
       "active": true,
@@ -4423,7 +4698,13 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Vignobles Lajonie",
       "tourContitions": [
         "Visite guidée uniquement sur rendez-vous"
@@ -4439,7 +4720,7 @@
       "websites": [
         "http://www.vignobleslajonie.com"
       ],
-      "updated": 1563352084734
+      "updated": 1563700455836
     },
     {
       "active": true,
@@ -4484,7 +4765,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Les Grimard",
       "tourContitions": [
@@ -4501,7 +4786,7 @@
       "websites": [
         "http://chateaulesgrimard.fr"
       ],
-      "updated": 1563352084805
+      "updated": 1563700455907
     },
     {
       "active": true,
@@ -4544,7 +4829,13 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Château Montdoyen",
       "tourContitions": [
         "Visite guidée uniquement sur rendez-vous"
@@ -4559,7 +4850,7 @@
       "websites": [
         "http://www.chateau-montdoyen.com/"
       ],
-      "updated": 1563352084878
+      "updated": 1563700455976
     },
     {
       "active": true,
@@ -4611,7 +4902,11 @@
         "Producteur"
       ],
       "tags": [
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château de Panisseau",
       "tourContitions": [
@@ -4628,7 +4923,7 @@
       "websites": [
         "http://www.chateaudepanisseau.com"
       ],
-      "updated": 1563352084953
+      "updated": 1563700456045
     },
     {
       "active": true,
@@ -4673,7 +4968,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Château des Tertres du Plantou",
       "tourContitions": [
@@ -4688,7 +4986,7 @@
       "websites": [
         "http://www.tertres-du-plantou.com/"
       ],
-      "updated": 1563352085031
+      "updated": 1563700456114
     },
     {
       "active": true,
@@ -4724,7 +5022,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Les Hauts de Caillevel",
       "tourContitions": [
@@ -4741,7 +5043,7 @@
       "websites": [
         "http://www.leshautsdecaillevel.com"
       ],
-      "updated": 1563352085131
+      "updated": 1563700456185
     },
     {
       "active": true,
@@ -4780,7 +5082,11 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château du Bloy",
       "tourContitions": [
@@ -4794,7 +5100,7 @@
         "montravel"
       ],
       "websites": [],
-      "updated": 1563352085206
+      "updated": 1563700456258
     },
     {
       "active": true,
@@ -4844,7 +5150,12 @@
         "Producteur"
       ],
       "tags": [
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine Le Castellat",
       "tourContitions": [
@@ -4859,7 +5170,7 @@
         "saussignac"
       ],
       "websites": [],
-      "updated": 1563352085283
+      "updated": 1563700456326
     },
     {
       "active": true,
@@ -4902,7 +5213,13 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Château Lestevenie",
       "tourContitions": [
         "Visite libre",
@@ -4918,7 +5235,7 @@
       "websites": [
         "http://www.chateau-lestevenie.com/"
       ],
-      "updated": 1563352085355
+      "updated": 1563700456394
     },
     {
       "active": true,
@@ -4960,7 +5277,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Larchère",
       "tourContitions": [
@@ -4978,7 +5300,7 @@
       "websites": [
         "http://www.chateaularchere.fr/"
       ],
-      "updated": 1563352085428
+      "updated": 1563700456463
     },
     {
       "active": true,
@@ -5023,7 +5345,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "restauration"
+        "restauration",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Moulins de Boisse",
       "tourContitions": [
@@ -5038,7 +5364,7 @@
       "websites": [
         "http://www.moulinsdeboisse.com/"
       ],
-      "updated": 1563352085501
+      "updated": 1563700456533
     },
     {
       "active": true,
@@ -5079,7 +5405,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Haut Lamouthe",
       "tourContitions": [
@@ -5095,7 +5425,7 @@
       "websites": [
         "http://www.chateau-haut-lamouthe.com/"
       ],
-      "updated": 1563352085573
+      "updated": 1563700456601
     },
     {
       "active": true,
@@ -5136,7 +5466,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Château Tuquet Monceau",
       "tourContitions": [
@@ -5152,7 +5485,7 @@
       "websites": [
         "http://www.tuquetmonceau.com/"
       ],
-      "updated": 1563352085647
+      "updated": 1563700456668
     },
     {
       "active": true,
@@ -5193,7 +5526,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Caillavel",
       "tourContitions": [
@@ -5209,7 +5547,7 @@
       "websites": [
         "http://www.chateau-caillavel.fr/"
       ],
-      "updated": 1563352085714
+      "updated": 1563700456738
     },
     {
       "active": true,
@@ -5250,7 +5588,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Clos l'Envège - SAS Julien de Savignac",
       "tourContitions": [
@@ -5272,7 +5615,7 @@
       "websites": [
         "http://www.julien-de-savignac.com/"
       ],
-      "updated": 1563352085787
+      "updated": 1563700456814
     },
     {
       "active": true,
@@ -5314,7 +5657,10 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Domaine des Trois Saules",
       "tourContitions": [
@@ -5328,7 +5674,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352085892
+      "updated": 1563700456881
     },
     {
       "active": true,
@@ -5369,7 +5715,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Colin-Madrigal",
       "tourContitions": [
@@ -5382,7 +5732,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352085967
+      "updated": 1563700456947
     },
     {
       "active": true,
@@ -5424,7 +5774,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec"
       ],
       "title": "Château Tour des Gendres",
       "tourContitions": [],
@@ -5437,7 +5789,7 @@
       "websites": [
         "http://www.chateautourdesgendres.com/"
       ],
-      "updated": 1563352086039
+      "updated": 1563700457020
     },
     {
       "active": true,
@@ -5475,7 +5827,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Pique-Sègue",
       "tourContitions": [
@@ -5491,7 +5847,7 @@
       "websites": [
         "http://chateaupiquesegue.com/"
       ],
-      "updated": 1563352086109
+      "updated": 1563700457089
     },
     {
       "active": true,
@@ -5532,7 +5888,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château de Planques",
       "tourContitions": [],
@@ -5544,7 +5905,7 @@
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1563352086178
+      "updated": 1563700457156
     },
     {
       "active": true,
@@ -5596,7 +5957,12 @@
       "tags": [
         "camping",
         "restauration",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château de Monbazillac",
       "tourContitions": [
@@ -5613,7 +5979,7 @@
       "websites": [
         "http://chateau-monbazillac.com/"
       ],
-      "updated": 1563352086247
+      "updated": 1563700457222
     },
     {
       "active": true,
@@ -5653,7 +6019,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de Pécoula",
       "tourContitions": [
@@ -5669,7 +6040,7 @@
       "websites": [
         "http://www.domaine-de-pecoula.com/"
       ],
-      "updated": 1563352086309
+      "updated": 1563700457288
     },
     {
       "active": true,
@@ -5706,7 +6077,13 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
+      ],
       "title": "Château Grands Quintins",
       "tourContitions": [
         "Visite libre uniquement sur rendez-vous"
@@ -5719,7 +6096,7 @@
         "saussignac"
       ],
       "websites": [],
-      "updated": 1563352086373
+      "updated": 1563700457357
     },
     {
       "active": true,
@@ -5757,7 +6134,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château des Masseries",
       "tourContitions": [
@@ -5771,7 +6152,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352086438
+      "updated": 1563700457432
     },
     {
       "active": true,
@@ -5809,7 +6190,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Pecany",
       "tourContitions": [],
@@ -5823,7 +6209,7 @@
       "websites": [
         "https://chateau-pecany-beigner-benoit.business.site"
       ],
-      "updated": 1563352086505
+      "updated": 1563700457503
     },
     {
       "active": true,
@@ -5861,7 +6247,12 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
+      ],
       "title": "Château La Plante",
       "tourContitions": [],
       "tourMinutes": "60",
@@ -5871,7 +6262,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352086602
+      "updated": 1563700457569
     },
     {
       "active": true,
@@ -5966,7 +6357,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Le Clos du Breil",
       "tourContitions": [
@@ -5981,7 +6376,7 @@
       "websites": [
         "http://www.leclosdubreil.fr"
       ],
-      "updated": 1563352086750
+      "updated": 1563700457693
     },
     {
       "active": true,
@@ -6021,7 +6416,10 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Château de la Reynaudie",
       "tourContitions": [
@@ -6036,7 +6434,7 @@
       "websites": [
         "http://www.chateaudelareynaudie.fr/"
       ],
-      "updated": 1563352086822
+      "updated": 1563700457761
     },
     {
       "active": true,
@@ -6082,7 +6480,11 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Haut-Fongrive",
       "tourContitions": [
@@ -6098,7 +6500,7 @@
       "websites": [
         "http://www.haut-fongrive.com/"
       ],
-      "updated": 1563352086891
+      "updated": 1563700457829
     },
     {
       "active": true,
@@ -6145,7 +6547,10 @@
       ],
       "tags": [
         "famille",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec"
       ],
       "title": "Domaine du Bout du Monde",
       "tourContitions": [
@@ -6161,7 +6566,7 @@
       "websites": [
         "http://www.domaineduboutdumonde.com/"
       ],
-      "updated": 1563352086961
+      "updated": 1563700457899
     },
     {
       "active": true,
@@ -6203,7 +6608,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de la Linière",
       "tourContitions": [
@@ -6219,7 +6629,7 @@
       "websites": [
         "https://domainedelaliniere.jimdo.com/"
       ],
-      "updated": 1563352087032
+      "updated": 1563700457966
     },
     {
       "active": true,
@@ -6255,7 +6665,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Thénac",
       "tourContitions": [
@@ -6270,7 +6684,7 @@
       "websites": [
         "http://www.chateau-thenac.com/"
       ],
-      "updated": 1563352087100
+      "updated": 1563700458042
     },
     {
       "active": true,
@@ -6319,7 +6733,11 @@
       ],
       "tags": [
         "monument",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Michel de Montaigne",
       "tourContitions": [
@@ -6335,7 +6753,7 @@
       "websites": [
         "http://www.chateau-montaigne.com/"
       ],
-      "updated": 1563352087171
+      "updated": 1563700458110
     },
     {
       "active": true,
@@ -6374,7 +6792,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Monestier La Tour",
       "tourContitions": [
@@ -6391,7 +6814,7 @@
       "websites": [
         "http://www.chateaumonestierlatour.com/"
       ],
-      "updated": 1563352087242
+      "updated": 1563700458181
     },
     {
       "active": true,
@@ -6433,7 +6856,12 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Les Miaudoux",
       "tourContitions": [
@@ -6449,7 +6877,7 @@
       "websites": [
         "http://www.chateaulesmiaudoux.com"
       ],
-      "updated": 1563352087334
+      "updated": 1563700458249
     },
     {
       "active": true,
@@ -6491,7 +6919,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Le Terme Blanc",
       "tourContitions": [
@@ -6507,7 +6939,7 @@
       "websites": [
         "https://chateau-letermeblanc.jimdo.com/"
       ],
-      "updated": 1563352087405
+      "updated": 1563700458315
     },
     {
       "active": true,
@@ -6549,7 +6981,11 @@
       "tags": [
         "acces-handicape",
         "hebergement",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine Le Martinat",
       "tourContitions": [
@@ -6565,7 +7001,7 @@
         "pecharmant"
       ],
       "websites": [],
-      "updated": 1563352087474
+      "updated": 1563700458383
     },
     {
       "active": true,
@@ -6601,7 +7037,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Vignobles Serge Gazziola",
       "tourContitions": [
@@ -6617,7 +7058,7 @@
       "websites": [
         "http://www.vignobles-gazziola.com/"
       ],
-      "updated": 1563352087541
+      "updated": 1563700458449
     },
     {
       "active": true,
@@ -6655,7 +7096,12 @@
         "Producteur"
       ],
       "tags": [
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château de Puypezat-Rosette",
       "tourContitions": [
@@ -6670,7 +7116,7 @@
         "rosette"
       ],
       "websites": [],
-      "updated": 1563352087614
+      "updated": 1563700458516
     },
     {
       "active": true,
@@ -6708,7 +7154,9 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine du Grand Boisse",
       "tourContitions": [],
@@ -6720,7 +7168,7 @@
         "rosette"
       ],
       "websites": [],
-      "updated": 1563352087681
+      "updated": 1563700458587
     },
     {
       "active": true,
@@ -6748,7 +7196,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Le Chrisly / Clos la Selmonie",
       "tourContitions": [],
@@ -6760,7 +7213,7 @@
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1563352087748
+      "updated": 1563700458663
     },
     {
       "active": true,
@@ -6805,7 +7258,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Thenoux",
       "tourContitions": [
@@ -6822,7 +7280,7 @@
       "websites": [
         "http://www.chateauthenoux.com/"
       ],
-      "updated": 1563352087817
+      "updated": 1563700458731
     },
     {
       "active": true,
@@ -6860,7 +7318,11 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Brunet-Charpentière",
       "tourContitions": [],
@@ -6872,7 +7334,7 @@
         "montravel"
       ],
       "websites": [],
-      "updated": 1563352087887
+      "updated": 1563700458799
     },
     {
       "active": true,
@@ -6917,7 +7379,12 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château des Ganfards",
       "tourContitions": [
@@ -6934,7 +7401,7 @@
       "websites": [
         "http://www.chateaudesganfards.com/"
       ],
-      "updated": 1563352087953
+      "updated": 1563700458871
     },
     {
       "active": true,
@@ -6971,7 +7438,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Jolis Bois",
       "tourContitions": [
@@ -6985,7 +7456,7 @@
         "montravel"
       ],
       "websites": [],
-      "updated": 1563352088044
+      "updated": 1563700458943
     },
     {
       "active": true,
@@ -7026,7 +7497,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Roque Peyre - GAEC de Mazurie",
       "tourContitions": [
@@ -7040,7 +7515,7 @@
         "montravel"
       ],
       "websites": [],
-      "updated": 1563352088113
+      "updated": 1563700459025
     },
     {
       "active": true,
@@ -7082,7 +7557,12 @@
         "Producteur"
       ],
       "tags": [
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Château Pech La Calevie",
       "tourContitions": [
@@ -7097,7 +7577,7 @@
         "monbazillac"
       ],
       "websites": [],
-      "updated": 1563352088188
+      "updated": 1563700459097
     },
     {
       "active": true,
@@ -7126,7 +7606,9 @@
         "Producteur"
       ],
       "tags": [
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-blanc-sec"
       ],
       "title": "Clos d'Orsignac",
       "tourContitions": [],
@@ -7137,7 +7619,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352088261
+      "updated": 1563700459169
     },
     {
       "active": true,
@@ -7172,7 +7654,12 @@
       "statuses": [
         "Producteur"
       ],
-      "tags": [],
+      "tags": [
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
+      ],
       "title": "Château Haute Brande",
       "tourContitions": [
         "Visite guidée",
@@ -7187,7 +7674,7 @@
       "websites": [
         "http://www.chateauhautebrande.com"
       ],
-      "updated": 1563352088335
+      "updated": 1563700459249
     },
     {
       "active": true,
@@ -7228,7 +7715,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Association Des Vignes aux Vins ",
       "tourContitions": [
@@ -7245,7 +7737,7 @@
         "saussignac"
       ],
       "websites": [],
-      "updated": 1563352088406
+      "updated": 1563700459317
     },
     {
       "active": true,
@@ -7289,7 +7781,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Laulan",
       "tourContitions": [
@@ -7304,7 +7800,7 @@
       "websites": [
         "http://www.domainelaulan.com"
       ],
-      "updated": 1563352088477
+      "updated": 1563700459383
     },
     {
       "active": true,
@@ -7349,7 +7845,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine Les Bertins",
       "tourContitions": [
@@ -7364,7 +7864,7 @@
       "websites": [
         "http://www.lesbertins.fr"
       ],
-      "updated": 1563352088549
+      "updated": 1563700459453
     },
     {
       "active": true,
@@ -7411,7 +7911,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine de Laplace",
       "tourContitions": [
@@ -7426,7 +7930,7 @@
         "duras"
       ],
       "websites": [],
-      "updated": 1563352088619
+      "updated": 1563700459522
     },
     {
       "active": true,
@@ -7489,7 +7993,12 @@
         "hebergement",
         "camping",
         "restauration",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine de Ferrant - SCEA Vignobles Vuillien",
       "tourContitions": [],
@@ -7502,7 +8011,7 @@
       "websites": [
         "http://www.domainedeferrant.com"
       ],
-      "updated": 1563352088690
+      "updated": 1563700459592
     },
     {
       "active": true,
@@ -7574,7 +8083,12 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine du Grand Mayne",
       "tourContitions": [
@@ -7590,7 +8104,7 @@
       "websites": [
         "http://www.domaine-du-grand-mayne.com"
       ],
-      "updated": 1563352088791
+      "updated": 1563700459660
     },
     {
       "active": true,
@@ -7645,7 +8159,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "env-humain"
+        "env-humain",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "SAS Berticot-Gramman - Les Vignerons de Landerrouat - Duras - Cazaugitat - Langoiran",
       "tourContitions": [
@@ -7661,7 +8179,7 @@
       "websites": [
         "http://www.berticot.com"
       ],
-      "updated": 1563352088867
+      "updated": 1563700459728
     },
     {
       "active": true,
@@ -7709,7 +8227,11 @@
         "Récoltant éleveur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Château Molhière",
       "tourContitions": [
@@ -7724,7 +8246,7 @@
       "websites": [
         "http://molhiere.com"
       ],
-      "updated": 1563352088936
+      "updated": 1563700459796
     },
     {
       "active": true,
@@ -7770,7 +8292,12 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux",
+        "vin-blanc-liquoreux"
       ],
       "title": "Domaine du Vieux Bourg",
       "tourContitions": [
@@ -7786,7 +8313,7 @@
       "websites": [
         "http://www.vignoblesvincentbireaud.fr/"
       ],
-      "updated": 1563352089008
+      "updated": 1563700459874
     },
     {
       "active": true,
@@ -7843,7 +8370,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Domaine La Tuilerie Labreille",
       "tourContitions": [
@@ -7857,7 +8388,7 @@
         "duras"
       ],
       "websites": [],
-      "updated": 1563352089077
+      "updated": 1563700459941
     },
     {
       "active": true,
@@ -7910,7 +8441,9 @@
       ],
       "tags": [
         "acces-handicape",
-        "hebergement"
+        "hebergement",
+        "vin-rouge",
+        "vin-blanc-sec"
       ],
       "title": "Château La Grave Béchade",
       "tourContitions": [
@@ -7926,7 +8459,7 @@
       "websites": [
         "http://lagravebechade.fr"
       ],
-      "updated": 1563352089146
+      "updated": 1563700460006
     },
     {
       "active": true,
@@ -8036,7 +8569,11 @@
         "Producteur"
       ],
       "tags": [
-        "acces-handicape"
+        "acces-handicape",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "EARL Lespine - Château La Boissière",
       "tourContitions": [
@@ -8051,7 +8588,7 @@
       "websites": [
         "http://www.chateau-la-boissiere.fr"
       ],
-      "updated": 1563352089286
+      "updated": 1563700460128
     },
     {
       "active": true,
@@ -8095,7 +8632,11 @@
       ],
       "tags": [
         "acces-handicape",
-        "camping"
+        "camping",
+        "vin-rouge",
+        "vin-rose",
+        "vin-blanc-sec",
+        "vin-blanc-moelleux"
       ],
       "title": "Clos du Pech Bessou",
       "tourContitions": [
@@ -8109,7 +8650,7 @@
         "bergerac"
       ],
       "websites": [],
-      "updated": 1563352089357
+      "updated": 1563700460194
     }
   ]
 }
