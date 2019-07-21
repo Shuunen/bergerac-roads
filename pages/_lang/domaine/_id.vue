@@ -31,7 +31,7 @@
           &nbsp;: {{ data.websites.join(', ') }}
         </p>
         <!--
-          <p>{{ data.adress }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
+          <p>{{ data.address }}<br><i class="el-icon-location-outline"/>{{ data.town }}</p>
 
           <a v-if="data.socialFacebook" :href="data.socialFacebook">
             <img alt="facebook" src="http://www.vins-bergeracduras.fr/wp-content/themes/vins-de-bergerac/images/icone_facebook.png">

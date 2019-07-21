@@ -217,7 +217,7 @@
       ],
       "tourMinutes": "45",
       "town": "BERGERAC",
-      "adress": "Chemin de la Briasse",
+      "address": "Chemin de la Briasse",
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -287,7 +287,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": "Route de Mont de Marsan",
+      "address": "Route de Mont de Marsan",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -349,7 +349,7 @@
       ],
       "tourMinutes": "60",
       "town": "BERGERAC",
-      "adress": "70 boulevard Santraille",
+      "address": "70 boulevard Santraille",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -415,7 +415,7 @@
       ],
       "tourMinutes": null,
       "town": "LEMBRAS",
-      "adress": "2 Route de Villamblard",
+      "address": "2 Route de Villamblard",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -482,7 +482,7 @@
       ],
       "tourMinutes": "90",
       "town": "LEMBRAS",
-      "adress": "46 Route de Périgueux",
+      "address": "46 Route de Périgueux",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -552,7 +552,7 @@
       ],
       "tourMinutes": "30",
       "town": "COLOMBIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -615,7 +615,7 @@
       ],
       "tourMinutes": null,
       "town": "COLOMBIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -694,7 +694,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -765,7 +765,7 @@
       ],
       "tourMinutes": "25",
       "town": "MONBAZILLAC",
-      "adress": "Bernasse",
+      "address": "Bernasse",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -823,7 +823,7 @@
       ],
       "tourMinutes": "45",
       "town": "BERGERAC",
-      "adress": "1 rue des Récollets",
+      "address": "1 rue des Récollets",
       "vineyards": [
         "bergerac",
         "duras",
@@ -891,7 +891,7 @@
       ],
       "tourMinutes": "30",
       "town": "CONNE-DE-LABARDE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -964,7 +964,7 @@
       ],
       "tourMinutes": "60",
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1045,7 +1045,7 @@
       ],
       "tourMinutes": "120",
       "town": "SAINT-AUBIN-DE-CADELECH",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -1118,7 +1118,7 @@
       ],
       "tourMinutes": "90",
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1192,7 +1192,7 @@
       ],
       "tourMinutes": "45",
       "town": "PRIGONRIEUX",
-      "adress": "Route de Simondie",
+      "address": "Route de Simondie",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -1261,7 +1261,7 @@
       ],
       "tourMinutes": "30",
       "town": "CONNE-DE-LABARDE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1336,7 +1336,7 @@
       ],
       "tourMinutes": "60",
       "town": "SAINT-ANTOINE-DE-BREUILH",
-      "adress": "1235 route de Couin",
+      "address": "1235 route de Couin",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1408,7 +1408,7 @@
       ],
       "tourMinutes": "30",
       "town": "PORT-SAINTE-FOY-ET-PONCHAPT",
-      "adress": "Calabre",
+      "address": "Calabre",
       "vineyards": [
         "bergerac",
         "montravel",
@@ -1478,7 +1478,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-SAUVEUR",
-      "adress": "36 Route de Grateloup",
+      "address": "36 Route de Grateloup",
       "vineyards": [
         "pecharmant"
       ],
@@ -1548,7 +1548,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -1614,7 +1614,7 @@
       ],
       "tourMinutes": "30",
       "town": "SAINT-MEARD-DE-GURCON",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1675,7 +1675,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-JULIEN-D'EYMET",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -1734,7 +1734,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-MEARD-DE-GURCON",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -1802,7 +1802,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -1866,7 +1866,7 @@
       ],
       "tourMinutes": "75",
       "town": "CREYSSE",
-      "adress": "118 Route de Sainte Alvère",
+      "address": "118 Route de Sainte Alvère",
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -1926,7 +1926,7 @@
       ],
       "tourMinutes": null,
       "town": "PRIGONRIEUX",
-      "adress": "Impasse Coucombre",
+      "address": "Impasse Coucombre",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -1995,7 +1995,7 @@
       ],
       "tourMinutes": "60",
       "town": "RAZAC-DE-SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -2059,7 +2059,7 @@
       ],
       "tourMinutes": null,
       "town": "RAZAC-DE-SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -2130,7 +2130,7 @@
       ],
       "tourMinutes": "60",
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -2198,7 +2198,7 @@
       ],
       "tourMinutes": null,
       "town": "VELINES",
-      "adress": "38 Avenguda del Peirigord",
+      "address": "38 Avenguda del Peirigord",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -2271,7 +2271,7 @@
       ],
       "tourMinutes": "30",
       "town": "LAMOTHE-MONTRAVEL",
-      "adress": "10 Route du Coteau",
+      "address": "10 Route du Coteau",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -2340,7 +2340,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2401,7 +2401,7 @@
       ],
       "tourMinutes": null,
       "town": "ROUFFIGNAC-DE-SIGOULES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2463,7 +2463,7 @@
       ],
       "tourMinutes": "45",
       "town": "POMPORT",
-      "adress": "D17",
+      "address": "D17",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2534,7 +2534,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2600,7 +2600,7 @@
       ],
       "tourMinutes": "60",
       "town": "PRIGONRIEUX",
-      "adress": "137 Route de Peymilou, D13",
+      "address": "137 Route de Peymilou, D13",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -2660,7 +2660,7 @@
       ],
       "tourMinutes": "45",
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -2720,7 +2720,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -2786,7 +2786,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": "1637 chemin du Hameau de Pécharmant",
+      "address": "1637 chemin du Hameau de Pécharmant",
       "vineyards": [
         "pecharmant"
       ],
@@ -2844,7 +2844,7 @@
       ],
       "tourMinutes": "20",
       "town": "LEMBRAS",
-      "adress": "16 chemin de Jaure",
+      "address": "16 chemin de Jaure",
       "vineyards": [
         "bergerac",
         "pecharmant",
@@ -2907,7 +2907,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": "4 rue Jean Brun",
+      "address": "4 rue Jean Brun",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -2966,7 +2966,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": "2 rue Jean Brun",
+      "address": "2 rue Jean Brun",
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -3021,7 +3021,7 @@
       ],
       "tourMinutes": "60",
       "town": "BERGERAC",
-      "adress": "Route du Hameau de Pécharmant",
+      "address": "Route du Hameau de Pécharmant",
       "vineyards": [
         "monbazillac",
         "pecharmant"
@@ -3075,7 +3075,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -3138,7 +3138,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "pecharmant"
@@ -3203,7 +3203,7 @@
       ],
       "tourMinutes": "90",
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -3269,7 +3269,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -3342,7 +3342,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3412,7 +3412,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3486,7 +3486,7 @@
       ],
       "tourMinutes": "30",
       "town": "MESCOULES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -3554,7 +3554,7 @@
       ],
       "tourMinutes": "60",
       "town": "MONTAZEAU",
-      "adress": "14 les Grimards",
+      "address": "14 les Grimards",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -3619,7 +3619,7 @@
       ],
       "tourMinutes": "60",
       "town": "RAZAC-DE-SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -3687,7 +3687,7 @@
       ],
       "tourMinutes": "30",
       "town": "COLOMBIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3755,7 +3755,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3818,7 +3818,7 @@
       ],
       "tourMinutes": null,
       "town": "PRIGONRIEUX",
-      "adress": "21 route de Peyrel",
+      "address": "21 route de Peyrel",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -3886,7 +3886,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -3945,7 +3945,7 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -4010,7 +4010,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -4076,7 +4076,7 @@
       ],
       "tourMinutes": null,
       "town": "FLAUGEAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4138,7 +4138,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4193,7 +4193,7 @@
       ],
       "tourMinutes": null,
       "town": "MONFAUCON",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -4268,7 +4268,7 @@
       ],
       "tourMinutes": "45",
       "town": "SAINT-MICHEL-DE-MONTAIGNE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -4335,7 +4335,7 @@
       ],
       "tourMinutes": "60",
       "town": "RAZAC-DE-SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -4398,7 +4398,7 @@
       ],
       "tourMinutes": null,
       "town": "CUNEGES",
-      "adress": "12 Route des Rivailles",
+      "address": "12 Route des Rivailles",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4462,7 +4462,7 @@
       ],
       "tourMinutes": "20",
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4521,7 +4521,7 @@
       ],
       "tourMinutes": null,
       "town": "THENAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "duras"
@@ -4534,7 +4534,7 @@
     {
       "active": true,
       "activities": "Une visite du domaine sur rendez-vous, randonnée lieu historique et chapelle libre - les enfants peuvent admirer des blondes d'Aquitaine au domaine et chez un voisin à 1km peuvent voir un élevage de chèvres.",
-      "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois. Venez découvrir notre domaine \nAu programme :\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des adresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
+      "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois. Venez découvrir notre domaine \nAu programme :\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des addresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
       "descriptionEn": "Searching for a walk with your relatives or alone at the heart of our Bergeracois vineyard?\nCome discover our estate!\nOur program:\n- free tasting of our wines and we will share our recipes (matching food and wines with Sandra FAUCHE)\n- a guided tour (by appointment) or on your own, picnic with gift basket (order only)\n- tours to visit the essentials of our 4 “Perigord” will be advised to you, addresses of good restaurants, a bit of history (for those who want to do some hiking), admire a totally restored chapel (St Mayme). All of this amidst the vines to enjoy a beautiful moment in the nature.\nWe also propose you bed and breakfast at our neighbours’ 500m and 2km away.  \n",
       "id": "DEGAQU024V506U5L",
       "labels": [],
@@ -4588,7 +4588,7 @@
       ],
       "tourMinutes": "30",
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4649,7 +4649,7 @@
       ],
       "tourMinutes": null,
       "town": "GINESTET",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "rosette"
@@ -4711,7 +4711,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -4778,7 +4778,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONTAZEAU",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -4842,7 +4842,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -4916,7 +4916,7 @@
       ],
       "tourMinutes": "60",
       "town": "THENAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -4979,7 +4979,7 @@
       ],
       "tourMinutes": "60",
       "town": "BOISSE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -5035,7 +5035,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5094,7 +5094,7 @@
       ],
       "tourMinutes": null,
       "town": "BONNEVILLE-ET-SAINT-AVIT-DE-FUMADIERES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -5164,7 +5164,7 @@
       ],
       "tourMinutes": "45",
       "town": "RAZAC-DE-SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -5227,7 +5227,7 @@
       ],
       "tourMinutes": null,
       "town": "GAGEAC-ET-ROUILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -5291,7 +5291,7 @@
       ],
       "tourMinutes": "30",
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -5357,7 +5357,7 @@
       ],
       "tourMinutes": "40",
       "town": "BOISSE",
-      "adress": "Route de Faurilles",
+      "address": "Route de Faurilles",
       "vineyards": [
         "bergerac"
       ],
@@ -5417,7 +5417,7 @@
       ],
       "tourMinutes": null,
       "town": "LAMONZIE-SAINT-MARTIN",
-      "adress": "56 Route de Lamouthe",
+      "address": "56 Route de Lamouthe",
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5477,7 +5477,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-VIVIEN",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -5539,7 +5539,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5602,7 +5602,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "duras",
@@ -5669,7 +5669,7 @@
       ],
       "tourMinutes": "15",
       "town": "VILLEFRANCHE-DE-LONCHAT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -5727,7 +5727,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-CERNIN-DE-LABARDE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -5782,7 +5782,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "RIBAGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -5839,7 +5839,7 @@
       ],
       "tourMinutes": null,
       "town": "PORT-SAINTE-FOY-ET-PONCHAPT",
-      "adress": "Ponchapt ",
+      "address": "Ponchapt ",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -5899,7 +5899,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "COLOMBIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -5971,7 +5971,7 @@
       ],
       "tourMinutes": "45",
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -6032,7 +6032,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -6090,7 +6090,7 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6147,7 +6147,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-PIERRE-D'EYRAUD",
-      "adress": "67 Route des Masseries",
+      "address": "67 Route des Masseries",
       "vineyards": [
         "bergerac"
       ],
@@ -6201,7 +6201,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -6257,7 +6257,7 @@
       "tourContitions": [],
       "tourMinutes": "60",
       "town": "MINZAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6309,7 +6309,7 @@
       ],
       "tourMinutes": null,
       "town": "MONBAZILLAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "monbazillac"
       ],
@@ -6369,7 +6369,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-LEON-D'ISSIGEAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6427,7 +6427,7 @@
       ],
       "tourMinutes": "35",
       "town": "SAINT-VIVIEN",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6493,7 +6493,7 @@
       ],
       "tourMinutes": null,
       "town": "THENAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6559,7 +6559,7 @@
       ],
       "tourMinutes": null,
       "town": "RIBAGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6621,7 +6621,7 @@
       ],
       "tourMinutes": "30",
       "town": "MONESTIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6677,7 +6677,7 @@
       ],
       "tourMinutes": "60",
       "town": "THENAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6746,7 +6746,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-MICHEL-DE-MONTAIGNE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -6806,7 +6806,7 @@
       ],
       "tourMinutes": null,
       "town": "MONESTIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6869,7 +6869,7 @@
       ],
       "tourMinutes": "45",
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -6931,7 +6931,7 @@
       ],
       "tourMinutes": null,
       "town": "ROUFFIGNAC-DE-SIGOULES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -6993,7 +6993,7 @@
       ],
       "tourMinutes": null,
       "town": "LEMBRAS",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -7050,7 +7050,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -7109,7 +7109,7 @@
       ],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": "23 Route de Rosette",
+      "address": "23 Route de Rosette",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -7162,7 +7162,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "BERGERAC",
-      "adress": "Sainte-Foy-Des-Vignes",
+      "address": "Sainte-Foy-Des-Vignes",
       "vineyards": [
         "bergerac",
         "rosette"
@@ -7207,7 +7207,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -7271,7 +7271,7 @@
       ],
       "tourMinutes": null,
       "town": "COLOMBIER",
-      "adress": "Thenoux",
+      "address": "Thenoux",
       "vineyards": [
         "bergerac",
         "monbazillac",
@@ -7328,7 +7328,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "MONTAZEAU",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -7393,7 +7393,7 @@
       ],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "saussignac"
@@ -7450,7 +7450,7 @@
       ],
       "tourMinutes": "60",
       "town": "PORT-SAINTE-FOY-ET-PONCHAPT",
-      "adress": "Place Augustin Mourguet",
+      "address": "Place Augustin Mourguet",
       "vineyards": [
         "bergerac",
         "montravel"
@@ -7509,7 +7509,7 @@
       ],
       "tourMinutes": "45",
       "town": "FOUGUEYROLLES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "montravel"
@@ -7571,7 +7571,7 @@
       ],
       "tourMinutes": null,
       "town": "POMPORT",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac",
         "monbazillac"
@@ -7614,7 +7614,7 @@
       "tourContitions": [],
       "tourMinutes": null,
       "town": "SAUSSIGNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
@@ -7667,7 +7667,7 @@
       ],
       "tourMinutes": null,
       "town": "SAINT-AVIT-SAINT-NAZAIRE",
-      "adress": "124 route de la Brande",
+      "address": "124 route de la Brande",
       "vineyards": [
         "bergerac"
       ],
@@ -7728,7 +7728,7 @@
       ],
       "tourMinutes": null,
       "town": "PINEUILH",
-      "adress": "80 avenue de la Résistance",
+      "address": "80 avenue de la Résistance",
       "vineyards": [
         "bergerac",
         "duras",
@@ -7793,7 +7793,7 @@
       ],
       "tourMinutes": null,
       "town": "DURAS",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -7857,7 +7857,7 @@
       ],
       "tourMinutes": "30",
       "town": "SAINT-ASTIER",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -7925,7 +7925,7 @@
       ],
       "tourMinutes": "80",
       "town": "SAINT-JEAN-DE-DURAS",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8004,7 +8004,7 @@
       "tourContitions": [],
       "tourMinutes": "20",
       "town": "ESCLOTTES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8097,7 +8097,7 @@
       ],
       "tourMinutes": "60",
       "town": "VILLENEUVE-DE-DURAS",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8172,7 +8172,7 @@
       ],
       "tourMinutes": "60",
       "town": "DURAS",
-      "adress": "Route de Sainte Foy La Grande",
+      "address": "Route de Sainte Foy La Grande",
       "vineyards": [
         "duras"
       ],
@@ -8239,7 +8239,7 @@
       ],
       "tourMinutes": "30",
       "town": "DURAS",
-      "adress": "1816 route de Sainte Foy",
+      "address": "1816 route de Sainte Foy",
       "vineyards": [
         "duras"
       ],
@@ -8306,7 +8306,7 @@
       ],
       "tourMinutes": null,
       "town": "PARDAILLAN",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8383,7 +8383,7 @@
       ],
       "tourMinutes": "60",
       "town": "LOUBES-BERNAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8452,7 +8452,7 @@
       ],
       "tourMinutes": "30",
       "town": "BALEYSSAGUES",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8521,7 +8521,7 @@
       ],
       "tourMinutes": "40",
       "town": "DURAS",
-      "adress": "130 route du Stade",
+      "address": "130 route du Stade",
       "vineyards": [
         "duras"
       ],
@@ -8581,7 +8581,7 @@
       ],
       "tourMinutes": "60",
       "town": "SOUMENSAC",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "duras"
       ],
@@ -8645,7 +8645,7 @@
       ],
       "tourMinutes": "30",
       "town": "PLAISANCE",
-      "adress": null,
+      "address": null,
       "vineyards": [
         "bergerac"
       ],
