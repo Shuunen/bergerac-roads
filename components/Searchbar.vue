@@ -91,12 +91,12 @@ const domaines = [
 
 export default {
   filters: {
-    capitalize: function(value) {
-      if (!value) return ''
+    capitalize(value) {
+      if (!value) { return '' }
       value = value.toString()
       return value.charAt(0).toUpperCase() + value.slice(1)
     },
-    sum: function(value) {
+    sum(value) {
       return value.length
     },
   },
@@ -132,7 +132,7 @@ export default {
           console.log('apply' + checkedFiltersToApply)
           let isValid = false
           domaine.filters.forEach(function(filter) {
-            if (checkedFiltersToApply.indexOf(filter.name) >= 0 || isValid) {
+            if (checkedFiltersToApply.includes(filter.name) || isValid) {
               console.log('in filter array')
               isValid = true
             } else {

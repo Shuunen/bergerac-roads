@@ -60,10 +60,10 @@ export default {
     },
   },
   computed: {
-    number: function() {
+    number() {
       return this.data.number
     },
-    image: function() {
+    image() {
       let path = '/icons/no-image.png'
       if (this.data.thumbnail) {
         path = this.data.thumbnail
@@ -73,7 +73,7 @@ export default {
       }
       return path
     },
-    description: function() {
+    description() {
       let description = ''
       if (this.data.description && this.data.description.length) {
         description = this.cleanDescription(this.data.description)
@@ -96,14 +96,14 @@ export default {
       }
       return description
     },
-    label: function() {
+    label() {
       let label = null
       if (this.data.labels && this.data.labels.length) {
         label = this.data.labels[0]
       }
       return label
     },
-    wines: function() {
+    wines() {
       const wines = []
       if (this.data.tags && this.data.tags.length) {
         winesToDisplay.forEach((wine) => {
@@ -115,7 +115,7 @@ export default {
       }
       return wines
     },
-    added: function() {
+    added() {
       if (!this.data.updated) {
         return null
       }

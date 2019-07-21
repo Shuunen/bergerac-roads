@@ -91,12 +91,12 @@ export default {
   },
   computed: {
     google: gmapApi,
-    canCreate: function() {
+    canCreate() {
       return this.checkedItems.length && this.startingPoint.length
     },
   },
   watch: {
-    items: function() {
+    items() {
       // Reinitialize the checked items list when the items list changes.
       console.log('cleared checked items')
       this.checkedItems = []

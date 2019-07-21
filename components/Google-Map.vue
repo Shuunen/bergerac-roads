@@ -61,10 +61,10 @@ export default {
     google: gmapApi,
     // Necessary in order to have only one directions renderer and
     // avoid multiple displayed itineraries.
-    directionsDisplay: function() {
+    directionsDisplay() {
       return new this.google.maps.DirectionsRenderer()
     },
-    formattedMarkers: function() {
+    formattedMarkers() {
       let markers = this.markers.map((marker) => {
         marker.position = {
           lat: +marker.latitude,
