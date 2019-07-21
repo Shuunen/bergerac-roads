@@ -27,6 +27,7 @@
     "lodash.clonedeep": "4.5.0",
     "node-fetch": "2.6.0",
     "node-sass": "4.12.0",
+    "npm-run-all": "4.1.5",
     "nuxt": "2.8.1",
     "sass-loader": "7.1.0",
     "speakingurl": "14.0.1",
@@ -45,13 +46,13 @@
   "private": true,
   "scripts": {
     "analyze": "nuxt build --analyze",
-    "build": "npm run data:import && nuxt build",
+    "build": "nuxt build",
     "check": "npx repo-check",
+    "ci": "run-s test data:import build",
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",
     "dev": "nuxt",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
     "start": "nuxt",
     "test": "npm run lint",
     "update": "npx npm-check-updates -u"
