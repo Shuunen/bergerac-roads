@@ -1,5 +1,6 @@
 {
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "bugs": "https://github.com/Shuunen/bergerac-roads/issues",
   "config": {
     "description": "Tourisme vitivinicole dans le Bergerac",
     "title": "Vins de Bergerac Duras"
@@ -36,14 +37,22 @@
     "vue-lazyload": "1.3.1",
     "vue2-google-maps": "0.10.7"
   },
-  "description": "A great project",
+  "description": "Promoting the great wines of Bergerac since 2018 !",
   "engines": {
     "node": ">=10.15.0"
   },
   "homepage": "https://github.com/Shuunen/bergerac-roads",
+  "keywords": [
+    "bergerac",
+    "wines"
+  ],
   "license": "AGPL-3.0",
   "name": "@shuunen/bergerac-roads",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/bergerac-roads.git"
+  },
   "scripts": {
     "analyze": "nuxt build --analyze",
     "build": "nuxt build",
