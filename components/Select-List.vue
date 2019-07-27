@@ -5,19 +5,23 @@
         {{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}
       </div>
 
-      <div class="line" :class="[startingPoint.length ? 'valid' : 'todo']">
+      <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">
         1) {{ $t('search.helpStart') }}
       </div>
 
       <div class="line">
-        <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint('')">
+        <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint(null)">
           <el-button slot="append" @click="getNavigatorPosition">
-            {{ $t('search.findMe') }} <i class="el-icon-location-outline el-icon-right" />
+            {{ $t('search.findMe') }}
+            <i class="el-icon-location-outline el-icon-right" />
           </el-button>
         </el-input>
       </div>
 
-      <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
+      <div
+        class="line"
+        :class="[checkedItems.length ? 'valid' : 'todo']"
+      >
         2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
       </div>
 
@@ -92,7 +96,7 @@ export default {
   computed: {
     google: gmapApi,
     canCreate() {
-      return this.checkedItems.length && this.startingPoint.length
+      return this.checkedItems && this.checkedItems.length && this.startingPoint && this.startingPoint.length
     },
   },
   watch: {
@@ -107,9 +111,7 @@ export default {
     // Selects or not by clicking on the button in infowindow.
     eventBus.$on('select-marker', (selectedMarker) => {
       console.log('on select-marker')
-      const index = this.checkedItems.findIndex(
-        item => item === selectedMarker.title,
-      )
+      const index = this.checkedItems.findIndex(item => item === selectedMarker.title)
       if (index === -1) {
         this.checkedItems.push(selectedMarker.title)
       } else {
@@ -119,23 +121,9 @@ export default {
     })
 
     eventBus.$on('show-map', () => (this.showMap = true))
-
     eventBus.$on('checked-items', () => this.sortItemsDebounced())
-
     eventBus.$on('preselect-items', this.preselectItems)
-
     eventBus.$on('domains-search-complete', () => (this.filteringDomains = false))
-
-    eventBus.$on('set-starting-point', (position) => {
-      if (typeof position === 'object') {
-        console.log('set-starting-point (list) : converting object to string...')
-        this.getCityByCoordinates(position.coords)
-      } else {
-        this.startingPoint = position
-        this.loading = false
-        console.log('set-starting-point (list) : now set to "' + this.startingPoint + '"')
-      }
-    })
 
     this.initAutoComplete()
 
@@ -145,6 +133,9 @@ export default {
     this.emitFilterDomainDebounced = debounce(this.emitFilterDomain, 500)
 
     // this.listenFilterDomain(true)
+  },
+  destroyed() {
+    eventBus.$off('preselect-items', this.preselectItems)
   },
   methods: {
     initAutoComplete() {
@@ -158,46 +149,12 @@ export default {
         return
       }
       console.log('in initAutoComplete')
-      const autocomplete = new this.google.maps.places.Autocomplete(
-        this.$refs.autocomplete.$refs.input,
-        {
-          // Restrict autocomplete to results in France.
-          componentRestrictions: {
-            country: 'fr',
-          },
-        },
-      )
+      // Restrict autocomplete to results in France.
+      const autocomplete = new this.google.maps.places.Autocomplete(this.$refs.autocomplete.$refs.input, { componentRestrictions: { country: 'fr' } })
       autocomplete.addListener('place_changed', () => {
         this.setStartingPoint(autocomplete.getPlace().formatted_address)
       })
     },
-    /*
-    listenFilterDomain(activate) {
-      const el = document.querySelector('.filter-domain input:not(.handled)')
-      if (!el) {
-        console.log(
-          'cannot find filter domain to add or remove listener, aborting.',
-        )
-        return
-      }
-      console.log(
-        (activate ? 'adding' : 'removing') +
-          ' event listener on filter domain...',
-      )
-      if (activate) {
-        el.addEventListener('keyup', this.emitFilterDomain)
-        el.classList.add('handled')
-      } else {
-        el.removeEventListener('keyup', this.emitFilterDomain)
-        el.classList.remove('handled')
-      }
-    },
-    scrollToNoEntries() {
-      document.querySelector('.no-entries').scrollIntoView({
-        behavior: 'smooth',
-      })
-    },
-    */
     sendItineraryByMail() {
       const mail = ''
       const subject = this.$t('search.sendItinerarySubject')
@@ -232,9 +189,7 @@ export default {
           ['selected', 'title'],
           ['desc', 'asc'],
         )
-        // if (timeout) {
         this.loading = false
-        // }
         this.emitItemIdsForUrl()
       }, timeout)
     },
@@ -244,50 +199,35 @@ export default {
       eventBus.$emit('set-domains-url', ids)
     },
     getCityByCoordinates(coords) {
-      /* console.log(
-        'getCityByCoordinates : looking for city at coords "' +
-          JSON.stringify(coords) +
-          '"',
-      ) */
       const geocoder = new this.google.maps.Geocoder()
       const location = { lat: coords.latitude, lng: coords.longitude }
-      geocoder.geocode({ location }, (results, status) => {
-        if (status === 'OK') {
-          if (results[0] && results[0].address_components) {
-            this.getCityFromAddressComponents(results[0].address_components)
-          } else {
-            console.error('getCityByCoordinates :  no results found')
+      return new Promise((resolve) => {
+        geocoder.geocode({ location }, (results, status) => {
+          if (status !== 'OK') {
+            console.error('getCityByCoordinates : geocoder failed due to "' + status + '"')
+            resolve(null)
           }
-        } else {
-          console.error(
-            'getCityByCoordinates : geocoder failed due to "' + status + '"',
-          )
-        }
+          const components = results[0] && results[0].address_components
+          if (!components) {
+            console.error('getCityByCoordinates :  no results found')
+            resolve(null)
+          }
+          resolve(this.getCityFromAddressComponents(components))
+        })
       })
     },
     getCityFromAddressComponents(components) {
-      let city = ''
-      components.forEach((component) => {
-        if (component.types.includes('locality')) {
-          city = component.short_name
-        }
-      })
-      if (city.length) {
-        console.log('getCityFromAddressComponents : city found "' + city + '"')
-      } else {
+      if (!components) {
+        return null
+      }
+      const component = components.find(component => component.types.includes('locality'))
+      const city = component.short_name
+      if (!city.length) {
         console.error('getCityFromAddressComponents : city not found :(')
+        return null
       }
-      this.setStartingPoint(city)
-    },
-    getNavigatorPosition() {
-      console.log('getNavigatorPosition...')
-      this.loading = true
-      if (!this.showMap) {
-        eventBus.$emit('show-map')
-        setTimeout(() => eventBus.$emit('get-navigator-position'), 1000)
-      } else {
-        eventBus.$emit('get-navigator-position')
-      }
+      console.log('getCityFromAddressComponents : city found "' + city + '"')
+      return city
     },
     doFilterDomains() {
       this.emitFilterDomainDebounced()
@@ -296,11 +236,30 @@ export default {
       this.filteringDomains = true
       eventBus.$emit('filter-domain', this.filterDomain)
     },
-    setStartingPoint(value) {
+    getNavigatorPosition() {
+      this.loading = true
+      console.log('getNavigatorPosition : fetching geolocation...')
+      try {
+        window.navigator.geolocation.getCurrentPosition(position => this.setStartingPoint(position))
+      } catch (err) {
+        console.error('getNavigatorPosition : geolocation denied or failed')
+        alert(this.$t('search.findMeFailed'))
+        this.setStartingPoint(null)
+      }
+    },
+    async setStartingPoint(position) {
       if (!this.showMap) {
         eventBus.$emit('show-map')
       }
-      eventBus.$emit('set-starting-point', value)
+      if (position && typeof position === 'object') {
+        console.log('setStartingPoint (list) : converting position object to string...')
+        this.startingPoint = await this.getCityByCoordinates(position.coords)
+      } else {
+        this.startingPoint = position
+      }
+      console.log('setStartingPoint (list) : now "' + this.startingPoint + '"')
+      this.loading = false
+      eventBus.$emit('set-starting-point', position)
     },
     launchItineraryProcessing() {
       if (!this.showMap) {
