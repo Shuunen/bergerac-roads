@@ -205,7 +205,6 @@ export default {
         f = Object.assign({}, position)
       } else {
         console.error('position format not handled')
-        debugger
       }
       // console.log('getFormattedPosition return :', f)
       return f
