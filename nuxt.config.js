@@ -18,9 +18,6 @@ export default {
       { name: 'theme-color', content: '#ffffff' },
       { name: 'google-site-verification', content: 'josobMWIbuspgkX6xJ2FyU5PufZXR8ThI2ZFl8-QxMI' },
     ],
-    script: [
-      { src: '/scripts/rollbar.js', defer: true },
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
