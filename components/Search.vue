@@ -66,6 +66,7 @@ import SelectList from '~/components/Select-List.vue'
 import GoogleMap from '~/components/Google-Map.vue'
 
 const baseId = 'DEGAQU0'
+const hashSeparator = '_'
 
 export default {
   components: {
@@ -175,7 +176,7 @@ export default {
       this.prebuilts = prebuilts
     },
     checkHash() {
-      decodeURI(document.location.hash).split('&').forEach(segment => this.parseHashSegment(segment))
+      decodeURI(document.location.hash).split(hashSeparator).forEach(segment => this.parseHashSegment(segment))
     },
     parseHashSegment(segment) {
       console.log('parseHashSegment')
@@ -277,7 +278,7 @@ export default {
         hashes.push($nuxt.$t('search.itinerary') + '=' + this.domainsSelected)
         domainsSelectedSet = true
       }
-      document.location.hash = hashes.join('&')
+      document.location.hash = hashes.join(hashSeparator)
       if (startingPointSet && domainsSelectedSet) {
         eventBus.$emit('start-itinerary-process')
       }

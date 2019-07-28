@@ -166,7 +166,7 @@ export default {
       const mail = ''
       const subject = this.$t('search.sendItinerarySubject')
       const body = this.$t('search.sendItineraryBody')
-      const url = document.location.href
+      const url = encodeURI(document.location.href)
       // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
     },
