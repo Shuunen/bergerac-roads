@@ -268,11 +268,8 @@ export default {
       const startingPoint = await this.getCityByCoordinates(position.coords)
       this.setStartingPoint(startingPoint)
     },
-    setStartingPoint(startingPoint, debugMe) {
+    setStartingPoint(startingPoint) {
       console.log('setStartingPoint (list)', startingPoint)
-      if (debugMe) {
-        debugger
-      }
       if (!this.showMap) {
         eventBus.$emit('show-map')
       }

@@ -135,7 +135,6 @@ export default {
         if (item && item.position) {
           promises.push(this.createDistanceRequest(origin, item.position))
         } else {
-          debugger
           return console.error('item or item.position missing')
         }
       }
