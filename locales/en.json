@@ -1,230 +1,231 @@
 {
-  "common": {
-    "english": "English",
-    "french": "French",
-    "back-home": "Back to Home page"
-  },
-  "links": {
-    "home": "Home",
-    "about": "About",
-    "more": "Learn more"
-  },
-  "legal": {
-    "title": "Legal notice"
-  },
   "charter": {
     "title": "Charter of the wine route"
   },
-  "home": {
-    "title": "Welcome",
-    "introduction": "This is an introduction in English."
+  "common": {
+    "back-home": "Back to Home page",
+    "english": "English",
+    "french": "French"
   },
-  "home-top": {
-    "title": "The most beautiful wine route, yours",
-    "subtitle": "The vine growers of Bergerac & Duras welcome you"
+  "domain": {
+    "sendMailBody": "Insert your message here. --- Send from Bergerac Roads website",
+    "sendMailSubject": "Bergerac Roads - Contact",
+    "unknownMessage": "Sorry but this domain does not seems to exists.",
+    "unknownTitle": "Unknown domain",
+    "view": "See the domain page"
   },
   "footer": {
     "alcoolWarning": "Alcohol abuse is dangerous for your health, consume with moderation",
     "copyright": "Bergerac Duras Wines ©️ 2019"
   },
-  "domain": {
-    "unknownTitle": "Unknown domain",
-    "unknownMessage": "Sorry but this domain does not seems to exists.",
-    "sendMailSubject": "Bergerac Roads - Contact",
-    "sendMailBody": "Insert your message here. --- Send from Bergerac Roads website",
-    "view": "See the domain page"
+  "home": {
+    "introduction": "This is an introduction in English.",
+    "title": "Welcome"
+  },
+  "home-top": {
+    "subtitle": "The vine growers of Bergerac & Duras welcome you",
+    "title": "The most beautiful wine route, yours"
   },
   "last-domains": {
     "header": "Domains of Bergerac"
   },
+  "legal": {
+    "title": "Legal notice"
+  },
+  "links": {
+    "about": "About",
+    "home": "Home",
+    "more": "Learn more"
+  },
   "search": {
-    "header": "My wine route",
-    "subheading": "Choose from the most popular routes or use the filters below to create your own.",
-    "itinerary": "itinerary",
-    "noEntries": "We did not find any domain corresponding to this search, we advise you to make a new less specific search.",
+    "calcItinerary": "Create my itinerary",
+    "deselect": "Press Enter to remove",
+    "domainsSelected": "You have selected {nb} domain",
     "filterDomains": "Filter domains",
     "filterVineyards": "Filter by region and vineyards",
-    "placeholder": "Select one or multiple tag(s)",
-    "select": "Press Enter to select",
-    "deselect": "Press Enter to remove",
-    "selected": "Selected",
-    "domainsSelected": "You have selected {nb} domain",
-    "introduction": "To create your itinerary, select the domains you want to visit",
-    "start": "Starting point",
-    "selectButton": "Select",
-    "unselectButton": "Unselect",
-    "calcItinerary": "Create my itinerary",
-    "sendItinerary": "Send by mail",
-    "sendItinerarySubject": "Bergerac Roads - My itinerary",
-    "sendItineraryBody": "Here is the itinerary I made : ",
-    "helpStart": "Fill the starting point or click on \"Find me\"",
-    "helpCreateBefore": "Select at least one domain and one starting point to create an itinerary.",
-    "helpCreateAfter": "Select at least one domain and one starting point to create an itinerary.",
     "findMe": "Find me",
     "findMeDisallowed": "Geolocation must be allowed for this feature to work.",
-    "findMeFailed": "Geolocation is not supported by this browser."
+    "findMeFailed": "Geolocation is not supported by this browser.",
+    "from": "from",
+    "header": "My wine route",
+    "helpCreateAfter": "Select at least one domain and one starting point to create an itinerary.",
+    "helpCreateBefore": "Select at least one domain and one starting point to create an itinerary.",
+    "helpStart": "Fill the starting point or click on \"Find me\"",
+    "introduction": "To create your itinerary, select the domains you want to visit",
+    "itinerary": "itinerary",
+    "noEntries": "We did not find any domain corresponding to this search, we advise you to make a new less specific search.",
+    "placeholder": "Select one or multiple tag(s)",
+    "select": "Press Enter to select",
+    "selectButton": "Select",
+    "selected": "Selected",
+    "sendItinerary": "Send by mail",
+    "sendItineraryBody": "Here is the itinerary I made : ",
+    "sendItinerarySubject": "Bergerac Roads - My itinerary",
+    "start": "Starting point",
+    "subheading": "Choose from the most popular routes or use the filters below to create your own.",
+    "unselectButton": "Unselect"
   },
   "vineyards": {
-    "titles": {
-      "summary": "In the blink of an eye",
-      "numbers": "Key numbers",
-      "varieties": "Grape varieties",
-      "typicity": "Typicity",
-      "ours": "Our vineyards"
-    },
-    "loading": {
-      "title": "Loading information ...",
-      "message": "Do not hesitate to carafe a bottle while waiting."
-    },
-    "error": {
-      "title": "Sorry, this vineyard doesn't exist...",
-      "available": "Here is the list of our vineyards"
-    },
     "bergerac": {
-      "title": "Bergerac",
       "information": "",
       "introduction": "The friendly dinner winners",
-      "presentation": "A barbecue with your friends, and a bold Bergerac red catches the eye of your beef rib. Tasting oysters at the bar? With a Bergerac dry white of course! And to echo with the soft light of the fireplace during New Year’s Eve, a Côtes de Bergerac soft is a perfect choice. Bergerac wines are the best wines to drink in any sharing moment!",
-      "summary": "The regional appellation Bergerac red was recognised Appellation d’Origine Contrôlée (AOC) in 1936. It represents the entire territory of Bergeracois. Oldest French AOC, it has already celebrated its 80 years of excellence! Côtes de Bergerac got the AOC in 1955.",
       "numbers": [
         "7,350 hectares of vineyard",
         "800 producers",
         "380,000 hectolitres per year (average)"
       ],
-      "varieties": [
-        "Bergerac red and rosé, Côtes de Bergerac red",
-        "Merlot, Cabernet franc, Cabernet sauvignon, Malbec",
-        "Bergerac white, Côtes de Bergerac white",
-        "Sauvignon white and grey, Sémillon, Muscadelle"
-      ],
+      "presentation": "A barbecue with your friends, and a bold Bergerac red catches the eye of your beef rib. Tasting oysters at the bar? With a Bergerac dry white of course! And to echo with the soft light of the fireplace during New Year’s Eve, a Côtes de Bergerac soft is a perfect choice. Bergerac wines are the best wines to drink in any sharing moment!",
+      "summary": "The regional appellation Bergerac red was recognised Appellation d’Origine Contrôlée (AOC) in 1936. It represents the entire territory of Bergeracois. Oldest French AOC, it has already celebrated its 80 years of excellence! Côtes de Bergerac got the AOC in 1955.",
+      "title": "Bergerac",
       "typicity": [
         "Bergerac red: fruity",
         "Bergerac rosé: flowery",
         "Bergerac dry white: expressive",
         "Côtes de Bergerac red: intense",
         "Côtes de Bergerac soft white: smooth"
-      ]
-    },
-    "monbazillac": {
-      "title": "Monbazillac",
-      "information": "",
-      "introduction": "The sweet wine gastronomes",
-      "presentation": "Worthy heirs of an ancestral expertise, they took up the modernity challenge with amazing sweet wines which can be drunk with any plate! Efficient classical wine for aperitif with a few foie gras toasts. Sublime with a good plate accompanied by a festive poultry cooked with Monbazillac. Surprising with veined cheese like Roquefort. Finally, just perfect for dessert with an exotic Yule log. Q.E.D.",
-      "summary": "The Monbazillac appellation was recognized Appellation d’Origine Contrôlée (AOC) in 1936. It is one of the firsts of France, and has already celebrated its 80th anniversary!",
-      "numbers": [
-        "2,300 hectares of vineyard",
-        "5 towns: Pomport, rouffignac, Colombier, Monbazillac, Saint-Laurent-des-Vignes",
-        "100 producers",
-        "57,000 hectolitres per year (average)"
       ],
       "varieties": [
+        "Bergerac red and rosé, Côtes de Bergerac red",
+        "Merlot, Cabernet franc, Cabernet sauvignon, Malbec",
+        "Bergerac white, Côtes de Bergerac white",
         "Sauvignon white and grey, Sémillon, Muscadelle"
-      ],
-      "typicity": [
-        "Sweet wines: 45g of sugar per litre of wine",
-        "Sweet wines, noble grape selection: 85g of sugar per litre of wine"
-      ]
-    },
-    "pecharmant": {
-      "title": "Pécharmant",
-      "information": "",
-      "introduction": "The vineyard of gentlemen farmers",
-      "presentation": "At the gates of Bergerac, at the heart of the former North Vinee, châteaux and lovely mansions are all around the vineyard which is full of natural biodiversity: woods, orchards, meadows with their elegant mounts. Charming and whimsical, the real gentlemen farmers-winemakers contribute to make this place an unforgettable one, thanks to the wines produced there: the chopped reds of Pécharmant.",
-      "summary": "The Pécharmant appellation was recognised Appellation d’Origine Contrôlée (AOC) in 1946.",
-      "numbers": [
-        "405 hectares of vineyard",
-        "50 producers",
-        "14,000 hectolitres per year (average)"
-      ],
-      "varieties": [
-        "Merlot, Cabernet Franc, Cabernet Sauvignon, Malbec"
-      ],
-      "typicity": [
-        "Intense, powerful, elegant"
       ]
     },
     "duras": {
-      "title": "Duras",
       "information": "",
       "introduction": "The rebels of Perigord with their Gascon accent",
-      "presentation": "To be a rebel is to resist. At least, you have to be one if you want to practice as a real brave winemaker, right? The whole story of Duras wines is full of strong personalities, like Vicomte de Bezaume who built the emblematic Chateau of Duras. But don’t worry, the rebellious behaviour of these winemakers is equal to their generosity, just like their wines full of personality declined in 4 different colours.",
-      "summary": "The regional appellation Côtes de Duras was recognised Appellation d’Origine Contrôlée (AOC) in 1937. It has just celebrated its 80th anniversary!",
       "numbers": [
         "1,230 hectares of vineyard",
         "200 producers",
         "73,700 hectolitres per year (average)"
+      ],
+      "presentation": "To be a rebel is to resist. At least, you have to be one if you want to practice as a real brave winemaker, right? The whole story of Duras wines is full of strong personalities, like Vicomte de Bezaume who built the emblematic Chateau of Duras. But don’t worry, the rebellious behaviour of these winemakers is equal to their generosity, just like their wines full of personality declined in 4 different colours.",
+      "summary": "The regional appellation Côtes de Duras was recognised Appellation d’Origine Contrôlée (AOC) in 1937. It has just celebrated its 80th anniversary!",
+      "title": "Duras",
+      "typicity": [
+        "Côtes de Duras red: fruity or intense",
+        "Côtes de Duras rosé: flowery",
+        "Côtes de Duras white: dry or soft"
       ],
       "varieties": [
         "Côtes de Duras red and rosé",
         "Merlot, Cabernet Franc, Cabernet Sauvignon, Malbec",
         "Côtes de Duras white",
         "Sauvignon white and grey, Sémillon, Muscadelle, Mauzac, Ondenc, Chenin white, Ugni white"
+      ]
+    },
+    "error": {
+      "available": "Here is the list of our vineyards",
+      "title": "Sorry, this vineyard doesn't exist..."
+    },
+    "loading": {
+      "message": "Do not hesitate to carafe a bottle while waiting.",
+      "title": "Loading information ..."
+    },
+    "monbazillac": {
+      "information": "",
+      "introduction": "The sweet wine gastronomes",
+      "numbers": [
+        "2,300 hectares of vineyard",
+        "5 towns: Pomport, rouffignac, Colombier, Monbazillac, Saint-Laurent-des-Vignes",
+        "100 producers",
+        "57,000 hectolitres per year (average)"
       ],
+      "presentation": "Worthy heirs of an ancestral expertise, they took up the modernity challenge with amazing sweet wines which can be drunk with any plate! Efficient classical wine for aperitif with a few foie gras toasts. Sublime with a good plate accompanied by a festive poultry cooked with Monbazillac. Surprising with veined cheese like Roquefort. Finally, just perfect for dessert with an exotic Yule log. Q.E.D.",
+      "summary": "The Monbazillac appellation was recognized Appellation d’Origine Contrôlée (AOC) in 1936. It is one of the firsts of France, and has already celebrated its 80th anniversary!",
+      "title": "Monbazillac",
       "typicity": [
-        "Côtes de Duras red: fruity or intense",
-        "Côtes de Duras rosé: flowery",
-        "Côtes de Duras white: dry or soft"
+        "Sweet wines: 45g of sugar per litre of wine",
+        "Sweet wines, noble grape selection: 85g of sugar per litre of wine"
+      ],
+      "varieties": [
+        "Sauvignon white and grey, Sémillon, Muscadelle"
       ]
     },
     "montravel": {
-      "title": "Montravel",
       "information": "",
       "introduction": "The humanist winemakers",
-      "presentation": "If wine is not vital to human alimentation, it seems essential as a nourishment for his spirit and contributes certainly to the nobleness of his soul. Michel Eyquem de Montaigne, the first philosopher of the humanist movement who was born in 1533 at the heart of the Montravel appellation, won’t say the contrary. Declined in 4 wine colours – dry white, soft, sweet and red – the Montravel wines represent the delicacy and freshness of their terroir.",
-      "summary": "The terroir accounts for 3 appellations: Montravel, Côtes de Montravel and Haut-Montravel. The regional appellation Montravel was recognised Appellation d’Origine Contrôlée (AOC) in 1937 for white wine (it has just celebrated its 80th anniversary), and in 2001 for red wine.",
       "numbers": [
         "150 hectares of vineyard",
         "35 producers",
         "7,900 hectolitres per year (average)"
+      ],
+      "presentation": "If wine is not vital to human alimentation, it seems essential as a nourishment for his spirit and contributes certainly to the nobleness of his soul. Michel Eyquem de Montaigne, the first philosopher of the humanist movement who was born in 1533 at the heart of the Montravel appellation, won’t say the contrary. Declined in 4 wine colours – dry white, soft, sweet and red – the Montravel wines represent the delicacy and freshness of their terroir.",
+      "summary": "The terroir accounts for 3 appellations: Montravel, Côtes de Montravel and Haut-Montravel. The regional appellation Montravel was recognised Appellation d’Origine Contrôlée (AOC) in 1937 for white wine (it has just celebrated its 80th anniversary), and in 2001 for red wine.",
+      "title": "Montravel",
+      "typicity": [
+        "Montravel red: intense",
+        "Montravel dry white: dry, fruity",
+        "Côtes de Montravel: soft, smooth",
+        "Haut-Montravel: sweet, mellowness"
       ],
       "varieties": [
         "Montravel red",
         "Merlot, Cabernet Franc, Cabernet Sauvignon, Malbec",
         "Montravel dry white, Côtes de Montravel, Haut-Montravel",
         "Sauvignon white and grey, Sémillon, Muscadelle"
-      ],
-      "typicity": [
-        "Montravel red: intense",
-        "Montravel dry white: dry, fruity",
-        "Côtes de Montravel: soft, smooth",
-        "Haut-Montravel: sweet, mellowness"
       ]
     },
-    "saussignac": {
-      "title": "Saussignac",
+    "pecharmant": {
       "information": "",
-      "introduction": "The guardians of the nature",
-      "presentation": "In order to be happy, we have to preserve our haven of peace and nature! This could be the motto of the winemakers of Saussignac, because most of them work organically. They create racy and airy sweet wines who accompany perfectly any festive meal. The vineyard offers a rural environment, with amazing hillsides, and it is the perfect place to reconnect with ourselves and with the nature. Indeed, they have eco-friendly lodges at the heart of the vines, restaurants and winemakers with a heart of gold.",
-      "summary": "The regional appellation Saussignac was recognised Appellation d’Origine Contrôlée (AOC) in 2005.",
+      "introduction": "The vineyard of gentlemen farmers",
       "numbers": [
-        "30 hectares of vineyard",
-        "15 producers",
-        "500 hectolitres per year (average)"
+        "405 hectares of vineyard",
+        "50 producers",
+        "14,000 hectolitres per year (average)"
+      ],
+      "presentation": "At the gates of Bergerac, at the heart of the former North Vinee, châteaux and lovely mansions are all around the vineyard which is full of natural biodiversity: woods, orchards, meadows with their elegant mounts. Charming and whimsical, the real gentlemen farmers-winemakers contribute to make this place an unforgettable one, thanks to the wines produced there: the chopped reds of Pécharmant.",
+      "summary": "The Pécharmant appellation was recognised Appellation d’Origine Contrôlée (AOC) in 1946.",
+      "title": "Pécharmant",
+      "typicity": [
+        "Intense, powerful, elegant"
       ],
       "varieties": [
-        "Sauvignon white and grey, Sémillon, Muscadelle"
-      ],
-      "typicity": [
-        "Sweet"
+        "Merlot, Cabernet Franc, Cabernet Sauvignon, Malbec"
       ]
     },
     "rosette": {
-      "title": "Rosette",
       "information": "",
       "introduction": "The soft adventurers",
-      "presentation": "Rosette represents the story of a rebirth. At the beginning of the year 2000, there were only 4 hardliners who were still producing Rosette wines. The appellation was about to die! Fortunately, adventurers, winemakers and initiators newly installed in the region, made a crazy bet: to relaunch the Rosette production. We can thank them for the rebirth of this fresh, delicate and fashion soft wine! Do you have an exceptional person to whom you can offer this rare wine?",
-      "summary": "The regional appellation Rosette was recognised Appellation d’Origine Contrôlée (AOC) in 1946.",
       "numbers": [
         "44 hectares of vineyard",
         "17 producers",
         "900 hectolitres per year (average)"
       ],
-      "varieties": [
-        "Sauvignon white and grey, Sémillon, Muscadelle"
-      ],
+      "presentation": "Rosette represents the story of a rebirth. At the beginning of the year 2000, there were only 4 hardliners who were still producing Rosette wines. The appellation was about to die! Fortunately, adventurers, winemakers and initiators newly installed in the region, made a crazy bet: to relaunch the Rosette production. We can thank them for the rebirth of this fresh, delicate and fashion soft wine! Do you have an exceptional person to whom you can offer this rare wine?",
+      "summary": "The regional appellation Rosette was recognised Appellation d’Origine Contrôlée (AOC) in 1946.",
+      "title": "Rosette",
       "typicity": [
         "Soft"
+      ],
+      "varieties": [
+        "Sauvignon white and grey, Sémillon, Muscadelle"
       ]
+    },
+    "saussignac": {
+      "information": "",
+      "introduction": "The guardians of the nature",
+      "numbers": [
+        "30 hectares of vineyard",
+        "15 producers",
+        "500 hectolitres per year (average)"
+      ],
+      "presentation": "In order to be happy, we have to preserve our haven of peace and nature! This could be the motto of the winemakers of Saussignac, because most of them work organically. They create racy and airy sweet wines who accompany perfectly any festive meal. The vineyard offers a rural environment, with amazing hillsides, and it is the perfect place to reconnect with ourselves and with the nature. Indeed, they have eco-friendly lodges at the heart of the vines, restaurants and winemakers with a heart of gold.",
+      "summary": "The regional appellation Saussignac was recognised Appellation d’Origine Contrôlée (AOC) in 2005.",
+      "title": "Saussignac",
+      "typicity": [
+        "Sweet"
+      ],
+      "varieties": [
+        "Sauvignon white and grey, Sémillon, Muscadelle"
+      ]
+    },
+    "titles": {
+      "numbers": "Key numbers",
+      "ours": "Our vineyards",
+      "summary": "In the blink of an eye",
+      "typicity": "Typicity",
+      "varieties": "Grape varieties"
     }
   }
 }

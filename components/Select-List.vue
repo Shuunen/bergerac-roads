@@ -26,7 +26,7 @@
       </div>
 
       <div class="line">
-        <el-button :disabled="!canCreate" @click="launchItineraryProcessing">
+        <el-button :disabled="!canCreate" @click="startItineraryProcess">
           {{ $t('search.calcItinerary') }}
         </el-button>
 
@@ -123,6 +123,8 @@ export default {
     eventBus.$on('show-map', () => (this.showMap = true))
     eventBus.$on('checked-items', () => this.sortItemsDebounced())
     eventBus.$on('preselect-items', this.preselectItems)
+    eventBus.$on('start-itinerary-process', this.startItineraryProcess)
+    eventBus.$on('set-starting-point', this.onStartingPointUpdate)
     eventBus.$on('domains-search-complete', () => (this.filteringDomains = false))
 
     this.initAutoComplete()
@@ -136,6 +138,7 @@ export default {
   },
   destroyed() {
     eventBus.$off('preselect-items', this.preselectItems)
+    eventBus.$off('start-itinerary-process', this.startItineraryProcess)
   },
   methods: {
     initAutoComplete() {
@@ -152,8 +155,12 @@ export default {
       // Restrict autocomplete to results in France.
       const autocomplete = new this.google.maps.places.Autocomplete(this.$refs.autocomplete.$refs.input, { componentRestrictions: { country: 'fr' } })
       autocomplete.addListener('place_changed', () => {
-        this.setStartingPoint(autocomplete.getPlace().formatted_address)
+        const place = autocomplete.getPlace()
+        const position = { coords: { latitude: place.geometry.location.lat(), longitude: place.geometry.location.lng() } }
+        this.setStartingPosition(position)
+        this.setStartingPoint(place.formatted_address)
       })
+      eventBus.$emit('check-hash')
     },
     sendItineraryByMail() {
       const mail = ''
@@ -180,7 +187,7 @@ export default {
         this.loading = true
       }
       if (this.iteneraryDisplayed) {
-        this.launchItineraryProcessing()
+        this.startItineraryProcess()
       }
       setTimeout(() => {
         console.log('sorting items in list with ' + timeout + 'ms timeout')
@@ -240,28 +247,39 @@ export default {
       this.loading = true
       console.log('getNavigatorPosition : fetching geolocation...')
       try {
-        window.navigator.geolocation.getCurrentPosition(position => this.setStartingPoint(position))
+        window.navigator.geolocation.getCurrentPosition(position => this.setStartingPosition(position, true))
       } catch (err) {
         console.error('getNavigatorPosition : geolocation denied or failed')
         alert(this.$t('search.findMeFailed'))
         this.setStartingPoint(null)
       }
     },
-    async setStartingPoint(position) {
+    onStartingPointUpdate(startingPoint) {
+      console.log('onStartingPointUpdate (list) : now "' + startingPoint + '"')
+      this.startingPoint = startingPoint
+    },
+    async setStartingPosition(position, implyPoint) {
+      console.log('setStartingPosition (list)', position)
+      if (!position.coords || !position.coords.latitude || !position.coords.longitude) {
+        return console.error('setStartingPosition (list) : position format not supported')
+      }
+      eventBus.$emit('set-starting-position', position)
+      if (!implyPoint) { return }
+      const startingPoint = await this.getCityByCoordinates(position.coords)
+      this.setStartingPoint(startingPoint)
+    },
+    setStartingPoint(startingPoint, debugMe) {
+      console.log('setStartingPoint (list)', startingPoint)
+      if (debugMe) {
+        debugger
+      }
       if (!this.showMap) {
         eventBus.$emit('show-map')
       }
-      if (position && typeof position === 'object') {
-        console.log('setStartingPoint (list) : converting position object to string...')
-        this.startingPoint = await this.getCityByCoordinates(position.coords)
-      } else {
-        this.startingPoint = position
-      }
-      console.log('setStartingPoint (list) : now "' + this.startingPoint + '"')
+      eventBus.$emit('set-starting-point', startingPoint)
       this.loading = false
-      eventBus.$emit('set-starting-point', position)
     },
-    launchItineraryProcessing() {
+    startItineraryProcess() {
       if (!this.showMap) {
         eventBus.$emit('show-map')
       }

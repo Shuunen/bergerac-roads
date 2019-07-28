@@ -25,6 +25,7 @@
 
 <script>
 import { gmapApi } from 'vue2-google-maps'
+import debounce from 'lodash/debounce'
 import { eventBus } from '../store/index'
 
 export default {
@@ -46,8 +47,8 @@ export default {
         lng: 0.35,
       },
       checkedItems: [],
-      startingPoint: '',
-      position: null,
+      startingPosition: null,
+      startingPoint: null,
       iteneraryDisplayed: false,
     }
   },
@@ -74,13 +75,16 @@ export default {
     },
   },
   created() {
+    this.updateItineraryDebounced = debounce(this.updateItinerary, 300)
     eventBus.$on('checked-items', this.onCheckedItems)
     eventBus.$on('set-starting-point', this.setStartingPoint)
+    eventBus.$on('set-starting-position', this.setStartingPosition)
     eventBus.$on('process-itinerary', this.processItinerary)
   },
   destroyed() {
     eventBus.$off('checked-items', this.onCheckedItems)
     eventBus.$off('set-starting-point', this.setStartingPoint)
+    eventBus.$off('set-starting-position', this.setStartingPosition)
     eventBus.$off('process-itinerary', this.processItinerary)
   },
   methods: {
@@ -89,34 +93,51 @@ export default {
         return console.log('onCheckedItems : cannot process without items')
       }
       console.log('onCheckedItems')
-      this.checkedItems = checkedItems
+      // this.checkedItems = checkedItems // dont do this, here checkedItems is an array of strings and we need objects for itinerary processing
       for (const marker of this.markers) {
         marker.selected = checkedItems.findIndex(item => item === marker.title) !== -1
       }
       this.$forceUpdate()
     },
-    setStartingPoint(position) {
-      console.log('setStartingPoint (map) : now', position)
-      this.startingPoint = position
-      if (this.iteneraryDisplayed) {
-        this.processItinerary()
+    updateItinerary() {
+      if (!this.iteneraryDisplayed) {
+        return
       }
+      console.log('updateItinerary (map)')
+      this.processItinerary()
+    },
+    setStartingPoint(point) {
+      console.log('setStartingPoint (map) : now', point)
+      this.startingPoint = point
+      this.updateItineraryDebounced()
+    },
+    setStartingPosition(position) {
+      console.log('setStartingPosition (map) : now', position)
+      this.startingPosition = position
+      this.updateItineraryDebounced()
     },
     async processItinerary(checkedItems) {
       if (checkedItems && checkedItems.length) {
+        console.log('got checkedItems from eventBus')
         this.checkedItems = checkedItems
       }
       if (this.checkedItems.length === 0) {
         return console.error('processItinerary : cannot process without items')
       }
-      if (!this.startingPoint) {
-        return console.error('processItinerary : cannot process without startingPoint')
+      if (!this.startingPosition && !this.startingPoint) {
+        return console.error('processItinerary : cannot process without startingPosition/startingPoint')
       }
       console.log('processItinerary : start')
-      const origin = this.getFormattedPosition(this.startingPoint)
+      const origin = this.getFormattedPosition(this.startingPosition || this.startingPoint)
       const promises = []
+      console.log('iterating over items :', this.checkedItems)
       for (const item of this.checkedItems) {
-        promises.push(this.createDistanceRequest(origin, item.position))
+        if (item && item.position) {
+          promises.push(this.createDistanceRequest(origin, item.position))
+        } else {
+          debugger
+          return console.error('item or item.position missing')
+        }
       }
       // When all the promises are resolved, we can compare the distances.
       const responses = await Promise.all(promises)
@@ -172,7 +193,7 @@ export default {
     // Create a promise for each selected place in order to get the distance
     // between the user and each one of them.
     createDistanceRequest(position, markerPosition) {
-      // console.log('in createDistanceRequest')
+      // console.log('in createDistanceRequest', position, markerPosition)
       // console.log('in createDistanceRequest with position "' + position + '"')
       const directionsService = new this.google.maps.DirectionsService()
       const request = {

@@ -47,7 +47,30 @@ export default {
         console.log('Home Mid : got domains', domains)
         this.domains = domains
         this.loading = false
+        this.detectItinerary()
       })
+    },
+    detectItinerary() {
+      if (document.location.hash) {
+        return this.scrollToSearch()
+      }
+    },
+    isInViewport(el) {
+      const bounding = el.getBoundingClientRect()
+      return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+      )
+    },
+    scrollToSearch() {
+      const el = document.querySelector('.search-container')
+      if (this.isInViewport(el)) {
+        return console.log('avoid scrolling to map because already in the viewport')
+      }
+      console.log('scrolling to map')
+      el.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }
