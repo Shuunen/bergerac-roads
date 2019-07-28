@@ -48,6 +48,10 @@
   ],
   "license": "AGPL-3.0",
   "name": "@shuunen/bergerac-roads",
+  "peerDependencies": {
+    "fstream": "1.0.12",
+    "lodash.template": "4.5.0"
+  },
   "private": true,
   "repository": {
     "type": "git",
