@@ -1,199 +1,200 @@
 {
-  "common": {
-    "english": "Anglais",
-    "french": "Français",
-    "back-home": "Retour à l'accueil"
-  },
-  "links": {
-    "home": "Accueil",
-    "about": "À propos",
-    "more": "En savoir plus"
-  },
-  "legal": {
-    "title": "Mentions légales"
-  },
   "charter": {
     "title": "Charte de la route des vins"
   },
-  "home": {
-    "title": "Bienvenue",
-    "introduction": "Ceci est un texte d'introduction en Français."
+  "common": {
+    "back-home": "Retour à l'accueil",
+    "english": "Anglais",
+    "french": "Français"
   },
-  "home-top": {
-    "title": "La plus belle route des vins, la vôtre",
-    "subtitle": "Les vignerons de Bergerac & Duras vous accueillent"
+  "domain": {
+    "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac",
+    "sendMailSubject": "Routes du Bergerac - Prise de contact",
+    "unknownMessage": "Désolé mais ce domaine n'a pas été trouvé.",
+    "unknownTitle": "Domaine inconnu",
+    "view": "Voir la page du domaine"
   },
   "footer": {
     "alcoolWarning": "L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
-    "copyright": "Vins de Bergerac Duras ©️ 2018"
+    "copyright": "Vins de Bergerac Duras ©️ 2019"
   },
-  "domain": {
-    "unknownTitle": "Domaine inconnu",
-    "unknownMessage": "Désolé mais ce domaine n'a pas été trouvé.",
-    "sendMailSubject": "Routes du Bergerac - Prise de contact",
-    "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac",
-    "view": "Voir la page du domaine"
+  "home": {
+    "introduction": "Ceci est un texte d'introduction en Français.",
+    "title": "Bienvenue"
+  },
+  "home-top": {
+    "subtitle": "Les vignerons de Bergerac & Duras vous accueillent",
+    "title": "La plus belle route des vins, la vôtre"
   },
   "last-domains": {
     "header": "Domaines de Bergerac"
   },
+  "legal": {
+    "title": "Mentions légales"
+  },
+  "links": {
+    "about": "À propos",
+    "home": "Accueil",
+    "more": "En savoir plus"
+  },
   "search": {
-    "header": "Ma route des vins",
-    "subheading": "Choisissez parmi les itinéraires les plus populaires ou utilisez les filtres ci-dessous pour créer le votre.",
-    "itinerary": "itinéraire",
-    "noEntries": "Nous n'avons trouvé aucun domaine correspondant à cette recherche, nous vous conseillons de faire une nouvelle recherche moins spécifique.",
+    "calcItinerary": "Calculer mon itinéraire",
+    "deselect": "Pressez Entrée pour supprimer",
+    "domainsSelected": "Vous avez sélectionné {nb} domaine",
     "filterDomains": "Filtrer les domaines",
     "filterVineyards": "Filtrer par région et vignobles",
-    "placeholder": "Sélectionnez un ou plusieurs tag(s)",
-    "select": "Pressez Entrée pour sélectionner",
-    "deselect": "Pressez Entrée pour supprimer",
-    "selected": "Sélectionné",
-    "domainsSelected": "Vous avez sélectionné {nb} domaine",
-    "introduction": "Pour créer votre itinéraire, sélectionnez les domaines que vous souhaitez visiter",
-    "start": "Point de départ",
-    "selectButton": "Sélectionner",
-    "unselectButton": "Désélectionner",
-    "calcItinerary": "Calculer mon itinéraire",
-    "sendItinerary": "Envoyer par mail",
-    "sendItinerarySubject": "Routes du Bergerac - Mon Itinéraire",
-    "sendItineraryBody": "Voici l'itinéraire que j'ai réalisé : ",
-    "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
-    "helpCreateBefore": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
-    "helpCreateAfter": "Choisissez au moins un domaine et un point de départ pour créer votre itineraire.",
     "findMe": "Localisez-moi",
     "findMeDisallowed": "La géolocalisation doit être autorisée afin de pouvoir vous localiser.",
-    "findMeFailed": "La géolocalisation n'est pas disponible sur votre navigateur."
+    "findMeFailed": "La géolocalisation n'est pas disponible sur votre navigateur.",
+    "from": "départ",
+    "header": "Ma route des vins",
+    "helpCreateAfter": "Choisissez au moins un domaine et un point de départ pour créer votre itinéraire.",
+    "helpCreateBefore": "Choisissez au moins un domaine et un point de départ pour créer votre itinéraire.",
+    "helpStart": "Entrez un lieu de départ ou cliquez sur \"Localisez-moi\"",
+    "introduction": "Pour créer votre itinéraire, sélectionnez les domaines que vous souhaitez visiter",
+    "itinerary": "itinéraire",
+    "noEntries": "Nous n'avons trouvé aucun domaine correspondant à cette recherche, nous vous conseillons de faire une nouvelle recherche moins spécifique.",
+    "placeholder": "Sélectionnez un ou plusieurs tag(s)",
+    "select": "Pressez Entrée pour sélectionner",
+    "selectButton": "Sélectionner",
+    "selected": "Sélectionné",
+    "sendItinerary": "Envoyer par mail",
+    "sendItineraryBody": "Voici l'itinéraire que j'ai réalisé : ",
+    "sendItinerarySubject": "Routes du Bergerac - Mon Itinéraire",
+    "start": "Point de départ",
+    "subheading": "Choisissez parmi les itinéraires les plus populaires ou utilisez les filtres ci-dessous pour créer le votre.",
+    "unselectButton": "Désélectionner"
   },
   "vineyards": {
-    "titles": {
-      "summary": "En un clin d’œil",
-      "numbers": "Chiffres clés",
-      "varieties": "Cépages",
-      "typicity": "",
-      "ours": "Nos vignobles"
-    },
-    "loading": {
-      "title": "Chargement des informations...",
-      "message": "N'hésitez pas à carafer une bouteille en attendant."
-    },
-    "error": {
-      "title": "Désolé, ce vignoble n'est pas répertorié...",
-      "available": "Voici la liste des vignobles existants"
-    },
     "bergerac": {
-      "title": "Bergerac",
       "information": "Les vins de Bergerac sont les champions des tables conviviales. Une grillade (aux sarments de vigne) entre amis, et le Côte de Bergerac rouge fait déjà de l’œil à votre côte de bœuf. Des huîtres dégustées sur un coin de comptoir : impossible sans Bergerac blanc sec. Et pique-nique improvisé rime forcément avec…Bergerac rosé ! Les vins de Bergerac excellent dans tous les moments de partage, qu’ils soient prémédités, ou parce que l’occasion a fait le larron…",
       "introduction": "Le saviez-vous ?",
-      "presentation": "La culture de la vigne a été introduite en Aquitaine au 1er siècle par les légions romaines de Crassus, un jeune lieutenant de César. Mais c’est au Moyen- ge que le vin de Bergerac gagna en renommée. A cette époque, la vinata ou vinée qui désignait l’ensemble du territoire viticole dépendant de l’autorité de Bergerac, appartenait en majorité aux abbayes et seigneuries. En janvier 1255, Bergerac se soumet au roi d’Angleterre Henri III. Celui-ci érige la ville en juridiction autonome et autorise la libre-circulation des vins sur la rivière Dordogne. Jusqu’alors freiné par le « privilège bordelais » et la main-mise sur l’embouchure de la Gironde, le commerce du vin de Bergerac devient florissant : le début d’une longue carrière internationale !",
-      "summary": "L’appellation Bergerac est reconnue Appellation d’Origine Contrôlée depuis 1936. Elle couvre l’ensemble du territoire bergeracois. Plus ancienne AOP de France, elle a déjà fêté ses 80 ans d’excellence ! L’appellation Côtes de Bergerac existe quant à elle depuis 1955.",
       "numbers": [
         "7 350 hectares de vignes",
         "800 producteurs",
         "380 000 hectolitres produits par an en moyenne"
       ],
+      "presentation": "La culture de la vigne a été introduite en Aquitaine au 1er siècle par les légions romaines de Crassus, un jeune lieutenant de César. Mais c’est au Moyen- ge que le vin de Bergerac gagna en renommée. A cette époque, la vinata ou vinée qui désignait l’ensemble du territoire viticole dépendant de l’autorité de Bergerac, appartenait en majorité aux abbayes et seigneuries. En janvier 1255, Bergerac se soumet au roi d’Angleterre Henri III. Celui-ci érige la ville en juridiction autonome et autorise la libre-circulation des vins sur la rivière Dordogne. Jusqu’alors freiné par le « privilège bordelais » et la main-mise sur l’embouchure de la Gironde, le commerce du vin de Bergerac devient florissant : le début d’une longue carrière internationale !",
+      "summary": "L’appellation Bergerac est reconnue Appellation d’Origine Contrôlée depuis 1936. Elle couvre l’ensemble du territoire bergeracois. Plus ancienne AOP de France, elle a déjà fêté ses 80 ans d’excellence ! L’appellation Côtes de Bergerac existe quant à elle depuis 1955.",
+      "title": "Bergerac",
+      "typicity": [],
       "varieties": [
         "merlot, cabernet franc, cabernet sauvignon, malbec",
         "sauvignon (blanc et gris), sémillon, muscadelle"
-      ],
-      "typicity": []
-    },
-    "monbazillac": {
-      "title": "Monbazillac",
-      "information": "Dignes héritiers d’un savoir-faire ancestral, les hommes et femmes de vin de Monbazillac ont relevé avec brio le défi de la modernité avec des liquoreux d’une extrême gourmandise, assurément doués pour la gastronomie. Prêts à relever le défi d’un repas complet au Monbazillac ? Classique efficace à l’apéritif avec quelques toasts de foie gras du Périgord. Incontournable en plat de résistance avec le fameux poulet fermier au Monbazillac. Simplement dément avec les fromages à pâte persillée comme le Roquefort. Et enfin, juste parfait en dessert avec la fraise de Vergt. Vous voyez ?",
-      "introduction": "Le saviez-vous ?",
-      "presentation": "Âmes sensibles d’abstenir, savez-vous comment doit être le raisin idéal pour élaborer un liquoreux d’exception comme le Monbazillac ? Bien mûr…et gagné par la pourriture ! Mais noble, la pourriture. Elle est due à la présence d’un champignon microscopique, Botrystis cinerea. A l’automne, les brouillards montant de la vallée de la Dordogne viennent chatouiller les pieds de vigne des coteaux de Monbazillac. Ajoutez l’effet des belles après-midi ensoleillées de l’arrière-saison périgourdine et notre champignon s’éclate ! Grâce à lui, on obtient des baies riches en sucre aux délicieux arômes de fruits confits et de miel. Le mieux ? Aller découvrir par vous-même ce phénomène en vous promenant dans le si beau vignoble de Monbazillac à l’automne !",
-      "summary": "L’appellation Monbazillac est reconnue Appellation d’Origine Contrôlée depuis 1936. Parmi les premières de France, elle a déjà fêté ses 80 ans d’excellence !",
-      "numbers": [
-        "2 300 hectares de vignes",
-        "100 producteurs",
-        "57 000 hectolitres produits par an en moyenne"
-      ],
-      "varieties": [
-        "sauvignon (blanc et gris), sémillon, muscadelle"
-      ],
-      "typicity": []
-    },
-    "pecharmant": {
-      "title": "Pécharmant",
-      "information": "Un doute subsiste quant à l’origine du nom Pécharmant. Pech signifie colline en langue occitane. Alors s’agissait-il de la colline d’un certain Armand ? Ou tout simplement d’une colline charmante ? Pas de doute : charmante, elle l’est, cette belle colline sise aux portes de la ville de Bergerac ! Châteaux et belles demeures parsèment ce vignoble qui jouit d’une biodiversité naturelle et maîtrisée remarquable avec ses bois, ses vergers et ses prés où pâturent d’élégantes montures. Chaque jour, des vignerons en véritables gentlemen farmers contribuent à rendre cette colline inoubliable à l’instar des vins qu’ils y produisent : les rouges ciselés de Pécharmant.",
-      "introduction": "Le saviez-vous ?",
-      "presentation": "Défriché dès le Moyen-Âge par les moines de Saint-Martin, le vignoble de Pécharmant est le plus ancien de Bergerac, celui privilégié de la Vinée Nord. Le sol ? Des sables et graviers du Périgord nés de la transformation des roches granitiques du Massif Central. Alors en-dessous, ça se bouscule : une incroyable mosaïque de terroirs avec pour fil rouge, le tran, une couche d’argile ferrugineuse.  Quand on pense en plus que les vignerons ont l’obligation d’utiliser au moins 3 des 4 cépages de l’appellation, imaginez un peu la palette dont ils disposent à l’heure de déterminer l’assemblage final de leur vin ! Tout un art… Résultat : des vins subtils, complexes et tellement singuliers.",
-      "summary": "L’appellation Pécharmant est reconnue Appellation d’Origine Contrôlée depuis 1946.",
-      "numbers": [
-        "405 hectares de vignes",
-        "50 producteurs",
-        "14 000 hectolitres produits par an en moyenne"
-      ],
-      "varieties": [
-        "merlot, cabernet franc, cabernet sauvignon, malbec"
-      ],
-      "typicity": []
+      ]
     },
     "duras": {
-      "title": "Duras",
       "information": "Être rebelle, c’est résister. Ne faut-il pas au moins cela pour exercer ce métier de courage, patience et ténacité qu’est celui de vigneron ? Toute l’histoire des vins de Duras est peuplée de fortes têtes, de personnages hauts en couleurs à l’instar de ce Vicomte de Bezaume, à l’origine au 12ème siècle de la construction du fier Château de Duras. Mais ne vous y trompez pas, l’attitude frondeuse de nos vignerons n’a d’égale que leur générosité, à l’image des vins de Duras qu’ils produisent et de la campagne à l’allure de petite Toscane où ils vivent.",
       "introduction": "Le saviez-vous ?",
-      "presentation": "Duras est le nom de plume d’une certaine Marguerite Donnadieu qui gardera à jamais un souvenir idyllique de son enfance en terres duraquoises. Un décor dont elle s’inspire dans son roman « Les Impudents ». La Maison Marguerite Duras avec ses expositions thématiques consacrées à l’auteur constitue une jolie étape d’un séjour en Pays de Duras entre marchés de producteurs, instants gourmands au cœur de la bastide, randonnées dans le vignoble et bien sûr dégustation chez nos vignerons.",
-      "summary": "L’appellation Côtes de Duras est reconnue Appellation d’Origine Contrôlée depuis 1937, elle vient de fêter ses 80 ans d’excellence !",
       "numbers": [
         "1 230 hectares de vignes",
         "200 producteurs",
         "73 700 hectolitres produits par an en moyenne"
       ],
+      "presentation": "Duras est le nom de plume d’une certaine Marguerite Donnadieu qui gardera à jamais un souvenir idyllique de son enfance en terres duraquoises. Un décor dont elle s’inspire dans son roman « Les Impudents ». La Maison Marguerite Duras avec ses expositions thématiques consacrées à l’auteur constitue une jolie étape d’un séjour en Pays de Duras entre marchés de producteurs, instants gourmands au cœur de la bastide, randonnées dans le vignoble et bien sûr dégustation chez nos vignerons.",
+      "summary": "L’appellation Côtes de Duras est reconnue Appellation d’Origine Contrôlée depuis 1937, elle vient de fêter ses 80 ans d’excellence !",
+      "title": "Duras",
+      "typicity": [],
       "varieties": [
         "merlot, cabernet franc, cabernet sauvignon, malbec",
         "sauvignon (blanc et gris), sémillon, muscadelle, mauzac, ondenc, chenin blanc, ugni blanc"
+      ]
+    },
+    "error": {
+      "available": "Voici la liste des vignobles existants",
+      "title": "Désolé, ce vignoble n'est pas répertorié..."
+    },
+    "loading": {
+      "message": "N'hésitez pas à carafer une bouteille en attendant.",
+      "title": "Chargement des informations..."
+    },
+    "monbazillac": {
+      "information": "Dignes héritiers d’un savoir-faire ancestral, les hommes et femmes de vin de Monbazillac ont relevé avec brio le défi de la modernité avec des liquoreux d’une extrême gourmandise, assurément doués pour la gastronomie. Prêts à relever le défi d’un repas complet au Monbazillac ? Classique efficace à l’apéritif avec quelques toasts de foie gras du Périgord. Incontournable en plat de résistance avec le fameux poulet fermier au Monbazillac. Simplement dément avec les fromages à pâte persillée comme le Roquefort. Et enfin, juste parfait en dessert avec la fraise de Vergt. Vous voyez ?",
+      "introduction": "Le saviez-vous ?",
+      "numbers": [
+        "2 300 hectares de vignes",
+        "100 producteurs",
+        "57 000 hectolitres produits par an en moyenne"
       ],
-      "typicity": []
+      "presentation": "Âmes sensibles d’abstenir, savez-vous comment doit être le raisin idéal pour élaborer un liquoreux d’exception comme le Monbazillac ? Bien mûr…et gagné par la pourriture ! Mais noble, la pourriture. Elle est due à la présence d’un champignon microscopique, Botrystis cinerea. A l’automne, les brouillards montant de la vallée de la Dordogne viennent chatouiller les pieds de vigne des coteaux de Monbazillac. Ajoutez l’effet des belles après-midi ensoleillées de l’arrière-saison périgourdine et notre champignon s’éclate ! Grâce à lui, on obtient des baies riches en sucre aux délicieux arômes de fruits confits et de miel. Le mieux ? Aller découvrir par vous-même ce phénomène en vous promenant dans le si beau vignoble de Monbazillac à l’automne !",
+      "summary": "L’appellation Monbazillac est reconnue Appellation d’Origine Contrôlée depuis 1936. Parmi les premières de France, elle a déjà fêté ses 80 ans d’excellence !",
+      "title": "Monbazillac",
+      "typicity": [],
+      "varieties": [
+        "sauvignon (blanc et gris), sémillon, muscadelle"
+      ]
     },
     "montravel": {
-      "title": "Montravel",
       "information": "Si le vin n’est pas indispensable à l’alimentation de l’Homme, il semble essentiel comme nourriture de son esprit et contribue à la noblesse de son âme. Ce n’est pas le philosophe pionnier du mouvement humaniste Michel Eyquem de Montaigne qui dirait le contraire. Né en 1533 aux confins de l’appellation Montravel au château de Saint-Michel-de-Montaigne, il y écrivit ses fameux Essais. S’imposant une vie spartiate entre méditation et écriture, il ne semblait pas exclure un verre de Montravel… « On ne boit pas, on donne un baiser et le vin vous rend une caresse »",
       "introduction": "Le saviez-vous ?",
-      "presentation": "Dans un esprit d’excellence, nos vignerons philosophes déclinent leur belle appellation Montravel dans toutes les couleurs. Fraîcheur et minéralité (leur signature !) des Montravel blancs secs. Suavité et délicatesse des moelleux Côtes de Montravel. Arômes confits et notes mordorées des liquoreux Haut-Montravel. Et enfin, Montravel rouge. L’exigence des vignerons qui se sont imposé un cahier des charges des plus stricts, et le fabuleux potentiel du sous-sol de l’appellation ne pouvaient donner naissance qu’à des vins racés. Amusez-vous à y traquer les notes profondes de cassis, d’épices subtiles et de tabac blond…",
-      "summary": "Le terroir compte 3 appellations : Montravel, Haut-Montravel et Côtes de Montravel. L’appellation Montravel est reconnue Appellation d’Origine Contrôlée depuis 1937 pour le vin blanc, puis 2001 pour le vin rouge. Parmi les premières de France, elle a déjà fêté ses 80 ans d’excellence !",
       "numbers": [
         "150 hectares de vignes",
         "35 producteurs",
         "7 900 hectolitres produits par an en moyenne"
       ],
+      "presentation": "Dans un esprit d’excellence, nos vignerons philosophes déclinent leur belle appellation Montravel dans toutes les couleurs. Fraîcheur et minéralité (leur signature !) des Montravel blancs secs. Suavité et délicatesse des moelleux Côtes de Montravel. Arômes confits et notes mordorées des liquoreux Haut-Montravel. Et enfin, Montravel rouge. L’exigence des vignerons qui se sont imposé un cahier des charges des plus stricts, et le fabuleux potentiel du sous-sol de l’appellation ne pouvaient donner naissance qu’à des vins racés. Amusez-vous à y traquer les notes profondes de cassis, d’épices subtiles et de tabac blond…",
+      "summary": "Le terroir compte 3 appellations : Montravel, Haut-Montravel et Côtes de Montravel. L’appellation Montravel est reconnue Appellation d’Origine Contrôlée depuis 1937 pour le vin blanc, puis 2001 pour le vin rouge. Parmi les premières de France, elle a déjà fêté ses 80 ans d’excellence !",
+      "title": "Montravel",
+      "typicity": [],
       "varieties": [
         "merlot, cabernet franc, cabernet sauvignon, malbec",
         "sauvignon (blanc et gris), sémillon, muscadelle"
-      ],
-      "typicity": []
+      ]
     },
-    "saussignac": {
-      "title": "Saussignac",
-      "information": "Pour vivre heureux, préservons notre havre de paix et de nature ! Telle pourrait être la devise du vignoble de Saussignac, où sont élaborés de racés et aériens liquoreux. Animés du plus grand respect pour ce petit coin de paradis, les vignerons de Saussignac, dont une grande partie œuvre en bio, y soignent leurs vignes tels des jardins extraordinaires. Le cadre, totalement champêtre avec son charmant dédale de coteaux escarpés, est définitivement le spot idéal pour reconnecter avec soi-même et avec la nature. Pour vous y aider : des hébergements éco-friendly au cœur des vignes, des restaurants pour fines gueules, et des vignerons bons comme le pain (artisanal bien sûr !).",
+    "pecharmant": {
+      "information": "Un doute subsiste quant à l’origine du nom Pécharmant. Pech signifie colline en langue occitane. Alors s’agissait-il de la colline d’un certain Armand ? Ou tout simplement d’une colline charmante ? Pas de doute : charmante, elle l’est, cette belle colline sise aux portes de la ville de Bergerac ! Châteaux et belles demeures parsèment ce vignoble qui jouit d’une biodiversité naturelle et maîtrisée remarquable avec ses bois, ses vergers et ses prés où pâturent d’élégantes montures. Chaque jour, des vignerons en véritables gentlemen farmers contribuent à rendre cette colline inoubliable à l’instar des vins qu’ils y produisent : les rouges ciselés de Pécharmant.",
       "introduction": "Le saviez-vous ?",
-      "presentation": "C’est en 2005 seulement que fut reconnu le décret d’appellation Saussignac, l’un des plus stricts parmi les appellations de liquoreux. Sa particularité ? Il faut que la richesse en sucre du fruit soit exclusivement le résultat de la concentration naturelle de la baie du raisin sous l’action de la pourriture noble. Aucun enrichissement additionnel n’est donc possible. Partie d’un bel élan des « pionniers de Saussignac », cette aventure collective illustre une volonté propre de reconnaissance légitime d’un terroir, d’un savoir-faire et d’un esprit vigneron qui leur est propre.",
-      "summary": "L’appellation Saussignac est reconnue Appellation d’Origine Contrôlée depuis 2005. C’est la plus jeune appellation du vignoble et peut être aussi la plus confidentielle !",
       "numbers": [
-        "30 hectares de vignes",
-        "15 producteurs",
-        "500 hectolitres produits par an en moyenne"
+        "405 hectares de vignes",
+        "50 producteurs",
+        "14 000 hectolitres produits par an en moyenne"
       ],
+      "presentation": "Défriché dès le Moyen-Âge par les moines de Saint-Martin, le vignoble de Pécharmant est le plus ancien de Bergerac, celui privilégié de la Vinée Nord. Le sol ? Des sables et graviers du Périgord nés de la transformation des roches granitiques du Massif Central. Alors en-dessous, ça se bouscule : une incroyable mosaïque de terroirs avec pour fil rouge, le tran, une couche d’argile ferrugineuse.  Quand on pense en plus que les vignerons ont l’obligation d’utiliser au moins 3 des 4 cépages de l’appellation, imaginez un peu la palette dont ils disposent à l’heure de déterminer l’assemblage final de leur vin ! Tout un art… Résultat : des vins subtils, complexes et tellement singuliers.",
+      "summary": "L’appellation Pécharmant est reconnue Appellation d’Origine Contrôlée depuis 1946.",
+      "title": "Pécharmant",
+      "typicity": [],
       "varieties": [
-        "sauvignon (blanc et gris), sémillon, muscadelle"
-      ],
-      "typicity": []
+        "merlot, cabernet franc, cabernet sauvignon, malbec"
+      ]
     },
     "rosette": {
-      "title": "Rosette",
       "information": "Rosette, c’est l’histoire d’une renaissance. Figurant parmi les plus anciennes appellations du vignoble bergeracois, située au cœur de la fameuse Vinée Nord qu’elle partage avec les jolis rouges de Pécharmant, il s’en est fallu de peu pour que Rosette disparaisse. C’était sans compter sur une poignée de doux aventuriers, vignerons artisans du renouveau de ce moelleux frais, délicat… et terriblement tendance !",
       "introduction": "Le saviez-vous ?",
-      "presentation": "Il y a encore une vingtaine d’année, ils n’étaient plus que 4 irréductibles à produire du Rosette ! Mais à l’orée des années 2000, sentant poindre un retour des vins sucrés, de jeunes vignerons nouvellement installés en Bergerac et Pécharmant font le pari un peu fou de relancer l’appellation. En avant la reconquête : on défriche, on retape des chais, on investit. Et au final : on séduit ! Le Rosette reste un vin confidentiel, réservé aux initiés avec ses quelques 260 000 bouteilles produites annuellement. Vous faites maintenant partie de cette poignée de chanceux qui en connaissent le secret !",
-      "summary": "L’appellation Rosette est reconnue Appellation d’Origine Contrôlée depuis 1946.",
       "numbers": [
         "44 hectares de vignes",
         "17 producteurs",
         "900 hectolitres produits par an en moyenne"
       ],
+      "presentation": "Il y a encore une vingtaine d’année, ils n’étaient plus que 4 irréductibles à produire du Rosette ! Mais à l’orée des années 2000, sentant poindre un retour des vins sucrés, de jeunes vignerons nouvellement installés en Bergerac et Pécharmant font le pari un peu fou de relancer l’appellation. En avant la reconquête : on défriche, on retape des chais, on investit. Et au final : on séduit ! Le Rosette reste un vin confidentiel, réservé aux initiés avec ses quelques 260 000 bouteilles produites annuellement. Vous faites maintenant partie de cette poignée de chanceux qui en connaissent le secret !",
+      "summary": "L’appellation Rosette est reconnue Appellation d’Origine Contrôlée depuis 1946.",
+      "title": "Rosette",
+      "typicity": [],
       "varieties": [
         "sauvignon (blanc et gris), sémillon, muscadelle"
+      ]
+    },
+    "saussignac": {
+      "information": "Pour vivre heureux, préservons notre havre de paix et de nature ! Telle pourrait être la devise du vignoble de Saussignac, où sont élaborés de racés et aériens liquoreux. Animés du plus grand respect pour ce petit coin de paradis, les vignerons de Saussignac, dont une grande partie œuvre en bio, y soignent leurs vignes tels des jardins extraordinaires. Le cadre, totalement champêtre avec son charmant dédale de coteaux escarpés, est définitivement le spot idéal pour reconnecter avec soi-même et avec la nature. Pour vous y aider : des hébergements éco-friendly au cœur des vignes, des restaurants pour fines gueules, et des vignerons bons comme le pain (artisanal bien sûr !).",
+      "introduction": "Le saviez-vous ?",
+      "numbers": [
+        "30 hectares de vignes",
+        "15 producteurs",
+        "500 hectolitres produits par an en moyenne"
       ],
-      "typicity": []
+      "presentation": "C’est en 2005 seulement que fut reconnu le décret d’appellation Saussignac, l’un des plus stricts parmi les appellations de liquoreux. Sa particularité ? Il faut que la richesse en sucre du fruit soit exclusivement le résultat de la concentration naturelle de la baie du raisin sous l’action de la pourriture noble. Aucun enrichissement additionnel n’est donc possible. Partie d’un bel élan des « pionniers de Saussignac », cette aventure collective illustre une volonté propre de reconnaissance légitime d’un terroir, d’un savoir-faire et d’un esprit vigneron qui leur est propre.",
+      "summary": "L’appellation Saussignac est reconnue Appellation d’Origine Contrôlée depuis 2005. C’est la plus jeune appellation du vignoble et peut être aussi la plus confidentielle !",
+      "title": "Saussignac",
+      "typicity": [],
+      "varieties": [
+        "sauvignon (blanc et gris), sémillon, muscadelle"
+      ]
+    },
+    "titles": {
+      "numbers": "Chiffres clés",
+      "ours": "Nos vignobles",
+      "summary": "En un clin d’œil",
+      "typicity": "",
+      "varieties": "Cépages"
     }
   }
 }

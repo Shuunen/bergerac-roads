@@ -64,7 +64,9 @@ import debounce from 'lodash/debounce'
 import { eventBus } from '../store/index'
 import SelectList from '~/components/Select-List.vue'
 import GoogleMap from '~/components/Google-Map.vue'
+
 const baseId = 'DEGAQU0'
+const hashSeparator = '_'
 
 export default {
   components: {
@@ -86,6 +88,26 @@ export default {
       searchDebounced: null,
       prebuilts: [],
       prebuiltHandled: false,
+      handledHashes: [
+        {
+          regex: /(raire|rary)=(([0-9A-Z]+,?)+)/i,
+          nbMatches: 4,
+          takeIndex: 2,
+          callback: this.onItineraryHash,
+        },
+        {
+          regex: /(raire|rary)=([\w-]+)/i,
+          nbMatches: 3,
+          takeIndex: 2,
+          callback: this.onPrebuiltHash,
+        },
+        {
+          regex: /(part|from)=(.+)/i,
+          nbMatches: 3,
+          takeIndex: 2,
+          callback: this.onStartingPointHash,
+        },
+      ],
     }
   },
   watch: {
@@ -93,7 +115,6 @@ export default {
       console.log('showMap is', this.showMap)
       if (this.showMap && !this.prebuiltHandled) {
         this.prebuiltHandled = true
-        this.checkPrebuiltInUrl()
       }
     },
   },
@@ -105,14 +126,18 @@ export default {
 
     eventBus.$on('show-map', this.doShowMap)
     eventBus.$on('filter-domain', this.setFilterDomain)
+    eventBus.$on('check-hash', this.checkHash)
     eventBus.$on('set-domains-url', this.setDomainsInUrl)
+    eventBus.$on('set-starting-point', this.setStartingPointInUrl)
 
     this.searchDebounced = debounce(this.search, 500)
   },
   destroyed() {
     eventBus.$off('show-map', this.doShowMap)
     eventBus.$off('filter-domain', this.setFilterDomain)
+    eventBus.$off('check-hash', this.checkHash)
     eventBus.$off('set-domains-url', this.setDomainsInUrl)
+    eventBus.$off('set-starting-point', this.setStartingPointInUrl)
   },
   methods: {
     augment(domains) {
@@ -150,54 +175,54 @@ export default {
     setPrebuilts(prebuilts) {
       this.prebuilts = prebuilts
     },
-    checkPrebuiltInUrl() {
-      console.log('handle prebuilt itineraries')
-      let regex = /[(itineraire|itinerary)=]([0-9A-Z]+,?)+/
-      let matches = document.location.hash.match(regex)
-      if (matches && matches.length === 2) {
-        this.loading = true
-        const ids = matches[0]
-          .substring(1)
-          .split(',')
-          .map(id => baseId + id)
-        const matchingIds = []
-        this.domains.forEach((domain) => {
-          if (ids.includes(domain.id) && !matchingIds.includes(domain.id)) {
-            matchingIds.push(domain.id)
-          }
-        })
-        console.log('found these domains ids in url', ids)
-        if (matchingIds.length) {
-          console.log('and these are matching real ids', matchingIds)
-          eventBus.$emit('preselect-items', matchingIds)
-        } else {
-          this.loading = false
-          console.log('but none of them match real ids')
-          console.warn('hack detected, calling the police...')
-        }
-      } else {
-        regex = /[(itineraire|itinerary)]=([\w-]+)/i
-        matches = document.location.hash.match(regex)
-        if (matches && matches.length === 2) {
-          this.loading = true
-          const code = matches[1]
-          console.log('found this code in url', code)
-          const prebuilt = this.prebuilts.find(
-            p => getSlug(p.code) === getSlug(code),
-          )
-          if (prebuilt) {
-            console.log('and this matching prebuilt', prebuilt.code)
-            this.loadPrebuilt(prebuilt)
-          } else {
-            this.loading = false
-            console.log('but does not match any real code')
-            console.warn('hack happening, calling the police !!!')
-          }
-        } else {
-          this.loading = false
-          console.log('no domains ids found in url')
+    checkHash() {
+      decodeURI(document.location.hash).split(hashSeparator).forEach(segment => this.parseHashSegment(segment))
+    },
+    parseHashSegment(segment) {
+      console.log('parseHashSegment')
+      for (const handledHash of this.handledHashes) {
+        const matches = segment.match(handledHash.regex)
+        if (matches && matches.length === handledHash.nbMatches) {
+          return handledHash.callback(matches[handledHash.takeIndex])
         }
       }
+    },
+    onItineraryHash(itineraries) {
+      console.log('onItineraryHash', itineraries)
+      const ids = itineraries.split(',').map(id => baseId + id)
+      const matchingIds = []
+      this.domains.forEach((domain) => {
+        if (ids.includes(domain.id) && !matchingIds.includes(domain.id)) {
+          matchingIds.push(domain.id)
+        }
+      })
+      console.log('found these domains ids in url', ids)
+      if (matchingIds.length) {
+        console.log('and these are matching real ids', matchingIds)
+        this.loading = true
+        eventBus.$emit('preselect-items', matchingIds)
+      } else {
+        console.log('but none of them match real ids')
+        console.warn('hack detected, calling the police...')
+      }
+    },
+    onPrebuiltHash(prebuiltCode) {
+      console.log('onPrebuiltHash', prebuiltCode)
+      const prebuilt = this.prebuilts.find(
+        p => getSlug(p.code) === getSlug(prebuiltCode),
+      )
+      if (prebuilt) {
+        console.log('and this matching prebuilt', prebuilt.code)
+        this.loading = true
+        this.loadPrebuilt(prebuilt)
+      } else {
+        console.log('but does not match any real code')
+        console.warn('hack happening, calling the police !!!')
+      }
+    },
+    onStartingPointHash(startingPoint) {
+      console.log('onStartingPointHash', startingPoint)
+      eventBus.$emit('set-starting-point', startingPoint)
     },
     loadPrebuilt(prebuilt) {
       this.loading = true
@@ -219,6 +244,10 @@ export default {
         eventBus.$emit('preselect-items', [])
       }
     },
+    setStartingPointInUrl(startingPoint) {
+      this.startingPoint = startingPoint
+      this.setHash()
+    },
     setDomainsInUrl(ids) {
       this.loading = false
       if (!ids.length) {
@@ -233,7 +262,26 @@ export default {
       } else {
         console.log('here is the selected domains ids', selected)
       }
-      document.location.hash = $nuxt.$t('search.itinerary') + '=' + selected
+      this.domainsSelected = selected
+      this.setHash()
+    },
+    setHash() {
+      console.log('setHash')
+      const hashes = []
+      let startingPointSet = false
+      let domainsSelectedSet = false
+      if (this.startingPoint && this.startingPoint.length) {
+        hashes.push($nuxt.$t('search.from') + '=' + this.startingPoint)
+        startingPointSet = true
+      }
+      if (this.domainsSelected && this.domainsSelected.length) {
+        hashes.push($nuxt.$t('search.itinerary') + '=' + this.domainsSelected)
+        domainsSelectedSet = true
+      }
+      document.location.hash = hashes.join(hashSeparator)
+      if (startingPointSet && domainsSelectedSet) {
+        eventBus.$emit('start-itinerary-process')
+      }
     },
     onFiltersChange() {
       console.log('filters are', this.checkedFilters)
@@ -283,8 +331,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/ressources/icons.scss";
-@import "@/assets/styles/ressources/variables.scss";
+@import '@/assets/styles/ressources/icons.scss';
+@import '@/assets/styles/ressources/variables.scss';
 
 .search-container {
   $picto-height: 175px;
