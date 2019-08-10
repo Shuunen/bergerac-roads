@@ -18,8 +18,8 @@
         class="line"
         :class="[checkedItems.length ? 'valid' : 'todo']"
       >
-2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
-</div>
+        2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
+      </div>
 
       <div class="line">
         <el-button :disabled="!canCreate" @click="startItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
