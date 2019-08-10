@@ -59,6 +59,8 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  devModules: ['@nuxtjs/eslint-module'],
+
   /*
   ** Build configuration
   */
