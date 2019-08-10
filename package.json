@@ -56,13 +56,13 @@
     "analyze": "nuxt build --analyze",
     "build": "nuxt build",
     "check": "npx repo-check",
-    "ci": "run-s test data:import build",
+    "ci": "run-s data:import test",
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",
     "dev": "nuxt",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "start": "nuxt",
-    "test": "npm run lint",
+    "test": "npm run build",
     "update": "npx npm-check-updates -u"
   },
   "version": "2.1.0"
