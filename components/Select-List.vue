@@ -1,13 +1,9 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
     <div class="col start parent-height">
-      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">
-        {{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}
-      </div>
+      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
 
-      <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">
-        1) {{ $t('search.helpStart') }}
-      </div>
+      <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
 
       <div class="line">
         <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint(null)">
@@ -22,24 +18,18 @@
         class="line"
         :class="[checkedItems.length ? 'valid' : 'todo']"
       >
-        2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
-      </div>
+2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
+</div>
 
       <div class="line">
-        <el-button :disabled="!canCreate" @click="startItineraryProcess">
-          {{ $t('search.calcItinerary') }}
-        </el-button>
+        <el-button :disabled="!canCreate" @click="startItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
 
-        <el-button :disabled="!canCreate" @click="sendItineraryByMail">
-          {{ $t('search.sendItinerary') }}
-        </el-button>
+        <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
 
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
-        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">
-          {{ $t('search.filterDomains') }}
-        </el-button>
+        <el-button :disabled="!filterDomain.length" @click="doFilterDomains">{{ $t('search.filterDomains') }}</el-button>
       </div>
       <div class="line list" v-show="itemsSorted.length">
         <el-checkbox-group v-model="checkedItems" @change="emitCheckedItems" v-loading="filteringDomains">
@@ -52,9 +42,7 @@
         </el-checkbox-group>
       </div>
 
-      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">
-        {{ $t('search.noEntries') }}
-      </div>
+      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
     </div>
   </div>
 </template>
@@ -80,7 +68,7 @@ export default {
       required: true,
     },
   },
-  data() {
+  data () {
     return {
       checkedItems: [],
       itemsSorted: [],
@@ -95,19 +83,19 @@ export default {
   },
   computed: {
     google: gmapApi,
-    canCreate() {
+    canCreate () {
       return this.checkedItems && this.checkedItems.length && this.startingPoint && this.startingPoint.length
     },
   },
   watch: {
-    items() {
+    items () {
       // Reinitialize the checked items list when the items list changes.
       console.log('cleared checked items')
       this.checkedItems = []
       this.sortItems(true)
     },
   },
-  mounted() {
+  mounted () {
     // Selects or not by clicking on the button in infowindow.
     eventBus.$on('select-marker', (selectedMarker) => {
       console.log('on select-marker')
@@ -136,12 +124,12 @@ export default {
 
     // this.listenFilterDomain(true)
   },
-  destroyed() {
+  destroyed () {
     eventBus.$off('preselect-items', this.preselectItems)
     eventBus.$off('start-itinerary-process', this.startItineraryProcess)
   },
   methods: {
-    initAutoComplete() {
+    initAutoComplete () {
       if ((!this.google || !this.google.maps) && this.retry > 0) {
         this.retry--
         setTimeout(() => this.initAutoComplete(), 500)
@@ -162,7 +150,7 @@ export default {
       })
       eventBus.$emit('check-hash')
     },
-    sendItineraryByMail() {
+    sendItineraryByMail () {
       const mail = ''
       const subject = this.$t('search.sendItinerarySubject')
       const body = this.$t('search.sendItineraryBody')
@@ -170,7 +158,7 @@ export default {
       // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
     },
-    preselectItems(itemIds) {
+    preselectItems (itemIds) {
       console.log('preselecting domains...')
       this.checkedItems = []
       itemIds.forEach((itemId) => {
@@ -181,7 +169,7 @@ export default {
       })
       this.emitCheckedItems(this.checkedItems)
     },
-    sortItems(noTimeout) {
+    sortItems (noTimeout) {
       const timeout = noTimeout ? 0 : 300
       if (timeout) {
         this.loading = true
@@ -200,12 +188,12 @@ export default {
         this.emitItemIdsForUrl()
       }, timeout)
     },
-    emitItemIdsForUrl() {
+    emitItemIdsForUrl () {
       const ids = this.items.filter(item => item.selected).map(item => item.id)
       // console.log('will set theses domains ids in url', ids)
       eventBus.$emit('set-domains-url', ids)
     },
-    getCityByCoordinates(coords) {
+    getCityByCoordinates (coords) {
       const geocoder = new this.google.maps.Geocoder()
       const location = { lat: coords.latitude, lng: coords.longitude }
       return new Promise((resolve) => {
@@ -223,7 +211,7 @@ export default {
         })
       })
     },
-    getCityFromAddressComponents(components) {
+    getCityFromAddressComponents (components) {
       if (!components) {
         return null
       }
@@ -236,14 +224,14 @@ export default {
       console.log('getCityFromAddressComponents : city found "' + city + '"')
       return city
     },
-    doFilterDomains() {
+    doFilterDomains () {
       this.emitFilterDomainDebounced()
     },
-    emitFilterDomain() {
+    emitFilterDomain () {
       this.filteringDomains = true
       eventBus.$emit('filter-domain', this.filterDomain)
     },
-    getNavigatorPosition() {
+    getNavigatorPosition () {
       this.loading = true
       console.log('getNavigatorPosition : fetching geolocation...')
       try {
@@ -254,11 +242,11 @@ export default {
         this.setStartingPoint(null)
       }
     },
-    onStartingPointUpdate(startingPoint) {
+    onStartingPointUpdate (startingPoint) {
       console.log('onStartingPointUpdate (list) : now "' + startingPoint + '"')
       this.startingPoint = startingPoint
     },
-    async setStartingPosition(position, implyPoint) {
+    async setStartingPosition (position, implyPoint) {
       console.log('setStartingPosition (list)', position)
       if (!position.coords || !position.coords.latitude || !position.coords.longitude) {
         return console.error('setStartingPosition (list) : position format not supported')
@@ -268,7 +256,7 @@ export default {
       const startingPoint = await this.getCityByCoordinates(position.coords)
       this.setStartingPoint(startingPoint)
     },
-    setStartingPoint(startingPoint) {
+    setStartingPoint (startingPoint) {
       console.log('setStartingPoint (list)', startingPoint)
       if (!this.showMap) {
         eventBus.$emit('show-map')
@@ -276,7 +264,7 @@ export default {
       eventBus.$emit('set-starting-point', startingPoint)
       this.loading = false
     },
-    startItineraryProcess() {
+    startItineraryProcess () {
       if (!this.showMap) {
         eventBus.$emit('show-map')
       }
@@ -297,7 +285,7 @@ export default {
       this.iteneraryDisplayed = true
       eventBus.$emit('process-itinerary', formattedCheckedItems)
     },
-    emitCheckedItems(value) {
+    emitCheckedItems (value) {
       // console.log('emitCheckedItems', value)
       if (!this.showMap) {
         eventBus.$emit('show-map')
@@ -307,7 +295,7 @@ export default {
         eventBus.$emit('checked-items', value)
       }
     },
-    viewDomain(domain) {
+    viewDomain (domain) {
       eventBus.$emit('goto-domain', domain)
     },
   },
@@ -315,7 +303,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/ressources/variables.scss';
+@import "@/assets/styles/ressources/variables.scss";
 
 .select-list-container {
   padding: 1.5rem;

@@ -2,9 +2,7 @@
   <div class="search-bar">
     <div class="filters">
       <el-checkbox-group v-model="checkedFilters" @change="handleCheckedCitiesChange">
-        <el-checkbox-button v-for="filter in filters" :label="filter.name" :key="filter.key" size="medium" border>
-          {{ filter.label }}
-        </el-checkbox-button>
+        <el-checkbox-button v-for="filter in filters" :label="filter.name" :key="filter.key" size="medium" border>{{ filter.label }}</el-checkbox-button>
       </el-checkbox-group>
     </div>
 
@@ -19,9 +17,7 @@
       </el-col>
       <el-col :span="8">
         <div class="grid-content bg-purple" />
-        <el-button type="primary" round icon="el-icon-refresh">
-          Create
-        </el-button>
+        <el-button type="primary" round icon="el-icon-refresh">Create</el-button>
       </el-col>
     </el-row>
 
@@ -29,9 +25,7 @@
       <li v-for="domaine in domaines" :key="domaine.key">
         <h4>{{ domaine.label }}</h4>
         <div>
-          <div v-for="filter in domaine.filters" :key="filter.key">
-            {{ filter.label }}
-          </div>
+          <div v-for="filter in domaine.filters" :key="filter.key">{{ filter.label }}</div>
         </div>
       </li>
     </ul>
@@ -91,16 +85,16 @@ const domaines = [
 
 export default {
   filters: {
-    capitalize(value) {
+    capitalize (value) {
       if (!value) { return '' }
       value = value.toString()
       return value.charAt(0).toUpperCase() + value.slice(1)
     },
-    sum(value) {
+    sum (value) {
       return value.length
     },
   },
-  data() {
+  data () {
     return {
       currentDate: new Date(),
       checkAll: false,
@@ -111,11 +105,11 @@ export default {
     }
   },
   methods: {
-    handleCheckAllChange(val) {
+    handleCheckAllChange (val) {
       this.checkedFilters = val ? filters : []
       this.isIndeterminate = false
     },
-    handleCheckedCitiesChange(value) {
+    handleCheckedCitiesChange (value) {
       // console.log('handleCheckedCitiesChange value = ' + value);
 
       const checkedCount = value.length
@@ -128,10 +122,10 @@ export default {
       this.domaines = domaines
 
       if (checkedFiltersToApply.length !== 0) {
-        this.domaines = this.domaines.filter(function(domaine) {
+        this.domaines = this.domaines.filter(function (domaine) {
           console.log('apply' + checkedFiltersToApply)
           let isValid = false
-          domaine.filters.forEach(function(filter) {
+          domaine.filters.forEach(function (filter) {
             if (checkedFiltersToApply.includes(filter.name) || isValid) {
               console.log('in filter array')
               isValid = true

@@ -7,23 +7,12 @@
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
-          <h1 class="title">
-            {{ data.title }}
-          </h1>
+          <h1 class="title">{{ data.title }}</h1>
         </div>
 
         <div class="line quick-actions">
-          <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">
-            {{ data.mail }}
-          </el-button>
-          <el-button
-            v-show="data.phones && data.phones.length"
-            v-for="phone in data.phones"
-            :key="phone"
-            icon="el-icon-phone-outline"
-          >
-            {{ phone }}
-          </el-button>
+          <el-button v-if="data.mail" @click="sendMail" icon="el-icon-message">{{ data.mail }}</el-button>
+          <el-button v-show="data.phones && data.phones.length" v-for="phone in data.phones" :key="phone" icon="el-icon-phone-outline">{{ phone }}</el-button>
         </div>
 
         <p v-if="data.websites && data.websites.length">
@@ -54,27 +43,14 @@
         </div>
 
         <el-container direction="vertical" v-if="!data.message" class="description">
-          <p v-if="$i18n.locale === 'fr'">
-            {{ data.description }}
-          </p>
-          <p v-if="$i18n.locale === 'en'">
-            {{ data.descriptionEn }}
-          </p>
+          <p v-if="$i18n.locale === 'fr'">{{ data.description }}</p>
+          <p v-if="$i18n.locale === 'en'">{{ data.descriptionEn }}</p>
         </el-container>
 
-        <el-alert
-          v-if="data.message"
-          :title="data.message"
-          center
-          :closable="false"
-          type="warning"
-          show-icon
-        />
+        <el-alert v-if="data.message" :title="data.message" center :closable="false" type="warning" show-icon />
         <div class="col">
           <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">
-              {{ $t('common.back-home') }}
-            </el-button>
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
         </div>
       </div>
@@ -95,7 +71,7 @@ export default {
     Header,
     Footer,
   },
-  data() {
+  data () {
     return {
       loading: true,
       backgroundStyle: {},
@@ -103,7 +79,7 @@ export default {
     }
   },
   computed: {
-    image() {
+    image () {
       let path = process.env.cdn + '/images/pixabay/bouchon-01.jpg'
       if (!this.data) {
         console.warn('data not available, using default image...')
@@ -117,7 +93,7 @@ export default {
       path = path.replace('cdn/none', 'height/' + 400)
       return path
     },
-    added() {
+    added () {
       if (!this.data.updated) {
         return null
       }
@@ -135,7 +111,7 @@ export default {
       const added = new Intl.DateTimeFormat('fr-FR', options).format(date)
       return added
     },
-    wines() {
+    wines () {
       const wines = []
       if (this.data.tags && this.data.tags.length) {
         winesToDisplay.forEach((wine) => {
@@ -148,11 +124,11 @@ export default {
       return wines
     },
   },
-  mounted() {
+  mounted () {
     this.init()
   },
   methods: {
-    init() {
+    init () {
       // get ressource id
       const matches = document.location.pathname.match(/\/([\w]+)-/)
       if (matches && matches.length === 2) {
@@ -177,7 +153,7 @@ export default {
         this.backgroundStyle = { backgroundImage: 'url(' + this.image + ')' }
       }
     },
-    sendMail() {
+    sendMail () {
       const mail = this.data.mail
       const subject = this.$t('domain.sendMailSubject')
       const body = this.$t('domain.sendMailBody')

@@ -42,14 +42,14 @@ let traductions = []
  * @param {string} tag remote input tag string
  * @param {string} separator the separator (often # or |)
  */
-function getArrayFromRemoteTag(tag, separator) {
+function getArrayFromRemoteTag (tag, separator) {
   if (!tag) {
     return []
   }
   return tag.split(separator).filter(data => data.length)
 }
 
-async function getRemoteDomainTraduction(id) {
+async function getRemoteDomainTraduction (id) {
   if (traductions.length === 0) {
     console.log('getting remote domain traductions once...')
     traductions = await remoteApi.get(urlsByType.traductions).then(r => r.data.value)
@@ -67,7 +67,7 @@ async function getRemoteDomainTraduction(id) {
  * Look at sample-domains.json to see remote data structure
  * @param {Domain} remote the domain data from remote API
  */
-async function remoteDomainToLocal(remote) {
+async function remoteDomainToLocal (remote) {
   const remoteTrad = await getRemoteDomainTraduction(remote.SyndicObjectID)
   if (justProcessOne) {
     console.log('converting remote data to local')
@@ -104,7 +104,7 @@ async function remoteDomainToLocal(remote) {
   return local
 }
 
-function getVineyardsFromRemoteDomain(domain) {
+function getVineyardsFromRemoteDomain (domain) {
   const vineyards = []
   remoteVineyards.forEach((vineyard) => {
     if (domain.AOC && domain.AOC.includes(vineyard)) {
@@ -120,7 +120,7 @@ function getVineyardsFromRemoteDomain(domain) {
   return vineyards
 }
 
-function getTagsFromRemoteDomain(domain) {
+function getTagsFromRemoteDomain (domain) {
   if (justProcessOne) {
     console.log('get tags from remote', domain)
   }
@@ -175,7 +175,7 @@ function getTagsFromRemoteDomain(domain) {
   return tags
 }
 
-function getWineTagsFromRemoteDomain(domain) {
+function getWineTagsFromRemoteDomain (domain) {
   let tags = []
   const str = domain.AOCCOMPLEMENTAIRE
   if (!str) {
@@ -208,7 +208,7 @@ function getWineTagsFromRemoteDomain(domain) {
   return tags
 }
 
-function getLabelsFromRemoteDomain(domain) {
+function getLabelsFromRemoteDomain (domain) {
   let labels = domain.LABELS
   if (!labels || !labels.length) {
     return []
@@ -230,7 +230,7 @@ function getLabelsFromRemoteDomain(domain) {
   return labels
 }
 
-function getWineTagFromName(name) {
+function getWineTagFromName (name) {
   switch (name.toLowerCase()) {
     case 'rosé':
       return 'vin-rose'
@@ -247,7 +247,7 @@ function getWineTagFromName(name) {
   }
 }
 
-function getLocalDomain(id, type) {
+function getLocalDomain (id, type) {
   // console.log(id, ': getting local domain')
   return localApi
     .get('/' + type + '/' + id)
@@ -267,7 +267,7 @@ function getLocalDomain(id, type) {
     })
 }
 
-function addLocalDomain(data, type) {
+function addLocalDomain (data, type) {
   console.log('adding local domain with id', data.id)
   return localApi
     .post('/' + type, data)
@@ -281,7 +281,7 @@ function addLocalDomain(data, type) {
     })
 }
 
-function patchLocalDomain(data, type) {
+function patchLocalDomain (data, type) {
   return localApi
     .put('/' + type + '/' + data.id, data)
     .then(() => {
@@ -294,7 +294,7 @@ function patchLocalDomain(data, type) {
     })
 }
 
-async function updateLocalObject(remoteObject, type = 'domains') {
+async function updateLocalObject (remoteObject, type = 'domains') {
   if (stopProcessing) {
     throw new Error('stop processing requested')
   }
@@ -334,11 +334,11 @@ async function updateLocalObject(remoteObject, type = 'domains') {
  * Handy helper to pause sequential tasks
  * @param {number} time time in milliseconds
  */
-function pause(time) {
+function pause (time) {
   return new Promise(resolve => setTimeout(() => resolve('success, pause ended'), time))
 }
 
-async function updateLocalObjects(remoteObjects, type) {
+async function updateLocalObjects (remoteObjects, type) {
   console.log('checking ' + remoteObjects.length + ' remote ' + type)
   for (let i = 0; i < remoteObjects.length; i++) {
     if (!stopProcessing) {
@@ -351,7 +351,7 @@ async function updateLocalObjects(remoteObjects, type) {
   }
 }
 
-function showSummary(type) {
+function showSummary (type) {
   const box = 30
   console.log('╔' + '═'.repeat(box) + '╗')
   console.log('║ import summary               ║')
@@ -363,7 +363,7 @@ function showSummary(type) {
   console.log('╚' + '═'.repeat(box) + '═')
 }
 
-function getRemoteObjects(type) {
+function getRemoteObjects (type) {
   objectCreated = 0
   objectUpdated = 0
   objectSkipped = 0
@@ -391,7 +391,7 @@ function getRemoteObjects(type) {
     })
 }
 
-async function start() {
+async function start () {
   console.log('Json Server is running')
   await getRemoteObjects('domains')
   await pause(1000)

@@ -1,7 +1,7 @@
 const nsg = require('node-sprite-generator')
 const isInstalled = require('is-installed')
 
-function createPngSprite() {
+function createPngSprite () {
   nsg({
     compositor: 'jimp', // jimp
     compositorOptions: { compressionLevel: 6 },
@@ -11,7 +11,7 @@ function createPngSprite() {
     stylesheet: 'scss',
     stylesheetPath: 'assets/styles/ressources/icons-transparent.scss',
     stylesheetOptions: { prefix: 'transparent-' },
-  }, function(err) {
+  }, function (err) {
     if (err) {
       console.log('Sprite PNG failed !', err)
     } else {
@@ -20,7 +20,7 @@ function createPngSprite() {
   })
 }
 
-function showHints(type) {
+function showHints (type) {
   console.log(`Sprite ${type} generated!`)
   console.log('TODO : Upload sprite to CDN')
   console.log(`TODO : Background should target "#{$cdn}/images/icons.${type}" in icons${type === 'jpg' ? '' : '-transparent'}.scss`)
@@ -29,7 +29,7 @@ function showHints(type) {
   console.log(`URL : /cdn/none/none/bergerac.lebowsky-dev.xyz/images/icons.${type}`)
 }
 
-function createJpgSprite() {
+function createJpgSprite () {
   nsg({
     compositor: 'gm', // jimp
     compositorOptions: { compressionLevel: 7 },
@@ -38,7 +38,7 @@ function createJpgSprite() {
     spritePath: 'assets/images/icons.jpg',
     stylesheet: 'scss',
     stylesheetPath: 'assets/styles/ressources/icons.scss',
-  }, function(err) {
+  }, function (err) {
     if (err) {
       console.log('Sprite JPG failed !', err)
     } else {
@@ -47,7 +47,7 @@ function createJpgSprite() {
   })
 }
 
-function startJpgSprite() {
+function startJpgSprite () {
   if (isInstalled.sync('gm')) {
     createJpgSprite()
   } else {

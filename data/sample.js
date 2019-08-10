@@ -7,7 +7,7 @@ let domainUpdated = 0
 let domainSkipped = 0
 const localSamples = JSON.parse(fs.readFileSync(output, 'utf-8'))
 
-function getRemoteDomainsSample() {
+function getRemoteDomainsSample () {
   console.log('getting remote domains samples from api')
   // console.log('using url :', remoteDomainsUrl)
   remoteApi.get(remoteDomainsUrl)
@@ -25,7 +25,7 @@ function getRemoteDomainsSample() {
     .catch(error => console.error(error))
 }
 
-function compareWithLocals(remoteSamples) {
+function compareWithLocals (remoteSamples) {
   return new Promise((resolve, reject) => {
     localSamples.forEach((local, index) => {
       // console.log(index, local.SyndicObjectID)
@@ -50,7 +50,7 @@ function compareWithLocals(remoteSamples) {
   })
 }
 
-function showSummary() {
+function showSummary () {
   const box = 30
   // console.log('updated', limit, 'sample domains in', output, 'successfully :)')
   console.log('╔' + '═'.repeat(box) + '╗')

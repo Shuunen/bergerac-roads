@@ -1,13 +1,13 @@
 <template>
   <nuxt-link :to="$i18n.path('')" class="header-logo" :title="$t('common.back-home')">
-    <img :src="image" alt="logo">
+    <img :src="image" alt="logo" />
   </nuxt-link>
 </template>
 
 <script>
 export default {
   computed: {
-    image() {
+    image () {
       return process.env.cdn + '/images/bergerac-duras.png'
     },
   },
