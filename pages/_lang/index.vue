@@ -3,25 +3,28 @@
     <Header />
     <HomeTop />
     <Search />
+    <Domain-Lookup />
     <LastDomains />
     <Footer />
   </el-container>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
+import DomainLookup from '~/components/Domain-Lookup.vue'
 import Footer from '~/components/Footer.vue'
+import Header from '~/components/Header.vue'
 import HomeTop from '~/components/Home-Top.vue'
 import LastDomains from '~/components/Last-Domains.vue'
 import Search from '~/components/Search.vue'
 
 export default {
   components: {
+    DomainLookup,
+    Footer,
+    Header,
+    HomeTop,
     LastDomains,
     Search,
-    HomeTop,
-    Header,
-    Footer,
   },
 }
 </script>
