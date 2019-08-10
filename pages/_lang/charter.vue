@@ -6,9 +6,7 @@
     <el-main>
       <div class="encart" v-loading="loading">
         <div class="line">
-          <h1 class="title">
-            {{ $t('charter.title') }}
-          </h1>
+          <h1 class="title">{{ $t('charter.title') }}</h1>
         </div>
         <el-container direction="vertical">
           <p>Lorem ipsum enim quisque sibi plurimum confidit et ut quisque maxime virtute et sapientia sic munitus est, ut nullo egeat suaque omnia in se ipso posita iudicet, ita in amicitiis expetendis colendisque maxime excellit. Quid enim? Africanus indigens mei? Minime hercule! ac ne ego quidem illius; sed ego admiratione quadam virtutis eius, ille vicissim opinione fortasse non nulla, quam de meis moribus habebat, me dilexit; auxit benevolentiam consuetudo. Sed quamquam utilitates multae et magnae consecutae sunt, non sunt tamen ab earum spe causae diligendi profectae.</p>
@@ -19,9 +17,7 @@
         </el-container>
         <div class="col">
           <nuxt-link :to="$i18n.path('')">
-            <el-button icon="el-icon-arrow-left" class="back">
-              {{ $t('common.back-home') }}
-            </el-button>
+            <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
           </nuxt-link>
         </div>
       </div>
@@ -39,7 +35,7 @@ export default {
     Header,
     Footer,
   },
-  data() {
+  data () {
     return {
       loading: false,
       backgroundStyle: { backgroundImage: `url(${process.env.cdn}/images/pixabay/bouchon-01.jpg)` },

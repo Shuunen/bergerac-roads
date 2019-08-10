@@ -18,9 +18,7 @@
               <div class="icon glass" v-for="(wine, index) in wines" :key="index" :class="wine" />
             </span>
           </div>
-          <div class="description" v-if="description">
-            {{ description }}
-          </div>
+          <div class="description" v-if="description">{{ description }}</div>
         </div>
       </el-container>
     </el-card>
@@ -60,10 +58,10 @@ export default {
     },
   },
   computed: {
-    number() {
+    number () {
       return this.data.number
     },
-    image() {
+    image () {
       let path = '/icons/no-image.png'
       if (this.data.thumbnail) {
         path = this.data.thumbnail
@@ -73,7 +71,7 @@ export default {
       }
       return path
     },
-    description() {
+    description () {
       let description = ''
       if (this.data.description && this.data.description.length) {
         description = this.cleanDescription(this.data.description)
@@ -96,14 +94,14 @@ export default {
       }
       return description
     },
-    label() {
+    label () {
       let label = null
       if (this.data.labels && this.data.labels.length) {
         label = this.data.labels[0]
       }
       return label
     },
-    wines() {
+    wines () {
       const wines = []
       if (this.data.tags && this.data.tags.length) {
         winesToDisplay.forEach((wine) => {
@@ -115,7 +113,7 @@ export default {
       }
       return wines
     },
-    added() {
+    added () {
       if (!this.data.updated) {
         return null
       }
@@ -136,14 +134,14 @@ export default {
     },
   },
   methods: {
-    cleanDescription(str) {
+    cleanDescription (str) {
       str = str.replace(/(\\n)+([\s]+)?/gim, '. ')
       str = str.replace(/[\\.\s]+(\.)/gim, '.')
       str = str.replace(/\\"/gim, '"')
       str = str.replace(/[\n]([a-z1-9])/gim, ' $1')
       return str
     },
-    viewDomain() {
+    viewDomain () {
       if (this.size === 'inline') {
         return
       }

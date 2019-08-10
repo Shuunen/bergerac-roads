@@ -6,10 +6,7 @@
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id"
-                  :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'"
-                  :class="{'hidden-xs-and-down': (i % 2 !== 0)}"
-          />
+          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'" :class="{'hidden-xs-and-down': (i % 2 !== 0)}" />
         </div>
       </div>
     </el-main>
@@ -26,17 +23,17 @@ export default {
   components: {
     Domain,
   },
-  data() {
+  data () {
     return {
       loading: true,
       domains: [],
     }
   },
-  mounted() {
+  mounted () {
     this.init()
   },
   methods: {
-    init() {
+    init () {
       this.loading = true
       console.log('Home Mid : init')
       this.$db.getDomains().then((domains) => {
@@ -50,12 +47,12 @@ export default {
         this.detectItinerary()
       })
     },
-    detectItinerary() {
+    detectItinerary () {
       if (document.location.hash) {
         return this.scrollToSearch()
       }
     },
-    isInViewport(el) {
+    isInViewport (el) {
       const bounding = el.getBoundingClientRect()
       return (
         bounding.top >= 0 &&
@@ -64,7 +61,7 @@ export default {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
       )
     },
-    scrollToSearch() {
+    scrollToSearch () {
       const el = document.querySelector('.search-container')
       if (this.isInViewport(el)) {
         return console.log('avoid scrolling to map because already in the viewport')

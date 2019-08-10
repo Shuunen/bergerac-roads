@@ -1,6 +1,9 @@
 <template>
   <el-dropdown class="vineyards" v-loading="loading">
-    <span class="el-dropdown-link">{{ $t('vineyards.titles.ours') }}<i class="el-icon-arrow-down el-icon--right" /></span>
+    <span class="el-dropdown-link">
+      {{ $t('vineyards.titles.ours') }}
+      <i class="el-icon-arrow-down el-icon--right" />
+    </span>
     <el-dropdown-menu slot="dropdown">
       <nuxt-link v-for="vineyard in vineyards" :key="vineyard.id" :to="$i18n.path('vignoble/' + vineyard.name)">
         <el-dropdown-item>{{ $t('vineyards.' + vineyard.name + '.title') }}</el-dropdown-item>
@@ -11,17 +14,17 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       loading: true,
       vineyards: [],
     }
   },
-  mounted() {
+  mounted () {
     this.init()
   },
   methods: {
-    init() {
+    init () {
       this.loading = true
       console.log('Header Vineyards : init')
       this.$db.getVineyards().then((vineyards) => {

@@ -4,17 +4,21 @@
     <div class="line background" v-lazy:background-image="images.background">
       <el-row class="title" justify="center">
         <el-col :span="14" :xs="24">
-          <h1>{{ $t('home-top.title') }}<br><small>{{ $t('home-top.subtitle') }}</small></h1>
+          <h1>
+            {{ $t('home-top.title') }}
+            <br />
+            <small>{{ $t('home-top.subtitle') }}</small>
+          </h1>
         </el-col>
       </el-row>
-      <img class="panneau" v-lazy="images.panneau" alt="panneau">
+      <img class="panneau" v-lazy="images.panneau" alt="panneau" />
     </div>
   </el-container>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       images: {
         background: process.env.cdn + '/images/entrant/credit-photo-Akim-Benbrahim.jpg',
@@ -54,7 +58,7 @@ export default {
       background-color: $white;
       height: 3px;
       width: 90%;
-      content: '';
+      content: "";
       display: block;
     }
     small {

@@ -10,13 +10,9 @@
       @click="openInfoWindow(marker)"
     >
       <GmapInfoWindow :opened="marker.infoWindowOpen" @closeclick="marker.infoWindowOpen = false">
-        <p class="infowindow-title">
-          {{ marker.titleWithNumber }}
-        </p>
+        <p class="infowindow-title">{{ marker.titleWithNumber }}</p>
         <div class="button-container">
-          <el-button @click="selectMarker(marker)">
-            {{ marker.selected ? $t('search.unselectButton') : $t('search.selectButton') }}
-          </el-button>
+          <el-button @click="selectMarker(marker)">{{ marker.selected ? $t('search.unselectButton') : $t('search.selectButton') }}</el-button>
         </div>
       </GmapInfoWindow>
     </GmapMarker>
@@ -40,7 +36,7 @@ export default {
       required: true,
     },
   },
-  data() {
+  data () {
     return {
       center: {
         lat: 44.85,
@@ -56,10 +52,10 @@ export default {
     google: gmapApi,
     // Necessary in order to have only one directions renderer and
     // avoid multiple displayed itineraries.
-    directionsDisplay() {
+    directionsDisplay () {
       return new this.google.maps.DirectionsRenderer()
     },
-    formattedMarkers() {
+    formattedMarkers () {
       let markers = this.markers.map((marker) => {
         marker.position = {
           lat: +marker.latitude,
@@ -74,21 +70,21 @@ export default {
       return markers
     },
   },
-  created() {
+  created () {
     this.updateItineraryDebounced = debounce(this.updateItinerary, 300)
     eventBus.$on('checked-items', this.onCheckedItems)
     eventBus.$on('set-starting-point', this.setStartingPoint)
     eventBus.$on('set-starting-position', this.setStartingPosition)
     eventBus.$on('process-itinerary', this.processItinerary)
   },
-  destroyed() {
+  destroyed () {
     eventBus.$off('checked-items', this.onCheckedItems)
     eventBus.$off('set-starting-point', this.setStartingPoint)
     eventBus.$off('set-starting-position', this.setStartingPosition)
     eventBus.$off('process-itinerary', this.processItinerary)
   },
   methods: {
-    onCheckedItems(checkedItems) {
+    onCheckedItems (checkedItems) {
       if (!checkedItems || !checkedItems.length) {
         return console.log('onCheckedItems : cannot process without items')
       }
@@ -99,24 +95,24 @@ export default {
       }
       this.$forceUpdate()
     },
-    updateItinerary() {
+    updateItinerary () {
       if (!this.iteneraryDisplayed) {
         return
       }
       console.log('updateItinerary (map)')
       this.processItinerary()
     },
-    setStartingPoint(point) {
+    setStartingPoint (point) {
       console.log('setStartingPoint (map) : now', point)
       this.startingPoint = point
       this.updateItineraryDebounced()
     },
-    setStartingPosition(position) {
+    setStartingPosition (position) {
       console.log('setStartingPosition (map) : now', position)
       this.startingPosition = position
       this.updateItineraryDebounced()
     },
-    async processItinerary(checkedItems) {
+    async processItinerary (checkedItems) {
       if (checkedItems && checkedItems.length) {
         console.log('got checkedItems from eventBus')
         this.checkedItems = checkedItems
@@ -155,7 +151,7 @@ export default {
       return this.displayItinerary(request)
     },
     // Apply the itinerary to the map with its reference.
-    async displayItinerary(request) {
+    async displayItinerary (request) {
       if (!this.$refs || !this.$refs.mapRef || !this.$refs.mapRef.$mapPromise) {
         return console.error('displayItinerary : cannot access mapPromise')
       }
@@ -172,7 +168,7 @@ export default {
         setTimeout(() => this.scrollToMap(), 300)
       })
     },
-    isInViewport(el) {
+    isInViewport (el) {
       const bounding = el.getBoundingClientRect()
       return (
         bounding.top >= 0 &&
@@ -181,7 +177,7 @@ export default {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
       )
     },
-    scrollToMap() {
+    scrollToMap () {
       const el = document.querySelector('.vue-map-container')
       if (this.isInViewport(el)) {
         return console.log('avoid scrolling to map because already in the viewport')
@@ -191,7 +187,7 @@ export default {
     },
     // Create a promise for each selected place in order to get the distance
     // between the user and each one of them.
-    createDistanceRequest(position, markerPosition) {
+    createDistanceRequest (position, markerPosition) {
       // console.log('in createDistanceRequest', position, markerPosition)
       // console.log('in createDistanceRequest with position "' + position + '"')
       const directionsService = new this.google.maps.DirectionsService()
@@ -212,7 +208,7 @@ export default {
       })
     },
     // Get the formatted position depending on the type of it.
-    getFormattedPosition(position) {
+    getFormattedPosition (position) {
       let f = null
       if (typeof position === 'string') {
         f = position
@@ -230,18 +226,18 @@ export default {
       return f
     },
     // Get the furthest place between all selected places in order to set it as arrival point.
-    getFurthestPlace(places) {
+    getFurthestPlace (places) {
       // console.log('in getFurthestPlace')
       const maxDistance = Math.max(...places.map(place => place.distance))
       const furthestPlaceIndex = places.findIndex(place => place.distance === maxDistance)
       return places.splice(furthestPlaceIndex, 1)[0]
     },
-    openInfoWindow(marker) {
+    openInfoWindow (marker) {
       console.log('in openInfoWindow')
       this.markers.map(marker => (marker.infoWindowOpen = false))
       marker.infoWindowOpen = true
     },
-    selectMarker(marker) {
+    selectMarker (marker) {
       eventBus.$emit('select-marker', marker)
       marker.selected = !marker.selected
       this.$forceUpdate()

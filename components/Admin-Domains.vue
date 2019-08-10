@@ -5,9 +5,7 @@
       <el-table-column type="selection" width="55" />
       <el-table-column prop="title" label="Nom" />
       <el-table-column label="Actif ?" width="180">
-        <template slot-scope="scope">
-          {{ scope.row.active ? 'oui' : 'non' }}
-        </template>
+        <template slot-scope="scope">{{ scope.row.active ? 'oui' : 'non' }}</template>
       </el-table-column>
     </el-table>
   </el-container>
@@ -15,18 +13,18 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       api: process.env.api + '/domains',
       loading: true,
       domains: [],
     }
   },
-  mounted() {
+  mounted () {
     this.getDomains()
   },
   methods: {
-    getDomains() {
+    getDomains () {
       this.loading = true
       fetch(this.api)
         .then(response => response.json())
@@ -36,7 +34,7 @@ export default {
         })
     },
 
-    addDomain(name) {
+    addDomain (name) {
       const headers = new Headers()
       headers.append('Accept', 'application/json') // This one is enough for GET requests
       headers.append('Content-Type', 'application/json') // This one sends body
@@ -44,11 +42,11 @@ export default {
       fetch(this.api, { method: 'post', headers, body }).then(this.getDomains)
     },
 
-    deleteDomain(id) {
+    deleteDomain (id) {
       fetch(this.api + '/' + id, { method: 'delete' }).then(this.getDomains)
     },
 
-    tableRowClassName({ row }) {
+    tableRowClassName ({ row }) {
       if (!row.active) {
         return 'inactive-row'
       }

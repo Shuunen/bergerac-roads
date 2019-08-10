@@ -29,7 +29,7 @@ export default {
     cdnBase: 'https://atg502nfn.cloudimg.io/cdn/none/none/',
   },
   /*
-  ** Customize the progress bar color
+  ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
   /*
@@ -53,6 +53,14 @@ export default {
   ],
 
   /*
+  ** Nuxt.js dev-modules
+  */
+  devModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+  ],
+
+  /*
   ** Nuxt.js modules
   */
   modules: [
@@ -67,20 +75,9 @@ export default {
   },
   build: {
     transpile: [/^element-ui/],
-
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        })
-      }
-    },
+    extend (config, ctx) {},
   },
 }

@@ -19,9 +19,7 @@
         <el-col :xs="12" :sm="6" :md="4" :lg="4" v-for="f in filters" :key="f.code">
           <el-checkbox class="search-picto col" :checked="f.checked" :label="f.shortName" @change="updateFilter(f)" border>
             <div :class="['icon', 'icon-' + f.code]" />
-            <div class="label">
-              {{ f.shortName }}
-            </div>
+            <div class="label">{{ f.shortName }}</div>
           </el-checkbox>
         </el-col>
       </el-row>
@@ -33,9 +31,7 @@
         <transition name="fade">
           <el-col v-show="showVineyardFilter">
             <el-checkbox-group class="vineyards-checkboxes" v-model="checkedVineyards" size="large" @change="onFiltersChange()">
-              <el-checkbox v-for="(vineyard, index) in vineyards" :key="index" :label="vineyard.name" checked>
-                {{ $t(`vineyards.${vineyard.name}.title`) }}
-              </el-checkbox>
+              <el-checkbox v-for="(vineyard, index) in vineyards" :key="index" :label="vineyard.name" checked>{{ $t(`vineyards.${vineyard.name}.title`) }}</el-checkbox>
             </el-checkbox-group>
           </el-col>
         </transition>
@@ -73,7 +69,7 @@ export default {
     GoogleMap,
     SelectList,
   },
-  data() {
+  data () {
     return {
       mapContainerHeight: 900,
       filters: [],
@@ -111,14 +107,14 @@ export default {
     }
   },
   watch: {
-    showMap() {
+    showMap () {
       console.log('showMap is', this.showMap)
       if (this.showMap && !this.prebuiltHandled) {
         this.prebuiltHandled = true
       }
     },
   },
-  mounted() {
+  mounted () {
     this.$db.getVineyards().then(this.setVineyards)
     this.$db.getDomains().then(this.setDomains)
     this.$db.getTags().then(this.setFilters)
@@ -132,7 +128,7 @@ export default {
 
     this.searchDebounced = debounce(this.search, 500)
   },
-  destroyed() {
+  destroyed () {
     eventBus.$off('show-map', this.doShowMap)
     eventBus.$off('filter-domain', this.setFilterDomain)
     eventBus.$off('check-hash', this.checkHash)
@@ -140,7 +136,7 @@ export default {
     eventBus.$off('set-starting-point', this.setStartingPointInUrl)
   },
   methods: {
-    augment(domains) {
+    augment (domains) {
       domains = domains.map((domain) => {
         domain.infoWindowOpen = false
         domain.title = trimStart(domain.title, 'Les ')
@@ -149,10 +145,10 @@ export default {
       })
       return domains
     },
-    sort(domains) {
+    sort (domains) {
       return orderBy(domains, ['title'], ['asc'])
     },
-    filter(domains) {
+    filter (domains) {
       if (this.filterDomain.length) {
         const str = getSlug(this.filterDomain)
         console.log('filtering with str :', str)
@@ -172,13 +168,13 @@ export default {
       }
       return domains
     },
-    setPrebuilts(prebuilts) {
+    setPrebuilts (prebuilts) {
       this.prebuilts = prebuilts
     },
-    checkHash() {
+    checkHash () {
       decodeURI(document.location.hash).split(hashSeparator).forEach(segment => this.parseHashSegment(segment))
     },
-    parseHashSegment(segment) {
+    parseHashSegment (segment) {
       console.log('parseHashSegment')
       for (const handledHash of this.handledHashes) {
         const matches = segment.match(handledHash.regex)
@@ -187,7 +183,7 @@ export default {
         }
       }
     },
-    onItineraryHash(itineraries) {
+    onItineraryHash (itineraries) {
       console.log('onItineraryHash', itineraries)
       const ids = itineraries.split(',').map(id => baseId + id)
       const matchingIds = []
@@ -206,7 +202,7 @@ export default {
         console.warn('hack detected, calling the police...')
       }
     },
-    onPrebuiltHash(prebuiltCode) {
+    onPrebuiltHash (prebuiltCode) {
       console.log('onPrebuiltHash', prebuiltCode)
       const prebuilt = this.prebuilts.find(
         p => getSlug(p.code) === getSlug(prebuiltCode),
@@ -220,11 +216,11 @@ export default {
         console.warn('hack happening, calling the police !!!')
       }
     },
-    onStartingPointHash(startingPoint) {
+    onStartingPointHash (startingPoint) {
       console.log('onStartingPointHash', startingPoint)
       eventBus.$emit('set-starting-point', startingPoint)
     },
-    loadPrebuilt(prebuilt) {
+    loadPrebuilt (prebuilt) {
       this.loading = true
       // allow only one loaded prebuilt
       this.prebuilts.map(
@@ -244,11 +240,11 @@ export default {
         eventBus.$emit('preselect-items', [])
       }
     },
-    setStartingPointInUrl(startingPoint) {
+    setStartingPointInUrl (startingPoint) {
       this.startingPoint = startingPoint
       this.setHash()
     },
-    setDomainsInUrl(ids) {
+    setDomainsInUrl (ids) {
       this.loading = false
       if (!ids.length) {
         console.log('no domains to setup in document location')
@@ -265,7 +261,7 @@ export default {
       this.domainsSelected = selected
       this.setHash()
     },
-    setHash() {
+    setHash () {
       console.log('setHash')
       const hashes = []
       let startingPointSet = false
@@ -283,43 +279,43 @@ export default {
         eventBus.$emit('start-itinerary-process')
       }
     },
-    onFiltersChange() {
+    onFiltersChange () {
       console.log('filters are', this.checkedFilters)
       this.loading = true
       this.searchDebounced()
     },
-    updateFilter(filter) {
+    updateFilter (filter) {
       filter.checked = !filter.checked
       this.checkedFilters[filter.code] = filter.checked
       this.onFiltersChange()
     },
-    setVineyards(vineyards) {
+    setVineyards (vineyards) {
       this.vineyards = vineyards
     },
-    setDomains(domains) {
+    setDomains (domains) {
       this.domains = this.sort(this.augment(this.filter(domains)))
       this.loading = false
       eventBus.$emit('domains-search-complete')
     },
-    setFilters(tags) {
+    setFilters (tags) {
       this.filters = tags.map((tag) => {
         tag.checked = false
         return tag
       })
       console.log('filters init with', this.filters)
     },
-    setFilterDomain(value) {
+    setFilterDomain (value) {
       console.log('user want to filter domains with', value)
       this.filterDomain = value
       this.searchDebounced()
     },
-    doShowMap() {
+    doShowMap () {
       if (!this.showMap) {
         console.log('in doShowMap')
         setTimeout(() => (this.showMap = true), 500)
       }
     },
-    search() {
+    search () {
       console.log('in search')
       this.doShowMap()
       const filters = this.checkedFilters
@@ -331,8 +327,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/ressources/icons.scss';
-@import '@/assets/styles/ressources/variables.scss';
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/variables.scss";
 
 .search-container {
   $picto-height: 175px;
@@ -373,7 +369,7 @@ export default {
       transition: opacity 0.4s;
       display: block;
       opacity: 0;
-      content: '';
+      content: "";
       position: absolute;
       top: 8px;
       right: 8px;
@@ -458,25 +454,25 @@ export default {
 }
 
 .icon-acces-handicape {
-  background-image: url('#{$cdn}/images/pictos/Z1_Accessibilitee_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Accessibilitee_web.png");
 }
 .icon-hebergement {
-  background-image: url('#{$cdn}/images/pictos/Z1_Hebergement_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Hebergement_web.png");
 }
 .icon-camping {
-  background-image: url('#{$cdn}/images/pictos/Z1_Camping-car_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Camping-car_web.png");
 }
 .icon-restauration {
-  background-image: url('#{$cdn}/images/pictos/Z1_Restaurant_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Restaurant_web.png");
 }
 .icon-env-humain {
-  background-image: url('#{$cdn}/images/pictos/Z1_Hebergement_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Hebergement_web.png");
 }
 .icon icon-monument {
-  background-image: url('#{$cdn}/images/pictos/Z1_Monument_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Monument_web.png");
 }
 .icon icon-famille {
-  background-image: url('#{$cdn}/images/pictos/Z1_Famille_web.png');
+  background-image: url("#{$cdn}/images/pictos/Z1_Famille_web.png");
 }
 .icon-top-10 {
   @include sprite($recycling);

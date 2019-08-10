@@ -3,7 +3,7 @@ import getSlug from 'speakingurl'
 
 export const eventBus = new Vue()
 
-function getDomainUrl(domain) {
+function getDomainUrl (domain) {
   return 'domaine/' + domain.id + '-' + getSlug(domain.title)
 }
 
