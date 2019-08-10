@@ -3,7 +3,10 @@
     <div class="col start parent-height">
       <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
 
-      <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">1) {{ $t('search.helpStart') }}</div>
+      <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">
+        <span>1)&nbsp;</span>
+        {{ $t('search.helpStart') }}
+      </div>
 
       <div class="line">
         <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint(null)">
@@ -14,16 +17,13 @@
         </el-input>
       </div>
 
-      <div
-        class="line"
-        :class="[checkedItems.length ? 'valid' : 'todo']"
-      >
-        2) {{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}
+      <div class="line" :class="[checkedItems.length ? 'valid' : 'todo']">
+        <span>2)&nbsp;</span>
+        <span>{{ $tc('search.' + (!checkedItems.length ? 'introduction' : 'domainsSelected'), checkedItems.length, {nb:checkedItems.length}) + (checkedItems.length > 1 ? 's' : '') + (checkedItems.length > 0 ? '' : ' :') }}</span>
       </div>
 
       <div class="line">
-        <el-button :disabled="!canCreate" @click="startItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
-
+        <el-button :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
         <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
 
@@ -75,7 +75,7 @@ export default {
       startingPoint: '',
       retry: 3,
       loading: true,
-      showMap: false,
+      mapDisplayed: false,
       filterDomain: '',
       filteringDomains: false,
       iteneraryDisplayed: false,
@@ -96,37 +96,26 @@ export default {
     },
   },
   mounted () {
-    // Selects or not by clicking on the button in infowindow.
-    eventBus.$on('select-marker', (selectedMarker) => {
-      console.log('on select-marker')
-      const index = this.checkedItems.findIndex(item => item === selectedMarker.title)
-      if (index === -1) {
-        this.checkedItems.push(selectedMarker.title)
-      } else {
-        this.checkedItems.splice(index, 1)
-      }
-      this.sortItemsDebounced()
-    })
-
-    eventBus.$on('show-map', () => (this.showMap = true))
-    eventBus.$on('checked-items', () => this.sortItemsDebounced())
-    eventBus.$on('preselect-items', this.preselectItems)
-    eventBus.$on('start-itinerary-process', this.startItineraryProcess)
+    eventBus.$on('checked-items', this.onCheckedItems)
+    eventBus.$on('domains-search-complete', this.onDomainsSearchComplete)
+    eventBus.$on('preselect-items', this.onPreselectItems)
+    eventBus.$on('select-marker', this.onMarkerSelect)
     eventBus.$on('set-starting-point', this.onStartingPointUpdate)
-    eventBus.$on('domains-search-complete', () => (this.filteringDomains = false))
-
+    eventBus.$on('show-map', this.onShowMap)
+    eventBus.$on('start-itinerary-process', this.onStartItineraryProcess)
     this.initAutoComplete()
-
     this.sortItemsDebounced = debounce(this.sortItems, 1500)
     this.sortItemsDebounced(true)
-
     this.emitFilterDomainDebounced = debounce(this.emitFilterDomain, 500)
-
-    // this.listenFilterDomain(true)
   },
   destroyed () {
-    eventBus.$off('preselect-items', this.preselectItems)
-    eventBus.$off('start-itinerary-process', this.startItineraryProcess)
+    eventBus.$off('checked-items', this.onCheckedItems)
+    eventBus.$off('domains-search-complete', this.onDomainsSearchComplete)
+    eventBus.$off('preselect-items', this.onPreselectItems)
+    eventBus.$off('select-marker', this.onMarkerSelect)
+    eventBus.$off('set-starting-point', this.onStartingPointUpdate)
+    eventBus.$off('show-map', this.onShowMap)
+    eventBus.$off('start-itinerary-process', this.onStartItineraryProcess)
   },
   methods: {
     initAutoComplete () {
@@ -150,6 +139,24 @@ export default {
       })
       eventBus.$emit('check-hash')
     },
+    onDomainsSearchComplete () {
+      this.filteringDomains = false
+    },
+    onCheckedItems () {
+      this.sortItemsDebounced()
+    },
+    onMarkerSelect (marker) {
+      const index = this.checkedItems.findIndex(item => item === marker.title)
+      if (index === -1) {
+        this.checkedItems.push(marker.title)
+      } else {
+        this.checkedItems.splice(index, 1)
+      }
+      this.sortItemsDebounced()
+    },
+    onShowMap () {
+      this.mapDisplayed = true
+    },
     sendItineraryByMail () {
       const mail = ''
       const subject = this.$t('search.sendItinerarySubject')
@@ -158,7 +165,7 @@ export default {
       // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
     },
-    preselectItems (itemIds) {
+    onPreselectItems (itemIds) {
       console.log('preselecting domains...')
       this.checkedItems = []
       itemIds.forEach((itemId) => {
@@ -175,7 +182,7 @@ export default {
         this.loading = true
       }
       if (this.iteneraryDisplayed) {
-        this.startItineraryProcess()
+        this.onStartItineraryProcess()
       }
       setTimeout(() => {
         console.log('sorting items in list with ' + timeout + 'ms timeout')
@@ -258,14 +265,14 @@ export default {
     },
     setStartingPoint (startingPoint) {
       console.log('setStartingPoint (list)', startingPoint)
-      if (!this.showMap) {
+      if (!this.mapDisplayed) {
         eventBus.$emit('show-map')
       }
       eventBus.$emit('set-starting-point', startingPoint)
       this.loading = false
     },
-    startItineraryProcess () {
-      if (!this.showMap) {
+    onStartItineraryProcess () {
+      if (!this.mapDisplayed) {
         eventBus.$emit('show-map')
       }
       // Necessary to emit the checked items with their coordinates.
@@ -287,7 +294,7 @@ export default {
     },
     emitCheckedItems (value) {
       // console.log('emitCheckedItems', value)
-      if (!this.showMap) {
+      if (!this.mapDisplayed) {
         eventBus.$emit('show-map')
         setTimeout(() => eventBus.$emit('checked-items', value), 1000)
       } else {
@@ -296,7 +303,8 @@ export default {
       }
     },
     viewDomain (domain) {
-      eventBus.$emit('goto-domain', domain)
+      console.log('eventBus emit domain-lookup')
+      eventBus.$emit('domain-lookup', domain)
     },
   },
 }
@@ -313,6 +321,10 @@ export default {
     width: 100%;
     font-weight: 600;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    span:first-child {
+      align-self: flex-start;
+    }
     &.list {
       flex: 1;
     }

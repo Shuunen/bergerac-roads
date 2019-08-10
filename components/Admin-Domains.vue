@@ -33,7 +33,6 @@ export default {
           this.loading = false
         })
     },
-
     addDomain (name) {
       const headers = new Headers()
       headers.append('Accept', 'application/json') // This one is enough for GET requests
@@ -41,11 +40,9 @@ export default {
       const body = JSON.stringify({ name })
       fetch(this.api, { method: 'post', headers, body }).then(this.getDomains)
     },
-
     deleteDomain (id) {
       fetch(this.api + '/' + id, { method: 'delete' }).then(this.getDomains)
     },
-
     tableRowClassName ({ row }) {
       if (!row.active) {
         return 'inactive-row'
@@ -55,6 +52,7 @@ export default {
   },
 }
 </script>
+
 <style lang="scss" scoped>
 @import "@/assets/styles/ressources/variables.scss";
 
