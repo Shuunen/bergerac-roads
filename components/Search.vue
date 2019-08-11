@@ -468,10 +468,10 @@ export default {
 .icon-env-humain {
   background-image: url("#{$cdn}/images/pictos/Z1_Hebergement_web.png");
 }
-.icon icon-monument {
+.icon-monument {
   background-image: url("#{$cdn}/images/pictos/Z1_Monument_web.png");
 }
-.icon icon-famille {
+.icon-famille {
   background-image: url("#{$cdn}/images/pictos/Z1_Famille_web.png");
 }
 .icon-top-10 {
