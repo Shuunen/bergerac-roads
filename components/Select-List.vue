@@ -23,8 +23,10 @@
       </div>
 
       <div class="line">
-        <el-button :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
-        <el-button :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
+        <el-button class="search-button" :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
+      </div>
+      <div class="line">
+        <el-button class="send-by-mail-button" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
 
       <div class="line">
@@ -334,6 +336,9 @@ export default {
   }
   .el-button {
     flex: none;
+  }
+  .search-button, .send-by-mail-button{
+    width: 100%;
   }
   .el-button + .el-button {
     margin-left: 12px;
