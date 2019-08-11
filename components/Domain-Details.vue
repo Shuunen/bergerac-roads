@@ -168,6 +168,6 @@ export default {
 .el-dialog {
   width: 100%;
   height: 100%;
-  margin-top: 0!important;
+  margin: 0!important;
 }
 </style>
