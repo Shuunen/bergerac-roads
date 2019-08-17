@@ -12,7 +12,9 @@
     "sendMailSubject": "Bergerac Roads - Contact",
     "unknownMessage": "Sorry but this domain does not seems to exists.",
     "unknownTitle": "Unknown domain",
-    "view": "See the domain page"
+    "varieties": "Grape varieties",
+    "view": "See the domain page",
+    "websites": "Websites"
   },
   "footer": {
     "alcoolWarning": "Alcohol abuse is dangerous for your health, consume with moderation",

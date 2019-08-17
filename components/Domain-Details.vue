@@ -1,16 +1,16 @@
 <template>
-  <div class="domain-details" :class="['theme-' + theme]">
+  <div class="domain-details">
     <div class="line">
       <h1 class="title">{{ domain.title }}</h1>
     </div>
 
-    <div class="line quick-actions">
+    <div class="line mb20">
       <el-button v-if="domain.mail" @click="sendMail(domain.mail)" icon="el-icon-message">{{ domain.mail }}</el-button>
       <el-button v-show="domain.phones && domain.phones.length" v-for="phone in domain.phones" :key="phone" icon="el-icon-phone-outline">{{ phone }}</el-button>
     </div>
 
-    <p v-if="domain.websites && domain.websites.length" class="websites hide-for-modal">
-      <strong>Site web :</strong>
+    <p class="websites" v-if="domain.websites && domain.websites.length">
+      <strong>{{ $t('domain.websites') }}&nbsp;:</strong>
       <a :href="url" v-for="url in domain.websites" :key="url">
         {{ url }}
         <span class="comma">,&nbsp;</span>
@@ -31,30 +31,24 @@
     </el-row>
     -->
 
-    <div class="glasses line start">
-      <strong class="hide-for-modal">Cépages&nbsp;:</strong>
+    <div class="glasses line start mb20">
+      <strong class>{{ $t('domain.varieties') }}&nbsp;:</strong>
       <div class="wine" v-for="(wine, index) in wines" :key="index">
-        <div class="text hide-for-modal" :class="wine">{{ readable(wine) }}</div>
+        <div class="text" :class="wine">{{ readable(wine) }}</div>
         <div class="icon glass" :class="wine" />
       </div>
     </div>
 
-    <div class="separator line hide-for-modal">
+    <div class="separator line">
       <i class="el-icon-more-outline" />
     </div>
 
-    <el-container direction="vertical" v-if="!domain.message" class="description">
+    <el-container direction="vertical" v-if="!domain.message" class="description mb10">
       <p v-if="$i18n.locale === 'fr'">{{ domain.description }}</p>
       <p v-if="$i18n.locale === 'en'">{{ domain.descriptionEn }}</p>
     </el-container>
 
     <el-alert v-if="domain.message" :title="domain.message" center :closable="false" type="warning" show-icon />
-
-    <div class="col hide-for-modal">
-      <nuxt-link :to="$i18n.path('')">
-        <el-button icon="el-icon-arrow-left" class="back">{{ $t('common.back-home') }}</el-button>
-      </nuxt-link>
-    </div>
   </div>
 </template>
 
@@ -119,6 +113,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/mixins.scss";
 @import "@/assets/styles/ressources/variables.scss";
 
 .domain-details {
@@ -126,6 +122,17 @@ export default {
     color: $red-d2;
     text-align: center;
     word-break: break-word;
+    font-size: 250%;
+    margin-top: 10px;
+  }
+  .description {
+    line-height: 2;
+    & > p::first-letter {
+      font-size: 200%;
+      margin-right: 5px;
+      color: $red-d2;
+      line-height: 1;
+    }
   }
   .websites a:last-child .comma {
     display: none;
@@ -135,6 +142,7 @@ export default {
     margin: 5px;
     .text {
       border-bottom: 2px dotted;
+      white-space: nowrap;
       &.vin-blanc-sec {
         border-color: $blanc;
       }
@@ -152,22 +160,15 @@ export default {
       }
     }
   }
-  &.theme-modal {
-    .title {
-      font-size: 250%;
-      margin-top: 10px;
-    }
-    .glasses {
-      justify-content: center;
-    }
-    .hide-for-modal {
-      display: none;
-    }
-  }
 }
 .el-dialog {
-  width: 100%;
-  height: 100%;
-  margin: 0!important;
+  width: 70%;
+}
+@include medium-screen-and-down {
+  .el-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+  }
 }
 </style>

@@ -3,16 +3,16 @@
     <div class="wrapper wrapper--logo">
       <Logo />
     </div>
-    <div class="wrapper wrapper--charter hidden-xs-and-down">
+    <div class="wrapper wrapper--charter hidden-medium-screen-and-down">
       <nuxt-link :to="$i18n.path('charter')">
         {{ $t('charter.title') }}
       </nuxt-link>
     </div>
     <div class="push-right hidden-sm-and-up" />
-    <div class="wrapper wrapper--vineyards hidden-xxs-only">
+    <div class="wrapper wrapper--vineyards hidden-small-screen">
       <Vineyards />
     </div>
-    <div class="push-right hidden-xs-and-up" />
+    <div class="push-right hidden-medium-screen-and-up" />
     <div class="wrapper wrapper--lang">
       <Lang />
     </div>
@@ -56,7 +56,7 @@ export default {
   display: flex;
   justify-content: space-around;
   .el-button {
-    margin-top: 0.4rem;
+    margin-top: .4rem;
   }
 }
 .line {

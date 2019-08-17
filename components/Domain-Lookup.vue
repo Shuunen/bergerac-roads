@@ -1,7 +1,7 @@
 <template>
   <div class="domain-lookup">
     <el-dialog :visible.sync="dialogVisible">
-      <DomainDetails v-if="domain && domain.id" :domain="domain" theme="modal" />
+      <DomainDetails v-if="domain && domain.id" :domain="domain" />
       <span slot="footer" class="dialog-footer">
         <el-button @click="close(false)">Fermer</el-button>
         <el-button type="primary" @click="close(true)">Voir la page du domaine</el-button>

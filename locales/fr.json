@@ -12,7 +12,9 @@
     "sendMailSubject": "Routes du Bergerac - Prise de contact",
     "unknownMessage": "Désolé mais ce domaine n'a pas été trouvé.",
     "unknownTitle": "Domaine inconnu",
-    "view": "Voir la page du domaine"
+    "varieties": "Cépages",
+    "view": "Voir la page du domaine",
+    "websites": "Sites Web"
   },
   "footer": {
     "alcoolWarning": "L'abus d'alcool est dangereux pour la santé, à consommer avec modération",
