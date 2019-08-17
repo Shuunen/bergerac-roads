@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/ressources/mixins.scss";
 @import "@/assets/styles/ressources/variables.scss";
 
 .home-top {
@@ -51,7 +52,7 @@ export default {
     text-align: center;
     padding: 20px 40px;
     z-index: 20;
-    background: rgba($green-d3, 0.5);
+    background: rgba($green-d3, .5);
     &::after,
     &::before {
       margin: 30px auto;
@@ -72,7 +73,7 @@ export default {
   }
 }
 
-@media (max-width: 450px) {
+@include small-screen {
   .title {
     height: 100%;
     h1 {
@@ -96,7 +97,7 @@ export default {
   bottom: 0;
   right: 10px;
   height: 75%;
-  opacity: 0.9;
+  opacity: .9;
   transform: rotate(3deg);
 }
 </style>

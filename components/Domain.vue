@@ -126,7 +126,7 @@ export default {
       if (this.size === 'inline') {
         return
       }
-      eventBus.$emit('goto-domain', this.data)
+      eventBus.$emit('domain-lookup', this.data)
     },
   },
 }
@@ -134,6 +134,7 @@ export default {
 
 <style lang="scss">
 @import "@/assets/styles/ressources/icons.scss";
+@import "@/assets/styles/ressources/mixins.scss";
 @import "@/assets/styles/ressources/variables.scss";
 
 .domain {
@@ -188,23 +189,6 @@ export default {
     .time {
       margin-top: 6px;
       color: $red-d4;
-    }
-    .icon.glass {
-      &.vin-rouge {
-        @include sprite($glass-rouge);
-      }
-      &.vin-blanc-sec {
-        @include sprite($glass-blanc);
-      }
-      &.vin-blanc-moelleux {
-        @include sprite($glass-moelleux);
-      }
-      &.vin-blanc-liquoreux {
-        @include sprite($glass-liquoreux);
-      }
-      &.vin-rose {
-        @include sprite($glass-rose);
-      }
     }
   }
   &.small,
@@ -279,7 +263,7 @@ export default {
       line-height: 1;
     }
   }
-  @media only screen and (min-width: 768px) {
+  @include medium-screen-and-up {
     &.small {
       max-width: 30%;
     }

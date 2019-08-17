@@ -1,17 +1,17 @@
-@media only screen and (max-width: 530px) {
-  .hidden-xxs-only {
+@include small-screen {
+  .hidden-small-screen {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 531px) {
-  .hidden-xs-and-up {
+@include medium-screen-and-up {
+  .hidden-medium-screen-and-up {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .hidden-xs-and-down {
+@include medium-screen-and-down {
+  .hidden-medium-screen-and-down {
     display: none !important;
   }
 }

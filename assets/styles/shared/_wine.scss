@@ -1,0 +1,17 @@
+.icon.glass {
+  &.vin-rouge {
+    @include sprite($glass-rouge);
+  }
+  &.vin-blanc-sec {
+    @include sprite($glass-blanc);
+  }
+  &.vin-blanc-moelleux {
+    @include sprite($glass-moelleux);
+  }
+  &.vin-blanc-liquoreux {
+    @include sprite($glass-liquoreux);
+  }
+  &.vin-rose {
+    @include sprite($glass-rose);
+  }
+}

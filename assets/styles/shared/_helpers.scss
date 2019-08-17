@@ -1,4 +1,3 @@
-
 .page-height {
   height: 100vh;
 }
@@ -16,7 +15,8 @@
   width: 100%;
 }
 
-.line, .col {
+.line,
+.col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
 .grappe {
   height: 80px;
   width: 60px;
-  background-image: url('http://bergerac.lebowsky-dev.xyz/images/grappe.svg'); /* DO NOT USE CDN FOR SVG */
+  background-image: url("http://bergerac.lebowsky-dev.xyz/images/grappe.svg"); /* DO NOT USE CDN FOR SVG */
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -63,13 +63,14 @@ img:not([src]) {
   visibility: hidden;
 }
 
-.encart, .encart--simple {
+.encart,
+.encart--simple {
   background: $white;
   padding: 0 40px;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  @media (max-width: 530px) {
+  @include small-screen {
     padding: 0 20px;
     margin-left: 0;
     margin-right: 0;
@@ -86,7 +87,8 @@ img:not([src]) {
   .color-line {
     background-color: $red-d3;
   }
-  .title, .subtitle {
+  .title,
+  .subtitle {
     color: $red-d2;
   }
   .background {
@@ -100,7 +102,11 @@ img:not([src]) {
   .encart {
     margin-bottom: 20px;
 
-    .title, .subtitle, p, ul, .line {
+    .title,
+    .subtitle,
+    p,
+    ul,
+    .line {
       max-width: 920px;
       margin: 0 auto 10px;
       &.title {

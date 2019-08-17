@@ -6,7 +6,7 @@
           <h2>{{ $t('last-domains.header') }}</h2>
         </el-row>
         <div class="grid">
-          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'" :class="{'hidden-xs-and-down': (i % 2 !== 0)}" />
+          <Domain v-for="(domain, i) in domains" :key="domain.id" :data="domain" :size="(i % 2 === 0) ? 'medium': 'large'" :class="{'hidden-medium-screen-and-down': (i % 2 !== 0)}" />
         </div>
       </div>
     </el-main>
@@ -95,7 +95,6 @@ h2 {
   padding-bottom: 40px;
 }
 .domain {
-  /* min-height: 360px; */
   display: grid;
   padding: 0 30px 30px 0;
   &.size-1,
@@ -105,27 +104,5 @@ h2 {
   &.size-2 {
     flex-grow: 3;
   }
-
-  /*
-  &.size-3 {
-    grid-column-end: span 2;
-    grid-row-end: span 3;
-  }
-  */
 }
-
-/*
-@media only screen and (min-width: 700px) {
-  .grid {
-    & > .domain:nth-child(2n) {
-      grid-column-end: span 2;
-      grid-row-end: span 2;
-    }
-    & > .domain:last-of-type {
-      grid-column-end: span 1;
-      grid-row-end: span 1;
-    }
-  }
-}
-*/
 </style>
