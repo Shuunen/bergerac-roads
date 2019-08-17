@@ -329,6 +329,7 @@ export default {
     }
     &.list {
       flex: 1;
+      overflow: hidden;
     }
     &.valid {
       color: $green-d2;
@@ -337,7 +338,8 @@ export default {
   .el-button {
     flex: none;
   }
-  .search-button, .send-by-mail-button{
+  .search-button,
+  .send-by-mail-button {
     width: 100%;
   }
   .el-button + .el-button {
