@@ -4,7 +4,6 @@
       <DomainDetails v-if="domain && domain.id" :domain="domain" />
       <span slot="footer" class="dialog-footer">
         <el-button @click="close(false)">Fermer</el-button>
-        <el-button type="primary" @click="close(true)">Voir la page du domaine</el-button>
       </span>
     </el-dialog>
   </div>
@@ -50,5 +49,8 @@ export default {
 .domain-lookup .el-dialog__body {
   padding-top: 0;
   padding-bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 100px);
 }
 </style>
