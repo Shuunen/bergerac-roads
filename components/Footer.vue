@@ -3,6 +3,11 @@
     <small>{{ $t('footer.alcoolWarning') }}</small>
     <div class="grappe" />
     <small>{{ $t('footer.copyright') }}</small>
+    <small>
+      <nuxt-link v-for="vineyard in vineyards" :key="vineyard" :to="$i18n.path('vignoble/' + vineyard.name)">
+        {{ $t(`vineyards.${vineyard.name}.title`) }}
+      </nuxt-link>
+    </small>
     <small class="line">
       <nuxt-link :to="$i18n.path('legal')">{{ $t('legal.title') }}</nuxt-link>
       <div class="separator">-</div>
@@ -10,7 +15,25 @@
     </small>
   </div>
 </template>
-
+<script>
+export default {
+  data () {
+    return {
+      vineyards: [],
+    }
+  },
+  mounted () {
+    this.init()
+  },
+  methods: {
+    init () {
+      this.$db.getVineyards().then((vineyards) => {
+        this.vineyards = vineyards
+      })
+    },
+  },
+}
+</script>
 <style lang="scss">
 @import "@/assets/styles/ressources/variables.scss";
 

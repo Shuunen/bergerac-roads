@@ -48,6 +48,12 @@
       <p v-if="$i18n.locale === 'en'">{{ domain.descriptionEn }}</p>
     </el-container>
 
+    <div v-if="domain.photos" > </div>
+      <el-carousel :interval="4000" height="500px" >
+        <el-carousel-item v-for="item in domain.photos" :key="item"   style="margin: 0 15%">
+          <img :src="item" >
+        </el-carousel-item>
+      </el-carousel>
     <el-alert v-if="domain.message" :title="domain.message" center :closable="false" type="warning" show-icon />
   </div>
 </template>
