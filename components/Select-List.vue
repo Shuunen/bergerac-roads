@@ -87,6 +87,7 @@ export default {
       geolocationStatus: '',
       filteringDomains: false,
       iteneraryDisplayed: false,
+      urlGoogleMap: '',
     }
   },
   computed: {
@@ -174,7 +175,7 @@ export default {
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
     },
     openInGoogleMap () {
-      window.open('https://google.com', '_blank')
+      window.open('https://www.google.com/maps/dir/' + this.urlGoogleMap, '_blank')
     },
     onPreselectItems (itemIds) {
       console.log('preselecting domains...')

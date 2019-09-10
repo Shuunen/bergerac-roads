@@ -43,6 +43,7 @@ export default {
         lng: 0.35,
       },
       checkedItems: [],
+      urlGoogleMap: '',
       startingPosition: null,
       startingPoint: null,
       iteneraryDisplayed: false,
@@ -126,6 +127,11 @@ export default {
       console.log('processItinerary : start')
       const origin = this.getFormattedPosition(this.startingPosition || this.startingPoint)
       const promises = []
+      const itemsCoord = []
+      this.checkedItems.forEach((item) => {
+        itemsCoord.push(item.position)
+        this.urlGoogleMap += item.position.lat + ',' + item.position.lng + '/'
+      })
       console.log('iterating over items :', this.checkedItems)
       for (const item of this.checkedItems) {
         if (item && item.position) {
