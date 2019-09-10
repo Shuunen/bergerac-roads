@@ -61,6 +61,7 @@
     "selectButton": "Sélectionner",
     "selected": "Sélectionné",
     "sendItinerary": "Envoyer par mail",
+    "openInGoogleMap": "Ouvrir dans Google Map",
     "sendItineraryBody": "Voici l'itinéraire que j'ai réalisé : ",
     "sendItinerarySubject": "Routes du Bergerac - Mon Itinéraire",
     "start": "Point de départ",

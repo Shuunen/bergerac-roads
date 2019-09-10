@@ -28,6 +28,9 @@
       <div class="line">
         <el-button class="send-by-mail-button" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
+      <div class="line">
+        <el-button class="send-by-mail-button" :disabled="!canCreate" @click="openInGoogleMap">{{ $t('search.openInGoogleMap') }}</el-button>
+      </div>
 
       <div class="line">
         <el-input class="filter-domain" v-model="filterDomain" @change="doFilterDomains" prefix-icon="el-icon-search" />
@@ -166,6 +169,9 @@ export default {
       const url = encodeURI(document.location.href)
       // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
+    },
+    openInGoogleMap () {
+      window.open('https://google.com', '_blank')
     },
     onPreselectItems (itemIds) {
       console.log('preselecting domains...')

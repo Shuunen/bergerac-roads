@@ -4,7 +4,7 @@
     <div class="grappe" />
     <small>{{ $t('footer.copyright') }}</small>
     <small>
-      <nuxt-link v-for="vineyard in vineyards" :key="vineyard" :to="$i18n.path('vignoble/' + vineyard.name)">
+      <nuxt-link v-for="vineyard in vineyards" :key="vineyard.id" :to="$i18n.path('vignoble/' + vineyard.name)">
         {{ $t(`vineyards.${vineyard.name}.title`) }}
       </nuxt-link>
     </small>

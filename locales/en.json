@@ -61,6 +61,7 @@
     "selectButton": "Select",
     "selected": "Selected",
     "sendItinerary": "Send by mail",
+    "openInGoogleMap": "Open in Google Map",
     "sendItineraryBody": "Here is the itinerary I made : ",
     "sendItinerarySubject": "Bergerac Roads - My itinerary",
     "start": "Starting point",
