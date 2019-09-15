@@ -1,4 +1,3 @@
-/* global $nuxt */
 import Vue from 'vue'
 import getSlug from 'speakingurl'
 
@@ -10,5 +9,5 @@ function getDomainUrl (domain) {
 
 eventBus.$on('goto-domain', (domain) => {
   const url = getDomainUrl(domain)
-  $nuxt.$router.push(url)
+  window.$nuxt.$router.push(url)
 })

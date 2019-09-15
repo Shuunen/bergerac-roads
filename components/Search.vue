@@ -53,7 +53,6 @@
 </template>
 
 <script>
-/* global $nuxt */
 import getSlug from 'speakingurl'
 import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
@@ -268,11 +267,11 @@ export default {
       let startingPointSet = false
       let domainsSelectedSet = false
       if (this.startingPoint && this.startingPoint.length) {
-        hashes.push($nuxt.$t('search.from') + '=' + this.startingPoint)
+        hashes.push(window.$nuxt.$t('search.from') + '=' + this.startingPoint)
         startingPointSet = true
       }
       if (this.domainsSelected && this.domainsSelected.length) {
-        hashes.push($nuxt.$t('search.itinerary') + '=' + this.domainsSelected)
+        hashes.push(window.$nuxt.$t('search.itinerary') + '=' + this.domainsSelected)
         domainsSelectedSet = true
       }
       document.location.hash = hashes.join(hashSeparator)

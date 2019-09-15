@@ -165,7 +165,7 @@ export default {
         this.directionsDisplay.setMap(map)
         this.directionsDisplay.setDirections(response)
         this.iteneraryDisplayed = true
-        setTimeout(() => this.scrollToMap(), 300)
+        // setTimeout(() => this.scrollToMap(), 300)
       })
     },
     isInViewport (el) {
