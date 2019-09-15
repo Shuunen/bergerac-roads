@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/Shuunen/bergerac-roads.svg?branch=master)](https://travis-ci.org/Shuunen/bergerac-roads)
 [![David](https://img.shields.io/david/shuunen/bergerac-roads.svg)](https://david-dm.org/shuunen/bergerac-roads)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/Shuunen/bergerac-roads.svg)](https://lgtm.com/projects/g/Shuunen/bergerac-roads)
+[![Scrutinizer Score](https://scrutinizer-ci.com/g/Shuunen/bergerac-roads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Shuunen/bergerac-roads)
 
 > Promoting the great wines of Bergerac since 2018 !
 
