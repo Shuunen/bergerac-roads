@@ -1,3 +1,4 @@
+/* global $nuxt */
 import Vue from 'vue'
 import getSlug from 'speakingurl'
 

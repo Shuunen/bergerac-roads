@@ -53,6 +53,7 @@
 </template>
 
 <script>
+/* global $nuxt */
 import getSlug from 'speakingurl'
 import orderBy from 'lodash/orderBy'
 import trimStart from 'lodash/trimStart'
@@ -332,7 +333,6 @@ export default {
 
 .search-container {
   $picto-height: 175px;
-
   background: $green-d4;
   min-height: 100vh;
   h2 {
@@ -358,15 +358,14 @@ export default {
     padding: 15px;
     height: $picto-height;
     background-color: $white;
-    filter: grayscale(0.8);
-    transition: filter 0.4s;
+    filter: grayscale(.8);
+    transition: filter .4s;
     text-align: center;
     border-width: 5px;
     font-weight: bold;
     &::after {
       @include sprite($check);
-
-      transition: opacity 0.4s;
+      transition: opacity .4s;
       display: block;
       opacity: 0;
       content: "";
@@ -476,27 +475,22 @@ export default {
 }
 .icon-top-10 {
   @include sprite($recycling);
-
   background-size: 792px;
 }
 .icon-les-petillants {
   @include sprite($shopping);
-
   background-size: 792px;
 }
 .icon-spot-photo {
   @include sprite($tree);
-
   background-size: 792px;
 }
 .icon-en-groupe {
   @include sprite($earth);
-
   background-size: 792px;
 }
 .icon-route-equestre {
   @include sprite($paw);
-
   background-size: 792px;
 }
 </style>
