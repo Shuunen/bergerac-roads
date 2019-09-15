@@ -11,10 +11,6 @@ module.exports = {
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
-  // add your custom rules here
-  globals: {
-    $nuxt: false,
-  },
   rules: {
     quotes: ['error', 'single'],
     semi: ['error', 'never'],

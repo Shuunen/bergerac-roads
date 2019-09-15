@@ -1,28 +1,17 @@
 export default function ({ isHMR, app, store, route, params, error, redirect }) {
-  const defaultLocale = app.i18n.fallbackLocale
-  // If middleware is called from hot module replacement, ignore it
   if (isHMR) {
-    return
+    return 'middleware called from hot module replacement, ignoring...'
   }
-  // Get locale from params
-  const locale = params.lang || defaultLocale
+  const defaultLocale = app.i18n.fallbackLocale
+  const locale = params.lang || defaultLocale // locale from params
   if (!store.state.locales.includes(locale)) {
     return error({ message: 'This page could not be found.', statusCode: 404 })
   }
-
-  // Set locale
-  store.commit('SET_LANG', locale)
+  store.commit('SET_LANG', locale) // set locale
   app.i18n.locale = store.state.locale
-  // If route is /<defaultLocale>/... -> redirect to /...
-  if (
-    locale === defaultLocale &&
-    route.fullPath.indexOf('/' + defaultLocale) === 0
-  ) {
-    const toReplace = '^/' + defaultLocale
-    const re = new RegExp(toReplace)
-    const newUrl = route.fullPath.replace(re, '/')
-    console.log('instead of', route.fullPath)
-    console.log('will redirect to newUrl', newUrl)
-    return redirect(newUrl)
+  const defaultLocaleParam = `/${defaultLocale}/`
+  if (route.fullPath.includes(defaultLocaleParam)) {
+    return redirect(route.fullPath.replace(defaultLocaleParam, '/'))
   }
+  return 'nothing to do here'
 }
