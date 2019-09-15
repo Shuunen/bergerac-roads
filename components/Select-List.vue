@@ -1,12 +1,14 @@
 <template>
   <div class="select-list-container" :style="{ height: `${height}px` }" v-loading="loading">
     <div class="col start parent-height">
-      <div class="line help-text" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
+      <div class="line" :class="[canCreate ? 'valid' : 'todo']">{{ canCreate ? $t('search.helpCreateAfter') : $t('search.helpCreateBefore') }}</div>
 
       <div class="line" :class="[startingPoint && startingPoint.length ? 'valid' : 'todo']">
         <span>1)&nbsp;</span>
         {{ $t('search.helpStart') }}
       </div>
+
+      <div class="line invalid" v-if="geolocationStatus.length">{{ geolocationStatus }}</div>
 
       <div class="line">
         <el-input ref="autocomplete" :placeholder="$t('search.start')" v-model="startingPoint" clearable @clear="setStartingPoint(null)">
@@ -47,7 +49,7 @@
         </el-checkbox-group>
       </div>
 
-      <div class="line help-text valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
+      <div class="line valid" v-show="!loading && !itemsSorted.length">{{ $t('search.noEntries') }}</div>
     </div>
   </div>
 </template>
@@ -82,6 +84,7 @@ export default {
       loading: true,
       mapDisplayed: false,
       filterDomain: '',
+      geolocationStatus: '',
       filteringDomains: false,
       iteneraryDisplayed: false,
     }
@@ -249,13 +252,26 @@ export default {
     getNavigatorPosition () {
       this.loading = true
       console.log('getNavigatorPosition : fetching geolocation...')
+      this.geolocationStatus = ''
       try {
-        window.navigator.geolocation.getCurrentPosition(position => this.setStartingPosition(position, true))
+        window.navigator.geolocation.getCurrentPosition(
+          position => this.setStartingPosition(position, true),
+          err => this.onNavigatorPositionFail(err)
+        )
       } catch (err) {
-        console.error('getNavigatorPosition : geolocation denied or failed')
-        alert(this.$t('search.findMeFailed'))
-        this.setStartingPoint(null)
+        this.onNavigatorPositionFail(err)
       }
+    },
+    onNavigatorPositionFail (err) {
+      console.error('getNavigatorPosition : geolocation denied or failed')
+      let status = this.$t('search.findMeFailed')
+      if (err.message.includes('denied')) {
+        status = this.$t('search.findMeDisallowed')
+      } else {
+        console.error(err.message)
+      }
+      this.geolocationStatus = status
+      this.setStartingPoint(null)
     },
     onStartingPointUpdate (startingPoint) {
       console.log('onStartingPointUpdate (list) : now "' + startingPoint + '"')
@@ -340,6 +356,9 @@ export default {
     &.valid {
       color: $green-d2;
     }
+    &.invalid {
+      color: $red-d1;
+    }
   }
   .el-button {
     flex: none;
@@ -403,7 +422,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: 0.5rem;
+      margin-top: .5rem;
     }
   }
   .el-icon-location-outline {
