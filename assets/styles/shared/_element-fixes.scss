@@ -21,14 +21,24 @@ section {
   }
   .el-button {
     font-weight: bold;
+    &.link {
+      padding: 0;
+      a {
+        padding: 12px 20px;
+        display: block;
+      }
+    }
   }
-  .el-table .inactive-row, .el-table .inactive-row:hover {
+  .el-table .inactive-row,
+  .el-table .inactive-row:hover {
     color: $black-l3;
     background-color: $black-l7;
     font-style: italic;
   }
   .el-card.take-height {
-    &, & > .el-card__body, & > .el-card__body > .el-container {
+    &,
+    & > .el-card__body,
+    & > .el-card__body > .el-container {
       height: 100%;
     }
   }
@@ -41,7 +51,8 @@ section {
   .el-switch__core {
     background-color: $black-l4;
   }
-  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner,
   .el-switch.is-checked .el-switch__core {
     background-color: $green-d1;
     border-color: $green-d2;

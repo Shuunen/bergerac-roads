@@ -164,6 +164,7 @@ export default {
         }
         this.directionsDisplay.setMap(map)
         this.directionsDisplay.setDirections(response)
+        eventBus.$emit('ordered-directions', response.geocoded_waypoints)
         this.iteneraryDisplayed = true
         // setTimeout(() => this.scrollToMap(), 300)
       })

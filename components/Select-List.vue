@@ -25,13 +25,15 @@
       </div>
 
       <div class="line">
-        <el-button class="search-button" :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
+        <el-button class="full-width" :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
       </div>
       <div class="line">
-        <el-button class="send-by-mail-button" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
+        <el-button class="full-width" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
       <div class="line">
-        <el-button class="send-by-mail-button" :disabled="!canCreate" @click="openInGoogleMap">{{ $t('search.openInGoogleMap') }}</el-button>
+        <el-button class="link full-width" :disabled="!canCreate">
+          <a class="full-width" :href="googleMapUrl" target="_blank">{{ $t('search.openInGoogleMap') }}</a>
+        </el-button>
       </div>
 
       <div class="line">
@@ -78,6 +80,7 @@ export default {
   data () {
     return {
       checkedItems: [],
+      orderedDirections: [],
       itemsSorted: [],
       startingPoint: '',
       retry: 3,
@@ -87,6 +90,7 @@ export default {
       geolocationStatus: '',
       filteringDomains: false,
       iteneraryDisplayed: false,
+      googleMapUrl: '',
     }
   },
   computed: {
@@ -104,6 +108,8 @@ export default {
     },
   },
   mounted () {
+    this.sortItemsDebounced = debounce(this.sortItems, 1500)
+    this.sortItemsDebounced(true)
     eventBus.$on('checked-items', this.onCheckedItems)
     eventBus.$on('domains-search-complete', this.onDomainsSearchComplete)
     eventBus.$on('preselect-items', this.onPreselectItems)
@@ -111,9 +117,8 @@ export default {
     eventBus.$on('set-starting-point', this.onStartingPointUpdate)
     eventBus.$on('show-map', this.onShowMap)
     eventBus.$on('start-itinerary-process', this.onStartItineraryProcess)
+    eventBus.$on('ordered-directions', this.onOrderedDirections)
     this.initAutoComplete()
-    this.sortItemsDebounced = debounce(this.sortItems, 1500)
-    this.sortItemsDebounced(true)
     this.emitFilterDomainDebounced = debounce(this.emitFilterDomain, 500)
   },
   destroyed () {
@@ -124,6 +129,7 @@ export default {
     eventBus.$off('set-starting-point', this.onStartingPointUpdate)
     eventBus.$off('show-map', this.onShowMap)
     eventBus.$off('start-itinerary-process', this.onStartItineraryProcess)
+    eventBus.$off('ordered-directions', this.onOrderedDirections)
   },
   methods: {
     initAutoComplete () {
@@ -172,9 +178,6 @@ export default {
       const url = encodeURI(document.location.href)
       // url = encodeURI(`<a href="${url}">${url}</a>`) // cannot put html body in a mailto
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
-    },
-    openInGoogleMap () {
-      window.open('https://google.com', '_blank')
     },
     onPreselectItems (itemIds) {
       console.log('preselecting domains...')
@@ -276,6 +279,7 @@ export default {
     onStartingPointUpdate (startingPoint) {
       console.log('onStartingPointUpdate (list) : now "' + startingPoint + '"')
       this.startingPoint = startingPoint
+      this.updateGoogleMapUrl()
     },
     async setStartingPosition (position, implyPoint) {
       console.log('setStartingPosition (list)', position)
@@ -295,17 +299,48 @@ export default {
       eventBus.$emit('set-starting-point', startingPoint)
       this.loading = false
     },
+    onOrderedDirections (directions) {
+      console.log('ordered directions :', directions)
+      this.orderedDirections = directions
+      this.updateGoogleMapUrl()
+    },
+    letterInAlphabet (index) {
+      return String.fromCharCode(65 + index)
+    },
+    updateGoogleMapUrl () {
+      console.log('updating Google Map url ...')
+      let url = 'https://www.google.com/maps/dir/?api=1'
+      const directionsCount = this.orderedDirections.length
+      const waypointLetters = []
+      this.orderedDirections.forEach((direction, index) => {
+        const id = direction.place_id
+        const letter = this.letterInAlphabet(index)
+        if (index === 0) {
+          url += `&origin=${letter}&origin_place_id=${id}&waypoint_place_ids=`
+        } else if (index === (directionsCount - 1)) {
+          url += `&destination=${letter}&destination_place_id=${id}`
+        } else {
+          url += id + '|'
+          waypointLetters.push(letter)
+        }
+      })
+      url += '&waypoints=' + waypointLetters.join('|')
+      // to go from A (111) to D (444) via B (222) & C (333)
+      // you need this format : https://www.google.com/maps/dir/?api=1&origin=A&origin_place_id=111&waypoint_place_ids=222|333&destination=D&destination_place_id=444&waypoints=B|C
+      // real example : https://www.google.com/maps/dir/?api=1&origin=A&origin_place_id=ChIJl4Sj7ErPqhIRzhf6zLLOEDc&waypoint_place_ids=ChIJV6rk54fQqhIRMloH2eZPD90|ChIJQ3IK1MDQqhIRMt7kxJNpR8E&destination=D&destination_place_id=ChIJa-zIourEqhIRAIDp1ZU_b2Y&waypoints=B|C
+      this.googleMapUrl = url.replace('|&', '&')
+    },
     onStartItineraryProcess () {
       if (!this.mapDisplayed) {
         eventBus.$emit('show-map')
       }
       // Necessary to emit the checked items with their coordinates.
-      const formattedCheckedItems = []
+      const items = []
       for (const checkedItem of this.checkedItems) {
         const originalCheckedItem = this.items.find(
           item => item.title === checkedItem,
         )
-        formattedCheckedItems.push({
+        items.push({
           name: checkedItem,
           position: {
             lat: +originalCheckedItem.latitude,
@@ -314,7 +349,7 @@ export default {
         })
       }
       this.iteneraryDisplayed = true
-      eventBus.$emit('process-itinerary', formattedCheckedItems)
+      eventBus.$emit('process-itinerary', items)
     },
     emitCheckedItems (value) {
       // console.log('emitCheckedItems', value)
@@ -362,10 +397,6 @@ export default {
   }
   .el-button {
     flex: none;
-  }
-  .search-button,
-  .send-by-mail-button {
-    width: 100%;
   }
   .el-button + .el-button {
     margin-left: 12px;
