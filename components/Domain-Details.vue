@@ -48,9 +48,8 @@
       <p v-if="$i18n.locale === 'en'">{{ domain.descriptionEn }}</p>
     </el-container>
 
-    <div v-if="domain.photos"></div>
-    <el-carousel :interval="4000" height="500px">
-      <el-carousel-item v-for="item in domain.photos" :key="item" style="margin: 0 15%">
+    <el-carousel >
+      <el-carousel-item v-for="item in domain.photos" :key="item">
         <img :src="item" />
       </el-carousel-item>
     </el-carousel>
@@ -170,11 +169,31 @@ export default {
 .el-dialog {
   width: 70%;
 }
+
+.el-carousel__container{
+  height: 500px;
+  text-align: center;
+}
+
 @include medium-screen-and-down {
   .el-dialog {
     width: 100%;
     height: 100%;
     margin: 0 !important;
+  }
+
+  .el-carousel__container{
+    height: 200px;
+  }
+
+  .el-carousel__indicators--horizontal{
+    display: none
+  }
+  .el-carousel__item{
+    img{
+       max-width:100%;
+    height:auto;
+    }
   }
 }
 </style>

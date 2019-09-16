@@ -47,7 +47,7 @@
     "filterVineyards": "Filtrer par région et vignobles",
     "findMe": "Localisez-moi",
     "findMeDisallowed": "La géolocalisation doit être autorisée afin de pouvoir vous localiser.",
-    "findMeFailed": "La géolocalisation n'est pas disponible sur votre navigateur.",
+    "findMeFailed": "La géolocalisation n'est pas autorisée sur votre navigateur.",
     "from": "départ",
     "header": "Ma route des vins",
     "helpCreateAfter": "Choisissez au moins un domaine et un point de départ pour créer votre itinéraire.",
