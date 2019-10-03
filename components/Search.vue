@@ -464,7 +464,7 @@ export default {
   background-image: url("#{$cdn}/images/pictos/Z1_Restaurant_web.png");
 }
 .icon-env-humain {
-  background-image: url("#{$cdn}/images/pictos/Z1_Hebergement_web.png");
+  background-image: url("#{$cdn}/images/pictos/Z1_Env_Humain_web.png");
 }
 .icon-monument {
   background-image: url("#{$cdn}/images/pictos/Z1_Monument_web.png");

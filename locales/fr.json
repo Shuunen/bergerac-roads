@@ -5,7 +5,8 @@
   "common": {
     "back-home": "Retour à l'accueil",
     "english": "Anglais",
-    "french": "Français"
+    "french": "Français",
+    "reset": "reset selection"
   },
   "domain": {
     "sendMailBody": "Insérez ici votre message. --- Envoyé depuis le site Routes du Bergerac",
@@ -65,7 +66,7 @@
     "sendItineraryBody": "Voici l'itinéraire que j'ai réalisé : ",
     "sendItinerarySubject": "Routes du Bergerac - Mon Itinéraire",
     "start": "Point de départ",
-    "subheading": "Choisissez parmi les itinéraires les plus populaires ou utilisez les filtres ci-dessous pour créer le votre.",
+    "subheading": "Utilisez les filtres ci-dessous pour créer votre route des vins.",
     "unselectButton": "Désélectionner"
   },
   "vineyards": {
