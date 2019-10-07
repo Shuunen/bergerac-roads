@@ -27,6 +27,11 @@
       <div class="line">
         <el-button class="full-width" :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
       </div>
+      <!--
+      <div class="line">
+        <el-button class="full-width" :disabled="!(iteneraryDisplayed || canCreate || checkedItems.length)" @click="reset">{{ $t('search.reset') }}</el-button>
+      </div>
+      -->
       <div class="line">
         <el-button class="full-width" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
@@ -80,17 +85,17 @@ export default {
   data () {
     return {
       checkedItems: [],
-      orderedDirections: [],
+      filterDomain: '',
+      filteringDomains: false,
+      geolocationStatus: '',
+      googleMapUrl: '',
       itemsSorted: [],
-      startingPoint: '',
-      retry: 3,
+      iteneraryDisplayed: false,
       loading: true,
       mapDisplayed: false,
-      filterDomain: '',
-      geolocationStatus: '',
-      filteringDomains: false,
-      iteneraryDisplayed: false,
-      googleMapUrl: '',
+      orderedDirections: [],
+      retry: 3,
+      startingPoint: '',
     }
   },
   computed: {
@@ -102,9 +107,7 @@ export default {
   watch: {
     items () {
       // Reinitialize the checked items list when the items list changes.
-      console.log('cleared checked items')
-      this.checkedItems = []
-      this.sortItems(true)
+      this.reset()
     },
   },
   mounted () {
@@ -180,7 +183,7 @@ export default {
       window.location.href = `mailto:${mail}?subject=${subject}&body=${body}${url}`
     },
     onPreselectItems (itemIds) {
-      console.log('preselecting domains...')
+      console.log('preselecting domains...', itemIds)
       this.checkedItems = []
       itemIds.forEach((itemId) => {
         const item = this.items.find(i => i.id === itemId)
@@ -195,23 +198,21 @@ export default {
       if (timeout) {
         this.loading = true
       }
-      if (this.iteneraryDisplayed) {
-        this.onStartItineraryProcess()
-      }
       setTimeout(() => {
         console.log('sorting items in list with ' + timeout + 'ms timeout')
         this.itemsSorted = orderBy(
           this.items,
-          ['selected', 'title'],
-          ['desc', 'asc'],
+          ['selected'],
+          ['desc'],
         )
         this.loading = false
         this.emitItemIdsForUrl()
       }, timeout)
     },
     emitItemIdsForUrl () {
-      const ids = this.items.filter(item => item.selected).map(item => item.id)
-      // console.log('will set theses domains ids in url', ids)
+      // const ids = this.itemsSorted.filter(item => item.selected).map(item => item.id)
+      const ids = (this.checkedItems || []).map(title => this.items.find(item => item.title === title).id)
+      console.log('emitItemIdsForUrl', ids)
       eventBus.$emit('set-domains-url', ids)
     },
     getCityByCoordinates (coords) {
@@ -329,6 +330,11 @@ export default {
       // you need this format : https://www.google.com/maps/dir/?api=1&origin=A&origin_place_id=111&waypoint_place_ids=222|333&destination=D&destination_place_id=444&waypoints=B|C
       // real example : https://www.google.com/maps/dir/?api=1&origin=A&origin_place_id=ChIJl4Sj7ErPqhIRzhf6zLLOEDc&waypoint_place_ids=ChIJV6rk54fQqhIRMloH2eZPD90|ChIJQ3IK1MDQqhIRMt7kxJNpR8E&destination=D&destination_place_id=ChIJa-zIourEqhIRAIDp1ZU_b2Y&waypoints=B|C
       this.googleMapUrl = url.replace('|&', '&')
+    },
+    reset () {
+      console.log('reset')
+      this.checkedItems = []
+      this.sortItems(true)
     },
     onStartItineraryProcess () {
       if (!this.mapDisplayed) {
@@ -453,7 +459,7 @@ export default {
     }
     .el-checkbox + .el-checkbox {
       margin-left: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
   }
   .el-icon-location-outline {

@@ -67,7 +67,8 @@
     "sendItinerarySubject": "Bergerac Roads - My itinerary",
     "start": "Starting point",
     "subheading": "Use the filters below to create your own road.",
-    "unselectButton": "Unselect"
+    "unselectButton": "Unselect",
+    "reset": "Reset"
   },
   "vineyards": {
     "bergerac": {

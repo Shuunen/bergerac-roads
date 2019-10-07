@@ -67,7 +67,8 @@
     "sendItinerarySubject": "Routes du Bergerac - Mon Itinéraire",
     "start": "Point de départ",
     "subheading": "Utilisez les filtres ci-dessous pour créer votre route des vins.",
-    "unselectButton": "Désélectionner"
+    "unselectButton": "Désélectionner",
+    "reset": "Recommencer"
   },
   "vineyards": {
     "bergerac": {

@@ -72,29 +72,16 @@ export default {
   },
   created () {
     this.updateItineraryDebounced = debounce(this.updateItinerary, 300)
-    eventBus.$on('checked-items', this.onCheckedItems)
     eventBus.$on('set-starting-point', this.setStartingPoint)
     eventBus.$on('set-starting-position', this.setStartingPosition)
     eventBus.$on('process-itinerary', this.processItinerary)
   },
   destroyed () {
-    eventBus.$off('checked-items', this.onCheckedItems)
     eventBus.$off('set-starting-point', this.setStartingPoint)
     eventBus.$off('set-starting-position', this.setStartingPosition)
     eventBus.$off('process-itinerary', this.processItinerary)
   },
   methods: {
-    onCheckedItems (checkedItems) {
-      if (!checkedItems || !checkedItems.length) {
-        return console.log('onCheckedItems : cannot process without items')
-      }
-      console.log('onCheckedItems')
-      // this.checkedItems = checkedItems // dont do this, here checkedItems is an array of strings and we need objects for itinerary processing
-      for (const marker of this.markers) {
-        marker.selected = checkedItems.findIndex(item => item === marker.title) !== -1
-      }
-      this.$forceUpdate()
-    },
     updateItinerary () {
       if (!this.iteneraryDisplayed) {
         return

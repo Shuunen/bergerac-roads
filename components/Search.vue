@@ -264,20 +264,13 @@ export default {
     setHash () {
       console.log('setHash')
       const hashes = []
-      let startingPointSet = false
-      let domainsSelectedSet = false
       if (this.startingPoint && this.startingPoint.length) {
         hashes.push(window.$nuxt.$t('search.from') + '=' + this.startingPoint)
-        startingPointSet = true
       }
       if (this.domainsSelected && this.domainsSelected.length) {
         hashes.push(window.$nuxt.$t('search.itinerary') + '=' + this.domainsSelected)
-        domainsSelectedSet = true
       }
       document.location.hash = hashes.join(hashSeparator)
-      if (startingPointSet && domainsSelectedSet) {
-        eventBus.$emit('start-itinerary-process')
-      }
     },
     onFiltersChange () {
       console.log('filters are', this.checkedFilters)
