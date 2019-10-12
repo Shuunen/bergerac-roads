@@ -69,7 +69,7 @@
     "dev": "nuxt",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "start": "nuxt",
-    "test": "npm run build",
+    "test": "run-s lint check build",
     "update": "npx npm-check-updates -u"
   },
   "version": "2.1.0"
