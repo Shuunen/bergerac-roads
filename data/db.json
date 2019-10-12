@@ -303,7 +303,9 @@
       "description": "Bienvenue chez Alliance Aquitaine, cave coopérative, regroupant 133 viticulteurs représentant les appellations Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant et Bordeaux. C’est 1356 hectares dont 95% sont certifiés en Agri Confiance, norme de qualité et des bonnes pratiques environnementales.\nAlliance Aquitaine est représentée par 3 sites de production et 3 magasins de vente directe : Bergerac-Le Fleix –Saint Vivien.\nVenez déguster nos vins et découvrir notre chai au « 400 barriques «  sur le site de Bergerac.\n\n\nVisite gratuite du Chai à Barriques uniquement sur réservation.",
       "descriptionEn": "Welcome to Alliance Aquitaine, a cooperative cellar which gathers 133 winegrowers representing the appellations of Bergerac, Côtes de Bergerac, Montravel, Côtes de Montravel, Monbazillac, Pécharmant and Bordeaux. Representing a total of 1,356 hectares, with 95% that are certified by Agri Confiance (quality, health and environment norm).\nAlliance Aquitaine is represented by 3 production sites and 3 direct selling stores in Bergerac, Le Fleix and Saint Vivien.\nCome and taste our wines and discover our “400 barrels” winery on Bergerac’s site.\nFree access to the barrels warehouse on demand.\n",
       "id": "DEGAQU024FS00006",
-      "labels": [],
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "langs": [
         "Français",
         "Anglais"
@@ -359,7 +361,7 @@
       "websites": [
         "http://www.allianceaquitaine.com"
       ],
-      "updated": 1563700451268
+      "updated": 1570898267047
     },
     {
       "active": true,
@@ -433,7 +435,9 @@
       "description": "Le Château du XVIIIe siècle est situé à Lembras sur la route nationale 21, dominant Bergerac avec une exposition plain sud, à flanc de coteau sur un terroir argilo-ferrugineux.\nNotre vignoble de 34 hectares, d'un seul tenant, représente 10 % de l'ensemble de la production de vin rouge d’Appellation d'Origine Contrôlée Pécharmant.\nVin de fête du Périgord le Pécharmant est un vin rouge de garde, élevé en fût de chêne, composés de 4 cépages. Bien charpenté, fruité et généreux, après trois ans en bouteille ce vin dévoile tous ses secrets.\nNous ne manquerons pas de vous les faire découvrir en notre domaine où vous serez assurés de notre meilleur accueil.",
       "descriptionEn": "This XVIIIth century castle is situated in the town of Lembras, 6 km from  Bergerac.\n\nBuilt on the top of a hill, it dominates the region and offers an unforgettable setting, between vineyards and forests. The Pécharmant, its appellation contrôlée vineyard, faces south and covers 40 hectares. The ground rich in iron gives to this \"vin de garde\" a subtle bouquet, and its incomparable taste makes it one of the finest products of the Dordogne.\nIf on your trip you come to the Périgord, we will ensure you the best reception.",
       "id": "DEGAQU024FS00009",
-      "labels": [],
+      "labels": [
+        "vignobles-et-decouvertes"
+      ],
       "langs": [
         "Français",
         "Anglais"
@@ -473,7 +477,7 @@
       ],
       "tags": [
         "acces-handicape",
-        "vin-rose"
+        "vin-rouge"
       ],
       "title": "Château la Renaudie",
       "tourContitions": [
@@ -491,7 +495,7 @@
       "websites": [
         "http://www.chateaurenaudie.com"
       ],
-      "updated": 1563700451404
+      "updated": 1570898267262
     },
     {
       "active": true,
@@ -790,24 +794,28 @@
       ],
       "latitude": "44.8500450",
       "longitude": "0.4827272",
-      "mail": "ivbd.poletouristique@vins-bergeracduras.fr",
+      "mail": "espacevin@quai-cyrano.com",
       "number": null,
       "openHours": [
         "08/01/2019|05/07/2019|||||Lundi-Mardi-Mercredi-Jeudi-Vendredi-Samedi-Dimanche",
         "06/07/2019|31/08/2019|10:00|||19:30|",
-        "01/09/2019|31/10/2019|10:00|||18:30|",
-        "01/11/2019|31/12/2019|10:00|||18:00|"
+        "01/09/2019|31/12/2019|10:00|||19:30|"
       ],
       "phones": [
         "+33 5 53 63 57 55"
       ],
       "photos": [
-        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--1-.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-Vins-de-Bergerac----MC-Grasseau--2-.JPG",
-        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-vins-de-Bergerac-Cloitre-des-Recollets-2-4.jpg"
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano-Pavillon-accueil-3-2.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--20-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--29-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--26-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--4-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--72-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano---MC-Grasseau-OTBSD--99-.JPG",
+        "http://cdt24.media.tourinsoft.eu/upload/Maison-des-vins-de-Bergerac-Cloitre-des-Recollets-2-4.jpg",
+        "http://cdt24.media.tourinsoft.eu/upload/Quai-Cyrano-Pavillon-accueil-2-2.jpg"
       ],
-      "plus": "La pointe de départ de vos escapades dans le vignoble ! \nOuvert 7 jours/7 en été 10h-19h.",
+      "plus": "La pointe de départ de vos escapades dans le vignoble ! \nOuvert 7 jours/7.",
       "services": [],
       "socialFacebook": null,
       "statuses": [
@@ -815,6 +823,7 @@
         "Groupement de producteurs"
       ],
       "tags": [
+        "acces-handicape",
         "env-humain"
       ],
       "title": "Quai Cyrano - Espace Vin",
@@ -836,7 +845,7 @@
       "websites": [
         "https://www.quai-cyrano.com"
       ],
-      "updated": 1563352080341
+      "updated": 1570898267580
     },
     {
       "active": true,
@@ -4534,7 +4543,7 @@
     {
       "active": true,
       "activities": "Une visite du domaine sur rendez-vous, randonnée lieu historique et chapelle libre - les enfants peuvent admirer des blondes d'Aquitaine au domaine et chez un voisin à 1km peuvent voir un élevage de chèvres.",
-      "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois. Venez découvrir notre domaine \nAu programme :\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des addresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
+      "description": "Envie d'une balade en famille ou en solo au cœur de notre vignoble Bergeracois. Venez découvrir notre domaine \nAu programme :\nUne dégustation gratuite de nos vins avec partage de recettes (accords vins-mets avec Sandra FAUCHE).\nUne visite guidée (sur RDV) ou libre, un pique-nique avec panier gourmand (sur commande). \nDes circuits pour visiter les essentiels de nos 4 \"Périgord\" vous seront conseillé, des adresses de bonnes tables, un peu d'histoire (pour ceux qui voudront faire une petite randonnée) où débuta la guerre de 100 ans pour finir par admirer une magnifique chapelle (St Mayme) entièrement restaurée,  tout cela au milieu des vignes pour profiter de beaux moments nature.\nNous vous proposons également des gîtes et chambres d'hôtes chez nos voisins à 500 mètres et 2kms.",
       "descriptionEn": "Searching for a walk with your relatives or alone at the heart of our Bergeracois vineyard?\nCome discover our estate!\nOur program:\n- free tasting of our wines and we will share our recipes (matching food and wines with Sandra FAUCHE)\n- a guided tour (by appointment) or on your own, picnic with gift basket (order only)\n- tours to visit the essentials of our 4 “Perigord” will be advised to you, addresses of good restaurants, a bit of history (for those who want to do some hiking), admire a totally restored chapel (St Mayme). All of this amidst the vines to enjoy a beautiful moment in the nature.\nWe also propose you bed and breakfast at our neighbours’ 500m and 2km away.  \n",
       "id": "DEGAQU024V506U5L",
       "labels": [],
@@ -4596,7 +4605,7 @@
       "websites": [
         "http://www.chateau-les-gerales.com"
       ],
-      "updated": 1563700455696
+      "updated": 1570898270892
     },
     {
       "active": true,
@@ -8024,7 +8033,8 @@
       ],
       "langs": [
         "Français",
-        "Anglais"
+        "Anglais",
+        "Espagnol"
       ],
       "latitude": "44.7441956",
       "longitude": "0.22314905",
@@ -8079,6 +8089,8 @@
       "socialFacebook": "https://www.facebook.com/domainedugrandmayne/?ref=ts&fref=ts",
       "statuses": [
         "Négociant éleveur",
+        "Négociant éleveur",
+        "Producteur",
         "Producteur"
       ],
       "tags": [
@@ -8093,6 +8105,8 @@
       "title": "Domaine du Grand Mayne",
       "tourContitions": [
         "Visite libre",
+        "Visite libre",
+        "Visite guidée",
         "Visite guidée"
       ],
       "tourMinutes": "60",
@@ -8104,7 +8118,7 @@
       "websites": [
         "http://www.domaine-du-grand-mayne.com"
       ],
-      "updated": 1563700459660
+      "updated": 1570898274183
     },
     {
       "active": true,
@@ -8393,7 +8407,7 @@
     {
       "active": true,
       "activities": null,
-      "description": "Le Domaine du château la Grave Béchade s’étend sur une superficie de 120 hectares, dont 26 de vignes.\nLe vignoble est édifié sur les coteaux argilo-calcaires de Baleyssagues, exposition plein Sud, au cœur d’un magnifique terroir en appellation d’origine contrôlée Côtes de Duras. Il est aujourd’hui planté en Sauvignon blanc, Sauvignon gris pour le blanc, en Merlot, Cabernet Sauvignon et Cabernet Franc pour le rouge.\nLe château La Grave Bechade possède un magnifique pavillon de chasse datant de 1880 , pouvant se louer en gîte ou en chambre d'hôte. Comprenant 5 chambres , 5 salles de bain , un sauna , une piscine extérieure chauffée, un terrain de tennis , il peut accueillir 10 à 12 personnes.\n",
+      "description": "Le Domaine du Château la Grave Béchade s’étend sur une superficie de 120 hectares, dont 26 de vignes exposées plein sud. Au cœur et aux couleurs de l'appellation d’origine contrôlée Côte de Duras.\nSon vignoble est édifié sur les coteaux argilo-calcaires de Baleyssagues. Il est aujourd’hui planté en Sauvignon blanc, Sauvignon gris pour le blanc. En Merlot, Cabernet Sauvignon et Cabernet Franc pour le rouge.\nLe château La Grave Bechade est aussi, un magnifique hôtel particulier, du XIXème siècle, dominant son vignoble. Cette propriété de 650 m², se loue en gîte, et devient entièrement privative le temps de la location. 5 grandes chambres climatisées, 5 salles de bain, un sauna , une piscine extérieure chauffée, un terrain de tennis, une enfilade de salon, billard et salle à manger peuvent accueillir 10 à 12 personnes en toute aisance. Un lieu atypique à découvrir vous ouvre ses portes.",
       "descriptionEn": null,
       "id": "DEGAQU047FS00054",
       "labels": [
@@ -8437,6 +8451,7 @@
       ],
       "socialFacebook": null,
       "statuses": [
+        "Producteur",
         "Producteur"
       ],
       "tags": [
@@ -8448,6 +8463,8 @@
       "title": "Château La Grave Béchade",
       "tourContitions": [
         "Visite guidée",
+        "Visite guidée",
+        "Visite guidée uniquement sur rendez-vous",
         "Visite guidée uniquement sur rendez-vous"
       ],
       "tourMinutes": "30",
@@ -8459,7 +8476,7 @@
       "websites": [
         "http://lagravebechade.fr"
       ],
-      "updated": 1563700460006
+      "updated": 1570898274505
     },
     {
       "active": true,
@@ -8480,9 +8497,9 @@
       "number": null,
       "openHours": [
         "01/02/2019|30/04/2019|10:00|13:00|14:00|18:30|",
-        "20/04/2019|20/04/2019|||||",
         "01/05/2019|30/06/2019|10:00|13:00|14:00|18:30|",
-        "01/07/2019|31/08/2019|10:00|13:00|14:00|18:30|",
+        "01/07/2019|31/07/2019|10:00|13:00|14:00|18:30|",
+        "01/08/2019|26/08/2019|10:00|13:00|14:00|18:30|Dimanche",
         "01/09/2019|30/09/2019|10:00|13:00|14:00|18:30|Dimanche",
         "01/10/2019|31/12/2019|10:00|13:00|14:00|18:30|Samedi-Dimanche"
       ],
@@ -8530,12 +8547,12 @@
         "#http://www.vins-bergeracduras.fr",
         "#http://www.247lemag.fr"
       ],
-      "updated": 1563352089214
+      "updated": 1570898274588
     },
     {
       "active": true,
       "activities": null,
-      "description": "Assis sur des coteaux argilo-calcaire ensoleillés, les 13 hectares du vignoble reflètent à la fois le caractère affirmé de ce territoire et la douceur du climat. La famille cultive la terre avec respect et sagesse.\nDécouvrez les vins AOC Côtes de Duras et la gamme \"pourquoi pas\". ",
+      "description": "Assis sur des coteaux argilo-calcaire ensoleillés, les 13 hectares du vignoble en conversion bio reflètent à la fois le caractère affirmé de ce territoire et la douceur du climat. La famille cultive la terre avec respect et sagesse.\nDécouvrez les vins AOC Côtes de Duras et la gamme \"pourquoi pas\". ",
       "descriptionEn": null,
       "id": "DEGAQU047FS0008N",
       "labels": [],
@@ -8588,7 +8605,7 @@
       "websites": [
         "http://www.chateau-la-boissiere.fr"
       ],
-      "updated": 1563700460128
+      "updated": 1570898274666
     },
     {
       "active": true,
