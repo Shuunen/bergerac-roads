@@ -34,7 +34,7 @@ Updating core-js to v3 break the build.
 
 ### Netlify
 
-Build command on Netlify is `npm rebuild node-sass && npm run build`.
+Build command on Netlify is `npm rebuild node-sass && npm run ci`.
 
 The first part avoid this error :
 
@@ -43,7 +43,7 @@ The first part avoid this error :
 6:18:45 PM: Error: ENOENT: no such file or directory, scandir '/opt/build/repo/node_modules/node-sass/vendor'
 ```
 
-If needed use this trick to see more deployment logs on Netlify CI : `npm run build; sleep 60; false`
+If needed use this trick to see more deployment logs on Netlify CI : `npm run ci; sleep 60; false`
 
 ## Thanks
 
