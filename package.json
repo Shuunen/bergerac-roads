@@ -35,12 +35,24 @@
   "engines": {
     "node": ">=10.16.2"
   },
+  "files": [
+    "assets",
+    "components",
+    "data",
+    "layouts",
+    "locales",
+    "middleware",
+    "pages",
+    "plugins",
+    "static",
+    "store"
+  ],
   "homepage": "https://github.com/Shuunen/bergerac-roads",
   "keywords": [
     "bergerac",
     "wines"
   ],
-  "license": "AGPL-3.0",
+  "license": "GPL-3.0",
   "name": "@shuunen/bergerac-roads",
   "private": true,
   "repository": {

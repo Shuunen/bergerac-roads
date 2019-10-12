@@ -1,9 +1,7 @@
 language: node_js
 
-cache: yarn
-
 env: NODE_ENV=production
 
-install: yarn install
+install: npm install --production=false
 
-script: yarn ci
+script: npm run ci
