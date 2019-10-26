@@ -27,11 +27,9 @@
       <div class="line">
         <el-button class="full-width" :disabled="!canCreate" @click="onStartItineraryProcess">{{ $t('search.calcItinerary') }}</el-button>
       </div>
-      <!--
       <div class="line">
         <el-button class="full-width" :disabled="!(iteneraryDisplayed || canCreate || checkedItems.length)" @click="reset">{{ $t('search.reset') }}</el-button>
       </div>
-      -->
       <div class="line">
         <el-button class="full-width" :disabled="!canCreate" @click="sendItineraryByMail">{{ $t('search.sendItinerary') }}</el-button>
       </div>
@@ -333,6 +331,7 @@ export default {
     },
     reset () {
       console.log('reset')
+      eventBus.$emit('reset-itinerary')
       this.checkedItems = []
       this.sortItems(true)
     },
