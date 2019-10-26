@@ -15,7 +15,7 @@ Vue.prototype.$db = {
   getDomainsByTags: (tags) => {
     const domains = []
     for (const domain of db.domains) {
-      if (domain.hasOwnProperty('tags') && tags.every(tag => domain.tags.includes(tag))) {
+      if (domain.tags && tags.every(tag => domain.tags.includes(tag))) {
         domains.push(domain)
       }
     }
