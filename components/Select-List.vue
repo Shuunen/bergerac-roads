@@ -258,7 +258,7 @@ export default {
       try {
         window.navigator.geolocation.getCurrentPosition(
           position => this.setStartingPosition(position, true),
-          err => this.onNavigatorPositionFail(err)
+          err => this.onNavigatorPositionFail(err),
         )
       } catch (err) {
         this.onNavigatorPositionFail(err)

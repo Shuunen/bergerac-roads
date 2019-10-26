@@ -28,9 +28,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ### Upgrade
 
-Specifying "webpack": "4.33.0" to resolve missing peer deps is breaking the build : styles files not found and vue pages too.
-
-Updating core-js to v3 break the build.
+Version 1.3.3 of vue-lazyload if breaking lot of stuff, 1.3.2 is working fine.
 
 ### Netlify
 
