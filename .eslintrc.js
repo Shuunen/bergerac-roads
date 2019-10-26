@@ -1,3 +1,5 @@
+const rules = require('./.eslintrc.rules.js')
+
 module.exports = {
   root: true,
   env: {
@@ -9,16 +11,8 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
+    'standard',
     'plugin:nuxt/recommended'
   ],
-  rules: {
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
-    'no-console': 'off',
-    'vue/html-self-closing': 'off',
-    'vue/attributes-order': 'off',
-    'vue/max-attributes-per-line': 'off',
-    'vue/singleline-html-element-content-newline': 'off',
-    'comma-dangle': ['error', 'always-multiline'],
-  }
+  rules
 }

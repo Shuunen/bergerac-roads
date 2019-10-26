@@ -67,7 +67,7 @@
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",
     "dev": "nuxt",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint \"**/*.js\" \"**/*.vue\" --fix --ignore-path .gitignore",
     "start": "nuxt",
     "test": "run-s lint check build",
     "update": "npx npm-check-updates -u"

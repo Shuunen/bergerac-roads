@@ -30,7 +30,7 @@ const remoteVineyardsToLocal = {
   Duras: 'duras',
   Monbazillac: 'monbazillac',
   Montravel: 'montravel',
-  'Pécharmant': 'pecharmant',
+  Pécharmant: 'pecharmant',
   Rosette: 'rosette',
   Saussignac: 'saussignac',
 }
