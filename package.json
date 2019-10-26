@@ -62,7 +62,7 @@
   "scripts": {
     "analyze": "nuxt build --analyze",
     "build": "nuxt build",
-    "check": "npx repo-check",
+    "check": "npx repo-check@1.3.3",
     "ci": "run-s data:import test",
     "data:db": "json-server data/db.json",
     "data:import": "node data/import.js",

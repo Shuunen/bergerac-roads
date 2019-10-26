@@ -1,5 +1,5 @@
 <template>
-  <GmapMap :center="center" :zoom="10" map-type-id="terrain" ref="mapRef" :style="{ height: `${height}px` }">
+  <GmapMap :center="center" :zoom="zoom" map-type-id="terrain" ref="mapRef" :style="{ height: `${height}px` }">
     <GmapMarker
       v-for="marker in formattedMarkers"
       :key="marker.id"
@@ -24,6 +24,14 @@ import { gmapApi } from 'vue2-google-maps'
 import debounce from 'lodash/debounce'
 import { eventBus } from '../store/index'
 
+const MAP_DEFAULTS = {
+  zoom: 10,
+  center: {
+    lat: 44.85,
+    lng: 0.35,
+  },
+}
+
 export default {
   props: {
     height: {
@@ -38,10 +46,8 @@ export default {
   },
   data () {
     return {
-      center: {
-        lat: 44.85,
-        lng: 0.35,
-      },
+      center: MAP_DEFAULTS.center,
+      zoom: MAP_DEFAULTS.zoom,
       checkedItems: [],
       startingPosition: null,
       startingPoint: null,
@@ -75,13 +81,23 @@ export default {
     eventBus.$on('set-starting-point', this.setStartingPoint)
     eventBus.$on('set-starting-position', this.setStartingPosition)
     eventBus.$on('process-itinerary', this.processItinerary)
+    eventBus.$on('reset-itinerary', this.resetItinerary)
   },
   destroyed () {
     eventBus.$off('set-starting-point', this.setStartingPoint)
     eventBus.$off('set-starting-position', this.setStartingPosition)
     eventBus.$off('process-itinerary', this.processItinerary)
+    eventBus.$off('reset-itinerary', this.resetItinerary)
   },
   methods: {
+    async resetItinerary () {
+      console.log('resetItinerary (map)')
+      this.iteneraryDisplayed = false
+      this.directionsDisplay.setMap(null)
+      const map = await this.$refs.mapRef.$mapPromise
+      map.panTo(MAP_DEFAULTS.center)
+      map.setZoom(MAP_DEFAULTS.zoom)
+    },
     updateItinerary () {
       if (!this.iteneraryDisplayed) {
         return
@@ -149,6 +165,8 @@ export default {
         if (status !== this.google.maps.DirectionsStatus.OK) {
           return console.error('directions request failed due to : ' + status)
         }
+        console.log('HERE map', map)
+        console.log('HERE directions', response)
         this.directionsDisplay.setMap(map)
         this.directionsDisplay.setDirections(response)
         eventBus.$emit('ordered-directions', response.geocoded_waypoints)
