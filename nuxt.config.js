@@ -17,6 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'theme-color', content: '#ffffff' },
       { name: 'google-site-verification', content: 'josobMWIbuspgkX6xJ2FyU5PufZXR8ThI2ZFl8-QxMI' },
+      { name: 'google-site-verification', content: 'cDXOM2jJbGhygT6VhZZzJCb3soNLGdU2-Hr1jbPJ0mQ' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
