@@ -1,6 +1,23 @@
 {
   "charter": {
-    "title": "Charter of the wine route"
+    "title": "Charter of the wine route",
+    "subtitle-1": "A voluntary and collective approach",
+    "body-1-1": "A voluntary and collective approach, the Bergerac and Duras Wine Route is a network of wineries and estates united to make it possible for passing tourists and locals to discover: the vine, the wines of Bergerac and Duras, the profession of winemaker, their know-how, culture, heritage, and lifestyle of Périgord Agenais.",
+    "body-1-2": "Each member agrees to respect the following points, so that your stay leaves you with an unforgettable memory! Beyond these commitments, it is above all the passion for expertise and love for the product and the Earth that our members are committed to making you discover ... and love! No doubt you will be back soon.",
+    "subtitle-2": "Commitments of members of the wine route",
+    "commitments": {
+      "1": "I offer quality products to my visitors (of course!)",
+      "2": "I facilitate access to my domain and my place of reception",
+      "3": "I am open regularly; I set schedules that I post and respect",
+      "4": "I have suitable means of communication",
+      "5": "I have a clean, welcoming and secure reception area.",
+      "6": "I have my products tasted in good conditions, in an educational manner; I share my knowledge of the vineyard, the wines and the territory; I inform visitors about tourist activities in the region, starting with the Bergerac Duras Wine Route.",
+      "7": "I remind tasters of the rules of responsible consumption.",
+      "8": "I have good commercial practices (display of prices, absence of purchase obligation, shipping service, issue of sales receipt).",
+      "9": "I accept the evaluation and control procedures implemented by the Bergerac Duras Wine Route"
+    },
+    "subtitle-3": "How to identify our domains ?",
+    "body-3-1": "If you are more the type to stroll and stop where your heart tells you, we have also thought of you. Locate the member estates by a red 'Wine Route' sign at the entrance of the property, often by the roadside."
   },
   "common": {
     "back-home": "Back to Home page",

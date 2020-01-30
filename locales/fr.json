@@ -1,6 +1,23 @@
 {
   "charter": {
-    "title": "Charte de la route des vins"
+    "title": "Charte de la route des vins",
+    "subtitle-1": "Une démarche volontaire et collective",
+    "body-1-1": "Démarche volontaire et collective, la Route des Vins de Bergerac et Duras est un réseau de caves et domaines unis pour faire découvrir aux touristes de passage et aux habitants du territoire : la vigne, les vins de Bergerac et Duras, le métier de vigneron, leurs savoir-faire, la culture, le patrimoine, et l’art de vivre de Périgord Agenais. ",
+    "body-1-2": "Chaque adhérent s’engage à respecter les points suivants, pour que votre séjour vous laisse un souvenir impérissable ! Au-delà de ces engagements, c’est avant tout la passion d’un savoir-faire et l’amour du produit et de la Terre que nos adhérents s’engagent à vous faire découvrir… et aimer ! Nul doute que vous y reviendrez.",
+    "subtitle-2": "Les engagements des adhérents de la route des vins",
+    "commitments": {
+      "1": "Je propose des produits de qualité à mes visiteurs (cela va de soi !)",
+      "2": "Je facilite l’accès à mon domaine et mon lieu d’accueil",
+      "3": "Je suis ouvert régulièrement ; je fixe des horaires que j’affiche et respecte",
+      "4": "Je dispose de moyens de communication adaptés",
+      "5": "Je dispose d’un lieu d’accueil propre, accueillant et sécurisé.",
+      "6": "Je fais déguster mes produits dans de bonnes conditions, de manière pédagogique ; je partage ma connaissance du vignoble, des vins et du territoire ;je renseigne les visiteurs sur les activités touristiques de la région, à commencer par la Route des Vins de Bergerac Duras.",
+      "7": "Je rappelle aux dégustateurs les règles de la consommation responsable.",
+      "8": "J’ai de bonnes pratiques commerciales (affichage des tarifs, absence d’obligation d’achat, service expédition, émission de ticket de caisse).",
+      "9": "J’accepte les démarches d’évaluation et de contrôle mises en place par la Route des Vins de Bergerac Duras"
+    },
+    "subtitle-3": "Comment repérer nos domaines ?",
+    "body-3-1": "Si vous êtes plutôt du genre à flâner et vous arrêter là où le cœur vous en dit, nous avons aussi pensé à vous. Repérez les domaines adhérents par un panneau rouge « Route des vins » à l’entrée de la propriété, souvent en bord de route."
   },
   "common": {
     "back-home": "Retour à l'accueil",
