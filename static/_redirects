@@ -1,5 +1,5 @@
 
-# Doc : https://www.netlify.com/docs/redirects/
+# Doc : https://netlify.com/docs/redirects/
 
 # HTTPS enforcement
 http://bergerac-roads.netlify.com https://bergerac-roads.netlify.com

@@ -46,7 +46,7 @@ If needed use this trick to see more deployment logs on Netlify CI : `npm run ci
 ## Thanks
 
 - [Shields.io](https://shields.io) : nice badges on top of this readme
-- [Netlify](https://www.netlify.com) : awesome company that offers hosting for OSS
+- [Netlify](https://netlify.com) : awesome company that offers hosting for OSS
 - [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
 - [BrowserStack](https://www.browserstack.com) : great online tool to test our app under tons of desktop & mobile browsers
 
