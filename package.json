@@ -15,7 +15,7 @@
     "eslint": "6.6.0",
     "eslint-config-standard": "14.1.0",
     "eslint-loader": "3.0.2",
-    "eslint-plugin-nuxt": "0.4.3",
+    "eslint-plugin-nuxt": "1.0.0",
     "fast-deep-equal": "2.0.1",
     "json-server": "0.15.1",
     "lodash": "4.17.15",
